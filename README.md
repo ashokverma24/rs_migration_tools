@@ -7,6 +7,7 @@ Currently, 5 ancillary data types and 4 raw data types are supported:
 ########################################################################
 
 The following ancillary data types are supported:
+
 ########################################################################
 1. SPK: Spacecraft ephemeris (transfer file formate)
 2. CKF: Spacecraft attitude (transfer file formate)
@@ -15,7 +16,9 @@ The following ancillary data types are supported:
 5. TRK-2-23: Media Calibration Interface (Troposphere)
 
 ########################################################################
+
 The following raw data types are supported:
+
 ########################################################################
 1. TRK-2-25: Closed-loop Archival Data (also known as TDF or ATDF)
 2. TRK-2-18: Closed-loop Orbital Data File (ODF)
@@ -23,17 +26,22 @@ The following raw data types are supported:
 4. 0159-SCIENCE: Open-loop Radio Science Receiver (RSR)
 
 ########################################################################
+
 Requirements
+
 ########################################################################
-Language: Python 3.0 or above
-Docgen: The igpp-docgen document generator tool based on Apache Velocity
-Java: With Java Runtime Environment (JRE)
-OS: Will run on any platform with a supported Java Runtime Environment (JRE)
-Input data: PDS3 RS data with PDS3 label 
+
+1. Language: Python 3.0 or above
+2. Docgen: The igpp-docgen document generator tool based on Apache Velocity
+3. Java: With Java Runtime Environment (JRE)
+4. OS: Will run on any platform with a supported Java Runtime Environment (JRE)
+5. Input data: PDS3 RS data with PDS3 label 
 
 
 ########################################################################
+
 Usuage
+
 ########################################################################
 
 Python createPDS4Label.py -i inputDataFile -v velocityTemepate
@@ -56,10 +64,11 @@ Output should looks like this:
 
 
 ########################################################################
+
 Support
+
 ########################################################################
+
 If you have questions, comments, or would like to report a bug, please contact:
 
-Ashok Kumar Verma, Ph.D
-University of California, Los Angeles
-Email: ashokverma@ucla.edu
+Ashok Kumar Verma, Ph.D | University of California, Los Angeles | Email: ashokverma@ucla.edu
