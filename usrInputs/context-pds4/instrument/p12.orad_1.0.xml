@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:orad.p12</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ORBITING RADAR for P12</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.p12::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pioneer Venus Orbiter Radar Mapper (ORAD) user&apos;s manual,
+                   Hughes Aircraft Company, Ref. No. D4232, December 1977.
+            </reference_text>
+            <description>reference.HACREF1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pettengill, G.H., D.F. Horwood, and C.H. Keller, Pioneer
+                   Venus Orbiter Radar Mapper: design and operation, IEEE
+                   Trans. Geosci. Remote Sens., GE-18, 28-32, 1980.
+            </reference_text>
+            <description>reference.PETTENGILLETAL1980A</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ORBITING RADAR</name>
+        <type>Radio-Radar</type> <!--RChen/EN was RADAR. No obvious choice-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    INSTRUMENT: ORBITING RADAR
+    SPACECRAFT: PIONEER VENUS ORBITER
+ 
+ 
+    Instrument Information
+    ======================
+      Instrument Id                  : ORAD
+      Instrument Host Id             : P12
+      Pi Pds User Id                 : PFORD
+      Instrument Name                : ORBITING RADAR
+      Instrument Type                : RADAR MAPPER
+      Build Date                     : 1977
+      Instrument Mass                : 9.700000
+      Instrument Length              : 0.240000
+      Instrument Width               : 0.305000
+      Instrument Height              : 0.165000
+      Instrument Serial Number       : 5970-02
+      Instrument Manufacturer Name   : HUGHES AIRCRAFT
+ 
+ 
+    Instrument Description
+    ======================
+      The Pioneer Venus radar mapper consisted of a 38 cm antenna and
+      a radar transmitter/receiver, and was flown on the Pioneer 12
+      orbiter.  It functioned continuously from December 5th 1978
+      until March 23 1981 when it was switched off because spacecraft
+      periapsis had risen to such an extent that no further useful
+      data could be obtained.  The antenna could be rotated in one
+      plane by means of a stepping motor that was commanded by the
+      radar system.  During a periapsis pass, the antenna was moved
+      so that it pointed to the nadir at some point during each 12
+      second spacecraft rotation period.  The radar was loaded from
+      the ground with approximately 200 commands before each mapping
+      pass, and then operated automatically.  The commands included
+      interpolation coefficients that set the altimeter range window,
+      the receiver band-pass filter, and the receiver gain.  The
+      instrument was capable of making up to 8 observations during
+      each 12 second period: space calibration, 1 or 4 altimetry
+      measurements, 0, 1 or 2 imaging measurements, and a planet
+      calibration.  The number of altimetry and image measurements
+      depended on spacecraft altitude and the downlink bandwidth
+      allotted to the radar instrument.  Initial altimetry and
+      imaging data processing was performed on-board.  Altimetry
+      echoes were detected, sampled, and correlated against the
+      transmitted waveform, a shift-register sequence, and sub-summed
+      for repeated pulses.  Imaging echoes were detected, sampled,
+      and Fourier transformed to achieve azimuth resolution.
+ 
+ 
+    Science Objectives
+    ==================
+      The radar mapper was designed to obtain a near global picture
+      of the topography, meter-scale surface slopes and reflectivity
+      of Venus.  Constraints imposed by the choice of orbit limited
+      the radar coverage to a latitude band lying between 74 degrees
+      N and 61 degrees S completely around the planet.  In addition
+      to the altimetry objectives, the experiment sought an image of
+      the radar scattering properties of the surface at oblique
+      incidence.  Sensitivity limited the imaged region to a band
+      around the planet lying between 45 degrees N and 10 degrees S.
+      Altimetric error was less than 200 meters; altimetric surface
+      &apos;footprint&apos; size varied from about 10 km in diameter at a
+      spacecraft altitude of 200 km, to 50 km at a maximum altitude
+      of 4700 km.  Imaging resolution varied from 20 to 40 km,
+      depending on spacecraft altitude.
+ 
+ 
+    Operational Considerations
+    ==========================
+      (1) Shortly after it began operating, a failure was observed in
+      telemetry from the instrument that affected all altimetric and
+      imaging data.  This was traced to a circuit failure in the data
+      formatter sub-system, and was totally eliminated by operating
+      the radar on a shortened duty cycle, viz.  that all power to
+      the radar was switched off except for a 2 hour period each day.
+      This proved entirely successful, although about 36 days of data
+      were lost while the problem was being diagnosed.  (2) It was
+      originally intended that, when the radar was performing 4
+      altimetry measurements per spacecraft rotation period, they
+      should be made with varying receiver frequencies, thereby
+      &apos;squinting&apos; the altimeter footprints ahead of, and behind, the
+      nadir point.  This proved to be unwise, since the squinted
+      echoes had very low signal strength, so, after approximately 3
+      months of operation, the radar was commanded no to vary the
+      receiver frequency and the 4 altimeter measurements represented
+      essentially the same surface footprint.
+ 
+ 
+    Calibration Description
+    =======================
+      The instrument was calibrated by means of a radar target
+      simulator that was specially built by Hughes, and end-to-end
+      tests of the radar system were conducted on several occasions,
+      including the on-stand test shortly prior to launch.  The
+      results were published in the Hughes instrument manual.  In
+      Venus orbit, the instrument was calibrated once per 12 second
+      spacecraft rotation period by recording the receiver voltage at
+      that time when the antenna pointed to the zenith, i.e.  to cold
+      sky.
+ 
+ 
+    Section &apos;ALT&apos;
+    =============
+      Total Fovs                     : 0
+      Data Rate                      : 24.000000
+      Sample Bits                    : 10
+ 
+ 
+      &apos;ALT&apos; Detectors
+      ---------------
+        PVORADANT
+ 
+ 
+      &apos;ALT&apos; Electronics
+      -----------------
+        PVORADCTL
+ 
+ 
+      In modes
+      --------
+        HAA
+        IM1
+        IM2
+ 
+ 
+      &apos;ALT&apos; Section Parameter &apos;RADAR ECHO POWER&apos;
+      ------------------------------------------
+        That part of the transmitted power scattered by the target
+        and received by the radar antenna.
+ 
+        Instrument Parameter Name      : RADAR ECHO POWER
+        Sampling Parameter Name        : TIME
+        Instrument Parameter Unit      : WATTS
+        Minimum Sampling Parameter     : 0.009000
+        Maximum Sampling Parameter     : 0.030000
+        Sampling Parameter Interval    : 0.000004
+        Sampling Parameter Resolution  : 0.000004
+        Sampling Parameter Unit        : SECOND
+ 
+ 
+    Section &apos;IMG&apos;
+    =============
+      Total Fovs                     : 0
+      Data Rate                      : 309.000000
+      Sample Bits                    : 10
+ 
+ 
+      &apos;IMG&apos; Detectors
+      ---------------
+        PVORADANT
+ 
+ 
+      &apos;IMG&apos; Electronics
+      -----------------
+        PVORADCTL
+ 
+ 
+      In modes
+      --------
+        IM1
+        IM2
+ 
+ 
+      &apos;IMG&apos; Section Parameter &apos;RADAR ECHO POWER&apos;
+      ------------------------------------------
+        That part of the transmitted power scattered by the target
+        and received by the radar antenna.
+ 
+        Instrument Parameter Name      : RADAR ECHO POWER
+        Sampling Parameter Name        : TIME
+        Instrument Parameter Unit      : WATTS
+        Minimum Sampling Parameter     : 0.009000
+        Maximum Sampling Parameter     : 0.030000
+        Sampling Parameter Interval    : 0.000128
+        Sampling Parameter Resolution  : 0.000128
+        Sampling Parameter Unit        : SECOND
+ 
+ 
+    Section &apos;RAD&apos;
+    ============
+      Total Fovs                     : 1
+      Data Rate                      : 1.300000
+ 
+ 
+      &apos;RAD&apos; Detectors
+      ---------------
+        PVORADANT
+ 
+ 
+      &apos;RAD&apos; Electronics
+      -----------------
+        PVORADCTL
+ 
+ 
+      In modes
+      --------
+        HAA
+        IM1
+        IM2
+ 
+ 
+      &apos;RAD&apos; Section FOV Shape &apos;ELLIPSOIDAL&apos;
+      -------------------------------------
+        Section Id                     : RAD
+        Fovs                           : 1
+        Horizontal Pixel Fov           : 29.000000
+        Vertical Pixel Fov             : 25.000000
+        Horizontal Fov                 : 29.000000
+        Vertical Fov                   : 25.000000
+ 
+ 
+      &apos;RAD&apos; Section Parameter &apos;RADIANCE&apos;
+      ----------------------------------
+        Radiance is the amount of energy per time per projected area
+        per steradian.
+ 
+        Instrument Parameter Name      : RADIANCE
+        Sampling Parameter Name        : TIME
+        Instrument Parameter Unit      : WATTS/AREA/STERADIANS
+        Minimum Instrument Parameter   : 0.010000
+        Maximum Instrument Parameter   : 10.230000
+        Noise Level                    : 0.050000
+        Sampling Parameter Interval    : 12.000000
+        Sampling Parameter Unit        : SECOND
+ 
+ 
+    Instrument Detector &apos;PVORADANT&apos;
+    ===============================
+      Detector Type                  : ANTENNA
+      Detector Aspect Ratio          : 1.000000
+      Minimum Wavelength             : 170000.000000
+      Maximum Wavelength             : 170000.000000
+      Nominal Operating Temperature  : 298.000000
+ 
+ 
+      Description
+      -----------
+        Transmitter and receiver use the same detector: a 13 cm
+        linearly polarized short-backfire antenna.  The 3dB one-way
+        beamwidth is 29 degrees in the E-plane and 25 degrees in the
+        H plane.  In normal operation, the E-field is tangent to the
+        Venus surface and the H-field is normal to the Venus surface.
+        The antenna is mounted on the periphery of the instrument
+        bay, at an azimuth of 45 degrees relative to the spacecraft
+        X-axis.  It is articulated in one direction and moves under
+        control of a stepping motor commanded by the radar command
+        processor.
+ 
+ 
+      Sensitivity
+      -----------
+        Measured antenna gain was 17 dB.  The first sidelobe was 16
+        dB less than peak, and the sidelobe level at 90 degrees was
+        29 dB relative to peak.  3dB beamwidth was 29 degrees for the
+        E-plane and 25 degrees for the H-plane.
+ 
+ 
+    Instrument Electronics &apos;PVORADCTL&apos;
+    ==================================
+ 
+      Description
+      -----------
+        The radar electronics consisted of a series of closely
+        coupled sub-units: (a) RF sub-system, consisting of receiver,
+        transmitter, up- and down-converters, and digital frequency
+        synthesizer, (b) Synchronizer sub-system, containing a
+        command processor, ephemeris generator to calculate the
+        range-gate settings, timing circuits, and electronics to
+        control the antenna stepping motor, (c) Radar Processor
+        sub-system, that detects, samples, and formats the echoes,
+        and (d) Power Supply sub-system.
+ 
+ 
+    Instrument Mode &apos;HAA&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Instrument Power Consumption   : 30.000000
+ 
+ 
+      In sections
+      -----------
+        ALT
+        RAD
+ 
+ 
+      Description
+      -----------
+        High-altitude altimetry mode.  Above 700 km altitude, the
+        altimeter is making a single range measurement per 12 second
+        spacecraft rotation period.
+ 
+ 
+    Instrument Mode &apos;HAA&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Instrument Power Consumption   : 30.000000
+ 
+ 
+      In sections
+      -----------
+        ALT
+        RAD
+ 
+ 
+      Description
+      -----------
+        High-altitude altimetry mode.  Above 700 km altitude, the
+        altimeter is making a single range measurement per 12 second
+        spacecraft rotation period.
+ 
+ 
+    Instrument Mode &apos;IM1&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Instrument Power Consumption   : 30.000000
+ 
+ 
+      In sections
+      -----------
+        ALT
+        IMG
+        RAD
+ 
+ 
+      Description
+      -----------
+        Altimetry and single-sided imaging mode.  Below 700 km
+        altitude, the altimeter is making 4 range measurements, and
+        the SAR is making a map on one side, for each 12 second
+        spacecraft rotation period.
+ 
+ 
+    Instrument Mode &apos;IM1&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Instrument Power Consumption   : 30.000000
+ 
+ 
+      In sections
+      -----------
+        ALT
+        IMG
+        RAD
+ 
+ 
+      Description
+      -----------
+        Altimetry and single-sided imaging mode.  Below 700 km
+        altitude, the altimeter is making 4 range measurements, and
+        the SAR is making a map on one side, for each 12 second
+        spacecraft rotation period.
+ 
+ 
+    Instrument Mode &apos;IM2&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Instrument Power Consumption   : 30.000000
+ 
+ 
+      In sections
+      -----------
+        ALT
+        IMG
+        RAD
+ 
+ 
+    Instrument Mode &apos;IM2&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Instrument Power Consumption   : 30.000000
+ 
+ 
+      In sections
+      -----------
+        ALT
+        IMG
+        RAD
+ 
+ 
+    Mounted On Platform &apos;PIONEER VENUS ORBITER&apos;
+    ===========================================
+ 
+      Description
+      -----------
+        Please see Spacecraft Description.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

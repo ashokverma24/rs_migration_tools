@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:telescope:siding_spring.uppsala0m5</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Catalina Sky Survey 0.5-m Uppsala Schmidt telescope</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-11-09</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:instrument:siding_spring.uppsala0m5.4kccd</lid_reference>
+      <reference_type>telescope_to_instrument</reference_type>
+    </Internal_Reference>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:facility:observatory.siding_spring</lid_reference>
+      <reference_type>telescope_to_facility</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <Telescope>
+    <aperture unit="m">0.5</aperture>
+    <telescope_longitude unit="deg">149.0642</telescope_longitude>
+    <telescope_latitude unit="deg">-31.273455</telescope_latitude>
+    <telescope_altitude unit="m">1183</telescope_altitude>
+    <coordinate_source>Geodetic - WGS 84 datum</coordinate_source>
+    <description>Catalina Sky Survey 0.5-m Uppsala Schmidt survey telescope in Siding Spring,
+Australia.
+(MPC code E12)</description>
+  </Telescope>
+</Product_Context>
+

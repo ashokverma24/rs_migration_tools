@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet_and</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Mirach</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>43 Andromedae</alternate_title></Alias>
+      <Alias><alternate_title>Beta Andromedae</alternate_title></Alias>
+      <Alias><alternate_title>Beta And</alternate_title></Alias>
+      <Alias><alternate_title>LTT 10420 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>bet And </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>43 And </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 949 A </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+35 106</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 457661 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+34 198</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J01097+3537A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+34 198 1 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 100088 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 42</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 1400 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 666 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00006860 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 53.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 9044</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 6860</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 5447</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 5447</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 337</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 01041+3505 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 01069+3521</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +40019</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 470 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Karmn J01097+356 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J0109+3537</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J01094391+3537137</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 232 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 3848</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 414</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 238</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 238.00 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 29 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 66010</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Pul -3 90190 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 164</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 54471</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 1772 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30042</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 662</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 2286-1329-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 1186</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 7980</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 1256-00017957</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J01097+3537A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 1192</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Mirach</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000:  01 hours 09 minutes 43.92388 seconds
+Declination, ICRS coord, ep=J2000: +35 degrees 37 minutes 14.0075 seconds
+    </description>
+  </Target>
+</Product_Context>

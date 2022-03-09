@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+   http://pds.nasa.gov/pds4/pds/v1 
+   http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.xsd 
+   ">
+   <Identification_Area>
+      <logical_identifier>urn:nasa:pds:context:investigation:mission.maven</logical_identifier>
+      <version_id>1.0</version_id>
+      <title>Mars Atmosphere and Volatile EvolutioN</title>
+      <information_model_version>1.4.0.0</information_model_version>
+      <product_class>Product_Context</product_class>
+      <Alias_List>
+         <Alias>
+            <alternate_id>MAVEN</alternate_id>
+         </Alias>
+      </Alias_List>
+      <Modification_History>
+         <Modification_Detail>
+            <modification_date>2015-03-16</modification_date>
+            <version_id>1.0</version_id>
+            <description>
+               Initial version.
+            </description>
+         </Modification_Detail>
+      </Modification_History>
+   </Identification_Area>
+   <Reference_List>
+<!-- Add reference MAVEN mission description paper when available      
+         <External_Reference>
+         <doi></doi>
+         <reference_text></reference_text>
+         <description></description>
+      </External_Reference>
+-->
+   </Reference_List>
+   <Investigation>
+      <name>MAVEN</name>
+      <type>Mission</type>
+      <start_date>2013-11-13</start_date>
+      <stop_date nilReason="unknown" xsi:nil="true"/>
+      <description>
+         The MAVEN mission launched on an Atlas V between November 18, 2013. Mars orbit insertion 
+         occured on September 22, 2014, after a ten-month ballistic cruise phase. Following a 5-week 
+         transition phase, the spacecraft entered Mars orbit at a 75 degree inclination, with a 4.5 
+         hour period and periapsis altitude of 140-170 km (density corridor of 0.05-0.15 kg/km3). Over 
+         a one-Earth-year period, periapsis precessed over a wide range of latitude and local time, 
+         while MAVEN obtained detailed measurements of the upper atmosphere, ionosphere, planetary 
+         corona, solar wind, interplanetary/Mars magnetic fields, solar EUV and solar energetic 
+         particles, thus defining the interactions between the Sun and Mars. MAVEN explored down to 
+         the homopause during a series of five 5-day “deep dip” campaigns for which periapsis was 
+         lowered to an atmospheric density of 2 kg/km3 (~125 km altitude) in order to sample the 
+         transition from the collisional lower atmosphere to the collisionless upper atmosphere. 
+         These five campaigns were interspersed though the mission to sample the subsolar region, the 
+         dawn and dusk terminators, the anti-solar region, and the north pole.
+      </description>
+   </Investigation>
+</Product_Context>

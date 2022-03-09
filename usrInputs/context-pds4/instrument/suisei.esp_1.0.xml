@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:suisei.esp</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SOLAR-WIND EXPERIMENT for SUISEI</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:esp.suisei</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.suisei</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reinhard, R and B. Battrick (eds), &apos;Space Missions to Halley&apos;s Comet&apos;, European
+                   Space Agency ESA SP-1066, ESA Pub Div, Moordwijk, Netherlands, 1986.
+            </reference_text>
+            <description>reference.ESA-SP1066</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   &apos;Encounters with Comet Halley, The first results&apos;, Nature, Volume 321, No.
+                   6067, 15 May 1986.
+            </reference_text>
+            <description>reference.NATURE321</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>SOLAR-WIND EXPERIMENT</name>
+        <type>Particle Detector</type> <!--RChen/EN was Plasma Experiment. No obvious choice. TBD in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    Instrument Overview
+    ===================
+      The objective of this experiment is to measure the
+      three-dimensional velocity distributions of the
+      solar-wind ions and electrons in the energy range
+      from 30 eV up to 16 keV within +/- 30deg of the
+      ecliptic plane.  During the cometary encounter, the
+      interaction of the solar wind with the cometary
+      ionosphere will be investigated, paying particular
+      attention to the mass loading of the solar wind by
+      cometary ions, to the existence, location and
+      strength of the upstream shock transition and of
+      (possibly) backscattered particles from the shock
+      and other,unexpected, plasma populations.  Data
+      will be collected on such solar-wind phenomena as
+      the halo and core distributions of electrons,
+      variations in the flow velocity, and the He++/He+
+      ratio in relation to solar rotation and longitude.
+ 
+ 
+      The instrument consists of one sensor for electrons
+      and one for positive ions.  As shown in Figure 3,
+      each sensor consists of a fan-shaped collimator, a
+      270deg spherical electrostatic analyzer, and a
+      Micro-Channel Plate (MCP) detector with five
+      discrete anodes.  The collimator&apos;s field of view is
+      5deg in azimuth and 60deg in polar angle
+      respectively, the latter being centered
+      perpendicular to the spacecraft spin axis and thus
+      in the ecliptic plane.  The 270deg spherical
+      analyzer has a better-defined response in
+      energy-angle space than a quadrispherical analyzer.
+ 
+ 
+      After leaving the analyzer, particles are
+      post-accelerated by a potential of 250 V for
+      electron and 2500 - 3500 V for ion analysis.  A
+      Z-type three-stacked MCP detector is used to obtain
+      a saturated pulse-height distribution over a wide
+      dynamic range of counting rates.  The anodes of
+      each MCP are split into five sections in order to
+      provide a five-point angular distribution with a
+      12deg resolution in the polar direction.  The
+      output pulses from each MCP anode are amplified,
+      shaped and accumulated in 19-bit counters.  The
+      contents of the counter are compressed into 8 bits
+      and stored temporarily in the PAM buffer memory.
+      The instrument&apos;s angular distribution in the
+      azimuthal direction, obtained by the spacecraft
+      spin, is 5.625deg within +/- 22.5deg of the solar
+      direction and 22.5deg in the remaining spin phase.
+ 
+ 
+      The instrument has four modes of energy scanning
+      (Table below).  In each mode the energy is scanned
+      in steps as E(n)=30 exp (0.0066n), where E(n) is
+      the energy of the n-th step and n=n(1), . . . .
+      .,n(2).  Details of the energy scanning, which is
+      synchronized to the spin phase, are shown for the
+      E1-mode in Figure 5.  During each spacecraft spin
+      four energy steps are scanned periodically in every
+      22.5deg interval, i.e.  the step is changed every
+      1.40625deg around the solar direction and 5.625deg
+      over the remaining azimuthal directions.
+      Consequently, it takes 24 spacecraft spins in the
+      E1-mode to cover the complete energy range in 96
+      steps.
+ 
+      At high bit rate (2048 bit/s), three-dimensional
+      velocity distributions will be obtained for both
+      electrons and ions.  These data, produced during
+      one spin, will be transmitted in 10 PCM frames (5
+      s) during the next spin interval.  At low bit rate
+      (64 bit/s), two-dimensional distributions will be
+      obtained for electrons and ions by summing the
+      counts from each anode.  The energy scanning will
+      be carried out over 16 spin periods once every 512
+      s, required to transmit these data.
+ 
+      The ESP instrument will be operated during the
+      Halley-encounter phase as well as during the cruise
+      and post-encounter phases, but only while Planet-A
+      is in its high-spin-rate mode (nominally 6.3 rpm).
+ 
+-----------------------------------------------------------------------
+Table 2. Energy scanning modes of Planet-A Solar-Wind Plasma Experiment
+ 
+                                                            Time for one
+                             Total no.                      complete
+Mode  n(1)    n(2)  delta n  of steps  Energy range (eV)    sequence* (s)
+-----------------------------------------------------------------------
+E1       0      95     1       96         30 ~ 15800         228.6
+ 
+E2       O      63     1       64         30 ~  1920         152.4
+ 
+E3      32      95     1       64        250 ~ 15800         152.4
+ 
+E4       1      95     2       48         34 ~ 15800         114.3
+-----------------------------------------------------------------------
+n(1)  =  lowest step number   delta n  =  step interval
+n(2)  =  highest step number      *  =  times refer to high bit rate;
+                                        always 512 s at low bit rate
+ 
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

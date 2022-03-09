@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.cart.map_projection.cart.map_projection_name_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>map_projection_name</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>map_projection_name</name>
+        <version_id>1.10</version_id>
+        <class_name>Map_Projection</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.cart.map_projection.cart.map_projection_name_1a00</local_identifier>
+        <steward_id>cart</steward_id>
+        <type>PDS4</type>
+        <namespace_id>cart</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The map_projection_name attribute provides the name of the map projection.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <Terminological_Entry>
+            <name>map_projection_name</name>
+            <definition>The map_projection_name attribute provides the name of the map projection.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <specified_unit_id>none</specified_unit_id>
+            <DD_Permissible_Value_Full>
+                <value>Albers Conical Equal Area</value>
+                <value_meaning>The cartographic product is presented in Albers Conical Equal Area projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Azimuthal Equidistant</value>
+                <value_meaning>The cartographic product is presented in Azimuthal Equidistant projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Equidistant Conic</value>
+                <value_meaning>The cartographic product is presented in Equidistant Conic projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Equirectangular</value>
+                <value_meaning>he cartographic product is presented in Equirectangular projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>General Vertical Near-sided Projection</value>
+                <value_meaning>The cartographic product is presented in General Vertical Near-sided Projection projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Gnomonic</value>
+                <value_meaning>The cartographic product is presented in Gnomonic projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Lambert Azimuthal Equal Area</value>
+                <value_meaning>The cartographic product is presented in Lambert Azimuthal Equal Area projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Lambert Conformal Conic</value>
+                <value_meaning>The cartographic product is presented in Lambert Conformal Conic projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Mercator</value>
+                <value_meaning>The cartographic product is presented in Mercator projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Miller Cylindrical</value>
+                <value_meaning>The cartographic product is presented in Miller Cylindrical projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Oblique Mercator</value>
+                <value_meaning>The cartographic product is presented in Oblique Mercator projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Orthographic</value>
+                <value_meaning>The cartographic product is presented in Orthographic projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Polar Stereographic</value>
+                <value_meaning>The cartographic product is presented in Polar Stereographic projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Polyconic</value>
+                <value_meaning>The cartographic product is presented in Polyconic projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Robinson</value>
+                <value_meaning>The cartographic product is presented in Robinson projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Sinusoidal</value>
+                <value_meaning>The cartographic product is presented in Sinusoidal projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Space Oblique Mercator</value>
+                <value_meaning>The cartographic product is presented in Space Oblique Mercator projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Stereographic</value>
+                <value_meaning>The cartographic product is presented in Stereographic projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Transverse Mercator</value>
+                <value_meaning>The cartographic product is presented in Transverse Mercator projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>van der Grinten</value>
+                <value_meaning>The cartographic product is presented in van der Grinten projection.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

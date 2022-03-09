@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:other_investigation.wt_threshold</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Planetary Boundary Layer Wind Tunnel Particle Threshold</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-05-16</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                Wind tunnel data and documentation for particle threshold for planetary boundary layer analog studies. Initial creation in 
+                conjunction with the Devon Burr PDART 2014 project regarding restoration and archiving of the Planetary Aeolian Laboratory 
+                historical data for Mars-, Venus-, Titan-, and Earth-analog environments. 
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <External_Reference>
+            <doi>j.aeolia.2015.07.008</doi>
+            <reference_text>
+                The Titan Wind Tunnel: A new tool for investigating extraterrestrial aeolian environments, Aeolian Research, 18
+                205-214, 2015.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>wt_threshold</name>
+        <type>Other Investigation</type>
+        <start_date>2018-05-16</start_date>
+        <stop_date nilReason="unknown" xsi:nil="true"></stop_date>
+        <description>
+        Initially started as part of the PDART 2014 efforts of Devon Burr, this investigation is designed to acculumate 
+        planetary boundary layer wind tunnel data for planetary analogs of Mars, Venus, Titan, and Earth (and potentially 
+        others) for the purpose of investigating particle entrainment threshold wind speed data. Particle entrainment threshold 
+        denotes the wind speed at which a particle of a given size and density will begin to move in the airflow. Historically 
+        Ronald Greeley and James D. Iversen setup a series of wind tunnels to run in various planetary analog environments to 
+        investigate basic parameters for planetary aeolian processes spanning 1970s-2010s. This work is carried on by numerous
+        former students and colleagues expanding what is known about sand and dust movement by wind processes on multiple planetary
+        bodies.
+        </description>
+    </Investigation>
+</Product_Context>

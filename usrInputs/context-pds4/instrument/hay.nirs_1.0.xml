@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:nirs.hay</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>NEAR-INFRARED SPECTROMETER for HAY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.hay::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abe, S., T. Mukai, N. Hirata, O.S. Barnouin-Jha, A.F. Cheng, and 11 others,
+                   Near-infrared spectral results of asteroid Itokawa from the Hayabusa
+                   spacecraft, Science 312, 1334-1338, 2006.
+            </reference_text>
+            <description>reference.ABEETAL2006</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abe, S., T. Mukai, N. Hirata, O.S. Barnouin-Jha, A.F. Cheng, H. Demura, R.W.
+                   Gaskell, T. Hashimoto, K. Hiraoka, T. Honda, T. Kubota, M. Matsuoka, T. Mizuno,
+                   R. Nakamura, D.J. Scheeres, and M. Yoshikawa, Mass and Local Topography
+                   Measurements of Itokawa by Hayabusa, Science, 312, 1344-1347, 2006.
+            </reference_text>
+            <description>reference.ABEETAL2006B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Fujiwara, A., T. Mukai, J. Kawaguchi, and K.T. Uesugi, Sample Return Mission to
+                   NEA : MUSES-C. Advances in Space Research 25, 231-238, 2000.
+            </reference_text>
+            <description>reference.FUJIWARAETAL2000</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kitazato, K., B.E. Clark, M. Abe, S. Abe, Y. Takagi, T. Hiroi, O.S.
+                   Barnouin-Jha, P.A. Abell, S.M. Lederer, F. Vilas, Near-infrared
+                   spectrophotometry of Asteroid 25143 ltokawa from NIRS on the Hayabusa
+                   spacecraft, Icarus 194, 137-145, 2008.
+            </reference_text>
+            <description>reference.KITAZATOETAL2008</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>NEAR-INFRARED SPECTROMETER</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  The following information is taken from Kitazato et al. (2008) and Abe
+  et al. (2010) (Unpublished).
+ 
+  Instrument Overview
+  ===================
+ 
+  The Hayabusa Near-Infrared Spectrometer (NIRS) is composed of a grating
+  infrared spectrometer (N1RS-S), a spectrometer electronics (NIRS-E) and a
+  data processing unit to control NIRS, which is also used to operate the
+  Hayabusa XRS. The NIRS-S is mounted on -Y panel inside surface of the
+  spacecraft chassis in such a way that the viewing is fixed in almost the
+  spacecraft Z-axis, direction in which opposite the solar arrays and
+  high-gain antenna (see Fujiwara et al., 2000).
+ 
+  The NIRS optical design consists of an entrance aperture stop, a field
+  stopslit, two mirrors, a diffraction grating, a camera lens assembly, a
+  detector, and two calibration targets.  The assembled spectrometer is
+  covered with carbon-fiber reinforced plastic box case (300x150x100mm in
+  size).  After passing through the slit, incident light is dispersed by a
+  grism transmission diffraction grating, combined with a cross disperser
+  and re-imaged by camera optics. The first-order light falls on a
+  64-element indium-gallium-arsenide (1nGaAs) linear detector array that
+  covers the range of 750-2250 nm in increments of 24 nm. The cross
+  disperser prevents light other than first-order from reaching the detector.
+  NIRS carries the two types of onboard calibration targets, an incandescent
+  halogen lamp and a light-emitting-diode (LED), for periodic monitoring of
+  detector stability. These targets are mounted on the aperture plate. The
+  design was developed in accordance with the requirements of downsizing and
+  weight saving.
+ 
+  Table 1 lists key specifications and characteristics of the instrument.
+  Note that the calibration LED is fixed outside of the aperture but the
+  lamp is fixed on the inner edge of the aperture so that the effective
+  aperture size drops off by 4 percent. The slit size was determined to
+  provide an angular field-of-view (FOV) of 0.1 x 0.1 degrees, which
+  corresponds to a spatial resolution of 17 x 17 meters at a distance of
+  10 km.  A moveable shutter can be used to block the slit completely for
+  dark current measurements. The signal in a dark spectrum represents the
+  background electronic and other noise inherent in the instrument.  A
+  thermoelectric Peltier device actively cools the InGaAs detector arrays
+  in order to achieve a sufficient signal-to-noise ratio (SNR). The detector
+  has a built-in complementary metal oxide semiconductor (CMOS) image sensor,
+  which is used to multiplex the outputs to a single analog to digital (A/D)
+  converter.
+ 
+  Table 1:  NIRS Specifications
+  -----------------------------------------------------
+  Characteristic                 Value
+  -----------------------------------------------------
+  Spectral range                 850 - 2100 nm
+  Spectral resolution            24 nm/channel
+  Detector element size          30 x 100 microns
+  Number of detector elements    64
+  Grating ruling                 75 grooves/mm
+  Slit size                      70 x 70 microns
+  Field of view                  0.1 x 0.1 degrees
+  Aperture                       27.2 mm
+  Imaging interval               65.536 ms
+  Integration time               0.256 - 57.344 ms
+  Shutter driving                7.63 Hz (131.072 ms)
+  Size (NIRS-S)                  336 x 165 x 100 mm
+  Mass (NIRS-S)                  1.53 kg
+  Power (NIRS-S)                 9.50 W
+  Power (NIRS-E)                 0.45 W
+  ------------------------------------------------------
+ 
+ 
+  Operating Modes and Data Acquisition
+  ====================================
+ 
+  NIRS operation modes are implemented in the onboard software using
+  instrument parameters that can be changed by ground operation commands.
+  There are a total of five modes available to NIRS; NORMAL, RAW, HIST,
+  LIDAR, and FLASH.
+ 
+  In the NORMAL mode, each observation consists of certain sequential sets
+  of alternate light and dark frames.  That is accomplished by the chopping
+  motion of the shutter, allowing the dark current level of the detector to
+  be subtracted on a channel-by-channel basis every time. The CMOS image
+  sensor serves to read differences of outputs on each detector element
+  between light and dark frames. The NIRS frame length is 65.536 ms, which
+  corresponds to half of the shutter driving cycle, and exposure time can be
+  changed at 256-stage from 0.256 ms to 57.344 ms.  In addition, the number
+  of stacked light-dark frames can be also changed from 1 to 2 to the 255th
+  power as the n-th power of two. Most of NIRS data were taken in this mode.
+ 
+  The basic unit of spectral data for any given NIRS channel is digital
+  number (DN) showing the integrated photon counts during a setting
+  exposure-time interval. The raw data are originally sampled with 14 bits
+  per channel (0-16383 DNs). A DN has a value of approximately 0.565 mV
+  output from the detector pre-amplifiers when at gain 1.08x.  In the
+  NORMAL mode, the data averaging of light frames subtracted dark spectrum
+  are operated with onboard software, and only the mean, standard deviation,
+  maximum and minimum of the DNs at individual channels were downloaded
+  in instrument telemetry. The RAW mode prohibits the data averaging on
+  board the spacecraft. The HIST mode provides a sequential output of the
+  housekeeping (HK) data for NIRS. However, the RAW and HIST modes have not
+  been used in reality until the completion of the asteroid observation.
+ 
+  The LIDAR and FLASH modes were supposed to be used in the descent and
+  touchdown phase during the Hayabusa rendezvous with ltokawa. In the LIDAR
+  mode, NIRS carries out the frame difference readout in sync with the
+  periodic laser pulse of LIDAR (a laser ranging instrument on Hayabusa) so
+  as to observe the reflected laser light of the LIDAR from the asteroid
+  surface. The shutter stays open during this observation mode. On the
+  other hand, the FLASH mode was designed to remove the frame contaminated
+  by flashlights to irradiate target markers for autonomous navigation of
+  sampling.  This mode is identical to the NORMAL mode, excluding the
+  removal of the synchronized frame with flashlights.
+ 
+ 
+  Pre-launch Calibration and Characterization
+  ===========================================
+ 
+  The NIRS instrument was tested and calibrated extensively at the
+  piece-part and instrument levels to verify its performance and to
+  define its operational characteristics to levels required to meet the
+  science objectives.  The tests and calibrations were carried out at
+  ambient and vacuum chamber conditions.  Also the instrument underwent
+  extensive vibrational and thermal vacuum testing.
+ 
+  The ground testing and calibrations of NIRS were conducted primarily at
+  the Institute of Space and Astronautical Science (ISAS), Japan. The
+  tests at the piece-part level included measurements of detector linearity,
+  responsivity as functions of wavelength and temperature, dark current
+  characteristics and spectral transmission properties of the grating.
+ 
+  Instrument-level calibrations of NIRS included measurements of the
+  responsivity as a function of wavelength and FOV of each detector element
+  (to verify detector linearity and alignment and to yield spectral
+  resolution, spatial resolution, and flux calibration data),
+  characterization of dark current levelsfor each detector element as a
+  function of temperature, characterization of the level of spectral
+  crosstalk on detector channels, and electronic performance
+  characteristics of the detector arrays.  Finally, measurements of the
+  calibration targets and some of mineral and rock samples were made with
+  the assembled NIRS instrument.  The NIRS calibrations show that the
+  detectors are linear and well aligned and that the instrument operates
+  at very close to its design parameters for spatial and spectral
+  resolution.
+ 
+  Spectral Calibration
+  --------------------
+ 
+  Spectral calibration was conducted in order to establish the wavelengths
+  sensed by a detector for each of the 64 possible grating positions.  That
+  was performed by illuminating the instrument aperture with the
+  monochromator, which is used in conjunction with an incandescent source
+  and an integrating sphere.  The signals from the detector arrays were
+  recorded with the monochromator wavelength scanned in 100 nm increments
+  over the first-order wavelength range. The spectral calibration was
+  performed under the ambient temperature of 2 degrees C.
+  The central wavelength in nm of each of the detector arrays and the
+  channel-to-wavelength relationship is expressed by
+ 
+          lambda = -23.56n + 2271.44
+ 
+  where n is the channel nuniber between 1 to 64. The accuracy of this
+  equation for linear fitting is approximately 2 nm.
+ 
+  Although the full range of the N1RS detector array is 751.8 to
+  2259.7 nm, it is further limited, however, to 850 to 2100 nm
+  (channels 7-60). The lower six channels (channels 1-6, at 2248-2130 nm)
+  are near or in the detector cutoff, making the effective upper bound
+  for good signal-to-noise ratio (SNR) around 2100 nm for the signal level
+  expected at Itokawa. The upper four channels of the InGaAs detector
+  (channels 61-64, at 834-763 nm) register very low signal due to fall-off
+  in detector responsivity and grism efficiency.
+ 
+  Radiometric Calibration
+  -----------------------
+ 
+  Tilt radiometric response of the NIRS was determined in a number of
+  tests by recording the detector response while viewing a laboratory
+  calibrated field with a halogen lamp and a Spectralon reflectance
+  target. The measurements used a 1 kW filament lamp with a quartz envelope
+  containing halogen gas. The spectral radiance of this source has been
+  calibrated by the Oriel Instruments and this calibration is directly
+  traceable to the National Institute of Standards and Technology (NIST).
+  The lamp was powered by regulated direct current at the prescribed
+  amperage, measured using NIST-traceable instruments.  In order to produce
+  an extended source of known radiance, a Labsphere Spectralon standard,
+  calibrated with traceability to NIST, was used.
+ 
+  The response of the instrument was found to be linear and uncertainties
+  of the NIRS absolute radiometric calibration of were estimated to be
+  approximately 10 percent in the effective wavelength range. Though the
+  calibration was performed under the ambient condition, we applied the
+  correction of atmospheric water vapor using the MODTRAN software. The NIRS
+  radiometric calibrations showed that for radiances expected at Itokawa, a
+  signal-to-noise ratio (SNR) in excess of 100 is easily attainable in
+  57 InGaAs channels (from 2 to 58) with nominal detector temperature of
+  -15 degrees C. Since the detector temperature was maintained in an almost
+  constant value in flight, except for caltarget observations, no temperature
+  correction is required for the radiometric calibration.
+ 
+  Spatial Calibration
+  -------------------
+ 
+  Alignment of the boresights of the Hayabusa scientific instruments relative
+  to each other and to the nominal common boresight, the spacecraft -Z axis
+  (the Z axis is perpendicular to the plane of Hayabusa&apos;s solar panels, and
+  +Z direction on the spacecraft points toward the Sun with the spacecraft
+  in its nominal orientation), were measured on ground, after spacecraft
+  integration, using the reference optical cubes on each instrument For NIRS,
+  the accurate boresight vector was found to be inclined toward the spacecraft
+  -Z axis with the Euler angles (-0.1140, -0.0012, 0.0 degrees) and the
+  co-alignment with LIDAR was verified. The FOV has rectangular shape with its
+  sides along the X and Y axes of the instrument&apos;s frame and the angular size
+  of 0.1 degrees.
+ 
+  As these measurements were done under conditions of 1 gravity and room
+  temperature, conditions experienced by Hayabusa in space will distort the
+  coalipment between instruments slightly.  Coalignment between the
+  instruments was re-measured in flight and during the asteroid rendezvous.
+ 
+  In-flight Calibration
+  =====================
+ 
+  After launch, NIRS performed a comprehensive series of in-flight tests to
+  validate and supplement ground calibration data, and to characterize
+  instrument stability, pointing, and co-alignment with other instruments
+  under flight conditions. The in-flight observations of astronomical targets
+  took place during the cruise phase before the arriving at Itokawa, with NIRS
+  obtaining spatially resolved spectra of the Earth and Moon, and
+  disk-integrated spectra of the Mars, Jupiter, and Saturn, including three
+  bright stars.
+ 
+  Long-term Stability
+  -------------------
+ 
+  The periodic onboard calibration-target observations in space assessed the
+  long-term stability of radiometric and spectral characteristics.  The
+  onboard calibrated LED generates a narrow spectrum centered at the specific
+  wavelength of  1.8 microns. Under a constant temperature condition, its peak
+  wavelength does not shift beyond the NIRS spectral resolution.
+ 
+  Without short-term general increases as in Earth swingby and the arrival,
+  the calibration measurements show the gradual changes in NIRS channel
+  responses up to +/- 3 percent. The reason for this behavior is probably
+  related to spectral alignment of the detector. Using the data of detector
+  wavelength drift, we found that displacement of detector channels can
+  generate such changes in the detector responses. The general high
+  responsivity seen in Earth swingby may be occurred by the lamp
+  brightening due to the NIRS continuous operation. The rest of the overall
+  time series corresponds to a gradual decay of the instrument primarily due
+  to solar and cosmic ray radiation damage to the detectors and electronics.
+  In addition, a general loss of 3-4 percent of NIRS response in the detector
+  resulted from the launch.
+ 
+  The slight changes in instrument sensitivity over two years of in-flight
+  operations were found, but the radiometric response had been highly stable
+  on time scale of a few months. The linearities of NIRS detector response
+  also were verified from the various exposure-time frames on the
+  calibration-target observation. Thus, we found that differences in
+  instrument sensitivity of NIRS for the rendezvous phase fall within
+  ~1 percent for overall effective detector channels.
+ 
+  Validation of Calibration Coefficients
+  --------------------------------------
+ 
+  Validation of the absolute calibration was performed through observations
+  of the astronomical targets during the cruise.  The spectra show an overall
+  close match between the NIRS data and ground-based observations.
+ 
+  Stray light from outside of the FOV was not a major issue with NIRS since it
+  was not identified in the pre-launch test with a blackbody cavity. However,
+  significant stray reflections were found when NIRS had observed across the
+  limb of Moon. This may be due to the scattered light by the calibration lamp
+  mounted on the aperture stop. The effect was dominant in the shorter
+  wavelengths and required correction for proper calibration of the
+  instrument. NIRS calibration did not incorporate a scattered light
+  correction from pre-launch tests. The magnitude of out-of-field signal was
+  quantified by acquiring swaths of spectra across the limb of Moon and
+  Itokawa, during different orbits as the source of stray light changes in its
+  size and illumination.  These results will also be augmented by the results
+  of the more controlled investigations of stray and scattered light conducted
+  during pre-flight calibrations.
+ 
+  The magnitude of the scattered light is less than ~7% as shown in Figure 8
+  of Abe et al. (2010), but its correction for the Itokawa spectral data has
+  not been performed yet.  At wavelengths &gt; 1 micron, the effect of the
+  scattered light is small compared with reflected light from Itokawa&apos;s
+  surface.
+ 
+  As for NIRS alignment and pointing, the co-alignment of NIRS with the
+  AM1CA and with respect to the spacecraft was determined from the
+  simultaneous observations of bright stars as point sources.  The other
+  observation was attained during the Itokawa rendezvous phase. The NIRS
+  had detected the reflected laser light of the LIDAR from the asteroid
+  surface during the spacecraft descent (Abe et al. 2006). The LIDAR generates
+  a 1064-nm yttrium-aluminus-garnet-Nd (YAG-Nd) laser beam to measure distance
+  by determining the time of flight for laser light to travel from the
+  spacecraft to asteroid and return. The detected LIDAR spectra have shown
+  the peak wavelength same as that obtained in prelaunch.  Therefore, we found
+  that there is no alteration of the NIRS spectral alignment from the
+  prelaunch to final stage of the rendezvous phase. Moreover, L1DAR has a beam
+  width of 0.04 degrees x 0.097 degrees, and such detection means that
+  LIDAR boresight has been coaligned with NIRS as expected.
+ 
+ 
+  References
+  ==========
+ 
+  Abe, M., Y. Takagi, K. Kitazato, S. Abe, T. Hiroi, F. Vilas, B.E. Clark,
+  P.A. Abell, S.M. Lederer, K.S. Jarvis, T. Nimura, Y. Ueda, A. Fujiwara,
+  Near-Infrared Spectral Results of Asteroid Itokawa from the Hayabusa
+  Spacecraft, Science 312, 1334-1338, 2006.
+ 
+  Abe, S., T. Mukai, N. Hirata, O.S. Barnouin-Jha, A.F. Cheng, H. Demura,
+  R.W. Gaskell, T. Hashimoto, K. Hiraoka, T. Honda, T. Kubota, M. Matsuoka,
+  T. Mizuno, R. Nakamura, D.J. Scheeres, M. Yoshikawa, Mass and Local
+  Topography Measurements of Itokawa by Hayabusa. Science 312, 1344-1349,
+  2006.
+ 
+  Abe, M., Y. Takagi, S. Abe, and K. Kitazato, Instrument calibration of the
+  Hayabusa near-infrared spectrometer, Unpublished, 2010.  (A copy of this
+  paper may be found in the document directory of the NIRS calibrated data
+  set, HAY-A-NIRS-3-NIRSCAL-V1.0.)
+ 
+  Fujiwara, A., T. Mukai, J. Kawaguchi, and K.T. Uesugi, Sample Return Mission
+  to NEA : MUSES-C. Advances in Space Research 25, 231-238, 2000.
+ 
+  Kitazato, K., B.E. Clark, M. Abe, S. Abe, Y. Takagi, T. Hiroi,
+  O.S. Barnouin-Jha, P.A. Abell, S.M. Lederer, F. Vilas, Near-infrared
+  spectrophotometry of Asteroid 25143 ltokawa from NIRS on the Hayabusa
+  spacecraft, Icarus 194, 137-145, 2008.
+
+        </description>
+    </Instrument>
+</Product_Context>

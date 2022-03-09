@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd
+                                     http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument:dcam3.dcam3-d</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DCAM3-D (DCAM3 Digital) onboard DCAM3</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>dcam3-d</alternate_id>
+                <alternate_title>DCAM3-D</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-18</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument_host:spacecraft.dcam3</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-017-0347-7</doi>
+            <reference_text>
+                K. Ogawa, K. Shirai, H. Sawada, M. Arakawa, R. Honda, K. Wada, K. Ishibashi, Y. Iijima, N. Sakatani, S. Nakazawa, H. Hayakawa,
+                System Configuration and Operation Plan of Hayabusa2 DCAM3-D Camera System for Scientific Observation During SCI Impact Experiment,
+                Space Sci. Rev., 208, 125-142, 2017.
+            </reference_text>
+            <description>The DCAM3-D instrument paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-016-0298-4</doi>
+            <reference_text>
+                K. Ishibashi, K. Shirai, K. Ogawa, K. Wada, R. Honda, M. Arakawa, N. Sakatani, Y. Ikeda,
+                Performance of Hayabusa2 DCAM3-D Camera for Short-Range Imaging of SCI and Ejecta Curtain Generated from the Artificial Impact Crater Formed on Asteroid 162137 Ryugu (1999 JU3),
+                Space Sci. Rev., 208, 213-238, 2017.
+            </reference_text>
+            <description>The DCAM3-D instrument paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>DCAM3-D (DCAM3 Digital)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Camera</ctli:type>
+                <ctli:type>Imager</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <naif_instrument_id>-37520</naif_instrument_id>
+        <description>DCAM3-D is digital imaging system onboard DCAM3. The purpose of DCAM3-D is a scientific observation of the event with wide-angle and in high-resolution.</description>
+    </Instrument>
+</Product_Context>

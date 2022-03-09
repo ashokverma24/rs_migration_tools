@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:swp.iue</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SHORT-WAVELENGTH PRIME for IUE</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.iue::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Boggess, A., Carr, F.A., Evans,D.C., Fischel, D., Freeman, H.R., Fuechsel,
+                   C.F., Klinglesmith, D.A., Kruegar, V.L., Longanecker,G.W., Moore, J.V.,
+                   Pyle, E.J., Rebar, F., Sizemore, K.O.,Sparks,W., Underhill,A.B.,
+                   Vitagliano, H.D., West ,D.K., Macchetto, F., Fitton, B., Barker, P.J.,
+                   Dunford, E., Gondhaleker, P.M., Hall, J.E., Harrison, V.A.W., Oliver,
+                   M.B., Sanford, M.C.W., Vaughan, P.A., Ward, A.K., Anderson, B.E.,
+                   Boksenberg, A., Coleman, C.I., Snijders, M.A.J., Wilson, R., The IUE
+                   Spacecraft and Instrumentation, Nature, 275, 372, 1978.
+            </reference_text>
+            <description>reference.BOGGESSETAL1978B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Garhart, M. P., M. A. Smith, B. E. Turnrose, K. L. Levay, R. W. Thompson,
+                   International Ultraviolet Explorer New Spectral Image Processing System
+                   Information Manual: Low-Dispersion Data, Version 2.0, CSC/SD-93/6062,
+                   Computer Sciences Corporation, Greenbelt, MD, 1997.
+            </reference_text>
+            <description>reference.GARHARTETAL1997</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>SHORT-WAVELENGTH PRIME</name>
+        <type>Spectrograph</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+NOTE: The INSTRUMENT descriptions for the SWP, LWR, and LWP spectrographs
+        are included in the following text.
+ 
+The IUE scientific instrument contains two spectrographs which
+function independently. Each spectrograph has a prime and a redundant
+camera. The Long-Wavelength Prime (LWP) and Short-Wavelength Prime (SWP)
+cameras are the standard detectors (the LWR (Long-Wavelength Redundant)
+was used before Oct, 1983). For descriptions see Boggess et al.(1978a,b)
+and Coleman et al. (1977).
+ 
+The Cameras
+ 
+During an exposure the image is integrated in the SEC Vidicon section
+of the camera. There is no exposure meter so the length of the exposure
+must be estimated. The duration of the exposure is controlled by the
+on-board computer (OBC). The exposure length is quantized in units of
+0.4096 seconds and can be modified in real-time. At the conclusion of
+the exposure the camera retains the image until a read is initiated. A
+read consists of a raster scan of 768 X 768 pixels. The video signal is
+digitized into one of 256 discrete levels (0 to 255 Data Numbers, or DN)
+by an eight-bit analog-to-digital converter. Since there is no on-board
+data recorder, the signal is concurrently transmitted to the ground
+station in real-time as the read scan is performed. At the highest
+available telemetry rate, 20 kilobits/sec, the transmission of an entire
+image and associated engineering data takes 5.24 minutes. The read is
+destructive, so if something happens to the quality of the received
+signal or to the ground data-handling system during the read, portions
+of the image can be permanently lost.
+ 
+After a  camera has been read, residual images are erased and a
+reproducible electronic pedestal of 15 to 40 DN is produced by
+exposing the camera to a tungsten flood lamp, reading the camera with
+a defocused beam, and then exposing and reading again. This sequence is
+called a PREP. Standard and overexposed preps are available. Technical
+details are given in the IUE Camera User&apos;s Guide (Coleman et al. 1977).
+ 
+The Spectrograph
+ 
+With the LWP and SWP cameras,  the spectrographs cover the spectral
+ranges given in the Table below. Gaps in wavelength coverage in high
+dispersion are caused by truncation of the lower orders by the edge
+of the camera faceplate.
+ 
+ 
+                     IUE Camera Wavelength Coverage
+ 
+Camera     (FULL) High Dispersion (PARTIAL)          Low Dispersion
+ 
+  LWP       1845-2980 A      2980-3230 A               1910-3300 A
+  LWR       1845-2980 A      2980-3230 A               1910-3300 A
+  SWP       1145-1930 A      1930-2198 A               1150-1975 A
+ 
+Both the long and short wavelength spectrographs have two entrance
+apertures: a small aperture (nominal 3 arcsec diameter circle) and
+a large aperture (nominal 10 arcsec by 20 arcsec slot). Although the
+various methods available for determining the fundamental dimensions
+do not always yield results which agree to within the limits set by
+the internal consistency of each (see Panek 1982), the Three Agency
+Coordination Meeting adopted recommended values for certain dimensions,
+which are presented in the following Table. These values do not reflect
+the true physical size of the apertures but rather the size as projected
+on the camera faceplate. As a result, each spectrograph has its own
+distinct measurement of the aperture sizes.
+ 
+ 
+       Officially Adopted Dimensions for the Apertures in Each
+            Spectrograph, Measured on LWP, SWP, and LWR Images
+ 
+           Dimension                 LWP          SWP         LWR
+ 
+Major Axis Trail(arcsec)        21.84+/-0.39  21.48+/-0.39  22.22+/-0.62
+Large-Aperture Length(arcsec)   22.51+/-0.40  21.65+/-0.39  23.24+/-0.64
+Minor Axis Trail(arcsec)        10.21+/-0.18   9.24+/-0.11   9.88+/-0.42
+Large-Aperture Width(arcsec)     9.91+/-0.17   9.07+/-0.11   9.58+/-0.41
+Large-Aperture Area(arcsec**2) 203.26+/-9.28 209.74+/-6.23 209.29+/-9.25
+Small-Aperture Area(arcsec**2)   6.32+/-0.86   6.58+/-0.86   6.31+/-0.75
+ 
+ 
+An accurate measurement of the trail length is needed, as such
+information is used to calculate the trailed exposure time. In addition,
+knowledge of the effective aperture area is needed to calibrate properly
+spectra of extended objects.
+ 
+ 
+The camera plate scales have been redetermined (Garhart 1996; LWP
+1.5644, LWR 1.5526, and SWP 1.5300 arcseconds per pixel) using the most
+recent measurements for the small-to-large aperture offsets in pixels
+(Table 2.2) and FES aperture center locations in arcseconds (Pitts
+1988). These latest incarnations replace the oft-quoted plate scale
+figure of 1.525 arcseconds per pixel (Bohlin et al. 1980), a value that
+had been used for all three cameras. The aperture separations in the
+directions along and perpendicular to the dispersion are given in Table
+2.2 for low dispersion. The corresponding values for the high-dispersion
+offsets are obtained by transposing the entries for the low-dispersion
+offsets along and perpendicular to the dispersion in Table 2.2. Refer to
+Figures 2.16 through 2.18 to determine the correct sign for the high-
+dispersion offsets (Garhart et al. 1997) .
+ 
+ 
+ 
+      Standard Offsets from the Small to the Large Spectrograph
+             Aperture as used by NEWSIPS (in pixels)
+ 
+Camera       Along      Perpendicular       Total Offset
+          Dispersion    to Dispersion
+ 
+  LWP        -2.3           26.2                 26.3
+  LWR        -2.3           26.4                 26.5
+  SWP         0.8           26.1                 26.1
+ 
+These values are defined in the geometrically corrected frame of
+reference where the spectrum has been aligned horizontally in the
+image. The total offset is defined as the square root of the sum of
+the squares of the individual terms. The offsets along the dispersion
+have been incorporated into the geometric correction step such that
+the wavelength scales for the small and large apertures are aligned.
+ 
+The geometry of the two entrance apertures in relation to the image
+scan lines and the high and low resolution dispersion directions are
+shown in Fig. 2.16-2.18 in the IUE NEWSIPS Manual (Garhart  et
+al. 1997). The figures are drawn in the geometrically corrected frame
+of reference with the origin at the upper left. Note particularly the
+fact that the displacement between the short wavelength large aperture
+(SWLA) and the short wavelength small aperture (SWSA) is very nearly
+along the echelle dispersion direction. Therefore, short wavelength
+high-dispersion images in which both apertures are exposed will result
+in nearly complete superposition of the large- and small-aperture
+spectra (with a wavelength offset). The displacement of the long
+wavelength large aperture (LWLA) and the long wavelength small aperture
+(LWSA) is less coincident with the echelle dispersion direction in
+those spectrographs, so that superposition of large- and small-aperture
+high-dispersion spectra is not as serious in the long wavelength
+spectrograph.
+ 
+For the purposes of judging the extent and separation of the apertures
+in the spectral domain, the scales given in the following Table may be
+used in conjunction with the quantities given in the above tables. Note
+that in high dispersion a given shift along the dispersion corresponds
+closely to a constant Doppler velocity shift, whereas in low dispersion
+a given shift corresponds to a constant wavelength shift.
+ 
+          Approximate Spectral Scales in Each Dispersion Mode
+ 
+    Camera          Low Dispersion     High Dispersion
+                          (A/px)             (km/s/px)
+    LWP                  2.66                 7.21
+    LWR                  2.66                 7.27
+    SWP                  1.68                 7.72
+ 
+Instrumental Resolution
+ 
+The instrumental resolution (both spectral and spatial) is determined
+by the camera resolution, the dispersion mode, the aperture used, the
+focussing conditions in the telescope, and the pointing stability of
+the spacecraft. While the dominant effect is the camera resolution,
+telescope focus and stability of spacecraft pointing also play a major
+role in defining the resolution. In addition, it is well known that the
+camera resolution is highly wavelength-dependent.
+ 
+According to the IUE Camera Users Guide (Coleman et al. 1977), the
+camera point spread function (PSF) consists of a narrow gaussian-like
+core having a full width at half maximum (FWHM) of 2 to 5 pixels and a
+weak long-range tail. The actual resolution in either the spatial or
+spectral direction can be defined as a function of the FWHM. The
+Rayleigh criterion of instrumental resolution specifies that two spectra
+(spatial direction) or two spectral features (spectral direction) can be
+resolved provided their separation is as follows (Weinstein and Perez
+1992):
+ 
+d &gt;- 0.849 x  FWHM
+ 
+where d is the distance separating the two features (or spectra). The
+gaussian fitting routine used in this analysis was GAUSSFITS, taken from
+the IUE Data Analysis Center software library. This procedure outputs
+the one-sigma width of the fitted gaussian profile which was then
+converted to FWHM using the statistical equality (Bevington 1969):
+ 
+FWHM = 2.3548 x sigma
+ 
+ 
+------------------------------------------------------------------------
+ 
+Resolution Along the Dispersion
+ 
+A study of the NEWSIPS spectral resolution was performed by measuring
+the FWHM of several features for the emission line sources V1016 Cyg,
+RR Tel, AG Dra, CI Cyg, and Z And. The analysis indicates a slight
+improvement in the NEWSIPS resolution (approximately 10 % or the
+SWP and 7 % or the LWR) over the previous results reported by
+Cassatella, Barbero, and Benvenuti (1985). Plots of the spectral
+resolution data are shown in Figure 2.19 of the NEWSIPS Manual
+(Garhart et al. 1997). The small-aperture data are slightly
+offset in wavelength from the large-aperture data for clarity.
+ 
+LWP
+ 
+- Large-aperture spectral resolution is best between 2700 and 2900 A
+with an average FWHM of 5.2 A and decreases to approximately 8.0 A on
+either side of this range. Small-aperture resolution is optimal
+between 2400 and 3000 A with an average FWHM of 5.5 A and decreases to
+8.1 A at the extreme wavelengths.
+ 
+ 
+LWR
+ 
+- Maximum resolution in the large aperture occurs longward of 2300 A,
+with an average FWHM of 5.3 A, while shortward of this point the FWHM
+decreases to 7.7 A. Small-aperture resolution is best from 2700-3200 A,
+with an average FWHM of 5.4 A, and decreases to 7.7 A at 3350 A and 7.5 A
+shortward of 2400 A.
+ 
+ 
+ 
+SWP
+ 
+- The best resolution occurs around 1200 A, with a FWHM of 4.6 A in the
+large aperture and 3.0 A in the small aperture, and gradually worsens
+towards longer wavelengths: 6.7 A at 1900 A in the large aperture and
+6.3 A in the small. On average, the small-aperture resolution is
+approximately 10% better than the large-aperture resolution.
+ 
+ 
+Resolution Perpendicular to the Dispersion
+ 
+The NEWSIPS spatial resolution has been determined by analyzing the
+spectra of several low-dispersion standard stars (viz., HD 60753,
+HD 93521, BD+33 2642, and BD+75 325). The FWHM of large- and small-
+aperture spectra were measured at several wavelengths and plotted
+(Figure 2.20 in the NEWSIPS Manual Garhart, et al. 1993). As
+is the case with the spectral resolution studies, the NEWSIPS values
+show, in general, an improvement. As is the case with the spectral
+resolution plots, the small-aperture data are slightly offset from the
+large-aperture data.
+ 
+LWP
+ 
+- The spatial resolution for the LWP is best near 3000 A where the FWHM
+for the large aperture is 2.4 pixels (3.6 arcsec), and decreases to
+values of around 3.0 pixels at the short and long wavelength ends of
+the spectrum. There is no significant difference between the large-
+and small-aperture spatial resolutions.
+ 
+LWR
+ 
+- The behavior of the LWR camera as a function of wavelength is
+similar to the LWP, with the smallest FWHM values for the large
+aperture of 2.6 pixels (3.9 arcsec) occurring near 3000 A, and
+increasing to 3.6 and 3.0 pixels at the wavelength extremes. The
+small aperture, unlike the other two cameras, shows a dramatic
+decrease in resolution of approximately 10%.
+ 
+ 
+ 
+SWP
+ 
+- The SWP camera shows the best spatial resolution near 1400 A with
+mean FWHM values for the large aperture of 2.7 pixels (4.1 arcsec),
+increasing slightly to 2.8 pixels at 1250 A, and 3.7 pixels at 1950 A.
+The SWP small-aperture resolution response is approximately the same
+as the large-aperture resolution.
+ 
+ 
+--------------------------------------------------------------------------
+ 
+* High-Dispersion Mode
+o Resolution Along the Dispersion
+o Resolution Perpendicular to the Dispersion
+ 
+--------------------------------------------------------------------------
+ 
+Resolution Along the Dispersion
+ 
+A study of the spectral resolution in the high-dispersion mode was
+performed utilizing several methods. The first measured emission lines
+from small-aperture wavelength calibration (WAVECAL) images obtained
+using the on-board hollow cathode platinum-neon (Pt-Ne) calibration
+lamp. The second measured several features from the emission line
+sources V1016 Cyg and RR Tel and interstellar absorption line features
+from the calibration standard BD+75 325. The third method measured
+absorption features from the calibration standard HD 149757 (Zeta Oph).
+The WAVECAL images are useful in determining the spectral resolution as
+they are not affected by the telescope focus nor are they subject to
+astrophysical broadening. The Zeta Oph spectra are characterized by
+very narrow interstellar absorption features so they are also useful
+for measuring spectral resolution. Therefore, the measurements taken
+from WAVECAL and Zeta Oph images represent the best possible spectral
+resolution obtainable.
+ 
+ 
+LWP
+ 
+- The WAVECAL and large-aperture Zeta Oph resolution data are
+displayed in Figures 2.21 and 2.24 in the NEWSIPS manual (Nichols-Bohlin
+et al 1997). The results, along with the associated one-sigma error bars
+and linear fits (dashed line), are plotted as a function of order number
+in both wavelength and pixel space. The dotted line in the pixel space
+plots is the average of the resolution data over all orders. No small-
+aperture high-dispersion data of Zeta Oph is available. In addition, the
+standard star, RR Tel, and V1016 Cyg data were too noisy to yield suitable
+results. The large-aperture Zeta Oph measurements are quite similar to the
+small-aperture WAVECAL analysis. The spectral resolution in wavelength
+space is approximately 0.18 A FWHM at order 75 and linearly decreases
+(roughly) to 0.11 A at order 117. The pixel space data for both WAVECALs
+and Zeta Oph show the same improvement in resolution between orders 95 and
+110.
+ 
+The IUE Systems Design Report (GSFC 1976) lists 15,000 ([lambda/Delta
+lambda]) as the high-dispersion resolution for the long-wavelength
+cameras. This yields 0.22 A for order 69, 0.17 A for order 90, and 0.13 A
+for order 123. These numbers are comparable to the NEWSIPS results of
+0.24 A, 0.15 A, and 0.12 A for these same orders. An analysis of IUESIPS
+spectral resolution was performed by Evans and Imhoff (1985) using FWHM
+measurements obtained from WAVECAL images. The results are as follows:
+0.22 A for order 75, 0.17 A for order 83, 0.13 A for order 96, and 0.13 A
+for order 116. These figures are very similar to the NEWSIPS results of
+0.20 A, 0.14 A, 0.15 A, and 0.13 A.
+ 
+LWR
+ 
+- The WAVECAL spectral resolution measurements are shown in Figure
+2.22 in the NEWSIPS manual (Nichols-Bohlin et al. 1997) along with the
+corresponding linear fit and average. The FWHM trends (wavelength space)
+below order 80 are quite similar to the LWP figures (i.e., a linear
+dependence of FWHM on order number). The camera resolution in wavelength
+space is nearly constant for orders 80 through 115, with a slight
+degradation in LWR resolution above order 115. This trend is easily
+visible in the the pixel space resolution plot and is evident from the
+deviation of the FWHM measurements from the mean (dotted line).
+ 
+Cassatella et al. (1981) and Cassatella and Martin (1982) report a nearly
+constant FWHM (wavelength space) as a function of order number for WAVECAL
+images processed through IUESIPS. The average FWHM from their analysis is
+approximately 0.18 A above order 81; a value which is higher than the
+corresponding NEWSIPS FWHM of 0.14 A. They report a FWHM of 0.22 A for
+order 72, which again is much higher than the NEWSIPS results of 0.19 A.
+Evans and Imhoff (1985) also measured spectral resolution using IUESIPS
+processed WAVECAL images. They present FWHM values of 0.19 A, 0.17 A, 0.16
+A, and 0.15 A for orders 75, 83, 96, and 116, respectively. The
+corresponding NEWSIPS values for these same orders are: 0.19 A, 0.14 A,
+0.15 A, and 0.14 A. Boggess et al. (1978) quote a constant FWHM of 0.19 A
+for WAVECAL images, regardless of order number. This contradicts all
+subsequent reports written on this subject as well as the NEWSIPS results
+shown here. Their analysis was performed early in the life of IUE; perhaps
+the camera characteristics had not yet stabilized at this period in time.
+ 
+SWP
+ 
+- The WAVECAL, Zeta Oph, and large- and small-aperture stellar source
+spectral resolution data are displayed in Figures 2.23, 2.25, 2.26, and
+2.27 in the NEWSIPS manual (Nichols-Bohlin et al. 1997). As for LWP and
+LWR, the plots include one-sigma error bars and linear (dashed line) and
+mean (dotted line) fits to the data. In Figures 2.26 and 2.27, the
+emission line measurements for orders 111 and above were excluded from
+the analysis when performing the linear fit to the stellar data because
+they were highly discrepant. The spectral resolution in wavelength space
+for the WAVECAL, Zeta Oph, and stellar source images shows no dependence
+on wavelength within an order and a roughly linear dependence on order
+number. Unlike the LWP, the SWP resolution from the Zeta Oph analysis
+(Figure 2.25) is much worse than the corresponding WAVECAL data
+(Figure 2.23). The stellar source results are somewhat inconclusive for
+orders 111 and above. The emission line widths are dramatically higher
+than the corresponding absorption line measurements. This trend was also
+seen in the analysis by Grady (1985). The IUE Systems Design Report (GSFC
+1976) quotes a figure of 10,000 ([lambda/Delta lambda]) for the spectral
+resolution in high-dispersion mode. This corresponds to a FWHM of
+approximately 0.2 A for order 66 and 0.1 A for order 125. This same trend
+is seen in the top plot (Figure 2.23) of the WAVECAL resolution analysis;
+the spectral resolution is essentially a constant value in pixel space
+(bottom plot). The stellar source resolution measurements in pixel space
+(bottom plot of Figures 2.26 and 2.27) show some degradation towards
+higher order numbers. In addition, the small-aperture data (Figure 2.27)
+indicates an 8% improvement in resolution over the large-aperture
+counterpart (Figure 2.26).
+ 
+The general trend of the wavelength-space resolution for the WAVECAL
+images is approximately the same for every IUESIPS study that has been
+reviewed (i.e., Boggess et al. 1978, Cassatella et al. 1981, Cassatella
+and Martin 1982, and Evans and Imhoff 1985). That is, the camera
+resolution in wavelength space varies roughly linearly with order number
+and improves towards shorter wavelengths (0.19 A for order 69 and 0.09
+for order 106). The results from analysis of WAVECAL images processed
+through NEWSIPS are almost identical to these figures. Penston (1979)
+reported SWP large-aperture FWHM values of 0.20 A for absorption lines and
+0.24 A for emission lines. These figures are comparable with the average
+NEWSIPS results of 0.21 A and 0.23 A respectively. However, Penston&apos;s
+(1979) measurements for the small-aperture resolution are no better than
+the large aperture. This result could be supported by the NEWSIPS analysis
+as the apparent improvement in small-aperture resolution is less than the
+one-sigma error of the FWHM average for any given order. Grady (1985)
+assessed the effects of the two-gyro control mode on high-dispersion data
+using large-aperture RR Tel spectra. The mean resolution (averaged over
+all orders) from the Grady analysis (0.22 A) agrees with the average
+NEWSIPS resolution result.
+ 
+ 
+ 
+Resolution Perpendicular to the Dispersion
+ 
+The spatial resolution has been determined by analyzing the spectra of
+high-dispersion standard stars. The FWHM of several pairs of large and
+small-aperture line-by-line images were measured at five sample positions
+(viz., 134, 258, 384, 507, and 615). For each sample position, a three
+pixel wide average cross-cut perpendicular to the dispersion was taken and
+the widths of the orders measured using the gaussian fitting routine. The
+results for each image were in good agreement, so we averaged the results
+to yield a set of spectral widths for each aperture as a function of order
+number and sample position. The differences in telescope focus between the
+images were kept small so as to minimize the effect of focus on the
+resolution measurements (Perez et al. 1990). The database of spectra used
+for each camera contains a combination of optimally exposed images for the
+central orders and overexposed (in the central orders only) images for the
+extreme orders. The spatial resolution data and the one-sigma error bars
+for each sample position are plotted as a function of order number. The
+small-aperture data are horizontally offset to the left of the
+large-aperture data by half an order for clarity. A seventh-order
+polynomial fit to the data is also provided.
+ 
+LWP
+ 
+- Spatial resolution measurements of the FWHM are plotted in Figures
+2.28-2.32 in the NEWSIPS manual (Nichols-Bohlin et al. 1997). The spatial
+resolution for sample position 384 is approximately 3.5 pixels FWHM at
+order 69 and decreases to 2.3 pixels at order 80 where it is roughly
+constant for the remaining orders. The spatial resolution degrades as one
+moves towards smaller sample positions and improves slightly (as compared
+with sample position 384) above order 90 for sample position 507. Small-
+aperture resolution shows an average improvement (over all orders and
+sample positions) of 4.6% over the large aperture. This difference is most
+apparent between orders 80 through 100 and at the smaller sample positions
+where it is as much as 8% for sample position 134. Unfortunately, no LWP
+high-dispersion spatial resolution studies could be found for IUESIPS data
+to compare against the NEWSIPS results.
+ 
+LWR
+ 
+- Figures 2.33-2.37 in the NEWSIPS manual (Nichols-Bohlin et al. 1997)
+show spatial resolution  of the FWHM plotted as a function of order
+number. The resolution trends for sample positions 134 through 384 are
+quite similar. The FWHM is approximately 3.0 pixels for order 69 and
+linearly decreases to 2.4 pixels at order 80 where it remains fairly
+constant for the remaining orders. For sample position 507, the FWHM is
+around 3.2 pixels for order 69 and linearly decreases to 2.6 pixels at
+order 80 where it then gradually decreases to 2.3 pixels at order 123.
+The behavior for sample position 615 demonstrates a rapid decrease in FWHM
+from 3.8 pixels at order 69 to 2.7 pixels at order 95 where it then
+gradually decreases to 2.3 pixels at order 120. The small-aperture
+resolution shows an improvement of approximately 4.7% over the large
+aperture.
+ 
+The IUESIPS FWHM measurements obtained by Cassatella et al. (1981) using
+WAVECAL images are somewhat inconclusive. Their data only includes 5
+orders (71, 73, 77, 81, and 90) and no mention was made of the sample
+positions at which these measurements were taken. Their numbers range
+from 3.5 pixels at order 71 to 2.7 pixels at order 90; values which are
+around 10% higher than the corresponding NEWSIPS FWHM measurements. The
+trends seen in the 2-D contour plots made by de Boer et al. (1983) are in
+good agreement with the NEWSIPS results. They show that for the central
+sample positions (i.e., 384) the FWHM starts out at 3.1 pixels at low
+order numbers and decreases to 2.8 pixels towards the center of the
+camera (e.g., order 90). The slight degradation in resolution seen in the
+central orders of Figure 2.35 is also apparent in the de Boer plots.
+ 
+SWP
+ 
+- Spatial resolution measurements of the FWHM are plotted in Figures
+2.38-2.42 in the NEWSIPS manual (Nichols-Bohlin et al. 1997). The
+resolution trends, by order number, are, in general, the same for every
+sample position. The FWHM is around 4 pixels at order 66 (long
+wavelengths) and decreases to approximately 2 pixels near order 100 (short
+wavelengths). Unlike the indications from previous IUESIPS studies (e.g.,
+Bianchi (1980), Schiffer (1980), and Cassatella et al. (1981)), this
+decrease is not linear with order number. A plateau of around 3.0 pixels
+FWHM occurs between orders 75 and 85. This trend is confirmed by the
+analysis of de Boer et al. (1983), which displayed the order widths using
+2-D contour plots. The FWHM remains fairly constant above order 100 for
+sample positions 258 and 384. At these sample positions, the higher orders
+(100 and above) are well away from the edge of the camera. The more
+extreme sample positions (i.e., 134 and 507) show an edge effect as the
+resolution dramatically worsens above order 100. The best spatial
+resolution occurs near sample position 384 and worsens slightly as one
+moves towards smaller sample positions (i.e. shorter wavelengths within an
+order). Differences in resolution between the large and small apertures
+are small. The small aperture shows an average improvement (over all
+orders) of 2.4% in resolution over the large aperture.
+ 
+As is the case with the low-dispersion resolution studies, the NEWSIPS
+values show an improvement over IUESIPS measurements. Schiffer (1980)
+quoted FWHM values of 3.5 pixels for order 75 and 2.4 pixels for order
+105. The NEWSIPS results for those orders are 3.3 pixels and 2.1 pixels,
+respectively. Analysis by de Boer et al. (1983) showed the best resolution
+of 2.4 pixels FWHM occurring near the center of the camera. The NEWSIPS
+results indicate a FWHM of 2.0 pixels in this same area (sample position
+384). Also, Bianchi (1980) expressed FWHM as a function of order number,
+regardless of camera, according to the following formula:
+ 
+FWHM = 7.23 - 0.04 X m where m is order number and the FWHM is
+ 
+in pixels. Thus, for order 71, this indicates a FWHM of 4.4 pixels, a
+figure that is almost 20% higher than the NEWSIPS average measurement for
+that order.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

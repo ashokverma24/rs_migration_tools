@@ -1,0 +1,704 @@
+                        <Group_Field_Binary>
+                              <name>Downlink Sequential Ranging Phase CHDO (Data Type 3)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>57</fields>
+                              <groups>0</groups>
+                              <description>Downlink Sequential Ranging Phase CHDO (Data Type 3)</description>
+                              <group_location unit="byte">147</group_location>
+                              <group_length unit="byte">178</group_length>
+                              <Field_Binary>
+                                  <name>chdo_type</name>
+                                  <field_number>1</field_number>
+                                  <field_location unit="byte">1</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Type attribute of the downlink sequential ranging phase data CHDO.
+                                      Set to 10 because the CHDO contains binary data.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chdo_length</name>
+                                  <field_number>2</field_number>
+                                  <field_location unit="byte">3</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Length attribute of the downlink sequential ranging phase data CHDO value field.
+                                      Number of bytes after this item.  Set to 174.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>stn_cal</name>
+                                  <field_number>3</field_number>
+                                  <field_location unit="byte">5</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>range unit</unit>
+                                  <description>
+                                      Station calibration value. (Two-way).
+                                      Value includes the equipment in the path, but not the Z-height correction. 
+                                      Values 0.0 to 1.8e5 are allowed; value 0.0 indicates not measured.
+                                      One range unit (RU) = (exc_scalar_den/exc_scalar_num)/(16*FRQ_UP) where
+                                      FRQ_UP is the uplink carrier frequency and the two scalars are given
+                                      in fields 36 and 37.  Range is measured in RU to give a stable reference
+                                      when the uplink is being ramped.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dl_stn_cal</name>
+                                  <field_number>4</field_number>
+                                  <field_location unit="byte">13</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>range unit</unit>
+                                  <description>
+                                      Downlink station calibration value.  For definition of range unit, see field 3.
+                                      Value includes the downlink equipment in the path, but not the Z-height correction.
+                                      Values 0.0 to 1.8e5 are allowed; value 0.0 indicates not measured.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dl_cal_freq</name>
+                                  <field_number>5</field_number>
+                                  <field_location unit="byte">21</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Downlink calibration frequency -- frequency at which the calibration was done.
+                                      Values 2.2e9 to 32.3e9 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>cal_std_dev</name>
+                                  <field_number>6</field_number>
+                                  <field_location unit="byte">29</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>range unit</unit>
+                                  <description>
+                                      Standard deviation of station calibration value.
+                                      Applies to stn_cal (field 3) and dl_stn_cal (field 4).
+                                      Values 0.0 to 1.8e5 are allowed.  For definition of range unit, see field 3.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>cal_pts</name>
+                                  <field_number>7</field_number>
+                                  <field_location unit="byte">33</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Calibration points -- number of measurements made in computing station calibration values.
+                                      Applies to stn_cal (field 3), dl_stn_cal (field 4), and cal_std_dev(field 6).
+                                      Values 0 to 65535 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dl_rng_phs</name>
+                                  <field_number>8</field_number>
+                                  <field_location unit="byte">35</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>range unit</unit>
+                                  <description>
+                                      Measured range phase.  Values 0 to 2**30 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>figure_merit</name>
+                                  <field_number>9</field_number>
+                                  <field_location unit="byte">43</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>percent</unit>
+                                  <description>
+                                      Probability of Acquistion (formerly called  Figure of Merit).
+                                      The probability of acquiring the correct range.
+                                      Values 0.0 to 100.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_resid</name>
+                                  <field_number>10</field_number>
+                                  <field_location unit="byte">47</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>range unit</unit>
+                                  <description>
+                                      Range residual -- measured range minus predicted range.
+                                      Values -2**30 to 2**30 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>drvid</name>
+                                  <field_number>11</field_number>
+                                  <field_location unit="byte">55</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>range unit</unit>
+                                  <description>
+                                      Differenced range versus integrated Dopper (DRVID), measured using phase data from carrier.
+                                      Values -2**30 to 2**30 are allowed.  For definition of range unit, see field 3.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rtlt</name>
+                                  <field_number>12</field_number>
+                                  <field_location unit="byte">63</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Round trip light time (predicted).  Values 0.0 to 86400.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>pcn0</name>
+                                  <field_number>13</field_number>
+                                  <field_location unit="byte">67</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>db*Hz</unit>
+                                  <description>
+                                      Pc/N0 -- ratio of carrier power to noise power spectral density.
+                                      Values 0.0 to 90.0 are allowed; value -300.0 indicates no signal or carrier is suppressed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>pcn0_resid</name>
+                                  <field_number>14</field_number>
+                                  <field_location unit="byte">71</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Pc/N0 residual (actual value minus predicted value).
+                                      Values -90.0 to 90.0 are allowed; value -300.0 indicates no signal or carrier is suppressed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>pdn0</name>
+                                  <field_number>15</field_number>
+                                  <field_location unit="byte">75</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>db*Hz</unit>
+                                  <description>
+                                      Pd/N0 -- ratio of data power to noise power spectral density. 
+                                      Values 0.0 to 90.0 are allowed; value -300.0 indicates no signal.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>pdn0_resid</name>
+                                  <field_number>16</field_number>
+                                  <field_location unit="byte">79</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Pd/N0 residual (actual value minus predicted value).
+                                      Values -90.0 to 90.0 are allowed; value -300.0 indicates no signal.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>prn0</name>
+                                  <field_number>17</field_number>
+                                  <field_location unit="byte">83</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Pr/N0 (ranging power to noise power spectral density). 
+                                      Values -10.0 to 90.0 are allowed; value -300.0 indicates no signal.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>prn0_resid</name>
+                                  <field_number>18</field_number>
+                                  <field_location unit="byte">87</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Pr/N0 residual (actual value minus predicted value).
+                                      Values -90.0 to 90.0 are allowed; value -300.0 indicates no signal.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>system_noise_temp</name>
+                                  <field_number>19</field_number>
+                                  <field_location unit="byte">91</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>K</unit>
+                                  <description>
+                                      System Noise Temperature.  Values 0.1 to 2000.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>carr_loop_type</name>
+                                  <field_number>20</field_number>
+                                  <field_location unit="byte">95</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Carrier loop type.
+                                      Values 1 to 3 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>snt_flag</name>
+                                  <field_number>21</field_number>
+                                  <field_location unit="byte">96</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      SNT measurement flag.
+                                         0 = SNT value is the predicted value; 
+                                         1 = SNT value is the measured value
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>carr_resid_wt</name>
+                                  <field_number>22</field_number>
+                                  <field_location unit="byte">97</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Carrier residual weight -- the value applied to residual phase error in carrier tracking.
+                                      Suppressed carrier weight is 1.0 minus this value.
+                                      Values 0.0 to 1.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>template_id</name>
+                                  <field_number>23</field_number>
+                                  <field_location unit="byte">101</field_location>
+                                  <data_type>ASCII_String</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <description>
+                                      Template ID -- ranging configuration file ID, or the name of the PN pattern.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>invert</name>
+                                  <field_number>24</field_number>
+                                  <field_location unit="byte">109</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Inverted polarity flag.
+                                      Inverted implies that the polarity of the correlation reference is the invert 
+                                      of what was transmitted.
+                                         0 = Not inverted; 
+                                         1 = Inverted
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>correl_type</name>
+                                  <field_number>25</field_number>
+                                  <field_location unit="byte">110</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Correlation type.
+                                         0 = Square wave; 
+                                         1 = Sine wave
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>t1</name>
+                                  <field_number>26</field_number>
+                                  <field_location unit="byte">111</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      T1 setting -- the length of time the first component (the clock) is transmitted.
+                                      Values 1 to 3600 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>t2</name>
+                                  <field_number>27</field_number>
+                                  <field_location unit="byte">113</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      T2 setting -- the length of time that each subsequent compionent is transmitted.
+                                      Values 1 to 1800 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>t3</name>
+                                  <field_number>28</field_number>
+                                  <field_location unit="byte">115</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      T3 setting -- the length of time that the clock is transmitted for each DRVID.
+                                      Values 0 to 1800 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>first_comp_num</name>
+                                  <field_number>29</field_number>
+                                  <field_location unit="byte">117</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      First component number.  See TRK-2-34 documentation for explanation.
+                                      Values 1 to 24 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>last_comp_num</name>
+                                  <field_number>30</field_number>
+                                  <field_location unit="byte">118</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Last component number.  See TRK-2-34 documentation for explanation.
+                                      Values 1 to 24 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chop_comp_num</name>
+                                  <field_number>31</field_number>
+                                  <field_location unit="byte">119</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Chop component number -- the component used to chop the other components.
+                                      Values 0 to 10 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>num_drvid</name>
+                                  <field_number>32</field_number>
+                                  <field_location unit="byte">120</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Number of DRVID measurements.
+                                      Values 0 to 255 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rcv_inphs_time_year</name>
+                                  <field_number>33</field_number>
+                                  <field_location unit="byte">121</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <unit>year</unit>
+                                  <description>
+                                      Receive in-phase time -- year.
+                                      Year of the time of zero phase on downlink range signal correlation.
+                                      Values 1958 to 3000 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rcv_inphs_time_doy</name>
+                                  <field_number>34</field_number>
+                                  <field_location unit="byte">123</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <unit>day</unit>
+                                  <description>
+                                      Receive in-phase time -- day of year.
+                                      Day of year of the time of zero phase on downlink range signal correlation.
+                                      Values 1 to 366 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rcv_inphs_time_sec</name>
+                                  <field_number>35</field_number>
+                                  <field_location unit="byte">125</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Receive in-phase time -- seconds of day.
+                                      Seconds of day of the time of zero phase on downlink range signal correlation.
+                                      Values 0.0 to 86400.999999 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>exc_scalar_num</name>
+                                  <field_number>36</field_number>
+                                  <field_location unit="byte">133</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Exciter Scalar Numerator.
+                                      Numerator of ratio between ranging reference signal and uplink sky frequency.
+                                      Values  1 to 2**32-1 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>exc_scalar_den</name>
+                                  <field_number>37</field_number>
+                                  <field_location unit="byte">137</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Exciter Scalar Denominator.
+                                      Denominator of ratio between ranging reference signal anduplink sky frequency.
+                                      Values 1 to 2**32-1 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_cycle_time</name>
+                                  <field_number>38</field_number>
+                                  <field_location unit="byte">141</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Ranging cycle time (to complete one cycle of the ranging code).
+                                      Values 4.0 to 504536.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>inphs_correl</name>
+                                  <field_number>39</field_number>
+                                  <field_location unit="byte">149</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      In-phase correlation value of the clock component correlation. 
+                                      Values -1.0e8 to 1.0e8 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>quad_phs_correl</name>
+                                  <field_number>40</field_number>
+                                  <field_location unit="byte">153</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Quadrature phase correlation value of the clock component correlation.
+                                      Values -1.0e8 to 1.0e8 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>metrics_vld_flag</name>
+                                  <field_number>41</field_number>
+                                  <field_location unit="byte">157</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Metrics validity flag -- validity of the Range Residual (rng_resid, field 10) and
+                                      DRVID (drvid, field 11) measurements.
+                                         0 = Invalid (No uplink data available); 
+                                         1 = Invalid (Other reasons); 
+                                         2 = Valid
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>correl_vld_flag</name>
+                                  <field_number>42</field_number>
+                                  <field_location unit="byte">158</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Correlation validity flag.
+                                         0 = Invalid; 
+                                         1 = Valid
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_resid_tol_flag</name>
+                                  <field_number>43</field_number>
+                                  <field_location unit="byte">159</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Range residual tolerance flag.
+                                         0 = Out of  tolerance; 
+                                         1 = In tolerance
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>drvid_tol_flag</name>
+                                  <field_number>44</field_number>
+                                  <field_location unit="byte">160</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      DRVID tolerance flag.
+                                         0 = Out of  tolerance; 
+                                         1 = In tolerance
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>prn0_resid_tol_flag</name>
+                                  <field_number>45</field_number>
+                                  <field_location unit="byte">161</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Pr/N0 residual tolerance flag.
+                                         0 = Out of  tolerance; 
+                                         1 = In tolerance
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_sigma_tol_flag</name>
+                                  <field_number>46</field_number>
+                                  <field_location unit="byte">162</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Range sigma tolerance flag.
+                                         0 = Out of  tolerance; 
+                                         1 = In tolerance
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_vld_flag</name>
+                                  <field_number>47</field_number>
+                                  <field_location unit="byte">163</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Range validity flag.
+                                         0 = Invalid; 
+                                         1 = Valid
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_config_flag</name>
+                                  <field_number>48</field_number>
+                                  <field_location unit="byte">164</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Range configuration change flag.
+                                         0 = Changed; 
+                                         1 = Unchanged
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_hw_flag</name>
+                                  <field_number>49</field_number>
+                                  <field_location unit="byte">165</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Ranging hardware status flag.
+                                         0 = Bad; 
+                                         1 = Good
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>time_tag_corr_flag</name>
+                                  <field_number>50</field_number>
+                                  <field_location unit="byte">166</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Time tag correction flag -- indicates results of validation of the block time tag.
+                                         0 = No validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>type_time_corr_flag</name>
+                                  <field_number>51</field_number>
+                                  <field_location unit="byte">167</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Type of time tag correction flag -- indicates what type of time tag correction was made.
+                                         0 = No correction; 
+                                         1 = Year correction; 
+                                         2 = DOY correction; 
+                                         3 = Both Year and DOY correction
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dop_mode_corr_flag</name>
+                                  <field_number>52</field_number>
+                                  <field_location unit="byte">168</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Doppler mode correction flag -- indicates the results of the validation of the doppler mode..
+                                         0 = Not applicable or no validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ul_stn_corr_flag</name>
+                                  <field_number>53</field_number>
+                                  <field_location unit="byte">169</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Uplink station correction flag -- indicates the results of the validation of the uplink station.
+                                         0 = Not applicable or no validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chop_start_num</name>
+                                  <field_number>54</field_number>
+                                  <field_location unit="byte">170</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      The first component chopped.  Values 0 to 25 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_meas_type</name>
+                                  <field_number>55</field_number>
+                                  <field_location unit="byte">171</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Type of sequential range measurement.
+                                         0 = Ranging  Round Trip; 
+                                         1 = Calibration; 
+                                         2 = Telemetry-Based Ranging; 
+                                         3 = 1-way to Spacecraft; 
+                                         4 = 1-way from Spacecraft; 
+                                         5 = Coupled Noncoherent
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>stn_cal_corr_flag</name>
+                                  <field_number>56</field_number>
+                                  <field_location unit="byte">172</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Station calibration correction flag -- indicates result of validation of station calibration values.
+                                         0 = Unable to correct; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed ul_stn_cal; 
+                                         3 = Validated, changed dl_stn_cal; 
+                                         4 = Validated, changed both ul_stn_cal and dl_stn_cal; 
+                                         5 = Validated, changed round-trip stn_cal
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve6</name>
+                                  <field_number>57</field_number>
+                                  <field_location unit="byte">173</field_location>
+                                  <data_type>ASCII_String</data_type>
+                                  <field_length unit="byte">6</field_length>
+                                  <description>
+                                      Reserved. Six bytes.
+                                  </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

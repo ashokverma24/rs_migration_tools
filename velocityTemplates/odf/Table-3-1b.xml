@@ -1,0 +1,122 @@
+             <Table_Binary>
+                   <name>ODF File Label Group Data</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                                The File Label Group
+                                is usually the first of several groups of records in
+                                an Orbit Data File (ODF). It identifies the spacecraft,
+                                the file creation time, the hardware, and the software
+                                associated with the ODF.  The File Label Group data
+                                record is the second record in the File Label Group. It
+                                is one 36-byte record and is preceded by one 36-byte
+                                File Label Group header record.  Occasionally, the File
+                                Label Group is omitted from an ODF.
+                   </description>
+                   <Record_Binary>
+                         <fields>7</fields>
+                         <groups>0</groups>
+                         <record_length unit="byte">36</record_length> 
+                         <Field_Binary>
+                               <name>System ID</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <description>
+                                           Items 1:  A character string identifying
+                                           the hardware on which the ODF was created.
+                                           Left-justified and padded with blanks.                                              
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Program ID</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">9</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <description>
+                                           Items 2:  A character string identifying
+                                           the program under which the ODF was created.
+                                           Left-justified and padded with blanks.                                                 
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Spacecraft ID Number</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">17</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 3:  ID number for the spacecraft.  These
+                                           are specified in DSN document 820-013, OPS-6-21. 
+                                           Representative values include
+                                                           Magellan              18
+                                                           Voyager 1             31
+                                                           Voyager 2             32
+                                                           JUNO                  61
+                                                           Clementine            64
+                                                           Galileo Orbiter       77
+                                                           Cassini               82
+                                                           Mars Global Surveyor  94
+                                                           Dawn                  203 
+                                                           MESSENGER             236.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>File Creation Date (YYMMDD)</name>
+                               <field_number>4</field_number>
+                               <field_location unit="byte">21</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 4:  The date on which the ODF was
+                                           created, given as a single number of the form YYMMDD.
+                                           where
+                                                    YY   is the two least significant digits of the year
+                                                    MM   is the month (01 through 12)
+                                                    DD   is the day of month (01 through 31).
+                               </description>
+                         </Field_Binary>
+                          <Field_Binary>
+                               <name>File Creation Time (hhmmss)</name>
+                               <field_number>5</field_number>
+                               <field_location unit="byte">25</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 5:  The time at which the ODF was
+                                           created, given as a single number of the form HHMMSS.
+                                           where
+                                                    HH   is the two-digit hour (00 through 23)
+                                                    MM   is the two-digit minute (00 through 59)
+                                                    SS   is the two-digit second (00 through 59).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>File Reference Date (YYYYMMDD)</name>
+                               <field_number>6</field_number>
+                               <field_location unit="byte">29</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 6:  The reference date for ODF
+                                           time tags -- for example, 19500101
+                                           for EME50. Older files which have
+                                           reference dates of zero will be
+                                           assumed to be EME50.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>File Reference Time (HHMMSS)</name>
+                               <field_number>7</field_number>
+                               <field_location unit="byte">33</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 7:  The reference time for ODF
+                                           time tags in the format HHMMSS.
+                               </description>
+                         </Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>

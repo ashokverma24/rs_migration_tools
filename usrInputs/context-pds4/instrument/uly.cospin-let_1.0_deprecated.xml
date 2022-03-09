@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:cospin-let.uly</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>COSPIN-LOW ENERGY TELESCOPE for ULY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.uly::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kunow, H., R. Mueller-Mellin, H. Sierks, G. Wibberenz, A. Raviart, R.
+                   Ducros, P. Ferrando, and L. Treguer, The Kiel Electron Telescope On Board
+                   Ulysses, Proc. 22nd Int. Cosmic Ray Conf. (Dublin), 2, 503, 1991.
+            </reference_text>
+            <description>reference.KUNOWETAL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Marsden, R.G., T.R. Sanderson, A.M. Heras, and K.-P. Wenzel, Ulysses SEP
+                   Composition Measurements: First Results from the COSPIN LET Experiment,
+                   Proc. 22nd Int. Cosmic Ray Conf. (Dublin), 3, 335, 1991.
+            </reference_text>
+            <description>reference.MARSDENETAL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Simpson, J.A., J.D. Anglin, A. Balogh, M. Bercovitch, J.M. Bouman, E.E.
+                   Budzinski, J.R. Burrows, R. Carvell, J.J. Connell, R. Ducros, P. Ferrando,
+                   J. Firth, M. Garcia-Munoz, J. Henrion, R.J. Hynds, B. Iwers, R. Jacquet, H.
+                   Kunow, G. Lentz, R.G. Marsden, R.B. McKibben, R. Mueller-Mellin, D.E. Page,
+                   M. Perkins, A. Raviart, T.R. Sanderson, H. Sierks, L. Treguer, A.J.
+                   Tuzzolino, K.-P. Wenzel, and G. Wibberenz, The Ulysses cosmic ray and solar
+                   particle investigation, Astron. Astrophys. Suppl. Set: 92, 365-399, 1992.
+            </reference_text>
+            <description>reference.SIMPSONETAL1992A</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>COSPIN-LOW ENERGY TELESCOPE</name>
+        <type>Particle Detector</type> <!--RChen/EN was Energetic Particle Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  (descriptions excerpted from [SIMPSONETAL1992A])
+ 
+  Instrument Overview
+  ===================
+    The COSPIN Low Energy Telescope (LET) measures the flux, energy
+    spectra and elemental composition of solar energetic particles
+    and low energy cosmic ray nuclei from hydrogen up to iron.  The
+    instrument covers an energy range from ~ 1 to ~ 75 MeV/n, using
+    a double dE/dX vs.  E telescope.  Comprehensive on-board
+    particle identifier electronics and an event priority system
+    enable rare nuclei to be analyzed in preference to the more
+    common species.  Isotope separation for light nuclei such as He
+    is also achieved.
+ 
+    The LET sensor and associated analogue and digital electronics
+    are mounted in the central portion of the SIM-1 package,
+    between the Anisotropy Telescopes and the Digital Processing
+    Unit.  The instrument aperture is protected by a hinged cover
+    that was opened by telecommand after launch.  A gas purge
+    system was also included to provide additional protection
+    against detector contamination during ground testing and the
+    ascent phase of the launch.
+ 
+ 
+  Detectors
+  =========
+    The LET sensor consists of a four-element solid-state detector
+    telescope surrounded by a cylindrical plastic scintillator
+    anticoincidence shield, together with associated analogue
+    electronics.  Detectors D[1] and D[2] are large-area (6 cm^2)
+    surface barrier devices having nominal thicknesses of 30
+    microns (D[1]) and 100 microns (D[2]), while D[3] and D[4] are
+    2000 micron-thick Li-drifted devices of 10.0 and 12.5 cm^2
+    active area, respectively.  D[4] forms part of the
+    anticoincidence shield.  The aperture of the telescope is
+    covered by two thin foils, an inner Ti foil (2 microns) and an
+    outer Kapton foil (8 microns), included for electrical
+    screening and thermal control purposes, respectively.  The
+    telescope geometrical factor, defined by two circular
+    collimators mounted in front of D[1] and D[2] in order to
+    reduce unwanted edge effects, has a value of 0.58 cm^2 sr for
+    the coincidence channels.  Low resolution single-detector only)
+    measurements of protons and alpha particles are also made.  In
+    this case, the geometrical factor is ~ 9.1 cm^2sr.
+ 
+    The signals from detectors D[1], D[2] and D[3] are fed into
+    individual amplifier chains consisting of a charge-sensitive
+    preamplifier followed by a parallel combination of three pulse-
+    shaping voltage amplifiers (PSA).  To accommodate the large
+    dynamic range required, separate low- and high-gain PSA have
+    been used, selected via an analogue switch controlled by the
+    third (fast) PSA in conjunction with a discriminator.  The
+    selected outputs are fed into a common 10 bit (1024 channel)
+    ADC that provides pulse height information.  The fast PSA are
+    followed by a number of threshold discriminators, the outputs
+    of which are used in the coincidence logic to define a series
+    of counting rate channels.
+ 
+    In addition, the outputs of the slower PSA are fed into a
+    Particle Identifier (PI) circuit that provides both counting
+    rate and event priority information.  The LET PI circuit makes
+    it possible to obtain the counting rates corresponding to
+    groups of nuclear species, and comprises a set of analogue
+    function generators and discriminators that divide the
+    instrument response into regions of different nuclear charge.
+    The actual analogue functions used are of two types, namely
+ 
+          E[1]+ b[i]E[2] = a[i]                 (1)
+ 
+      and
+ 
+          E[2](b[i] + E[i]) = a[i]              (2)
+ 
+    where E[1], E[2] and E[3] are the energies deposited in
+    detectors D[1], D[2] and D[3], respectively, and a[i], b[i] are
+    constants.  For particles stopping in D[2], the loci of points
+    satisfying equation (1) for given pairs of (a[i],b[i]) values
+    define boundaries on the [DELTA]E ([is defined as]E[1]) vs.
+    residual E ( E[2]) diagram that separate the tracks
+    corresponding to different elements or groups of elements into
+    so-called &apos;charge groups&apos;.  The charge groups defined for the
+    D[1] - D[2] range are: protons; (He^-3, He^-4); (Li, Be, B);
+    (C, N, O); Z &gt;= 10 nuclei.  In a similar way, charge group
+    boundaries for particles stopping in D[3] are defined by
+    equation (2) with suitable pairs of (a[i], b[i]) values.  A
+    different functional form is required in this case because of
+    the pronounced curvature of the [DELTA]E vs.  residual E tracks
+    resulting from the large thickness of D[3] relative to D[2].
+    The same charge groups as before are defined for the D[1] -
+    D[2] - D[3] range, with the addition of a high-Z group
+    corresponding to Z &gt;= 20.
+ 
+    Each of the charge groups has an associated counting rate
+    register which is incremented each time a valid event within
+    the group is observed.  In the spacecraft prime (real time
+    telemetry) mode, accumulation intervals are 32 s for the proton
+    and alpha particle rate channels and 128 s for the heavy ion
+    rate channels.  In addition to providing counting rate
+    information, the PI output is used to generate a 4-bit event
+    code that controls the Event Priority System.  The latter is
+    included in order to maximize the LET PHA data-collection
+    efficiency for the rarer nuclear species in the cosmic ray
+    flux.  Such a system is needed because the LET telemetry
+    allocation (52 bits per s at the highest bitrate) limits the
+    number of PHA events that can be transmitted to a maximum of 1
+    per second.  Each pulse-height analyzed event is assigned a 4-
+    bit priority value on the basis of its event code via
+    predefined sequences stored in a ROM.  Only the pulse heights
+    corresponding to the highest-priority event occurring within
+    every 1 s sampling period are transferred to the telemetry
+    stream.  The sequence of priority assignments for all event
+    codes is changed periodically in order to prevent biasing
+    effects.  In addition to pulse height data and proton, alpha
+    and heavy ion rates, the LET data frame contains digital status
+    information and analogue housekeeping values, as well as
+    counting rate data for the individual detectors.  Housekeeping
+    information includes instrument voltages, the detector leakage
+    currents and temperature values for the detector telescope and
+    electronics.  A summary of the LET digital data channels is
+    given in Table 4.
+ 
+    Also included in the instrument is an In-Flight Calibrator
+    (IFC) circuit that checks, on command, the electrical
+    characteristics of the instrument by delivering a sequence of
+    pulses having well-defined amplitudes to all amplifier inputs.
+ 
+ 
+  In-flight Performance
+  =====================
+    The LET aperture cover was opened by means of the pyrotechnic
+    actuators on October 19.  On COSPIN turn-on four days later,
+    all housekeeping data indicated that the instrument status was
+    nominal, and the scientific data showed that a moderate solar
+    flare event was in progress at the time of switch-on.
+ 
+    Another example of LET data acquired in flight soon after turn-
+    on . . .  covers a 4-day period starting at 00:00 hrs UT on 7
+    November 1990, at which time a series of impulsive solar flare
+    events occurred on the Sun.  Such events are known to produce
+    an enrichment in the isotope ^(3)He relative to the usually
+    more abundant 4He.  Both isotopes were present throughout the
+    period and were well resolved by the LET.
+ 
+    In addition to the initial flight data from the Ulysses
+    instrument presented above, essentially identical LET sensors
+    that were flown on the Phobos 1 and 2 space probes have
+    provided a wealth of data on the solar and interplanetary
+    energetic particle populations during the rising phase of solar
+    cycle 22 [Marsden et al., Nucl. Instr.  and Meth.  290, 211,
+    1990; Marsden et al., Planet.  Space Sci., 39, 57, 1991].
+    Finally, a substantial database on the performance of the LET
+    has been accumulated during ground testing; the instrument has
+    been extensively calibrated at particle accelerator facilities,
+    with exposures to both heavy ion and proton beams [Kamermans et
+    al., Nucl. Instr.  and Meth.  171, 87, 1980; LeBorgne et al.,
+    Report ESA STM-224, 1981; Marsden et al., Nucl. Instr.  and
+    Meth.  221, 619, 1984].
+ 
+    The in-flight performance of the COSPIN LET instrument has
+    matched that expected from ground calibration and test.  While
+    the majority of single detector counting rates are dominated by
+    counts produced by the RTG neutron and gamma ray background,
+    all coincidence channels show good immunity to RTG induced
+    backgrounds.  An exception is the low energy 0.3 - 1.5 MeV
+    electron channel, which is dominated by the RTG contribution
+    except during large solar particle events and, we expect, in
+    Jupiter&apos;s magnetosphere.  The performance in flight so far
+    demonstrates that the experiment is capable of making important
+    contributions to our knowledge of the particle populations in
+    the heliosphere during the exploratory out-of-ecliptic Ulysses
+    mission.
+ 
+ 
+  Measured Parameters
+  ===================
+    Table 4.  Low energy telescope data channels.
+ 
+      Name          Primary    Energy   Geom.    Avg   Sectors  PHA
+                    Particle   Range    Factor   Time           Event
+                    Type      (MeV(/n)) (cm^2sr) Res(s)         Code
+ 
+      L1/P1         proton     0.9-1.2   9.1      32*    --      --
+      L2/P2         proton     1.2-3.0   9.1      32*    --       1
+      L3/P3         proton+    1.8-3.8   0.58     32*    --       3
+      L4-L11/P3S    proton+    1.8-3.8   0.58     32      8      --
+      L12/P4        proton+    3.8-8.0   0.58     32*    --       4
+      L13-L20/P4S   proton+    3.8-8.0   0.58     32      8      --
+      L21/P5        proton     8.0-19.0  0.58     32*    --       5
+      L22/A1        He         1.0-5.0   9.1      32*    --       2
+      L23/A2        He+        1.9-3.7   0.58     32*    --       6
+      L24/A3        He+        3.7-8.4   0.58     32*    --       7
+      L25/A4        He+        8.4-19    0.58     32*    --       8
+      L26/H1        Li,Be,B+   1.9-4.9   0.58    128*    --       9
+      L27/H2        Li,Be,B+   4.9-26    0.58    128*    --      10
+      L28/H3        C,N,O+     2.6-7.1   0.58    128*    --      11
+      L29/H4        C,N,O+     7.1-39    0.58    128*    --      12
+      L30/H5        Z&gt;=10+     3.0-9.0   0.58    128*    --      13
+      L31/H6        10&lt;=Z&lt;=20+ 9.0-50    0.58    128*    --      14
+      L32/H7        Z&gt;20+      12-75     0.58    128*    --      15
+      L33/E1        electron   0.3-1**   --      128*    --      --
+      L34-L38/S1-S5 --         --        --      128*    --      --
+ 
+      * Rigid interval synchronized to telemetry format
+      + Particle identification by hyperbolic discriminator
+        thresholds (I1-I9)
+      ** Dominated by RTG-induced background in quiet times
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1F00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1F00_1200.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:orm.gtc10m4.osiris</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>GTC OSIRIS Optical Imager and Spectrograph</title>
+    <information_model_version>1.15.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2021-07-23</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:orm.gtc10m4</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>GTC OSIRIS Optical Imager and Spectrograph</name>
+    <Type_List_Area>
+      <ctli:Type_List>
+        <ctli:type>Camera</ctli:type>
+        <ctli:type>Spectrometer</ctli:type>
+      </ctli:Type_List>
+    </Type_List_Area>
+    <description>The Optical System for Imaging and low-Intermediate Resolution Integrated
+Spectroscopy (OSIRIS) of the Gran Telescopio Canarias (GTC) is an imager and
+spectrograph for optical wavelengths. Wavelength range coverage is 0.365 - 1.05
+microns; total field of view is 7.8 x 8.5 arcminutes for direct imaging and 7.5x6.0
+arcminutes for multi-object spectroscopy.
+
+OSIRIS has a number of operating modes. Imaging modes include: broad, medium, and
+narrow band imaging with various filters; fast photometry; and frame transfer
+photometry.  Spectroscopic modes include long-slit spectroscopy and multi-object
+spectroscopy.</description>
+  </Instrument>
+</Product_Context>
+

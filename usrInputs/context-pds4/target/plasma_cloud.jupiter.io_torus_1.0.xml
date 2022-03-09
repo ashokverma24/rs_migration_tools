@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context     
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:target:plasma_cloud.jupiter.io_torus</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Io Torus</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-06-17</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Target>
+        <name>Io Torus</name>
+        <type>Plasma Cloud</type>
+        <description>
+            The Io Torus target name is used for observations made of the particle cloud (either plasma or neutral) that is in the torus region surrounding Io.
+        </description>
+    </Target>
+</Product_Context>

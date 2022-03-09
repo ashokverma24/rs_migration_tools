@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.eta_sgr</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Eta Sagittarii</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Sephdar</alternate_title></Alias>
+      <Alias><alternate_title>Eta Sgr</alternate_title></Alias>
+      <Alias><alternate_title>BU 760AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BDS 8449 AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J18176-3646AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-36 12423</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 18 9366</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-36 8128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-36 12423 21</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 683</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 24944</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 10737</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00167618J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 167618</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 89642</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 89642</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 6832</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 18109-3647 AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 18142-3646</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2953</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 7260</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J18173763-3645418</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 4055</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 46213</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 4191</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 487</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 297508</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SACS 399</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 209957</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 33338</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30683</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* BV 784</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 22032</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7404-7057-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 15527</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J18176-3646AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 15268</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 4038055447710650240</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Eta Sagittarii</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 18 hours 17 minutes 37.6350518 seconds
+Declination, ICRS coord, ep=J2000: -36 degrees 45 minutes 42.066723 seconds
+    </description>
+  </Target>
+</Product_Context>

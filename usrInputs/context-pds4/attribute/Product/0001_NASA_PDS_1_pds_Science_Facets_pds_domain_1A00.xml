@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.science_facets.pds.domain_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>domain</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>domain</name>
+        <version_id>1.10</version_id>
+        <class_name>Science_Facets</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.science_facets.pds.domain_1a00</local_identifier>
+        <steward_id>pds</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The radial "zone" or "shell" of the target for which the observations were collected or which are represented in the product(s).  The value may depend on wavelength_range and size of the target.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <Terminological_Entry>
+            <name>domain</name>
+            <definition>The radial "zone" or "shell" of the target for which the observations were collected or which are represented in the product(s).  The value may depend on wavelength_range and size of the target.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <specified_unit_id>none</specified_unit_id>
+            <DD_Permissible_Value_Full>
+                <value>Atmosphere</value>
+                <value_meaning>an envelope of uncharged gases and particles surrounding the target and bound to it primarily by gravitational forces</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Dynamics</value>
+                <value_meaning>The data provide information relating to the orbital motion of one or more bodies (e.g., astrometric observations).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Heliosphere</value>
+                <value_meaning>the solar atmosphere extending roughly from the outer corona to the edge of the solar plasma at the heliopause, which separates primarily solar plasma from the interstellar medium.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Interior</value>
+                <value_meaning>the solid and/or liquid portion of a target enclosed by its surface.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Interstellar</value>
+                <value_meaning>the region between stars, which is outside of any star&apos;s heliopause.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Ionosphere</value>
+                <value_meaning>an envelope of plasma and charged particles surrounding the target and bound to it primarily by gravitational forces.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Magnetosphere</value>
+                <value_meaning>an envelope of charged particles, bounded on the upper side by the magnetopause and which is primarily under the control of the target body&apos;s magnetic field.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Rings</value>
+                <value_meaning>A ring is a narrow band or disc orbiting an astronomical body (planet, dwarf planet, satellite, asteroid, etc.) that is composed of solid material ranging in size from fine dust to a few tens of kilometers.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Surface</value>
+                <value_meaning>the boundary between the solid/liquid portion of a target and its atmosphere, ionosphere, or magnetosphere (or space).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

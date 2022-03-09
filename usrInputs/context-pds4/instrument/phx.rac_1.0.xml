@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch"
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+ xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+  https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rac.phx</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ROBOTIC ARM CAMERA for PHX</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-05-23</modification_date>
+                <version_id>1.0</version_id>
+                <description>Changed logical_identifier from rac__phx to rac.phx</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.phx</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Keller, H.U., W. Goetz, H. Hartwig, S.F. Hviid, R. Kramm, W.J. Markiewicz, C.
+                   Shinohara, P.H. Smith, R. Tanner, P. Woida, R. Woida, B.J. Bos, and M.T.
+                   Lemmon, The Phoenix Robotic Arm Camera, J. Geophys. Res., 113, E00A17,
+                   doi:10.1029/2007JE003044, 2008.
+            </reference_text>
+            <description>reference.KELLERETAL2008</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ROBOTIC ARM CAMERA</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Phoenix Robotic Arm Camera (RAC) is a variable-focus color
+    camera mounted to the robotic arm (RA) of the Phoenix Mars
+    lander. It is designed to acquire both close-up images of the
+    Martian surface and microscopic images (down to a scale of 23
+    micron/px) of material collected in the RA scoop. The mounting
+    position at the end of the robotic arm allows the RAC to be
+    actively positioned for imaging of targets not easily seen by
+    the Stereo Surface Imager (SSI), such as excavated trench walls
+    and targets under the lander structure. Color information is
+    acquired by illuminating the target with red, green and blue
+    light emitting diodes. Digital terrain models (DTM) can be
+    generated from RAC images acquired from different view points.
+    This can e.g. provide high-resolution stereo information about
+    fine details of the trench walls.
+ 
+    Information in this instrument description is taken from The
+    Phoenix Robotic Arm Camera [KELLERETAL2008]. See this paper
+    for more details.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The science objectives of the RAC are the following: (1)
+    Characterize a soil patch prior to digging (together with the
+    Surface Stereo Imager, SSI). This characterization will also
+    support the selection of the digging site - an important
+    tactical step during mission operations. (2) Characterize
+    scoop - soil interactions (e.g. during scraping or digging)
+    in terms of physical properties such as cohesion and soil
+    strength. (3) Characterize trench walls: (a) Search for fine-
+    scale soil/ice layering, (b) monitor possible temporal changes
+    due to sublimation of water ice away from a newly excavated
+    surface. (4) Characterize soil samples in the scoop prior to
+    delivery to the analyzing instruments on the lander deck MECA
+    and TEGA. (5) Characterize the surface below the lander, and in
+    particular estimate the penetration depth of the foot pads with
+    direct implications on the shallow sub-surface environment. (6)
+    Provide a fast way to create a Digital Terrain Model (DTM) of
+    the landing site. The RAC has a larger field of view (FOV) and
+    stereo base than the SSI. In addition the stereo base can have
+    any orientation (from horizontal to vertical). In that sense the
+    RAC complements SSI data in the generation of the DTM. (7)
+    Atmospheric science: (a) monitor the horizon and search for dust
+    devils, (b) provide &apos;one shot&apos; overview images of the brightness
+    gradient of the Martian sky. The RAC also fulfils important
+    tactical (sol planning) tasks by supporting instrument checkout
+    of MECA and TEGA and documenting sample delivery to these
+    instruments that cannot be done adequately by the SSI.
+ 
+    More general science goals of the RAC include: (a) Search for
+    seasonal and climate records in the sub-surface, (b) search for
+    records of diurnal/seasonal, vertical/lateral transport processes
+    in the soil (such as evaporative pores or salt cementation), (c)
+    constrain long-term weathering processes from shape and texture
+    of rocks or rock fragments.
+ 
+ 
+  Calibration
+  ===========
+    The bulk of the RAC calibration and instrument characterization
+    activities occurred in late 1999. In early 2006 the instrument
+    underwent additional testing to verify the 1999 test results and
+    prepare for the Phoenix mission. The stability of the parameters
+    over more than 7 years is remarkable. During nominal operations
+    the raw images must be corrected on board for blemished pixels in
+    order to minimize compression artifacts. The active-area frames
+    (512 x 256 px) are then JPEG compressed by a factor of ~ 4
+    (depending on resources) and downloaded. All remaining calibration
+    steps (such as dark current correction (insignificant) and flat
+    fielding) will be done on ground.
+ 
+ 
+  Operational Considerations
+  ==========================
+    The CCD was qualified for the temperature range 160 - 320 K. However,
+    the stepper motors for cover and lens system need to be heated to
+    above 210 K before they can be operated. This minimum temperature
+    is required by the grease lubricant in the bearings of these stepper
+    motors. All the other moving parts in the RAC are lubricated with MoS2
+    and need not to be pre-heated, as long as their temperature is above
+    140 K.
+ 
+ 
+  Detectors
+  =========
+    The size of the RAC was driven by the available charge-coupled
+    device (CCD) detector package and Sensor Head Board (SHB) that
+    were originally designed for the Descent Imager/Spectral Radiometer
+    (DISR) camera on board the Huygens Probe of the Cassini mission.
+    The RAC has a double Gauss lens system and a frame-transfer CCD
+    detector. The CCD is a front side illuminated frame transfer
+    device employing buried channel technology with 2 phase Multi-
+    Pinned-Phase (MPP) clocking. The pixel spacing is 23 micron in both
+    directions, however, 6 microns in line direction of each pixel are
+    covered by an anti-blooming structure to remove excess charge in
+    case of overexposure. The CCD has no anti-reflection coating. It
+    consists of a (512 active + 16) columns by 256 lines imaging area,
+    and a (512 active + 16) columns by 256 lines storage area covered
+    by a metal mask. Each line from the serial readout register
+    contains 4 null pixels (the &apos;null strip&apos;) providing system noise
+    information, 8 dark pixels (the &apos;dark strip&apos;) measuring dark current,
+    512 active pixels, and 4 null pixels again. These dark current strips
+    are used to scale dark current corrections on board using the line-
+    by-line ratios. After exposure the photogenerated electrons are moved
+    from the active area to the storage area within 1 ms. The readout of
+    the storage area takes 2 s. The CCD output signal is first amplified
+    by the sensor head board (SHB), and then transmitted via long (up to
+    4 m) electrical lines to the CCD Readout Board (CRB) located inside
+    the central electronics box of the lander. The CRB accommodates the
+    analog signal chains with correlated double sampling, a sample and
+    hold amplifier, 12 bit A/D converter, clock driver, power converter,
+    and a digital control unit with a parallel interface to the experiment
+    processor.
+ 
+ 
+  Electronics
+  ===========
+    After exposure the photogenerated electrons are moved from the active
+    area to the storage area within 1 ms. The readout of the storage area
+    takes 2 s. The CCD output signal is first amplified by the SHB, and
+    then transmitted via long (up to 4 m) electrical lines to the CCD
+    Readout Board (CRB) located inside the central electronics box of the
+    lander. The volume between front bulkhead and centre accommodates all
+    optical and mechanical subsystems while the volume between centre
+    bulkhead and rear houses the SHB electronics.
+ 
+    During nominal operations the raw images must be corrected on board
+    for blemished pixels in order to minimize compression artifacts. The
+    active-area frames (512 x 256 px) are then JPEG compressed by a factor
+    of ~ 4 (depending on resources) and downloaded. All remaining
+    calibration steps (such as dark current correction (insignificant)
+    and flat fielding) will be done on ground. The flight software allows
+    for subframing. However, in general mostly full frames will be
+    downloaded.
+ 
+ 
+  Filters
+  =======
+    The RAC front window is a 2 mm thick, blue-green glass filter (BG40,
+    Schott Inc.) that blocks all red and near-infrared light with
+    wavelengths longer than 700 nm. The color capability of the RAC
+    arises from composing images taken with illumination provided by red,
+    green, and blue light emitting diodes (LED). Since the lighting
+    system operates in the visible part of the spectrum, the camera&apos;s
+    color capability is greatly enhanced by cutting off the near-infrared
+    part of the incident radiation. A movable transparent sapphire cover
+    (referred to as dust cover) driven by a stepper motor protects the
+    front window of the camera against atmospheric dust and flying debris
+    that may be kicked up during digging operations. The cover will be
+    open during normal image acquisition.
+ 
+ 
+  Optics
+  ======
+    The optical bench consists of three walls or bulkheads [front, centre,
+    and rear] which are braced against each other by two side frames [left
+    and right]. The volume between front bulkhead and centre accommodates
+    all optical and mechanical subsystems while the volume between centre
+    bulkhead and rear houses the SHB electronics, with two connectors
+    mounted to the rear bulkhead.
+ 
+  Location
+  ========
+    For ground-based data, coordinates of the observatory
+ 
+  Operational Modes
+  =================
+    The RAC employs a movable variable focus objective ranging from macro
+    1:1 mode to infinity. The lens in its cell is mounted to a translation
+    stage which allows its position to be changed along the optical axis.
+    The optical distortion was measured by imaging a target of equally
+    spaced holes manufactured out of photo-etched chrome on glass. The
+    RAC flight model turned out to have a positive distortion that reaches
+    0.28% at the corners of the image, implying that an image point at that
+    location is by 0.80 pixels further out than it ideally should be.
+ 
+ 
+  Subsystems
+  ==========
+    The RAC consists of the following subsystems: (1) optical
+    bench / frame, (2) Sensor Head Board with CCD detector, (3) double
+    Gauss lens with lens cell, (4) lens focusing mechanism with stepper
+    motor and reference switch, (5) protective dust cover with mechanism,
+    stepper motor, and reference switch, (6) upper and lower lamp
+    assemblies, (7) two temperature sensors, and (8) a protective shell.
+ 
+ 
+  Measured Parameters
+  ===================
+    The mounting position at the end of the robotic arm allows the
+    RAC to be actively positioned for imaging of targets not easily
+    seen by the SSI, such as excavated trench walls and targets under
+    the lander structure. Color information is acquired by illuminating
+    the target with red, green and blue light emitting diodes. Digital
+    terrain models (DTM) can be generated from RAC images acquired from
+    different view points.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1F00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1
+            https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd
+            http://pds.nasa.gov/pds4/ctli/v1 
+            https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1F00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mars2020.moxie</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Mars 2020 Mars Oxygen In-Situ Resource Utilization Experiment (MOXIE)</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>MOXIE</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-01-26</modification_date>
+                <version_id>1.0</version_id>
+                <description>First version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mars2020</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-020-00782-8</doi>
+            <reference_text>
+                Hecht, M., Hoffman, J., Rapp, D. et al. Mars Oxygen ISRU Experiment (MOXIE). 
+                Space Sci Rev 217, 9 (2021).
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Mars Oxygen In-Situ Resource Utilization Experiment (MOXIE)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Meteorology</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>The MOXIE instrument is an instrument onboard the Mars 2020 Rover designed to
+            produce oxygen (O2) from carbon dioxide.
+        </description>
+    </Instrument>
+</Product_Context>

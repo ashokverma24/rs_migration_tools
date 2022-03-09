@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  
+ xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1 
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd
+    
+    http://pds.nasa.gov/pds4/ctli/v1 
+    https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.xsd
+    ">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:epps-fips.mess</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Energetic Particle and Plasma Spectrometer Fast Imaging Plasma Spectrometer for MESSENGER</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:epps.mess</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-03-23</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mess</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-007-9272-5</doi>
+            <reference_text>
+                   Andrews, G.B., T.H. Zurbuchen, B.H. Mauk, H. Malcom, L.A. Fisk, G. Gloeckler,
+                   G.C. Ho, J.S. Kelley, P.L. Koehn, T.W. LeFevere, S.S. Livi, R.A. Lundgren, and
+                   J.M. Raines, The Energetic Particle and Plasma Spectrometer instrument on the
+                   MESSENGER spacecraft, Space Science Reviews, 131, 523-556, 2007.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>EPPS Fast Imaging Plamsa Spectrometer</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Charged Particle Detector</ctli:type>
+                <ctli:subtype>Energetic Particle Detector</ctli:subtype>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>
+           The Energetic Particle Spectrometer (EPS) is part of the MESSENGER 
+           Energetic Particle and Plasma Spectrometer (EPPS) system, which 
+           which also includes the Fast Imaging Plasma Spectrometer (FIPS).
+           FIPS covers the energy/ charge range of &lt; 50 eV/q to 20 keV/q. The 
+           desired throughput for FIPS charged particle and EPS event processing 
+           is 5 kHz. The FIPS instrument was constructed by the University of 
+           Michigan Space Physics Research Laboratory.
+ 
+           The FIPS sensor is designed to measure the distributions and
+           composition of magnetosphere ions, as well as to characterize the
+           nature of the planetary magnetic field of Mercury.  It will do this
+           by measuring the mass per charge, the energy per charge, and
+           incident angles for particles entering the sensor.  The particle
+           intensity is also calculated from the event rate information.  FIPS
+           generates a single 48-bit raw event packet format, which includes a
+           1-bit header that identifies the event as a proton event or a
+           non-proton event; an 11-bit time-of-flight (TOF) value; as well as
+           Wedge, Strip, and ZigZag values (each 12 bits in size). In addition,
+           the FIPS system generates counter and housekeeping information that
+           the EPPS software can access via the I2C bus interface.
+ 
+           The FIPS consists of an electrostatic analyzer (ESA), located at the
+           entrance to the sensor, a post-acceleration chamber between the
+           output of the ESA and the carbon foil, and a time-of-flight
+           telescope.  The ESA at the entrance to the FIPS acts as a wide-angle
+           lens for ions.  It only allows ions with a specific energy/charge
+           band to enter through its output plane.  This band is stepped once
+           per second by changing the deflection voltage of the ESA.  A
+           measurement cycle consists of 64 deflection voltage steps in nominal
+           mode or 8 in burst mode.  Associated with each step in a scan is a
+           voltage setting, a threshold, a settling time, and a duration or
+           time interval after which the next voltage step is performed.  Ions
+           exit the output plane of the ESA and are then accelerated in the
+           post- acceleration chamber.  This acceleration is done to boost
+           low-energy ions to penetrate the carbon foil.  The acceleration also
+           helps to reduce energy straggling and angular scattering - effects
+           that cause degradation in mass resolution and imaging.  The carbon
+           foil serves as the source for secondary electrons, which are
+           scattered out by the penetration ions.  After penetrating the foil,
+           the particle resides within the TOF chamber where velocity and
+           incoming angle are computed.  Velocity is determined by the time
+           difference between the generation of secondary electrons in the
+           start foil and a stop surface, and angle is determined by spatially
+           imaging the position of the generation of the start secondary
+           electrons.  From the velocity, energy per charge, and the
+           post-acceleration potential, it is then possible to calculate the
+           mass per charge.  The measured species for the FIPS range from H to
+           Fe.
+ 
+           The FIPS instrument provides a single serial stream of event data to
+           the EPPS system at rates of up to 50000 events per second.  The EPPS
+           software maintains a mass distribution spectrum for the FIPS
+           instrument. This spectrum consists of a collection of 256 bins (each
+           24 bits wide) that count the number of events corresponding to mass-
+           per-charge values. In addition, the software maintains a set of 5
+           element energy spectra.  Each FIPS spectrum corresponds to a
+           specified mass-per-charge range and consists of 64 24-bit bins.  For
+           events whose mass-per-charge values fall within one of the selected
+           ranges, an energy value is computed and used to determine which bin
+           within the corresponding spectrum to increment. The spectra are
+           accumulated over an integral number of voltage scans, after which
+           they are compressed and output in telemetry.  FIPS also records 5
+           heavy-ion energy-summed images (called velocity distributions) for
+           each of the same 5 mass-per-charge values plus one for protons.  A
+           commanded number of raw events will be recorded at each scan level.
+ 
+           The EPPS instrument is described in full detail in
+           Andrews, et al., 2007.
+        </description>
+    </Instrument>
+</Product_Context>

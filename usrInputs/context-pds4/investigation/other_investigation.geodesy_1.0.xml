@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+ <Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:other_investigation.geodesy</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Geodesy</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-05-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Context product for geodesy -- the science of accurately measuring and understanding 
+                    the Earth's geometric shape, orientation in space, and gravity field.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+
+        <External_Reference>
+            <reference_text>
+                https://en.wikipedia.org/wiki/Geodesy
+            </reference_text>
+            <description>
+                A brief overview of geodesy and its principal sub-disciplines.
+                Updated at irregular intervals.
+            </description>
+        </External_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                Hofmann-Wellenhof, B, and Helmut Moritz, Physical Geodesy, 
+                Springer-Verlag Wien, ISBN 978-3-211-33544-4, 2006.
+            </reference_text>
+            <description>
+                An updated edition of the 1967 original by W.A. Heiskanen and H. Moritz.
+                The 2006 version incorporates a global integration of geometry and gravity,
+                making extensive use of GPS methods.
+            </description>
+        </External_Reference>
+        
+        <External_Reference>
+           <reference_text>
+               Altamimi, Zuheir, Xavier Collilieux, and Laurent Métivier, 
+               ITRF 2008: An Improved Solution of the International Terrestrial Reference Frame, 
+               Journal of Geodesy, 85, 457-473, 2011.
+               doi 10.1007/s00190-011-0444-4
+           </reference_text>
+           <description>
+                A description of the 2008 revised solution for the International Terrestrial 
+                Reference Frame. ITRF2008 is based on reprocessed solutions of the four space 
+                geodetic techniques: VLBI, SLR, GPS and DORIS, spanning 29, 26, 12.5 and 16 
+                years of observations, respectively. The input data were time series (weekly 
+                from satellite techniques and 24-h sessions from VLBI) of station positions 
+                and daily Earth Orientation Parameters (EOPs). Considering the level of scale 
+                consistency between VLBI and SLR, the ITRF2008 scale accuracy is evaluated to
+                be at the level of 1.2 ppb (8 mm at the equator) over the common time-span of 
+                the observations of both techniques. Although the performance of the ITRF2008
+                is demonstrated to be higher than ITRF2005, future ITRF improvement resides in
+                improving the consistency between local ties in co-location sites and space 
+                geodesy estimates.
+            </description>
+        </External_Reference>
+        
+    </Reference_List>
+     
+     <Investigation>
+         <name>Geodesy</name>
+         <type>Other Investigation</type>
+         <start_date>-0580-01-01</start_date>
+         <stop_date>2099-12-31</stop_date>
+         <description>
+             Geodesy is the science of accurately measuring and understanding the
+             Earth's geometric shape, orientation in space, and gravity field.
+             Pythagoras (580-490 BC) is credited with postulating that the Earth
+             was spherical, and Eratosthenes (276-194 BC) estimated Earth's 
+             circumference at 25000 miles. Today the Earth's shape is known to
+             result from the competition of gravity, rotation, tides, plate
+             tectonics, volcanism, fluid motion (ocean and atmosphere), and other
+             forces. Rotation and gravity are themselves also variable.  All factors
+             are measured repeatedly and modeled for both historical correlation and
+             prediction.
+         </description>
+     </Investigation>
+     
+ </Product_Context>

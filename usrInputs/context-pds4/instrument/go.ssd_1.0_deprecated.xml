@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ssd.go</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GALILEO ORBITER STAR SCANNER for GO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.go::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Divine, N. and H. Garrett, Charged Particle Distributions in Jupiter&apos;s
+                   Magnetosphere, J. Geophys. Res., 88, A9, 1983.
+            </reference_text>
+            <description>reference.DIVINE-GARRETT1983</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Fieseler, P., The Galileo Star Scanner as an Instrument for Measuring Energetic
+                   Electrons in the Jovian Environment, MS Thesis, University of Southern
+                   California, Los Angeles, 2000.
+            </reference_text>
+            <description>reference.FIESELER2000</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell, C.T., P.D. Fieseler, D. Bindshadler, Z.J. Yu, S.P. Joy, K.K. Khurana,
+                   and M.G. Kivelson, Large scale changes in the highly energetic charged
+                   particles in the region of the Io torus, Adv. Space Res., 28, 1495, 2001.
+            </reference_text>
+            <description>reference.RUSSELLETAL2001B</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>GALILEO ORBITER STAR SCANNER</name>
+        <type>Imager</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    Instrument Overview
+    ===================
+    The Star Scanner is fully described by Fieseler, 2000, The Galileo
+    Star Scanner as an Instrument For Measuring High Energy Electrons
+    in the Jovian Environment, USC MS Thesis [FIESELER2000].
+ 
+ 
+    INTRODUCTION
+ 
+    The Galileo spacecraft carries aboard it a photomultiplier tube
+    based star scanner for the purpose of providing the spacecraft with
+    an inertial attitude reference. This device has been subjected to
+    the radiation environment within Jupiter&apos;s magnetosphere since 1995
+    and is providing measurements of the omnidirectional flux of 1.5 to
+    30 MeV electrons within about 12 Jupiter radii. The range of maximum
+    sensitivity is roughly 4 to 15 MeV. The star scanner is measuring
+    electrons in energy ranges similar to some channels of Galileo&apos;s
+    Energetic Particles Detector (EPD) but the star scanner operates
+    continuously thus providing a unique data set when EPD is not
+    operating.  The star scanner is generally not sensitive to pitch
+    angle distribution. There is no data prior to the spacecraft
+    reaching Jupiter.
+ 
+    The star scanner provides a single channel of data for measuring
+    electrons termed &apos;background radiation count&apos; (or sometimes &apos;raw
+    background&apos;) along with other data on the health of the instrument,
+    brightness of stars in the field of view and time.
+ 
+ 
+    Calibration:
+ 
+    Before Galileo&apos;s launch, an attempt was made to shield the star
+    scanner&apos;s Photomultiplier Tube (PMT) from the particle environment
+    at Jupiter. The attempt was not entirely successful resulting in
+    this star scanner data set.  The conclusion that the star scanner is
+    sensing predominantly high energy electrons is based up multiple
+    arguments.
+ 
+    1. Two analyses of the shielding around the star scanner PMT
+    concluded that the star scanner should be effectively shielded from
+    electrons below ~ 1 MeV and protons of several hundred MeV. The flux
+    of such protons is generally much less than the  ~1 MeV electrons.
+ 
+    2.  Theoretical arguments [RUSSELL2001B] based on the fact that the
+    star scanner measures longitudinal asymmetries at a given
+    jovicentric distance. It is argued that these asymmetries would
+    quickly smooth out unless drifting more or less with Io. This
+    suggests ~10 to 15 MeV electrons.
+ 
+    3.  Qualitative comparison of star scanner data with Pioneer and
+    Voyager data. The star scanner measures a strong decrease in flux at
+    the Io L-shell similar to that seen in 5 MeV and 8 MeV electron data
+    from Pioneer. Although there are proton channels that show this
+    effect, they also show a noticeable flux decrease at the Europa L-
+    shell which is absent in both the Pioneer  5 MeV and 8 MeV electron
+    data as well as star scanner data.
+ 
+    4.  Quantitative comparison with Galileo Energetic Particles
+    Detector (EPD) data and Galileo Heavy Ion Counter (HIC) data.
+    Extremely strong correlations were found with the EPD DC3 channel
+    measuring &gt; 11 MeV electrons. and with  the EPD B1 channel measuring
+    ~1.5 to 10.5 MeV electrons. A very strong correlation was also noted
+    with the EPD DC2 channel measuring &gt; 2 MeV electrons.
+ 
+    5.  Pre-flight testing of the unshielded PMT found that it was
+    sensitive to ~1 MeV electrons.
+ 
+    Using the above analyses, it was found that the range of energies
+    the star scanner is measuring could be bracketed between 1.5 and 30
+    MeV. This, of course, does not imply that the star scanner would not
+    react to a 40 MeV electron or above. It is just that the flux of
+    these higher energy electrons drops off quickly with increasing
+    energy in the Jovian environment.  The star scanner response was
+    modeled using the [DIVINE&amp;GARRETT1983] model for flux in the Jovian
+    environment which predicted that the &gt; 80% of the star scanner&apos;s
+    response was caused by electrons under 30 MeV.
+ 
+    The star scanner is a linear detector at the lower fluxes (&lt;1000)
+    but becomes non-linear at higher fluxes due to saturation effects. A
+    derived channel called &apos;compensated counts&apos; is included which
+    corrects for this non-linearity and other deterministic biases in
+    the data.
+ 
+    Also using the above analyses, it is believed that the star scanner
+    is most sensitive to electrons in the range 4 to 15 MeV.  An attempt
+    was made to convert star scanner counts to a flux of electrons by
+    correlating against the EPD DC3 channel and the Divine Model.  In
+    all cases, a dependency on jovicentric distance was noted.
+ 
+    The equation:
+ 
+            Flux (#electrons cm*-2 sec*-1) = 1755 * CC * (RJ1.1208)
+ 
+    where RJ is radial distance from Jupiter, and CC is compensated
+    counts available in the star scanner text files. This conversion is
+    preliminary and thought to be correct only within a factor of five.
+    The corrected data from the star scanner (compensated counts) are
+    believed to be self-consistent; it is the conversion to flux that is
+    problematic.  Additional calibration work is on-going and will be
+    updated here as work progresses.
+ 
+ 
+    Operational Considerations:
+ 
+    There are several situations which create loss of data. The most
+    likely of these is extended periods of no station coverage. All
+    other period where the data is missing or suspect are noted in the
+    &apos;notes&apos; column of the star scanner text files. These include:
+ 
+    1. Brief periods (measured in minutes) near the point of closest
+    approach to a Galilean satellite in several encounters where the
+    star scanner shutter was closed to provide bright light protection.
+    The star scanner was not designed to return telemetry in this
+    condition.
+ 
+    2. Periods where the spacecraft antenna was turned sufficiently far
+    from the earth to cause loss of telemetry.
+ 
+    3. There is an operational mode termed &apos;OSAD&apos; for One Star Attitude
+    Determination where only a single bright star is being intentionally
+    observed by the star scanner. This situation increases the noise in
+    the background radiation data noticeably but does not otherwise harm
+    the data.
+ 
+    4. Periods where Bright Body vectors were active. These are periods
+    during each rotation when the star scanner&apos;s is effectively shut
+    down to protect the photomultiplier tube from bright light sources.
+    These periods usually have no effect on the data set but, in a few
+    instances, can block a star from the field of view and thus reduce
+    the sampling of the data set.
+ 
+    It is noted that three of the four Io fly-bys appear to have
+    &apos;spikes&apos; of  increased flux right at Io closest approach. For orbits
+    I25 and I27 at least, it appears the star scanner was sensing bright
+    light reflected from Io rather than measuring a feature of the
+    environment. In other words, the bright body vectors were not
+    effective due to prior spacecraft anomalies. It cannot be ruled out
+    that these spikes don&apos;t partially or entirely reflect a feature of
+    the electron environment since a spike was apparently seen in the J0
+    orbit, nevertheless, this spiked data must be used with extreme
+    caution.
+ 
+ 
+    Detector:
+ 
+    There are two possible sources of the radiation signal within the
+    star scanner. Either direct electron stimulation of the photocathode
+    of the photomultiplier tube or light production by fluorescence
+    and/or Cerenkov radiation in the lenses that focus the light on the
+    photomultiplier. Pre-flight testing found that up to approximately
+    15% of the signal was expected to come from the lenses. This can not
+    be verified in flight as there is no way to distinguish the two
+    signals. This does not cast doubt on the fact that the star scanner
+    as a whole is detecting electrons as described above but it does
+    mean that no meaningful geometric factors can be derived for the
+    detector.
+ 
+    The PMT were specially modified by JPL starting with a 13 stage tri-
+    alkali off-the-shelf photo-multiplier tube supplied by EMR
+    photoelectric (model #549-01090). There are three lenses, but only
+    the crown glass Ohara SK18 is important as it is the least shielded
+    and closest to the photomultiplier tube. As this is the last lens in
+    the optical train, there is no focusing of any light generated
+    within this element. See [Fieseler, 2000] for more details.
+ 
+ 
+    Measured parameters and onboard processing:
+ 
+    The star scanner only provides the single measurement of radiation
+    in the unit of &apos;counts&apos;. This actually is the average of 32 of the
+    most recent measurements that has been held in a special buffer.
+    Each measurement lasts for 3.2 milliseconds and are staggered by
+    four independent accumulators such that each measurement starts 0.8
+    millisecond after the previous. Thus the data that is downlinked is
+    actually an average taken over the previous 25.6 milliseconds. The
+    star scanner also provides the end time of this event, a code word
+    providing the health of the star scanner, the intensity of the most
+    recently seen star. Spacecraft twist information is also calculated
+    at the time the telemetry is prepared for downlink.
+ 
+ 
+    References
+    ----------
+    DIVINE&amp;GARRETT1983
+ 
+        Divine, N. and H. Garrett, Charged Particle Distributions in
+        Jupiter&apos;s Magnetosphere, J. Geophys. Res., 88, A9, 1983.
+ 
+    FIESELER2000
+ 
+        Fieseler, P., The Galileo Star Scanner as an Instrument for
+        Measuring Energetic Electrons in the Jovian Environment, MS
+        Thesis, University of Southern California, Los Angeles, 2000.
+ 
+    RUSSELLETAL2001B
+ 
+        Russell, C.T., P.D. Fieseler, D. Bindshadler, Z.J. Yu, S.P. Joy,
+        K.K. Khurana, and M.G. Kivelson, Large scale changes in the
+        highly energetic charged particles in the region of the Io
+        torus, Adv. Space Res., 28, 1495, 2001.
+
+        </description>
+    </Instrument>
+</Product_Context>

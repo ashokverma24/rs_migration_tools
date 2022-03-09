@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_tra</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Atria</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Alpha Trianguli Australis</alternate_title></Alias>
+      <Alias><alternate_title>Alpha TrA</alternate_title></Alias>
+      <Alias><alternate_title>alf TrA</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WFC 179A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 21.1 3219</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-68 2822</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 625</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 22558</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 9640</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00150798</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 150798</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 82273</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 82273</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 6217</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 16433-6856</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J16483989-6901398</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3745</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3802</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3802.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 362330</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J164840.4-690138</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 253700</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 30264</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 19468</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 9275-3641-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 14160</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 21635</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J16487-6902A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 13888</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2XMM J164840.1-690139</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 5808357163726971904</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Atria</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 16 hours 48 minutes 39.89508 seconds
+Declination, ICRS coord, ep=J2000: -69 degrees 01 minutes 39.7626 seconds
+    </description>
+  </Target>
+</Product_Context>

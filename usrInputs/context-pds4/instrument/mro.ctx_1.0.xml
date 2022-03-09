@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ctx.mro</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>CONTEXT CAMERA for MRO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mro::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Malin, M. C., J.F. Bell III, B.A. Cantor, M.A. Caplinger, W.M. Calvin,
+                   R.T. Clancy, K.S. Edgett, L. Edwards, R.M. Haberle, P.B. James, S.W. Lee,
+                   M.A. Ravine, P.C. Thomas, and M.J. Wolff (2007), Context Camera
+                   Investigation on board the Mars Reconnaissance Orbiter, J. Geophys. Res.,
+                   112, E05S04, doi:10.1029/2006JE002808.
+            </reference_text>
+            <description>reference.MALINETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>CONTEXT CAMERA</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+The instrument overview provided here is the abstract from
+[MALINETAL2007]; for more details, see that paper.
+ 
+  Instrument Overview
+  ===================
+    The Context Camera (CTX) on the Mars Reconnaissance Orbiter (MRO)
+    is a Facility Instrument (i.e., government-furnished equipment
+    operated by a science team not responsible for design and
+    fabrication) designed, built, and operated by Malin Space Science
+    Systems and the MRO Mars Color Imager team (MARCI).  CTX will (1)
+    provide context images for data acquired by other MRO instruments,
+    (2) observe features of interest to NASA&apos;s Mars Exploration
+    Program (e.g., candidate landing sites), and (3) conduct a
+    scientific investigation, led by the MARCI team, of geologic,
+    geomorphic, and meteorological processes on Mars.  CTX consists of
+    a digital electronics assembly; a 350 mm f/3.25 Schmidt-type
+    telescope of catadioptric optical design with a 5.7-degree fiels
+    of view, providing a ~30-km wide swath from ~290 km altitude; and
+    a 5000-element CCD with a band pass of 500-700 nm and 7 micron
+    pixels, giving ~6 m/pixel spatial resolution from MRO&apos;s nearly
+    circular, nearly polar mapping orbit.  Raw data are transferred to
+    the MRO spacecraft flight computer for processing (e.g., data
+    compression) before transmission to Earth.  The ground data system
+    and operations are based on 9 years of Mars Global Surveyor Mars
+    Orbiter Camera on-orbit experience.  CTX has been allocated 12
+    percent of the total MRO data return, or about &gt;= 3 terabits for
+    the nominal mission.  This data volume would cover ~9 percent of
+    Mars at 6 m/pixel, but overlapping images (for stereo, mosaics,
+    and observation of changes and meteorological events) will reduce
+    this area.  CTX acquired its first (instrument checkout) images of
+    Mars on 24 March 2006.
+
+        </description>
+    </Instrument>
+</Product_Context>

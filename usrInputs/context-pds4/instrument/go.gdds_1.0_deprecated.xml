@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:gdds.go</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GALILEO DUST DETECTION SYSTEM for GO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.go::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Baguhl, M., E. Gruen, E., D. Linkert, G. Linkert, and N. Siddique,
+                   Identification of &apos;small&apos; dust impacts in the Ulysses dust detector data,
+                   Planetary and Space Science 41, 1085-1098, 1993.
+            </reference_text>
+            <description>reference.BAGUHLETAL1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Goller, J.R., and Gruen E., Calibration of the Galileo/Ulysses dust detectors
+                   with different projectile materials and at varying impact angle, Planet. Space
+                   Sci. 37, 1197-1206, 1989.
+            </reference_text>
+            <description>reference.GOLLER-GRUEN1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gruen, E., H. Fechtig, M.S. Hanner, J. Kissel, B.A. Lindblad, D. Linkert, D.
+                   Maas, G.E. Morfill, and H.A. Zook, The Galileo dust detector, Space Sci. Rev.,
+                   60, 317-340, 1992.
+            </reference_text>
+            <description>reference.GRUENETAL1992A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gruen, E., M. Baguhl, D.P. Hamilton, J. Kissel, D. Linkert, and 2 others,
+                   Reduction of Galileo and Ulysses dust data, Planet. Space Sci, 43, 941-951,
+                   1995.
+            </reference_text>
+            <description>reference.GRUENETAL1995C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krueger, H., E. Gruen, D. Hamilton, M. Baguhl, S. Dermott, and 16 others, Three
+                   years of Galileo dust data: II. 1993 to 1995, Planetary and Space Science 47,
+                   85-106, 1999.
+            </reference_text>
+            <description>reference.KRUEGERETAL1999B</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>GALILEO DUST DETECTION SYSTEM</name>
+        <type>Dust</type> <!--RChen/EN was Dust Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    Instrument Overview
+    ===================
+    The instrument consists of a 0.1 mm thick gold foil of hemispherical
+    shape with three grids at the entrance (entrance grid, charge grid,
+    and shield), as well as an ion collector and channeltron detector.
+    The maximum sensitive area (for particles moving parallel to the
+    sensor axis) is 0.1 m**2.  Upon impact the particle produces a
+    plasma, whose charge carriers are separated by an electric field
+    between the target and the ion collector.  Negative charges (mainly
+    electrons) are collected at the target; the positive charges are
+    collected partly by the ion collector and partly by a channeltron.
+    The channeltron is used as it is insensitive to electric and
+    vibrational noise.  See Gruen et al.(1992a) [GRUENETAL1992A] for more
+    information concerning the instrument.
+ 
+ 
+    Science Objectives Summary
+    ==========================
+    The objective of the Galileo dust experiment is to investigate the
+    physical and dynamical properties of small dust particles (10**-16 to
+    10**-6g) in the Jovian environment.  The parameters to be determined
+    include the mass, speed, flight direction and electric charge of
+    individual particles.  Specific objectives are:
+    - To investigate the interaction of the Galilean satellites with
+    their dust environment in order to study the relationship between
+    dust influx on satellites and their surface properties, and to
+    perform direct measurements of ejecta particles from the satellites;
+    - To study the interaction between dust particles and magnetospheric
+    plasma, high-energy electrons and protons, and magnetic fields, to
+    determine the relationship between dust concentrations and
+    attenuation of the radiation belts, and to investigate the effects of
+    the Jovian magnetic field on the trajectories of charged dust
+    particles;
+    - To investigate the influence of the Jovian gravitational field on
+    the interplanetary dust population and to search for rings around
+    Jupiter.
+ 
+ 
+    Instrument Measurements
+    =======================
+    Positively or negatively charged particles entering the sensor are
+    first detected via the charge which they induce in the charge grid
+    while flying between the entrance and shield grids.  The grids
+    adjacent to the charge pick-up grid are kept at the same potential in
+    order to minimize the susceptibility of the charge measurement to
+    mechanical noise.  All dust particles - charged or uncharged - are
+    detected by the ionization they produce during the impact on the
+    hemispherical impact sensor.  After separation by an electric field,
+    the ions and electrons of the plasma are accumulated by charge
+    sensitive amplifiers (CSA), thus delivering two coincident pulses of
+    opposite polarity.  The rise times of the pulses, which are
+    independent of the particle mass, decrease with increasing particle
+    speed.  From both the pulse heights and rise times, the mass and
+    impact speed of the dust particles are derived by using empirical
+    correlations between these four quantities.
+ 
+ 
+   Detector Description
+   ====================
+    The sensor consists of a grid system for the measurement of the
+    particle charge, an electrically grounded target (hemisphere) and a
+    negatively biased ion collector.  A charged dust particle entering
+    the sensor will induce a charge in the charge grid, which is
+    connected to a charge sensitive amplifier.  The output voltage of
+    this amplifier rises until the particle passes this grid, and falls
+    off to zero when it reaches the shield grid.  The peak value (Q_p) is
+    stored for a maximum of 600 microseconds and is only processed if an
+    impact is detected by the impact ionization detector within this
+    time.  A dust particle hitting the hemispherical target produces
+    electrons and ions, which are separated by the electric field between
+    the hemisphere and ion collector into negative charges (electrons and
+    negative ions) and positive ions. The negative charges are collected
+    at the hemisphere and measured by a charge sensitive amplifier (Q_e).
+    Positive ions are collected and measured at the negatively biased ion
+    collector with a charge sensitive amplifier (Q_i).  Some of the ions
+    penetrate the ion collector (which is partly transparent - total
+    transmission approximately 40 percent), are further accelerated, and
+    hit the entrance cone of an electron multiplier (channeltron).
+    Secondary electrons are produced, amplified, and measured by a charge
+    sensitive amplifier (Q_c).  Other quantities measured are the rise
+    times of both the positive and negative charge pulses.  The
+    measurement of the time delay between electron pulse and ion pulse
+    serves as a means for distinguishing impact events from noise.
+    Impact events have time delays of 2-50 microseconds, while mechanical
+    noise has a time delay of milliseconds. These signal amplitudes and
+    times of a single recorded event are digitized and stored in an
+    Experiment Data Frame (EDF).
+ 
+    A measurement cycle is initiated if either the negative charge Q_e on
+    the hemispherical target, or the positive charge on the ion-collector
+    Q_i, or the positive charge Q_c on the channeltron exceeds a
+    threshold. Since the hemisphere has a large area which is directly
+    exposed to interplanetary plasma and high-energy radiation, this may
+    cause some interference for the Q_e measurement. To avoid this
+    interference during high activity times, it is possible to switch by
+    command to a mode in which a measurement cycle is initiated only when
+    the charge on the ion collector Q_i (small area and not directly
+    exposed) or channeltron signal Q_c exceeds the threshold.
+ 
+    If more than one event occurs within the transmission time of one
+    EDF, then these events are counted by several amplitude-dependent
+    counters. The dead-time caused by the measurement cycles is 5
+    milliseconds.
+ 
+    The signals from the sensor are conditioned and analysed.  The
+    microprocessor coordinates the experiment measurement cycle, collects
+    the buffered measurement data and processes the data according to a
+    program stored in the memory.
+ 
+    See Gruen et al.(1992a) [GRUENETAL1992A] for more information concerning
+    the operation of the detector.
+ 
+ 
+    Calibration Description
+    =======================
+    Impact tests with iron, carbon, and silicate particles were performed
+    at the Heidelberg dust accelerator facility.  The particles were in
+    the speed range from 1 to 70 km/s and in the mass range from 1.0E-15
+    to 1.0E-10 grams.  In addition to the projectile material variation,
+    calibrations for iron particles with varying impact angles were done.
+    See [GOLLER&amp;GRUEN1989] for more information.
+ 
+    To obtain calibrations without information about the impact angle and
+    the composition of an impacting micrometeoroid, a set of curves (one
+    for each measurement channel) was calculated, which were averaged
+    over three different materials (iron, carbon, and silicate) and over
+    the range of relevant impact angles (20 to 53 degrees).  The
+    measurements were done at different angles with iron particles and at
+    one fixed angle (20 degrees) with carbon and silicate projectiles.
+    Difficulties in accelerating glass and carbon projectiles and the low
+    acceleration rate made it impossible to do tests at more than one
+    angle.
+ 
+    A computer simulation of the detector exposed to an isotropic
+    particle flux leads to the result that 50 percent of the particles
+    hit the detector under an angle of 32 degrees or lower, relative to
+    the sensor axis.  Its effective viewing cone covers a solid angle of
+    1.4 sr.  As the target is curved (hemispherical) the impact angle,
+    measured relative to the target normal at the point of impact, is
+    generally different from the angle of incidence (relative to the
+    sensor axis).  The direction of travel of the impacting particle can
+    not be determined.  From the computer simulation the most probable
+    impact angle is 28 degrees, the average angle is 36 degrees.  This
+    information, used with the pointing of the instrument, can be used to
+    obtain a rough estimate of the particle trajectory.  The particle&apos;s
+    flight path inside the detector was determined to be 20 +/- 5 cm.
+ 
+    There are three possibilities for the determination of a particle&apos;s
+    speed (the rise times and the ratio Q_c/Q_i).  Using all three
+    measurements and comparing them with the calibration curves, the
+    speed can be determined with an accuracy of a factor of 1.6. Using
+    only one the accuracy is given by a factor of 2.
+ 
+    With a known particle speed the mass can be determined from the
+    charge yields Q_i/m and Q_e/m.  If the speed is known within a factor
+    of 1.6 and both yields are used for mass measurements the value can
+    be measured with an uncertainty of a factor of 6.  The main part of
+    this error is caused by the limited accuracy of the speed
+    measurement.
+ 
+ 
+    Instrument Modes
+    ================
+    Different instrument modes exist to alter the instrument&apos;s
+    susceptibility to noise.  These modes are changed by adjusting the
+    thresholds of the detectors on board the instrument.  The thresholds
+    are altered by telecommand from Earth.  The threshold levels of the
+    detectors are included within the dataset.
+ 
+ 
+    Onboard Processing
+    ==================
+    See [GRUENETAL1995C].
+ 
+    First, the instrument microprocessor, which controls the experiment
+    measurement cycle, collects the buffered data and processes the data
+    according to its onboard program. This takes about 5 ms (10 ms for
+    Galileo after reprogramming in June 1990).  The information on a
+    single event (dust impact or noise) is contained in an Experiment
+    Data Frame (EDF) of 16 bytes (i.e. 128 bits).
+ 
+    The instruments are designed to reliably operate under noisy
+    conditions thereby allowing the reliable extraction of true dust
+    impacts from noise events. True impacts can be detected at rates of
+    as low as one per month. This is achieved by raising the threshold
+    levels of all impact signals individually by telecommand which allows
+    instrument sensitivity to be adapted to the actual noise environment
+    on board the spacecraft. Coincidences between the signals are
+    established which, along with the signal amplitudes, are used to
+    classify each event.
+ 
+    Each measured event (noise or impact) is classified according to the
+    strength of its ion signal (IA) into one of six amplitude ranges
+    (AR=1 to 6). Each amplitude range correspond roughly to one decade in
+    electronic charge, Q_I. In addition, each event is categorized into
+    one of four event classes (described by the class number CLN). The
+    event classification scheme, which defines criteria that must be
+    satisfied for each class, as it stood before July 14, 1994, is shown.
+ 
+    The abbreviations below refer to EVENT CLASS (CLN), ION AMPLITUDE
+    (IA), CHANNELTRON AMPLITUDE (CA), ELECTRON AMPLITUDE (EA), ELECTRON RISE
+    TIME (ET), ION RISE TIME (IT), ION CHANNELTRON COINCIDENCE (ICC), ELECTRON
+    ION COINCIDENCE (EIC), and noise counters of the electron collector (EN),
+    ion collector (IN), and the channeltron (CN).
+ 
+  -----------------------------------------------------------------------
+  Parameters:| CLN=0  |  CLN=1  |       CLN=2        |       CLN=3
+  -----------------------------------------------------------------------
+     IA      | IA &gt; 0 |  IA &gt; 0 |       IA &gt; 0       |       IA &gt; SP16
+  -----------|   or   |    or   |----------------------------------------
+     EA      | EA &gt; 0 |  EA &gt; 0 |       EA &gt; 0       |       EA &gt; SP14
+  -----------|   or   |--------------------------------------------------
+     CA      | CA &gt; 0 |  CA &gt; 0 |       CA &gt; 0       |       CA &gt; SP15
+  -----------------------------------------------------------------------
+     ET      |        |         | SP03 &lt;= ET &lt;= SP04 | SP03 &lt;= ET &lt;= SP04
+  -----------------------------------------------------------------------
+     IT      |        |         | SP01 &lt;= IT &lt;= SP02 | SP01 &lt;= IT &lt;= SP02
+  -----------------------------------------------------------------------
+     EIC     |        |         |       EIC = 0      |      EIC = 0
+  -----------------------------------------------------------------------
+     ICC     |        |         |       ICC = 1      |      ICC = 1
+  -----------------------------------------------------------------------
+  Noise      |        |         |                    |
+  counter of:|        |         |                    |
+     EN      |        |         |                    |      EN &lt;= SP11
+     IN      |        |         |                    |      IN &lt;= SP09
+     CN      |        |         |                    |      CN &lt;= SP10
+  -----------------------------------------------------------------------
+ 
+    Within each class these conditions are connected by logical &apos;and&apos;
+    except where noted. Class 0 (CLN = 0) includes all events that are
+    not categorized in a higher class (typically noise and unusual impact
+    events - e.g. impacts onto the sensor&apos;s internal structure other than
+    the impact target).  In classes 1 through 3, the criteria become
+    increasingly restricted so that CLN = 3 generally represents true
+    dust impact events only. Some of the set point values (SP01 to SP15),
+    which can be set by ground command, are used in the classification
+    scheme. Prior to July 14, 1994, the set points were as follows:
+ 
+                        SP01 =  1
+                        SP02 = 15
+                        SP03 =  1
+                        SP04 = 15
+                        SP09 =  2
+                        SP10 =  8
+                        SP11 =  8
+                        SP14 =  0
+                        SP15 =  0
+                        SP16 =  0
+ 
+    The on board classification can be adapted to the in-flight noise
+    environment by changing the thresholds and classification parameters
+    (set points) or by adjusting the onboard classification program
+    through telecommands. Detailed information on noise is mandatory in
+    order to evaluate the reliability of impact detection for the various
+    event categories, to minimize the effect on dead-time and to optimize
+    memory utilization. Such a modification of the on board
+    classification scheme was done on July 14, 1994 after a detailed
+    analysis of data from Ulysses [BAGUHLETAL1993] identified a number of
+    &apos;small&apos; impacts in the three lowest categories. Baguhl et al. deduced
+    a modified event classification scheme which allowed for a better
+    discrimination between noise events and real dust impacts:
+ 
+  -----------------------------------------------------------------------
+  Parameters:  |CLN=0 |      CLN=1    |         CLN=2       |  CLN=3
+  -----------------------------------------------------------------------
+     IA        | IA&gt;0 |  IA&gt;0  | IA&gt;0 |   IA&gt;0     | IA&gt;0   |  IA&gt;0
+  -------------|  or  |--------|------|------------|--------|-----------
+     EA        | EA&gt;0 |  EA&gt;0  |      |   EA&gt;0     |        |  EA&gt;0
+  -------------|  or  |--------|------|------------|--------|-----------
+     CA        | CA&gt;0 |        | CA&gt;0 |            | CA&gt;0   |  CA&gt;0
+  -------------|------|--------|------|------------|--------|-----------
+     ET        |      |        |      |            |        | 1&lt;=ET&lt;=15
+  -------------|------|--------|------|------------|--------|-----------
+     IT        |      |        |      |            |        | 1&lt;=IT&lt;=15
+  -------------|------|--------|------|------------|--------|-----------
+     EIC       |      | EIC=1  |      |   EIC=0    |        |  EIC=0
+  -------------|------|--------|------|------------|--------|-----------
+     ICC       |      |        |      |            | ICC=1  |  ICC=1
+  -------------|------|--------|------|------------|--------|-----------
+               |      | EIT=0  |      |            |        |
+     EIT       |      |   or   |      | 3&lt;=EIT&lt;=15 |        | 3&lt;=EIT&lt;=15
+               |      | EIT=15 |      |            |        |
+  -------------|------|--------|------|------------|--------|-----------
+  Noise counter|      |        |      |            |        |
+  of:          |      |        |      |            |        |
+     EN        |      |        |      | EN&lt;=8      |        |  EN&lt;=8
+     IN        |      |        |      | IN&lt;=14     |        |  IN&lt;=2
+     CN        |      |        |      |            | CN&lt;=14 |  CN&lt;=2
+  -----------------------------------------------------------------------
+ 
+    The definition of class 3 remained unchanged with respect to the old
+    scheme. Classes 1 and 2 were divided into two subclasses. With the
+    modified scheme, noise events are usually restricted to Class 0.
+    However, Class 0 may still contain good dust impacts, especially in
+    the higher amplitude ranges. Although noise events are normally
+    restricted to Class 0, Classes 1 and 2 are also contaminated by noise
+    in extreme radiation environments [KRUEGERETAL199B].
+ 
+    The above four classes, together with six amplitude ranges,
+    constitute twenty-four separate categories. Each of these categories
+    has its own 8-bit accumulator:
+ 
+                          |         |    Class number (CLN)
+                          |Amplitude|
+                     IA   |  Range  |  0      1      2      3
+                    -------------------------------------------
+                     0- 7 | AR = 1  | AC01 | AC11 | AC21 | AC31
+                     8-15 | AR = 2  | AC02 | AC12 | AC22 | AC32
+                    16-23 | AR = 3  | AC03 | AC13 | AC23 | AC33
+                    24-32 | AR = 4  | AC04 | AC14 | AC24 | AC34
+                    48-55 | AR = 5  | AC05 | AC15 | AC25 | AC35
+                    56-63 | AR = 6  | AC06 | AC16 | AC26 | AC36
+ 
+    As long as the respective accumulator does not overflow, each event
+    is counted even if the complete information is not received on
+    ground. Generally, the event rate is so low (even in the low
+    amplitude and low class ranges) that the true increment can be
+    reliably determined. All categories and corresponding accumulators -
+    excluding AC01, AC11 and AC02 - contain primarily impact events. Even
+    in these latter categories, true impacts can be identified and
+    separated from noise events if the complete data set for an event is
+    available (Baguhl et al., 1993)[BAGUHLETAL1993].
+ 
+    The on board data processing supports the application of a priority
+    scheme for the data transmission. Data from events with different
+    categories are stored in different ranges of the on board memory. The
+    organization of the memory is particularly important because of its
+    severely limited transmission rate. Data must be safely stored on
+    board for long periods of time.
+ 
+    The memory is divided into separate ranges in which various data is
+    given priority. The A-range of instrument memory stores the six most
+    recent EDFs - one for each amplitude range regardless of class. The
+    E/E2 range, graphically depicted below, stores the last 8 (the last
+    16 after reprogramming in June 1990) events occurring within class 3.
+    These events satisfy the most stringent constraints and are almost
+    certainly true impacts. Additional memory ranges F, G, and H were
+    added to the Galileo memory scheme during reprogramming. The last 8
+    EDFs in each of these ranges are also stored. Thus, 46 EDFs can be
+    stored in DDS memory.
+ 
+              |         | Class number (CLN)
+              |Amplitude|
+         IA   |  Range  | 0   1   2    3
+    -------------------------------------------
+         0- 7 | AR = 1  | H | G | G | E/E2
+         8-15 | AR = 2  | F | F | F | E/E2
+        16-23 | AR = 3  | F | F | F | E/E2
+        24-32 | AR = 4  | F | F | F | E/E2
+        48-55 | AR = 5  | F | F | F | E/E2
+        56-63 | AR = 6  | F | F | F | E/E2
+ 
+ 
+    Data Readout Modes
+    ==================
+    During most of the interplanetary cruise (i.e. before December 7,
+    1995) DDS data was received as instrument memory readouts (MROs).
+    MROs return event data which have accumulated in the instrument
+    memory over time. The contents of all 46 instrument data frames of
+    DDS is transmitted to Earth during an MRO. If too many events in a
+    given range occur between two MROs, the oldest EDFs in that range are
+    overwritten in the instrument memory and lost.
+ 
+    In April 1996 the spacecraft computer on board Galileo was
+    reprogrammed (Phase 2 software) which provided a new mode for high-
+    rate dust data transmission to the Earth, the so-called realtime
+    science mode (RTS). In RTS mode, DDS data were read-out wither every
+    7 or every 21 minutes, depending on the spacecraft data transmission
+    rate, and were usually directly transmitted to Earth with a rate of
+    about 1 or 3 bits per second.
+ 
+    For short periods around satellite closest approaches, DDS data were
+    collected with a higher rate at about one minute intervals, recorded
+    on the tape recorder and transmitted to Earth several days to a few
+    weeks later. This was known as &apos;record mode&apos;. Sometimes RTS data for
+    short time intervals were also stored on the tape recorder and
+    transmitted later, but this does not change the labeling.
+ 
+    In both RTS and record mode only seven instrument data frames were
+    read out and transmitted to Earth, rather than the complete
+    instrument memory. This read out would consist of the six A-range
+    events and one of the E, F, G, and H range events. The E, F, G, and H
+    ranges were cyclically permuted so that 40 successive read-out cycles
+    cover the full range of instrument memory.
+ 
+    All accumulator counters were read out and transmitted (or stored to
+    tape and transmitted) during each MRO, RTS and record mode read out.
+    Because of the low data transmission rates required for this
+    instrument, event rates were unaffected by spacecraft transmission
+    rates.
+ 
+ 
+   Data processing on the ground
+   =============================
+    After receiving the partially processed data from the spacecraft, the
+    following data processing steps are performed on the ground:
+ 
+         (1) instrument health check
+         (2) generation of accumulator histories
+         (3) extraction of discrete events
+         (4) reduction of impact data
+         (5) generation of data products
+ 
+    The instrument health check involves inspection of instrument house
+    keeping data such as temperatures, voltages, currents and a check of
+    the test pulse data. If, for example, the temperature readings are
+    too high, the heater power level can be set accordingly.
+ 
+    Once per day (during encounter times more frequently) all 24
+    accumulators are checked and history plots covering appropriate time
+    intervals for impact and noise events are produced. If excessive
+    noise is detected then appropriate measures, such as changing the
+    thresholds or channeltron high voltage by telecommand, can be taken.
+    Occasionally, tests of different instrument modes are performed in
+    order to probe the actual noise environment; the instrument
+    parameters can then be adjusted accordingly.
+ 
+    The extraction of discrete event data, includes the removal of
+    redundant information, which can occur because of the design of the
+    instrument&apos;s memory, and a completeness check during which all events
+    that have caused an increment of one of the 24 accumulators are
+    searched for. Data of these events are put in time order.
+ 
+    The preparation of data products is the final routine step of dust
+    data processing. A number of separate files are produced which
+    reflect various stages of data processing.
+ 
+ 
+   Instrument Mounting
+   ===================
+   The instrument is located on the spinning section of the spacecraft
+   underneath the magnetometer boom. The sensor axis is offset by an
+   angle of 60 degrees from the positive z axis (Krueger et al. 1999b
+   [KRUEGERETAL1999B]). The z axis is the rotation axis of the
+   spacecraft.  The positive direction is antiparallel to the spacecraft
+   antenna. During most of the initial 3 years of the mission the antenna
+   pointed towards the Sun. Since 1993, the antenna usually points
+   towards Earth.  The Galileo dust detector weighs 4.2 kg and consumes
+   2.4 W.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="$opt.schematron"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational
+   xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+      http://pds.nasa.gov/pds4/pds/v1
+      $opt.schema">
+
+#set ($Target=$Text.toTitleCase(${lbl.TARGET_NAME}))
+#set ($collection_id_pre=$opt.collection_id_pre)
+#set ($dataType="rsr")
+       <Identification_Area>
+             <logical_identifier>urn:nasa:pds:$opt.bundle_id:$collection_id_pre$dataType:FILEWITHNOEXE</logical_identifier>
+             <version_id>1.0</version_id>
+             <title>$opt.spacecraft Radio Science Receiver (RSR) File
+                    From: START_TIMEZ to STOP_TIMEZ
+                    DSN: DSSUSED
+             </title>
+             <information_model_version>$opt.model_version</information_model_version>
+             <product_class>Product_Observational</product_class>
+             <Citation_Information>
+                   <author_list>$opt.author_list</author_list>
+                   <publication_year>$opt.publication_year</publication_year>
+                   <description>$opt.spacecraft Radio Science Receiver (RSR) File</description>
+             </Citation_Information>
+             <Modification_History>
+                   <Modification_Detail>
+                         <modification_date>CREATION_DAY</modification_date>
+                         <version_id>1.0</version_id>
+                         <description>
+                                This data file has been migrated from PDS3 PRODUCT_ID $lbl.PRODUCT_ID
+                                in data set $lbl.DATA_SET_ID to PDS4. The data file has not
+                                been changed; a new PDS4 label was created as part of the migration process.
+                         </description>
+                  </Modification_Detail>
+             </Modification_History>
+       </Identification_Area>
+       <Observation_Area>
+             <Time_Coordinates>
+                   <start_date_time>START_TIMEZ</start_date_time>
+                   <stop_date_time>STOP_TIMEZ</stop_date_time>
+             </Time_Coordinates>
+             <Primary_Result_Summary>
+                   <purpose>Science</purpose>
+                   <processing_level>Raw</processing_level>
+                   <description>$opt.spacecraft radio science receiver data</description>
+                   <Science_Facets>
+                           <discipline_name>Radio Science</discipline_name>
+                   </Science_Facets>
+             </Primary_Result_Summary>
+             <Investigation_Area>
+                   <name>$opt.mission</name>
+                   <type>Mission</type>
+                   <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:investigation:$opt.investigation</lid_reference>
+                         <reference_type>data_to_investigation</reference_type>
+                   </Internal_Reference>
+             </Investigation_Area>
+             <Observing_System>
+                   <Observing_System_Component>
+                         <name>$opt.spacecraft</name>
+                         <type>Spacecraft</type>
+                         <Internal_Reference>
+                               <lid_reference>urn:nasa:pds:context:instrument_host:$opt.instrument_host</lid_reference>
+                               <reference_type>is_instrument_host</reference_type>
+                         </Internal_Reference>
+                   </Observing_System_Component>
+                   <Observing_System_Component>
+                         <name>$opt.instrument_name</name>
+                         <type>Instrument</type>
+                         <Internal_Reference>
+                               <lid_reference>urn:nasa:pds:context:instrument:$opt.instrument</lid_reference>
+                               <reference_type>is_instrument</reference_type>
+                         </Internal_Reference>
+                   </Observing_System_Component>
+                   DSNOBSSYS
+             </Observing_System>
+             <Target_Identification>
+                   <name>$Target</name>
+                   <type>$targ_type.get($Target)</type>
+                   <Internal_Reference>
+                         <lid_reference>$targ_lid.get($Target)</lid_reference>
+                         <reference_type>data_to_target</reference_type>
+                   </Internal_Reference>
+             </Target_Identification>
+       </Observation_Area>
+       <Reference_List>
+            <Internal_Reference>
+                  <lid_reference>DOCLID</lid_reference>
+                  <reference_type>data_to_document</reference_type>
+                  <comment>
+                          Reference document for the Radio Science Receiver (RSR) data.
+                          For data collected earlier or later than this document, consult other 
+                          document products in the same collection.
+                  </comment>
+            </Internal_Reference>                  
+            <Source_Product_External>
+                  <external_source_product_identifier>$lbl.DATA_SET_ID:$lbl.PRODUCT_ID</external_source_product_identifier>
+                  <reference_type>data_to_raw_source_product</reference_type>
+                  <curating_facility>$opt.curating_facility</curating_facility>
+                  <description>
+                      The value for external_source_product_identifier is constructed from the
+                      PDS3 DATA_SET_ID, an ASCII colon character, and the PDS3 PRODUCT_ID.
+                  </description>                                                                     
+            </Source_Product_External>
+       </Reference_List>
+       <File_Area_Observational>
+             <File>
+                   <file_name>FILE_NAME</file_name>
+                   <creation_date_time>CREATION_TIME</creation_date_time>
+                   <file_size unit="byte">FILE_SIZE</file_size>
+                   <md5_checksum>MD5</md5_checksum>
+             </File>
+             <Table_Binary>
+                   <name>$opt.spacecraft Radio Science Receiver (RSR) raw data</name>
+                   <offset unit="byte">0</offset>
+                   <records>RECORDS</records>
+                   <description>
+                                Raw Radio Science Receiver (RSR) data.
+                   </description>
+                   <Record_Binary>
+                         <fields>71</fields>
+                         <groups>1</groups>
+                         <record_length unit="byte">LENGTH</record_length> 
+                         <Field_Binary>
+                               <name>SFDU Control Authority</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                     An ASCII string giving the SFDU Control Authority for this data
+                                     type.  Set to "NJPL", meaning the data description information for
+                                     this type of SFDU is maintained by the NASA/JPL Control Authority.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SFDU Label Version ID</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">5</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     An ASCII character giving the SFDU Label Version Identifier.  Set to
+                                     "2", meaning the length given in bytes 13-20 is formatted as a
+                                     binary unsigned integer.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SFDU Class ID</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">6</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     An ASCII character giving the SFDU Class Identifier.  Set to "I",
+                                     meaning this is a Compressed Header Data Object (CHDO) structured SFDU.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SFDU Reserved</name>
+                               <field_number>4</field_number>
+                               <field_location unit="byte">7</field_location>
+                               <data_type>SignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     These two bytes are not defined.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SFDU Data Description ID</name>
+                               <field_number>5</field_number>
+                               <field_location unit="byte">9</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                     An ASCII string giving the SFDU Data Description Identifier.  Set to
+                                     "C997", a unique identifier for the RSR data type within the NASA/JPL
+                                     Control Authority.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SFDU RSR Length Pad</name>
+                               <field_number>6</field_number>
+                               <field_location unit="byte">13</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                     The high-order 32 bits of a 64-bit unsigned binary integer giving the
+                                     number of remaining bytes in the SFDU after the 20-byte label.
+                                     Always "0" in the RSR SFDU.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SFDU RSR Length</name>
+                               <field_number>7</field_number>
+                               <field_location unit="byte">17</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>byte</unit>
+                               <description>
+                                     The number of remaining bytes in the SFDU after the 20-byte label.
+                                     Always less than 31000.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Header Aggregation CHDO Type</name>
+                               <field_number>8</field_number>
+                               <field_location unit="byte">21</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     Header Aggregation CHDO Type.  Set to "1", meaning this CHDO is an
+                                     aggregation of header CHDOs.  The NJPL Control Authority maintains a
+                                     registry of CHDO types.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Header Aggregation CHDO Length</name>
+                               <field_number>9</field_number>
+                               <field_location unit="byte">23</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <unit>byte</unit>
+                               <description>
+                                     Header Aggregation CHDO Length. Set to "232", meaning length of the
+                                     value field of the Header Aggregation CHDO is 232 bytes (bytes 25-256).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Primary Header CHDO Type</name>
+                               <field_number>10</field_number>
+                               <field_location unit="byte">25</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     Primary Header CHDO Type.  Set to to "2", meaning this CHDO is a
+                                     primary header CHDO.  The NJPL Control Authority maintains a
+                                     registry of CHDO types.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Primary Header CHDO Length</name>
+                               <field_number>11</field_number>
+                               <field_location unit="byte">27</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <unit>byte</unit>
+                               <description>
+                                     Primary Header CHDO Length. Set to "4", meaning length of the value
+                                     field of the Primary Header CHDO is 4 bytes (bytes 29-32).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Major Data Class</name>
+                               <field_number>12</field_number>
+                               <field_location unit="byte">29</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Major Data Class.  Set to "21", meaning this SFDU contains Radio
+                                     Science data.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Minor Data Class</name>
+                               <field_number>13</field_number>
+                               <field_location unit="byte">30</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Minor Data Class.  Set to "4" if these are Radio Science Receiver data from
+                                     the DSN.  Set to "5" is these are VSR data which have been converted to the
+                                     RSR format.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Mission Identifier</name>
+                               <field_number>14</field_number>
+                               <field_location unit="byte">31</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Mission Identifier.  Set to "0", meaning the RSR does not use this
+                                     field.  The value may be changed if the Ground Data System handles
+                                     the data. If a Mission Identifier is needed, values may be found in
+                                     DSN document 820-013, OPS-6-21A, Table 3-4.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Format Code</name>
+                               <field_number>15</field_number>
+                               <field_location unit="byte">32</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Format Code.  Set to "0".  The RSR supports only one data format.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Secondary Header CHDO Type</name>
+                               <field_number>16</field_number>
+                               <field_location unit="byte">33</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     Secondary Header CHDO Type.  Set to to "104", meaning this CHDO is an
+                                     RSR secondary header CHDO.  The NJPL Control Authority maintains a
+                                     registry of CHDO types.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Secondary Header CHDO Length</name>
+                               <field_number>17</field_number>
+                               <field_location unit="byte">35</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <unit>byte</unit>
+                               <description>
+                                     Secondary Header CHDO Length. Set to "220", meaning length of the value
+                                     field of the Secondary Header CHDO is 220 bytes (bytes 37-256).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Originator ID</name>
+                               <field_number>18</field_number>
+                               <field_location unit="byte">37</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Originator Identifier.  A value "48" means the data originated within the
+                                     DSN.  A value "123" means these data originated in the JPL Radio Science
+                                     Systems Group.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Last Modifier ID</name>
+                               <field_number>19</field_number>
+                               <field_location unit="byte">38</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Last Modifier Identifier. A value "48" means the contents of the SFDU
+                                     were last modified by the DSN. A value "123" means these data were
+                                     last modified by the JPL Radio Science Systems Group.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>RSR Software ID</name>
+                               <field_number>20</field_number>
+                               <field_location unit="byte">39</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     RSR Software Identifier. The version of the RSR software is indicated by
+                                     an unsigned binary integer between 0 and 65535.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Record Sequence Number</name>
+                               <field_number>21</field_number>
+                               <field_location unit="byte">41</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     The Record Sequence Number (RSN) starts at 0 for the first RSR SFDU
+                                     and increments by 1 for each successive SFDU to a maximum of
+                                     65535, after which it resets to 0 and begins incrementing again.
+                                     The RSN may be reset at other times, such as when the RSR is started or
+                                     restarted.  The RSN is provided by the originator of the SFDU and should
+                                     not be changed during subsequent handling or modification.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Signal Processing Center</name>
+                               <field_number>22</field_number>
+                               <field_location unit="byte">43</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Signal Processing Center (SPC) Identifer. Valid numbers include
+                                     10   Goldstone
+                                     40   Canberra
+                                     60   Madrid
+                                     21   DTF21
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Deep Space Station</name>
+                               <field_number>23</field_number>
+                               <field_location unit="byte">44</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Deep Space Station (DSS) Identifier. This is the DSS identifier listed in
+                                     the frequency predicts file used to collect the data in this SFDU.  DSS
+                                     identifiers are listed in DSN document 820-013, OPS-6-3 and include
+                                     valid numbers such as 14, 15, 25, 43, 45, 54, and 63.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Radio Science Receiver</name>
+                               <field_number>24</field_number>
+                               <field_location unit="byte">45</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Radio Science Receiver (RSR) Identifier.  Values can be in the
+                                     range 1-16 and specify the RSR used to collect the data in this SFDU.
+                                     For example,
+                                     RSR ID = 1  denotes  RSR1A
+                                     RSR ID = 2  denotes  RSR1B
+                                     RSR ID = 3  denotes  RSR2A
+                                     The SPC ID and RSR ID uniquely specify the hardware used in the
+                                     data acquisition.  SPC 10 has three RSR racks; SPC 40 and SPC 60 each
+                                     have two.  Each rack has two receivers (A and B).  Except for the
+                                     analog components in the ADCs, the end-to-end performance of every RSR
+                                     should be identical.  For data derived from a VSR, the values and their
+                                     meanings are different.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Identifier</name>
+                               <field_number>25</field_number>
+                               <field_location unit="byte">46</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Sub-Channel Identifier.  This can be in the range 1-4 and specifies the
+                                     RSR sub-channel used to acquire the the data in this SFDU.  If the data
+                                     originated in a VSR, the permissible range is 0-15, assigned as follows:
+                                     0 = 1N1
+                                     1 = 1N2
+                                     2 = 1W1
+                                     3 = 1W2
+                                     4 = 2N1
+                                     ...
+                                     15 = 4W2
+                                     There are two narrow band (N or NB) subchannels and two wide band (W or WB)
+                                     subchannels for each of up to 4 channels on each VSR.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Secondary Header CHDO Reserved</name>
+                               <field_number>26</field_number>
+                               <field_location unit="byte">47</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     This field is not used.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Spacecraft</name>
+                               <field_number>27</field_number>
+                               <field_location unit="byte">48</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Spacecraft Identifier, as listed in the frequency predicts file used to
+                                     collect the data in this SFDU. Values are assigned by the Deep Space
+                                     Mission System (DSMS) and are in the range 0-255.  Assignments are given
+                                     in DSN document 820-013, OPS-6-21A, Table 3-4.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Predicts Pass Number</name>
+                               <field_number>28</field_number>
+                               <field_location unit="byte">49</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     Predicts Pass Number (range 0-65535) gives the DSN pass number in the
+                                     predicts file used to collect the data in this SFDU.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Uplink Frequency Band</name>
+                               <field_number>29</field_number>
+                               <field_location unit="byte">51</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     The Uplink Frequency Band specified in the predicts file used to collect
+                                     the data in this SFDU.  Possible values include: 
+                                         "S"    S-Band 
+                                         "X"    X-Band
+                                         "K"    Ka-Band
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Downlink Frequency Band</name>
+                               <field_number>30</field_number>
+                               <field_location unit="byte">52</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     The Downlink Frequency Band specified in the predicts file used to collect
+                                     the data in this SFDU.  Possible values include: 
+                                         "S"    S-Band 
+                                         "X"    X-Band
+                                         "K"    Ka-Band
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Tracking Mode</name>
+                               <field_number>31</field_number>
+                               <field_location unit="byte">53</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     The Tracking Mode in use when the data in this SFDU were acquired.
+                                     Possible values are: 
+                                         "S"    S-Band 
+                                         "X"    X-Band
+                                         "K"    Ka-Band
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Uplink DSS ID for 3-Way Tracking</name>
+                               <field_number>32</field_number>
+                               <field_location unit="byte">54</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Deep Space Station (DSS) Identifier for the uplink antenna when
+                                     TRACKING_MODE=3; otherwise, undefined.  DSS identifiers are
+                                     listed in DSN document 820-013, OPS-6-3 and include valid numbers
+                                     such as 14, 15, 25, 43, 45, 54, and 63.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>FGAIN</name>
+                               <field_number>33</field_number>
+                               <field_location unit="byte">55</field_location>
+                               <data_type>SignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <unit>deciBel per Hertz</unit>
+                               <description>
+                                     Expected ratio of signal power to noise power in a one Hz bandwidth
+                                     when the data in this SFDU were collected.  This parameter is used
+                                     to estimate the sample voltage amplitudes at the RSR output and to
+                                     compute settings of the sub-channel filter gain so that there is no
+                                     clipping of the sample values. Possible values are in the range
+                                     -127 to +128.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>FGAIN IF Bandwidth</name>
+                               <field_number>34</field_number>
+                               <field_location unit="byte">56</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <unit>megahertz</unit>
+                               <description>
+                                     IF Bandwidth expected to be in use by the RSR at the time the data in
+                                     this SFDU were acquired. This value is used to compute the settings of
+                                     the sub-channel filter gain. Values can be in the range 1-127.  If the
+                                     data originated in a VSR, this value may be set to "0".
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>FROV Flag</name>
+                               <field_number>35</field_number>
+                               <field_location unit="byte">57</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Frequency Predicts Override Flag. Set to "0", this indicates that the
+                                     frequency predicts file was in use; any other value indicates that the
+                                     frequency specified by the FROV command was in use.  The value of the
+                                     override frequency is given by PREDICTS_FREQUENCY_OVERRIDE in Column 51.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>DIG Attenuation</name>
+                               <field_number>36</field_number>
+                               <field_location unit="byte">58</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     RSR Digitizer Subassembly (DIG) setting.  Values are in the range
+                                     0-63, which correspond to 0.5 dB increments in attenuation.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>DIG ADC RMS</name>
+                               <field_number>37</field_number>
+                               <field_location unit="byte">59</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Root-mean-square amplitude of about 10000 8-bit samples taken from the DIG
+                                     ADC stream.  Time of the measurement is stored in fields 39-41.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>DIG ADC Peak</name>
+                               <field_number>38</field_number>
+                               <field_location unit="byte">60</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Peak amplitude from about 10000 8-bit samples taken from the DIG ADC stream.
+                                     Time for the measurement is stored in fields 39-41.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>DIG ADC Year</name>
+                               <field_number>39</field_number>
+                               <field_location unit="byte">61</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     UTC year on which the ADC data were computed.  Values can range over
+                                     1900-3000.  If the data originated in a VSR, this field may be set to "0".
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>DIG ADC Day of Year</name>
+                               <field_number>40</field_number>
+                               <field_location unit="byte">63</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     UTC day-of-year on which the ADC data were computed.  Values can range 
+                                     over 1-366.  If the data originated in a VSR, this field may be set to "0".
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>DIG ADC Second</name>
+                               <field_number>41</field_number>
+                               <field_location unit="byte">65</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>second</unit>
+                               <description>
+                                     UTC second of day on which the ADC data were computed.  Values can
+                                     range over 0-86400.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sample Resolution</name>
+                               <field_number>42</field_number>
+                               <field_location unit="byte">69</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <unit>bit</unit>
+                               <description>
+                                     Bits per sample in the data in this SFDU.  Valid values are 1, 2, 4, 8, and
+                                     16 and are selected by the RSR operator while it is in configure state.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Data Error Count</name>
+                               <field_number>43</field_number>
+                               <field_location unit="byte">70</field_location>
+                               <data_type>UnsignedByte</data_type>
+                               <field_length unit="byte">1</field_length>
+                               <description>
+                                     Number of hardware errors encountered while the data in this SFDU were
+                                     being recorded. Values can range over 0-255, but any value greater than 0
+                                     indicates data may have been corrupted by hardware errors.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sample Error Rate</name>
+                               <field_number>44</field_number>
+                               <field_location unit="byte">71</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <unit>kilosample per second</unit>
+                               <description>
+                                     The rate at which samples were collected in this SFDU. Sample rate
+                                     (or bandwidth) is specified by the operator while the RSR is in the
+                                     configure state.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>DDC LO Frequency</name>
+                               <field_number>45</field_number>
+                               <field_location unit="byte">73</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <unit>megahertz</unit>
+                               <description>
+                                     Digital Down Converter (DDC) Local Oscillator (LO) Frequency. This
+                                     specifies the downconversion applied to the signal in the DIG and DDC.
+                                     This frequency is needed to compute the sky frequency of the data in
+                                     this SFDU:
+                                           Fsky = RFtoIF_LO + DDC_LO - NCO_Freq + Fresid
+                                     where
+                                        RFtoIF_LO is in field 46,
+                                        DDC_LO is in field 45,
+                                        NCO_Freq is from fields 61-63, and
+                                        Fresid is the signal offset from DC in the RSR data.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>RF-IF LO Frequency</name>
+                               <field_number>46</field_number>
+                               <field_location unit="byte">75</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <unit>megahertz</unit>
+                               <description>
+                                     RF to IF Down Converter Local Oscillator (LO) Frequency. This
+                                     specifies the total downconversion applied to the signal before it
+                                     entered the RSR DIG.  The value is subtracted from the RF predict
+                                     points in order to obtain the frequency of the desired signal at
+                                     IF.  The RSR selects a default value based on the downlink band: 2000
+                                     (S-Band), 8100 (X-Band), or 31700 (Ka-Band).  This frequency is needed
+                                     in order to reconstruct the sky frequency of the data contained in
+                                     this SFDU:
+                                          Fsky = RFtoIF_LO + DDC_LO - NCO_Freq + Fresid
+                                     where
+                                          RFtoIF_LO is in field 46,
+                                          DDC_LO is in field 45,
+                                          NCO_Freq is from fields 61-63, and
+                                          Fresid is the signal offset from DC in the RSR data.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SFDU Year</name>
+                               <field_number>47</field_number>
+                               <field_location unit="byte">77</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     UTC year for the SFDU data and models. Values can range over 1900-3000.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SFDU Day of Year</name>
+                               <field_number>48</field_number>
+                               <field_location unit="byte">79</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     UTC day-of-year for the SFDU data and models. Values can range over 1-366.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SFDU Second</name>
+                               <field_number>49</field_number>
+                               <field_location unit="byte">81</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>second</unit>
+                               <description>
+                                     UTC seconds of day for the SFDU data and models. Values can range over 0-86400.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Predicts Time Shift</name>
+                               <field_number>50</field_number>
+                               <field_location unit="byte">89</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <description>
+                                     The number of seconds added to the time tags of the frequency predicts
+                                     to shift them in time. This feature allows testing the RSR with old
+                                     predict files.  The value should be 0.0 during normal operations.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Predicts Frequency Override</name>
+                               <field_number>51</field_number>
+                               <field_location unit="byte">97</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The value of the predicts frequency override specified by the FROV
+                                     command; this constant value is substituted for the value derived
+                                     from the predicts.  The flag in field 35 indicates whether the
+                                     frequency override is active.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Predicts Frequency Rate</name>
+                               <field_number>52</field_number>
+                               <field_location unit="byte">105</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz/second</unit>
+                               <description>
+                                     The frequency rate added to the RF frequency predicts as specified by
+                                     the FRR command. The allowable range is -8000 to +8000 hertz/second.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Predicts Frequency Offset</name>
+                               <field_number>53</field_number>
+                               <field_location unit="byte">113</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The total frequency added to the RF frequency predicts as specified by
+                                     the FRO command and the accumulated frequency rate as specified by the
+                                     FRR command. The allowable range is -8 to +8 MHz.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Frequency Offset</name>
+                               <field_number>54</field_number>
+                               <field_location unit="byte">121</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The frequency added to the frequency predicts for this sub-channel as
+                                     specified by the SFRO command.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>RF Point 1</name>
+                               <field_number>55</field_number>
+                               <field_location unit="byte">129</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The radio frequency at the beginning of the second as calculated from the predicts.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>RF Point 2</name>
+                               <field_number>56</field_number>
+                               <field_location unit="byte">137</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The radio frequency at the middle of the second as calculated from the predicts.
+                                     Set to IEEE NaN (hex 7FFFFFFFFFFFFFFF) if not calculable.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>RF Point 3</name>
+                               <field_number>57</field_number>
+                               <field_location unit="byte">145</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The radio frequency at the end of the second as calculated from the predicts.
+                                     Set to IEEE NaN (hex 7FFFFFFFFFFFFFFF) if not calculable.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Frequency Point 1</name>
+                               <field_number>58</field_number>
+                               <field_location unit="byte">153</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The sub-channel frequency at the beginning of the second.  This point
+                                     is used to create the sub-channel frequency and phase polynomials.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Frequency Point 2</name>
+                               <field_number>59</field_number>
+                               <field_location unit="byte">161</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The sub-channel frequency at the middle of the second.  This point
+                                     is used to create the sub-channel frequency and phase polynomials.
+                                     Set to IEEE NaN (hex 7FFFFFFFFFFFFFFF) if not calculable.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Frequency Point 3</name>
+                               <field_number>60</field_number>
+                               <field_location unit="byte">169</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The sub-channel frequency at the end of the second.  This point
+                                     is used to create the sub-channel frequency and phase polynomials.
+                                     Set to IEEE NaN (hex 7FFFFFFFFFFFFFFF) if not calculable.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Frequency Coefficient F1</name>
+                               <field_number>61</field_number>
+                               <field_location unit="byte">177</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The sub-channel frequency polynomial coefficient F1 where the frequency
+                                     over a one millisecond interval beginning at t in msec is evaluated
+                                          F(t) = F1 + F2*((t+0.5)/1000) + F3*((t+0.5)/1000)**2
+                                     The coefficients are derived from the frequency points in fields 58-60.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Frequency Coefficient F2</name>
+                               <field_number>62</field_number>
+                               <field_location unit="byte">185</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The sub-channel frequency polynomial coefficient F2 where the frequency
+                                     over a one millisecond interval beginning at t in msec is evaluated
+                                          F(t) = F1 + F2*((t+0.5)/1000) + F3*((t+0.5)/1000)**2
+                                     The coefficients are derived from the frequency points in fields 58-60.
+                                     Set to IEEE NaN (hex 7FFFFFFFFFFFFFFF) if not calculable.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Frequency Coefficient F3</name>
+                               <field_number>63</field_number>
+                               <field_location unit="byte">193</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>hertz</unit>
+                               <description>
+                                     The sub-channel frequency polynomial coefficient F3 where the frequency
+                                     over a one millisecond interval beginning at t in msec is evaluated
+                                          F(t) = F1 + F2*((t+0.5)/1000) + F3*((t+0.5)/1000)**2
+                                     The coefficients are derived from the frequency points in fields 58-60.
+                                     Set to IEEE NaN (hex 7FFFFFFFFFFFFFFF) if not calculable.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Accumulated Phase</name>
+                               <field_number>64</field_number>
+                               <field_location unit="byte">201</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>cycle</unit>
+                               <description>
+                                     The accumulated whole turns of the sub-channel phase at the beginning of
+                                     the present second. The phase during this second is the accumulated phase
+                                     incremented by the phase computed using the coefficients in fields 65-68.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Phase Coefficient P1</name>
+                               <field_number>65</field_number>
+                               <field_location unit="byte">209</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>cycle</unit>
+                               <description>
+                                     The sub-channel phase polynomial coefficient P1 where the phase
+                                     over a one millisecond interval beginning at t in msec is evaluated
+                                     P(t) = P1 + P2*((t+0.5)/1000) + P3*((t+0.5)/1000)**2 + P4*((t+0.5)/1000)**3
+                                     The coefficients are derived from the frequency points in fields 58-60.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Phase Coefficient P2</name>
+                               <field_number>66</field_number>
+                               <field_location unit="byte">217</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>cycle</unit>
+                               <description>
+                                     The sub-channel phase polynomial coefficient P2 where the phase
+                                     over a one millisecond interval beginning at t in msec is evaluated
+                                     P(t) = P1 + P2*((t+0.5)/1000) + P3*((t+0.5)/1000)**2 + P4*((t+0.5)/1000)**3
+                                     The coefficients are derived from the frequency points in fields 58-60.
+                                     Set to IEEE NaN (hex 7FFFFFFFFFFFFFFF) if not calculable.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Phase Coefficient P3</name>
+                               <field_number>67</field_number>
+                               <field_location unit="byte">225</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>cycle</unit>
+                               <description>
+                                     The sub-channel phase polynomial coefficient P3 where the phase
+                                     over a one millisecond interval beginning at t in msec is evaluated
+                                     P(t) = P1 + P2*((t+0.5)/1000) + P3*((t+0.5)/1000)**2 + P4*((t+0.5)/1000)**3
+                                     The coefficients are derived from the frequency points in fields 58-60.
+                                     Set to IEEE NaN (hex 7FFFFFFFFFFFFFFF) if not calculable.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Sub-channel Phase Coefficient P4</name>
+                               <field_number>68</field_number>
+                               <field_location unit="byte">233</field_location>
+                               <data_type>IEEE754MSBDouble</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <unit>cycle</unit>
+                               <description>
+                                     The sub-channel phase polynomial coefficient P4 where the phase
+                                     over a one millisecond interval beginning at t in msec is evaluated
+                                     P(t) = P1 + P2*((t+0.5)/1000) + P3*((t+0.5)/1000)**2 + P4*((t+0.5)/1000)**3
+                                     The coefficients are derived from the frequency points in fields 58-60.
+                                     Set to IEEE NaN (hex 7FFFFFFFFFFFFFFF) if not calculable.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>SPARES</name>
+                               <field_number>69</field_number>
+                               <field_location unit="byte">241</field_location>
+                               <data_type>ComplexMSB16</data_type>
+                               <field_length unit="byte">16</field_length>
+                               <unit>cycle</unit>
+                               <description>
+                                     These 16 bytes are undefined.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Data CHDO Type</name>
+                               <field_number>70</field_number>
+                               <field_location unit="byte">257</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <description>
+                                     Data CHDO Type.  Set to "10", meaning this CHDO contains binary data.  The
+                                     NJPL Control Authority maintains a registry of CHDO types.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Data CHDO Length</name>
+                               <field_number>71</field_number>
+                               <field_location unit="byte">259</field_location>
+                               <data_type>UnsignedMSB2</data_type>
+                               <field_length unit="byte">2</field_length>
+                               <unit>byte</unit>
+                               <description>
+                                     Data CHDO Length. Gives the number of bytes in the value field of the Data
+                                     CHDO -- the number of bytes containing I and Q samples.
+                               </description>
+                         </Field_Binary>
+                         <Group_Field_Binary>
+                               <name>I/Q Pair</name>
+                               <group_number>1</group_number>
+                               <repetitions>REPETITION</repetitions>
+                               <fields>2</fields>
+                               <groups>0</groups>
+                               <description>
+                                     Each ITEM contains one 32-bit sample word: quadrature (Q) sample data in
+                                     the 16 most significant bits (MSBs) followed by in-phase (I) sample data
+                                     in the 16 least significant bits (LSBs).  Within each Q and I word,
+                                     individual outputs from the analog to digital converters (ADCs) are
+                                     stored as 1, 2, 4, 8, or 16 bit values in LSB to MSB time order (the sample
+                                     size is set in Column 42).  For example, if the data were collected
+                                     using 8-bit samples, the arrangement would be
+                                     
+                                     BYTES 1-2
+                                          +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                     BITS |1|2|3|4|5|6|7|8|1|2|3|4|5|6|7|8|
+                                          +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                          |-------Q2------|-------Q1------|
+                                          +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                     BYTES 3-4
+                                          +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                     BITS |1|2|3|4|5|6|7|8|1|2|3|4|5|6|7|8|
+                                          |-------I2------|-------I1------|
+                                          +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                                           where (Q1,I1) is the earlier sample
+                                           and (Q2,I2) was taken later.
+                               </description>
+                               <group_location unit="byte">261</group_location>
+                               <group_length unit="byte">GROUP</group_length>
+                               <Field_Binary>
+                                     <name>Q</name>
+                                     <field_number>1</field_number>
+                                     <field_location unit="byte">1</field_location>
+                                     <data_type>UnsignedMSB2</data_type>
+                                     <field_length unit="byte">2</field_length>
+                                     <description>The imaginary part of a complex data sample</description>
+                               </Field_Binary>
+                               <Field_Binary>
+                                     <name>I</name>
+                                     <field_number>2</field_number>
+                                     <field_location unit="byte">3</field_location>
+                                     <data_type>UnsignedMSB2</data_type>
+                                     <field_length unit="byte">2</field_length>
+                                     <description>The real part of a complex data sample</description>
+                               </Field_Binary>
+                         </Group_Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>
+      </File_Area_Observational>
+</Product_Observational>

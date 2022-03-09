@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:jiram.jno</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Jovian Infrared Auroral Mapper</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+      <Alias_List>
+        <Alias>
+          <alternate_id>JIRAM</alternate_id>
+        </Alias>
+      </Alias_List>        
+      <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-10-12</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.jno</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Adriani, A., Filacchione, G., Di Iorio, T., Turrini, D., Noschese, R., Cicchetti, A., Grassi, D.,
+                   Mura, A., Sindoni, G., Zambelli, M., Piccioni, G., Capria, M.T., Tosi, F., Orosei, R., Dinelli, B.M., 
+                   Moriconi, M.L., Roncon, E., Lunine, J.I., Becker, H.N., Bini, A., Barbis, A., Calamai, L., 
+                   Pasqui, C., Nencioni, S., Rossi, M., Lastri, M., Formaro, R. and Olivieri, A., JIRAM, the 
+                   Jovian Infrared Auroral Mapper, Space Science Reviews, https://doi.org/10.1007/s11214-014-0094-y, 2017.
+            </reference_text>
+            <description>Space Science Reviews Instrument Paper</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>Jovian Infrared Auroral Mapper</name>
+        <type>Imager</type> 
+        <description>
+          Instrument Overview                                                           
+          ===================                                                           
+          
+          The JIRAM instrument has a two-fold objective:                                
+          a- perform imaging of Jupiter, especially around the polar regions,           
+          in the spectral region of 3.2-3.8 /Lm, where most of the auroral              
+          emissions occur                                                               
+          b- perform co-located spectroscopy and imaging of selected regions of         
+          Jupiter'S atmosphere in the broader 2.0-5.0 /Lm wavelength range with         
+          medium spectral resolution.                                                   
+          JlRAM combines 2 data channels in one instrument: the imager and the          
+          spectrometer, which are housed in the same optical subsystem.                 
+          
+          JIRAM is equipped with a single telescope that accommodates both an           
+          infrared camera and a spectrometer to facilitate a large observational        
+          flexibility in obtaining simultaneous images in the L and M bands with        
+          the spectral radiance over the central zone of the images.                    
+          Moreover, JIRAM will be able to perform spectral imaging of the planet        
+          in the 2.0-5.0 m interval of wavelengths with a spectral resolution          
+          better than 10 nm.                                                            
+          Instrument design, modes, and observation strategy will be optimized          
+          for operations on-board a spinning satellite in polar orbit around            
+          Jupiter.                                                                      
+          The JIRAM heritage comes from Italian-made, visual-infrared imaging           
+          spectrometers dedicated to planetary exploration, such as VIMS-V on           
+          Cassini, VIRTIS on Rosetta and Venus Express, and VIR-MS on the Dawn          
+          mission.                                                                      
+          JIRAM combines two data channels in one instrument: the imager and the        
+          spectrometer, which are housed in the same optical subsystem.                 
+          The instrument is composed of the Optical Head (OH) and the Main              
+          Electronic (ME).                                                              
+          The ME contains the electronics to drive the Focal Plane Arrays (FPAs)        
+          and compensating mirror, and perform the acquisition and conversion of        
+          the science and housekeeping data. It also manages the operation of           
+          the two channels, gathers data and housekeeping information from them,        
+          stores the data, performs data compression, and interfaces the                
+          instrument with the spacecraft.                                               
+          The single ME box contains the Digital Processing Unit, the proximity         
+          (detector driver and readout board), the main (CPU board) electronics,        
+          the power supply, and the limited angle de spinning mechanism driver          
+          board.                                                                        
+          
+          
+          OPERATIONAL MODES                                                             
+          =================                                                             
+          
+          JIRAM FSW manages different operations, organised for operating modes         
+          as follows:                                                                   
+          PROM SW modes                                                                 
+          Initialization mode (INI)                                                    
+          SW Maintenance mode (SWM)                                                    
+          Safe mode (SAF)                                                              
+          Stand-by mode (STB)                                                          
+          Science mode (SCI)                                                           
+          Calibration mode (CAL)                                                       
+          
+          
+          INITIALIZATION MODE                                                           
+          ===================                                                           
+          
+          At the start-up (or after any reset), the instrument executes the INI         
+          mode, where all the preliminary operations necessary for the nominal          
+          working (HW and SW initialisation, memory checks, etc.) are executed          
+          (Primary Boot). At the end of the Primary Boot the instrument is able         
+          to check TC and send TM via the LSSL. The Secondary Boot is performed         
+          after the reception of the proper TC.                                         
+          
+          
+          SW MAINTENANCE MODE                                                           
+          ====================                                                          
+          
+          The SWM mode is commanded from INI to allow the direct access to the          
+          on board RAM and EEPROM memories which can be modified and checked to         
+          allow SW patching and parameters                                              
+          
+          SAFE MODE                                                                     
+          =========                                                                     
+          
+          The SAF mode is commanded from SWM or INI mode after the successfully         
+          loading of the EEPROM SW (Secondary Boot). The IR detectors are Off.          
+          This mode can be entered (commanded or autonomously)                          
+          by all the EEPROM. This mode can be accessed by all the modes.                
+          
+          STAND-BY MODE                                                                 
+          =============                                                                 
+          
+          The STB mode is commanded from SAF. In this mode the detectors are            
+          on to allow thermal stabilization. The instrument is ready to receive         
+          command to set and select the operative modes (SCI, CAL). The mode is         
+          autonomously entered at the end of each acquisition sequence.                 
+          
+          
+          SCIENCE MODE                                                                  
+          ============                                                                  
+          
+          In the SCI mode the instrument performs a Science Session according to        
+          the parameters received in STB. The main tasks are: NADIR acquisition         
+          time evaluation based on SC Dynamics, IR commanding, data                     
+          pre-processing, data compression, data packetization                          
+          and transmission via HSSL\LSSL to SC, de-spinning mirror motor command        
+          to compensate the SC rotation. Several sub-modes are selectable to            
+          
+          combine the capabilities of the two IR detectors (the first for               
+          images,the second for spectra).                                               
+          Simulated sub-modes are implemented too (I0S0 60 00).                         
+          Data from the S/C are trasmitted in sub-frames. Each detector full            
+          active areas is split into 6 sub-frames.                                      
+          
+          OPERATIVE MODE                                                                
+          ==============                                                                
+          
+          SCI_I0_S1: Science, no IMAGE, SPECTRUM (256x336) High Spatial and High        
+          
+          SCI_I0_S2:                                                                    
+          Science, no IMAGE, SPECTRUM (64x336) High Spatial and Low Spectral            
+          
+          SCI_I0_S3:                                                                    
+          Science, no IMAGE, SPECTRUM(16x336) High Spatial and very Low Spectral        
+          
+          SCI_I1_S0:                                                                    
+          Science, IMAGE(256x432) full acquisition, no SPECTRUM                         
+          
+          SCI_I1_S1:                                                                    
+          Science, IMAGE(256x432) full acquisition, SPECTRUM (256x336) High             
+          Spatial and High spectral                                                     
+          
+          SCI_I1_S2:                                                                    
+          Science, IMAGE(256x432) full acquisition, SPECTRUM (64x336) High              
+          Spatial and Low spectral                                                      
+          
+          SCI_I1_S3:                                                                    
+          Science, IMAGE(256x432) full acquisition, SPECTRUM (16x336) High              
+          Spatial and Low spectral                                                      
+          
+          SCI_I2_S0: Science, IMAGE(128x432) M-Band, no SPECTRUM .                      
+          
+          SCI_I2_S1: Science, IMAGE(128x432) M-Band, SPECTRUM(256x336) High             
+          Spatial and High Spectral.                                                    
+          
+          SCI_I2_S2: Science, IMAGE(128x432) M-Band, SPECTRUM (64x336) Medium           
+          Spatial and High Spectral                                                     
+          
+          SCI_I2_S3: Science, IMAGE(128x432)                                            
+          M-Band, SPECTRUM (16x336) Low Spatial and High Spectral                       
+          
+          SCI_I3_S0: Science, IMAGE(128x432) L-Band, no SPECTRUM                        
+          
+          SCI_I3_S1: Science, IMAGE(128x432) L-Band, SPECTRUM (256x336)                 
+          High Spatial and High Spectral                                                
+          
+          SCI_I3_S2: Science, IMAGE(128x432) L-Band, SPECTRUM(64x336) Medium            
+          Spatial and Hogh Spectral                                                     
+          
+          SCI_I3_S3: Science, IMAGE(128x432) L-Band, SPECTRUM (16x336)                  
+          Low Spatial and Hogh Spectral                                                 
+          
+          
+          CALIBRATION                                                                   
+          ===========                                                                   
+          
+          The calibration procedure provides a standard sequence of 6                   
+          measurements described in Table 11. The specific the meaning of the           
+          steps is the following:                                                       
+          1 - the detectors look at the internal calibration unit where the             
+          calibration sources are in the off state, the integration time is             
+          fixed;                                                                        
+          2 - the detector is acquired with an integration time virtually equal         
+          to 0 (actually 20 ?s);                                                        
+          3 - one of the calibration source is turned on and powered with a             
+          previously defined current, integration time is as in step 1;                 
+          4 - the same calibration source is turned on and powered with a               
+          previously defined current but higher than in step 3 to produce a             
+          different level of signal, integration time is as in step 1;                  
+          5 - same of step 1;                                                           
+          6 - same of step 2.                                                           
+          
+          OPERATIVE MODE                                                                
+          ==============                                                                
+          
+          CAL_I0_S1: Calibration, no IMAGE, SPECTRUM (256x336) High Spatial and         
+          High Spectral                                                                 
+          
+          CAL_I0_S2: Calibration, no IMAGE, SPECTRUM (64x336) Medium Spatial and        
+          High Spectral                                                                 
+          
+          CAL_I0_S3: Calibration, no IMAGE, SPECTRUM(16x336) Low Spatial and            
+          very High Spectral                                                            
+          
+          CAL_I1_S0: Calibration, IMAGE(256x432) full acquisition                       
+          (L and M images), no SPECTRUM                                                 
+          
+          CAL_I1_S1: Calibration, IMAGE(256x432) full acquisition (L and M              
+          images), SPECTRUM (256x336) High Spatial and High spectral                    
+          
+          CAL_I1_S2: Calibration, IMAGE(256x432) full acquisition (L and M              
+          images),  SPECTRUM (64x336) Medium Spatial and High spectral                  
+          
+          CAL_I1_S3: Calibration, IMAGE(256x432) full acquisition (L and M              
+          images), SPECTRUM (16x336) Low Spatial and High  spectral.                    
+          
+          CAL_I2_S0: Calibration, IMAGE(128x432) M-Band, no SPECTRUM                    
+          
+          CAL_I2_S1: Calibration, IMAGE(128x432) M-Band, SPECTRUM (256x336) High        
+          Spatial and High Spectral                                                    
+          
+          CAL_I2_S2: Calibration, IMAGE(128x432) M-Band, SPECTRUM (64x336)              
+          Medium Spatial and High Spectral                                              
+          
+          CAL_I2_S3: Calibration, IMAGE(128x432) M-Band, SPECTRUM (16x336) Low          
+          Spatial and High Spectral                                                     
+          
+          CAL_I3_S0: Calibration, IMAGE(128x432) L-Band, no SPECTRUM                    
+          
+          CAL_ I3_S1: Calibration, IMAGE(128x432) L-Band, SPECTRUM (256x336)            
+          High  Spatial and High Spectral                                               
+          
+          CAL_I3_S2: Calibration, IMAGE(128x432) L-Band, SPECTRUM(64x336) Medium        
+          Spatial and High Spectral                                                     
+          
+          CAL I3S3: Calibration, IMAGE(128x432) L-Band, SPECTRUM (16x336) Low           
+          Spatial  and High Spectral                 
+
+        </description>
+    </Instrument>
+</Product_Context>

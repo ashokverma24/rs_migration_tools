@@ -1,0 +1,191 @@
+                        <Group_Field_Binary>
+                              <name>Allan Deviation CHDO (Data Type 13)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>16</fields>
+                              <groups>0</groups>
+                              <description>Allan Deviation CHDO (Data Type 13)</description>
+                              <group_location unit="byte">135</group_location>
+                              <group_length unit="byte">46</group_length>
+                              <Field_Binary>
+                                  <name>chdo_type</name>
+                                  <field_number>1</field_number>
+                                  <field_location unit="byte">1</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Type attribute of the Allan Deviation data CHDO. 
+                                      Set to 10 because the CHDO contains binary data.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chdo_length</name>
+                                  <field_number>2</field_number>
+                                  <field_location unit="byte">3</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Length attribute of the Allan Deviation data CHDO value field. 
+                                      Number of bytes after this item.  Set to 42.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>01sec_allan_dev</name>
+                                  <field_number>3</field_number>
+                                  <field_location unit="byte">5</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      0.1-second Allan Deviation measurement.  Values 0.0 to 1.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>1sec_allan_dev</name>
+                                  <field_number>4</field_number>
+                                  <field_location unit="byte">9</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      1-second Allan Deviation measurement.  Values 0.0 to 1.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>10sec_allan_dev</name>
+                                  <field_number>5</field_number>
+                                  <field_location unit="byte">13</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      10-second Allan Deviation measurement.  Values 0.0 to 1.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>100sec_allan_dev</name>
+                                  <field_number>6</field_number>
+                                  <field_location unit="byte">17</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      100-second Allan Deviation measurement.  Values 0.0 to 1.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>1000sec_allan_dev</name>
+                                  <field_number>7</field_number>
+                                  <field_location unit="byte">21</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      1000-second Allan Deviation measurement.  Values 0.0 to 1.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>int_time</name>
+                                  <field_number>8</field_number>
+                                  <field_location unit="byte">25</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Integration time.  Values 1 to 10**6 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>percent_data_used</name>
+                                  <field_number>9</field_number>
+                                  <field_location unit="byte">29</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>percent</unit>
+                                  <description>
+                                      Percent of data used.  Values 0.0 to 100.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rpt_cause</name>
+                                  <field_number>10</field_number>
+                                  <field_location unit="byte">33</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Cause of report generation.
+                                         0 = 1000 second report; 
+                                         1 = Doppler mode change; 
+                                         2 = Idle mode
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>new_01sec</name>
+                                  <field_number>11</field_number>
+                                  <field_location unit="byte">34</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Indicates whether the 0.1 second value has been updated since the last record 
+                                      (longer integrations will not be updated every record).
+                                         0 = Old data; 
+                                         1 = New data
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>new_1sec</name>
+                                  <field_number>12</field_number>
+                                  <field_location unit="byte">35</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Indicates whether the 1.0 second value has been updated since the last record 
+                                      (longer integrations will not be updated every record).
+                                         0 = Old data; 
+                                         1 = New data
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>new_10sec</name>
+                                  <field_number>13</field_number>
+                                  <field_location unit="byte">36</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Indicates whether the 10 second value has been updated since the last record 
+                                      (longer integrations will not be updated every record).
+                                         0 = Old data; 
+                                         1 = New data
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>new_100sec</name>
+                                  <field_number>14</field_number>
+                                  <field_location unit="byte">37</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Indicates whether the 100 second value has been updated since the last record 
+                                      (longer integrations will not be updated every record).
+                                         0 = Old data; 
+                                         1 = New data
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>new_1000sec</name>
+                                  <field_number>15</field_number>
+                                  <field_location unit="byte">38</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>Indicates whether the 1000 second value has been updated since the last record 
+                                      (longer integrations will not be updated every record).
+                                         0 = Old data; 
+                                         1 = New data
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve8</name>
+                                  <field_number>16</field_number>
+                                  <field_location unit="byte">39</field_location>
+                                  <data_type>UnsignedMSB8</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <description>
+                                      Reserved.  Eight bytes.
+                                  </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:uvs.jno</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ULTRAVIOLET SPECTROGRAPH for JNO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.jno::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gladstone, G.R., S.C. Persyn, J.S. Eterno, B.C. Walther, D.C. Slater, M.W.
+                   Davis, M.H. Versteeg, K.B. Persson, M.K. Young, G.J. Dirks, A.O. Sawka, J.
+                   Tumlinson, H. Sykes, J. Beshears, C.L. Rhoad, J.P. Cravens, G.S. Winters, R.A.
+                   Klar, W. Lockhart, B.M. Piepgrass, T.K. Greathouse, B.J. Trantham, P.M. Wilcox,
+                   and M.W. Jackson, The Ultraviolet Spectrograph on NASA&apos;s Juno Mission, Space
+                   Science Reviews, doi:10.1007/s11214-014-0040-z, 2014.
+            </reference_text>
+            <description>reference.GLADSTONEETAL2014</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ULTRAVIOLET SPECTROGRAPH</name>
+        <type>Spectrometer</type> <!--RChen/EN was Ultraviolet Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+Instrument Overview
+===================
+Juno-UVS, the ultraviolet instrument on the Juno mission to Jupiter, is
+primarily based on the Alice instrument on the New Horizons (NH) mission to
+the Pluto system and on the Lyman Alpha Mapping Project (LAMP) instrument
+on the Lunar Reconnaissance Orbiter (LRO) mission currently in orbit around
+the Moon. Juno-UVS is an imaging spectrograph with a spectral range in the
+extreme-ultraviolet (EUV) and far-ultraviolet (FUV) of 68-210 nm. This
+wavelength range was chosen to cover all important UV emissions from the H2
+bands and the H Lyman series produced in Jupiter&apos;s auroras, while also
+including longer wavelengths sensitive to the absorption signatures of
+aurora-produced hydrocarbons. Juno- UVS will remotely sense Jupiter&apos;s
+auroral morphology and brightness, providing context for in-situ
+measurements, and will map the mean energy and flux of precipitating
+auroral particles.
+The Juno-UVS instrument was developed at SwRI and delivered to Lockheed
+Martin for integration onto the Juno spacecraft before launch on August 5,
+2011. The instrument consists of two main assemblies: (1) a shoebox sized
+sensor, which includes a telescope section and a spectrograph &amp; detector
+section, and (2) an electronics box housed in the spacecraft vault. Besides
+this changed configuration (LRO-LAMP and the Alices each consisted of a
+single assembly), a number of changes have been incorporated to adapt the
+instrument to the Juno mission. A main design driver for these differences
+is Jupiter&apos;s harsh radiation environment.  Another major change is the
+addition of a scan mirror, which allows the targeting of specific areas of
+interest when the spinning spacecraft is close to Jupiter. In the following
+sections we present the design and operation, the key changes from earlier
+designs, calibration results, and initial in-flight results for Juno-UVS,
+but we first begin with an overview of the science planned for Jupiter.
+2 Scientific
+  Much of the information in this instrument description is taken from the
+UVS mission paper [GLADSTONEETAL2014].  See this paper for more details.
+ 
+ 
+Scientific Objectives
+=====================
+  Juno-UVS&apos;s main objective is to provide context for the particles and
+fields instruments (i.e., JADE, JEDI, Waves, and MAG) in the investigation
+of Jupiter&apos;s polar magnetosphere (Fig. 1). During the typically 6-hour
+near-perijove period of auroral observations, Juno-UVS will scan Jupiter&apos;s
+auroral regions once per 30-s spacecraft spin to observe the morphology,
+brightness, and spectral characteristics of Jupiter&apos;s far-ultraviolet (FUV)
+auroral emissions, which are primarily comprised of the Lyman series of H
+and the Lyman, Werner, and Rydberg band systems of H2. By obtaining
+time-tagged pixel list data (where each photon event is assigned a unique
+location, wavelength, and time), images and maps of the northern and
+southern auroral regions will be reconstructed on the ground at a resolution
+appropriate for the signal-to-noise ratio (SNR) of the spectral feature of
+interest. Near the beginning and end of the near-perijove observation
+period Juno-UVS will provide global snapshots of the northern and southern
+auroral morphology from a range of several Jovian radii. Closer to Jupiter,
+a scan mirror will be used to target the atmospheric region near the
+expected location of the Juno magnetic field line footprint (based on
+magnetic field models and the spacecraft orbit and spin axis). This will
+allow a direct comparison of the precipitating particle fluxes measured by
+JADE and JEDI with the FUV emissions they produce upon impacting Jupiter&apos;s
+upper atmosphere, and how the particular region sampled by the spacecraft
+relates to the rest of the magnetosphere. Other frequent targets will be the
+magnetic field line footprints of the Galilean satellites (at a variety of
+local times and from near nadir to positions near the limb), the polar
+flares, and the main oval ansae (i.e., the locations where the main oval
+emission cross the limb). During MWR orbits (when the Juno spin and orbit
+planes coincide), the Juno-UVS scan mirror will be used much less, so that
+simultaneous FUV data will be acquired from the same auroral regions
+observed by the JIRAM near-IR instrument.
+ 
+ 
+Calibration
+===========
+  After it was assembled and through with environmental testing, just prior
+to delivery to Lockheed Martin for integration on the Juno spacecraft,
+Juno-UVS underwent a series of tests to characterize its radiometric
+performance. Specifically, the Juno-UVS flight instrument was tested in
+SwRI&apos;s vacuum radiometric calibration chamber in order to determine the best
+pre-launch values for: (1) dark count rate; (2) PSF and wavelength
+calibration; (3) off-axis light scatter, and (4) effective area. Note that
+some of these attributes (e.g., effective area) can be measured much more
+accurately in flight (through stellar calibration), while other important
+calibration data (e.g., flat field measurements) are obtained only after
+launch. Table 3 shows a summary of the results for each of the ground
+radiometric tests performed, along with the performance requirement. As
+shown in this table, all the specified radiometric requirements measured
+during the vacuum radiometric tests were met. Figure 7 shows Juno-UVS in
+the test chamber just before starting radiometric calibration (during
+2010 October 12-17).
+ 
+ 
+Design Overview
+==========================
+  The scan mirror, OAP mirror, and diffraction grating are each constructed
+from monolithic pieces of aluminum, coated with electroless nickel and
+polished using low-scatter polishing techniques. The aluminum optics, in
+conjunction with the aluminum housing, form an athermal optical design.
+The scan mirror, OAP mirror, and diffraction grating are also each
+overcoated with sputtered Al/MgF2 for optimum reflectivity within the
+Juno-UVS spectral bandpass. Besides using low-scatter optics, additional
+control of internal stray light is achieved using internal baffle vanes
+within both the telescope and spectrograph sections of the housing, a
+holographic diffraction grating with low scatter and near-zero line ghost
+problems, and an internal housing with alodyned aluminum surfaces (Jelinsky
+and Jelinsky 1987; Moldosanov et al. 1998). In addition, a zero order light
+trap has a black anodized Al coating with very low surface reflectance at
+EUV/FUV wavelengths. Figure 4 shows a labeled opto-mechanical schematic of
+the interior of the Juno-UVS instrument, with light rays illustrating the
+optical path.
+ 
+ 
+Detector and Detector Electronics
+=================================
+  The Juno-UVS detector configuration includes an XDL microchannel plate
+(MCP) detector scheme housed in a vacuum enclosure with a one-time opening
+door containing a UV-grade fused-silica window (for limited UV throughput
+during testing). The door was spring loaded for opening with a
+wax-pellet-type push actuator. The vacuum enclosure has a vacuum pump port
+and a small, highly polished region which functions as a zero-order
+reflector (directing zero-order light from the instrument grating into the
+zero-order trap on the side of the instrument housing). The vacuum
+enclosure also utilizes four female connectors for the anode signals, and
+two high-voltage (HV) connectors for the MCP and anode gap voltages.
+  The detector&apos;s MCP configuration uses a Z-stack that is cylindrically
+curved to match the 150-mm Rowland circle diameter to optimize spectral and
+spatial focus across the Juno- UVS bandpass. The detector electronics
+provide two stimulation pixels that can be turned on to check data
+throughput and acquisition modes without the need to apply high voltage to
+the MCP stack or to have light on the detector. The MCP pulse-height
+information is output as 5 bits, which, together with the 11 bits of
+spectral and 8 bits of spatial information, results in the 3-byte output
+for every photon. The input surface of the Z-stack is coated with an opaque
+photocathode of CsI (Siegmund 2000).
+  A repeller grid above the curvedMCP Z-stack enhances the detective quantum
+efficiency (DQE). Each of the three nested MCPs has a cylindrical 7.5-cm
+radius of curvature matching the instrument&apos;s Rowland circle radius (i.e.,
+15.0 cm diameter). The approximate resistance per MCP plate is ?130 M?.
+The MCP format is 4.6 cm wide in the spectral axis by 3.0 cm height in the
+spatial axis with 12-?m diameter pores and a length-to-diameter (L/D) ratio
+of 80:1 per plate. The XDL anode is a rectangular format of 4.4 cm?3.0 cm.
+The combination anode array and MCP sizes gives an active array format of
+3.5 cm? 1.8 cm necessary to capture the entire 68?210 nm instrument
+bandpass. The pixel readout format is 2048 pixels (spectral dimension)
+?256 pixels (spatial dimension). The active area is 3.5 cm? 1.8 cm, with
+?1500 spectral pixels and ?230 spatial pixels. The XDL anode uses two
+orthogonal serpentine conductive strips for encoding an event&apos;s X-position
+and Y-position. Each event (i.e., a cloud of electrons exiting the MCP) is
+collected in equal amounts by the two strips, Charge is collected at each
+end of each strip, and the difference in arrival time at each end of a given
+strip is used to determine the event position (e.g., Siegmund et al. 1999).
+  The detector electronics are composed of a separate electronics package
+mounted directly behind the detector vacuum enclosure within the sensor
+housing. Power to the detector electronics is supplied by the Juno-UVS low
+voltage power supply (LVPS) and commandand- data handling electronics
+(C&amp;DH), both located in the electronics box (Ebox) in the spacecraft vault
+(several meters of cable away from the Juno-UVS sensor housing). The
+detector electronics are composed of five boards: (1) the amplifier board
+with two fast amps for the X direction (spectral dimension) and two fast
+amps for the Y direction (spatial dimension) and two charge amps for total
+event charge; (2 &amp; 3) a time amplitude converter (TAC) board for each axis,
+X and Y , that encodes 2048 pixels in the X-axis and 256 pixels in the
+Y-axis by event arrival time differences; (4) the digital board (DIG) that
+provides the control signals and interface logic, and (5) a delay line
+board to delay the End signals. The detector electronics also generate a
+5-bit analog sum signal for each detected photon event that can be used for
+generating a pulse-height distribution (PHD) via ground test or flight
+analysis software. Pixel list data (i.e., a list of pixel x, y addresses)
+is sent from the detector electronics to the C&amp;DH electronics for further
+processing. A commandable stimulation pulse generator is also included that
+provides two stim pixels at two locations in the array; these are useful
+in checking data throughput without HV and in correcting for temperature
+effects on the wavelength scale.
+  A UV photon impinging on the photocathode generates a charge that is
+amplified by the microchannel plate Z-stack. The amplified charge cloud
+leaves the back end of the microchannel plate and is accelerated across the
+MCP-anode gap, impinging on the anode and generating pulses that propagate
+in both the +X and -X directions and +Y and -Y directions along separate
+integral delay lines to the detector electronics. The detector electronics
+then output the X and Y pixel locations to the C&amp;DH based on the time
+delay between the two opposing pulses in each axis.
+  The detector electronics require input DC voltages of ?7.3 V and +5.0 V.
+The detector MCP high voltage is raised to a room temperature operational
+voltage of about .4.2 kV.The gap between the MCP output and the anode array
+requires a voltage drop of approximately .600 V. Both the MCP and the anode
+gap voltages are supplied by the instrument&apos;s two redundant high voltage
+power supplies (HVPS) located in the Ebox. The overall detector gain is
+?2E7 (?25 %). At an expected average count rate of 2000 count/s, the amount
+of charge pulled from the MCP as a function of time is ? 0.2 Coulomb/year.
+ 
+ 
+Telecommanding
+=================
+  Juno-UVS operations are commanded using a set of 30 separate telecommands.
+Telecommand processing handles the redundant telecommand channels and
+includes error detection and recovery. Nominally, the spacecraft may send
+up to two telecommand transactions to the instrument every 2 s cycle.
+These are formatted as separate Internet Protocol/User Datagram Protocol
+(IP/UDP) Packets, and include (among other items) time and nadir messages.
+  The acceptance and completion status of the command execution is reported
+in the housekeeping data. The instrument verifies incoming telecommands
+before they can be executed; this basic verification includes a format and
+checksum check of the telecommand. As mentioned, Juno-UVS has two redundant
+telecommand interfaces, but after power-up, the active interface will be
+determined and operations from that point on will only use that single
+interface.
+  In addition to the command verification mechanism, the instrument
+implements two additional mechanisms to protect the instrument from
+anomalous telecommands. Some commands are only allowed when the instrument
+is in a specific state. In addition to this, a number of commands have been
+declared &apos;critical&apos;. For Juno-UVS, this means that within a nominal
+30-second timeout period, a specific confirmation command has to be received
+before the actual (critical) command execution starts. During most of the
+in-flight operations, this timeout is short compared with the light travel
+time to the spacecraft, meaning that the confirmation already has to be
+issued before confirmation of the acceptance of the command has been
+received on the ground. Still, this mechanism provides protection against
+accidental execution of commands.
+  The set of telecommands can be divided into three categories:
+    General operations - These allow for the complete basic operational
+commanding of the instrument. This includes setting and storing of
+parameters and starting and stopping of the science acquisitions. This set
+of seven commands allows for the full science operations of the instrument.
+    Manual operations - Additional capabilities needed during commissioning
+and instrument verification are provided by 15 additional telecommands that
+allow for extended command options. Some of these commands may be used for
+science operations depending on the situation.
+    Memory functions - Software code management and maintenance and
+additional debugging functions are provided by three general-purpose memory
+functions that allow for verification, load, and dump of memory blocks.
+  Whenever Juno-UVS detects errors while accepting or executing commands,
+an error will be reported in the generated telemetry packet. This includes
+an identifier for the telecommand (if available) and a general error code.
+The error code continues to be reported in the telemetry data until another
+error is detected or the instrument is reset. This simple form of error
+reporting is limited to reporting a single error per HK cycle (i.e., at most
+once per 2 s). An additional mechanism implementing a small error log is
+available for more extensive problem investigation. The command code for any
+successful command is also reported in the telemetry data, so the telemetry
+registration can be used to reconstruct the received telecommands. Note
+that the parameters of a telecommand are not included in this reporting.
+
+        </description>
+    </Instrument>
+</Product_Context>

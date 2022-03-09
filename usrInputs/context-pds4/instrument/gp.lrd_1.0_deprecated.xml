@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:lrd.gp</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>LIGHTNING AND RADIO EMISSION DETECTOR for GP</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gp::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lanzerotti, L.J., R.E. Gold, K.A. Anderson, T.P. Armstrong, R.P. Lin, S.M.
+                   Krimigis, M. Pick, E.C. Roelof, E.T. Sarris, G.M. Simnett, and W.E. Frain,
+                   Heliosphere instrument for spectra, composition and anisotropy at low
+                   energies, Astron. Astrophys. Suppl. Ser. 92, 349-363, 1992.
+            </reference_text>
+            <description>reference.LANZEROTTIETAL1992</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>LIGHTNING AND RADIO EMISSION DETECTOR</name>
+        <type>Particle Detector</type> <!--RChen/EN was Energetic Particle Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Lightning and Radio Emission Detector (LRD) instrument will
+    be carried by the Galileo Probe into Jupiter&apos;s atmosphere.  The
+    LRD will verify the existence of lightning in the atmosphere and
+    will determine the details of many of its basic characteristics.
+    The instrument, operated in its magnetospheric mode at distances
+    of about 5, 4, 3, and 2 planetary radii from Jupiter&apos;s center,
+    will also measure the radio frequency (RF) noise spectrum in
+    Jupiter&apos;s magnetosphere.  The LRD instrument is composed of a
+    ferrite-core radio frequency antenna (~100 Hz to ~100 kHz) and
+    two photodiodes mounted behind individual fisheye lenses.  The
+    output of the RF antenna is analyzed both separately and in
+    coincidence with the optical signals from the photodiodes.  The
+    RF antenna provides data both in the frequency domain (with three
+    narrow-band channels, primarily for deducing the physical
+    properties of distant lightning) and in the time domain with a
+    priority scheme (primarily for determining from individual RF
+    waveforms the physical properties of closeby-lightning).
+ 
+    The LRD instrument has been designed to take into account large
+    uncertainties in the nature of possible Jovian lightning.  For
+    example, since Jupiter has no well-defined surface close to the
+    cloud system, there will be no cloud-to-ground discharges, which
+    are the best understood type of lightning on Earth.  Lightning in
+    general, and cloud discharges specifically, are very complex
+    physical phenomena and can generate a large variety of RF pulse
+    types and trains: unipolar pulses, bipolar pulses, asymmetric
+    pulses, groups and bursts of pulses.  The LRD instrument is
+    designed as a compact and versatile instrument which allows a
+    characterization of these signals with maximum sensitivity and
+    maximum dynamic range.  During the design phase, prototype
+    instruments have been intensively tested with Earth lightning
+    during several measuring campaigns.  The final instrument
+    characteristics have been set with acceptable margins for the
+    unknown conditions to Jupiter.
+ 
+    Modelling of the propagation of RF signals in the frequency range
+    of the LRD instrument in Jupiter&apos;s atmosphere shows that direct
+    propagation of signals will occur to distances of order 10^4 km
+    (Rinnert et al., 1979).  Hence, it is likely that Jovian
+    atmospheric discharges with the energy of a typical
+    cloud-to-ground discharge on Earth (order 10^8 J) will be
+    detected at 10^4 km or more distance within the atmosphere with
+    the LRD instrument.  As noted below, the LRD instrument also
+    includes a &apos;superbolt&apos; channel, in order to count extremely large
+    events.
+ 
+    Hence, in light of all the above, the flown lightning detector
+    instrument must be designed to be as sensitive as possible,
+    limited only by spacecraft noise.  The instrument must also cover
+    as large a dynamic range as possible.
+ 
+ 
+  Principal Investigator
+  ======================
+    The Principal Investigator for the LRD instrument was Louis
+    Lanzerotti.
+ 
+ 
+  Scientific Objectives
+  =====================
+    Radio frequency measurements are made in a reduced mode of
+    operation at altitudes of ~5, 4, 3, 2 planetary radii from the
+    center of Jupiter.  These data are stored in the Probe memory and
+    then read out during the atmospheric descent phase of the
+    mission.  During the atmospheric descent, the full complement of
+    LRD data are acquired until the loss of the Probe signal by the
+    over-flying Orbiter and/or the demise of the Probe due to
+    atmospheric pressure and heat.
+ 
+    The RF data obtained in the magnetosphere will be analyzed also
+    jointly with the Probe Energetic Particle Instrument (EPI) data
+    to gain understanding of magnetospheric particle dynamics.  In
+    the magnetosphere, statistics on the characteristics of
+    individual waveforms measured during a sampling interval will be
+    accumulated at the four different altitudes.  In addition, noise
+    levels at three different spectral frequencies (3, 5, 90 kHz)
+    will be determined during the measurement intervals.
+ 
+    In the atmosphere mode, in addition to statistics on the
+    waveforms and the spectral noise levels at the three
+    narrow-banded frequencies, individual waveforms will be detected,
+    saved, and transmitted to Earth.  Such waveforms will provide
+    powerful additional diagnostic capabilities for Jovian RF
+    signals.
+ 
+    The LRD instrument, as noted above, has been designed to be as
+    sensitive as possible, limited only by the spacecraft noise, and
+    to be as versatile as possible, limited only by the imposed
+    limitations on power, bit rate, and reliability considerations.
+    It is within these constraints that the scientific objectives
+    will attempt to be achieved.  Extensive measurements with Earth
+    lightning have been made and these will be continued in order to
+    gain the maximum understanding of the operational characteristics
+    of the instrument, and therefore the maximum science from the
+    Probe descent through Jupiter&apos;s atmosphere.
+ 
+    In both the magnetosphere and atmosphere modes the component of
+    the Jovian magnetic field perpendicular to the Probe spin axis
+    will be determined.  These data will be used for analyses of EPI
+    data and for determining the spatial distribution of the sources
+    of some of the detected lightning signals.  Further, these data
+    will give engineering data on the Probe spin rate.
+ 
+ 
+  Calibration
+  ===========
+    Because of severe constraints as to weight and power for Probe
+    subsystems, the LRD instrument is very compact.  Further,
+    extensive on-board compression of the data is necessary because
+    of the limited available data rate.
+ 
+    All sensors and instrument characteristics, of course, have been
+    extensively tested and calibrated.  For example, radiation tests
+    were carried out on the sensor electronics and pressure tests
+    were made of the vented electronics box.  These latter tests
+    caused a stiffening piece to be added to the microprocessor chip.
+    The calibrations could be verified over long periods because of
+    the delays of the launch of the Galileo spacecraft.  A further
+    verification of the instrument parameters is provided by the
+    on-board implemented test generator (ITG).
+ 
+ 
+  Operational Considerations
+  ==========================
+    Magnetosphere mode.  The LRD instrument will operate in the
+    pre-entry phase at distances from the planet&apos;s center of about 5,
+    4, 3, and 2 Rj.  The instrument is switched on by the Probe timer
+    at these locations.  In this &apos;magnetosphere mode&apos; the EPI is also
+    in operation.  As the Probe is still encapsulated within the heat
+    shield, the MS is less sensitive and the optical sensors are
+    covered.  The outputs of the LRD instrument are as noted in the
+    previous section, but without the waveform snapshots.  The
+    magnetosphere mode data set at each of the four locations
+    consists of a 64 byte data frame with statistics and the 3 kHz
+    spectral channel subdivided into parallel and perpendicular (to
+    the magnetic field) channels.  The data are stored in the Probe
+    memory for transmission during the atmospheric descent phase of
+    the mission.
+ 
+    Atmosphere mode.  When the LRD instrument is switched on at
+    descent the instrument begins with a test cycle (IFT) and the
+    first data set contains the test pulse data.  After that, the
+    instrument runs continuously until the end of the mission and
+    outputs a complete data set every four major frame periods, 256
+    s.  These data sets contain spectral data (the 15 kHz channel
+    being sectored), waveform statistics data, a 1 ms time interval
+    with a selected waveform, optical data and miscellaneous data
+    such as magnetic field component, spin period, and engineering
+    data.  The number of complete data sets achieved during descent
+    depends upon the length of time that the Probe survives and/or
+    the length of time that the Probe relay signal is successfully
+    acquired by the over-flying Orbiter.  For example, if the total
+    atmosphere data time is ~48 min, then 10 data sets would be sent
+    back (the 11th would be acquired but there would be no time for
+    transmittal).  The 10 data sets would contain one test data set
+    and 9 science data sets.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.wasp-3</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>WASP-3</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>TYC 2636-195-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 02636-00195</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J18343163+3539415</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SPOCS 2977</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1SWASP J183431.62+353941.4</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC3 252-133187</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 1256-00285133</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR1 2095108308532352256</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2095108312831835648</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>WASP-3</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 18 hours 34 minutes 31.6255913635 seconds
+ 18 34 +35 39
+Declination, ICRS coord, ep=J2000: +35 degrees 39 minutes 41.489193276 seconds
+    </description>
+  </Target>
+</Product_Context>
+

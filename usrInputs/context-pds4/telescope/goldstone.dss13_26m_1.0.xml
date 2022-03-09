@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds ="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=
+    "http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:goldstone.dss13_26m</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DSS-13 26-m Radio Telescope</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-07-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Original context file for the DSS-13 research and development antenna at 
+                    Goldstone until 1991 when its aperture was 26 meters.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.810-005</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+                This reference is to a PDS collection containing several versions of the NASA Deep 
+                Space Network (DSN) Telecommunications Link Design Handbook (Document 810-005).
+                The Handbook is maintained in a modular format to provide interface 
+                design data to flight projects using the DSN.  Modules are updated as appropriate.
+                Each member product in the PDS collection is the set of modules as they applied
+                at that point in time.  Modules include:
+                001 Handbook Introduction
+                101 70-m Subnet Telecommunications Interfaces
+                102 26-m Subnet Telecommunications Interfaces (omitted in 2009 and later versions)
+                103 34-m HEF Subnet Telecommunications Interfaces
+                104 34-m BWG Antennas Telecommunications Interfaces
+                105 Atmospheric and Environmental Effects
+                106 Solar Corona and Solar Wind Effects
+                107 Radio Source Catalog
+                201 Frequency and Channel Assignments
+                202 34-m and 70-m Doppler
+                203 Sequential Ranging
+                205 Command Service
+                206 Telemetry General Information
+                207 34-m and 70-m Telemetry Reception
+                208 Telemetry Data Decoding
+                209 Open-Loop Radio Science
+                210 Delta Differrential One-way Ranging
+                211 Wideband Very Long Baseline Interferometry
+                214 Pseudonoise and Regenerative Ranging
+                301 Coverage and Geometry
+                302 Antenna Positioning
+                303 Media Calibration
+                304 Frequency and Timing
+                305 Test Support
+                901 Handbook Glossary
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.dsn</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>
+                This context product provides more information on the NASA Deep Space Network as a whole.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.goldstone</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>
+                This context product provides more information on the Goldstone Deep Space Communication Complex.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss13_34m</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                This context product provides more information on the 34-m beam waveguide antenna
+                that was identified as DSS-13 starting in 1991.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:dsn.rss</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+            <comment>
+                This context product provides more information on the commanding, radio tracking, and
+                radio science instrumentation at the DSN.  DSS-13, however, does not participate in
+                routine commanding, radio tracking, and radio science.
+            </comment>
+        </Internal_Reference>
+        
+        <External_Reference>
+            <reference_text>https://www.gdscc.nasa.gov/?page_id=40</reference_text>
+            <description>
+                An overview of the Goldstone Deep Space Communication Complex with photographs.
+                Pull down the menu tab at the bottom of the page for more information on DSS-13.
+            </description>
+        </External_Reference>
+
+    </Reference_List>
+    
+    <Telescope>
+        <aperture unit='m'>26</aperture>
+        <description>
+           This fully steerable telescope was a research and development radio/radar antenna that
+           was part of the NASA Deep Space Network.  It was first operational in 1962 with a 26-m
+           aperture and was named "Venus Station" to commemorate the first radar detection of Venus
+           by radar facilities at Goldstone in 1961.  The 26-m antenna was decommissioned in 1991.
+           Its cordinates are not known. A 34-m beam waveguide (BWG) antenna was completed in 1991
+           at the same general location.  It was given the DSS-13 identifier and was used to 
+           contnue research and development work at higher frequencies. 
+        </description>
+    </Telescope>
+    
+</Product_Context>

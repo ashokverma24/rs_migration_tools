@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rat.mer2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ROCK ABRASION TOOL for MER2</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mer2::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gorevan, S.P., The Rock Abrasion Tool Mars Exploration Rover Mission, Journal
+                   of Geophysical Research- Planets, 2003.
+            </reference_text>
+            <description>reference.GOREVANETAL2003</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ROCK ABRASION TOOL</name>
+        <type>Regolith Properties</type> <!--RChen/EN was Abrader-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Rock Abrasion Tool (RAT) is an integral part of the Athena
+    Science payload; it was produced to act as the payload&apos;s geologic
+    hammer and more. The RAT exposes fresh surfaces of martian rocks
+    to other instruments on the payload. The RAT also brushes dust and
+    debris from an excavated hole or an unaltered rock target in
+    addition to its rock hammer equivalency role. To accomplish these
+    tasks, the RAT is a sophisticated 3-axis precision-controlled
+    device that will allow it to act also as a rock physical
+    properties science instrument. The returned RAT data will be
+    inverted and compared to a library of Earth rocks.
+ 
+    The RAT is 128 mm long and is contained within a circle 85mm in
+    diameter and has a mass of 687 grams.
+ 
+    Information in this instrument description is taken from the Rock
+    Abrasion Tool Mars Exploration Rover mission paper
+    [GOREVANETAL2003]. See this paper for more details.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The chief scientific objectives of the RAT are:
+ 
+    1) to remove the outer, exposed surface of rocks,
+ 
+    2) to provide data such as motor currents so torque can be
+       directly calculated and empirically correlated to the density and
+       hardness of the rock and any coatings that have formed on the
+       rock, and
+ 
+    3) to collect information on the mineralogic and magnetic properties
+    of the abraded rock by collecting magnetic dust on four magnets
+    mounted on the lower part of the RAT housing.
+ 
+ 
+  Calibration
+  ===========
+    It is necessary to calibrate the RAT prior to each grinding
+    operation in order to compensate for certain time-variant or
+    temperature-dependent parameters. Calibration begins with the
+    initialization for the RAT Z-axis. This is required to correct for
+    undetectable migration of the Z-axis that may be caused by
+    vibration experienced during Rover traverses. To initialize the
+    Z-axis, the motor is &apos;homed&apos; using its hard stop, thus
+    establishing an absolute reference frame for subsequent position
+    moves. Next, the Rotate motor &apos;no load current&apos; is
+    calibrated. This is necessary to account for changes in drive
+    train friction, lubricant viscosity and dust buildup over time and
+    temperature range. To calibrate the Rotate motor &apos;no load&apos;
+    current, both the Rotate and Revolve motors are energized at
+    operational levels for a preset period of time. Sensor values are
+    averaged over this period and updated parameters are stored for
+    subsequent use.  Likewise, the Rotate motor &apos;seek-scan voltage&apos; is
+    calibrated in the same manner. It is preferred, but not required,
+    that the RAT be calibrated in free space, before being placed
+    against a rock surface.  This minimizes the chance of encountering
+    obstructions during calibration.
+ 
+ 
+  Operational Considerations
+  ==========================
+    The RAT is required to be able to grind 5 mm below the surface of
+    a rock after it has been properly positioned against an
+    appropriate rock surface. An appropriate rock surface is
+    considered a surface with local deviations no greater than +/-5
+    mm within a 50 mm radius from the point where the RAT Z-axis
+    intersects the surface plane. It is the responsibility of the
+    control of the Instrument Deployment Device (IDD) to position the
+    RAT against an appropriate rock surface such that the RAT&apos;s Z-axis
+    is within +/-15% from the rock&apos;s surface normal.  The IDD must
+    preload the RAT against the rock surface with a force no less than
+    10N and no greater than 100N. Once the RAT has been positioned on
+    the rock, the grinding process is handled completely by the RAT with
+    no additional manipulation required by the IDD or Rover.
+ 
+    Several important operational constraints were levied upon the RAT
+    grinding operation. First, the pose of the (IDD) must not be
+    disturbed during the grinding operation. Second, the grinding
+    operation must not expend more than an allotted amount of energy.
+    Third, the grinding operation should take no longer than a preset
+    time limit. The RAT control approach was driven primarily by these
+    operational requirements and constraints.  An emphasis was placed on
+    flexibility and modularity, so that an operator can easily tune the
+    grinding operation by changing key parameters.
+ 
+ 
+  Electronics
+  ===========
+    From an actuator/sensor perspective, the RAT is an electrical
+    interface similar to other devices (IDD, mobility) on the
+    Rover. The RAT has three DC brush motors, and each motor has an
+    incremental quadrature encoder for position feedback. The RAT also
+    has redundant discrete switches to sense contact with the
+    rock. Finally, the RAT has a temperature sensor and motor heaters
+    to monitor the mechanism&apos;s temperature and ensure that the RAT is
+    within operational temperature limits prior to beginning
+    operations.
+ 
+    The RAT relies on the Rover control electronics for low-level
+    servo control and sensor processing. The Rover motor controllers
+    allow the motors to be commanded in one of three modes: servo to
+    position, servo to velocity and open-loop voltage mode. The
+    low-level servo sample rate is on the order of 1 kHz. Motor
+    current sensing is also provided by the Rover control
+    electronics. Current limits are enforced at multiple levels
+    (controller and application software) to prevent damage to the
+    actuators, grinding wheels and IDD.
+ 
+ 
+  Location
+  ========
+    The RAT is mounted on the end of the IDD.
+ 
+ 
+  Measured Parameters
+  ===================
+    The Rock Abrasion Tool&apos;s main function on Mars is to remove the
+    outer, exposed surface of rocks. In order to accomplish this task,
+    the RAT is designed to cut approximately 5 mm into the rock and
+    expose the fresh, unweathered surface. During the grinding
+    operations, the RAT records data such as motor currents, motor
+    positions, temperature, and instrument state. Torque can be
+    directly calculated from motor current data and empirically
+    correlated to the density and hardness of the rock. Combining
+    these parameters with a close-up view of the fresh surface from
+    the Microscopic Imager (MI), the scientist should be able to
+    assess the compositional and the depositional histories of the
+    rock.
+
+        </description>
+    </Instrument>
+</Product_Context>

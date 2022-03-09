@@ -1,0 +1,57 @@
+             <Table_Binary>
+                   <name>ODF Identifier Group Data</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                                The Identifier Group
+                                is usually the second of several groups of records in
+                                an Orbit Data File (ODF).  It is sometimes used to
+                                identify contents of data records that follow.  The
+                                Identifier Group data record is the second record in
+                                the Identifier Group.  It is one 36-byte record and is
+                                preceded by one 36-byte Identifier Group header record.
+                                Occasionally the Identifier Group is omitted from an
+                                ODF.
+                   </description>
+                   <Record_Binary>
+                         <fields>3</fields>
+                         <groups>0</groups>
+                         <record_length unit="byte">36</record_length> 
+                         <Field_Binary>
+                               <name>Identifier 1</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <description>
+                                           Items 1:  A character string sometimes used to
+                                           identify contents of data records to follow. Set to the
+                                           ASCII characters 'TIMETAG' followed by one ASCII 'blank'.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Identifier 2</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">9</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <description>
+                                           Items 2:  A character string sometimes used to
+                                           identify contents of data records to follow. Set to the
+                                           ASCII characters 'OBSRVBL' followed by one ASCII 'blank'.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Identifier 3</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">17</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">20</field_length>
+                               <description>
+                                           Item 3: A character string sometimes used to
+                                           identify contents of data records to follow. Set to the
+                                           ASCII characters 'OD-SAMPL-ID FRQ RSD' followed by one ASCII blank.
+                               </description>
+                        </Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:nsp2.lcross</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>NEAR INFRARED SPECTROMETER 2 for LCROSS</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.lcross::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.TBD</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>NEAR INFRARED SPECTROMETER 2</name>
+        <type>Spectrometer</type> <!--RChen/EN was Infrared Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+ 
+  The LCROSS payload contains two near-infrared spectrometers
+  (NSP1/NSP2).  Their electronics units are identical, but they have
+  different fore-optics designs.
+ 
+  Near infrared spectrometer #1 (NSP1), also known as the nadir NSP, is
+  located inside the Payload Observation Deck and is orientated
+  along the +X axis in LCROSS spacecraft coordinate system.  The
+  payload bore-sight is defined as the central position of the NSP1
+  bore-sight throughout the mission.
+ 
+  During the final stages of the mission, the LCROSS spacecraft&apos;s +X axis
+  is orientated towards the lunar impact site. The payload&apos;s bore-sight
+  (center of the NSP1 one-degree field of view (FOV)) is targeted towards the
+  expected Centaur impact location.
+ 
+  In comparison, the fore-optics feeding near infrared spectrometer #2
+  (NSP2), also known as the solar-viewer or occulting NSP, is orientated
+  along the -Z axis in LCROSS spacecraft coordinate system. This fore-optic
+  is expected to collect radiance from the sun in its generous approximate
+  130 degree FOV during the final hour of the mission.
+ 
+  Both spectrometers provide 1.2-2.4 micron spectral coverage at low
+  resolution. Both spectrometers are manufactured by Polychromix,
+  a company whose primary spectrometer line is designed for material analysis
+  and chemical sensing.  The spectrometers are designed to take a single
+  SMA NA=0.22 fiber as input instead of a slit.  The diameter of this
+  fiber defines the resolution of the instrument.
+ 
+  Within the electronics unit of the spectrometer, light collected from
+  the fiber (plus fore-optics) is reflected off a grating to spread
+  frequencies across an innovative, electronically-tunable MEMS
+  device.  This MEMS device reflects selected frequencies onto a
+  single, TEC-cooled InGaAs sensor element.  The combination of
+  frequencies merged together changes according to a timed sequence,
+  and the resulting measurement stream is decoded on the ground to
+  recover the individual frequencies.  The result is a highly
+  sensitive, low power, and inexpensive spectrometer.  The spectrometer
+  contains no moving parts other than the MEMs device and the peak power for
+  each NSP is 2.5 W.
+ 
+  NSP2 is fed by a 1.45 m length 600-micron core-diameter low-OH glass fiber
+  attached to a fore-optics that is located external to the Payload
+  Observation Deck (POD) housing. The NSP2 fore-optic is a diffuser providing
+  ~130 degree field-of-view.
+ 
+  Scientific Objectives
+  =====================
+ 
+  The two LCROSS near infrared spectrometers (NSP1/NSP2), by providing
+  R~100 spectra over the 1.2 to 2.4 micron wavelength region, are the primary
+  method to measure the amount of water vapor in the ejecta.  The LCROSS
+  spacecraft will monitor spectral bands associated with water
+  vapor, ice, and hydrated minerals covering the first overtones of the
+  symmetric and asymmetric stretches of water.  This band, relatively free
+  from interferences, is more brightly illuminated by sunlight than the
+  fundamentals near 3 microns, more than compensating the weaker absorption
+  of the overtones.  The regions near 1.4 and 1.9 microns, normally obscured
+  by terrestrial atmospheric background in spectra from icy surfaces,
+  will provide a sensitive indication of water vapor from ice or hydrates.
+  The remainder of the spectral band will reveal the nature of ice crystals
+  and mineral hydrates.
+ 
+  NSP2 with its unique constant light source (the sun) provides a continuous
+  mapping of the ejecta cloud in absorption by conducting an occultation
+  experiment, until its FOV goes below the crater rim. The data set derived
+  with NSP2 data provides a different viewing geometry through the ejecta
+  cloud compared to the nadir-looking NSP1.
+ 
+  Calibration
+  ===========
+ 
+  Spectra generated by the near infrared spectrometers are initially processed
+  by the LCROSS GSEOS (Ground Support Equipment Operating System) which
+  extracted the CCSDS files from telemetry, applied a fixed mathematical
+  function (the Hadamard transform provided by the manufacturer) to
+  convert 256 mask positions to 100 spectral elements, and converted them to
+  an ASCII comma-separated file with some metadata and with MET-based packet
+  timestamp  encoded in the filename. Spectra taken in Flash or Diagnostic
+  Mode are saved into one file appended by subsequent sampling.
+ 
+  Wavelength calibration, mapping pixel to wavelengths in microns, is
+  provided by cross-checking in-orbit data  against lab reference spectra
+  taken on the ground. Wavelength calibration is applied only to the 100
+  pixels for Hadamard Mode, and a look-up table providing a the wavelength
+  range across each mask position in Flash Mode.
+ 
+  Conversion from raw data values [DN] to a scene spectral radiance
+  [W/m^2 um sr], with errors, is performed using a response curve measured
+  by the instrument in-flight using a data set from the preimpact
+  sequence on Oct 9, 2009 ~11:00 UTC with the Sun as the source and providing
+  a correction for the cosine angle to the it (~15.3 degrees for the data set
+  used). This calibration was validated against pre-flight laboratory test
+  of the same instrument,  using a NIST-calibrated reference source, although
+  with a different fore-optic configuration, whose attributes were measured
+  independently to correct out. In the lab-based comparison data,
+  particular attention has been paid to addressing and correcting for any
+  water contamination. The flight calibration for this instrument is derived
+  from the solar spectrum measured on orbit during the last day of the
+  mission. The calibration steps are described in the LCROSS Instrument
+  Response and Calibration Report in the CALIB directory of this archive.
+ 
+  For Hadamard spectra, a separate additional raw (pre-Hadamard transform)
+  ASCII file containing the original mask positions, will also be part of
+  the PDS delivery.
+ 
+  The data for the NSP2 is also self-calibrating in orbit as reference
+  spectra (sun, no ejecta) can be used for a constant reference source.
+ 
+ 
+  Operational Modes
+  =================
+ 
+  Both spectrometers have three modes: Impact Flash (IF), Hadamard
+  Spectrum (HS) and Diagnostic (DI), which are configurable by sending
+  a command to the unit.
+ 
+  The nominal Hadamard Spectrum Mode provides a 100-pixel spectra at 1.7 Hz
+  rate with continuous coverage across 1.2 to 2.4 microns.
+ 
+  The Impact Flash mode provides a five point (with a dark mask) sampling
+  at known wavelengths across the spectral range at a 72 Hz sampling rate.
+  The mask wavelengths, set approximately around the water bands, are
+  described in the Instrument Response and Calibration Report.
+ 
+  The instrument mode will be documented with each spectra or mask product.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

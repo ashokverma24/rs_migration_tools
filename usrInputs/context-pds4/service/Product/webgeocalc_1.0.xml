@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:webgeocalc</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>WebGeocalc</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-04-20</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>WebGeocalc</name>
+        <abstract_desc>Web service for making SPICE-based space geometry calculations.</abstract_desc>
+        <version_id>1.1.0</version_id>
+        <url>http://wgc.jpl.nasa.gov:8080/webgeocalc</url>
+        <release_date>2013-01-01</release_date>
+        <service_type>Service</service_type>
+        <interface_type>Service</interface_type>
+        <category>Analysis</category>
+        <software_language>N/A</software_language>
+        <supported_operating_system_note>N/A</supported_operating_system_note>
+        <system_requirements_note>Any modern web browser</system_requirements_note>
+        <description>Many kinds of SPICE-based geometry computations can be made without writing a program, or using a program provided by another. The WebGeocalc (WGC) service provides this capability. WGC makes it rather easy to use typical Graphical User Interface widgets to specify a computation to be made, the time(s) or time span(s) at which to make the computation(s), and the SPICE data to be used. WGC does not allow every kind of observation geometry computation available using the more traditional SPICE Toolkit APIs, and WGC can only use SPICE data available on the NAIF server. WGC is useful wherever making a few, quick computations is needed, such as in helping to validate geometry metadata during the peer review of a science data set being submitted to an archive. If you intend to use WGC, be sure to first read the About the Data information available within the tool. 
+        </description>
+    </Service>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context_pds3:node:node.naif</lid_reference>
+            <reference_type>has_node</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <!--
+        Submitter Information
+        Submitter Name:        Charles Acton
+        Submitter Institution: NASA/Jet Propulsion Laboratory
+        Submitter Email:       charles.acton@jpl.nasa.gov
+    -->
+</Product_Service>

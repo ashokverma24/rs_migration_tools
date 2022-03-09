@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.w_aql</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>W Aquilae</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>W Aql</alternate_title></Alias>
+      <Alias><alternate_title>Variable Star W Aql</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>W Aql</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASAS J191523-0702.8</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-07-19127</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSS 1115</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 26525</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 11697</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05142-02895</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 19126-0708</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10497</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J19152335-0702503</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 2349</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>S1* 597</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 143184</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 35730</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5142-2895-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 16496</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 1910-07</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 4204925058990166400</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>W Aquilae</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 19 hours 15 minutes 23.3581458294 seconds
+Declination, ICRS coord, ep=J2000: -07 degrees 02 minutes 50.308513461 seconds
+    </description>
+  </Target>
+</Product_Context>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd
+        http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:eso-la_silla.1m04.denis</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DENIS 3-Channel Near-Infrared Camera</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:eso.photometric1m.denis</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-12-07</modification_date>
+                <version_id>1.0</version_id>
+                <description>per RMS, deprecated eso in favor of eso-la_silla</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-la_silla.1m04</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>Epchtein, N., DENIS:  A deep near infrared southern sky survey, from New Horizons
+from Multi-Wavelength Sky Surveys, B.J. McLean et al. (eds.) (printed in the
+Netherlands), 106-108, 1997.</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>DENIS 3-Channel Near-Infrared Camera</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Imager</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>The DENIS (Deep European Near-Infrared southern sky Survey) 
+instrument is made up of a 3-channel camera built of commercially
+ available detector arrays by the Observatoire de Paris and with 
+major contributions from other European Institutes, notably: the 
+IAS in Frascati, the Observatoire de Grenoble, the University of Innsbruck, the
+Observatoire de Lyon, and the IAC in Tenerife. The instrument was used for the DENIS
+survey at the ESO 1.0 meter telescope at La Silla, Chile.  
+
+Instrument characteristics:
+
+                                       I         J          Ks
+Central wavelength (microns)          0.8       1.25      2.15
+Array manufacturer                 Tektronix  Rockwell  Rockwell
+Size in pixels                     1024x1024   256x256   256x256
+Pixel size (microns)                  24        40        40
+Pixel size (arcsec)                    1         3         3
+Average array quantum efficiency      0.65      0.81      0.61
+Read-out noise (e-)                   6.7       38        39
+Read-out time (sec)                   2.98      0.13      0.13
+Exposure time (sec)                    9        10        10
+Achieved limiting magnitude     
+   (point source, 3 sigma)            18.5      16.5      14
+Magnitude of saturation                9.5       8.5      6.5
+
+
+For more information about the DENIS instrument see Epchtein 
+1997.
+
+Epchtein, N., DENIS:  A deep near infrared southern sky survey, 
+from New Horizons from Multi-Wavelength Sky Surveys, B.J. McLean 
+et al. (eds.) (printed in the Netherlands), 106-108, 1997.
+        </description>
+    </Instrument>
+</Product_Context>
+

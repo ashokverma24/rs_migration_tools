@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:cosima.ro</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>COMETARY SECONDARY ION MASS ANALYZER for RO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ro::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J. et al., COSIMA - High resolution time-of-flight secondary ion mass
+                   spectrometer for the analysis of cometary dust particles onboard Rosetta, Space
+                   Sci. Rev., 128(1-4), 823-867, doi:10.1007/s11214-006-9083-0, 2007.
+            </reference_text>
+            <description>reference.KISSELETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>COMETARY SECONDARY ION MASS ANALYZER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Mass Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+NOTE:
+ 
+This text is a summary of the COSIMAPAPER.ASC located in the DOCUMENT
+subdirectory. The reader is suggested to use the more readable pdf
+version of this document, COSIMAPAPER.PDF.
+ 
+This document has an additional chapter 3, which simply lists the
+properties of each substrate.
+ 
+TABLE OF CONTENTS
+- 1. Introduction
+- 2. Functional Description
+- 3.  Collection Substrates
+- 4. In-Flight Operation
+- 5. The Ground Laboratory Program
+- 6. Anticipated Results
+- 7. References
+ 
+COSIMA  -  High   Resolution   Time-of-Flight   Secondary   Ion   Mass
+Spectrometer for the  Analysis  of  Cometary  Dust  Particles  onboard
+ROSETTA
+ 
+ 
+1 Introduction
+ 
+The ESA mission Rosetta, launched  on  March  2nd,  2004,  carries  an
+instrument suite to the comet 67P/Churyumov-Gerasimenko. The  COmetary
+Secondary Ion Mass Anaylzer - COSIMA - is one of three  cometary  dust
+analyzing  instruments  onboard  Rosetta.  COSIMA  is  based  on   the
+analytic  measurement  method  of  secondary  ion  mass   spectrometry
+(SIMS). The experiment&apos;s goal is in-situ  analysis  of  the  elemental
+composition (and isotopic composition of  key  elements)  of  cometary
+grains. The chemical characterization will include  the  main  organic
+components, present homologous and functional groups, as well  as  the
+mineralogical  and  petrographical  classification  of  the  inorganic
+phases. All this analysis is closely  related  to  the  chemistry  and
+history of the early solar system. COSIMA covers a mass range  from  1
+to 3500 amu with a mass resolution m/dm @ 50 % of  2000  at  mass  100
+amu. Cometary dust is collected on special,  metal  covered   targets,
+which are handled by a target manipulation unit. Once exposed  to  the
+cometary dust environment, the collected dust grains  are  located  on
+the target by a microscopic camera. A pulsed primary indium  ion  beam
+(among other entities) releases secondary ions from the  dust  grains.
+These ions, either positive or negative, are selected and  accelerated
+by electrical fields and travel  a  well-defined  distance  through  a
+drift tube and an ion reflector. A microsphere  plate  with  dedicated
+amplifier is used to detect the ions. The arrival times  of  the  ions
+are digitized,  and  the  mass  spectra  of  the  secondary  ions  are
+calculated from these time-of-flight spectra. Through  the  instrument
+commissioning, COSIMA took the very first SIMS spectra of the  targets
+in space. COSIMA will  be  the  first  instrument  applying  the  SIMS
+technique in-situ to cometary grain  analysis  as  Rosetta  approaches
+the comet  67P/Churyumov-Gerasimenko,  after  a  long  journey  of  10
+years, in 2014.
+ 
+The in situ chemical analysis of solids in space is  among  the  tasks
+that are technically most difficult. There are two  main  reasons  for
+that: With a few exceptions, solids in space are  not  abundant,  and,
+secondly, it is not easy to remove small samples from the  solid  into
+the vacuum for the analysis in a mass spectrometer.
+ 
+For COSIMA, the objects  of  interest  are  cometary  dust  particles,
+which are abundant, indeed, in the neighborhood of the comet  nucleus.
+It remains, however,  to  collect  and  bring  the  particles  to  the
+entrance of the spectrometer.
+ 
+Most mass spectrometers need the parts of the sample to  be  analyzed,
+to carry an electric charge. The process of removing an ion  from  the
+specimen is then the critical feature of the method to be chosen.
+ 
+The only mass spectrometric data on cometary dust particles  available
+to date come from the dust impact mass spectrometers  PIA,  PUMA,  and
+CIDA on the GIOTTO,  VEGA,  and  Stardust  spacecrafts,  respectively.
+(Far more and more detailed mass spectra of IDPs of supposed  cometary
+origin are available from  laboratory  measurements,  and  soon  there
+will be results  from  the  cometary  dust  particles  retrieved  from
+Stardust.)  While   other,   remote,   or   indirect   methods   allow
+measurements of collective properties of the cometary dust,  the  mass
+spectrometers  allowed  the  analysis  of  individual  particles  (cf.
+Kissel et al. 1986a, b). Since then, we know unambiguously  that  each
+particle is an intimate mixture of a mineral component and  simple  as
+well as complex organic  molecules.  Since  the  impact  velocity  was
+large (&gt;60 km/s), mostly atomic ions were formed and analyzed  in  the
+Halley case. In a first attempt, however, Kissel  and  Krueger  (1987)
+found evidence  for  the  chemical  nature  of  the  organic  cometary
+material. It is clear  that  not  only  a  few  well  known  molecules
+constitute  the  cometary  organics,  but  rather   several   chemical
+classes, with each being represented by a large number  of  individual
+substances. Indeed,  it  seems  possible  that  all  stable  molecules
+compatible with the chemical environment are formed.
+ 
+COSIMA therefore needed to be based on  a  method,  which  is  readily
+available  in  laboratory,  and  which  allows  for  tracing  the  ion
+directly to the molecular and structural form in which it was  present
+in the solid. Since the size distribution of  the  dust  particles  is
+known (cf. Mazets et al. 1987, McDonnell et al.  1989),  a  reasonable
+ionizing beam focus should be achieved under the limitations of  space
+instrumentation. Even though the  method  would  be  destructive,  its
+sensitivity should  be  high  enough  to  allow  several  analyses  at
+different depths for one individual ~20 um particle.
+ 
+To satisfy all these requirements, we choose the method  of  Secondary
+Ion Mass Spectrometry (SIMS). A fast primary ion, in this case  115In+
+at 8 keV, impacts the sample and  releases  by  desorption  atoms  and
+molecules of the sample, of which typically 0.1 to 10 %  are  ionized,
+the so-called secondary ions. For sensitivity  reasons,  the  analysis
+of a rather large mass range should be achieved simultaneously,  which
+in turn leads to the type of a time-of-flight mass  spectrometer.  The
+mass resolution must be high  enough  to  resolve  isobaric  ions,  at
+least atomic from molecular ions.  The  mass  range  should  at  least
+cover 3500 amu. In total, the  COSIMA  instrument  has  the  following
+main functional hardware elements:
+*     dust collector and target manipulator,
+*     COSISCOPE, a microscope for target inspection
+*     primary ion source, and
+*     mass spectrometer including the ion extraction  optics  and  the
+ion detector.
+ 
+Of course, for autonomous operation, the entire  instrument  is  under
+microprocessor based software control.
+ 
+The overall parameters and resources describing COSIMA are:
+* Atomic mass range 1 . . . 3500 amu
+* Rel. atomic mass resolution m/dm (at m = 100  amu)  &gt;  2000  at  50%
+peak width
+* Indium ion pulse duration about 3 ns
+* Indium ion energy 8 keV
+* Ion beam width about 50 um FWHM
+* Telemetry rate about 500 bit/sec
+* Mass 19.8 kg
+* Power consumption from 28 V DC 20.4 W
+ 
+ 
+ 2 Functional Description
+ 
+COSIMA is a time-of-flight secondary ion mass spectrometer.  Like  all
+such instruments, primary ions generate secondary ions from a  target,
+which they hit. Those secondary  ions  are  then  accelerated  to  the
+same, constant kinetic energy,  and  their  flight  time  to  the  ion
+detector is measured. This flight time follows the equation:
+ 
+(1)   time-of-flight = a * (mass/abs(q))0.5  +  b;
+ 
+with  a - is an instrumental constant depending on the length  of  the
+flight path and the    electrical voltages applied, for COSIMA  it  is
+about 3.1 us/(mass)0.5
+      b - is a constant for the offset of the time measurement
+      mass - is the ion mass in amu
+      q - is the ion charge state, in most cases = -1 or +1
+ 
+COSIMA  works  pretty  much  like  a  laboratory  instrument,  with  a
+somewhat reduced performance  due  to  the  limitations  for  a  space
+instrument, but remotely operated in a &apos;distant lab&apos;. The  limitations
+come first of  all  from  the  mass  and  power  available,  but  more
+pronounced from the limited capacity of data transfer to and from  the
+instrument, combined with a reaction time (round trip time  delay)  of
+32 minutes during the main operation time.
+ 
+Consequently the individual steps for the analysis of a dust  particle
+are:
+1) exposure of a collection substrate for a predetermined time
+2) optical search of the substrate for dust particles  by  the  camera
+system COSISCOPE
+3a) moving a dust particle in front of the spectrometer
+3b) either first clean the particle and surrounding by sputtering or
+3c) start the particle characterization
+6) perform onboard chemistry
+7) do  another  detailed  analysis  in  both,  the  positive  and  the
+negative, ion modes
+8) move to the next particle
+ 
+COSIMA  has  dedicated surfaces for the collection of  cometary   dust
+particles. These may impact with their release speed of  the  order of
+100  m/s.  Since  SIMS  is  a  very sensitive  method, the  collection
+surfaces  need  to  be  a material,  which  does  not  interfere  with
+the  type  of  materials expected in the dust. This excluded any  kind
+of  organic  material. A study performed identified  metal  blacks  as
+suitable materials from the structural, and  silver, palladium,  gold,
+or platinum from the material properties point of view. The choice has
+turned out to be very sensible, as these  blacks  are  also  efficient
+pumps for contaminants unavoidable for a space instrument.  Since  the
+cometary particles can have a wide range of speeds depending on  their
+size and on the gas activity of the nucleus, each unit of targets  has
+three 1*1 cm2 collection areas (substrates) and a separate  0.3*3  cm2
+strip  as  an  unexposed  reference  area.  Always  an  entire  target
+assembly is exposed at a time.
+ 
+Manipulation  of  the  target  units  is  achieved  with  the   Target
+Manipulator Unit (TMU), which was designed and added at a late  state.
+It  is  a  semiautonomous  system,  which  provides  access   to   the
+positions  &apos;COLLECT&apos;, &apos;STORE&apos;, &apos;COSISCOPE&apos;,  &apos;CLEAN&apos;,  &apos;ANALYZE&apos;,  and
+&apos;CHEMISTRY&apos; upon  simple (internal) commands.
+ 
+The first inspection of the sample is  done  by  COSISCOPE,  a  COSIMA
+internal camera. One of the 3 collection substrates is  checked  at  a
+time. Light beams from two sets of LEDs left and right of  the  sample
+illuminate it.  The  images  are  checked  for  features  like,  e.g.,
+shadows and  interpreted  as  sites,  the  coordinates  of  which  are
+transferred to the main instrument.
+ 
+The next step is the decision if the target, or a part  of  it,  needs
+cleaning by ion-sputtering. If so, it is moved in front of  a  DC  ion
+beam at the &apos;CLEAN&apos; position, else, it will be presented to  the  mass
+spectrometer. The primary ion source (PIBS) has a  separate  beam  for
+cleaning, providing 10-100 uA on a 100 um diameter spot equivalent  to
+removing some 100 monolayers per second. The next step is  to  analyze
+a site, i.e., to take a mass spectrum. The target is put in  front  of
+the extraction lens  of  the  spectrometer,  with  the  selected  site
+within 100 um of the lens&apos; center. Operational values are  taken  from
+the initial adjustment of  the  primary  ion  source.  Trains  of  ion
+packages of 3 ns width at a rate of 1 kHz release secondary ions  into
+the  spectrometer.  Its  second  order  focusing  design  provides  an
+inherent mass resolution of m/dm @ 50 % peak height above 3000  (i.e.,
+with 0-time spread  of  the  primary  beam).  A  typical  primary  ion
+package has 500 ions and  releases  1  to  10  non-hydrogen  secondary
+ions, depending on the material irradiated.
+ 
+All secondary ions of the appropriate polarity are picked  up  by  the
+electric field in front of the ion  extraction  lens.  This  field  of
+about 1 kV/mm minimizes initial time-of-flight differences due to  the
+acceleration process, which cannot  be  compensated  later.  The  lens
+field also guides the ions into  the  time-of-flight  section  of  the
+instrument reducing their drift energy to nominally 1 keV and  focuses
+their arrival location on the detector into a 15 mm diameter area.  As
+the  ions  travel  down  the  drift  tube,  they  pass  the  secondary
+deflection plates, which are needed to reposition  the  secondary  ion
+package, should the analysis site be off center. It is  also  used  to
+compensate the small changes in ion trajectories between the  positive
+and negative secondary ions modes. At the end of the  drift  tube  the
+ions  enter  the  ion  reflector,  the  device,  which  improves   the
+intrinsic mass resolution of the spectrometer  part  by  more  than  a
+factor of 100. State-of-the-art would be a gridless reflector ( which
+we  have  studied)  but  which  is  very  sensitive   to  the position
+of  the  ion  entry  and  thereby  on  the  perfect  function  of  the
+secondary  deflection plates.  The  actual  design  we   have   chosen
+uses  several  grids  separating  the  drift  section,  the  retarding
+section, and the reflecting section. As the ions enter under  a  small
+angle of 1deg, they exit at a slightly different  location  but  again
+into the same physical drift tube. At the end of this  tube  the  ions
+hit the  ion  detector.  The  position  and  the  orientation  of  the
+detector were carefully chosen, as both are part of the system,  which
+determines the mass resolution of COSIMA. Since we expect some of  the
+organic ions to have high masses (well above  350  amu)  the  detector
+can be biased for a post-acceleration of the secondary ions by  almost
+9 kV (with the appropriate polarity for the respective ion type).  The
+active element is a microsphere plate, which for its thickness of  1.4
+mm provides a gain value well above 107.  In  order  to  decouple  the
+signal from its high electrical potential (up to 14 kV in the case  of
+negative secondary ions), the microsphere output  is  directed  to  an
+anode, which is one side of a  capacitor,  while  the  other  side  is
+connected to the input of a pulse amplifier.  All  arrival  times  and
+shot numbers are stored at 2 ns resolution.  The  differences  between
+the modes for positive or negative secondary  ions  are  reflected  in
+the  respective  operational  voltages.  Besides   the   reversal   of
+polarity, minor adjustments need to be applied  to  the  voltages  for
+the deflection plates of both, the primary beam and the secondary  ion
+path. The safe switch-over from one ion type to the other will take  a
+couple of minutes to allow the high  voltages  to  decay,  before  the
+grounding of the power supplies is switched. The secondary  ion
+arrival times are accumulated into the time-bins of a  time-of-flight
+spectrum.
+ 
+ 
+3. Collection Substrates
+ 
+The 24 target holders are numbered with hexadecimal numbers  from  #C1
+to #D8. The top substrate is marked with the number #100,  the  middle
+with #200 and the low with #300. The combination of these numbers give
+the substrate identification number used in the instrument  commanding
+and data handling.
+ 
+The list bellow gives the substrates ID, the surface layer  properties
+and a possible comment
+ 
+#1C1 &apos;Palladium, black&apos;
+#2C1 &apos;Platinum, deep black&apos;
+#3C1 &apos;Platinum, deep black&apos;
+#1C2 &apos;Silver, 73 micrometer thickness,
+              blank with rectangular hole 3.5x3.5mm&apos;
+#2C2 &apos;Silver, 69 micrometer thickness,
+              blank with AgTe spot of about 3 mm size at center&apos;
+#3C2 &apos;Gold, 17 micrometer thickness, olivine particles&apos;
+#1C3 &apos;Gold, 8 micrometer thickness&apos;
+#2C3 &apos;Gold, 15 micrometer thickness&apos;
+#3C3 &apos;Gold, 20-30 micrometer thickness&apos;
+#1C4 &apos;Palladium, black&apos;
+#2C4 &apos;Silver, 14 micrometer thickness&apos;
+#3C4 &apos;Gold, 12 micrometer thickness&apos;
+#1C5 &apos;Platinum, light black,&apos;
+#2C5 &apos;Platinum, deep black&apos;
+#3C5 &apos;Gold, 13 micrometer thickness&apos;
+#1C6 &apos;Platinum, deep black&apos;
+#2C6 &apos;Platinum, deep black&apos;
+#3C6 &apos;Gold, 8 micrometer thickness&apos;
+#1C7 &apos;Silver, blank&apos;
+#2C7 &apos;Silver, 21 micrometer thickness&apos;
+#3C7 &apos;Gold, 15 micrometer thickness&apos;
+#1C8 &apos;Platinum, deep black&apos;
+#2C8 &apos;Platinum, deep black&apos;
+#3C8 &apos;Gold, 20-30 micrometer thickness&apos;
+#1C9 &apos;Gold, 5-8 micrometer thickness&apos;
+#2C9 &apos;Gold, 5-8 micrometer thickness&apos;
+#3C9 &apos;Gold, 11 micrometer thickness&apos;
+#1CA &apos;Gold, 5-8 micrometer thickness&apos;
+#2CA &apos;Gold, 16 micrometer thickness&apos;
+#3CA &apos;Silver, 10 micrometer thickness&apos;
+#1CB &apos;Gold, 17 micrometer thickness&apos;
+#2CB &apos;Gold, 14 micrometer thickness&apos;
+#3CB &apos;Gold, 20-30 micrometer thickness&apos;
+#1CC &apos;Silver, 21 micrometer thickness&apos;
+#2CC &apos;Silver, 21 micrometer thickness&apos;
+#3CC &apos;Silver, 24 micrometer thickness&apos;
+#1CD &apos;Gold, 5-8 micrometer thickness&apos;
+#2CD &apos;Gold, 14 micrometer thickness&apos;
+#3CD &apos;Gold, 20-30 micrometer thickness&apos;
+#1CE &apos;Gold, 5-8 micrometer thickness, Ag particles&apos;
+#2CE &apos;Gold, 11 micrometer thickness&apos;
+#3CE &apos;Gold, 20-30 micrometer thickness&apos;
+#1CF &apos;Gold, 8 micrometer thickness&apos;
+#2CF &apos;Gold, 12 micrometer thickness, Ag particles&apos;
+#3CF &apos;Gold, 20-30 micrometer thickness&apos;
+#1D0 &apos;Gold, 20-30 micrometer thickness&apos;
+#2D0 &apos;Gold, 20-30 micrometer thickness&apos;
+#3D0 &apos;Gold, 20-30 micrometer thickness, Ag particles&apos;
+#1D1 &apos;Silver, blank&apos;
+#2D1 &apos;Gold, 13 micrometer thickness&apos;
+#3D1 &apos;Gold, 13 micrometer thickness&apos;
+#1D2 &apos;Gold, 8 micrometer thickness&apos;
+#2D2 &apos;Gold, 8 micrometer thickness&apos;
+#3D2 &apos;Silver, 30 micrometer thickness&apos;
+#1D3 &apos;Silver, 10 micrometer thickness&apos;
+#2D3 &apos;Silver, 10 micrometer thickness&apos;
+#3D3 &apos;Silver, 32 micrometer thickness&apos;
+#1D4 &apos;Platinum, sintered&apos;
+#2D4 &apos;Platinum, deep black&apos;
+#3D4 &apos;Platinum, deep black&apos;
+#1D5 &apos;Platinum, deep black&apos;
+#2D5 &apos;Silver, 22 micrometer thickness&apos;
+#3D5 &apos;Silver, 21 micrometer thickness&apos;
+#1D6 &apos;Platinum, deep black&apos;
+#2D6 &apos;Palladium, black&apos;
+#3D6 &apos;Platinum, deep black&apos;
+#1D7 &apos;Silver, blank&apos;
+#2D7 &apos;Platinum, sintered&apos;
+#3D7 &apos;Platinum, sintered&apos;
+#1D8 &apos;Silver, blank, square hole 3.5x3.5mm at center&apos;
+#2D8 &apos;Silver, blank&apos;
+#3D8 &apos;Gold, 8 micrometer thickness&apos;
+ 
+ 
+ 4 In-Flight Operation
+ 
+Rosetta commissioning was carried out in 2004, the  COSIMA  instrument
+was operated in-flight after nearly a decade of development and  tests
+on the ground. Positive and negative SIMS ion mass spectra were  taken
+of one of the Ag metal targets, the resulting  spectra  are  shown  in
+Fig. 18a and Fig. 18b, respectively. The inorganic  and  organic  ions
+and molecules show up in separable and well resolved mass peaks,  such
+as Si and C2H4 or Fe and C4H8.  Small  amounts  of  organic  molecules
+being known to be present in cometary dust such as CN are adsorbed  on
+the blank  metal  target  and  reveal  themselves  in  the  SIMS  mass
+spectra. Since COSIMA carries also a heating station for  the  target,
+the level of volatile contamination can be  further  decreased  before
+exposure of the target to the  cometary  dust.  Comparison  with  mass
+spectra taken of the same target in 2002 before launch  already  shows
+a slight decrease of volatiles such as hydrocarbons  absorbed  on  the
+target surface after residing only  about  6  months  in  space.  This
+contamination by organic molecules was, in  part,  released  from  the
+insulation material of the electrical harness and from boxes used  for
+ground transportation. Note that the  Ag  peaks  are  caused  by  ions
+released from the target and the In peak is due to primary  ions  from
+the ion source. For high secondary ion rates, the  mass  spectra  show
+saturation effects due to dead-times  inherent  in  the  ion  detector
+counting electronics, best visible adjacent to each of the intense  Ag
+isotope peaks.
+ 
+ 
+  5 The Ground Laboratory Program
+ 
+During the cruise phase to the comet as well as  while  the  probe  is
+actually analyzing cometary dust, an active  laboratory  program  will
+be  maintained.  While  the  SIMS  method  is  routinely  applied  for
+relevant  geological  and   planetological   studies,   the   TOF-SIMS
+technique will benefit from this terrestrial work with the  COSIMA  RM
+reference    model.    Additionally,    growing    experimental    and
+methodological expertise comes from the day-to-day work with  relevant
+samples at the TOF-SIMS laboratory instrument currently in use at  the
+University of Munster. The complex mixture of  organic  and  inorganic
+material, expected to make  up  the  comet,  will  result  in  equally
+complex  mass  spectra.  They  have  to  be  disentangled  to  provide
+information on the chemical, isotopic, and  molecular  composition  of
+the particles that reflect the origin, history, and present  state  of
+cometary matter. The particle-to-particle variation  will  testify  to
+its diversity, i.e., to the extent of the  pristine  nature  of  these
+materials, and to its stellar sources. Interpreting the  mass  spectra
+requires calibration. Calibration here  is  not  meant  to  mimic  the
+experiment in a one-to-one scale in  the  laboratory,  but  rather  to
+understand the processes, which control  ion  formation  with  complex
+samples, as well as the instrumental  parameters  of  mass  separation
+and ion detection. To that end, state-of-the-art  laboratory  TOF-SIMS
+analyses with utmost lateral and mass resolution of various  materials
+available on Earth will be  performed,  which  include,  but  are  not
+limited to:
+Interplanetary  dust  particles  (IDPs):  Some  of  these  small   and
+difficult-to-analyze particles actually may stem from  comets.  It  is
+an active research topic to sort these out and distinguish  them  from
+asteroidal IDPs. IDPs of a certain class  are  mixtures  of  inorganic
+and organic matter and as such represent the best analog material  for
+the COSIMA case.
+Carbonaceous chondrites: They are mechanical mixtures of  fine-grained
+low-temperature matrix and carbon-rich  phases  (kerogen)  with  high-
+temperature clasts, single minerals,  and  chondrules.  Their  overall
+chemical composition is solar as far as the condensable  elements  are
+concerned. They most closely represent and  witness  the  Early  Solar
+System materials and processes. They are regarded  as  the  base  line
+material in planetology.
+ 
+Certain  IDPs  and  chondrites  contain  particles  with  non-standard
+isotopic composition of a number of elements that point towards  their
+nucleosynthetic  stellar  sources.  These   particles   (stardust   or
+presolar particles) will serve to learn how  to  obtain  the  relevant
+information from cometary matter.
+ 
+The extraterrestrial materials mentioned above are not as pristine  as
+we expect cometary dust to be. IDPs are altered to an  unknown  extent
+during passage through  the  atmosphere,  deceleration  processes  and
+residence in the stratosphere; carbonaceous  chondrites  were  subject
+to  metamorphism  and  aqueous  alteration  on  their  parent  bodies.
+Consequently,  for  the  analysis  of  organic  (and  icy)  components
+anticipated in cometary particles artificial analogs are needed.  They
+are  siliceous  vaporization  deposits   contaminated   with   organic
+substances. Certainly not  all  possible  organic  substances  can  be
+analyzed,  but  rather  we  will  perform  TOF-SIMS  measurements   of
+relevant substance classes.
+ 
+As mentioned above, these analyses  are  performed  with  the  highest
+possible  mass  and  (where  appropriate)   lateral   resolution.   In
+addition, the temporal evolution of the mass spectra is  evaluated  by
+using the data from all primary ion pulses. This will give hints to  a
+possible layering within the material and /  or  validate  influences,
+which the TOF-SIMS  method  may  cause  in  the  material  (by,  e.g.,
+&apos;radiation damage&apos;).  New  statistical  and  chemometric  methods  and
+procedures, now under test, will be further developed and applied.
+ 
+The laboratory program will  benefit  from  and  be  adjusted  to  new
+insights, which will come from the analysis of  the  samples  returned
+by Stardust.
+ 
+ 
+6 Anticipated Results
+ 
+6.1 The Mineral Phase
+ 
+ The anticipated results of the investigation of the mineral phase  of
+ the cometary dust are manifold:
+1.  First, we  shall  establish  the  mean  composition  of  the  main
+   elements, and then check whether this varies from grain  to  grain,
+   either within the statistical  variance  or  beyond  that.  In  the
+   latter case we&apos;ll be able to identify various classes of minerals.
+2.  Second, the distribution of molecular ions should be sensitive  to
+   the order structure of the minerals, may they be in an amorphous or
+   in one of several crystalline states. This would give an  important
+   clue to the thermal and radiation history of the dust.
+3.  Third, once an elemental and molecular distribution  of  the  main
+   isotopic contribution is established, the contribution of the minor
+   isotopes can be measured  from  grain  to  grain,  needed  for  the
+   question whether various stellar sources have played a role to form
+   the dust.
+4.  Fourth (last but not least), a cross-correlation of the  types  of
+   organics sitting upon the same grain will give insight into aspects
+   of the real grain forming process as well as to possible  catalytic
+   interferences between each phase. This is important for the &apos;Origin
+   of Life&apos; topic and its relation to nano-systems.
+ 
+ 
+ 6.2 The Organic Phase
+ 
+ 
+ The refractory organic  phase  will  most  probably  be  an  intimate
+ mixture of a lot of individual species. But  still,  the  history  of
+ grain formation and the incorporation of them into cometary nuclei is
+ reflected - at least partially - in the distribution of  the  organic
+ species. Substance class analysis will provide clues to  whether  the
+ organic phase is  mainly  produced  by  condensation  of  vapors  and
+ subsequent   radiation   processing   with    polycondensation    and
+ oligomerization, etc., or, if it is mainly produced  by  condensation
+ of larger molecules and aggregation of small refractory particles.
+ Another important question is, whether the organic material in comets
+ is suitable to start the onset of life on earth. In  this  case,  the
+ analysis will show that the precursors of such molecules  needed  for
+ life&apos;s self-organization by exenthalpic reactions with  liquid  water
+ are present.
+ As water usually shows up in  different  ways  in  the  mass-spectra,
+ clues to the source of water in the comet may be found,  too:  is  it
+ just a condensation of water ice in the grains, or, is it the  result
+ of long-term radiation induced processes, such as polycondensation or
+ Born-Haber-type processes, or is perhaps a fraction of the water in a
+ comet  produced  by  thermally  induced  reactions,  when  the  comet
+ approaches the sun?
+ COSIMA results thus address the main questions concerning the  origin
+ of the hydrosphere, and further on, the biosphere on earth.
+ 
+7 References
+ 
+ Kissel, J. et al., COSIMA - High resolution
+ time-of-flight secondary ion mass spectrometer for the analysis
+ of cometary dust particles onboard Rosetta, Space Sci. Rev.,
+ 128(1-4), 823-867, doi:10.1007/s11214-006-9083-0, 2007.
+ 
+ This document is available in the DOCUMENT directory.
+ 
+-----------------------
+
+        </description>
+    </Instrument>
+</Product_Context>

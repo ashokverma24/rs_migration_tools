@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:chemcam_rmi.msl</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>CHEMISTRY CAMERA REMOTE MICRO-IMAGER for MSL</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.msl::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Maurice, S., R.C. Wiens, et al., The ChemCam instrument suite on the Mars
+                   Science Laboratory (MSL) Rover: Science objectives and mast unit description,
+                   Space Sci. Rev. doi:10.1007/s11214-012-9912-2, 2012.
+            </reference_text>
+            <description>reference.MAURICEETAL2012</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Wiens, R.C., S. Maurice, et al., The ChemCam instrument suite on the Mars
+                   Science Laboratory (MSL) Rover: Body unit and combined system tests, Space Sci.
+                   Rev. doi:10.1007/s11214-012-9902-4, 2012.
+            </reference_text>
+            <description>reference.WIENSETAL2012A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Wiens, R.C., et al., Pre-flight calibration and initial data processing for the
+                   ChemCam laser-induced breakdown spectroscopy instrument on the Mars Science
+                   Laboratory rover, Spectrochimica Acta Part B: Atomic Spectroscopy,
+                   doi:10.1016/j.sab.2013.02.003, 2013.
+            </reference_text>
+            <description>reference.WIENSETAL2013</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>CHEMISTRY CAMERA REMOTE MICRO-IMAGER</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+      Instrument Overview
+      ===================
+      The ChemCam instrument suite includes both the LIBS (Laser Induced
+      Breakdown Spectrometer) and the RMI (Remote Micro-Imager) components.
+      The instrument suite consists of two major sections, the Mast Unit,
+      housing the laser, RMI, telescope, and associated electronics, and the
+      Body Unit, consisting of an optical demultiplexer, three spectrometers,
+      the thermo-electric cooler, CCD electronics, spectrometer electronics,
+      the data processing unit (DPU), and the low-voltage power supply.  The
+      ChemCam mast unit is contained in the remote warm electronics box (RWEB)
+      at the top of the rover&apos;s mast. The body unit is located in the rover
+      body, attached to the rover accommodation mounting plate (RAMP).
+      Besides the mast and body units, there are two other sections of the
+      instrument.  A fiber optic cable transmits the plasma light between
+      the two ChemCam units.  Finally, included on the rover deck is a
+      calibration target assembly.
+ 
+      The following text describes both the RMI and LIBS components, as
+      they work together.
+ 
+ 
+      Scientific Objectives
+      =====================
+      The ChemCam LIBS instrument&apos;s objective is to obtain major element
+      compositions for rocks and soils within seven meters of the instrument
+      to an accuracy of +/-10%. The instrument must be capable of removing
+      dust and weathering rinds, and must be able to profile to a depth of 1
+      mm into rocks.
+ 
+      The ChemCam RMI instrument provides context imaging with
+      sub-millimeter resolution comparable to a close-up camera, but at
+      metric distances.
+ 
+      Calibration
+      ===========
+      The reader is referred to the ChemCam calibration paper
+      [WIENSETAL2013].
+ 
+      Operational Considerations
+      ==========================
+      During the observation of the Sun by other instruments, the telescope
+      is focused at 2 meters to avoid damages on the RMI detector or other
+      optics.  Two exclusion zones have also been defined: 1.20 m - 1.36 m,
+      1.942 m - 2.217 m to avoid laser reflections on some optical parts.
+      These two exclusion zones  do not apply to activities implying RMI
+      only.
+ 
+      Detectors
+      =========
+      For detectors the ChemCam LIBS spectrometers employ E2V 42-10 back
+      illuminated 2048 x 515 pixel CCDs that are operated in low-noise
+      advanced inverted mode. Each pixel is 13.5 microns square, for an image
+      area of 27.6 x 6.9 mm. The grade-zero units used in ChemCam were
+      essentially off-the-shelf in terms of specifications with the exception
+      of the anti-etalon coating mentioned above for the VNIR CCD. The full
+      wells were measured at 255k, 190k, and 216k electrons for the UV, blue,
+      and VNIR spectrometers, respectively.
+ 
+      The ChemCam imager is a heritage unit from the CIVA experiment onboard
+      the ESA Rosetta mission. The imager is composed of a camera head (3D
+      cubes based on the TH 7888A CCD image sensor manufactured by Atmel)
+      with specific optical systems.  It is a frame transfer CCD with a
+      useful zone of 1024x1024 square pixels (14x14 microns square). Four
+      extra lines and sixteen extra columns are provided for dark
+      referencing. The 3D cube is equipped with FPGA based controller,
+      which manages the CCD clocking and the analog to digital converter
+      (10-bit ADC).
+ 
+      Electronics
+      ===========
+      CCD Electronics
+ 
+      There are three identical CCD cards, one for each of the optical
+      spectrometers. The spectrometers were required to be thermally isolated
+      from the rest of the body unit, so a separate CCD card for each
+      spectrometer accommodated the thermal isolation.  The CCD card provides
+      the first stage analog signal amplification, provides some of the
+      required CCD voltages, and interfaces electrically to the CCDs. The CCD
+      cards connect to the spectrometer electronics using a flex circuit,
+      which also helps minimize the thermal path.
+ 
+      The CCDs underwent normal factory testing provided for commercial
+      units plus one hundred thermal cycles between -55 C and +70 C, as well
+      as a 72 hour burn-in at 125 deg C. These were done at the factory prior
+      to delivery. The units underwent characterization at JPL for dark
+      current, gain, full well, optimal operating voltages, and any gross
+      anomalies. Because of differences in clock speeds between the initial
+      characterization and flight operation the units had to be tested again
+      with the flight electronics in a socket prior to soldering them to the
+      boards.
+ 
+      Spectrometer Electronics
+ 
+      The spectrometer electronics board operates the CCDs used by the three
+      LIBS spectrometers. The functions include providing proper reference
+      voltages to drive the CCDs, operating the CCDs, receiving the data
+      from the CCDs, converting the signals to digital data, and passing the
+      data to the DPU.
+ 
+      Reference voltages are provided separately to each CCD, allowing
+      preflight adjustment to optimize the voltages for each CCD as required
+      to optimize performance. Adjustments are provided for the vertical and
+      horizontal clock speeds. These are made via
+      commands sent to the spectrometer field-programmable gate array (FPGA)
+      where the CCD clocking control is performed. Nominal operation for 1D
+      LIBS spectra uses a 56 kHz vertical transfer rate and a 550 kHz
+      horizontal transfer rate as these appear optimal in terms of overall
+      noise performance. The total transfer time for this setting is a
+      maximum of ~13 ms if all rows are summed.
+ 
+      When power is applied to the CCBU, all three CCDSs are turned on but
+      are not clocked.  This saves power while warming up the CCDs to
+      equilibrium temperature if required by performance measurements. Even
+      though nominal operation uses all three CCDs, power to each unit is
+      controlled separately in case of a failure of one in flight with one
+      serendipitous exception:  UV and VNIR combination cannot be operated
+      without the VIS spectrometer. The exact timing of each A-D conversion
+      can be adjusted with a parameter sent to the spectrometer board FPGA,
+      allowing optimization of performance.  The clocking parameters
+      (horizontal, vertical and A/D sample point) are the same for all three
+      CCDs.
+ 
+      RMI Electronics
+ 
+      The required supply voltages are +5, and +15 V, and receiving a +5 V
+      command from the MU FPGA switches on the camera.
+ 
+      Data Processing Unit (DPU)
+ 
+      The DPU carries out the functions of taking commands from the rover,
+      performing these commands, storing the data, and sending the data to
+      the rover. In addition, the DPU sends commands to the mast unit and
+      receives signals and data back in return.
+ 
+      The DPU communicates with the mast unit through two communication
+      links.  Commands and telemetry data between the body unit and mast
+      unit are performed using a programmable universal asynchronous
+      receiver transmitter (UART) link.  The UART link can run at 4 different
+      speeds: 9.6 kbaud,  19.2 kbaud, 38.4 kbaud and 115.2 kbaud.   Images
+      taken by the mast unit camera are sent from the mast unit to the body
+      unit using a low voltage differential signal (LVDS) high speed serial
+      link (HSS) that runs at 8.25 Mbps.
+ 
+      The DPU communicates with the rover through a 2-way LVDS high speed
+      serial link.  Command data from the rover to the body unit run at
+      4.125 Mbps.  Telemetry data from the body unit to the Rover runs at
+      8.25 Mbps.  The DPU contains a UTMC 80C196 microcontroller, which is
+      supported by two Actel FPGAs.  One FPGA, called the Micro FPGA,
+      contains the microcontroller logic control, the MU UART interface
+      logic, state of health (SOH) interfacing and ground based test port.
+      The second DPU FPGA, called the Memory FPGA, handles the interfaces to
+      the  6 Megabyte DPU data memory bank,  the spectrometer interface, the
+      mast unit HSS link and the rover HSS links.  Program memory is
+      redundantly stored in two banks of EEPROM. One bank of EEPROM is
+      hardware locked, in that the write line is tied off to the inactive
+      state to guard against any memory corruption during flight. The other
+      bank of EEPROM is capable of being reprogrammed in flight if the need
+      arises, but is also protected from corruption by the EEPROM&apos;s
+      built-in software data protection algorithm.  In addition the DPU also
+      has a bank of scratchpad SRAM and a bank of data EEPROM.
+ 
+      Some changes have already been made to the reprogrammable side. The
+      handling of interrupts was modified to avoid conflicts which result in
+      approximately 1% of commands rejected on the locked side. The locked
+      side also operates with an RMI data transmission rate to the rover
+      compute element (RCE) of only 2 MHz, while the reprogrammable side can
+      transfer data at up to 8 MHz. The locked side also is missing headers
+      on the RMI images, which was fixed in the reprogrammable side&apos;s
+      program.
+ 
+      Low-Voltage Power Supply
+ 
+      The low-voltage power supply receives the nominal 28 V input from the
+      rover, passes it on to the Mast Unit, and provides the Body Unit with
+      +5 V digital, +/-5 V analog, +24 V digital, and +/-12 V analog. Each of
+      these has a maximum of 5 W except the +12 V and +24 V, which are 2.5 W
+      maximum. The DPU uses only the +/-5 V lines, while the spectrometer
+      board uses all five supplies. Design goals were noise levels &lt; 5 mV
+      rms and spikes of &lt; 20 mV amplitude. The LVPS board also provides
+      connections for the PRT temperature sensors, two of which are on the
+      spectrometers and two of which are on the CCD board covers.  The LVPS
+      board uses commercially available Interpoint power converters with
+      inline filters to achieve its voltage levels. The units were heat sunk
+      to aluminum bars which extended to the edge of the board. The board is
+      housed in a separate compartment accessed from the rover attachment
+      side of the electronics box, where heat is most easily transmitted to
+      the rover.
+ 
+      Thermal modeling of the LVPS indicated that at the hot qualification
+      temperature limit of 70 deg C, with the board averaging 77 deg C the
+      +5 V converter, if operating at 120% with a 36 V bus input, could
+      exceed 125 deg C. Additionally, in this scenario, two other converters
+      could exceed 110 deg C. While the instrument was successfully tested
+      at these levels, it is not expected to operate near these levels on
+      Mars.
+ 
+      Filters
+      =======
+      There are no filters on ChemCam.
+ 
+      Optics
+      ======
+      The ChemCam telescope focalizes the system on a distance rock to (1)
+      create a LIBS plasma and collect light from the plasma into an optic
+      fiber (LIBS); or (2) to image the context around the laser pit (RMI).
+      The telescope is designed to perform LIBS in the range of 1-7 m, and RMI
+      in the range of 2-20 m, using a moving secondary miror. The primary
+      mirror of the telescope is 110 mm in diameter. The RMI field of view is
+      20 mrad. The optical system includes also a continuous laser and a
+      photodiode to perform autofocus.
+ 
+ 
+      Operational Modes
+      =================
+      ChemCam is designed and planned to be used daily on Mars. Operations
+      planning divides the rover activities into reconnaissance sols
+      (sol = Mars day), drive sols, approach sols, contact sols during which
+      arm-mounted instruments APXS and MAHLI (hand lens imager) are used,
+      and in-situ analysis sols during which CheMin and SAM analyses are
+      carried out. ChemCam can be used to perform reconnaissance on both of
+      the first two types of sols. During approach sols ChemCam data will
+      help select the precise sample for in-situ analysis, and during contact
+      and in-situ analysis sols ChemCam can perform additional surveys of
+      surrounding materials. A typical analysis will consist of a number of
+      laser pulses sufficient to remove surface dust, followed by a number
+      of laser pulses (e.g., 30) that will be averaged together for better
+      statistics. At times depth profiles will be performed to understand
+      the compositions of dust and weathering layers as well as the rock
+      composition. Because the LIBS analysis spot size is by necessity =
+      0.5 mm in diameter, determining a whole-rock composition requires
+      multiple analysis spots on the same rock for medium- and coarse-grained
+      lithologies.
+ 
+      Each analysis spot is expected to take about six minutes and two
+      Watt-hrs, but in most cases it will be necessary to warm the laser
+      from the -40 deg C survival temperature of the mast to its operation
+      temperature of -10 deg C, taking about 20 minutes before the first
+      analysis of the day. There is also some time required at the end of
+      analyses to slowly cool the unit and to defocus to a sun-safe
+      configuration and stow the mast. Of the actual analysis, the laser
+      shots will normally operate at 3 Hz, taking only ~20 s, while up to
+      3 minutes is required for focusing and some tens of seconds are
+      required for transferring the data. RMI context images will be taken
+      before and after each LIBS analysis, transmitting only the pixels
+      corresponding to the LIBS spot on the second image.
+ 
+ 
+ 
+      Subsystems
+      ==========
+      The major subsystems are:
+ 
+      RMI subsystem - provides context images in visible light of target
+        area sampled by LIBS system or can be used to provide narrow FOV
+        images of other targets of interest.
+ 
+      LIBS subsystem - provides LIBS spectra over the wavelength range
+        from UV to VNIR of selected targets. Can also be used for passive
+        spectroscopy of selected targets.
+ 
+ 
+      Functional subsystems:
+ 
+        ChemCam Mast Unit
+        - Optical Box consisting of optical telescope, focus mechanism and
+                focus laser
+        - LIBS laser
+        - Electronics box with laser capacitors, LVPS, HVPS, I/F electronics,
+                FPGA and associated electronics
+ 
+        ChemCam Optical Fiber
+        - Fiber optic cable that transmits LIBS light from Mast Unit to
+            Body Unit
+ 
+        ChemCam Body Unit
+        -  Demultiplexer that accepts LIBS photons from the fiber optic
+           cable and separates light into UV, VIS and VNIR bands
+        -  Spectrometers - UV, VIS and VNIR spectrometers that record
+           the intensity of LIBS light in these wavebands.
+        -  Electronics box with LVPS, CPU and I/F electronics board and
+           spectrometer control board
+        -  Thermoelectric cooler - used to cool Spectrometer CCDs
+        -  Decontamination heaters - used to prevent contamination of
+           the Body Unit optics
+ 
+       In addition there are a variety of survival and laser heaters,
+       temperature monitors and other minor subsystems in both the Mast and
+       Body Units.
+ 
+       ChemCam Calibration Targets - assembly mounted on Rover deck with
+       rock and optical calibration targets
+ 
+ 
+      Measured Parameters
+      ===================
+      The reader is referred to the ChemCam Instrument papers MAURICEETAL2012
+      and WIENSETAL2012A published in Space Science Reviews; complete
+      citations are in the reference catalog file CCAM_REF.CAT in the Catalog
+      directory of the archive. Copies of these papers are provided in the
+      Extras directory.
+
+        </description>
+    </Instrument>
+</Product_Context>

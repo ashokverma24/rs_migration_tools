@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:instrument:mex.aspera-3</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ANALYZER OF SPACE PLASMA AND ENERGETIC ATOMS (3RD VERSION) for MEX</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:aspera-3.mex</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.mex</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Barabash, S., et. al., ASPERA-3: Analyser of Space Plasmas and Energetic Ions
+                   for Mars Express, ESA SP-1240, September 2004
+            </reference_text>
+            <description>reference.BARABASHETAL2004</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ANALYZER OF SPACE PLASMA AND ENERGETIC ATOMS (3RD VERSION)</name>
+        <type>Particle Detector</type> <!--RChen/EN was Energetic Particle Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+     This is the ASPERA-3 (Analyzer of Space Plasmas and Energetic
+     Atoms - 3rd version) instrument description.
+ 
+     Analyzer of Space Plasmas and Energetic Atoms, 3rd version
+     ----------------------------------------------------------
+     (ASPERA-3)
+     ----------
+     Abstract. The general scientific objective of the ASPERA-3
+     experiment is to study the solar wind-atmosphere interaction and
+     characterize the plasma and neutral gas environment in the near-
+     Mars space through energetic neutral atom (ENA) imaging and
+     local charged particle measurements. The studies to be performed
+     address the fundamental question: How strongly do the
+     interplanetary plasma and electromagnetic fields affect the
+     Martian atmosphere? This question is directly related to the
+     problem of Martian dehydration. The ASPERA-3 instrument
+     comprises four sensors; two ENA sensors, electron and ion
+     spectrometers. The Neutral Particle Imager (NPI) provides
+     measurements of the integral ENA flux (0.1 -60 keV) with no mass
+     and energy resolution but high angular resolution. The Neutral
+     Particle Detector (NPD) provides measurements of the ENA flux,
+     resolving velocity (0.1 -10 keV) and mass (H and O) with a
+     coarse angular resolution. The electron spectrometer (ELS) is a
+     standard top-hat electrostatic analyzer in a very compact
+     design. These three sensors are located on a scanning platform
+     providing a 4pi coverage (maximum possible). The instrument also
+     contains an ion mass composition sensor, IMA (Ion Mass
+     Analyzer). Mechanically, IMA is a separate unit connected by a
+     cable to the ASPERA-3 main unit. IMA provides ion measurements
+     in the energy range 0.01 - 40 keV/q for the main ion components
+     H+, H2+, He+, O+, with 20-80 amu/q.
+ 
+    Neutral Particle Imager (NPI)
+    -----------------------------
+     The Neutral Particle Imager (NPI) provides measurements of the
+     integral ENA flux with no mass and energy resolution but with 5
+     deg x 11 deg angular resolution. The intrinsic field of view is
+     9 deg x 344 deg. The sensor utilizes a graphite surface to
+     suppress the UV background. ENAs incident on the surface at a
+     grazing angle of 20 deg are reflected and/or cause ion
+     sputtering. An MCP stack detects the reflected particles and
+     sputtered fragments with a discrete anode.
+ 
+    Neutral Particle Detector (NPD)
+    -----------------------------
+     The Neutral Particle Detector (NPD) provides measurements of the
+     ENA differential flux over the energy range 100 eV - 10 keV
+     resolving H and O with a coarse 5 deg x 30 deg angular
+     resolution. The sensor consists of two identical detectors each
+     with a 9 deg x 90 deg intrinsic field of view. The measurement
+     technique is based on a principle similar to NPI. ENAs incident
+     on a surface at a grazing angle of 15 deg are reflected and
+     cause secondary electron emission. The secondary electrons are
+     transported to an MCP assembly, which gives the START signal.
+     The reflected ENAs hit the second surface and again produce the
+     secondary electrons used to generate the STOP signal. The time-
+     of-flight (TOF) electronics give the ENA velocity. The pulse-
+     height distribution analysis of the STOP signals is used to
+     provide a rough determination of the ENA mass.
+ 
+    Electron Spectrometer (ELS)
+    ---------------------------
+     The ELectron Spectrometer (ELS) provides electron measurements
+     in the energy range 0.01 - 20 keV. The intrinsic field of view
+     is 10 deg x 360 deg. The 360 deg aperture is divided into 16
+     sectors. The sensor is a standard top-hat electrostatic analyzer
+     in a very compact design.
+ 
+    Ion Mass Analyzer (IMA)
+    -----------------------
+     The Ion Mass Analyzer (IMA) is a separate unit connected by a
+     cable to the ASPERA-3 experiment. IMA provides ion measurements
+     in the energy range 0.01 - 40 keV/q for the main ion components
+     H+, H2+, He+, O+, and for the group of molecular ions 20 &lt; M/q &lt;
+     ~80. IMA has a 4.6 deg x 360 deg field of view. Electrostatic
+     sweeping performs elevation (+/- 45 deg) coverage. The IMA
+     sensor is a spherical electrostatic analyzer followed by a
+     circular magnetic separating section. A large diameter MCP with
+     a discrete anode images the matrix azimuth x mass.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The ASPERA-3 experiment fulfills the Mars Express mission
+    objective of studying the interaction of the atmosphere with the
+    interplanetary medium by:
+ 
+    * Remote measurements of energetic neutral atoms (ENA) in order
+      to
+      (a) investigate the interaction between the solar wind and
+          Martian atmosphere,
+      (b) characterize quantitatively the impact of plasma processes
+          on the atmospheric evolution, and
+      (c) obtain the global plasma and neutral gas distributions in
+          the near-Mars environment.
+ 
+    * in situ measurements of ions and electrons in order to
+      (a) complement the ENA images (electrons and multiply-charged
+          ions cannot be imaged)
+      (b) to study local characteristics of plasma (dynamics and fine
+          structure of boundaries), and
+      (c) provide undisturbed solar wind parameters necessary for
+          interpretation of ENA images.
+ 
+    The scientific objectives of the ASPERA-3 experiment are:
+ 
+    1) Scientific objective: Determine the instantaneous global
+          distributions of plasma and neutral gas near Mars
+       Associated measurements: ENAs originating from the shocked
+          solar wind
+       Measurement requirements:  Measure the ENA flux in the energy
+          range tens eV - few keV with 4pi coverage. ENA flux &gt;
+          10**4/(cm**2-s-keV)
+          Measure the upstream solar wind parameters
+ 
+    2) Scientific objective: Study plasma induced atmospheric escape
+       Associated measurements: ENAs originating from the inside of
+          the magnetosphere
+       Measurement requirements: Mass resolving (H / O) ENA
+          measurements in the energy range up to tens keV. ENA flux &gt;
+          10**3/(cm**2-s-keV)
+ 
+    3) Scientific objective: Investigate the modification of the
+          atmosphere through ion bombardment
+       Associated measurements: ENA albedo
+       Measurement requirements: Mass resolving (H / O) ENA
+          measurements in the energy range down to tens eV from nadir
+          direction.
+          ENA flux &gt; 10**6/(cm**2-s-keV)
+ 
+    4) Scientific objective: Investigate the energy deposition from
+          the solar wind to the ionosphere
+       Associated measurements: Precipitating ENAs
+       Measurement requirements: ENA measurements in the energy range
+          tens eV - few keV. ENA flux &gt; 10**4/(cm**2-s-keV)
+ 
+    5) Scientific objective: Search for the solar wind-Phobos
+       interactions
+       Associated measurements: ENAs originating from Phobos
+       Measurement requirements: ENA measurements in the energy range
+          tens eV - few keV with 4pi coverage. ENA flux
+          &gt; 10**4/(cm**2-s-keV)
+ 
+    6) Scientific objective: Define the local characteristics of the
+          main plasma regions
+       Associated measurements: Ions and electron measurements of hot
+          plasma
+       Measurement requirements: Ion and electron measurements in the
+          energy range few eV - tens keV with 4pi coverage.
+ 
+  Calibration
+  ===========
+    Calibration of the ASPERA-3 sensors can be divided up in:
+ 
+    1. Characterization, tests and selection of detectors (MCPs and
+       secondary emitting surfaces).
+    2. Characterization and final calibration of the integrated
+       sensor units.
+    3. Functional tests of the sensors in the fully mounted (flight)
+       configuration.
+ 
+    All sensor units were fully calibrated, and some preliminary
+    functional tests were made in the fully mounted, flight,
+    configuration in June 2002. The final functional tests were
+    successfully carried out during the retrieval period 18 November
+    - 9 December 2002.
+ 
+    The Neutral Particle Imager, NPI, was calibrated in Nov-Dec 2001
+    at the IRF ion source in Kiruna. The sensitivity of the
+    instrument and the characterization of the acceptance field of
+    view were obtained using ions (e.g. N+, H2O+, and H+). The ion
+    deflector properties versus energy were calibrated for various
+    deflector voltages. The integral efficiency of the secondary
+    surface were found to range between 2% and 24% (MCP bias
+    dependent). Azimuthal field-of-view slightly broader than nominal
+    (13.5 deg). NPI-calibration performance as expected. The ideal
+    NPI field-of-view, 4pi, is covered in half a scan of the scanning
+    platform.
+ 
+    The Neutral Particle Detector, NPD, is a completely new design
+    using secondary emitting surfaces and a geometry that has not
+    been flown before. NPD therefore underwent extensive
+    characterisation tests and calibrations during the spring of
+    2002. The results of the calibrations at the IRF calibration
+    facility in Kiruna were very successful, the NPD performance
+    surpassing expectations. NPD is even more sensitive than
+    expected. The mass and energy resolving capability of the
+    instrument were as expected in the energy range ~1 - 10 keV. The
+    NPD field-of-view, 2pi, is covered after a scan of the scanning
+    platform.
+ 
+    The Electron Spectrometer unit, ELS, was calibrated at MSSL in
+    London, fall 2001. The energy resolution was found to be better
+    than expected, which is an advantage for studying the narrow
+    electron peaks expected as a result of the solar impact on the
+    ionosphere and upper atmosphere. The geometric factor is a factor
+    of five less than nominal, but the loss of sensitivity is, for
+    this mission, considered to be well compensated by the improved
+    energy resolution of ELS. Calibrations and tests are considered
+    to be successful.
+ 
+    IMA was successfully calibrated January to March, 2002.
+    Performance largely as expected, except that the upper energy
+    limit was lowered from 40 keV to 30 keV. Mass resolution, an
+    energy and angular characteristics also as expected.
+ 
+  Operation of ASPERA-3
+  =====================
+    The ASPERA-3 experiment contains four sensor units and the
+    scanner. Each sensor unit measures different components of the
+    near-Mars plasma and can be operated in different modes. To
+    handle available power and telemetry resource requirements in the
+    most efficient way and to inhibit too large number of individual
+    modes, there are eight basic TM modes (macro modes): (1) OFF
+    mode, (2) Safe mode, (3) Housekeeping mode, (4) Calibration mode,
+    (5) Low mode, (6) Normal mode, (7) High mode, and (8) Burst mode.
+ 
+    (1) OFF mode. The instrument is off although the external heaters
+        are on and controlled by the instrument thermistors.
+ 
+    (2) Safe mode. At experiment power switch on, the instrument
+        enters to a safe mode. In the safe mode the software is run
+        in PROM although the software allows command execution,
+        housekeeping TM generation, RAM dumping and jumping to the
+        RAM code. The instrument also enters to the safe mode in the
+        following cases:
+           * the checksum of the RAM code fails
+           * watch dog is not reset
+        The safe mode is a fully operational mode, and the instrument
+        is listening for other commands.
+ 
+    (3) Housekeeping mode. In this mode none of the ASPERA-3 sensors
+        are taking scientific data and the DPU delivers housekeeping
+        data to OBDH. This mode is to monitor the instrument status.
+ 
+    (4) Calibration mode. In this mode each of the different sensors
+        is switched on individually for check-out and in-flight
+        calibration purposes.
+ 
+  (5-8) Low, Normal, High, Burst modes. These modes are for the
+        scientific data taking. The modes differ from each other in
+        the total amount of data produced and the structure of TM
+        packages although individual settings defining the sensor
+        configurations might be the same for different modes.
+ 
+    The choice of the instrument operational mode for each phase of
+    the mission is due to available power and telemetry as well as
+    scientific requirements.
+ 
+    The scanning platform has three operational modes: scanning mode,
+    stepping mode, and fixed position mode. In the scanning mode, the
+    platform performs scans with three pre-selected speeds 32, 64,
+    and 128 sec in one 0 deg - 180 deg scan. In the stepping mode the
+    platform moves in steps through the angle defined by a command.
+    The time the platform rests in each position is also commanded.
+    In the fixed position mode the platform moves to a commandable
+    position from 0 deg to 180 deg and rests there until the scanner
+    mode changes.
+ 
+    All four ASPERA-3 sensors, ELS, NPI, NPD1 and NPD2, IMA, can be
+    run independently although the individual sensor bit rates are
+    set by a macro command. The raw data are compressed by
+    integration over time, energy, azimuth, mass as well as using
+    log-compression of 16-bit words to 8-bit words, masking, and
+    look-up tables (NPD). The processed and formatted data are loss-
+    less compressed by the USES algorithm (Universal Source Encoding
+    for Space, CCSDS 111.0-W-2).
+ 
+  Principal Investigator
+  ======================
+    PI:    Prof. Rickard Lundin
+    Co-PI: Dr. Stas Barabash
+    Both at Swedish Institute of Space Physics (IRF), Kiruna, Sweden
+
+        </description>
+    </Instrument>
+</Product_Context>

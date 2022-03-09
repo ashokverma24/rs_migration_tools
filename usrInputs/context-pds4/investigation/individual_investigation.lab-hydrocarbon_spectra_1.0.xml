@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:individual_investigation.lab.hydrocarbon_spectra</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Cross Section IR Spectroscopy of Hydrocarbons in Planetary Atmospheres</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-08-27</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                Laboratory analysis of hydrocarbon chemistry in analog environments approximating Jupiter, Saturn, and Titan's upper atmospheres. 
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <External_Reference>
+            <doi>http://dx.doi.org/10.1016/j.molap.2017.06.003</doi>
+            <reference_text>
+                Wong, A., Billinghurst, B., Bernath, P.F. (2017), Helium broadened propane absorption cross sections in the far-IR, 
+                Molecular Astrophysics, 8, 36-39.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>http://dx.doi.org/10.1016/j.jqsrt.2017.05.006</doi>
+            <reference_text>
+                Wong, A., Hargreaves, R.J., Billinghurst, B., Bernath, P.F. (2017), Infrared absorption cross sections of propane broadened
+                by hydrogen, Journal of Quantitative Spectroscopy and Radiative Transfer, 198, 141-144.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Investigation>
+        <name>lab.hydrocarbon_spectra</name>
+        <type>Individual Investigation</type>
+        <start_date>2018-06-15</start_date>
+        <stop_date nilReason="unknown" xsi:nil="true"></stop_date>
+        <description>
+        Initially started as part of the PDART 2015 effort by Peter Bernath to characterize
+        </description>
+    </Investigation>
+</Product_Context>

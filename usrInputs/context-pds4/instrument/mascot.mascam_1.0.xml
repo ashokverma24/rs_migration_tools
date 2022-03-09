@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd
+                                     http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument:mascot.mascam</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MASCOT Camera</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>mascam</alternate_id>
+                <alternate_title>MASCAM</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-06-12</modification_date>
+                <version_id>1.0</version_id>
+                <description>The first version to submit to PDS SBN.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument_host:lander.mascot</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-016-0263-2</doi>
+            <reference_text>
+                R. Jaumann, N. Schmitz, A. Koncz, H. Michaelis, S. E. Schroeder, S. Mottola, F. Trauthan,
+                H. Hoffmann, T. Roatsch, D. Jobs, J. Kachlicki, B. Pforte, R. Terzer, M. Tschentscher, S. Weisse,
+                U. Müller, L. Perez-Prieto, B. Broll, A. Kruselburger, T.-M. Ho, J. Biele, S. Ulamec, C. Krause,
+                M. Grott, J.-P. Bibring, S. Watanabe, S. Sugita, T. Okada, M. Yoshikawa, H. Yabuta,
+                The Camera of the MASCOT Asteroid Lander on Board Hayabusa 2,
+                Space Sci. Rev., 208, 375-400, 2017.
+            </reference_text>
+            <description>The MASCOT Camera instrument paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>MASCOT Camera</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Camera</ctli:type>
+                <ctli:type>Imager</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <naif_instrument_id>-37730</naif_instrument_id>
+        <description>MASCAM (MAScot CAMera) has Wide-angle camera that takes pictures during the descent to the asteroid surface and will provide ground data for the instruments on board Hayabusa2 as well as contextual information for the instruments on board MASCOT. MASCAM has LED illumination devices in 4 colors, red, gren, blue, and near-infrared. These LEDs used in night time and acquire different reflectance image in wavelength.</description>
+    </Instrument>
+</Product_Context>

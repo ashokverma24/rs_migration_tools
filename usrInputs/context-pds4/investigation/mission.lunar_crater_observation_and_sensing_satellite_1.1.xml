@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.lunar_crater_observation_and_sensing_satellite</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>LUNAR CRATER OBSERVATION AND SENSING SATELLITE</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>LCROSS</alternate_id>
+                <alternate_title>LCROSS</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+<!-- RChen/EN: SBN should give the telescope and facility LIDs that replace *:instrument_host:earth-based.*
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:earth-based.apo35m</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:earth-based.mmto</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:earth-based.mro24m</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:earth-based.obs376t3</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:earth-based.obs378t2</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+-->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.lcross</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Andrews, D., LCROSS Lunar Impactor: Pioneering Risk-Tolerant Exploration in a
+                   Search for Water on the Moon, Proceedings of the 7th International Planetary
+                   Probe Workshop, Barcelona, Spain, (submitted for publication) June 2010.
+            </reference_text>
+            <description>reference.ANDREWS2010</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Colaprete, A., et al., An Overview of The Lunar Crater Observation and Sensing
+                   Satellite (LCROSS) Mission - An ESMD Mission to Investigate Lunar Polar
+                   Hydrogen, Bulletin of the American Astronomical Society, September, Vol. 38, p.
+                   591, 2006
+            </reference_text>
+            <description>reference.COLAPRETEETAL2006</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Ennico, K., et al., LCROSS Science Payload Ground Development, Test and
+                   Calibration Results, 39th Lunar and Planetary Science Conference, Lunar and
+                   Planetary Science Institute, No. 1391, League City, TX, p 1474, 2008.
+            </reference_text>
+            <description>reference.ENNICOETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Strong, J., et al., Transport and Use of a Centaur Second Stage in Space, AIAA
+                   Space Ops 2010 Conference, Delivering on the Dream, AIAA, Washington, DC, Paper
+                   2010-2197 (submitted for publication), 2010.
+            </reference_text>
+            <description>reference.STRONGETAL2010</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tompkins, P., et al., Flight Team Development in Support of LCROSS: A Class D
+                   Mission, AIAA Space Ops 2010 Conference, Delivering on the Dream, AIAA,
+                   Washington, DC, Paper 2010-2223 (submitted for publication), 2010.
+            </reference_text>
+            <description>reference.TOMPKINSETAL2010A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tompkins, P., et al., Flight Operations for the LCROSS Lunar Impactor Mission,
+                   AIAA Space Ops 2010 Conference, Delivering on the Dream, AIAA, Washington, DC,
+                   Paper 2010-1986 (submitted for publication), 2010.
+            </reference_text>
+            <description>reference.TOMPKINSETAL2010B</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>LUNAR CRATER OBSERVATION AND SENSING SATELLITE</name>
+        <type>Mission</type>
+        <start_date>2009-04-27</start_date>
+        <stop_date>2009-10-09</stop_date>
+
+        <description>
+    LCROSS launched as a secondary payload with Lunar Reconnaissance
+    Orbiter (LRO) on June 18, 2009 5:32 Eastern Time.  After
+    trans-lunar injection, LRO separated and performed its mission.
+    The LCROSS Shepherding Spacecraft (SSC) remained attached to the
+    spent Atlas upper stage, called the Centaur.  Over 112 days, the
+    Shepherding Spacecraft adjusted the Centaur&apos;s course to bring it
+    to an impact within the Cabeus Crater near the South Pole of the
+    moon.
+ 
+    LCROSS used the Centaur as a 2300 kg kinetic impactor with more
+    than 200 times the energy of the Lunar Prospector (LP) impact to
+    excavate more than 250 metric tons of lunar regolith.  The
+    resulting ejecta cloud was observed from a number of
+    Lunar-orbital and Earth-based assets, and the LCROSS spacecraft.
+    After releasing the Centaur, the SSC flew toward the impact
+    plume, sending real-time data to characterize the morphology,
+    evolution and composition of the plume with a suite of cameras
+    and spectrometers.  The SSC then became a 700kg impactor itself,
+    providing a second opportunity to study the nature of the Lunar
+    Regolith.
+ 
+    Mission Phases
+    ==============
+ 
+    LCROSS and LRO launched on June 18, 2009 at 21:32 UTC aboard an
+    Atlas V launch vehicle in the 401 configuration (4-meter
+    fairing, no solid rocket boosters, single-engine Centaur).
+    After achieving low-Earth orbit, the Centaur performed a 23
+    minute coast, and then re-ignited to perform the trans-lunar
+    injection (TLI) burn for both LCROSS and LRO.
+ 
+    Three minutes after TLI, the Centaur separated from LRO and then
+    maneuvered to increase separation to avoid contaminating LRO.
+    To minimize the residual propellant species aboard the Centaur
+    at lunar impact (potential contaminants of water measurements),
+    the Centaur next performed a sequence of propellant depletion
+    maneuvers with both cryogenic and hydrazine-based reaction
+    control systems.  During these depetion maneuvers, the Centaur
+    powered the SSC up and pointed its solar array at the sun.
+    After the maneuvers were finished, the Centaur ceded attitude
+    control to the SSC and shut down.
+ 
+    ------
+    Transfer Phase [6/18/2009 - 6/23/2009]
+ 
+    The transfer phase covered the period from TLI to lunar
+    swingby.
+ 
+    This phase contained the QUICKLOOK and STARFIELD data collection
+    periods.  Both periods were used to confirm instrument function
+    and pointing prior to the lunar swingby.
+ 
+    ------
+    Lunar Swingby [6/23/2009]
+ 
+    The lunar swingby was a gravity assist maneuver that placed
+    LCROSS in a steeply-inclined, nearly circular orbit around Earth
+    at approximately lunar distance.  Called a Lunar Gravity Assist
+    Lunar Return Orbit (LGALRO), this trajectory returned LCROSS to
+    the moon again after three orbits.
+ 
+    Just after closest approach to the moon, the instruments were
+    pointed at the surface and turned on to gather calibration data.
+    The instruments were swept across the surface, pausing three
+    times at targets on the surface with distinctive spectral
+    characteristics.  Finally, the instruments were swept back and
+    forth across the limb.  This limb-crossing data was used to
+    confirm instrument pointing to within 0.1 degree.
+ 
+    ------
+    Cruise Phase
+ 
+    Cruise phase activities included trajectory correction
+    maneuvers and additional periods of payload data collection
+    observing the Earth and Moon.
+ 
+    Several &apos;Cold Side Bake&apos; activities were also performed to
+    reduce ice in the Centaur insulation that remained since launch.
+    During these maneuvers, the SSC and Centaur were turned to place
+    cold side of the spacecraft, which was normally in darkness, in
+    sunlight.  Sublimating ice embedded in the insulation generated
+    enough thrust to be detectible in doppler measurements.  If left
+    in place, this ice could potentially have contaminated
+    observations of the Centaur&apos;s impact.
+ 
+    On the second half of the second Earth orbit, LCROSS experienced
+    a major propellant loss stemming from a short-lived Inertial
+    Reference Unit (IRU) glitch.  This was discovered immediately
+    before the third Cold Side Bake event.  With the mission in
+    jeopardy, LCROSS declared an emergency and transitioned to
+    maximum DSN coverage to enable full-time monitoring.  Over the
+    following two weeks, the flight team developed strategies to
+    prevent another glitch and to minimize propellant usage during
+    planned maneuvers.  With operational and software protections in
+    place, the LCROSS project returned to a nominal operational
+    posture on Day 78, albeit with a significantly smaller
+    propellant margin.
+ 
+    The deadline for final selection of the Centaur target crater
+    was 30 days prior to impact.  This late date allowed the Team to
+    use early data from LRO to improve the targeting decision.
+    During the final two weeks of cruise, the Science Team twice
+    refined the target location within the crater.
+ 
+    ------
+    Separation
+ 
+    Centaur separation was performed successfully 9 hours 40 minutes
+    prior to Centaur impact and, with the substantial change of mass
+    properties, was accompanied by a transition to a completely new
+    set of attitude control modes tuned for post-separation
+    conditions.  One minute following separation, the SSC flipped
+    180 degrees to point the payload at the receding Centaur.  These
+    observations are contained in the SEPARATION data collection
+    period.  Forty minutes after separation, the SSC performed the
+    Braking Burn, a delta-v maneuver used to produce a 600 km
+    separation between the Centaur and the SSC at the moment of
+    Centaur impact.
+ 
+    ------
+    Impact
+ 
+    Approximately one hour prior to centaur impact, the spacecraft
+    was turned to point the instruments at the predicted impact
+    location.  Fifty minutes of calibration data are contained in the
+    PREIMPACT data collection.  Five minutes of data are contained in
+    the IMPACT data collection, starting one minute prior to Centaur
+    impact.
+ 
+    The Centaur impacted the moon at 11:31:19.51 UTC on 10/9/2009 at
+    -84.68 deg latitude, -48.69 deg longitude, Mean Earth frame.
+ 
+    The SSC impacted the surface at 11:35:34 UTC.
+ 
+    Earth-based Observations
+    ========================
+ 
+    The LCROSS project provided funding for four investigators to record
+    Earth-based observations of the LCROSS impact using various observatory
+    facilities, and to archive their data in the PDS. Many other Earth-based
+    facilities also observed the impact. The four LCROSS-sponsored observers
+    were:
+ 
+    (1) Dr. Marc Buie, Southwest Research Institute in Boulder, CO, using the
+    PHOTDOC and PHOTGJON cameras on the Magdalena Ridge Observatory 2.4-m
+    telescope, Socorro, NM
+ 
+    (2) Dr. Nancy Chanover, New Mexico State University, using the Agile
+    camera on the Astrophysical Research Consortium 3.5-meter telescope at
+    the Apache Point Observatory, Sunspot, NM
+ 
+    (3) Dr. Faith Vilas, University of Arizona, using the CCD47 and CLIO
+    cameras at the MMT Observatory, Tucson, AZ
+ 
+    (4) Dr. Eliot Young, Southwest Research Institute in Boulder, CO, using
+    three facilities: the Gemini North telescope at the Mauna Kea Observatory
+    on the island of Hawaii; the SPEX spectrograph and imager on the
+    3.0-meter Infrared Telescope Facility (IRTF) at the Mauna Kea Observatory;
+    and the Near Infrared Spectrograph (NIRSPEC) on the 10-meter Keck II
+    telescope, Keck Observatory, Kamuela, Hawaii.
+ 
+ 
+    References
+    ==========
+ 
+    Ennico, K., et al., &apos;LCROSS Science Payload Ground Development, Test
+    and Calibration Results&apos;, 39th Lunar and Planetary Science
+    Conference, Lunar and Planetary Science Institute, No. 1391, League
+    City, TX, 2008, p 1474.
+ 
+    Strong, J., et al., &apos;Transport and Use of a Centaur Second Stage in
+    Space&apos;, AIAA Space Ops 2010 Conference, Delivering on the Dream,
+    AIAA, Washington, DC, 2010, Paper 2010-2197 (submitted for
+    publication).
+ 
+    Tompkins, P., et al., &apos;Flight Team Development in Support of LCROSS:
+    A Class D Mission&apos;, AIAA Space Ops 2010 Conference, Delivering on
+    the Dream, AIAA, Washington, DC, 2010, Paper 2010-2223 (submitted
+    for publication).
+ 
+    Tompkins, P., et al., &apos;Flight Operations for the LCROSS Lunar
+    Impactor Mission&apos;, AIAA Space Ops 2010 Conference, Delivering on the
+    Dream, AIAA, Washington, DC, 2010, Paper 2010-1986 (submitted for
+    publication).
+ 
+    Andrews, D., &apos;LCROSS Lunar Impactor: Pioneering Risk-Tolerant
+    Exploration in a Search for Water on the Moon&apos;, Proceedings of the
+    7th International Planetary Probe Workshop, Barcelona, Spain, June
+    2010 (submitted for publication).
+ 
+    Colaprete, A., et al., &apos;An Overview of The Lunar
+    Crater Observation and Sensing Satellite (LCROSS) Mission - An ESMD
+    Mission to Investigate Lunar Polar Hydrogen,&apos; Bulletin of the
+    American Astronomical Society, September, 2006, Vol. 38, p. 591.
+
+PDS4 note: awaiting LID references to facilities and telescopes
+- APACHE POINT OBSERVATORY 3.5M ARC RITCHEY-CHRETIEN ALTAZIMUTH REFLECTOR
+- MMT OBSERVATORY
+- MAGDALENA RIDGE OBSERVATORY 2.4-
+- MAUNA KEA OBSERVATORY 3.0-M NASA INFRARED TELESCOPE FACILITY (IRTF)
+- W.M. KECK OBSERVATORY 10-M KECK I RITCHEY-CHRETIEN ALTAZIMUTH REFLECTOR
+        </description>
+    </Investigation>
+</Product_Context>

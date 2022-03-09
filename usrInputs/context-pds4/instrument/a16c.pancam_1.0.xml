@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pancam.a16c</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Apollo 16 Panoramic Camera (Pancam)</title>
+        <information_model_version>1.8.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>Apollo 16 Pancam</alternate_id>
+                <alternate_title>Apollo 16 Pancam</alternate_title>
+            </Alias>
+            <Alias>
+                <alternate_id>A16 Pancam</alternate_id>
+                <alternate_title>A16 Pancam</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-12-20</modification_date>
+                <version_id>1.0</version_id>
+                <description>Created by the NASA Space Science Data Coordinated Archive.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a16c</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:apollodoc:a16doc:a16c_pancam_overview</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>Apollo 16 Preliminary Science Report, NASA SP-315, 622 pages, published by NASA, Washington, D.C., 1972.</reference_text>
+            <description>reference.APOLLO17A1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>Apollo Scientific Experiments Data Handbook, NASA Technical Memorandum X-58131, JSC-09166, published by NASA Johnson Space Center, Houston, Texas, Aug. 1974.</reference_text>
+            <description>reference.APOLLOSEDH1974</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>Cameron, W.S., E.J. Mantel, and E.R. Miller, Catalog of Lunar Mission Data, NASA Technical Memorandum X-72612, NSSDC 77-02, published by NASA Space Science Data Center (NSSDC), Greenbelt, Maryland, July 1977.</reference_text>
+        </External_Reference> 
+        <External_Reference>
+            <reference_text>Cameron, W.S., F.J. Doyle, M.A. Niksch, K. Hug, L. Levenson, and K. Michlovitz, Data User's Note - Apollo 16 Lunar Photography, published by NASA Space Science Data Center (NSSDC), Greenbelt, Maryland, May, 1973.</reference_text>
+        </External_Reference> 
+    </Reference_List>
+    <Instrument>
+        <name>Apollo 16 Panoramic Camera</name>
+        <type>Imager</type>
+        <naif_instrument_id>-916230</naif_instrument_id>
+        <serial_number>not applicable</serial_number>
+        <description>The Apollo 16 Scientific Instrument Module (SIM) Itek Panoramic Camera designed to obtain high-resolution panoramic photographs, on black and white film, with stereoscopic and monoscopic coverage of the lunar surface. The panoramic camera, which was housed in the Command Service Module (CSM) and scanned the lunar surface from lunar orbit, also provided supporting photographic data for the other CSM cameras and experiments. The camera provided photographs of 1-m to 2-m resolution from an orbital altitude of 111 km. Over 1400 useful photographs were obtained.</description>
+    </Instrument>
+</Product_Context>

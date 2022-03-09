@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:vsp.lcross</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>VISIBLE SPECTROMETER for LCROSS</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.lcross::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.TBD</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>VISIBLE SPECTROMETER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Visible Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+ 
+  The LCROSS visible spectrometer (VSP) is a modified version of
+  Ocean Optics Ltd&apos;s commercial QE65000 spectrometer.  It has been
+  adapted for space use and is similar to a spectrometer developed
+  for Mars Science Laboratory (MSL).
+ 
+  The VSP spectrometer design consists of an FC optical fiber input
+  (0.11 NA) feeding a 25 micron x 1 mm entrance slit, where light is
+  diffracted by a 1-inch f/4 optical cross Czerny-Turner spectrometer
+  with an oversized camera mirror.  The 263-650 nm spectrum from the
+  slit is imaged onto a 1044x64 pixel Hammamatsu CCD detector.
+ 
+  The data is co-added within the spectrometer, delivering a 16-bit,
+  1x1024 pixel spectra to the DHU electronics for telemetry formatting.
+ 
+  The VSP contains no moving parts. The CCD detector is cooled by an
+  internal Thermal Electric Cooler (TEC), whose set-points are
+  programmable.  The VSP power is 4.8 W (TEC off), and could reach
+  11.8 W (at TEC setting -10 C at operating temperature +19-20 C).
+ 
+  Integration time for the VSP is also configurable between 8 ms and 65.5 s.
+  Additionally, the VSP supports two operation modes, single and bracket
+  spectra.  The former is a single spectra acquisition of the appropriate
+  requested integration time. The latter is a three spectra acquisition
+  defined by a base integration time and a multiplier that is divided or
+  multiplied by the base integration time to yield a shorter or longer
+  exposure time, respectively.
+ 
+  The VSP is fed  by 75 cm length 600-micron core-diameter UV/Vis glass fiber
+  attached to a fore-optics unit in the Payload Observation Deck (POD).
+  This fore-optics unit is a fixed two-mirror and one lens system designed
+  to provide a one degree circular field-of-view.
+ 
+  Scientific Objectives
+  =====================
+ 
+  The main science objective for the visible spectrometer is to
+  provide wavelength dependent information between 250 nm an 650 nm
+  with a resolving power (lambda/delta_lambda &gt; 100). The VSP has a
+  measured wavelength response of 263nm to 650.25nm,
+  pre-flight. Post-flight, the VSP wavelength response was verified
+  through fits to several lines from scattered sunlight, from 262.58
+  to 650.30 nm, indicating no significant shift during launch.
+ 
+  The LCROSS spacecraft will observe the pre- and
+  post-Centaur-impacted lunar regolith in and outside the targeted
+  region at a spatial resolution and viewing angle unobtainable from
+  Earth. The visible spectrometer will record the sunlit plume
+  evolution, and track the evolution of OH- radicals from
+  sunlight-dissociated water vapor molecules. Specifically, the
+  visible spectrometer will measure the OH- (308 nm) and H2O+ (619
+  nm) transitions simultaneously which will assess the water vapor
+  production in the ejecta.
+ 
+  The visible spectrometer is also used to provide a UV-visible
+  spectra of the shape and evolution of the impact flash event.
+ 
+  The visible spectrometer is also used in a star field calibration
+  in the early stages of the mission to check pointing and provide
+  health checks on an temporary aperture door covering the two nadir
+  fore-optics (one feeds the VSP and one feeds NSP1) and the total
+  luminance photometer.
+ 
+  Calibration
+  ===========
+ 
+  Spectra generated by the visible spectrometer are initially processed
+  by the LCROSS GSEOS (Ground Support Equipment Operating System) which
+  extracted the CCSDS files from telemetry, extracted ancillary housekeeping
+  data provided by the instrument, and converted them to an ASCII comma-
+  separated file with some metadata and with MET-based packet timestamp
+  encoded in the filename. Spectra taken in single mode are saved into
+  one file. The triplet spectra taken in bracket mode are saved into a single
+  file. On-board wavelength calibration is not used, even if available.
+ 
+  Wavelength calibration, mapping pixel to wavelengths in nanometers, is
+  provided by cross-checking in-orbit data (using solar spectral lines)
+  against lab reference spectra taken on the ground. Wavelength calibration
+  is applied only to the 1024 pixels of spectral data.
+ 
+  Conversion from raw data values [DN] to a scene spectral radiance
+  [W/m^2 um sr], with errors, is performed using a response curve measured
+  by the instrument pre-flight using a NIST-calibrated reference source and
+  adjusted for any wavelength shifts post-launch, if appropriate. This
+  approach provided a radiance calibration longward of 380 nm. A &apos;best
+  effort&apos; UV calibration for the unit shortward of 380 nm was provided using
+  an ETU instrument. The calibration steps are described in the LCROSS
+  Instrument Response and Calibration Report in the CALIB directory of this
+  archive.
+ 
+  Operational Modes
+  =================
+ 
+  The VSP supports two operation modes - single and bracket spectra.
+  In bracket mode, the spectrometer takes three spectra in quick
+  succession, the first at the commanded exposure time, followed by
+  a shorter exposure then a longer one.  The bracketing exposure
+  times are computed by dividing and multiplying the commanded time
+  by a factor (e.g., 2).  This factor can be set as well. Each
+  PDS spectra, a collection of 1044 16-bit numbers (raw) or 1044 32-bit
+  PC_REAL numbers (calibrated), is a single spectral acquisition
+  regardless whether it was taken in single or bracket mode. The time
+  stamp will represent the true time the spectrum was acquired.
+ 
+  The VSP integration time is a configurable parameter. Typical values
+  used in the LCROSS mission range from 100 milliseconds to 4 seconds.
+ 
+  The Thermal Electric Cooler (TEC) has a programmable set-point and a
+  viable range around the ambient working temperature. The set-point as
+  well as the reported temperature the VSP has calculated the TEC is being
+  controlled to are labels in the PDS (.lbl) files. The setpoint is
+  typically set to -10 C, which is in the middle of the range for a VSP
+  operating around +17 to +21 C, the nominal thermal operating environment
+  for this instrument.
+ 
+  The integration time is documented with each spectra.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

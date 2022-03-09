@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+	
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.kaguya</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Kaguya Mission</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>SELENE</alternate_id>
+                <alternate_title>SELENE (Selenological and Engineering Explorer) Mission</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-10-25</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Discipline_Area>
+    </Discipline_Area>
+    <Reference_List>
+       <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.kaguya</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:kaguya.grs</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-010-9678-3</doi>
+            <reference_text>
+                Kato, M., Sasaki, S., Takizawa, Y., and the Kaguya Project Team (2010), The Kaguya Mission Overview, 
+                Space Sci. Rev. 154:3, https://doi.org/10.1007/s11214-010-9678-3.
+            </reference_text>
+            <description>Kaguya mission description paper</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>https://solarsystem.nasa.gov/missions/kaguya/</reference_text>
+            <description>NASA Kaguya web site</description>
+        </External_Reference>
+    </Reference_List>
+    <Investigation>
+        <name>Kaguya</name>
+        <type>Mission</type>
+        <start_date>2007-09-14</start_date>
+        <stop_date>2009-06-10</stop_date>
+        <description>
+            SELENE (Selenological and Engineering Explorer) was Japan's
+            second lunar probe. It was renamed Kaguya, or Moon Princess,
+            after launch as a result of a public poll.
+            
+            The mission's goal was to orbit the Moon to collect data on the
+            origins and geological evolution of the Moon, to study the lunar
+            surface environment, and to carry out radio science experiments.
+            In addition to the main orbiter, Kaguya, the mission included two
+            small spin-stabilized sub-satellites, each weighing about 117
+            pounds (53 kilograms). These were the Relay Satellite (Rstar) and
+            the VRAD satellite (Vstar). Upon launch, they were renamed Okina
+            and Ouna, which mean "honorable elderly man" and "honorable
+            elderly woman," respectively.
+            
+            The probe was launched into a highly elliptical parking orbit of
+            about 175 x 144,800 miles (282 × 232,960 kilometers). On Oct. 3,
+            2007, Kaguya entered into an initial polar orbit around the Moon
+            at about 65 x 7,300 miles (101 × 11,741 kilometers).
+            
+            The two small satellites, Okina and Ouna, were released Oct. 9 at
+            00:36 UT and Oct. 12 at 04:28 UT into corresponding orbits: about
+            70 x 1,500 miles (115 × 2,399 kilometers) and 80 x 500 miles (127
+            × 795 kilometers).
+            
+            The orbiter itself attained its operational circular orbit at
+            about 60 miles (100 kilometers) by Oct. 19. On Oct. 31, Kaguya's
+            two main high definition TV cameras, each a 2.2 megapixel CCD
+            HDTV camera, took the first high-definition images of the Moon.
+            The fully operational phase of the mission began Dec. 21, 2007,
+            following a successful checkout of all the onboard instruments.
+            
+            By April 9, 2008, using its laser altimeter, had collected enough
+            data to construct the topography of the entire lunar surface,
+            with data points 10 orders larger than the previous model of the
+            lunar surface.
+                        
+            Kaguya's other achievements included detecting gravity anomalies
+            on both the near and the far side of the Moon (based on Doppler
+            data from both Kaguya and the Okina satellite) and the first
+            optical observation of the permanently shadowed interior of the
+            Shackleton Crater.
+            
+            Kaguya completed its original planned mission by late October
+            2008. However, because of a faulty reaction wheel, the extended
+            mission was ended early. On Feb. 1, 2009, Kaguya's orbit was
+            lowered to approximately 31 miles (50 kilometers). The orbiter
+            then impacted the Moon at 18:25 UT June 10, 2009, at 65.5 degrees
+            south latitude and 80.4 degrees east longitude near Gill Crater.
+            Okina had already impacted the Moon at 10:46 UT Feb. 12, 2009.
+        </description>
+    </Investigation>
+</Product_Context>

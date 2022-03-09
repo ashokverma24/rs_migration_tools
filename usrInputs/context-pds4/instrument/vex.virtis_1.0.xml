@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1
+            https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd
+            http://pds.nasa.gov/pds4/ctli/v1 
+            https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:instrument:vex.virtis</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Venus Express Visible and Infrared Thermal Imaging Spectrometer (VIRTIS)</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:vex.virtis</alternate_title></Alias>  <!-- deprecated LID -->
+            <Alias>
+                <alternate_id>VIRTIS</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.vex</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                Coradini, A., F. Capaccioni, P. Drossart, A. Semery, G. Arnold, U. Schade, F. Angrilli, M. A.
+                Barucci, G. Bellucci, G. Bianchini, J. P. Bibring, A. Blanco, M. Blecka, D. Bockelee-Morvan,
+                R. Bonsignori, M. Bouye, E. Bussoletti, M. T. Capria, R. Carlson, U. Carsenty, P. Cerroni,
+                L. Colangeli, M. Combes, M. Combi, J. Crovisier, M. Dami, M. C. DeSanctis, A. M. DiLellis,
+                E. Dotto, T. Encrenaz, E. Epifani, S. Erard, S. Espinasse, A. Fave, C. Federico, U. Fink, S. Fonti,
+                V. Formisano, Y. Hello, H. Hirsch, G. Huntzinger, R. Knoll, D. Kouach, W. H. Ip, P. Irwin,
+                J. Kachlicki, Y. Langevin, G. Magni, T. McCord, V. Mennella, H. Michaelis, G. Mondello,
+                S. Mottola, G. Neukum, V. Orofino, R. Orosei, P. Palumbo, G. Peter, B. Pforte, G. Piccioni,
+                J. M. Reess, E. Ress, B. Saggin, B. Schmitt, Stefanovitch, A. Stern, F. Taylor, D. Tiphene, and
+                G. Tozzi. Virtis : an imaging spectrometer for the rosetta mission. Planetary and Space Science,
+                46:1291-1304, October 1998.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1016/j.pss.2007.01.003</doi>
+            <reference_text>
+                P. Drossart, G. Piccioni, A. Adriani, F. Angrilli, G. Arnold, K. H. Baines, G. Bellucci, J. Benkhoff,
+                B. Bezard, J.-P. Bibring, A. Blanco, M. I. Blecka, R. W. Carlson, A. Coradini, A. di Lellis,
+                T. Encrenaz, S. Erard, S. Fonti, V. Formisano, T. Fouchet, R. Garcia, R. Haus, J. Helbert, N. I.
+                Ignatiev, P. G. J. Irwin, Y. Langevin, S. Lebonnois, M. A. Lopez-Valverde, D. Luz, L. Marinangeli,
+                V. Orofino, A. V. Rodin, M. C. Roos-Serote, B. Saggin, A. Sanchez-Lavega, D. M. Stam, F. W.
+                Taylor, D. Titov, G. Visconti, M. Zambelli, R. Hueso, C. C. C. Tsang, C. F. Wilson, and T. Z.
+                Afanasenko. Scientific goals for the observation of Venus by VIRTIS on ESA/Venus express
+                mission. Planetary and Space Science, 55:1653-1672, October 2007. doi: 10.1016/j.pss.2007.01.003.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                Piccioni, G., P. Drossart, E. Suetta, M. Cosi, E. Ammannito, A. Barbis, R. Berlin, A. Boccaccini,
+                G. Bonello, M. Bouy, F. Capaccioni, G. Cherubini, M. Dami, O. Dupuis, A. Fave, G. Filacchione,
+                Y. Hello, F. Henry, S. Hofer, G. Huntzinger, R. Melchiorri, J. Parisot, C. Pasqui, G. Peter,
+                C. Pompei, J. M. Ress, A. Semery, A. Soufflot, A. Adriani, F. Angrilli, G. Arnold, K. Baines,
+                G. Bellucci, J. Benkhoff, B. Bezard, J.-P. Bibring, A. Blanco, M. I. Blecka, R. Carlson, A. Coradini,
+                A. Di Lellis, T. Encrenaz, S. Erard, S. Fonti, V. T. Formisano, V. Fouchet, R. Garcia,
+                R. Haus, J. Helbert, N. I. Ignatiev, P. Irwin, Y. Langevin, S. Lebonnois, M. A. Lopez Valverde,
+                D. Luz, L. Marinangeli, V. Orofino, A. V. Rodin, M. C. Roos-Serote, B. Saggin, A. Sanchez-
+                Lavega, D. M. Stam, F. Taylor, D. Titov, Visconti G., and M. Zambelli. VIRTIS (Visible and
+                Infrared Imaging Spectrometer) for Venus Express. ESA, special publication 1295 edition, 2007.                
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Venus Express Visible and Infrared Thermal Imaging Spectrometer (VIRTIS)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Spectrometer</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>
+            VIRTIS on Venus Express was a hyperspectral
+            imager repurposed from the flight spare of the instrument of the same name of the Rosetta mission
+            [Coradini et al., 1998]. It combines a scanning mirror with a refraction grating to disperse the
+            light from a narrow slit across a detector array. VIRTIS data are organized as cubes with one 
+            spectral dimension (bands) and two spatial dimensions, which are along the direction of the slit 
+            (samples) and along the direction of the scanning mirror (line).        
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ida.insight</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>InSight Instrument Deployment Arm</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>IDA</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-04-01</modification_date>
+                <version_id>0.9</version_id>
+                <description>Pre-peer-review version</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-10-16</modification_date>
+                <version_id>1.0</version_id>  <!--RChen: was 1.1-->
+                <description>Post-peer-review version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.insight</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Instrument Deployment Arm</name>
+        <type>Regolith Properties</type>
+        <subtype>Robotic Arm</subtype>
+        <description>The InSight Instrument Deployment Arm (IDA) has two primary objectives, to point 
+            the Instrument Deployment Camera (IDC) for imaging of the terrain surrounding the lander,
+            and to deploy the InSight science instruments from the lander deck to the Martian surface. 
+            The IDA has a 4-degree-of-freedom back-hoe design, with the IDC mounted on the forearm, 
+            a grapple for lifting the science instruments, and a scoop for digging and scraping the 
+            Martian regolith.
+        </description>
+    </Instrument>
+</Product_Context>

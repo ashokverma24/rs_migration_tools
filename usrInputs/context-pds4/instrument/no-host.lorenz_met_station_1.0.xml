@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1F00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd https://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1F00_1200.xsd">  
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:no-host.lorenz_met_station</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Portable Meterological Station (Ralph Lorenz design)</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-12-08</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial creation of the context product. 
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <External_Reference>
+            <doi>10.5194/gi-1-209-2012</doi>
+            <reference_text>Lorenz, R.D. (2012), Observing desert dust devils with a pressure logger, Geosci. Instrum. Method. Data Syst. 1, 209-220.</reference_text>
+            <description>Original presentation of this meterological station.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1002/2014JEE004712</doi>
+            <reference_text>Jackson, Brian and Lorenz, Ralph (2015). A multiyear dust devil vortex survey using an automated search of pressure time series, J. Geophys. Res. Planets, 120. </reference_text>
+            <description>Citation of the official published version of the paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1016/j.jastp.2016.10.017</doi>
+            <reference_text>Lorenz, R.D., L.D.V. Neakrase, J.P. Anderson, R.G. Harrison, and K.A. Nicoll (2016) Point discharge current measurements beneath dust devils, J. Atmos. and Solar-Terrest. Phys., 150, 55-60.</reference_text>
+            <description>Further usage for voltage modified meteological stations.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Portable Meterological Station (Ralph Lorenz design)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Meteorology</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>
+            A portable, compact meteorology station designed for dust devil field studies. The system used is based on the Gulf Coast Data Concepts B1100 pressure logger, 
+            which combines a precision Bosch BMP085 pressure sensor (logged with resolution of 1 Pa or 0.01 mbar), with a microcontroller that logs pressure data and 
+            housekeeping temperature as ASCII files on a 2GB microSD flash memory card. The whole unit operates as a large USB memory stick facilitating data transfer to
+            a computer. Self-contained, power for remote operation is attained by usage of 2 alkaline D cell batteries, allowing unattended multi-month operation at sample
+            rates of 2 Hz or more. The sensor and battery casing are installed in a plastic case, drilled to allow pressure equalization, with a painted exterior to minimize
+            visibility. In some cases, the instrumentation may be augmented to include analog voltage (in range 0-4.19 V) with 12-bit resolution at an interval of 1s.
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:m3.ch1-orb</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MOON MINERALOGY MAPPER for CH1-ORB</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ch1-orb::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Green, R.O., C. Pieters, P. Mouroulis, and T. Koch, Moon Mineralogy Mapper
+                   Imaging Spectrometer Science Measurements, 2008 IEEE Aerospace Conference,
+                   Paper #1438, Ver. 4, 2008, doi:10.1109/AERO.2008.4526382.
+            </reference_text>
+            <description>reference.GREENETAL2008A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Green, R.O., C.M. Pieters, P. Mouroulis, G. Sellar, M. Eastwood, S. Geier, J.
+                   Shea, and M3 Team, Calibration, Shipment and Initial Spacecraft Integration of
+                   the Moon Mineralogy Mapper (M3) Imaging Spectrometer for the Chandrayaan-1
+                   Mission, Lunar and Planetary Institute, 39th Lunar and Planetary Science
+                   Conference, LPI Contribution No. 1391, p. 1803, 2008.
+            </reference_text>
+            <description>reference.GREENETAL2008B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Green, R.O., C.M. Pieters, J. Boardman, D. Barr, C. Bruce, J. Bousman, A.
+                   Chatterjee, M. Eastwood, V. Essandoh, S. Geier, T. Glavich, R. Green, V.
+                   Haemmerle, S. Hyman, L. Hovland, T. Koch, K. Lee, S. Lundeen, S., E. Motts, P.
+                   Mouroulis, S. Paulson, K. Plourde, C. Racho, D. Robison, J. Rodriguez, P.
+                   Rothman, G. Sellar, C. Smith, H. Sobel, J. Stamp, H. Tseng, P. Varanasi, D,
+                   Wilson, and M. White, The Moon Mineralogy Mapper (M3) Imaging Spectrometer:
+                   Early Assessment of the Spectral, Radiometric, Spatial, and Uniformity
+                   Characteristics, Lunar and Planetary Institute, 40th Lunar and Planetary
+                   Science Conference, id. 2307, 2009.
+            </reference_text>
+            <description>reference.GREENETAL2009</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Petro, N., C. Pieters, J. Boardman, R. Green, J. Head, P. Isaacson, J. Nettles,
+                   E. Malaret, M. Staid, J. Sunshine, and S. Tompkins, Targeting for the Moon
+                   Mineralogy Mapper (M3) Instrument on the Chandrayaan-1 Mission, Lunar and
+                   Planetary Institute, 39th Lunar and Planetary Science Conference, LPI
+                   Contribution No. 1391, p. 1696, 2008.
+            </reference_text>
+            <description>reference.PETROETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pieters, C.M., J. Boardman, B. Buratti, A. Chatterjee, R. Clark, T. Glavich, R.
+                   Green, J. Head, P. Isaacson, E. Malaret, T. McCord, J. Mustard, N. Petro, C.
+                   Runyon, M. Staid, J. Sunshine, L. Taylor, S. Tompkins, P. Varanasi, and M.
+                   White, The Moon Mineralogy Mapper (M3) on Chandrayaan-1, Indian Academy of
+                   Sciences, Current Science, Vol. 96, No. 4, pp. 500-505, 2009.
+            </reference_text>
+            <description>reference.PIETERSETAL2009A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pieters, C.M., J. Boardman, B. Buratti, R. Clark, J-P. Combe, R. Green, J.N.
+                   Goswami, J.W. Head, M. Hicks, P. Isaacson, R. Klima, G. Kramer, S. Kumar, S.
+                   Lundeen, E. Malaret, T.B. McCord, J. Mustard, J. Nettles, N. Petro, C. Runyon,
+                   M. Staid, J. Sunshine, L. Taylor, S. Tompkins, and P. Varanasi, Mineralogy of
+                   the Lunar Crust in Spatial Context: First Results from the Moon Mineralogy
+                   Mapper (M3), Lunar and Planetary Institute, 40th Lunar and Planetary Science
+                   Conference, id. 2052, 2009.
+            </reference_text>
+            <description>reference.PIETERSETAL2009B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pieters, C.M., J.N. Goswami, R.N. Clark, M. Annadurai, J. Boardman, B. Buratti,
+                   J.-P. Combe, M.D. Dyar, R. Green, J.W. Head, C. Hibbitts, M. Hicks, P.
+                   Isaacson, R. Klima, G, Kramer, S. Kumar, E. Livo, S. Lundeen, E. Malaret, T.
+                   McCord, J. Mustard, J. Nettles, N. Petro, C. Runyon, M. Staid, J. Sunshine,
+                   L.A. Taylor, S. Tompkins, and P. Varanasi, Character and Spatial Distribution
+                   of OH/H2O on the Surface of the Moon Seen by M3 on Chandrayaan-1, Science, Vol.
+                   326, No. 5952, 568-572, 2009, doi:10.1126/science.1178658.
+            </reference_text>
+            <description>reference.PIETERSETAL2009C</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MOON MINERALOGY MAPPER</name>
+        <type>Imager</type> <type>Spectrometer</type> <!--RChen/EN was Imaging Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  The following text summarizes the NASA public website for the
+  Moon Mineralogy Mapper, http://m3.jpl.nasa.gov/.
+ 
+ 
+  Instrument Overview
+  ===================
+    The Moon Mineralogy Mapper (M3) was a near-infrared imaging
+    spectrometer of the pushbroom type on-board the Indian Space
+    Research Organization&apos;s (ISRO) Chandrayaan-1 spacecraft that
+    launched on 22 October 2008.  M3 measured the spectral range from
+    430 to 3000 nm, had a 40-km-wide field of view from a 100-km orbit,
+    and operated in a high resolution (70 m/pixel) target mode or a
+    lower resolution (140 m/pixel) global mode.
+ 
+    Originally scheduled to make target and global observations from a
+    100-km circular polar obit for two years, the first M3 imaging data
+    were acquired on 18 and 19 November 2008 using both the global and
+    target imaging modes.  Several days later on 22 November, M3 acquired
+    its first scientific images of Oriental Basin.  Data acquisition from
+    the 100-km primary science orbit continued into May 2009.  On 19 May,
+    the Chandrayaan-1 spacecraft was raised to a 200-km to compensate for
+    star tracker failures and orbiter temperatures that were higher than
+    expected.  On 28 August 2009 ISRO abruptly lost radio contact with the
+    Chandrayaan-1 spacecraft and officially terminated the mission three
+    days later.  After ten months in operation, M3 had obtained over 4.6
+    billion spectra of the lunar surface, and its low resolution spatial
+    coverage encompassed nearly the entire Moon.
+ 
+    The instrument was funded by NASA&apos;s Discovery Mission of Opportunity
+    program and was designed, built, and tested by a partnership between
+    Jet Propulsion Laboratory and Brown University, USA.  Preliminary
+    results are presented by Pieters, et al. (2009b) [PIETERSETAL2009B]
+    and Pieters, et al. (2009c) [PIETERSETAL2009C].
+ 
+ 
+  Instrument Characteristics
+  ==========================
+    M3 was a near-infrared imaging spectrometer with a compact system of
+    optics in the Offner design which produces little or not optical
+    distortion, either spatially or spectrally.  The instrument included
+    a robust on-board calibrator and was cooled by a multi-stage passive
+    cooler.
+ 
+    M3 was designed to operate in two distinct modes. The target mode was
+    used for full resolution imaging of specific science targets, and the
+    global mode was used for low resolution global imaging.  M3 used a
+    pushbroom method in which the field of view was passively swept through
+    the lunar scene below it, along a line perpendicular to the slit,
+    simultaneously exposing all 600 spatial pixels in an entire row using
+    260 spectral channels (in target mode).
+ 
+    The characteristics of the instrument are summarized here:
+ 
+      Telescope             : f/2.7, all-aluminum optics
+      Grating               : Single dual-blaze electron-beam grating
+      Detector              : Single two-dimensional HgCdTe array
+      Mass                  : 8 kg
+      Volume                : 25 x 18 x 21 cm
+      Power                 : 15 W
+      Spectral Range        : 430 - 3000 nm
+      Field of View         : 40 km (both modes) from a 100-km orbit
+      Imaging Modes         : Target : 600 pixel crosstrack
+                                       70 m/pix spatial at 100-km orbit
+                                       260 bands (10-nm width)
+                                       ~12-deg latitudinal swaths
+                            : Global : 300 pixel crosstrack
+                                       140 m/pix spatial at 100-km orbit
+                                       85 bands (20- &amp; 40-nm width selected)
+                                       ~145-deg latitudinal swaths
+      Spectral Response     : FWHM &lt; 12.5 nm (target mode in lab)
+      Spatial Response      : FWHM &lt; 1.0 mrad (target mode in lab)
+      Spatial Sampling      : 0.7 mrad (target mode in lab)
+      Signal-to-Noise Ratio : &gt;400 at the equator (0-deg solar zenith)
+                              &gt;100 at polar regions (80-deg solar zenith)
+ 
+    For more information about the M3 instrument, see Green, et al.
+    (2008a) [GREENETAL2008A], Green, et al. (2008b) [GREENETAL2008B],
+    Green, et al. (2009) [GREENETAL2009], and Petro, et al. (2008)
+    [PETROETAL2008], and Pieters, et al. (2009a) [PIETERSETAL2009A].
+ 
+ 
+  Scientific Objectives
+  =====================
+    The specific scientific objectives of the M3 instrument were to:
+ 
+    - Evaluate the primary components of the lunar crust and their
+      distribution across the highlands,
+ 
+    - Characterize the diversity and extent of the different types of
+      basaltic volcanism,
+ 
+    - Identify and access deposits containing volatiles including water,
+ 
+    - Map fresh craters to access the properties of impacts in the
+      recent past, and
+ 
+    - Identify and evaluate concentrations of unusual and unexpected
+      minerals.
+
+        </description>
+    </Instrument>
+</Product_Context>

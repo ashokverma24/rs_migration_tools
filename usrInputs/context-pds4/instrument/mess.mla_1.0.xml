@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mla.mess</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MERCURY LASER ALTIMETER for MESS</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mess::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Cavanaugh, J.F., J.C. Smith, X. Sun, A.E. Bartels, L. Ramos- Izquierdo, D.J.
+                   Krebs, A.M. Novo-Gradac, J.F. McGarry, R. Trunzo, J.L. Britt, J. Karsh, R.B.
+                   Katz, A. Lukemire, R. Szymkiewicz, D.L. Berry, J.P. Swinski, G.A. Neumann, M.T.
+                   Zuber, and D.E. Smith, The Mercury Laser Altimeter instrument for the MESSENGER
+                   mission, Space Science Reviews, 131, 451-479, 2007.
+            </reference_text>
+            <description>reference.CAVANAUGHETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MERCURY LASER ALTIMETER</name>
+        <type>Altimeter</type> <!--RChen/EN was Laser Altimeter-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    The Mercury Laser Altimeter (MLA) is one of the primary instruments on
+    NASA&apos;s MErcury Surface, Space ENvironment, GEochemistry and Ranging
+    (MESSENGER) mission, under NASA&apos;s Discovery Program. MESSENGER, the first
+    spacecraft ever to orbit Mercury, reached its destination following one
+    Earth flyby, two flybys of Venus and three of Mercury.  It launched on
+    3 August 2004 and entered Mercury&apos;s orbit on 18 March 2011. Initial
+    data collection began during the three flybys of Mercury, continued during
+    the orbital phases and consist of global mapping and measurements of the
+    surface, atmosphere and magnetosphere composition. MESSENGER completed its
+    mission on 30 April 2015 when it impacted into the planet as planned. The
+    nominal mission consisted of one year in orbit, but the mission was
+    extended to span more than four years in orbit. Once in orbit around
+    Mercury it began a series of observations using multiple instruments. MLA
+    ranged to the surface only during the periapsis of the 12-hour orbit,
+    limited by its 1800-km maximum range. During the final months of the
+    mission, the spacecraft altitude was reduced and MLA took measurements at
+    altitudes as low as 25 km. See the CDR_RDR_DS.CAT file for more
+    information on the lower altitude campaign and the MLA data collected at
+    those times. MESSENGER&apos;s observations provided data to answer questions
+    about the nature and composition of the crust, tectonic history, the
+    structure of the atmosphere and magnetosphere, interior structure, and the
+    nature of the polar caps.
+ 
+    The MLA is a bi-static system, meaning that it consists of separate
+    transmitter and receiver systems. The transmitter uses a diode-pumped,
+    Nd:YAG slab laser with passive Q-switching. The laser output is 20 mJ
+    per pulse at 1064-nm wavelength. The beam pattern at the output of a 15X
+    beam expander is roughly Gaussian, with 90% of its power lying within a
+    divergence of 80 microradians. The laser electrical power consumption
+    is 8.7 W, and its mass without the beam expander is 0.56 kg.
+ 
+    The transmitter generates a 6-ns-wide laser pulse at 8 Hz intervals,
+    and the instrument measures the time required for the light to reach
+    the surface and return. The MLA data complements the visible and
+    near-infrared imaging that will also be performed on Mercury. Unlike
+    the imager, the MLA does not rely on solar illumination and can make
+    measurements over the entire surface of Mercury including the night
+    side. The MLA complements imaging because the direct range
+    measurements enable unambiguous determinations of topography that
+    will improve the interpretation of images. The MLA can also be
+    operated as a laser transponder using the transmitter and receiver
+    subsystems independently.
+ 
+    The MLA range measurement unit (RMU) employs a unique APL-supplied
+    &apos;Time-of-Flight&apos; (TOF) ASIC which uses on-chip signal propagation time
+    to gauge the time interval between pulses and the next clock signal.
+    It has the unique advantages of subnanosecond (0.4 ns) timing but
+    without the need of high speed digital electronics. The RMU can time
+    up to 15 pulses with less than 2 microseconds recovery time, which
+    enables the receiver to lower its detection threshold to register
+    weak signals in the presence of several false alarm pulses. On-board
+    software rejects most of the false alarms and downlinks only the
+    most likely range signals to earth. The RMU measures the distance
+    between the spacecraft and the surface of Mercury with 10-cm
+    precision. This allowed the science team to take detailed measurements of
+    Mercury&apos;s shape and surface structure.
+ 
+    The laser output is sensed by a diode pickoff, and its energy is
+    recorded. A leading and trailing edge start pulse time is recorded
+    by comparators within the range measurement unit (RMU), as well as
+    the time of the reflected pulse, as described below. Return echoes
+    are collected by an array of four refractive telescopes that are
+    fiber-optic coupled into a single silicon avalanche photodiode.
+    To accommodate surfaces of greater slope and roughness, the received
+    signal is passed through each of three matched filters into separate
+    comparators within the RMU. These filter channels have response
+    times of 10, 60, and 270 ns. A sufficiently strong return pulse will
+    trigger comparators on one of the three lower threshold channels
+    (channel 1, 2, 3), whose arrival is measured by a common pair
+    (leading, trailing edge) of TOF chips. Pulses that trigger
+    a separate high threshold on the 10-ns channel (Channel 1
+    high, also known as channel 0) are measured by an additional pair of
+    TOFs. The combined detection of a single pulse at two thresholds will
+    allow a solution for pulse energy and for the spread of an equivalent
+    Gaussian pulse waveform. Thresholds are set independently for each channel
+    by means of flight software (FSW) and programmable digital-to-analog
+    converters, in response to changing numbers of noise counts issued by the
+    comparators, so as to maintain a preset average rate of false alarms in
+    the face of varying background illumination. One high-threshold return
+    and up to 10 returns from low-threshold channels are returned by the FSW
+    after signal processing. The FSW Science task tracks the surface so as to
+    eliminate most noise returns, and outputs a variable-length packet.
+    The RMU counts consist of coarse and fine times. Each of the six
+    dedicated TOFs has a series of gates that generate a fine range
+    count at the leading or trailing edge of a pulse. Thus each 200-ns
+    interval generated by the 5 MHz clock is subdivided into
+    approximately 500 subintervals of roughly 400 ps. Individual timing
+    calibrations for each TOF are applied from a lookup table since each
+    gate has a slightly different delay.
+ 
+    Additionally, the MLA can perform active and passive radiometric
+    measurements in a narrow spectral band centered at 1064 nm. The
+    active measurement employs a dual-threshold measurement of pulse
+    width to infer the area and width of the return pulse. The pulse
+    area, together with a transmit energy monitor, provides the
+    reflectivity of the target within a 0.08-mrad-diameter laser spot.
+    Thus MLA may search for volatile deposits that exhibit high albedo
+    within the permanently shadowed polar regions. Active measurements
+    require sufficient signal to trigger the detector at both low and
+    higher threshold settings on the lowest matched filter setting, 10
+    ms. The passive measurement employs the noise counters and threshold
+    settings on the detector subsystem to infer radiance from a
+    0.4-mrad- diameter field of view. The passive mode is enabled in
+    Science Mode, wherein the noise counts are summed over 0.5-s
+    intervals. The Hardware Diagnostic packets may be enabled in Standby
+    Mode to provide 8-Hz passive measurements.
+ 
+    More details about the instrument can be found in [CAVANAUGHETAL2007].
+
+        </description>
+    </Instrument>
+</Product_Context>

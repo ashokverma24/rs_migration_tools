@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:grs.mess</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>Gamma Ray Spectrometer for MESSENGER</title>
+        <information_model_version>1.10.1.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-06-05</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Minor updates to support PDS3 to PDS4 migrations.
+                    Added DOI for reference, removed optional attributes with N/A as 
+                    values, added intstrument subtype, and did minor edits to the
+                    description field.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mess</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>https://doi.org/10.1007/s11214-007-9262-7</doi>
+            <reference_text>
+                   Goldsten, J.O., E.A. Rhodes,, W.V. Boynton, W.C. Feldman, D.J. Lawrence, J.I.
+                   Trombka, D.M. Smith, L.G. Evans, J. White, N.W. Madden, P.C. Berg, G.A. Murphy,
+                   R.S. Gurnee, K. Strohbehn, B.D. Williams, E.D. Schaefer, C.A. Monaco, C.P.
+                   Cork, J.D. Eckels, W.O. Miller, M.T. Burks, L.B. Hagler, S.J. Deteresa, and
+                   M.C. Witte, The MESSENGER Gamma-Ray and Neutron Spectrometer, Space Science
+                   Reviews, 131, 339-391, 2007.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>Gamma Ray Spectrometer</name>
+        <type>Spectrometer</type>
+        <subtype>Gamma Ray Spectrometer</subtype>
+        <description>
+           The Gamma Ray Spectrometer (GRS) instrument formed part of the
+           geochemistry investigation of the MESSENGER mission and yielded
+           information about the elemental composition of the planet's
+           surface. GRS detected gamma-ray emissions in the 0.1 - 10 MeV
+           range, allowing the identification of certain elements and their
+           abundances to be determined. Gamma ray measurements were used
+           to infer the composition of Mercury's surface over localized
+           regions using established techniques, such as used recently on
+           the Lunar Prospector and Mars Odyssey missions.
+           
+           The GRS detector was a coaxial germanium crystal 50 mm in diameter
+           and 50 mm in length, chosen for its superior energy resolution and
+           the ability to anneal the detector to remove accumulated radiation
+           damage. The detector was rigidly clamped in a hermetically sealed
+           Al capsule pressurized with clean, dry nitrogen. The capsule was
+           cooled to an operating temperature in the 80-95 K range by a
+           mechanical cryocooler. A plastic scintillator anti-coincidence
+           shield surrounded the germanium detector in its sides and back, for
+           rejection of cosmic-ray background. Galactic cosmic rays
+           continuously bombard the surface of Mercury, and through
+           interactions with the surface, gamma rays of discrete energies
+           that are characteristic of specific elements are created. A
+           fraction of these gamma rays, as well as those from the decay of
+           radiogenic elements escape from the surface, where they can be
+           detected by the orbiting GRS. Gamma-ray fluxes are measurable at
+           altitudes up to 1000 km and for gamma rays up to about 10 MeV that
+           emanate from depths of up to tens of centimeter beneath the
+           surface. Detected fluxes are generally low and require numerous
+           orbital passes over a specific region to obtain a statistically
+           well-defined energy spectrum. The measurements of elements such as
+           Fe, Si, Mg, Na, Al, Ca, Ti, K and Th by GRS provided insight
+           into distinguishing between different formation models for Mercury
+           as well as other planetary evolution issues.
+        </description>
+    </Instrument>
+</Product_Context>

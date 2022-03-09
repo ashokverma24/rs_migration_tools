@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:vega1.puma</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DUST IMPACT MASS ANALYZER for VEGA1</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:puma.vega1</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vega1</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reinhard, R and B. Battrick (eds), &apos;Space Missions to Halley&apos;s Comet&apos;, European
+                   Space Agency ESA SP-1066, ESA Pub Div, Moordwijk, Netherlands, 1986.
+            </reference_text>
+            <description>reference.ESA-SP1066</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., and F.R. Krueger, The Organic Component in Dust From Comet
+                   Halley as Measured by the PUMA Massspectrometer on Board VEGA 1, Nature,
+                   326, 755-760, 1987.
+            </reference_text>
+            <description>reference.KISSEL-KRUEGER1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., Mass Spectrometric Studies of Halley&apos;s Comet, Advances in Mass
+                   Spectrometry 1985, 175-184, 1986.
+            </reference_text>
+            <description>reference.KISSEL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., D.E. Brownlee, K. Buchler, B.C. Clark, H. Fechtig, E. Grun, K.
+                   Hornung, E.B. Igenbergs, E.K. Jessberger, F.R. Krueger, H. Kuczera, J.A.M.
+                   McDonnell, G.E. Morfill, J. Rahe, G.H. Schem, Z. Sekanina, N.G. Utterback,
+                   H.J. Volk, and H. Zook, Compostition of Comet Halley Dust Particles From
+                   GIOTTO Observations, Nature, Vol 321, No. 6067, 336-337, 1986.
+                   6067, 280-282, 1986.
+            </reference_text>
+            <description>reference.KISSELETAL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krueger, F.R., and J. Kissel, The Chemical Composition of the Dust of Comet
+                   P/Halley as Measured by PUMA on Board VEGA-1, Naturwissenschaften, 74,
+                   312-316, 1987.
+            </reference_text>
+            <description>reference.KRUEGER-KISSEL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krueger, F.R., A. Korth, and J. Kissel, The Organic Matter of Comet Halley
+                   as Inferred by Joint Gas Phase and Solid Phase Analyses, Space Science
+                   Reviews, 56, 167-175, 1991.
+            </reference_text>
+            <description>reference.KRUEGERETAL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Langevin, Y., J. Kissel, J.L. Bertaux, and E. Chassefiere, First
+                   Statistical Analysis of 5000 Mass Spectra of Cometary Grains Obtained by
+                   PUMA 1 (VEGA 1) and PIA (GIOTTO) Impact Ionisation Mass Spectro Meters in
+                   the Compressed Modes, Astronomy and Astrophysics, 187, 761-766, 1987.
+            </reference_text>
+            <description>reference.LANGEVINETAL1987A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Langevin, Y., J. Kissel, J.L. Bertaux, and E. Chassefiere, Impact
+                   Ionisation Mass Spectrometry of the Cometary Grains On-Board VEGA 1 and
+                   GIOTTO, VEGA 1, and VEGA 2 Spacecrafts, Lunar and Planetary Science XVIII,
+                   533-534, 1987.
+            </reference_text>
+            <description>reference.LANGEVINETAL1987B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   &apos;Encounters with Comet Halley, The first results&apos;, Nature, Volume 321, No.
+                   6067, 15 May 1986.
+            </reference_text>
+            <description>reference.NATURE321</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., G.A. Avanesov, I.V. Barinov, A.I. Debabov, V.A. Krasikov,
+                   V.I. Moroz, V.A. Shamis, V.I. Tarnopolski, D.A. Usikov, YA.L. Ziman, B.S.
+                   Zhukov, F. Szabo, K. Szego, A. Kondor, E. Merenyi, B.A. Smith, S. Larson,
+                   P. Cruvellier, A. Abergel, J.L. Bertaux, J. Blamont, M. Danz, D. Mohlmann,
+                   H. Stiller, and H.P. Zapfe, Comet Halley: Nucleus and Jets (Results of the
+                   Vega Mission), Advances of Space Research, 5, 95-104, 1986.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1986A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., G.A. Avanesov, I.V. Barinov, V.I. Kostenko, V.A. Krasikov,
+                   V.A. Shamis, K.G. Sukhanov, V.I. Tarnopolski, YU.K. Zaiko, S.I. Zatsepin,
+                   YA.L. Ziman, B.S. Zhukov, F. Szabo, L. Szabo, K. Szego, A. Balazs, G.
+                   Endroczi, M. Gardos, M. Kanyo, Z. Nyitrai, I. Renyi, P. Rusznyak, B. Smith,
+                   S. Szalai, I. Toth, L. Varhalmi, M. Zsenei, P. Cruvellier, M. Detaille, T.
+                   Nguyen-Trong, A. Abergel, J.L. Bertaux, J. Blamont, E. Dimarellis, G.N.
+                   Dulnev, G. Tsukanova, and B.I. Valnicek, TV Experiment in Vega Mission:
+                   Strategy, Hardware, Software, Proceedings of the 20th ESLAB Symposium, ESA
+                   SP-250, Vol II, 289, 1986.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1986B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Solc, M., V. Vanysek, and J. Kissel, Carbon Isotope Ratio in PUMA 1 Spectra
+                   of P/Halley Dust, Astronomy and Astrophysics, 187, 385-387, 1987.
+            </reference_text>
+            <description>reference.SOLCETAL1987</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>DUST IMPACT MASS ANALYZER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Mass Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    Instrument Overview
+    ===================
+ 
+      The dust mass spectrometer measures the chemical
+      composition, the size and the spatial density of
+      solid particles using a time-of-flight technique,
+      with particular emphasis on the determination of
+      the Li, C and B isotopic ratios.  The operating
+      Principle of PUMA, illustrated in Figure 8a, is
+      similar to that of the PIA instrument flown on
+      Giotto.  The dust particles enter through a baffle
+      and impact on a silver target (M) at a speed of 78
+      km/s.  The particles and a certain amount of the
+      target material are vaporized and partly ionized.
+      The two Vega spacecraft have different targets; one
+      type is mounted in a cartridge as in the PIA, the
+      second has a corrugated surface such that a larger
+      amount of projectile ions enter the analyzer.  The
+      target is at + 1020 V; the ions are accelerated by
+      a grid (1), which is held at a potential of -2000
+      V, and enter the field-free drift tube at zero
+      potential (4).  These charged particles are sent by
+      the electrostatic reflector (5) into the second
+      drift tube (6) and on towards the detector (7).
+      The ions trajectories are focused by the lenses
+      (9), (10) and (11).  A set of three electrodes
+      (12), consisting of an inner grid at +1000 V
+      between two grids at zero potential, prevents ions
+      with energies less than 1 keV from reaching the
+      detector.  The geometry of the reflector is
+      designed in such a way as to bunch ions of the same
+      species (particles with energies E&gt;E(0) travel a
+      larger distance than those with energies E&lt;E(0))
+      and to eliminate those with energies that deviate
+      too much from E(0).  The purpose of this mirror
+      system is to reduce the dispersion of the flight
+      times for particles having the same charge-to-mass
+      ratios.  The reflector potential is switch- between
+      1000 V and 1100 V every 30 s, in order to
+      compensate for the higher energies of ions created
+      by the impacts of larger particles.  The
+      time-of-flight is measured with reference to three
+      signals: the light flash recorded by the
+      photomultiplier (3), the pulses detected by the
+      target (M), and the accelerating grid (1).  The
+      signals induced in these sensors, in the first lens
+      (9), in the ejecta trap (8) and in the detector
+      (7), which are illustrated qualitatively in Figure
+      8c, are used to characterize the mass of the
+      particles.  Additional information about PUMA is
+      given in the table below.
+ 
+ 
+Table. Dust Mass Spectrometer characteristics
+ 
+Target material                        Silver
+Total drift lengt                      1 m
+Time of flight                         4 micro s (H+) - 40 micro s (Ag+)
+Ion detector                           Secondary electron multiplier
+Dust mass range                        3x10**-16  -5x10**-10 g
+Atomic mass range                      1-110 amu
+Mass resolution, m/delta m,
+       at m = 107                      200
+Chemical composition accuracy
+       per spectrum                    10%
+Maximum data acquisition rate          12 spectra/s
+Expected number of events              10**3-10**4 impacts during flyby
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

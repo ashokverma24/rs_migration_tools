@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+   http://pds.nasa.gov/pds4/pds/v1 
+   http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.xsd 
+   ">
+   <Identification_Area>
+      <logical_identifier>urn:nasa:pds:context:instrument:sep.maven</logical_identifier>
+      <version_id>1.0</version_id>
+      <title>SEP</title>
+      <information_model_version>1.4.0.0</information_model_version>
+      <product_class>Product_Context</product_class>
+      <Alias_List>
+         <Alias>
+            <alternate_title>MAVEN Solar Energetic Particle Instrument</alternate_title>
+         </Alias>
+      </Alias_List>
+      <Modification_History>
+         <Modification_Detail>
+            <modification_date>2015-03-24</modification_date>
+            <version_id>1.0</version_id>
+            <description>
+               Initial version.
+            </description>
+         </Modification_Detail>
+      </Modification_History>
+   </Identification_Area>
+   <Reference_List>
+      <Internal_Reference>
+         <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+         <reference_type>instrument_to_instrument_host</reference_type>
+      </Internal_Reference>
+   </Reference_List>
+   <Instrument>
+      <name>Solar Energetic Particle Instrument</name>
+      <type>Energetic Particle Detector</type>
+      <description>
+         The Solar Energetic Particle Instrument (SEP) consists of 2 sensors, each consisting of a pair of 
+         double-ended solid-state telescopes, measuring electrons and ions over the energy ranges ~30-1000 keV 
+         and ~30-12,000 keV/nuc respectively. The SEP sensors are closely based on the Solid State Telescope 
+         (SST) sensors on the THEMIS probes and also share significant heritage with the SupraThermal Electron 
+         (STE) detectors on STEREO and the SST detectors on the Wind spacecraft.
+         
+         The SEP sensors are mounted on two corners of the top deck of the spacecraft, positioned to ensure 
+         that the fields of view (FOVs) adequately cover the canonical Parker spiral direction (around which 
+         solar energetic particle distributions are typically centered), while 1) always avoiding glint from 
+         the spacecraft, other sensors and the Articulated Payload Platform (APP) and 2) avoiding direct 
+         sunlight during spacecraft attitudes typical of normal science operations.
+         
+         SEP provides measurements that satisfy the MAVEN level 1 requirement to determine solar
+         energetic particles characteristics, 50 keV to 5 MeV protons, with ~1 hr time resolution, energy
+         resolution better than 50% and precision better than 30%.
+      </description>
+   </Instrument>
+</Product_Context>

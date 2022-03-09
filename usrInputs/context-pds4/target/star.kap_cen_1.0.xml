@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.kap_cen</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Kappa Centauri</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Kappa Cen</alternate_title></Alias>
+      <Alias><alternate_title>kap Cen</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>I 1260AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 15005</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J14592-4206AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-41 9342</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 4330</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 0 12828</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-41 6979</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J1459-42.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 553</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 20146</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 8683</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00132200J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 07828-03520</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 132200</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 2029</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 73334</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 73334</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 5576</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 14527-4142 AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 14559-4154</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2557</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J14590969-4206151</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3383</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 320103</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2131</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 225344</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 27207</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 17846</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7828-3520-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 13000</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 20470</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100132200</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J14592-4206AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 12558</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 5908713025970034560</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Kappa Centauri</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 14 hours 59 minutes 09.6849382 seconds
+Declination, ICRS coord, ep=J2000: -42 degrees 06 minutes 15.106919 seconds
+    </description>
+  </Target>
+</Product_Context>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.g_her</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>30 Herculis</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>30 Her A</alternate_title></Alias>
+      <Alias><alternate_title>30 Her</alternate_title></Alias>
+      <Alias><alternate_title>g Her</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+41 1390</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+42 2714</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DO 35295</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 3303</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 22172</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 9485</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00148783</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 03066-02214</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 148783</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 80704</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 80704</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 6146</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 16269+4159</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +40283</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2763</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J16283852+4152539</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3690</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3751</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3751.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 55445</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1864</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 46108</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC9 2662</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 29698</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 3066-2214-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 21472</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 13650</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 1625+42</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 1381118928134364544</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>30 Herculis</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 16 hours 28 minutes 38.5485851 seconds
+Declination, ICRS coord, ep=J2000: +41 degrees 52 minutes 54.040593 seconds
+    </description>
+  </Target>
+</Product_Context>

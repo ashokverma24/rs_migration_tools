@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:laboratory.au-msl</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>Aarhus University Mars Simulation Laboratory</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>au-msl</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-08-27</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                 Initial creation of the context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:au-msl.awtsi-2004</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:au-msl.awtsii-2010</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:au-msl.sloped_wt</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>http://marslab.au.dk/</reference_text>
+            <description>Website for the Mars Simulation Laboratory at Aarhus University</description>
+        </External_Reference>
+    </Reference_List>
+    <Facility>
+        <name>Aarhus University Mars Simulation Laboratory</name>
+        <type>Laboratory</type>
+        <description>
+          The Aarhus University Mars Simulation Laboratory is located in the Department of Geoscience at 
+          Aarhus University in Aarhus, Denmark and is managed by Dr. Ralf Müller and Dr. Jonathon Merrison.
+          The Mars Simulation Laboratory is an interdisciplinary research collaboration of biologists, chemists, 
+          geologists and physicists who work together on joint research related to the planet Mars. The group has 
+          built its own research facilities and has access to all necessary facilities under the Faculty of Science 
+          and Technology. Furthermore, some group members have developed instruments for Mars missions.
+          
+          The Laboratory has access to unique facilities including: two recirculating wind tunnels capable of working 
+          over long time under low pressure conditions, two one-bar wind tunnels for sand transport, a microbiology 
+          experimental Mars condition chamber, and suitable Mars analogue dust and soil materials. 
+          In connection with research projects, the group also develops wind and dust sensing instruments.
+        </description>
+    </Facility>
+</Product_Context>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.gemini-south</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Gemini Observatory (South), Cerro Pachon, Chile</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_title>Gemini South</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-10-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created from information from Gemini Website: http://www.gemini.edu
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:gemini-south.8m1</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Gemini South 8.1-meter Telescope</comment>
+        </Internal_Reference>
+    </Reference_List>
+    <Facility>
+        <name>Gemini Observatory (South)</name>
+        <type>Observatory</type>
+        <address>Summit of Cerro Pachon, Chile
+            c/o, AURA, Casilla 603, La Serena, Chile
+            Phone: 56-51-2205-600
+            Fax: 56-51-2205-650
+        </address>
+        <country>Chile</country>
+        <description>
+            The Gemini Observatory consists of twin 8.1-meter diameter optical/infrared telescopes located on two of the best 
+            observing sites on the planet. From their locations on mountains in Hawai'i and Chile, Gemini Observatory's telescopes 
+            can collectively access the entire sky.
+            
+            Gemini is operated by a partnership of six countries including the United States, Canada, Chile, Brazil, Argentina and 
+            Korea. Any astronomer in these countries can apply for time on Gemini, which is allocated in proportion to each partner's 
+            financial stake.
+            
+            The Gemini South telescope is situated near the summit of Cerro Pachon in central Chile, at an altitude of 2722 m, at 
+            latitude -30:14:26.700 and longitude -70:44:12.096 in the WGS84 system.
+            
+        </description>
+    </Facility>
+</Product_Context>

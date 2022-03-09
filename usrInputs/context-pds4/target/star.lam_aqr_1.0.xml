@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.lam_aqr</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Lambda Aquarii</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>73 Aquarii</alternate_title></Alias>
+      <Alias><alternate_title>Lambda Aqr</alternate_title></Alias>
+      <Alias><alternate_title>lam Aqr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>73 Aqr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-08 5968</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 864</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 31903</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 14363</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00216386</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05813-01406</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 216386</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 112961</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 112961</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 8698</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10588</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 3543</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J22523684-0734473</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 5034</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5540</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5540.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 609</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 206868</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 2977</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SACS 497</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 146362</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 43459</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* P 2372</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 29419</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5813-1406-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 19596</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 26678</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 20114</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 97 8146</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 2247-08</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2610370969482732672</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Lambda Aquarii</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 22 hours 52 minutes 36.8772324702 seconds
+Declination, ICRS coord, ep=J2000: -07 degrees 34 minutes 46.582981294 seconds
+    </description>
+  </Target>
+</Product_Context>

@@ -1,0 +1,12 @@
+P,urn:jaxa:darts:context:instrument:dcam3.dcam3-a::1.0
+P,urn:jaxa:darts:context:instrument:dcam3.dcam3-d::1.0
+P,urn:jaxa:darts:context:instrument:hyb2.cam-h::1.0
+P,urn:jaxa:darts:context:instrument:hyb2.lidar::1.0
+P,urn:jaxa:darts:context:instrument:hyb2.nirs3::1.0
+P,urn:jaxa:darts:context:instrument:hyb2.onc::1.0
+P,urn:jaxa:darts:context:instrument:hyb2.sci::1.0
+P,urn:jaxa:darts:context:instrument:hyb2.tir::1.0
+P,urn:jaxa:darts:context:instrument:mascot.mara::1.0
+P,urn:jaxa:darts:context:instrument:mascot.mascam::1.0
+P,urn:jaxa:darts:context:instrument:mascot.masmag::1.0
+P,urn:jaxa:darts:context:instrument:mascot.micromega::1.0

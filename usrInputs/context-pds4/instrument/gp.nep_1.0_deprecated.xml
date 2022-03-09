@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:nep.gp</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GALILEO PROBE NEPHELOMETER for GP</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gp::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.RAGENTETAL1992</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>GALILEO PROBE NEPHELOMETER</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Nephelometer. No obvious choice. NEPHELOMETER in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+From [RAGENTETAL1992]:
+ 
+  Instrument Overview
+  ===================
+    The Nephelometer is designed to achieve the desired objectives by
+    comparing simultaneous measurements of the light scattered at
+    five angles from a well-defined volume of atmosphere in the
+    vicinity of the Probe with theoretical models of light scattering
+    from particulate matter.  A similar approach was successfully
+    used by Marov et al.  (1980), for measurements made from the
+    Venera Probes in the Venus atmosphere.
+ 
+    A cloud or haze is characterized by the way in which it scatters
+    light.  In particular, each unit of volume illuminated by a beam
+    of light will scatter the light at a given angle, theta, in
+    proportion to the product of the particle number density, n, and
+    the probability of the particles in that volume to scatter light
+    into a unit solid angle at that angle, the differential
+    scattering cross section, [d sigma/d Omega]_theta.  The
+    Nephelometer measured this quantity, at five angles.
+    Measurements are then compared with calculations of the same
+    quantities for model aerosols to obtain the best agreement with
+    the experimental data.  Results of such comparisons yield mean
+    particle sizes, particle number densities, and indications of
+    non-sphericity of the particles and/or absorption in the
+    particles.  The accuracy with which these quantities can be
+    determined depends on the accuracy of the experimental data and,
+    to a small extent, on the availability of subsidiary information,
+    for example hints or particle composition from other experiments
+    on the Probe.  A description of one method of performing such
+    comparisons to obtain the best fit to the data is given by Marov
+    et al. (1980).
+ 
+    The instrument contains the following components: (1) pulsed
+    solid state laser light sources, (2) solid state scattered light
+    detectors, (3) collimating, defining, collecting optics,
+    including a deployable axicon (axially-symmetric conical) mirror
+    system, and spectral filters, (4) optical alignment, surface
+    condensation and source output monitors, (5) other housekeeping
+    measurement systems to monitor instrument operation and
+    performance, and (6) analog and digital electronics circuitry and
+    power supplies.  The mechanical structure, deployment system, and
+    thermal design assure that the instrument will survive the severe
+    launch, cruise phase.  atmospheric entry, and descent
+    environments.
+ 
+    A number of complicating factors must be considered in the design
+    of the instrument.  For example, the required high sensitivity to
+    small scattered light signals and the relatively large background
+    light levels (up to 10^6 times as large as the minimum signal
+    levels), as well as the large dynamic range of expected signals
+    (of the order of 10^5 to 10^6), necessitate very careful signal
+    processing.  An irradiating light beam collimated highly enough
+    for the measurement of small angle scattering in the forward
+    direction, yet powerful enough to provide sufficient scattered
+    light for measurement of the relatively small scattering at wide
+    angles is required.  This requirement is further complicated by
+    the need to reduce instrumentally scattered light, the severely
+    limited space, and the need for reliable source operation after
+    an extended multiple-year cruise phase.  In addition, large
+    zero-signal baseline effects may be caused by electrical signals
+    induced by the operation of high power pulsed sources near very
+    sensitive detector circuitry.  There is a need to survive not
+    only the severe launch, cruise phase, and atmospheric entry
+    environments, but also the intense high-energy radiation in
+    passing through the Jovian radiation belts.  The effects of this
+    radiation on the reliability and stability of electronic
+    components and circuitry need to be carefully considered in the
+    instrument design.  Finally, there are the requirements of
+    relatively low allowable weight, space, power, and data rate.
+ 
+    Physically, the instrument is constructed in three parts, a
+    vented sensor head containing the forward scatter unit, a vented
+    sensor head containing the backward scatter configuration, and a
+    pressure-tight electronics unit containing the bulk of the
+    electronics.  A photograph is shown in Figure 1.  The scaled unit
+    is capable of withstanding pressures of greater than 20 bars with
+    negligible leakage.  The vented sensor heads, containing
+    components also capable of withstanding pressures greater than 20
+    bars, are connected to the electronics unit with cables
+    terminating in pressure-tight connectors sealed into the wall of
+    the electronics unit.  Both units are mounted onto the aft side
+    of the instrument shelf of the Probe.  The faces of the sensor
+    units are flush with the Probe skin, and the
+ 
+                                TABLE I
+ 
+    Instrument characteristics.  The dynamic range for all channels
+    is approximately 10^6, and the mean source wavelength for both
+    forward and backscatter sources is approximately 904 nm.  The
+    effective sampling volume decreases for strong signals as the
+    number of sampled pulses is reduced.
+ 
+----------------------------------------------------------------------
+Performance
+ 
+Scatter channels       5          16         40         70         180
+                                                                  (Bkwd)
+Sensitivity,
+m^-1 sr^-1 cnt^-1  9.3x10^-7  5.1x10^-7  1.3x10^-7  1.5x10^-7  1.1x10^-8
+ 
+  Mean scattering
+   angle,  degrees     5.82       16.01      40.01      70.00      178.1
+ 
+  Angular resolution,
+   FWHM, degrees       0.64        1.08       1.72       1.76        4.0
+ 
+  Effective sampling
+   volume, 1           1.25        0.63       0.65       0.40       16.4
+ 
+Physical description
+ 
+Mechanical
+  Weight, kg
+ 
+    Sensor assembly                1.4
+    Electronics                    3.0
+    Total                          4.4
+ 
+Dimensions, cm
+  Sensor assembly                  50.8 x  8.9 x 12.7
+  Electronics                      18.8 dia x 16.5
+ 
+Electrical
+  Power, W
+    Instrument                     4.8
+    Heater                         6.5
+    Total                         11.33 average
+  Data rate                       10 bps
+  Data storage on Probe           800 bits
+  Data output                     a digital, 2 bilevel
+  Timing signals                  minor frame
+  Commands                        3 stored, 4 real time
+----------------------------------------------------------------------
+ 
+    instrument is oriented on the Probe so that sampled volumes
+    extend out of the Probe essentially radially.  A &apos;closeout&apos;
+    structure is used to seal the edges of the sensor faces to the
+    Probe skin.  A deployable arm containing the axicon mirror
+    segments, as well as the pyrotechnic pin puller that activates
+    the deployment mechanism, extends from the upper corner of the
+    top of the sensor unit out through the Probe skin.  This assembly
+    allows forward scattering sample volumes to be situated in
+    relatively undisturbed air, outboard of flow regimes near the
+    skin of the Probe in which aerodynamic effects may severely
+    modify the particle size distributions with respect to the true
+    ambient free-stream distributions.  Calculation of these effects
+    for the present case have been performed using modified methods
+    similar to those described by Chow (1979).  The detector external
+    windows and the axicon mirror assembly are electrically heated
+    continuously during Probe descent to prevent condensation of
+    atmospheric vapors.  During transit to Jupiter and the period of
+    high heating on entry into the Jovian atmosphere, the Probe is
+    immersed in the heat shield with the axicon mirror arm stowed in
+    its undeployed position.  Targets are mounted on the inner
+    surface of the heat shield, scattering fixed amounts of light
+    from the forward and backward irradiating sources.  This
+    scattered light is measured by the instrument, permitting checks
+    of calibration stability during the long test and cruise phases
+    of the mission, and shortly before entry into the Jovian
+    atmosphere.  Initiation of the Nephelometer experiment begins
+    after entry and deployment of the Probe parachute, removal of the
+    Probe from the heat shield, and deployment of the axicon mirror
+    arm.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The objective of the Nephelometer Experiment aboard the Probe of
+    the Galileo mission is to explore the vertical structure and
+    microphysical properties of the clouds and hazes in the
+    atmosphere of Jupiter along the descent trajectory of the Probe
+    (nominally from 0.1 to &gt; 10 bars).  The measurements, to be
+    obtained at least every kilometer of the Probe descent, will
+    provide the bases for inferences of mean particle sizes, particle
+    number densities (and hence, opacities, mass densities, and
+    columnar mass loading) and, for non-highly absorbing particles,
+    for distinguishing between solid and liquid particles.  These
+    quantities, especially the location of the cloud bases, together
+    with other quantities derived from this and other experiments
+    aboard the Probe, will not only yield strong evidence for the
+    composition of the particles, but, using thermochemical models,
+    for species abundances as well.  The measurements in the upper
+    troposphere will provide &apos;ground truth&apos; data for correlation with
+    remote sensing instruments aboard the Galileo Orbiter vehicle.
+    The instrument is carefully designed and calibrated to measure
+    the light scattering properties of the particulate clouds and
+    hazes at scattering angles of 5.8, 16, 40, 70, and 178 degrees.
+    The measurement sensitivity and accuracy is such that useful
+    estimates of mean particle radii in the range from about 0.2 to
+    20 microns can be inferred.  The instrument will detect the
+    presence of typical cloud particles with radii of about 1.0
+    microns, or larger, at concentrations of less than 1 cm^3.
+ 
+ 
+  Calibration
+  ===========
+    Two methods were used to calibrate the Nephelometer.  The first
+    is similar to the method described by Pritchard and Elliott
+    (1960), as modified for application to the present case.  This
+    technique involves recording the response of each of the
+    scattering channels to the scattered light produced by a
+    diffusely scattering target positioned perpendicular to the
+    source beam optical axis, as the target is stepped along the
+    source beam until the sensitive volume for each channel has been
+    traversed.  For the forward-scattering channels a carefully
+    documented diffusely transmitting screen mounted into the end of
+    a set of telescoping tubes is used.  The transmitting screen
+    transmittance is carefully measured using a standard integrating
+    sphere and the screen&apos;s angular response and polarization
+    characteristics are documented with a specially constructed
+    goniometer.  Similar procedures are used to verify the
+    characteristics of a large specially constructed Lambertian
+    reflector that was used to calibrate the backward scattering
+    channel.  Calibrated neutral density attenuating filters are used
+    in front of the collecting optics for the detectors in each
+    channel to maintain the signals within the dynamic range of the
+    instrument.  The manner of relating the readings obtained using
+    this scanning method to the calibration constants to be used in
+    measuring actual aerosols is described below.
+ 
+    The Nephelometer instrument produces counts, C, in proportion to
+    the product of particle differential scattering cross section, at
+    angle theta, [dsigma/dOmega]_theta (with units of m^2 sr^-1), and
+    particle number density, n (with units of m^-3) with combined
+    units for this product, n[dsigma/dOmega]_theta of m^-1 sr^-1.
+    The proportionality constant is the product of source intensity
+    I_s, effective sampling volume V_eff, and
+    detector/electronics/optics gain constant K.  The instrument
+    count output C can be written as follows:
+ 
+     C = (KI_sV_eff)n[dsigma/dOmega]_theta = (1/E)n[dsigma/dOmega]_theta
+ 
+    and, the desired measured value,
+ 
+     n[dsigma/dOmega]_theta = CE = C/(KI_sV_eff) .
+ 
+    In response to a diffuse calibration target normal to the source
+    beam at position x, filling an effective area A_eff(x), and
+    having reflectivity (or transmission) at angle of T cos theta,
+    the instrument count output will be given by
+ 
+     C(x) = t(x) = [KI_sA_eff(x)] (T cos theta)/pi .
+ 
+    Because the normal calibration target is so bright, it is
+    necessary to reduce the amount of scattered radiation reaching
+    the detector with an attenuator of attenuation factor F.  By
+    moving this calibration target along the beam over all x at which
+    response is obtained, and integrating the response over all x, we
+    obtain
+ 
+    integral [C(x) dx] =
+ 
+    integral [t(x) dx] =
+ 
+    K(I_s/piF)(T cos theta) integral [A_eff(x) dx] =
+ 
+    K(I_s/piF)(T cos theta)V_eff    .
+ 
+    Thus, the proportionality constant E, in units of m^-1 sr^-1
+    count^-1, can then be evaluated from
+ 
+    E = (KI_sV_eff)^-1 =
+ 
+    T cos theta{(piF)(integral[t(x) dx])}^-1  .
+ 
+    In practice it is also necessary to make small corrections to
+    account for the deviation of the reflection or transmission
+    screens from true diffuse behavior, and polarization
+    characteristics of the sources, screens, and detection system.
+    The accuracy of this calibration procedure is a function of the
+    accuracy of our knowledge of the reflection (or transmission) of
+    the screen used to calibrate the Nephelometer and its simulation
+    of diffuse reflection (or transmission), the accuracy of the
+    measurement of the attenuation factor of the attenuator, the
+    accuracy of the data taken at each target position, and the
+    accuracy of the integration yielding the calibration factor.
+    Estimates of the overall accuracy range from less than +- 5
+    percent for the 5, 15, and 180 degree channels to less than +- 10
+    percent for the 40 and 70 degree channels.
+ 
+    The second type of calibration method involves obtaining the
+    response of the instrument to a well-documented &apos;standard&apos;
+    aerosol environment.  These tests were performed in a large test
+    chamber at Particle Measuring Systems, Inc.  (PMS) of Boulder,
+    Colorado.  An aerosol with a very narrowly dispersed size
+    distribution was produced by atomizing a suspension of spherical
+    polystyrene or polyvinyl toluene particles into a large spherical
+    chamber.  The particle sizes were measured using standard
+    electron microscope sizing techniques developed for aerosol
+    research at Ames Research Center.  The density of particles and
+    the proportion of single particles to &apos;doublets&apos;,&apos;triplets&apos;,
+    etc., in the actual aerosol was documented using standard
+    particle sizing instrumentation manufactured and calibrated by
+    PMS.  Nephelometer responses were recorded for a variety of
+    particle sizes, particle densities and particle composition.  The
+    calibration for each of the scatter channels was then determined,
+    using Mie-scattering cross sections calculated for the
+    PMS-documented aerosol distributions.  In general, the results
+    obtained were within 30 to 50 percent (often within 10 percent)
+    of those measured using the first method.  However, the
+    variations in the results of repeated experiments in the particle
+    chamber indicated that the results were less reliable than those
+    of the target scanning technique.  Closer investigation indicated
+    a number of variables in the test conditions that were apparently
+    difficult to control.  For example, small persistent air currents
+    in the test chamber were present, produced during aerosol
+    injection, by thermal gradients, by the sampling of the PMS
+    instrumentation, or by other causes.  These currents introduced
+    inhomogeneities and differences in the particle densities as
+    measured by the test instrumentation and the Nephelometer.  In
+    addition, it proved to be difficult to produce an aerosol with a
+    low enough content of aggregate particles, such that these larger
+    particles did not appreciably affect the measured scattering
+    cross sections.  It was suspected that some of the particles
+    might also have been electrically charged and that electrical
+    effects, for example, at the chamber walls, may have produced
+    differences between the aerosol sampled by the PMS instruments
+    and the Nephelometer.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:partizanskoye.1m25_azt11.crao5c</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>CrAO Five-Channel Photopolarimeter</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-02-18</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:partizanskoye.1m25_azt11</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <reference_text>Korhonen, T., V. Piirola, and A. Reiz, Polarization measurements at La Silla, ESO
+Messenger, Dec. 1984, p, 20-24.</reference_text>
+    </External_Reference>
+    <External_Reference>
+      <reference_text>Shakhovskoy, N.M., The methods for analysis of polarization observation, Izv.
+Krimskoy Astrophis. Obs. 91, 106-123, 1994.</reference_text>
+    </External_Reference>
+    <External_Reference>
+      <reference_text>Scaltriti, F., V. Piirola, A. Cellino, E. Anderlucci, L. Corcione, G. Massone, F.
+Racioppi, and F. Porcu, The UBVRI photopolarimeter of the Torino Astronomical
+Observatory, Mem. Soc. Astron. It. 60, 243-246, 1989.</reference_text>
+    </External_Reference>
+    <External_Reference>
+      <reference_text>Piirola, V., Simultaneous five-color (UBVRI) photopolarimeter, in Coyne, G.V., A.M.
+Magalhaes, A.F.J. Moffat, R.E. Schulte-Ladbeck, S. Tapia, and D.T. Wickramasinghe
+(eds.), Polarized Radiation of Circumstellar Origin, Univ. of Arizona Press, Tucson,
+pp. 735-746, 1989.</reference_text>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>CrAO Five-Channel Photopolarimeter</name>
+    <type>Polarimeter</type>
+    <description>The Crimean Astrophysical Observatory (CrAO) Five-Channel Photopolarimeter is capable
+of simultaneous polarimetric measurements in UBVRI colors, with four dichroic filters
+splitting the optical paths of the UBVRI components of white light in such a way as
+to feed five separate photomultipliers that measure each color simultaneously.  A
+half-wave plate in front of a calcite block splits the incoming radiation into two
+components with polarization planes mutually orthogonal to each other.  Rotation of
+the half-wave plate by steps of 45 degrees and corresponding measurements of the
+intensities of the two rays allow the observer to derive the values of the Stokes
+parameters and hence the value of the degree of linear polarization and the position
+angle. The construction of the polarimeter allows a direct elimination of the sky
+background polarization. 
+
+For more information, see:
+
+Piirola, V., Simultaneous five-color (UBVRI) photopolarimeter, in Coyne, G.V., A.M.
+Magalhaes, A.F.J. Moffat, R.E. Schulte-Ladbeck, S. Tapia, and D.T. Wickramasinghe
+(eds.), Polarized Radiation of Circumstellar Origin, Univ. of Arizona Press, Tucson,
+pp. 735-746, 1989.
+
+This book may be difficult to obtain, so a more accessible publication with
+information about the instrument is:
+
+Scaltriti, F., V. Piirola, A. Cellino, E. Anderlucci, L. Corcione, G. Massone, F.
+Racioppi, and F. Porcu, The UBVRI photopolarimeter of the Torino Astronomical
+Observatory, Mem.  Soc. Astron. It. 60, 243-246, 1989.
+
+See also:
+
+Korhonen, T., V. Piirola, and A. Reiz, Polarization measurements at La Silla, ESO
+Messenger, Dec. 1984, p, 20-24.
+
+For methods of observation and data processing, see:
+
+Shakhovskoy, N.M. 1994. The methods for analysis of polarization observation. 
+Izvestiya Krimskoy Astrophisicheskoy Observatorii 91, 106-123. (In Russian).</description>
+  </Instrument>
+</Product_Context>
+

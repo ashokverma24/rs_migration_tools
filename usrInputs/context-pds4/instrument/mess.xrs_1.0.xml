@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:xrs.mess</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>XRAY SPECTROMETER for MESS</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mess::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Schlemm, C.E., II, R.D. Starr, G.C. Ho, K.E. Bechtold, S.A. Benedict, J.D.
+                   Boldt, W.V. Boynton, W. Bradley, M.E. Fraeman, R.E. Gold, J.O. Goldsten, J.R.
+                   Hayes, S.E. Jaskulek, E. Rossano, R.A. Rumpf, E.D. Schaefer, K. Strohbehn, R.G.
+                   Shelton, R.E. Thompson, J.I. Trombka, and B.D. Williams, The X-Ray Spectrometer
+                   on the MESSENGER spacecraft, Space Science Reviews, 131, 393-415, 2007.
+            </reference_text>
+            <description>reference.SCHLEMMETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>XRAY SPECTROMETER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Xray Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    The Mercury Surface, Space Environment, Geochemistry and Ranging
+    (MESSENGER) mission is designed to orbit Mercury following one Earth
+    flyby, two flybys of Venus and three of Mercury.  It launched in
+    August 2004 and will use these flybys to achieve an orbit insertion
+    around Mercury in March 2011.  Initial data collection will begin
+    during the three flybys of Mercury, and will primarily consist of
+    global mapping and measurements of the surface, atmosphere and
+    magnetosphere composition.  MESSENGER will remain in orbit for the
+    rest of the nominal mission, which is scheduled to end in March
+    2012. Once in orbit around Mercury it will begin a series of
+    observations using multiple instruments. These observations will
+    provide data to answer questions about the nature and composition of
+    Mercury&apos;s crust, tectonic history, the structure of the atmosphere
+    and magnetosphere, and the nature of the polar caps.
+ 
+    The X-Ray Spectrometer (XRS) experiment is comprised of three
+    identical gas proportional counters (GPC) that measure X-rays
+    emitted from the surface of Mercury in the energy range from about 1
+    to 10 keV.  X-rays in this energy range sample the planetary surface
+    to depths of a few tens of microns.  The GPCs each have a 10-cm2
+    active area and use both anti-coincidence wires and pulse shape
+    discrimination to minimize background.  Balanced filters are used to
+    resolve the lower energy X-ray lines from Mg, Al, and Si.  This
+    technique has been used previously on other orbital X-ray
+    experiments flown on the Apollo 15, 16 and NEAR-Shoemaker missions.
+    One GPC has a thin aluminum filter, which filters out Si photons,
+    one has a thin Mg filter, which filters out Al and Si photons, and
+    the third GPC has no filter.  The energy resolution of the gas
+    counters is sufficient to resolve the higher energy lines from S,
+    Ca, Ti, and Fe.  A small Si- PIN detector is used as a solar
+    monitor, because the Sun is the source of the planetary X-ray
+    fluorescence.  The field-of-view (FOV) of the GPCs is 12 degrees.
+ 
+    Both the GPCs and the Si-PIN detector count individual photons,
+    producing an electronic pulse that is proportional to the energy of
+    the absorbed photon. Each valid count is stored in energy histograms
+    (spectra) that are 244 channels for the GPC and 231 channels for the
+    Si-PIN.  The accumulation time for these histograms will vary
+    depending upon proximity to the planet.  At periapsis the
+    accumulation time will be 40 seconds and at apoapsis 450 seconds.
+ 
+    The XRS is comprised of three physical units.  The GPCs make up the
+    Mercury X- ray Unit (MXU).   The Solar Assembly for X-rays (SAX)
+    includes the Si-PIN diode, preamplifier, shaping electronics and
+    thermal electric cooler (TEC).  The analog and digital electronics
+    are contained in the Main Electronics for X-rays (MEX) unit.  The
+    SAX is located at the &apos;&apos;top center&apos;&apos; edge of the solar shield (see
+    Figure 1 in the XRS EDR SIS document).  The MXU and MEX are
+    co-located within the payload adapter ring.
+ 
+    The XRS instrument is described in full detail in [SCHLEMMETAL2007].
+
+        </description>
+    </Instrument>
+</Product_Context>

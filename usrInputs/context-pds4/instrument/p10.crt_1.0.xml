@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:crt.p10</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>COSMIC RAY TELESCOPE for P10</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.p10::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Fimmel, R.O., W. Swindell, E. Burgess, Pioneer Odyssey, NASA SP-396,
+                   Scientific and Technical Information Office, National Aeronautics and
+                   Space Administration, Washington, D.C., 1977.
+            </reference_text>
+            <description>reference.FIMMELETAL1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Trainor, J.H., F.B. McDonald, B.J. Teegarden, W.R. Webber, and E.C.
+                   Roelof, Energetic particles in the Jovian magnetosphere, J. Geophys. Res.,
+                   79, 3600, 1974.
+            </reference_text>
+            <description>reference.TRAINORETAL1974B</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>COSMIC RAY TELESCOPE</name>
+        <type>Particle Detector</type> <!--RChen/EN was Cosmic Ray Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The cosmic ray telescope used for this experiment was also designed
+    to monitor solar and galactic cosmic rays and track the twisting
+    high energy particles from the Sun. The instrument can determine
+    which of the nuclei of the ten lightest elements make up these
+    cosmic ray particles. Before saturation by radiation, the cosmic ray
+    telescope measured high energy particles in Jupiter&apos;s radiation
+    belts.
+ 
+    The instrument consists of three, three-element, solid-state
+    telescopes. The high energy telescope measures the flux of protons
+    between 56 and 800 MeV. The medium energy telescope measures protons
+    with energies between 3 and 22 MeV, and identifies the ten elements
+    from hydrogen to neon. The low energy telescope measures the flux of
+    electrons between .05 and 1 MeV, and of protons between .05 and 20
+    MeV.
+ 
+  [&apos;Instrument Overview&apos; was adapted from FIMMELETAL pp. 52-53.]
+
+        </description>
+    </Instrument>
+</Product_Context>

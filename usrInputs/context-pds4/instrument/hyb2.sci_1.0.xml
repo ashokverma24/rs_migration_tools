@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd
+                                     http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument:hyb2.sci</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Small Carry-on Impactor for Hayabusa2</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>sci</alternate_id>
+                <alternate_title>SCI</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-06-12</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument_host:spacecraft.hyb2</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-016-0297-5</doi>
+            <reference_text>
+                T. Saiki, H. Imamura, M. Arakawa, K. Wada, Y. Takagi, M. Hayakawa, K. Shirai, H. Yano, C. Okamoto,
+                The Small Carry-on Impactor (SCI) and the Hayabusa2 Impact Experiment,
+                Space Sci. Rev., 208, 165-186, 2017.
+            </reference_text>
+            <description>The SCI instrument paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Small Carry-on Impactor (SCI)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Surface Tool</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <naif_instrument_id>-37590</naif_instrument_id>
+        <description>Small Carry-on Impactor (SCI) is a deployable instrument for creating artificial crater on asteroid by impacting a liner. The liner is 2 kg copper lump, because copper can be easily separated from the asteroid's sample. By ignition of an explosive, liner will be ejected at a high speed, about 2 km/s, and while chaging its shape. This experiment will enable us to access subsurface materials which will not be affected by space weathering.</description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.disp.color_display_settings.disp.color_display_axis_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>color_display_axis</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>color_display_axis</name>
+        <version_id>1.10</version_id>
+        <class_name>Color_Display_Settings</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.disp.color_display_settings.disp.color_display_axis_1a00</local_identifier>
+        <steward_id>img</steward_id>
+        <type>PDS4</type>
+        <namespace_id>disp</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The color_display_axis attribute identifies, by name, the axis of an Array (or Array subclass) that is intended to be displayed in the color dimension of a display device. I.e., bands from this dimension will be loaded into the red, green, and blue bands of the display device. The value of this attribute must match the value of one, and only one, axis_name attribute in an Axis_Array class of the associated Array.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <Terminological_Entry>
+            <name>color_display_axis</name>
+            <definition>The color_display_axis attribute identifies, by name, the axis of an Array (or Array subclass) that is intended to be displayed in the color dimension of a display device. I.e., bands from this dimension will be loaded into the red, green, and blue bands of the display device. The value of this attribute must match the value of one, and only one, axis_name attribute in an Axis_Array class of the associated Array.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>false</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <specified_unit_id>none</specified_unit_id>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

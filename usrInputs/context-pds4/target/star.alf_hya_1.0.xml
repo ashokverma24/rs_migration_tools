@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_hya</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Alphard</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Kalbelaphard</alternate_title></Alias>
+      <Alias><alternate_title>Cor Hydrae</alternate_title></Alias>
+      <Alias><alternate_title>30 Hydrae</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Hydrae</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Hya</alternate_title></Alias>
+      <Alias><alternate_title>alf Hya</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>30 Hya</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-08 2680</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J09277-0841A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-08 2680 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 101049</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 354</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 13044</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 6136</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00081797</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05460-01592</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 81797</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 46390</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 46390</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 3748</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 09227-0814 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 09251-0826</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10217</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1813</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J09273524-0839308</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 2249</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 4496</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2247</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2247.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 253</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 192393</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1353</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 1471</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SACS 209</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 136871</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 18272</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* SVS 75</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* P 621</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 13937</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5460-1592-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 9023</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 15411</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J09276-0840A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 8768</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 98 3683</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 5741512800984781824</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Alphard</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 09 hours 27 minutes 35.24270 seconds
+Declination, ICRS coord, ep=J2000: -08 degrees 39 minutes 30.9583 seconds
+    </description>
+  </Target>
+</Product_Context>

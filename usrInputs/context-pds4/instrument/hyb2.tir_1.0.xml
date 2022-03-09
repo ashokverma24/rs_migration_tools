@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd
+                                     http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument:hyb2.tir</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Thermal InfraRed Imager for Hayabusa2</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>tir</alternate_id>
+                <alternate_title>TIR</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-08-17</modification_date>
+                <version_id>1.0</version_id>
+                <description>The first version to submit to PDS SBN.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument_host:spacecraft.hyb2</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-016-0286-8</doi>
+            <reference_text>
+                T. Okada, T. Fukuhara, S. Tanaka, M. Taguchi, T. Imamura, T. Arai, H. Senshu, Y. Ogawa,
+                H. Demura, K. Kitazato, R. Nakamura, T. Kouyama, T. Sekiguchi, S. Hasegawa, T. Matsunaga,
+                T Wada, J. Takita, N. Sakatani, Y. Horikawa, K. Endo, J. Helbert, T. G. Müller, A. Hagermann,
+                Thermal Infrared Imaging Experiments of C-Type Asteroid 162173 Ryugu on Hayabusa2,
+                Space Sci. Rev., 208, 255-286, 2017.
+            </reference_text>
+            <description>The TIR instrument paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-017-0353-9</doi>
+            <reference_text>
+                T. Arai, T. Nakamura, S. Tanaka, H. Demura, Y. Ogawa, N. Sakatani, Y. Horikawa, H. Senshu,
+                T. Fukuhara, T. Okada,
+                Thermal Imaging Performance of TIR Onboard the Hayabusa2 Spacecraft,
+                Space Sci. Rev., 208, 239-254, 2017.
+            </reference_text>
+            <description>The TIR instrument paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1109/AERO.2017.7943827</doi>
+            <reference_text>
+                K. Endo, H. Demura, T. Dairaku, T. Fukuhara, T. Okada, S. Tanaka,
+                HEAT: Image and database browser for the thermal imager on Hayabusa2,
+                2017 IEEE Aerospace Conference, Big Sky, MT, 1-10, 2017.
+            </reference_text>
+            <description>This paper contains TIR calibration scheme.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1038/s41586-020-2102-6</doi>
+            <reference_text>
+                T. Okada, T. Fukuhara, S. Tanaka, M. Taguchi, T. Arai, H. Senshu, N. Sakatani, Y. Shimaki,
+                H. Demura, Y. Ogawa, K. Suko, T. Sekiguchi, T. Kouyama, J. Takita, T. Matsunaga, T. Imamura,
+                T. Wada, S. Hasegawa, J. Helbert, T. G. Müller, A. Hagermann, J. Biele, M. Grott, M. Hamm,
+                M. Delbo, N. Hirata, N. Hirata, Y. Yamamoto, S. Sugita, N. Namiki, K. Kitazato, M. Arakawa,
+                S. Tachibana, H. Ikeda, M. Ishiguro, K. Wada, C. Honda, R. Honda, Y. Ishihara, K. Matsumoto,
+                M. Matsuoka, T. Michikami, A. Miura, T. Morota, H. Noda, R. Noguchi, K. Ogawa, K. Shirai,
+                E. Tatsumi, H. Yabuta, Y. Yokota, M. Yamada, M. Abe, M. Hayakawa, T. Iwata, M. Ozaki, H. Yano,
+                S. Hosoda, O. Mori, H. Sawada, T. Shimada, H. Takeuchi, R. Tsukizaki, A. Fujii, C. Hirose,
+                S. Kikuchi, Y. Mimasu, N. Ogawa, G. Ono, T. Takahashi, Y. Takei, T. Yamaguchi, K. Yoshikawa,
+                F. Terui, T. Saiki, S. Nakazawa, M. Yoshikawa, S. Watanabe, Y. Tsuda,
+                Highly porous nature of a primitive asteroid revealed by thermal imaging,
+                Nature, 579, 518-522, 2020.
+            </reference_text>
+            <description>This paper contains updated TIR calibration.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Thermal Infrared Imager (TIR)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Camera</ctli:type>
+                <ctli:type>Imager</ctli:type>
+                <ctli:subtype>Bolometer</ctli:subtype>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <naif_instrument_id>-37200</naif_instrument_id>
+        <description>The Thermal Infrared Imager (TIR) onboard the Hayabusa2 spacecraft is based on an uncooled micro-bolometer array which can obtain thermal images of a target asteroid (162173) Ryugu. The TIR is the bolometric imager with a broadband filter in the thermal infrared range (8 to 12 um). It covers the temperature range about 150 to 460 K, and has the field of view about 16.7 x 12.7 degrees, with 0.051 degree per pixel (328 x 248 pixels). TIR is modified version of Longwave Infrared Imager (LIR) of Akatsuki, also known as Venus Climate Orbiter and PLANET-C. The primary objectives of TIR are to investigate thermophysical properties of the surface of asteroids, such as porosity, grain size, and boulder abundance. Brightness temperature map of the asteroid is derived from TIR data for each time, and the brightness temperature map at each time and its forecast is obtained with the ground calibration data. Multiple observation also estimates surface roughness at each site.</description>
+    </Instrument>
+</Product_Context>

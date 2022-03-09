@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.io_cen</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>IO Cen</title>
+    <information_model_version>1.14.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>SV* HV 4834</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J13593790-5608551</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 5872297407043341952</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-07-21</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Io Cen</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 13 hours 59 minutes 37.9048768325 seconds
+Declination, ICRS coord, ep=J2000: -56 degrees 08 minutes 55.222698487 seconds
+    </description>
+  </Target>
+</Product_Context>

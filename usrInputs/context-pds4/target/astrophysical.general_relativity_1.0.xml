@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/datastandards/schema/develop/pds/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/datastandards/schema/develop/pds/PDS4_PDS_1D00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:target:astrophysical.general_relativity</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Tests of General Relativity</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-04-06</modification_date>
+                <version_id>1.0</version_id>
+                <description>Original</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <External_Reference>
+            <reference_text>
+                Bertotti, B., Iess, L., and Tortora, P. (2003),
+                A Test of General Relativity using Radio Links with the Cassini Spacecraft,
+                Nature, 425, 374–376.
+            </reference_text>
+            <description>
+                Measurement of the effects of solar mass on propagation of X- and Ka-band
+                Cassini radio signals along paths close to the Sun.  The results are
+                consistent with predictions of standard general relativity to a precision
+                nearly two orders of magnitude better than previous measurements.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                Merkowitz, S.M. 
+                Tests of Gravity Using Lunar Laser Ranging. 
+                Living Reviews in Relativity 13, 7 (2010). 
+                https://doi.org/10.12942/lrr-2010-7
+            </reference_text>
+            <description>
+                A review of the gravitational science and technology of lunar laser 
+                ranging and discussion of prospects for the future.  The three retroreflector
+                arrays put on the Moon by the Apollo astronauts and the French built arrays 
+                on the Soviet Lunokhod rovers have provided the most stringent tests of the 
+                Strong Equivalence Principle and the time variation of Newton’s gravitational 
+                constant.
+            </description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Target>
+        <name>Tests of General Relativity</name>
+        <type>Astrophysical</type>
+        <description>
+              Tests of general relativity, which may include deflection and phase retardation 
+              of electromagnetic waves passing massive objects (such as the Sun) and tests
+              of the Strong Equivalence Principle and time variation of Newton's
+              gravitational constant from lunar laser ranging.
+        </description>
+    </Target>
+    
+</Product_Context>

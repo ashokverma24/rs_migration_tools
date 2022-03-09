@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_tau</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Aldebaran</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>87 Tauri</alternate_title></Alias>
+      <Alias><alternate_title>Aldebaran</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Tauri</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Tau</alternate_title></Alias>
+      <Alias><alternate_title>alf Tau</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>87 Tau</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BU 550A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BU 1031A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>STF 4002A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 3321 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+16 400</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 838711</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+16 629</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J04359+1631A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 436</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+16 629 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 6116</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 168</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GAT 1331</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 5605</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 2689</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00029139</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 171.1 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 9159 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 01266-01416</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 29139</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 21421</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 21421</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 1457</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 04302+1619 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 04330+1624</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +20087</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 898</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J0435+1630</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 11462</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J04355524+1630331</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 962</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 13584</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1014</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 119</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 120061</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 601</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 655</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 94027</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 7128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30168</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 3349</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 1266-1416-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 4426</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 10223</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 1065-00048822</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100029139</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J04359+1631A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 4111</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 16 1233</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-09-22</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Aldebaran</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 04 hours 35 minutes 55.23907 seconds
+Declination, ICRS coord, ep=J2000: +16 degrees 30 minutes 33.4885 seconds
+    </description>
+  </Target>
+</Product_Context>

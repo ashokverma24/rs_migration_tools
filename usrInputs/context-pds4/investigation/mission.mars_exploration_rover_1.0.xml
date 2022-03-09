@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.mars_exploration_rover</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARS EXPLORATION ROVER</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mer1::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mer2::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.mars::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Arvidson, R.E., Introduction to special section on results from the Mars
+                   Exploration Rover Spirit and Opportunity missions, J. Geophys. Res., 113,
+                   E06S01, doi:10.1029/2008JE003188, 2008.
+            </reference_text>
+            <description>reference.ARVIDSON2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bell, J.F., M.S. Rice, J.R. Johnson, and T.M. Hare, Surface albedo observations
+                   at Gusev Crater and Meridiani Planum, Mars, J. Geophys. Res., 113, E06S18,
+                   doi:10.1029/2007JE002976, 2008.
+            </reference_text>
+            <description>reference.BELLETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Cabrol, N.A., et al., Soil sedimentology at Gusev Crater from Columbia Memorial
+                   Station to Winter Haven, J. Geophys. Res., 113, E06S05,
+                   doi:10.1029/2007JE002953, 2008.
+            </reference_text>
+            <description>reference.CABROLETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Campbell, J.L., R. Gellert, M. Lee, C.L. Mallett, J.A. Maxwell, and
+                   J.M.O&apos;Meara, Quantitative in situ determination of hydration of bright
+                   high-sulfate Martian soils, J. Geophys. Res., 113, E06S11,
+                   doi:10.1029/2007JE002959, 2008.
+            </reference_text>
+            <description>reference.CAMPBELLETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Crisp, J.A., M. Adler, J.R. Matijevic, S.W. Squyres, R.E. Arvidson, and D.M.
+                   Kass, Mars Exploration Rover mission, J. Geophys. Res., 108(E12), 8061,
+                   doi:10.1029/2002JE002038, 2003.
+            </reference_text>
+            <description>reference.CRISPETAL2003</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Fleischer, I., G. Klingelhoefer, C. Schroeder, R. V. Morris, M. Hahn, D.
+                   Rodionov, R. Gellert, and P. A. de Souza, Depth selective Moessbauer
+                   spectroscopy: Analysis and simulation of 6.4 keV and 14.4 keV spectra obtained
+                   from rocks at Gusev Crater, Mars, and layered laboratory samples, J. Geophys.
+                   Res., 113, E06S21, doi:10.1029/2007JE003022, 2008.
+            </reference_text>
+            <description>reference.FLEISCHERETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Garvin, J.B., C. Weitz, O. Figueroa, and J. Crisp, Introduction to the special
+                   section: Mars Exploration Rover mission and landing sites, J. Geophys. Res.,
+                   108(E12), 8060, doi:10.1029/2003JE002072, 2003.
+            </reference_text>
+            <description>reference.GARVINETAL2003</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Golombek, M.P., et al., Selection of the Mars Exploration Rover landing sites,
+                   J. Geophys. Res., 108(E12), 8072, doi:10.1029/2003JE002074, 2003.
+            </reference_text>
+            <description>reference.GOLOMBEKETAL2003</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Greeley, R., et al., Columbia Hills, Mars: Aeolian features seen from the
+                   ground and orbit, J. Geophys. Res., 113, E06S06, doi:10.1029/2007JE002971, 2008.
+            </reference_text>
+            <description>reference.GREELEYETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Knoll, A.H., et al., Veneers, rinds, and fracture fills: Relatively late
+                   alteration of sedimentary rocks at Meridiani Planum, Mars, J. Geophys. Res.,
+                   113, E06S16, doi:10.1029/2007JE002949, 2008.
+            </reference_text>
+            <description>reference.KNOLLETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   McCoy, T.J., et al., Structure, stratigraphy, and origin of Husband Hill,
+                   Columbia Hills, Gusev Crater, Mars, J. Geophys. Res., 113, E06S03,
+                   doi:10.1029/2007JE003041, 2008.
+            </reference_text>
+            <description>reference.MCCOYETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   McSween, H.Y., et al., Mineralogy of volcanic rocks in Gusev Crater, Mars:
+                   Reconciling Moessbauer, Alpha Particle X-Ray Spectrometer, and Miniature
+                   Thermal Emission Spectrometer spectra, J. Geophys. Res., 113, E06S04,
+                   doi:10.1029/2007JE002970, 2008.
+            </reference_text>
+            <description>reference.MCSWEENETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Rogers, A.D., and O. Aharonson, Mineralogical composition of sands in Meridiani
+                   Planum determined from Mars Exploration Rover data and comparison to orbital
+                   measurements, J. Geophys. Res., 113, E06S14, doi:10.1029/2007JE002995, 2008.
+            </reference_text>
+            <description>reference.ROGERS-AHARONSON2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Schmidt, M.E., et al., Hydrothermal origin of halogens at Home Plate, Gusev
+                   Crater, J. Geophys. Res., 113, E06S12, doi:10.1029/2007JE003027, 2008.
+            </reference_text>
+            <description>reference.SCHMIDTETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Schroeder, C., et al., Meteorites on Mars observed with the Mars Exploration
+                   Rovers, J. Geophys. Res., 113, E06S22, doi:10.1029/2007JE002990, 2008.
+            </reference_text>
+            <description>reference.SCHROEDERETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Seidelmann, P.K., V.K. Abalakin, M. Bursa, M.E. Davies, C. de Bergh, J.H.
+                   Lieske, J. Oberst, J.L. Simon, E.M. Standish, P. Stooke, and P.C. Thomas,
+                   Report of the IAU/IAG working group on cartographic coordinates and rotational
+                   elements of the planets and satellites: 2000, Celestial Mechanics and Dynamical
+                   Astronomy, 82, 83-111, 2002.
+            </reference_text>
+            <description>reference.SEIDELMANNETAL2002</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Soderblom, J.M., J.F. Bell III, J.R. Johnson, J. Joseph, and M.J. Wolff (2008)
+                   Mars Exploration Rover Navigation Camera (Navcam) in-flight calibration, J.
+                   Geophys. Res., 113, E06S19, doi:10.1029/2007JE003003.
+            </reference_text>
+            <description>reference.SODERBLOMETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sullivan, R., et al., Wind-driven particle mobility on Mars: Insights from Mars
+                   Exploration Rover observations at &apos;El Dorado&apos; and surroundings at Gusev Crater,
+                   J. Geophys. Res., 113, E06S07, doi:10.1029/2008JE003101, 2008.
+            </reference_text>
+            <description>reference.SULLIVANETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Yen, A.S., et al., Hydrothermal processes at Gusev Crater: An evaluation of
+                   Paso Robles class soils, J. Geophys. Res., 113, E06S10,
+                   doi:10.1029/2007JE002978, 2008.
+            </reference_text>
+            <description>reference.YENETAL2008</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>MARS EXPLORATION ROVER</name>
+        <type>Mission</type>
+        <start_date>2000-05-08</start_date>
+        <stop_date nilReason="unknown" xsi:nil="true"></stop_date>
+
+        <description>
+ 
+  Mission Overview
+  ================
+    The Mars Exploration Rover (MER) mission consisted of two
+    spacecraft, MER-2 hardware which included the Spirit rover,
+    and MER-1 hardware, which included the Opportunity rover
+    [CRISPETAL2003, GARVINETAL2003].  Spirit was launched June 10,
+    2003, on a Delta II 7925 launch vehicle.  Opportunity followed
+    3 weeks later, launching July 7, 2003 on a Delta II 7925 Heavy
+    vehicle.  Each spacecraft followed a Type I trajectory from
+    Earth to Mars, with Spirit landing in Gusev Crater on January 4,
+    2004 UTC and Opportunity landing in Meridiani Planum on January
+    25, 2004 UTC.  The Earth-Mars range was 170.2 million km at the
+    time of Spirit&apos;s landing and 198.7 million km at the time of
+    Opportunity&apos;s landing.
+ 
+    The spacecraft design was based on the Mars Pathfinder configuration
+    for cruise and entry, descent, and landing.  Each MER spacecraft
+    contained a rover which was carried to Mars inside a lander.  The
+    lander was packed inside a heatshield and backshell attached to a
+    cruise stage.  At Mars arrival, the cruise stage was jettisoned from
+    the entry capsule.  The entry capsule entered the Martian atmosphere
+    directly from the Earth-Mars transfer trajectory at a velocity of
+    5.4 km/s.  The lander velocity was reduced from this high entry
+    speed by the application of aerodynamic braking by a parachute and
+    aeroshell, propulsive deceleration using small solid rocket motors,
+    and inflated airbags to reduce the remaining vertical and horizontal
+    velocity components at surface impact (involving significant
+    bouncing).  Key engineering status information was collected and
+    returned in near real time to the extent possible during entry and
+    descent.  In addition, all engineering data obtained during the
+    critical entry, descent, and landing phase were recorded for later
+    playback during the first week of landed operations.
+ 
+    The two landing sites were selected because of their science
+    potential and safety characteristics [GOLOMBEKETAL2003].  The two
+    sites exhibited different types of evidence suggesting past
+    liquid-water activity. For Gusev, the evidence was primarily
+    geomorphologic (possible crater lake) and for Meridiani, it was
+    primarily mineralogic (gray coarse-grained hematite).  The
+    navigation team determined the location of the landing sites in
+    inertial space, by fitting direct-to-Earth (DTE) two-way X-band
+    Doppler and two passes of UHF two-way Doppler between each rover
+    and Mars Odyssey.  Translated to the MOLA IAU 2000 frame
+    [SEIDELMANNETAL2002] these inertial positions are 14.571892
+    degrees S latitude and 175.47848 degrees E longitude for Spirit,
+    and 1.948282 degrees S latitude, 354.47417 degrees E longitude for
+    Opportunity.  The location of the landing sites, with respect to
+    surface features in maps produced in the MOLA IAU 2000 cartographic
+    reference frame, are 14.5692 degrees S latitude, 175.4729 degrees
+    E longitude for Spirit and 1.9462 degrees S latitude, 354.4734
+    degrees E longitude for Opportunity.
+ 
+    Each of the identical rovers was equipped with a science payload
+    consisting of two remote sensing instruments (Pancam and the
+    Miniature Thermal Emission Spectrometer) at the top of a rotatable
+    mast to survey the surrounding terrain, a robotic arm capable of
+    placing three instruments (Alpha Particle X-Ray Spectrometer,
+    Moessbauer Spectrometer, and Microscopic Imager) and a rock
+    abrasion tool (RAT) on selected rock and soil samples, and
+    several on-board magnets and calibration targets.  Engineering
+    sensors and other components on the rovers useful for science
+    investigations included stereo navigation cameras (Navcam) on the
+    top of the mast, stereo hazard cameras in front and rear under the
+    solar panels (Hazcams), wheel motors, the wheels themselves
+    for digging, gyros, accelerometers, and reference solar cells.
+    Mission operations allowed commanding of the rover each martian day,
+    or sol, on the basis of the previous sol&apos;s data.  Over the 90-sol
+    prime mission lifetime and several mission extensions, the
+    rovers carried out field geology investigations, exploration,
+    and atmospheric characterization.
+ 
+    Many extended missions followed the 90-sol primary mission.
+    Brief summaries of the activities in each mission phase are
+    described below. The mission has been described in many papers,
+    including a pre-landing set of papers in the December 2003 special
+    section of Journal of Geophysical Research - Planets, and post-
+    landing special issues of Science in 2004 for Spirit rover (volume
+    305, number 5685) and Opportunity rover (volume 306, number 5702).
+    Additional special issues were published in 2005 for Earth and
+    Planetary Science Letters (volume 240, number 1) and Nature (volume
+    436, number 7047).  In 2006, the science team published several
+    papers on the Spirit rover in Journal of Geophysical Research -
+    Planets (volume 111, number E02). Another JGR special issue was
+    published in 2008 (volume 113, number E06), and a 2010 update is
+    in press as of this writing.
+ 
+ 
+  Mission Phases
+  ==============
+ 
+    DEVELOPMENT
+    -----------
+      The development phase began with the start of mission funding in
+      May, 2000. During this phase, the science and technology
+      requirements were developed and analyzed, and the spacecraft and
+      mission were designed.  The instruments and spacecraft were
+      fabricated and tested before delivery to Kennedy Space Center.
+      The design of the spacecraft trajectory and mission operations
+      were also determined during this period.
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2000-05-08
+      Mission Phase Stop Time : 2003-06-10
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2000-05-08
+      Mission Phase Stop Time : 2003-07-07
+      Spacecraft Operations Type : LANDER
+ 
+ 
+    LAUNCH
+    ------
+      The launch phase for each vehicle began at the final countdown
+      through spacecraft separation from the upper stage.  Spirit
+      (MER-2 hardware) was launched June 10, 2003, at 1759 UTC
+      (1359 EDT) from launch complex 17A at Cape Canaveral Air Force
+      Station, Florida.  The launch azimuth was 93 degrees.  The boost
+      portion of the launch vehicle trajectory took approximately 10
+      minutes, and was followed by a short coast phase in a parking
+      orbit for approximately 15 minutes.  After third stage burnout,
+      the upper stage despun the stack using a yo-yo despin system.
+      Separation of the third stage occurred approximately 36 minutes
+      after launch.
+ 
+      Opportunity (MER-1 hardware) was launched July 8, 2003, at
+      0318 UTC (July 7, 2003, 2318 EDT) from launch complex 17B at
+      Cape Canaveral Air Force Station, Florida. The launch azimuth
+      was 99 degrees.  The boost portion of the launch vehicle
+      trajectory took approximately 9 minutes, and was followed by
+      a long coast phase of approximately 60 minutes in a parking
+      orbit.  After third stage burnout, the upper stage despun the
+      stack using a yo-yo despin system.  Separation of the third
+      stage occurred approximately 83 minutes after launch.
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2003-06-10
+      Mission Phase Stop Time : 2003-06-10
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2003-07-07
+      Mission Phase Stop Time : 2003-07-07
+      Spacecraft Operations Type : LANDER
+ 
+ 
+    CRUISE
+    ------
+      The cruise phase for each spacecraft began soon after separation
+      from the third stage and ended 45 days before entry into the Mars
+      atmosphere. The duration of cruise phase was 162 days for Spirit
+      and 156 days for Opportunity.  The major activities during this
+      phase included: checkout and maintenance of the spacecraft in its
+      flight configuration, monitoring, characterization and calibration
+      of the spacecraft and payload systems, software parameter updates,
+      attitude correction turns, navigation activities for determining
+      and correcting the vehicle&apos;s flight path, and preparation for EDL
+      and surface operations, including EDL X-band communication tests.
+      No science investigations were conducted during cruise, except for
+      instrument health checkouts.
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2003-06-10
+      Mission Phase Stop Time : 2003-11-19
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2003-07-07
+      Mission Phase Stop Time : 2003-12-10
+      Spacecraft Operations Type : LANDER
+ 
+ 
+    APPROACH
+    --------
+      The approach phase was dedicated to the activities necessary to
+      ensure a successful Entry, Descent, and Landing for each
+      spacecraft, beginning 45 days before entry into the Martian
+      atmosphere and ending at the atmospheric entry interface point
+      3522.2 km from the center of Mars.  The main activities during
+      this phase were: acquisition and processing of navigation data to
+      support development of the final trajectory correction maneuvers
+      and activities leading up to the final turn to the entry attitude
+      70 minutes before entry and separation from the cruise stage 15
+      minutes before entry.
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2003-11-19
+      Mission Phase Stop Time : 2004-01-03
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2003-12-10
+      Mission Phase Stop Time : 2004-01-24
+      Spacecraft Operations Type : LANDER
+ 
+ 
+    ENTRY, DESCENT, AND LANDING
+    ---------------------------
+      The entry, descent, and landing (EDL) phase for each spacecraft
+      started six minutes prior to landing.  Approximately 20 seconds
+      after parachute deploy, the heatshield separated from each
+      spacecraft, followed approximately 10 seconds later by lander
+      separation on a bridle.  This was followed by radar acquisition
+      of the ground, acquisition of three images by the DIMES (Descent
+      Image Motion Estimation System), airbag inflation, RAD/TIRS
+      rocket firing, bridle cut (6.5 m above the surface for Spirit,
+      8.5 m for Opportunity), and landing.  The landing (first impact)
+      occurred at 04:26 UTC on January 4, 2004 for Spirit (1425 Mars
+      local solar time, solar longitude Ls = 327.66) and 04:55 UTC on
+      January 25, 2004 for Opportunity (1323 Mars local solar time,
+      solar longitude Ls = 339.10).  Spirit bounced 28 times
+      before coming to rest on the base petal of the lander.
+      After retraction of the airbags and opening of the petals, the
+      base petal was oriented at a tilt of 2 degrees.  Opportunity
+      bounced 26 times before coming to rest on a side petal (+Y petal)
+      of the lander. After retraction of the airbags and opening of
+      the petals, the base petal was oriented at a tilt of 5 degrees,
+      with the base petal down on the surface.  The entry, descent,
+      and landing phase for each spacecraft was completed once the
+      rover solar panels were opened and the lander was on the
+      surface of Mars in a thermally stable, positive energy balance,
+      in a commandable configuration.
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2004-01-04
+      Mission Phase Stop Time : 2004-01-04
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2004-01-25
+      Mission Phase Stop Time : 2004-01-25
+      Spacecraft Operations Type : LANDER
+ 
+ 
+    POST-LANDING THROUGH EGRESS
+    ---------------------------
+      The post-landing through egress phase of each mission began after
+      the lander petals and rover solar panels had been opened.  This
+      phase ended 12 Martian sols (each sol being 24.66 hours) after
+      landing for Spirit, and 7 Martian sols for Opportunity, when
+      each rover drove off of the lander directly onto the surface of
+      Mars.  Data confirming the egress event for Spirit were received
+      at 01:53 PST January 15, 2004 (09:53, January 15, UTC).  Engineers
+      received confirmation that Opportunity&apos;s six wheels successfully
+      rolled off the lander and onto martian soil at 03:01 PST,
+      January 31, 2004 (11:01 January 31, UTC).
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2004-01-04
+      Mission Phase Stop Time : 2004-01-15
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2004-01-25
+      Mission Phase Stop Time : 2004-01-31
+      Spacecraft Operations Type : LANDER
+ 
+ 
+    PRIMARY MISSION
+    ---------------
+      Spirit and Opportunity&apos;s primary missions each lasted for 90
+      Martian sols from time of landing.  During this phase and the
+      extended mission phase, a wealth of science and engineering
+      information was collected from the rover and instrument payload.
+      During Spirit&apos;s mission, the rover traveled in a primarily
+      northeast direction from its landing site to the 210-meter
+      diameter crater informally called &apos;Bonneville,&apos; and then headed
+      southeast towards the hills nicknamed &apos;Columbia Hills,&apos; covering
+      a distance travelled of 635 meters.  During that time, Spirit
+      acquired 23810 Pancam images, 2886 Navcam images, 3980 Hazcam
+      images, and 1872 Microscopic Imager images (these image counts
+      include full frames, subsampled frames, downsampled frames, and
+      thumbnails). During Opportunity&apos;s prime mission, the rover
+      spent the first two months investigating the surrounding area
+      where it landed, which was a 20-meter diameter crater nicknamed
+      &apos;Eagle.&apos; After the study of &apos;Eagle,&apos; it headed east towards the
+      130-meter diameter crater nicknamed &apos;Endurance,&apos; covering a
+      distance travelled of 772 meters.  During the prime mission,
+      Opportunity acquired 22503 Pancam images, 2343 Navcam images,
+      4421 Hazcam images, and 1395 Microscopic Imager images.
+ 
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2004-01-11
+      Mission Phase Stop Time : 2004-04-06
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2004-02-01
+      Mission Phase Stop Time : 2004-04-27
+      Spacecraft Operations Type : LANDER
+ 
+ 
+    EXTENDED MISSION 1
+    ------------------
+      The rovers&apos; extended missions have not yet ended.  Objectives
+      for each of the extended missions are described in the next
+      section.
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2004-04-06
+      Sol Start Time: 91
+      Mission Phase Stop Time : 2004-09-30
+      Sol Stop Time: 264
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2004-04-27
+      Sol Start Time: 91
+      Mission Phase Stop Time : 2004-09-30
+      Sol Stop Time: 243
+      Spacecraft Operations Type : LANDER
+ 
+    EXTENDED MISSION 2
+    ------------------
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2004-10-01
+      Sol Start Time: 265
+      Mission Phase Stop Time : 2005-03-31
+      Sol Stop Time: 441
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2004-10-01
+      Sol Start Time: 244
+      Mission Phase Stop Time : 2005-03-31
+      Sol Stop Time: 420
+      Spacecraft Operations Type : LANDER
+ 
+    EXTENDED MISSION 3
+    ------------------
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2005-04-01
+      Sol Start Time: 442
+      Mission Phase Stop Time : 2006-09-30
+      Sol Stop Time: 974
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2005-04-01
+      Sol Start Time: 421
+      Mission Phase Stop Time : 2006-09-30
+      Sol Stop Time: 954
+      Spacecraft Operations Type : LANDER
+ 
+    EXTENDED MISSION 4
+    ------------------
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2006-10-01
+      Sol Start Time: 975
+      Mission Phase Stop Time : 2007-09-28
+      Sol Stop Time: 1328
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2006-10-01
+      Sol Start Time: 955
+      Mission Phase Stop Time : 2007-09-28
+      Sol Stop Time: 1307
+      Spacecraft Operations Type : LANDER
+ 
+    EXTENDED MISSION 5
+    ------------------
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2007-09-29
+      Sol Start Time: 1329
+      Mission Phase Stop Time : 2008-09-28
+      Sol Stop Time: 1684
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2007-09-29
+      Sol Start Time: 1308
+      Mission Phase Stop Time : 2008-09-28
+      Sol Stop Time: 1663
+      Spacecraft Operations Type : LANDER
+ 
+    EXTENDED MISSION 6
+    ------------------
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2008-09-29
+      Sol Start Time: 1685
+      Mission Phase Stop Time : 2010-09-26
+      Sol Stop Time: 2393
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2008-09-29
+      Sol Start Time: 1664
+      Mission Phase Stop Time : 2010-09-26
+      Sol Stop Time: 2372
+      Spacecraft Operations Type : LANDER
+ 
+    EXTENDED MISSION 7
+    ------------------
+ 
+      Spacecraft Id : MER2
+      Target Name : MARS
+      Mission Phase Start Time : 2010-09-27
+      Sol Start Time: 2394
+      Mission Phase Stop Time : 2012-09-30
+      Sol Stop Time: 3108
+      Spacecraft Operations Type : LANDER
+ 
+      Spacecraft Id : MER1
+      Target Name : MARS
+      Mission Phase Start Time : 2010-09-27
+      Sol Start Time: 2373
+      Mission Phase Stop Time : 2012-09-30
+      Sol Stop Time: 3087
+      Spacecraft Operations Type : LANDER
+        </description>
+    </Investigation>
+</Product_Context>

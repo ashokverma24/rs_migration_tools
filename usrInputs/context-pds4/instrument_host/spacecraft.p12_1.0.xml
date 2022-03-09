@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.p12</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PIONEER</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.pioneer::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.pre-magellan::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:orad.p12::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:rss.p12::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.venus::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Colin, L., The Pioneer-Venus program. J. Geophys. Res. 85, 7575-7598, 1980.
+            </reference_text>
+            <description>reference.COLIN1980</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Fimmel, R.O., L. Colin, and E. Burgess, Pioneer
+                   Venus, NASA SP-461, Scientific and Technical
+                   Information Branch, National Aeronautics and Space
+                   Administration, Washington, D.C., 1983.
+            </reference_text>
+            <description>reference.FIMMELETAL1983</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>PIONEER</name>
+        <type>Spacecraft</type>
+        <naif_host_id>P12</naif_host_id>
+
+        <description>
+ 
+ 
+ 
+    INSTRUMENT HOST OVERVIEW
+    ========================
+      The main body of the spacecraft is a flat cylinder 2.5 meters
+      in diameter and 1.2 meters high.  In the upper end of this
+      cylinder there is a circular equipment shelf with an area of
+      4.37 square meters on which all the scientific instruments and
+      electronic subsystems are mounted.  The shelf is mounted on the
+      forward end of a thrust tube that connects the spacecraft to
+      the launch vehicle.  Below the shelf, 15 thermal louvers
+      control heat radiation from an equipment compartment located
+      between the shelf and the top of the spacecraft.  A cylindrical
+      solar array attached to the shelf by 24 brackets forms the
+      circumference of the flat cylinder of the spacecraft.  On top
+      of the spacecraft, a 1.09 meter diameter, despun, high-gain,
+      parabolic dish antenna is mounted on a mast so that its line of
+      sight clears equipment mounted outside the spacecraft.  The
+      despun design allows the antenna to be mechanically directed to
+      Earth from the spinning spacecraft.  The antenna operates at S-
+      and X-bands.  The spacecraft also carries a solid propellant
+      rocket motor.  Including the antenna mast, the Orbiter is
+      almost 4.5 meters high, and it weighed 553 kg when launched.
+      The launch weight included 45 kg of scientific instruments and
+      179 kg of rocket propellant.
+ 
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

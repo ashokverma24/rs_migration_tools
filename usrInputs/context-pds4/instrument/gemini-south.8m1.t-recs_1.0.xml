@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:gemini-south.8m1.t-recs</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Thermal-Region Camera Spectrograph (T-ReCS)</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_title>T-ReCS</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-10-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial creation of the context product. Information from website: https://www.gemini.edu/sciops/instruments/trecs
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:gemini-south.8m1</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1117/12.856627</doi>
+            <reference_text>Li, D. et al., (2010) Characterization of the mid-IR image quality at Gemini South, Proc. SPIE 7737,
+            Observatory Operations: Strategies, Processes, and Systems III, 77372F (29 July 2010)</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Thermal-Region Camera Spectrograph (T-ReCS)</name>
+        <type>Imager</type>
+        <subtype>Mid-Infrared</subtype>
+        <description>
+            T-ReCS (Thermal-Region Camera Spectrograph) is a mid-infrared imager and long-slit spectrograph built by the 
+            University of Florida for Gemini South. In 2003B, the imaging and low resolution spectroscopic modes of the 
+            instrument were commissioned. The commissioning of the medium resolution N-band spectroscopy mode (a.k.a. 
+            "Hi-Res" mode) followered in 2004B. These modes are now available for general use.
+            
+            The instrument design is intended to be relatively simple and optimized for low thermal background, high throughput,
+            and excellent image quality to take advantage of the high thermal-infrared performance of the Gemini telescopes. 
+            T-ReCS, when combined with Gemini's fast tip/tilt compensating secondary mirror, will yield nearly diffraction-limited 
+            10 µm images under most natural seeing conditions.
+            
+            The Instrument Scientist for T-ReCS is James Radomski.
+            
+            Information from Gemini website: https://www.gemini.edu/sciops/instruments/trecs
+        </description>
+    </Instrument>
+</Product_Context>

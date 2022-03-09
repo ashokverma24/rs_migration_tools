@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:flow</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>FLOW</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-02-05</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>FLOW</name>
+        <abstract_desc>Field of visualizer based on the SPICE Toolkit</abstract_desc>
+        <version_id>1.4</version_id>
+        <url>http://darts.isas.jaxa.jp/planet/tools/flow/index.html</url>
+        <release_date>2017-08-13</release_date>
+        <service_type>Tool</service_type>
+        <interface_type>Command-Line</interface_type>
+        <category>Visualization</category>
+        <software_language>English</software_language>
+        <supported_operating_system_note>Linux, Mac, Windows</supported_operating_system_note>
+        <description>"FLOW" is a Field Of View (FOV) visualizer for SPICE users, which creates an FOV image in JPEG/PNG/FITS formats using SPICE kernels.
+"FLOW" has the following features:
+- Draw planetary bodies (texture images or wire frame)
+- Draw planetary rings
+- Draw shape models (format: STL or SPICE DSK Type 2)
+- Draw stars
+- Support polygonal FOV
+- Support push broom scanner
+- Insert WCS keywords into FITS header</description>
+    </Service>
+    <!--
+Submitter Information
+Submitter Name:        Yukio Yamamoto
+Submitter Institution: Japan Aerospace Exploration Agency
+Submitter Email:       yukio@planeta.sci.isas.jaxa.jp
+-->
+</Product_Service>

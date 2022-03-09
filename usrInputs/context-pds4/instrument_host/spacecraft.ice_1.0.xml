@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.ice</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ICE</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.international_cometary_explorer::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:epas.ice::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:ici.ice::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:mag.ice::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:plawav.ice::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:radwav.ice::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:swp.ice::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:uleca.ice::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:comet.giacobini-zinner::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <External_Reference>
+            <reference_text>
+                   Reinhard, R and B. Battrick (eds), &apos;Space Missions to Halley&apos;s Comet&apos;, European
+                   Space Agency ESA SP-1066, ESA Pub Div, Moordwijk, Netherlands, 1986.
+            </reference_text>
+            <description>reference.ESA-SP1066</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>ICE</name>
+        <type>Spacecraft</type>
+        <naif_host_id>ICE</naif_host_id>
+
+        <description>
+ 
+    Instrument Host Overview
+    ========================
+ 
+      The third International Sun-Earth Explorer (ISEE-3)
+      was launched on 12 August 1978 as one element of a
+      three-spacecraft mission that began in 1977.  The
+      original purpose was to study the solar-wind
+      interaction with the Earth&apos;s magnetosphere.  The
+      spacecraft was maintained in a &apos;halo orbit&apos; about
+      the libration point, L1, where it monitored the
+      solar-wind input.  It completed four years of
+      uninterrupted operation at that location.  Several
+      opportunities to use ISEE-3 in an extended mission
+      phase were avallable.  Among the most attractive
+      scientifically were exploration of the distant
+      geotail and an intercept of periodic Comet
+      Giacobini-Zinner.  Either or both of these options
+      were available.  The comet option was constrained
+      to an intercept of Giacobini-Zinner in September
+      1985; specificaily, an intercept of Comet Halley
+      was not possible.  The manoeuvres necessary to
+      achieve the trajectory that would send the
+      spacecraft into the distant geomagnetic tail and to
+      an intercept of Comet Giacobini-Zinner are not
+      simple.  They are the brainchild of R.  Farquhar,
+      Flight Director for the Project.  Basically, five
+      gravitationai encounters with the Moon were
+      required to change the spacecraft&apos;s orbit.  The
+      last encounter was on 22 December 1983 wh en the
+      spacecraft  made a close swingbyu passing oniy 120
+      km above the lunar surface.  This manoeuvre
+      effectively &apos;launched&apos; the spacecraft from the
+      Earth-Moon system.  At the same time, the
+      spacecraft was renamed the Internationai Cometary
+      Explorer (ICE) to correspond to its new mission.
+ 
+      The spacecraft is a developed version of the
+      earlier Interplanetary Monitoring Platform (IMP).
+      The spacecraft body is a 16-sided cylinder, 1.74 m
+      in diameter and 1.6 m high.  Solar arrays mounted
+      on the faces of the cylinder provide 160 W of
+      primary power at 28 V.  A distinctive feature is a
+      superstructure, or tower, which elevates the
+      telemetry antenna above the spacecraft body and
+      provides a clear field of view for several
+      cosmic-ray detectors.  The spacecraft body supports
+      a total of ten appendages.  Two equatorial
+      experiment booms (3 m long) support the
+      magnetometer and plasma-wave sensors.  Four wire
+      antennas (each 49 m long) are deployed in the spin
+      plane as part of the radio-wave and plasma-wave
+      investigations.  Two axial antennas (7 m each)
+      extend above and below the spacecraft parallel to
+      the spin axis to render the radio-wave measurements
+      three dimensional.  Finally, two short inertial
+      booms provide stability.  The radio system consists
+      of two redundant S-band transponders operating at
+      2217 and 2270 MHz.  There are two low-gain antennas
+      and a telemetry antenna having medium gain (7 dB)
+      and a fan beam of +/-6deg.  The radiated power is
+      5W.  The standard telemetry rate in halo orbit was
+      2048 and 512 bit/s.  The spacecraft is
+      spin-stabilised at 19.75 rpm.  Attitude information
+      and control is provided by two fine Sun sensors and
+      a panoramic attitude sensor.  The spin axis is
+      maintained perpendicular to the ecliptic plane to
+      within &lt;ldeg.  Propulsion and attitude control use
+      monopropellant hydrazine.  The system contains
+      eight propellant tanks and 12 thrusters, including
+      redundancy.  A large amount of pro- pellant was
+      carried at launch (94 kg) as a safeguard against
+      large errors associated with the launch vehicle.
+      As a result of a nominal launch, gas usage has been
+      much lower than anticipated, resulting in a
+      substantial amount of excess gas still being
+      available.
+ 
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.viking</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>VIKING</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>VIKING75</alternate_id>
+                <alternate_title>VIKING75</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vl1::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vl2::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vo1::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vo2::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.mars::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.deimos::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.phobos::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.star::1.0</lidvid_reference> -->
+<!--            <reference_type>investigation_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:sun.sun::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Moore, H.J., R.E. Hutton, G.D. Clow, and C.R. Spitzer, Physical properties
+                   of the surface materials at the Viking landings sites on Mars, USGS
+                   Professional Paper 1389, 1987.
+            </reference_text>
+            <description>reference.MOOREETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Snyder, C.W., and I.V. Moroz, Spacecraft Exploration of Mars, in Mars,
+                   Kieffer et al., eds., Univ. of Arizona Press, Tucson, 1992.
+            </reference_text>
+            <description>reference.SNYDER-MOROZ1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Snyder, C.W., &apos;The Missions of the Viking Orbiters&apos;, Journal of Geophysical
+                   Research, vol. 82, p. 3971, 1977.
+            </reference_text>
+            <description>reference.SNYDER1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Snyder, C.W., &apos;The Extended Mission of Viking&apos;, Journal of Geophysical
+                   Research, vol. 84, p. 7917, 1979.
+            </reference_text>
+            <description>reference.SNYDER1979</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Soffen, G.A., &apos;The Viking Project&apos;, Journal of Geophysical Research, vol. 82,
+                   p. 3959, 1977.
+            </reference_text>
+            <description>reference.SOFFEN1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Toulmin, P., A.K. Baird, B.C. Clark, K. Keil, H.J. Rose, R.P. Christian,
+                   P.H. Evans, and W.C. Kelliher, Geochemical and Mineralogical
+                   Interpretation of the Viking Inorganic Chemical Results, J. Geophys. Res.,
+                   82, 4625-4634, 1977.
+            </reference_text>
+            <description>reference.TOULMINETAL1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Yoder, C.F., and E.M. Standish, Martian Precession and Rotation from Viking
+                   Lander Range Data, J. Geophys. Res., 102, 4065-4080, 1997
+            </reference_text>
+            <description>reference.YODER-STANDISH1997</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>VIKING</name>
+        <type>Mission</type>
+        <start_date>1975-08-20</start_date>
+        <stop_date>1983-02-01</stop_date>
+
+        <description>
+ 
+    Mission Overview
+    ================
+      The Viking mission to Mars consisted of four spacecraft: the
+      two orbiters VO1 and VO2, and the landers VL1 and VL2
+      [SOFFEN1977].  During cruise to Mars the landers were attached
+      to the orbiters; the combined spacecraft were then known as
+      Viking 1 and 2.  The role of the orbiters was to transport the
+      landers to Mars, to carry reconnaissance instruments for
+      certifying the landing sites, to act as relay stations for
+      lander data, and to perform their own scientific
+      investigations.  The initial orbit periapses were placed over
+      the candidate landing sites to allow for maximum viewing
+      resolution and relay of the lander data.  After the primary
+      lander missions were completed, the orbiters&apos; orbits were
+      allowed to drift so that the entire planetary surface could be
+      systematically mapped by the three remote sensing experiments.
+ 
+      The Viking 1 spacecraft was launched August 20, 1975, and
+      arrived at Mars on June 19, 1976.  Lander 1 was deployed to the
+      Mars surface on July 20, 1976.  The VO1 orbital inclination of
+      38-39 degrees was chosen to optimize communication with  VL1.
+      Viking 2 was launched September 9, 1975 and arrived at Mars
+      August 7, 1976.  VL2 landed on September 3, 1976, at a more
+      northerly site than VL1.  The VO2 orbit was correspondingly
+      more inclined than VO1; initially 55 degrees, it was later
+      adjusted to 80 degrees, providing particularly good coverage
+      of polar regions.  The areocentric locations of VL1 and VL2
+      have since been determined to be (22.270N, 48.264W) and
+      (47.669N, 226.032W), respectively [YODER&amp;STANDISH1997].
+ 
+ 
+    Mission Phases
+    ==============
+      The timeline for the Viking Mission is divided into a number of
+      mission phases in terms of the types of observations and level
+      of activity.  The references [SNYDER1977], [SNYDER1979],
+      [MOOREETAL1987], and [SNYDER&amp;MOROZ1992] provide detailed
+      descriptions of these mission phases.  A summary of the mission
+      phases and the relevant dates are described below.  Before Mars
+      encounter and orbit insertion the orbiter and lander spacecraft
+      are considered as one spacecraft with the same mission phases.
+      The primary missions for all four spacecraft (VL1, VO1, VL2,
+      and VO2) are listed separately because each has a different
+      starting date.  All mission phases after the primary mission
+      are listed only once because all four spacecraft operated
+      together.
+ 
+ 
+      VIKING 1 MARS LAUNCH
+      --------------------
+        The Viking 1 spacecraft was launched on August 20, 1975 on a
+        Titan Centaur 3 booster from Cape Canaveral, Florida.
+ 
+         Spacecraft Id:                 : VO1, VL1
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1975-08-20
+         Mission Phase Stop Time        : 1975-08-20
+         Spacecraft Operations Type     : ORBITER, LANDER
+ 
+ 
+      VIKING 1 MARS CRUISE
+      --------------------
+        The Viking 1 spacecraft, consisting of the VO1 orbiter and
+        VL1 lander, cruised to Mars for about 10 months, during which
+        time the spacecraft was checked periodically.
+ 
+         Spacecraft Id:                 : VO1, VL1
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1975-08-20
+         Mission Phase Stop Time        : 1976-06-19
+         Spacecraft Operations Type     : ORBITER, LANDER
+ 
+ 
+      VIKING 2 MARS LAUNCH
+      --------------------
+        The Viking 2 spacecraft was launched on September 9, 1975 on
+        a Titan Centaur 3 booster from Cape Canaveral, Florida.
+ 
+         Spacecraft Id:                 : VO2, VL2
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1975-09-09
+         Mission Phase Stop Time        : 1975-09-09
+         Spacecraft Operations Type     : ORBITER, LANDER
+ 
+ 
+      VIKING 2 MARS CRUISE
+      --------------------
+        The Viking 2 spacecraft, consisting of the VO2 orbiter and
+        VL2 lander, cruised to Mars for about 11 months, during which
+        time the spacecraft was checked periodically.
+ 
+         Spacecraft Id:                 : VO2, VL2
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1975-09-09
+         Mission Phase Stop Time        : 1976-08-07
+         Spacecraft Operations Type     : ORBITER, LANDER
+ 
+ 
+      VIKING ORBITER 1 PRIMARY MISSION
+      --------------------------------
+        The Viking Orbiter 1 spacecraft entered Mars orbit on June
+        19, 1976.  Operations commenced by supporting the selection
+        of a landing site for VL1.  Throughout the Primary Mission,
+        the VO1 spacecraft supported communications with the landers
+        and made observations of the Martian surface and atmosphere.
+        The Primary Mission ended at the start of the solar
+        conjunction in November, 1976.
+ 
+         Spacecraft Id:                 : VO1
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1976-06-19
+         Mission Phase Stop Time        : 1976-11-15
+         Spacecraft Operations Type     : ORBITER
+ 
+ 
+      VIKING LANDER 1 PRIMARY MISSION
+      -------------------------------
+        The Viking Lander 1 spacecraft separated from the VO1 orbiter
+        and descended to the Martian surface on July 20, 1976.  The
+        Primary Mission focused on the collection and analysis of
+        soil samples and the characterization of the landing site and
+        atmosphere.  The Primary Mission ended at the start of the
+        solar conjunction in November, 1976.
+ 
+         Spacecraft Id:                 : VL1
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1976-07-20
+         Mission Phase Stop Time        : 1976-11-15
+         Spacecraft Operations Type     : LANDER
+ 
+ 
+      VIKING ORBITER 2 PRIMARY MISSION
+      --------------------------------
+        The Viking Orbiter 2 spacecraft entered Mars orbit on August
+        7, 1976.  Operations commenced by supporting the selection of
+        a landing site for VL2.  Throughout the Primary Mission, the
+        VO2 spacecraft supported communications with the landers and
+        made observations of the Martian surface and atmosphere.  The
+        Primary Mission ended at the start of the solar conjunction
+        in November, 1976.
+ 
+         Spacecraft Id:                 : VO2
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1976-08-07
+         Mission Phase Stop Time        : 1976-11-15
+         Spacecraft Operations Type     : ORBITER
+ 
+ 
+      VIKING LANDER 2 PRIMARY MISSION
+      -------------------------------
+        The Viking Lander 2 spacecraft separated from the VO2 orbiter
+        and descended to the Martian surface on September 3, 1976.
+        The Primary Mission focused on the collection and analysis of
+        soil samples and the characterization of the landing site and
+        atmosphere.  The Primary Mission ended at the start of the
+        solar conjunction in November, 1976.
+ 
+         Spacecraft Id:                 : VL2
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1976-09-03
+         Mission Phase Stop Time        : 1976-11-15
+         Spacecraft Operations Type     : LANDER
+ 
+ 
+      VIKING EXTENDED MISSION
+      -----------------------
+        The Viking Extended Mission began after solar conjunction.
+        The two orbiters continued to observe the surface and
+        atmosphere of Mars.  The two lander spacecraft analyzed
+        additional soil samples and dug three deep holes in the
+        surface.  All four spacecraft monitored the planet through
+        the cycle of seasons.  During the winter season, the landers
+        operated in an automatic manner designed to allow the
+        spacecraft to survive the cold temperatures and still return
+        some data.
+ 
+         Spacecraft Id:                 : VO1, VL1, VO2, VL2
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1976-11-15
+         Mission Phase Stop Time        : 1978-05-31
+         Spacecraft Operations Type     : ORBITER, LANDER
+ 
+ 
+      VIKING CONTINUATION MISSION
+      ---------------------------
+        Primary objectives of the Continuation Mission were to make
+        orbital observations at times of the Mars year that were
+        missed due to landing site selection and solar conjunction
+        and to collect high resolution surface images when the
+        atmosphere was clear.  A radio science solar conjunction
+        relativity experiment was also done during the Continuation
+        Mission.  Lander activities consisted of measurements by the
+        imaging, meteorology, and XRFS instruments operating in a
+        fully automated manner.  Viking Orbiter 2 developed a leak in
+        its propulsion system and lost its attitude control gas.  VO2
+        was turned off on July 25, 1978 after 706 orbits around Mars.
+ 
+         Spacecraft Id:                 : VO1, VL1, VO2, VL2
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1978-05-25
+         Mission Phase Stop Time        : 1979-02-26
+         Spacecraft Operations Type     : ORBITER, LANDER
+ 
+ 
+      VIKING INTERIM PERIOD
+      ---------------------
+        The Interim Period mission phase occurred during the time of
+        the Voyager 2 encounter with Jupiter.  Thus, communications
+        to and from the Viking spacecraft were limited.  The landers
+        continued to operate in an automated manner making imaging
+        and meteorology observations.  A final VL2 surface sampler
+        sequence was conducted during this mission phase as an
+        engineering test in the cold temperatures of mid winter.
+        Orbital data stored on spacecraft tape recorders and not
+        returned during the Continuation Mission were downlinked
+        during the Interim Period.
+ 
+         Spacecraft Id:                 : VO1, VL1, VL2
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1979-02-26
+         Mission Phase Stop Time        : 1979-07-19
+         Spacecraft Operations Type     : ORBITER, LANDER
+ 
+ 
+      VIKING SURVEY MISSION
+      ---------------------
+        The prime scientific objective for VO1 during the Survey
+        Mission was to obtain high resolution images of possible
+        future landing sites.  The plan for the landers was to
+        collect image and meteorology data for as long as possible.
+        Because VL2 no longer had a direct downlink capability, it
+        meant that VL2 could return data only as long as VO1 provided
+        a relay link, once every seven weeks.  Communications with
+        VL2 ended on April 11, 1980 after its batteries could no
+        longer hold a charge.  VL2 operated on the surface of Mars
+        for 1281 sols.  VO1 consumed the last of its attitude control
+        gas on August 7, 1980 and was turned off after 1485 orbits
+        around Mars.
+ 
+         Spacecraft Id:                 : VO1, VL1, VL2
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1979-07-19
+         Mission Phase Stop Time        : 1980-08-07
+         Spacecraft Operations Type     : ORBITER, LANDER
+ 
+ 
+      VIKING COMPLETION MISSION
+      -------------------------
+        Viking Lander 1 continued to operated in its automatic mode
+        during the Completion Mission.  The observation sequences
+        were cyclic.  VL1 returned via direct downlink image and
+        meteorology data about once a week with image sequences
+        repeating every 37 sols.  The VL1 high-gain antenna was
+        programmed to track the Earth until December, 1994.  However,
+        communications were lost in November 1982 after a command
+        sequence uplink.
+ 
+         Spacecraft Id:                 : VL1
+         Target Name                    : MARS
+         Mission Phase Start Time       : 1980-08-07
+         Mission Phase Stop Time        : 1982-11-19
+         Spacecraft Operations Type     : LANDER
+        </description>
+    </Investigation>
+</Product_Context>

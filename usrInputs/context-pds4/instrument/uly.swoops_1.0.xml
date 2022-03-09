@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:instrument:uly.swoops</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SOLAR WIND OBSERVATIONS OVER THE POLES OF THE SUN for ULY</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:swoops.uly</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.uly</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bame, S.J., D.J. McComas, B.L. Barraclough, J.L. Phillips, K.J. Sofaly, J.C.
+                   Chavez, B.E. Goldstein, and R.K. Sakurai, The Ulysses solar wind plasma
+                   experiment, Astron. Astrophys. Suppl. Ser: 92, 237-265, 1992.
+            </reference_text>
+            <description>reference.BAMEETAL1992A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bame, S.J., J.L. Phillips, D.J. McComas, J.T. Gosling, and B.E. Goldstein,
+                   The Ulysses Solar Wind Plasma Investigation: Description and Initial
+                   In-Ecliptic Results, in Solar Wind Seven, edited by E. Marsch and R.
+                   Schwenn, Pergamon Press, Oxford, p. 139, 1992.
+            </reference_text>
+            <description>reference.BAMEETAL1992B</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>SOLAR WIND OBSERVATIONS OVER THE POLES OF THE SUN</name>
+        <type>Particle Detector</type> <!--RChen/EN was Plasma Analyzer. No obvious choice. TBD in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    (excerpted from: [BAMEETAL1992A])
+ 
+    Abstract.  -- The Solar Wind Plasma Experiment on Ulysses is
+    accurately characterizing the bulk flow and internal state
+    conditions of the interplanetary plasma in three dimensions on
+    the way out to Jupiter.  These observations will continue over
+    the full range of heliocentric distances and heliographic
+    latitudes reached by the probe after its encounter with Jupiter
+    and consequent deflection out of the ecliptic plane.  Solar
+    wind electrons and ions are measured simultaneously with
+    independent curved-plate electrostatic analyzers equipped with
+    multiple Channel Electron Multipliers (CEMs).  The CEMs are
+    arranged to detect particles at chosen polar angles from the
+    spacecraft spin axis; resolution in spacecraft azimuth is
+    obtained by timing measurements with the spacecraft Sun clock
+    as the spacecraft spins.  Electrons with central energies
+    extending from 0.86 eV to 814 eV are detected at seven polar
+    angles and various combinations of azimuth angle to cover the
+    unit sphere comprehensively, so as to enable computation of the
+    pertinent electron velocity distribution parameters.  As the
+    average electron flux level changes with heliocentric distance,
+    command control of the CEM counting intervals is used to extend
+    the dynamic range.  Ions are detected between 255 eV/q and 34.4
+    keV/q using appropriate subsets of 16 CEMs at spin angles
+    designed to provide matrices of counts as a function of energy
+    per charge, azimuth angle, and polar angle centered on the
+    average direction of solar-wind flow.  Data matrices are
+    obtained every 4 min when the spacecraft is actively
+    transmitting and every 8 min during data store periods.  These
+    matrices contain sufficient energy and angle resolution to
+    permit a detailed characterization of the ion velocity
+    distributions, from which ion bulk parameters are derived.  As
+    the average ion flux intensity changes with heliocentric
+    distance, the entrance aperture size is periodically optimized
+    by command selection from a set of seven apertures on a disk
+    driven by a stepping motor.  Changes in the average solar wind
+    flow direction relative to the Earth-pointing spacecraft spin
+    axis are accommodated by command selection of the proper
+    measurement matrix from a set of 11 matrices.  In a separate
+    mode of operation and under favorable conditions, heavy ions of
+    oxygen, silicon, and iron at various charge levels are
+    resolved.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

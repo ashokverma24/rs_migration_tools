@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:grs.ody</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GAMMA RAY/NEUTRON SPECTROMETER/HIGH ENERGY NEUTRON DETECTOR for ODY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ody::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Boynton, W. V., et al., The Mars Odyssey Gamma-Ray Spectrometer Instrument
+                   Suite, Space Science Rev., submitted, 2002.
+            </reference_text>
+            <description>reference.BOYNTONETAL2002</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.KERRYETAL2002</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>GAMMA RAY/NEUTRON SPECTROMETER/HIGH ENERGY NEUTRON DETECTOR</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Mars Odyssey Gamma-Ray Spectrometer is a suite of three
+    different instruments working together to collect data that will
+    permit the mapping of elemental concentrations of the surface of
+    Mars.  The instruments are a gamma-ray spectrometer (GS), a
+    neutron spectrometer (NS), and a high-energy neutron detector
+    (HEND). The instruments are complementary in that the neutron
+    instruments have much better counting statistics and can sample to
+    greater depths than the GS, but the GS determines the abundances
+    of many more elements. Working together the instruments are most
+    powerful at mapping the distribution of hydrogen, both over the
+    surface and as a function of depth in the upper few tens of
+    centimeters.
+ 
+    This information can be found in The Mars Odyssey Gamma-Ray
+    Spectrometer Instrument Suite submitted to Space Science Reviews
+    September 13, 2002 [BOYNTONETAL2002].
+ 
+ 
+  Scientific Objectives
+  =====================
+    The chief scientific objectives are:
+ 
+    - to quantitatively map the elemental abundances of the Martian
+    surface,
+ 
+    - to map the near surface hydrogen (and, by inference, water) and
+    CO2 abundances and their stratigraphic distributions, and
+    determine their seasonal variations, and
+ 
+    - to determine the depth of the seasonal polar caps and their
+    variation with time.
+ 
+    The GRS will detect and count gamma rays and neutrons emitted from
+    the Martian surface. By associating the energy of gamma rays with
+    known nuclear transitions and determining the number of gamma rays
+    emitted from a given portion of the Martian surface, it is
+    possible to calculate the ratio of elemental abundances of the
+    surface and discern their spatial distribution. By counting the
+    number of neutrons and segregating those into thermal and
+    epithermal energy bins it is possible to calculate the hydrogen
+    abundance thus inferring the presence of water.
+ 
+    These data permit a variety of Martian geoscience and life science
+    problems to be addressed including the crust and mantle
+    compositions, weathering processes, volcanism, and the volatile
+    reservoirs and processes.
+ 
+ 
+  Calibration
+  ===========
+    Calibration information for the GRS Gamma instrument is provided
+    in the GRS Calibration Report (PDF file).
+ 
+    Calibration information for the neutron spectrometer will be
+    provided in the next PDS release.
+ 
+    A calibration report for the HEND is not yet available (Should be
+    provided in the next PDS release).
+ 
+ 
+  Operational Considerations and Operational Modes
+  ================================================
+    The gamma-ray spectrometer data has been collected in different
+    configurations.  This data is only useful for science when the
+    gamma sensor high voltage (HV) is ramped to greater than 3000
+    volts. This condition can only happen if the gamma sensor head
+    anneal door is open and the detector is cold (below 143 degrees
+    Kelvin). The gamma sensor is capable of generating data when the
+    HV is not ramped, but it is only to verify that the electronics
+    are functioning properly. Gamma sensor data has been taken in all
+    mission phases thus far. During the mapping mission phase, data
+    was taken with the GRS boom stowed and deployed. The GRS boom was
+    deployed on June 4, 2002 which started the true mapping phase
+    for the gamma sensor.
+ 
+    The Neutron Spectrometer (NS) and High Energy Neutron Detector
+    (HEND) data have also been taken in all mission phases: cruise,
+    aerobraking, and mapping.  These data are also only valid if the
+    high voltage is on for the instruments.
+ 
+ 
+  Detectors
+  =========
+    The Gamma Sensor Head (GSH) consists of a high-purity germanium
+    detector mounted in a passive cryogenic cooler, front stage
+    electronics, and a pre-amplifier. The sensor-head must be isolated
+    from all material that will interfere with the detection of gamma
+    rays from the Martian surface. For this reason it must be isolated
+    from the spacecraft by a boom, and the materials making up the
+    sensor head are selected to avoid interference.
+ 
+    The gamma-ray detector must be cooled to cryogenic temperatures to
+    reduce the electronic noise induced by the thermal agitation of
+    the germanium atoms. In addition, in the radiation flux of
+    interplanetary space a warm detector will experience radiation
+    damage. In order to remove the effects of radiation damage, the
+    HP-GeD must be heated to temperatures of 105 degrees C and
+    maintained at this temperature for a minimum of 48 hours and a
+    maximum of 120 hours.
+ 
+    The neutron spectrometer (NS) is comprised of the neutron
+    sensor-head and its associated electronics. The neutron
+    sensor-head is a four-section borated-plastic scintillator
+    composed of BC454 coupled to photo-multiplier tubes (PMTs) and
+    their associated high-voltage bleeder boards and
+    pre-amplifiers. Each of the four segments is in the shape of a
+    prism; mounted together the scintillators form a
+    parallelepiped. One of the four segments must face in the
+    direction of the spacecraft velocity vector; the opposite prism
+    will then face in the negative velocity vector of the spacecraft,
+    and the two remaining prisms will face towards Mars (nadir) and
+    away from Mars (anti-nadir). This orientation together with
+    coincident pulse logic allows separation of neutron radiation from
+    other radiation and separation of neutron energies into broad
+    energy bands. The neutron sensor-head must be separated from the
+    spacecraft to reduce the effect of the flux of neutrons from the
+    spacecraft. The required separation depends on the proximity and
+    size of the neutron-moderating (hydrogen) materials in the
+    spacecraft such as the fuel.
+ 
+    The borated plastic scintillator has a heritage of space
+    applications for detecting neutrons and uniquely identifying them
+    as such in the presence of backgrounds of gamma rays and energetic
+    charged particles that are generally encountered in space. Thermal
+    and epithermal neutrons are identified by detection of a single
+    interaction in one or two of the sensor segments that deposits an
+    energy equal to the Q-value of the 10B(n,a)7Li* reaction. The
+    signature of a fast neutron is the detection of a pair of
+    interactions occurring within about 5 microseconds (the
+    pulse-correlation time for fast neutrons interacting in BC454
+    is t = 2.2 microseconds) where the second interaction of the
+    pair has the signature of a thermal or epithermal neutron just
+    mentioned. If this condition is satisfied, then the pulse
+    height of the first interaction gives the energy of the fast
+    neutron.
+ 
+    Separate determinations of the thermal, epithermal, and fast flux
+    components of martian and spacecraft neutron flux spectra will be
+    optimized if the sensor is oriented such that one of its prism
+    segments faces in the direction of the spacecraft velocity vector
+    (frontward), one faces in the opposite direction (backward), one
+    faces downward toward the martian surface, and one faces upward
+    from Mars. This configuration has the advantage that it allows
+    discrimination between neutrons originating in Mars from those
+    originating in the spacecraft, thereby reducing (but not
+    eliminating) the need for separation from hydrogenous spacecraft
+    materials.
+ 
+    Given this orientation, all three neutron flux components from
+    both the spacecraft and Mars can be measured and separately
+    identified.  Specifically, the difference in counting rates of the
+    front- and back-facing BC454 prism segments provides a measure of
+    thermal neutrons from Mars alone. Contamination by thermals from
+    the spacecraft, and all epithermal neutrons, is reduced by virtue
+    of the motion of the sensor relative to Mars. The motion of the
+    sensor relative to Mars ensures that the front-facing segment
+    selectively scoops up the thermals from Mars while the back-facing
+    segment outruns them. The fact that all four prism segments are
+    stationary relative to the spacecraft ensures that the ratio of
+    spacecraft contributions to each of them is fixed by geometry,
+    which can be calibrated during cruise.
+ 
+    A variant of the same technique can be used to separate martian
+    and spacecraft epithermal neutrons. In this case the upward-facing
+    segment is shielded from Mars by the other three segments. In
+    consequence, the counting rate of the upward facing prism can be
+    used to subtract the spacecraft contribution to the counting rate
+    of the backward-facing prism to provide a measure of the martian
+    epithermal flux alone. This result is possible because, as just
+    mentioned, the backward facing prism will outrun the thermal
+    neutrons coming from Mars, thus making it sensitive only to
+    martian epithermal and fast neutrons. However, as discussed
+    previously, the special properties of BC454 can be used to
+    separate the epithermal and fast neutron events electronically. In
+    addition, the normalized difference between single counts having
+    the signature of a thermal or epithermal neutron registered in the
+    downward- and upward-facing prisms will be used to provide a check
+    on the combined thermal and epithermal neutron fluxes from Mars
+    determined using the frontward-, backward- and upward-facing
+    prisms, respectively.
+ 
+    All four prism segments can be used to provide separate measures
+    of martian and spacecraft fast neutrons. As for the epithermals,
+    but to a lesser extent, this separation is facilitated by the
+    absorption properties of the geometric arrangement of all four
+    BC454 segments relative to the surface of Mars and the spacecraft,
+    respectively. It is only feasible for this kind of an arrangement
+    because the hydrogen moderator in the sensor is contained in an
+    active element of the detector (the BC454 scintillator) as opposed
+    to a passive element such as is provided by a polyethylene (or
+    equivalent) moderator that is placed around a thermal neutron
+    sensor.
+ 
+    The High Energy Neutron Detector (HEND) is a self-contained
+    experiment which relies on the GRS for power and command and data
+    handling. HEND detects neutrons and soft gamma rays. Neutrons are
+    detected in thermal (0.01 eV - 1 eV), epithermal (1 eV - 1 keV),
+    fast (1 keV - 1 MeV), and high-energy (1 MeV - 10 MeV) energy
+    ranges.  Provisions have been made to separate detected neutrons
+    from gamma-rays and also provide anti-coincidence between protons
+    and high-energy neutrons. HEND allows count rates from 0.01 per
+    second for high-energy neutrons up to 104 for gamma rays. The
+    energy resolution for neutrons and gamma-rays is 20% or better. A
+    low background count rate due to the HEND is achieved through
+    materials selection, active anti-coincidence shielding, and
+    amplitude thresholding. Data is synchronized with the GRS so that
+    all GRS data can be registered with respect to time. HEND also
+    monitors the gamma-ray flux from solar flares and bursts with 0.25
+    - 1 second time resolution. The high-energy neutron detector is
+    comprised of three 3He sensors, a Stilben scintillator detector,
+    and associated electronics. All HEND electronics are housed in the
+    HEND sensor-head except for those circuits provided by the UA in
+    the CEB to support the HEND RS-422 interface. HEND has a separate
+    spacecraft power switch provided through the GRS CEB.
+ 
+ 
+  Electronics
+  ===========
+    The remainder of the gamma-ray sensor electronics consists of the
+    gamma analog processing system which provides peak-hold and 14-bit
+    analog to digital conversion of the pulse as well as level
+    discriminators and other instrument control functions plus the
+    high-voltage bias supply to provide the bias voltage for the
+    germanium detector. These electronics together with housekeeping
+    electronics are housed in the MSO GRS Central Electronics Box
+    (CEB).
+ 
+    The remainder of the NS electronics consists of the neutron analog
+    chain which shapes the pulses resulting from detection and
+    provides 8-bit analog to digital conversion of the pulse as well
+    as level discriminators and other instrument control
+    functions. These electronics are housed in the CEB.
+ 
+    The digital electronics process the output of the ADCs from the
+    gamma-ray and neutron detectors. It also processes all
+    housekeeping data. It receives and processes all instrument
+    commands. It provides the interface with the spacecraft command
+    and data handling system and provides the interface with all other
+    components of the MSO GRS. It includes low-voltage power supplies
+    for the MSO GRS including specially filtered low-voltage power
+    supplies for the GRS analog electronics chain.
+ 
+ 
+  Operational Modes
+  =================
+    Gamma-ray spectrometer
+    1. Door open, closed
+    2. Boom deployed, undeployed
+    3. High voltage up, down
+ 
+    Neutron Spectrometer (NS)
+    1. High voltage up, down
+ 
+    High Energy Neutron Detector (HEND)
+    1. High voltage up, down
+
+        </description>
+    </Instrument>
+</Product_Context>

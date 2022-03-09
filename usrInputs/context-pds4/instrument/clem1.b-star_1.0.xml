@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:clem1.b-star</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>B STAR TRACKER CAMERA for CLEM1</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:b-star.clem1</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.clem1</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kordas, J.F., I.T. Lewis, B.A. Wilson, D.P. Nielson, H. Park, R.E. Priest,
+                   R.F. Hills, M.J. Shannon, A.G. Ledebuhr, and L.D. Pleasance, Star Tracker
+                   Stellar Compass for the Clementine Mission, Proceedings of the Society of
+                   Photo-optical Instrumentation Engineers (SPIE), 2466, pp. 70-83, 1995.
+            </reference_text>
+            <description>reference.KORDASETAL1995B</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>B STAR TRACKER CAMERA</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+              Online Reference: http://wundow.wustl.edu/clbin/clsearch.pl
+
+ 
+ 
+ 
+    Instrument Overview
+    ===================
+      On Clementine 1 there were two star tracker cameras, A Star and
+      B Star Tracker Cameras.  They were mounted on opposite sides of
+      the spacecraft, allowing at least one to obtain star field
+      coverage at all times without interference from the Sun.  Each
+      could provide three-axis attitude determination from a single
+      image provided the Sun, Moon, and Earth were not in the field
+      of view.
+ 
+      The primary function of the star tracker cameras was to provide
+      stellar images that were processed against an onboard star
+      catalog to find pointing, thus establishing absolute angular
+      references for attitude determination.  The scientific uses of
+      the cameras were secondary.  Only broad band operation was
+      available.  Owing to the line-transfer electronic shuttering,
+      imaging was limited to dim targets such as the lunar surface
+      illuminated by earth shine.
+ 
+      The Wide-Field-of-View Star Tracker cameras have a concentric
+      optics design with a fiber optic field flattener to couple the
+      image surface to a CCD array.  The CCD is kept cleared by
+      continuously shifting lines and reading out pixels at the 5 MHz
+      base rate, which is approximately 100 microseconds per line.
+      Image acquisition is accomplished by stopping this clearing
+      process for the appropriate integration time (13-bit
+      programmable), then proceeding with a second line-shifting
+      operation into a readout buffer.
+ 
+      The Thomson focal plane array (FPA) used is a frame-transfer
+      device, accomplishing electronic shuttering by rapidly shifting
+      the active pixel area into the storage area, pausing for the
+      13-bit programmable shuttering system spectral integration
+      time, then rapidly shifting the captured image into a storage
+      buffer from which the image is read out.  Post-FPA electronics
+      allow three gain states followed by 5 bits of offset that span
+      248 counts in the analog regime to augment the basic 8-bit
+      analog/digital (A/D) conversion.  Gain is A/D digitization
+      noise limited, so proper exposure is critical.  System noise is
+      about 1.0 bits rms at the highest sensitivity setting.
+ 
+ 
+    Scientific Objectives
+    =====================
+      Science observations of the star tracker cameras were limited
+      to dim targets such as the lunar surface illuminated by earth
+      shine and observations of the earth illuminated by moon shine
+      during the low earth orbit phase.  Additionally the star
+      tracker camera was used to acquire lunar &apos;horizon glow&apos;
+      observations and solar corona observations prior to sun rise
+      over the Moon.
+ 
+ 
+    Calibration
+    ===========
+      The Star Tracker cameras were calibrated before launch.
+      Laboratory observations of a flat field under various operating
+      temperatures and camera operation modes provides information
+      about the sensitivity of the camera under expected spaceflight
+      conditions.  During inflight operations, a variety of
+      calibration observations were made including images of stars
+      with known radiance (Vega).
+ 
+ 
+    Operational Considerations
+    ==========================
+      Most star tracker observations used for spacecraft attitdue
+      determination were acquired prior to and after a pass over the
+      sunlit side of the Moon.  No star tracker observations were
+      made on the sunlit side of the lunar surface due to the extreme
+      sensitivity of the cameras and the potential for damage.
+ 
+ 
+    Operational Modes
+    =================
+      The Star Tracker Cameras had three operating modes:
+ 
+      1. 13-bit programmable integration time.  The range of
+      integration times (in microseconds) is given by:
+      Integration Time = [(N+3)*94.5 - 45, N=0,2,3...2**13]
+ 
+      2. Gain Mode. The gain mode represents the multiplicative
+      constant applied to the image data passing through the A/D
+      converter.  Three gain state settings were available (1,2,4)
+      although gain setting 4 was seldom used during lunar
+      observations.
+ 
+      3. Offset Mode. The offset mode represents the additive
+      constant applied to the image data passing through the A/D
+      converter.  There were 14 offset mode settings (1-14)
+      although offset modes 1 and 6 were predominantly used during
+      systematic lunar observations.
+ 
+ 
+    Camera Specifications
+    =====================
+ 
+      Detectors
+      ---------
+        Thomson Focal Plane Array
+        Type              : Si Charge Coupled Device
+                            Thomson TH7863
+        Pixel format      : 576x384
+        Pixel size        : 23x23 microns
+        Readout rate      : 5MHz
+        Wavelength        : 0.5 to 1.1 microns
+        Field of view     : 43 deg. x 28 deg.
+        Pixel IFOV        : 1.3 microradians
+        Point spread      : 2 pixels
+ 
+ 
+      Electronics
+      -----------
+        A/D resolution    : 8 bits
+        Readout time      : 54.8 ms
+        Integration time  : 0.2-733 ms
+        Digitization gain : 75, 150, 350 electrons/count
+        Offset control    : 248 gray levels
+ 
+ 
+      Filters
+      -------
+	The Star Tracker cameras did not have a filter wheel
+        assembly.  They acquired only broad band images in the
+        range .5 to 1.1 microns.
+ 
+ 
+      Optics
+      ------
+        Clear aperture    : 14nm
+        Speed             : F/1.3
+ 
+ 
+      Mechanical
+      ----------
+        Mass                : 290 grams
+        Size                : 11.7 cm x 11.7 cm x 13.2 cm
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

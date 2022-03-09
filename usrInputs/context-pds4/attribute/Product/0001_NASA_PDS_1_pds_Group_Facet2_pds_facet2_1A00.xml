@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.group_facet2.pds.facet2_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>facet2</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>facet2</name>
+        <version_id>1.10</version_id>
+        <class_name>Group_Facet2</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.group_facet2.pds.facet2_1a00</local_identifier>
+        <steward_id>pds</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The facet2 attribute provides a sub-categorization (under the discipline_name) of the type of data being described by Primary_Result_Summary.  The  facet1  and  factet2  values are intended to provide independent sub-categorizations. The values are restricted according to the value of discipline_name. Type: ASCII_Short_String_Collapsed</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <Terminological_Entry>
+            <name>facet2</name>
+            <definition>The facet2 attribute provides a sub-categorization (under the discipline_name) of the type of data being described by Primary_Result_Summary.  The  facet1  and  factet2  values are intended to provide independent sub-categorizations. The values are restricted according to the value of discipline_name. Type: ASCII_Short_String_Collapsed</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <specified_unit_id>none</specified_unit_id>
+            <DD_Permissible_Value_Full>
+                <value>Background</value>
+                <value_meaning>Data characterize the slowly varying background field (typically at less than 100 Hz)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Cosmic Ray</value>
+                <value_meaning>Data characterize the particle envornment at energies greater than about 10 MeV</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Energetic</value>
+                <value_meaning>Data characterize the particle environment at energies in the approximate range 30keV-0.1 MeV</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Plasma</value>
+                <value_meaning>Data characterize the particle environment at energies less than about 30keV</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Solar Energetic</value>
+                <value_meaning>Data characterize the particle environment at energies in the approximate range 0.1-10MeV</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Waves</value>
+                <value_meaning>Data characterize higher frequency field variations and/or oscillations (typically at greater than 100 Hz).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

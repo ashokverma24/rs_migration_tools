@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd
+        http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:eso-la_silla.3m6.timmi2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Thermal Infrared Multi-Mode Instrument 2</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:eso.3m6.timmi2</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-12-07</modification_date>
+                <version_id>1.0</version_id>
+                <description>per RMS, deprecated eso in favor of eso-la_silla</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-la_silla.3m6</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>Reimann, H.G., E. Dietzsch, J. Hron et al., TIMMI2: A new multimode mid-infrared
+instrument for the ESO 3.6m telescope, Proceedings of SPIE, Vol. 4008, p. 131, 2000.</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Thermal Infrared Multi-Mode Instrument 2</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Imager</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>TIMMI2 is a multi mode (imaging, polarimetry, and long slit spectroscopy)
+thermal-infrared (4-20 um) instrument working at the ESO/3.6m Cassegrain, f/35 focus.
+Lenses offering different magnifications are available in the different bands: 0.3
+arcsec/pixel in the L and M bands; 0.2 arcsec/pixel and 0.3 arcsec/pixel in the N
+band; and 0.2 arcsec/pixel in the Q band.  The array is a Si:As chip manufactured by
+Raytheon, with format 320 x 240 pixels (the pixel size is 50 microns), distributed in
+16 channels of 20 columns each. So the field sizes are 64x48 arcsecs or 96x72 arcsecs
+for the small and large field lenses, respectively. It's sensitive from 2 to 28
+microns, with a mean QE of 31.6 percent, a read noise of 922e-, a full well capacity
+of 1.13x107/2.04x107e- (high/low gain), and a dark current &lt; 100e-/sec at T=6K.
+        </description>
+    </Instrument>
+</Product_Context>
+

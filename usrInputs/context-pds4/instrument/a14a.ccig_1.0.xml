@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ccig.a14a</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>APOLLO 14 COLD CATHODE ION GAGE EXPERIMENT for A14A</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a14a::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 14 Preliminary Science Report, NASA SP-272, 302 pages, Washington, D.C.,
+                   1971.
+            </reference_text>
+            <description>reference.APOLLO14A1971</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Johnson, F.S., D.E. Evans, and J.M Carroll, Cold Cathode Gage Experiment
+                   (Lunar-Atmosphere Detector), Apollo 15 Preliminary Science Report, NASA SP-289,
+                   pages 13-1 to 13-5, Washington D.C., 1972.
+            </reference_text>
+            <description>reference.JOHNSONETAL1972A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo Scientific Experiments Data Handbook, JSC-09166, NASA TMX-58131, August
+                   1974 (revised April 1976), in Johnson Space Center History Office.
+            </reference_text>
+            <description>reference.NASATMX581311976</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>APOLLO 14 COLD CATHODE ION GAGE EXPERIMENT</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Unknown-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    The Cold Cathode Ion Gage Experiment (CCIG, also referred to as the
+    Cold Cathode Gage Experiment, or CCGE) was deployed as part of the
+    Apollo Lunar Surface Experiments Package (ALSEP) on Apollos 12, 14,
+    and 15.  It was designed to measure the density of neutral particles
+    to determine the amount of gas present at the lunar surface.  This
+    data helps constrain the source and loss mechanisms of the tenuous
+    lunar atmosphere.  A cold cathode ionization gage was used for this
+    purpose.  The gage can determine the amount of gas present,
+    expressed as concentrations of particles per cubic cm or pressure in
+    torr, but not its composition.  The CCIG gage head was roughly 18 x
+    10 x 12 cm and used 6.5 W.  The instrument consisted of the cold
+    cathode ionization gage and associated electronics.  The mass of the
+    experiment package was 5.7 kg. (Note that the term &apos;&apos;Gage&apos;&apos;, not
+    &apos;&apos;Gauge&apos;&apos;, was the accepted use for this experiment.)
+ 
+    The CCIG gage unit was carried in a compartment of the SIDE
+    instrument and was removed and set up on the lunar surface by the
+    deploying astronaut.  The gage unit was connected by a cable to the
+    SIDE package.  The extreme stiffness and springiness of the
+    electrical cable combined with the low lunar gravity made it
+    difficult to position the gage head and keep it in one place and
+    in the correct orientation.  Eventually the astronauts were able to
+    place the gage unit in a nearly vertical position and the data were
+    not affected.
+ 
+    The cold cathode ionization gage is a cylindrical sensor unit in a
+    stainless steel envelope consisting of stainless steel coaxial
+    electrodes.  The cathode is a spool running through the center axis
+    of the cylinder.  A cylindrical anode surrounds the cathode, and
+    both electrodes are in an axial magnetic field of 0.09 Tesla (900
+    Gauss) produced by a permanent magnet.  A magnetic shield is mounted
+    around the gage and its magnet.  A potential of +4500 volts was
+    applied to the anode by a power supply consisting of a regulator,
+    converter, voltage-multiplier network, and feedback network to the
+    low voltage supply.  This created a self-sustained Townsend
+    discharge in the gage in which electrons remained largely trapped in
+    the magnetic field with enough energy to ionize any gas particles
+    they would strike.  The ions would then be collected at the cathode,
+    producing a current.  The cathode was connected to an auto-ranging,
+    auto-zeroing electrometer that measured currents in the range
+    1.0E-13 to 1.0E-16 amps.  A temperature detector was included to
+    enable conversion of the readings to equivalent pressure.
+ 
+    Baffles are mounted in the cylinder between the opening and the
+    electrodes.  A dust cover closed but did not seal the opening before
+    deployment and was pulled aside by the squib motor and spring on
+    command.  Because the CCIG was not evacuated, adsorbed gases
+    produced an elevated response at turn-on.  The gases escaped from
+    the gage rapidly at first and then slowly baked out during the lunar
+    day.
+ 
+    The device was sensitive to gas density rather than pressure.  The
+    response varied somewhat with gas composition, but errors due to the
+    uncertainties in composition were expected to be within a factor of
+    two.  The data from the experiment have been expressed as equivalent
+    density for a nitrogen lunar atmosphere.  The CCIG had three
+    auto-switched, overlapping, sensitivity ranges enabling detection of
+    the lunar atmosphere from 2.E+5 to 1.E+11 particles/cubic cm
+    (equivalent nitrogen).  In the normal operational mode the basic
+    cycle repeated five measurements (separated by 2.4 s), three
+    measurements (separated by 40 s), and 16 seconds of calibration and
+    auto-zeroing every 2.5 min.  Temperature and other engineering
+    functions were also sampled within this 2.5-min cycle.  In a ground
+    commanded special mode, one measurement was obtained every 2.4 s,
+    with no other measurements being performed.  More details are
+    available in &apos;&apos;Apollo Scientific Experiments Data Handbook&apos;&apos;,
+    JSC-09166, NASA TMX-58131, August 1974 (revised April 1976)
+    [NASATMX581311974].
+ 
+    The Apollo 14 ALSEP central station was located at 3.6440 S latitude,
+    17.4775 W longitude.  The CCIG was deployed approximately 16 meters
+    south-southeast of the central station and 180 meters W of the Lunar
+    Module.  The instrument was turned on at approximately 23:59 UT on 5
+    February 1971.  The readings were initially saturated at full scale
+    because of gas trapped within the gage. At about 1:20 UT on 6 February
+    the level was below saturation (4 x 10E-7 torr) and continued to
+    decrease.  At 1:40 UT the high voltage power supply was turned off
+    because it was believed arcing was taking place.  The unit was operated
+    for short periods of time during LM venting before the second EVA and
+    during housekeeping functions after the second EVA and was then turned
+    off until lunar sunset.  The instrument operated during lunar night but
+    was only turned on for brief periods during the lunar day to minimize
+    the possibility of high voltage arcing.  On 5 April 1971 the analog to
+    digital converter became erratic and no processing of positive-value
+    data inputs was possible.  This problem was not serious and affected
+    only the temperature and housekeeping data. Full daytime operation was
+    obtained in November 1971.  Near the end of nighttime operation in
+    February 1972 the data dropped out but returned at sunrise 4 days
+    later.  This problem occurred intermittently during nighttime operation
+    until November 1972 when all nighttime data were lost for the next two
+    months, followed by complete nighttime data in late March 1973 and then
+    two more months of no nighttime data.
+ 
+    On 15 April 1973 the CCIG/SIDE went into standby mode, attributed to
+    arcing in the high-voltage supply at elevated daytime temperatures.
+    Operation was restored over the next lunar night and operation after
+    this was not attempted during the lunar day.  On 5 January 1975 the
+    instrument was commanded off.  Over the course of its operations the
+    CCIG observed outgassing, sunrise and sunset effects, and nighttime
+    bursts, particularly a pre-dawn times, which are believed to be real
+    argon-40 events.
+ 
+  This instrument description was provided by the NSSDC.
+
+        </description>
+    </Instrument>
+</Product_Context>

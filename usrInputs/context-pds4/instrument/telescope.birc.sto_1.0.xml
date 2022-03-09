@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:telescope.birc.sto</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>BOPPS Infrared Camera (BIRC)</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-02-27</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    A.Raugh: Creation
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:bopps.sto</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:bopps2014:document:birc_overview</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                This small text document provides a brief overview of the BIRC instrument.
+            </comment>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>BOPPS Infrared Camera (BIRC)</name>
+        <type>Imager</type>
+        <description>
+            The BOPPS Infrared Camera (BIRC) is a multispectral IR images designed to 
+            measure water and CO2 emissions from comets at 2.73 and 4.3 micrometers,
+            respectively, as well as water-related IR absorption features in the 
+            2.5-3.2 micrometer range found in asteroids and the Moon.
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.cart.grid_coordinate_system.cart.grid_coordinate_system_name_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>grid_coordinate_system_name</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>grid_coordinate_system_name</name>
+        <version_id>1.10</version_id>
+        <class_name>Grid_Coordinate_System</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.cart.grid_coordinate_system.cart.grid_coordinate_system_name_1a00</local_identifier>
+        <steward_id>cart</steward_id>
+        <type>PDS4</type>
+        <namespace_id>cart</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The grid_coordinate_system_name attribute provides the name of the grid coordinate system.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <Terminological_Entry>
+            <name>grid_coordinate_system_name</name>
+            <definition>The grid_coordinate_system_name attribute provides the name of the grid coordinate system.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <specified_unit_id>none</specified_unit_id>
+            <DD_Permissible_Value_Full>
+                <value>ARC Coordinate System</value>
+                <value_meaning>The Equal Arc-second Coordinate System (Earth only), a plane- rectangular coordinate system established in Department of Defense, 1990, Military specification ARC Digitized Raster Graphics (ADRG) (MIL-A-89007): Philadelphia, Department of Defense, Defense Printing Service Detachment Office.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Other Grid System</value>
+                <value_meaning>A user defined grid coordinate system.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>State Plane Coordinate System 1927</value>
+                <value_meaning>A plane-rectangular coordinate system (Earth only) established (1927) for each state in the United States by the National Geodetic Survey.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>State Plane Coordinate System 1983</value>
+                <value_meaning>A plane-rectangular coordinate system (Earth only) established (updated, 1983) for each state in the United States by the National Geodetic Survey.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Universal Polar Stereographic</value>
+                <value_meaning>An Earth-defined grid system based on the polar stereographic projection, applied to the Earth&apos;s polar regions beyond 84 degrees north and 80 degrees south.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Universal Transverse Mercator</value>
+                <value_meaning>A grid system (Earth only) based on the transverse mercator projection, applied between latitudes 84 degrees north and 80 degrees south on the Earth&apos;s surface.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

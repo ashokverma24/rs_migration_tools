@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Class_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:class:0001_nasa_pds_1.pds.units_of_pixel_scale_angular_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>Units_of_Pixel_Scale_Angular</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Class_Definition</product_class>
+    </Identification_Area>
+    <DD_Class_Full>
+        <name>Units_of_Pixel_Scale_Angular</name>
+        <version_id>1.10</version_id>
+        <local_identifier>urn:nasa:pds:context:class:0001_nasa_pds_1.pds.units_of_pixel_scale_angular_1a00</local_identifier>
+        <steward_id>pds</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <submitter_name>pds</submitter_name>
+        <definition>The class Units_of_Pixel_Scale_Angular provides the units in which a pixel scale is defined in an angular context. Pixel scale, in terms of angular units, indicates the angular size of a pixel typically expressed as pixel per unit angle (e.g., 0.125 pixel/deg , 0.5 pixel/arcsec).</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <abstract_flag>false</abstract_flag>
+        <DD_Association>
+           <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1:pds:units_of_pixel_scale_angular:pds:type</local_identifier>
+           <reference_type>attribute_of</reference_type>
+           <minimum_occurrences>1</minimum_occurrences>
+           <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+           <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1:pds:units_of_pixel_scale_angular:pds:specified_unit_id</local_identifier>
+           <reference_type>attribute_of</reference_type>
+           <minimum_occurrences>1</minimum_occurrences>
+           <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+           <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1:pds:units_of_pixel_scale_angular:pds:unit_id</local_identifier>
+           <reference_type>attribute_of</reference_type>
+           <minimum_occurrences>1</minimum_occurrences>
+           <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <Terminological_Entry>
+            <name>Units_of_Pixel_Scale_Angular</name>
+            <definition>The class Units_of_Pixel_Scale_Angular provides the units in which a pixel scale is defined in an angular context. Pixel scale, in terms of angular units, indicates the angular size of a pixel typically expressed as pixel per unit angle (e.g., 0.125 pixel/deg , 0.5 pixel/arcsec).</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+    </DD_Class_Full>
+</Product_Class_Definition>
+

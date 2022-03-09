@@ -1,0 +1,9 @@
+P,urn:esa:psa:context:instrument_host:spacecraft.gio::1.0
+P,urn:esa:psa:context:instrument_host:spacecraft.hp::1.0
+P,urn:esa:psa:context:instrument_host:spacecraft.iue::1.0
+P,urn:esa:psa:context:instrument_host:spacecraft.mex::1.0
+P,urn:esa:psa:context:instrument_host:spacecraft.rl::1.0
+P,urn:esa:psa:context:instrument_host:spacecraft.rl::1.1
+P,urn:esa:psa:context:instrument_host:spacecraft.ro::1.0
+P,urn:esa:psa:context:instrument_host:spacecraft.uly::1.0
+P,urn:esa:psa:context:instrument_host:spacecraft.vex::1.0

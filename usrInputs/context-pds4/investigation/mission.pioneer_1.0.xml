@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.pioneer</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PIONEER</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>PIONEER_12</alternate_id>
+                <alternate_title>PIONEER 12</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.p12::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.venus::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Colin, L., The Pioneer-Venus program. J. Geophys. Res. 85, 7575-7598, 1980.
+            </reference_text>
+            <description>reference.COLIN1980</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>PIONEER</name>
+        <type>Mission</type>
+        <start_date>1978-05-20</start_date>
+        <stop_date>1992-10-08</stop_date>
+
+        <description>
+ 
+ 
+ 
+    Mission Overview
+    ================
+      Launched from Kennedy Space Center, the Pioneer Venus Orbiter
+      completed its 300-million-mile voyage in 6-plus months and was
+      placed into Venusian orbit on December 4, 1978, less than a
+      week before the arrival of the Pioneer Venus Multiprobe system.
+      The Orbiter&apos;s radar provided altimetry maps for nearly all of
+      the surface of Venus, resolving features down to about 50
+      kilometers across, in addition to providing SAR images using a
+      side-looking mode.
+ 
+ 
+    Mission Phases
+    ==============
+ 
+      PIONEER VENUS PRELAUNCH
+      -----------------------
+        The spacecraft was delivered to the launch site at Kennedy
+        Space Center on March 14, 1978.
+ 
+        Spacecraft Id                  : P12
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1968-06-01
+        Mission Phase Stop Time        : 1978-05-20T13:13
+        Spacecraft Operations Type     : ORBITER
+ 
+      PIONEER VENUS LAUNCH
+      --------------------
+        The spacecraft was launched atop an Atlas-Centaur from
+        Kennedy Space Center.
+ 
+        Spacecraft Id                  : P12
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1978-05-20T13:13:0
+        Mission Phase Stop Time        : 1978-05-21
+        Spacecraft Operations Type     : ORBITER
+ 
+      PIONEER VENUS CRUISE
+      --------------------
+        Two small trajectory correction maneuvers were made on June 1
+        and November 2, 1978.  Interplanetary cruise scientific data
+        wre collected.  The Pioneer Venus Orbiter completed its
+        300-million-mile voyage in 6+ months and was placed into
+        Venusian orbit on December 4, 1978.
+ 
+        Spacecraft Id                  : P12
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1978-05-21
+        Mission Phase Stop Time        : 1978-12-04
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      PIONEER VENUS ORBITAL
+      ---------------------
+        The orbiter was placed into Venusian orbit on December 4,
+        1978, less than a week before the arrival of the Pioneer
+        Venus Multiprobe.  The planned mission ended August 4, 1979,
+        and the extended mission began August 5, 1979.  Two extended
+        mission phases of 243 days each were planned, and were
+        initiated on April 3, 1980, and December 2, 1980.
+ 
+        Spacecraft Id                  : P12
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1978-12-04
+        Mission Phase Stop Time        : UNK
+        Spacecraft Operations Type     : ORBITER
+ 
+        </description>
+    </Investigation>
+</Product_Context>

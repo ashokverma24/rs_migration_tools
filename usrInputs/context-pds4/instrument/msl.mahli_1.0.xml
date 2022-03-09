@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mahli.msl</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARS HAND LENS IMAGER CAMERA for MSL</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.msl::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Edgett, K.S., R.A. Yingst, M.A. Ravine, M.A. Caplinger, J.N. Maki, F.T. Ghaemi,
+                   J.A. Schaffner, J.F. Bell III, L.J. Edwards, K.E. Herkenhoff, E. Heydari, L.C.
+                   Kah, M.T. Lemmon, M.E. Minitti, T.S. Olson, T.J. Parker, S.K. Rowland, J.
+                   Schieber, R.J. Sullivan, D.Y. Sumner, P.C. Thomas, E.H. Jensen, J.J. Simmonds,
+                   A.J. Sengstacken, R.G. Willson, and W. Goetz, Curiosity&apos;s Mars Hand Lens Imager
+                   (MAHLI) Investigation, Space Science Reviews, Vol. 170, Issue 1-4, pp. 259-317,
+                   2012, doi:10.1007/s11214-012-9910-4
+            </reference_text>
+            <description>reference.EDGETTETAL2012</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Edgett, K.S., M.A. Caplinger, J.N. Maki, M.A. Ravine, F.T. Ghaemi, S. McNair,
+                   K.E. Herkenhoff, B.M. Duston, R.G. Willson, R.A. Yingst, M.R. Kennedy, M.E.
+                   Minitti, A.J. Sengstacken, K.D. Supulver, L.J. Lipkaman, G.M. Krezoski, M.J.
+                   McBride, T.L. Jones, B.E. Nixon, J.K. Van Beek, D.J. Krysak, and R.L. Kirk,
+                   Curiosity&apos;s robotic arm-mounted Mars Hand Lens Imager (MAHLI): Characterization
+                   and calibration status, MSL MAHLI Technical Report 0001, 2015,
+                   doi:10.13140/RG.2.1.3798.5447.
+            </reference_text>
+            <description>reference.EDGETTETAL2015</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MARS HAND LENS IMAGER CAMERA</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+ 
+The Mars Science Laboratory (MSL) Mars Hand Lens Imager (MAHLI)
+investigation uses a 2-megapixel color camera with a focusable
+macro lens aboard the rover, Curiosity, to investigate stratigraphy
+and grain-scale texture, structure, mineralogy, and morphology of
+geologic materials in northwestern Gale crater.  Of particular
+interest is the stratigraphic record of a ~5 km thick layered rock
+sequence exposed on the slopes of Aeolis Mons (also known as Mount
+Sharp). The instrument consists of three parts, a camera head
+mounted on the turret at the end of a robotic arm, an electronics
+and data storage assembly located inside the rover body, and a
+calibration target mounted on the robotic arm shoulder azimuth
+actuator housing.  MAHLI can acquire in-focus images at working
+distances from ~2.1 cm to infinity. At the minimum working distance,
+image pixel scale is ~14 microns per pixel and very coarse silt grains
+can be resolved. At the working distance of the Mars Exploration Rover
+Microscopic Imager cameras aboard Spirit and Opportunity, MAHLI&apos;s
+resolution is comparable at ~30 microns per pixel.  Onboard capabilities
+include autofocus, auto-exposure, sub-framing, video imaging,
+Bayer pattern color interpolation, lossy and lossless compression,
+focus merging of up to 8 focus stack images, white light and longwave
+ultraviolet (365 nm) illumination of nearby subjects, and 8 gigabytes
+of non-volatile memory data storage.
+ 
+For further information about the MAHLI instrument, please see
+EDGETTETAL2012.
+ 
+For futher information about the MAHLI characterization and calibration
+status from August 2008 - February 2015 including supplementary files,
+please see EDGETTETAL2015.
+
+        </description>
+    </Instrument>
+</Product_Context>

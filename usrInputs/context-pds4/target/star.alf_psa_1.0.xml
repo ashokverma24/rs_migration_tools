@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_psa</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Fomalhaut</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Alpha Piscis Austrini</alternate_title></Alias>
+      <Alias><alternate_title>Alpha PsA</alternate_title></Alias>
+      <Alias><alternate_title>24 Piscis Austrini</alternate_title></Alias>
+      <Alias><alternate_title>alf PsA</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>24 PsA</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SHY 106A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MAM 1A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-30 19370</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 5549</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 17 12409</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-30 6685</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 867</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 32000</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 14409</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00216956</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 881</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 881.0</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 216956</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>H-ATLAS J225739.6-293730</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 113368</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 113368</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 8728</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 22549-2953</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -30458</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSE J225739.4-293726</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSF J225738.9-293714</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 3556</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 9292</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J22573901-2937193</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 5050</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 55380</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 14372</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>8pc 130.08</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5565</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5565.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 611</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 274426</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 2995</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 3340</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 191524</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 43608</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30867</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 29476</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 6977-1267-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 19672</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 26732</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100216956</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J22577-2937A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 20167</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Zkh 345</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Fomalhaut</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 22 hours 57 minutes 39.04625 seconds
+Declination, ICRS coord, ep=J2000: -29 degrees 37 minutes 20.0533 seconds
+    </description>
+  </Target>
+</Product_Context>
+

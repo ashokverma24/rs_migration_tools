@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd
+                                     http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument:hyb2.lidar</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>LIght Detection And Ranging for Hayabusa2</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>lidar</alternate_id>
+                <alternate_title>LIDAR</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-08-17</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument_host:spacecraft.hyb2</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-015-0231-2</doi>
+            <reference_text>
+                T. Mizuno, T. Kase, T. Shiina, M. Mita, N. Namiki, H. Senshu, R. Yamada, H. Noda, H. Kunimori, N. Hirata, F. Terui, Y. Mimasu,
+                Development of the Laser Altimeter (LIDAR) for Hayabusa2,
+                Space Sci. Rev., 208, 33-47, 2017.
+            </reference_text>
+            <description>The LIDAR instrument paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-016-0240-9</doi>
+            <reference_text>
+                R. Yamada, H. Senshu, N. Namiki, T. Mizuno, S. Abe, F. Yoshida, H. Noda, N. Hirata, S. Oshigami, H. Araki, Y. Ishihara, K. Matsumoto,
+                Albedo Observation by Hayabusa2 LIDAR: Instrument Performance and Error Evaluation,
+                Space Sci. Rev., 208, 49-64, 2017.
+            </reference_text>
+            <description>The LIDAR instrument paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-016-0242-7</doi>
+            <reference_text>                
+                H. Senshu, S. Oshigami, M. Kobayashi, R. Yamada, N. Namiki, H. Noda, Y. Ishihara, T. Mizuno,
+                Dust Detection Mode of the Hayabusa2 LIDAR,
+                Space Sci. Rev., 208, 65-79, 2017.
+            </reference_text>
+            <description>The LIDAR instrument paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1186/s40623-016-0589-8</doi>
+            <reference_text>
+                H. Noda, H. Kunimori, T. Mizuno, H. Senshu, N. Ogawa, H. Takeuchi, C. Moore, A. Pollard, T. Yamaguchi, N. Namiki, T. Kase, T. Saiki, Y. Tsuda,
+                Laser link experiment with the Hayabusa2 laser altimeter for in-flight alignment measurement,
+                Earth, Planets and Space, 69, 2, 2017.
+            </reference_text>
+            <description>The LIDAR instrument paper.</description>
+        </External_Reference>        
+    </Reference_List>
+    <Instrument>
+        <name>LIght Detection And Ranging (LIDAR)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Altimeter</ctli:type>
+                <ctli:type>Dust Analyzer</ctli:type>
+                <ctli:type>Lidar</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <naif_instrument_id>-37400</naif_instrument_id>
+        <description>LIDAR, LIght Detection And Ranging, is a laser altimeter onboard Hayabusa2 spacecraft. LIDAR is part of navigation system of spacecraft, but it can be used for scientific instrument.  By measuring distance to surface of (162173) Ryugu will enable us to acquire spacecraft position information and topography of (162173) Ryugu, and derive albedo using measured intensity of reflected light by (162173) Ryugu. LIDAR also has dust count mode and mode for laser link experiment.</description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet_lup</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Beta Lupi</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Kekouan</alternate_title></Alias>
+      <Alias><alternate_title>Beta Lup</alternate_title></Alias>
+      <Alias><alternate_title>bet Lup</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 15004</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-42 9853</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 4329</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 0 12813</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-42 6856</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 552</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 20128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 8677</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00132058</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 07832-02490</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 132058</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 73273</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 73273</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 5571</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 14552-4256</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2556</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J14583192-4308020</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3380</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 320091</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2130</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 225335</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 27188</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 17837</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7832-2490-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 12994</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 20464</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100132058</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 12553</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Beta Lupi</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 14 hours 58 minutes 31.92536 seconds
+Declination, ICRS coord, ep=J2000: -43 degrees 08 minutes 02.2699 seconds
+    </description>
+  </Target>
+</Product_Context>

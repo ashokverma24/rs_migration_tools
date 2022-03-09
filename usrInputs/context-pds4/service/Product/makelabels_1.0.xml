@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:makelabels</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MakeLabels</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-07-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>MakeLabels</name>
+        <abstract_desc>A command-line and Windows GUI application that generates PDS4 labels using a template and one or two Excel spreadsheets.</abstract_desc>
+        <version_id>6.2</version_id>
+        <url>http://pds-geosciences.wustl.edu/tools/makelabels.html</url>
+        <release_date>2020-05-01</release_date>
+        <service_type>Tool</service_type>
+        <interface_type>Command-Line</interface_type>
+        <interface_type>GUI</interface_type>
+        <category>Generation</category>
+        <software_language>Microsoft C# .NET Framework 4.5.2</software_language>
+        <supported_operating_system_note>Microsoft Windows 7 or greater desktop OS
+        Microsoft Windows 2008 or greater server OS</supported_operating_system_note>
+        <system_requirements_note>Microsoft Excel 2013 or greater .xlsx (has not been tested with older versions)
+        Microsoft .NET Framework 4.5.2 (64-bit) (included in the MakeLabels distribution)</system_requirements_note>
+        <description>MakeLabels is a program that generates PDS4 labels using a label template and one or two Microsoft Excel spreadsheets. It replaces placeholders in the template with values from the spreadsheets. In fact, it can be used to output any type of ASCII file.
+
+        A graphical user interface (GUI) version of the program and a command-line version are provided. Most users will use the GUI version for rapid or infrequent processing. The command-line version is more useful when setting up automated processes.</description>
+    </Service>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:node:node.geo</lid_reference>
+            <reference_type>has_node</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <!--
+    Submitter Information
+    Submitter Name:        Dan Scholes
+    Submitter Institution: PDS Geosciences Node
+    Submitter Email:       scholes@wunder.wustl.edu
+    -->
+</Product_Service>

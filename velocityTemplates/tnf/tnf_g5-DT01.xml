@@ -1,0 +1,760 @@
+                        <Group_Field_Binary>
+                              <name>Downlink Carrier Phase CHDO (Data Type 1)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>59</fields>
+                              <groups>0</groups>
+                              <description>Downlink Carrier Phase CHDO (Data Type 1)</description>
+                              <group_location unit="byte">147</group_location>
+                              <group_length unit="byte">232</group_length>
+                              <Field_Binary>
+                                  <name>chdo_type</name>
+                                  <field_number>1</field_number>
+                                  <field_location unit="byte">1</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Type attribute of the downlink carrier phase data CHDO. 
+                                      Set to 10 because the CHDO contains binary data.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chdo_length</name>
+                                  <field_number>2</field_number>
+                                  <field_location unit="byte">3</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Length attribute of the downlink carrier phase data CHDO value field.
+                                      Number of bytes after this item.  Set to 228 for this CHDO.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>carr_loop_bw</name>
+                                  <field_number>3</field_number>
+                                  <field_location unit="byte">5</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Carrier tracking loop bandwidth.
+                                      Values from 0.1 to 50.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>pcn0</name>
+                                  <field_number>4</field_number>
+                                  <field_location unit="byte">9</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Ratio of carrier power (Pc) to noise power spectral density (N0).
+                                      Values from 0.0 to 90.0 are allowed; value -300.0 indicates no signal.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>pcn0_resid</name>
+                                  <field_number>5</field_number>
+                                  <field_location unit="byte">13</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Pc/N0 residual -- actual value minus predicted value.
+                                      Values -90.0 to 90.0 are allowed; value -300.0 indicates
+                                      no signal or carrier is suppressed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>pdn0</name>
+                                  <field_number>6</field_number>
+                                  <field_location unit="byte">17</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Ratio of data power (Pd) to noise power spectral density (N0).  
+                                      Values 0.0 to 90.0 are allowed; value -300.0 indicates no signal.</description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>pdn0_resid</name>
+                                  <field_number>7</field_number>
+                                  <field_location unit="byte">21</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Pd/N0 residual -- actual value minus predicted value.
+                                      Values -90.0 to 90.0 are allowed; value -300.0 indicates no signal.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>system_noise_temp</name>
+                                  <field_number>8</field_number>
+                                  <field_location unit="byte">25</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>K</unit>
+                                  <description>
+                                      System Noise Temperature.
+                                      Values 0.1 to 2000.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+
+                              <Field_Binary>
+                                  <name>phs_hi_0</name>
+                                  <field_number>9</field_number>
+                                  <field_location unit="byte">29</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 0 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.0 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_0</name>
+                                  <field_number>10</field_number>
+                                  <field_location unit="byte">33</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 0 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.0 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_0</name>
+                                  <field_number>11</field_number>
+                                  <field_location unit="byte">37</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 0 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.0 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              
+                              <Field_Binary>
+                                  <name>phs_hi_1</name>
+                                  <field_number>12</field_number>
+                                  <field_location unit="byte">41</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 1 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.1 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_1</name>
+                                  <field_number>13</field_number>
+                                  <field_location unit="byte">45</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 1 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.1 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_1</name>
+                                  <field_number>14</field_number>
+                                  <field_location unit="byte">49</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 1 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.1 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              
+                              <Field_Binary>
+                                  <name>phs_hi_2</name>
+                                  <field_number>15</field_number>
+                                  <field_location unit="byte">53</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 2 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.2 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_2</name>
+                                  <field_number>16</field_number>
+                                  <field_location unit="byte">57</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 2 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.2 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_2</name>
+                                  <field_number>17</field_number>
+                                  <field_location unit="byte">61</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 2 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.2 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+
+                              <Field_Binary>
+                                  <name>phs_hi_3</name>
+                                  <field_number>18</field_number>
+                                  <field_location unit="byte">65</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 3 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.3 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_3</name>
+                                  <field_number>19</field_number>
+                                  <field_location unit="byte">69</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 3 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.3 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_3</name>
+                                  <field_number>20</field_number>
+                                  <field_location unit="byte">73</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 3 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.3 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+
+                              <Field_Binary>
+                                  <name>phs_hi_4</name>
+                                  <field_number>21</field_number>
+                                  <field_location unit="byte">77</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 4 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.4 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_4</name>
+                                  <field_number>22</field_number>
+                                  <field_location unit="byte">81</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 4 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.4 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_4</name>
+                                  <field_number>23</field_number>
+                                  <field_location unit="byte">85</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 4 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.4 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                            
+                              <Field_Binary>
+                                  <name>phs_hi_5</name>
+                                  <field_number>24</field_number>
+                                  <field_location unit="byte">89</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 5 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.5 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_5</name>
+                                  <field_number>25</field_number>
+                                  <field_location unit="byte">93</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 5 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.5 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_5</name>
+                                  <field_number>26</field_number>
+                                  <field_location unit="byte">97</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 5 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.5 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+
+                              <Field_Binary>
+                                  <name>phs_hi_6</name>
+                                  <field_number>27</field_number>
+                                  <field_location unit="byte">101</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 6 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.6 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_6</name>
+                                  <field_number>28</field_number>
+                                  <field_location unit="byte">105</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 6 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.6 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_6</name>
+                                  <field_number>29</field_number>
+                                  <field_location unit="byte">109</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 6 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.6 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+
+                              <Field_Binary>
+                                  <name>phs_hi_7</name>
+                                  <field_number>30</field_number>
+                                  <field_location unit="byte">113</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 7 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.7 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_7</name>
+                                  <field_number>31</field_number>
+                                  <field_location unit="byte">117</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 7 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.7 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_7</name>
+                                  <field_number>32</field_number>
+                                  <field_location unit="byte">121</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 7 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.7 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+
+                              <Field_Binary>
+                                  <name>phs_hi_8</name>
+                                  <field_number>33</field_number>
+                                  <field_location unit="byte">125</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 8 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.8 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_8</name>
+                                  <field_number>34</field_number>
+                                  <field_location unit="byte">129</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 8 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.8 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_8</name>
+                                  <field_number>35</field_number>
+                                  <field_location unit="byte">133</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 8 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.8 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+
+                              <Field_Binary>
+                                  <name>phs_hi_9</name>
+                                  <field_number>36</field_number>
+                                  <field_location unit="byte">137</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 9 -- high part.
+                                      Total integer phase in cycles at (time tag + 0.9 seconds) divided by 2**32.
+                                      Values between 0 and 2*32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_9</name>
+                                  <field_number>37</field_number>
+                                  <field_location unit="byte">141</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 9 -- low part.
+                                      Total integer phase in cycles at (time tag + 0.9 seconds) modulo 2*32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_9</name>
+                                  <field_number>38</field_number>
+                                  <field_location unit="byte">145</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Raw phase sample 9 -- fractional part.
+                                      Fractional phase cycles at (time tag + 0.9 seconds) multiplied by 2**32
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+
+                              <Field_Binary>
+                                  <name>phs_hi_avg</name>
+                                  <field_number>39</field_number>
+                                  <field_location unit="byte">149</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>Averaged phase sample  -- high part.  
+                                      One second averaged phase, centered around time tag, then divided by 2**32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_lo_avg</name>
+                                  <field_number>40</field_number>
+                                  <field_location unit="byte">153</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>Averaged phase sample -- low part.
+                                      One second averaged phase, centered around time tag, modulo 2**32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_frac_avg</name>
+                                  <field_number>41</field_number>
+                                  <field_location unit="byte">157</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>Averaged phase sample -- fractional part.
+                                      One second averaged phase, centered around time tag; fractional part multiplied by 2**32.
+                                      Values between 0 and 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dl_freq</name>
+                                  <field_number>42</field_number>
+                                  <field_location unit="byte">161</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Downlink frequency at the time tag.
+                                      Values 2.2e9 to 32.3e9 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dop_resid</name>
+                                  <field_number>43</field_number>
+                                  <field_location unit="byte">169</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Doppler residual -- negative of the frequency residual.
+                                      Values -1.0e6 to 1.0e6 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dop_noise</name>
+                                  <field_number>44</field_number>
+                                  <field_location unit="byte">173</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Doppler noise averaged over 10 points in record.
+                                      Values 0.0 to 1000.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>slipped_cycles</name>
+                                  <field_number>45</field_number>
+                                  <field_location unit="byte">177</field_location>
+                                  <data_type>SignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Slipped cycles.
+                                      Values -10 to 10 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>carr_loop_type</name>
+                                  <field_number>46</field_number>
+                                  <field_location unit="byte">181</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Carrier loop type.
+                                      Values 1 to 3 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>snt_flag</name>
+                                  <field_number>47</field_number>
+                                  <field_location unit="byte">182</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      SNT measurement flag.
+                                         0 = SNT value is the predicted value; 
+                                         1 = SNT value is the measured value
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>carr_resid_wt</name>
+                                  <field_number>48</field_number>
+                                  <field_location unit="byte">183</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Carrier residual weight. 
+                                      The weight value applied to residual phase error in carrier tracking.
+                                      When the carrier is suppressed,  carrier weight is 1.0 minus this value.
+                                      Values 0.0 to 1.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>sup_data_id</name>
+                                  <field_number>49</field_number>
+                                  <field_location unit="byte">187</field_location>
+                                  <data_type>ASCII_String</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <description>
+                                      Support data ID.
+                                      Name of the frequency predicts set used.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>sup_data_rev</name>
+                                  <field_number>50</field_number>
+                                  <field_location unit="byte">195</field_location>
+                                  <data_type>ASCII_String</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <description>
+                                      Support data revision.
+                                      Revision of the frequency predicts set used.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>prdx_time_offset</name>
+                                  <field_number>51</field_number>
+                                  <field_location unit="byte">203</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Predicts time offset.
+                                      Seconds added to current time.
+                                      Values -8.64e4 to 8.64e4 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>prdx_freq_offset</name>
+                                  <field_number>52</field_number>
+                                  <field_location unit="byte">211</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Predicts frequency offset. 
+                                      Hz added to predicted value.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>carr_resid_tol_flag</name>
+                                  <field_number>53</field_number>
+                                  <field_location unit="byte">219</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Carrier residual tolerance flag.
+                                         0 = Out of tolerance; 
+                                         1 = In tolerance
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>time_tag_corr_flag</name>
+                                  <field_number>54</field_number>
+                                  <field_location unit="byte">220</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Time tag correction flag.
+                                      Indicates results of validation of the block time tag.
+                                         0 = No validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>type_time_corr_flag</name>
+                                  <field_number>55</field_number>
+                                  <field_location unit="byte">221</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Type of time tag correction flag.
+                                      Indicates what type of time tag correction was made.
+                                         0 = No correction;
+                                         1 = Year correction; 
+                                         2 = DOY correction; 
+                                         3 = Both Year and DOY correction
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dop_mode_corr_flag</name>
+                                  <field_number>56</field_number>
+                                  <field_location unit="byte">222</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Doppler mode correction flag.
+                                      Indicates the results of the validation of the Doppler mode.
+                                         0 = Not applicable or no validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ul_stn_corr_flag</name>
+                                  <field_number>57</field_number>
+                                  <field_location unit="byte">223</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Uplink station correction flag.
+                                      Indicates the results of the validation of the uplink station.
+                                         0 = Not applicable or no validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve1</name>
+                                  <field_number>58</field_number>
+                                  <field_location unit="byte">224</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Reserved. One byte.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve8</name>
+                                  <field_number>59</field_number>
+                                  <field_location unit="byte">225</field_location>
+                                  <data_type>UnsignedMSB8</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <description>
+                                      Reserved. Eight bytes.
+                                  </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

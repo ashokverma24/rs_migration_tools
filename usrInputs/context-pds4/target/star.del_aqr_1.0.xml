@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.del_aqr</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Skat</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>76 Aquarii</alternate_title></Alias>
+      <Alias><alternate_title>Delta Aquarii</alternate_title></Alias>
+      <Alias><alternate_title>Delta Aqr</alternate_title></Alias>
+      <Alias><alternate_title>del Aqr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>76 Aqr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-16 6173</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 866</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 31943</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 14380</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00216627</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 06387-01382</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 216627</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 1092</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 113136</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 113136</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 8709</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 3546</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J22543901-1549144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 5040</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5552</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5552.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 610</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 240921</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAVE J225439.0-154914</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 3333</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 165375</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 43516</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 29440</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 6387-1382-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 19625</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 26696</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100216627</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 20136</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 106 8500</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2404579569999907200</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Skat</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 22 hours 54 minutes 39.0114202204 seconds
+Declination, ICRS coord, ep=J2000: -15 degrees 49 minutes 14.848081697 seconds
+    </description>
+  </Target>
+</Product_Context>

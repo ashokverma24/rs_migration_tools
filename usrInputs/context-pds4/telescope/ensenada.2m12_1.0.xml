@@ -1,0 +1,42 @@
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.jpl.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1700.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:ensenada.2m12</logical_identifier>
+        <version_id>0.0</version_id>
+        <title>2.12-m Ritchey-Chretien reflector</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-03-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version exported from OLAF</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.ensenada</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>National Astronomical Observatory-Ensenada (OLAF observatory code 211)</comment>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit='m'>2.12</aperture>
+        <telescope_longitude unit='deg'>244.536949</telescope_longitude>
+        <telescope_latitude unit='deg'>31.043888</telescope_latitude>
+        <telescope_altitude unit='m'>2830</telescope_altitude>
+        <coordinate_source>Unknown</coordinate_source>
+        <description>
+        The 2.12-m Ritchey-Chretien reflector is a 2.12 m telescope located at 31.043888, 244.536949 at the National Astronomical Observatory-Ensenada.
+        
+        The Instituto de Astronomia at Ensenada, Mexico, operates the 2.1m,      Ritchey-Chretien reflector telescope at the Observatorio Astronomico Nacional - San Pedro Martir facility located on the summit of the San Pedro Martir Sierra on the Baja California peninsula of Mexico. Built between 1974 and 1979, the telescope features secondaries of f/7.5, f/13.5, or f/30 and has been in operation since July 1979.
+
+The 2.1m telescope is located at:                                         
+                                                                              
+  Longitude  :   115.463611 degrees West  (-115deg 27' 49'')              
+  Latitude   :    31.044167 degrees North ( +31deg 02' 39'')              
+  Altitude   :  2800 meters        
+        </description>
+    </Telescope>
+</Product_Context>

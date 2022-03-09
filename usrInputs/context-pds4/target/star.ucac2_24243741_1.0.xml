@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd">
+    
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.ucac2_24243741</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>U144</title>  <!-- from mitch -->
+    <information_model_version>1.14.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>UCAC2 24243741</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DENIS J202924.1-194014</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J20292412-1940141</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPMX J202924.1-194014</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAVE J202924.1-194014</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC3 141-414620</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC4 352-181890</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 0703-00785616</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WISE J202924.12-194014.0</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 6859855558254623744</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Uranus 144</alternate_title></Alias>  <!-- from mitch-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-05-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>U144</name>  <!-- from mitch -->
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 20 hours 29 minutes 24.1252594373 seconds        from simbad
+Declination, ICRS coord, ep=J2000: -19 degrees 40 minutes 14.244069295 seconds        from simbad
+    </description>
+  </Target>
+</Product_Context>
+

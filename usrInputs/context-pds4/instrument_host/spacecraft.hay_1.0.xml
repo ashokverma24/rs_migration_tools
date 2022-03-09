@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.hay</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>HAYABUSA</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.hayabusa::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:amica.hay::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:lidar.hay::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:nirs.hay::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--noSpice        <Internal_Reference> -->
+<!--noSpice            <lidvid_reference>urn:nasa:pds:context:instrument:spice.hay::1.0</lidvid_reference> -->
+<!--noSpice            <reference_type>instrument_host_to_instrument</reference_type> -->
+<!--noSpice        <Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:asteroid.25143_itokawa::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:asteroid.asteroid::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:calibration.cal_lamps::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:calibration.calibration::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:calibration.ff_lamp::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:calibration.flat_field::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:calibration.sky::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.earth::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.mars::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.saturn::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.moon::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.31_leo::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.alpha-beta_crv::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.alpha_aur::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.alpha_ori::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.alpha_sco::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.alpha_vir::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.beta_tau::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.calibration_field::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.tau_sco::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <External_Reference>
+            <reference_text>
+                   Fujiwara, A., J. Kawaguchi, D.K. Yeomans, M. Abe, T. Mukai, and 17 others, The
+                   rubble-pile asteroid Itokawa as observed by Hayabusa, Science 312, 1330-1334,
+                   2006.
+            </reference_text>
+            <description>reference.FUJIWARAETAL2006</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>HAYABUSA</name>
+        <type>Spacecraft</type>
+        <naif_host_id>HAY</naif_host_id>
+
+        <description>
+ 
+ 
+      Instrument Host Overview
+      ========================
+ 
+  The HAYABUSA spacecraft is box-shaped with approximate dimensions of
+  1.5 x 1.2 x 1.2 meters.  Two solar panels with a combined area of 12
+  square meters provide power for the spacecraft including the four ion
+  engines.  The spacecraft launch mass was 530 kg including 60 kg of xenon
+  fuel and 70 kg of hydrazine fuel for the attitude control jets.  Each of
+  the four ion engines uses microwave ionization of the xenon fuel and
+  electrostatic acceleration of the ionized fuel to generate 5.2 - 23.6 mN
+  of thrust (Isp = 3200 s).  Up to 3 of the 4 ion engines operate at one
+  time.  The sample return capsule is 40 cm in diameter, has a height of 20
+  cm and has a mass of 16.5 kg.  The surface hopper (MINERVA) is nearly
+  cylindrical (10 x 12 cm) and by itself has a mass of 591 g. The
+  spacecraft was designed to be three axis stabilized with 3 momentum
+  wheels operating in orthogonal directions.
+ 
+  Upon its return to Earth in June 2010, the return capsule separated
+  from the mother spacecraft with a velocity of 17 cm/sec.  Its spin rate
+  was about 0.2 Hz.  At 20 G, a timer was armed to jettison the parachute
+  cover at an altitude of about 10 km.  The capsule recovery was near
+  Woomera, Australia, the landing velocity was about 6 m/s and the
+  Landing footprint was estimated to be 169 x 16 km (4 sigma).  To assist
+  recovery, the sample capsule had a 242 MHz beacon radio signal.  An
+  introduction to the spacecraft description and mission results can be
+  found in [FUJIWARAETAL2006].
+ 
+  Fujiwara, A., J. Kawaguchi, D.K. Yeomans, M. Abe, T. Mukai, and 17
+  others, The rubble-pile asteroid Itokawa as observed by Hayabusa,
+  Science 312, 1330-1334, 2006.
+ 
+ 
+      System Description
+      ==================
+ 
+  The spacecraft coordinate system has the high gain antenna (HGA)
+  pointing in the +Z direction with the AMICA camera, NIRS, LIDAR, XRS,
+  along with the low gain X and S band antenna pointing in the -Z
+  direction.  The ion engines point in the +X direction with the star
+  tracker pointing in the -X direction.  The solar panel nearest the star
+  tracker is in the +Y direction (Y = X x Z) with the second solar panel
+  pointing in the -Y direction.  Bi-propellant attitude control thrusters
+  are located on each corner of the spacecraft.  The power output of the
+  solar panels is 2.6 kw at 1 AU.
+ 
+  Along with the solar panels and HGA, the science instruments are hard
+  mounted to the spacecraft.  The LIDAR, XRS, AMICA and sample horn are
+  attached to the outside of the -Z deck with the NIRS mounted on the -X
+  deck but pointing in the -Z direction.  MINERVA is located on the -Z axis
+  near the sampling horn.  The AMICA, NIRS,and LIDAR have co-aligned
+  fields-of-view.  The interior of the spacecraft contains the propulsion
+  module.
+ 
+  The ionized plasma is accelerated by high-voltage electrodes through
+  four thruster heads which protrude from one side of the spacecraft body
+  to provide ion thrusting of the spacecraft.  A nitrogen
+  tetroxide/hydrazine propulsion system with a peak thrust of 22 N was used
+  for maneuvering until late December 2005 when this fuel was exhausted.
+  The spacecraft is powered by gallium-arsenide solar cells and a 15 A-hr
+  rechargeable nickel-metal hydride (Ni-MH) battery. The battery suffered
+  degredation during the close proximity spacecraft activities in late
+  2005.
+ 
+  Because of the sun, Earth and asteroid geometry at encounter and the
+  spacecraft design, most often the spacecraft hovered above the asteroid
+  along the Sun-asteroid line so that radio communications with Earth
+  could be maintained at the same time the solar panels were directed
+  toward the sun.  Three optical cameras were carried on board the
+  spacecraft.  In addition to the AMICA science camera, two wide angle
+  cameras were used for optical navigation.  They were equipped with
+  500 x 500 CCDs with a resolution of 216 arcsec/px, 13 mm focal lengths
+  and with a f ratio of 9.6.  The spacecraft was also equipped with a star
+  tracker (266 x 384 CCD, focal length = 12 mm, f/1.4, resolution = 375
+  arc seconds).  Of the four laser range finders (LRF) on board, three were
+  used to measure the distance to the asteroid&apos;s surface when the the
+  spacecraft was close (120 to 7 meters) while the fourth LRF was to be
+  used to detect the deflection of the sampling horn when it touched the
+  surface; this would then trigger the pellet firing to generate surface
+  sample ejecta to capture.
+ 
+  The coordinates and some of the larger elements of the spacecraft are
+  shown in the schematic figure below.
+ 
+                                     +Z
+ 
+                                     /\  HGA
+                            -------------------
+                             \                /
+                              \              /
+                         --------------------------
+                         |                        |
+                         |                        |_
+                         |                        |_]  ion engines
+                         |                        |_]   +X
+                        _|                        |
+                  NIRS | |                        |
+                          ----| |--------------| |-
+                           | | LIDAR            XRS
+                           | |
+                           | |      -Z
+                           | |
+                           | |
+                           | |  Sample horn
+                          /   \
+ 
+ 
+ 
+      Communications Subsystem
+      ========================
+ 
+  The communications subsystem includes the 1.6 meter two axis gimbaled,
+  parabolic high gain antenna (HGA), two medium gain horn antennae (MGA)
+  located on the HGA deck, four micro strip low gain antennae (LGA), an
+  X-band transmitter (XTX), and two X-band receivers (XRX).  The uplink
+  frequency is 7156.533 MHz and the downlink frequency is 8408.210 MHz.
+  The signal has right hand circular polarization.  The XRX receives and
+  demodulates command signals and receives and filters range signals.  The
+  maximum transmitter power is 20 W and the bit rates can be set at 8, 16,
+  32, 64, 128, 256, 512, 1024, 2048, 4096, or 8192 bps with a maximum of
+  about 5 MB per day.
+ 
+ 
+      Command and Data Handling Subsystem
+      ===================================
+ 
+  The Data Handling Subsystem (DHS) comprises the command and telemetry
+  processors, a solid state Data Recorder (DR), and an interface to a
+  redundant data bus for communicating with other processor-controlled
+  subsystems. The functions provided by the DHS are command management,
+  telemetry management, and autonomous operations.
+ 
+  The command function operates on inputs from the two command receivers
+  at one of three rates: 15.625 bps, 125 bps, or 1000 bps. The format of
+  the uplinked commands is Consultative Committee for Space Data Systems
+  (CCSDS) compliant, with only a single virtual channel. Four types of
+  commands are supported: discrete commands are used to turn on or off a
+  function provided by a spacecraft subsystem; serial magnitude commands
+  are used to set values to one or more parameters of a subsystem; user
+  data commands are used to send a block of user data to a subsystem; and
+  memory write commands are used to write a block of data to a portion of a
+  memory installed in a subsystem.  The DHS relays these commands as they
+  are to intelligent subsystems (or components) using the data bus, or
+  sends discrete and serial magnitude commands as physical signals to
+  non-intelligent subsystems (or components) on serial interfaces. A series
+  of commands that perform a specific function can be stored as a command
+  macro, which can be executed with a command sent from the ground or by
+  one of the methods described below.
+ 
+  The DHS can also store a sequence of time-tagged commands or command
+  macros, which is called a timeline, for later execution at specified
+  spacecraft times.  When the DHS detects an anomaly, it can automatically
+  execute a command or command macro. Intelligent subsystems can also
+  request the DHS to issue a command or command macro to another subsystem.
+  During normal operations, most of commands are executed from a timeline,
+  which have been pre-stored from the ground. In this way, most operations
+  are carried out when the spacecraft is out of ground contact.
+ 
+  The telemetry function collects engineering status and science data
+  using dedicated serial interfaces from non-intelligent subsystems (or
+  components), or using the data bus from intelligent subsystems (or
+  components). These data are always packetized either by the DHS or by
+  intelligent subsystems (or components), and placed into CCSDS-compliant
+  transfer frames. The transfer frames are directed to the DR, the
+  downlink, or both. Data recorded on the DR are read back, packed into
+  transfer frames and placed into the downlink on command.  Recorder
+  playback data can be interleaved with real time data on the downlink.
+ 
+  The downlink data rate is selectable among 11 rates ranging from 8192
+  bps to 8 bps to match the communication link capability throughout the
+  mission.
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

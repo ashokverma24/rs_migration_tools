@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.eso-paranal</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>European Southern Observatory on Cerro Paranal, Chile</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_title>Paranal Observatory</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-10-09</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created from information from ESO Website: https://www.eso.org/public/teles-instr/paranal-observatory/
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-paranal.vlt_antu_8m2_ut1</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Unit Telescope 1, Antu (UT1)</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-paranal.vlt_kueyen_8m2_ut2</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Unit Telescope 2, Kueyen (UT2)</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-paranal.vlt_melipal_8m2_ut3</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Unit Telescope 3, Melipal (UT3)</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-paranal.vlt_yepun_8m2_ut4</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Unit Telescope 4, Yepun (UT4)</comment>
+        </Internal_Reference>
+<!--        
+         <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-paranal.vlt_1m8_at1</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Auxilliary Telescope 1 (AT1)</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-paranal.vlt_1m8_at2</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Auxilliary Telescope 2 (AT2)</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-paranal.vlt_1m8_at3</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Auxilliary Telescope 3 (AT3)</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-paranal.vlt_1m8_at4</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Auxilliary Telescope 4 (AT4)</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-paranal.vlti</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>Interferometer configuration using any combination of UT1-4 and AT1-4.</comment>
+        </Internal_Reference>  
+ -->
+    </Reference_List>
+    <Facility>
+        <name>European Southern Observatory (Paranal) Very Large Telescope</name>
+        <type>Observatory</type>
+        <address>Summit of Cerro Paranal, Chile, 130 km south of Antofagasto, Chile</address>
+        <country>Chile</country>
+        <description>
+            The Paranal Observatory, home of the Very Large Telescope (VLT), is operated by the European Southern 
+            Observatory (ESO), and is located in the Atacama Desert in Northern Chile, on the summit of Cerro Paranal 
+            at 2635 m elevation. Paranal is located 120 km south of the town of Antofagasta, Chile. The observatory 
+            consists of the Very Large Telescope (VLT), which is comprised of four 8.2-m telescopes that operate
+            indepently (Unit Telescopes: UT1-UT4) or together as an interferometer (VLTI) in combination with four 
+            auxiliary 1.8-m telescopes. The VLT operates in the visible and infrared, with adaptive optics on each of 
+            the 8.2-m unit telescopes. Although the four 8.2-metre Unit Telescopes can be combined in the VLTI, they 
+            are mostly used for individual observations and are only available for interferometric observations for a 
+            limited number of nights every year. But four smaller, dedicated 1.8-metre Auxiliary Telescopes (ATs) are 
+            available to allow the VLTI to operate every night
+            
+            Location of the observatory is at 24°37'38" S  70°24'15" W.
+        </description>
+    </Facility>
+</Product_Context>

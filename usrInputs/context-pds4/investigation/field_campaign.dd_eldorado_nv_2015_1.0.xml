@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:field_campaign.dd_eldorado_nv_2015</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Dust Devil Field Campaign, Eldorado Playa, Nevada, 2015</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-12-08</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial setup for this investigation.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>  
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:no-host.lorenz_met_station</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.earth</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1002/2014JEE004712</doi>
+            <reference_text>Jackson, Brian and Lorenz, Ralph (2015). A multiyear dust devil vortex survey using an automated search of pressure time series, J. Geophys. Res. Planets, 120. </reference_text>
+            <description>Citation of the official published version of the paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Investigation>
+        <name>Dust Devil Field Campaign, Eldorado Playa, Nevada, 2015</name>
+        <type>Field Campaign</type>
+        <start_date>2012</start_date>
+        <stop_date>2013</stop_date>
+        <description>
+        A dust devil field campaign in Eldorado Playa, Nevada conducted over 2012-2013 by Brian Jackson and Ralph Lorenz. The work was published in JGR in 2015.
+        Terrestrial dust devils serve as planetary analogs to dust devils on Mars. The remote meterological stations used in this study provided pressure and temperature
+        data for dust devil encounters in the desert. In some cases measurements of voltage were also acquired. 
+        </description>
+    </Investigation>
+</Product_Context>

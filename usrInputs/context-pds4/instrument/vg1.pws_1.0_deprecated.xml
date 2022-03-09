@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pws.vg1</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PLASMA WAVE RECEIVER for VG1</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vg1::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Scarf, F.L., and D.A. Gurnett, A Plasma Wave Investigation for the Voyager
+                   Mission, Space Sci. Rev., Vol. 21, p. 289, 1977.
+            </reference_text>
+            <description>reference.SCARF-GURNETT1977</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>PLASMA WAVE RECEIVER</name>
+        <type>Plasma Wave Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  INSTRUMENT: PLASMA WAVE RECEIVER
+  SPACECRAFT: VOYAGER 1
+ 
+  Instrument Overview
+  ===================
+    Instrument Id                  : PWS
+    Instrument Host Id             : VG1
+    Principal Investigator         : DONALD A. GURNETT
+    PI PDS User Id                 : DGURNETT
+    Instrument Name                : PLASMA WAVE RECEIVER
+    Instrument Type                : PLASMA WAVE SPECTROMETER
+    Build Date                     : UNK
+    Instrument Mass                : 1.400000
+    Instrument Length              : 0.318000
+    Instrument Width               : 0.185000
+    Instrument Height              : 0.048000
+    Instrument Serial Number       : SN002
+    Instrument Manufacturer Name   : THE UNIVERSITY OF IOWA
+ 
+    The Plasma Wave Receiver on Voyager consists of both a
+    16-channel spectrum analyzer covering the range of 10 Hertz to
+    56.2 kiloHertz and a wideband waveform receiver which returns
+    the waveform of waves in the frequency range of 40 Hertz to 12
+    kiloHertz.  The spectrum analyzer provides data on a continual
+    basis with a maximum temporal resolution of one spectrum per 4
+    seconds.  The waveform receiver returns 4-bit samples of the
+    electric field measured at a rate of 28,800 samples per second.
+    Because of the very high data rate, the waveform samples must
+    be transmitted in the same manner as the Voyager imaging
+    information.  At Jupiter, some 10,000 48-second waveform frames
+    were obtained.  At Saturn, the number of frames obtained was
+    very small due to the lower telemetry rates available at the
+    greater distance of that planet.
+ 
+ 
+  Science Objectives
+  ==================
+    The primary science objective of the Voyager plasma wave
+    investigation is to make the first surveys of the plasma wave
+    and low frequency radio wave spectra in the magnetospheres of
+    the outer planets: Jupiter and Saturn.  Plasma waves
+    participate in a fundamental manner in the dynamics of
+    planetary magnetospheres and in the interactions of that
+    magnetosphere with the external solar wind and internal
+    perturbations such as those induced by satellites interior to
+    the magnetosphere.  Plasma waves also provide diagnostic
+    information about the plasma environment near the planets
+    including such parameters as electron density and sometimes
+    temperature.  The instrument is also sensitive to low frequency
+    radio emissions and, therefore, acts as a low frequency
+    extension to the Planetary Radio Astronomy investigation.
+    Radio waves are often the only means of remotely observing
+    regions of plasma not accessible to the spacecraft and also
+    lead to remote diagnostics of plasma conditions.  The plasma
+    wave receivers are also sensitive to the results of small dust
+    particles impacting on various parts of the spacecraft at high
+    velocities and, hence, provide a direct measure of the rate of
+    impact, the density of the dust, and an estimate of the mass
+    distribution of dust in the vicinity of the large planets,
+    especially those with rings and otherwise dusty environments.
+    Finally, the Plasma Wave Receiver will characterize the plasma
+    wave and radio wave spectrum of the outer heliosphere and
+    perhaps beyond, extending our understanding of solar wind
+    plasma processes and wave-particle interactions to several tens
+    of Astronomical Units.
+ 
+ 
+  Operational Considerations
+  ==========================
+    The primary operational considerations of the PWS include
+    maintaining the proper operating mode and obtaining waveform
+    samples as often as the spacecraft tape recorder/downlink
+    capabilities allow.  The standard instrument mode is with
+    Waveform Power On and Input Gain State Hi.  For encounter
+    periods, this corresponds to GS3GAINHI/WFMPWRON.  Since there
+    has never been a period when the signal levels were so high as
+    to require the Low input gain state, and it is highly unlikely
+    that such levels will ever be encountered, Low Input Gain State
+    should never be selected.  As long as there is power margin
+    available, it is most straightforward to leave the Waveform
+    Receiver Power on.  The power consumption is less than 0.5 Watt
+    for this section, hence, the power savings afforded by turning
+    it off is not large.  The most involved operational
+    consideration is providing for the transmission of waveform
+    data to the ground.  At Jupiter, the majority of the waveform
+    data could be sent directly to the ground via the 115200 bps
+    downlink.  This capability disappeared after Jupiter, however,
+    because of the greater distance to the spacecraft, hence, lower
+    telecon rates.  Since operating the A/D converter at a rate
+    less than 28800 Hertz would result in aliasing, it is necessary
+    to record the data at the 115200 bps rate on the spacecraft
+    tape recorder using the appropriate data mode and playback the
+    recorded data at a lower rate, commensurate with the link
+    capabilities.  Again, a choice of the proper playback mode is
+    required.  Since the data modes available on the spacecraft are
+    highly dependent on mission phase, these modes are not
+    described here.
+ 
+ 
+  Calibration Description
+  =======================
+    The Voyager plasma wave receiver spectrum analyzers were
+    calibrated by first establishing a relationship between input
+    voltage (of a sine wave at the filter center frequency) and
+    output voltage and second by measuring the effective bandwidth
+    of the filter.  The bandwidth is measured by applying a random
+    noise signal of known spectral density and by measuring the
+    output voltage which, by the first part of the calibration, is
+    related to the rms voltage of a sine wave.  Dividing the
+    equivalent sine wave voltage squared by the input spectral
+    density gives a bandwidth.  This procedure is repeated for each
+    of the frequency channels.
+ 
+ 
+  &apos;PWS ANTENNA&apos; Detector
+  ======================
+    Detector Type                  : DIPOLE ANTENNA
+    Nominal Operating Temperature  : 298.000000
+ 
+    The PWS uses a pair of 10 meter antenna elements as a balanced
+    dipole antenna.  The two elements are extended from the
+    spacecraft at right angles to each other.  (The elements are
+    shared with the Planetary Radio Astronomy instrument, which
+    uses them as a pair of monopoles so that measurements of the
+    degree of right and left hand circular polarization can be
+    made.) The PWS measures the voltage difference between the two
+    elements which, when coupled with the effective length of the
+    antenna system (7.07 m) yields an electric field strength in
+    units of volt/meter.  The antenna system has the usual dipole
+    antenna pattern which yields nearly 4*pi steradians in its
+    field of view, although there is a range of fields of view
+    where the detector response drops dramatically as one expects
+    from a dipole pattern.
+ 
+    The PWS antenna, used as a balanced dipole with an effective
+    length of 7.07 meters gives a sensitivity to fluctuating (wave)
+    electric fields down to the range of 5.E-6 volt/meter.  Even
+    though the antenna elements are extended orthogonally to each
+    other, the antenna pattern is still a dipole since the elements
+    are short with respect to the wavelengths of the waves.  The
+    presence of the various parts of the spacecraft in close
+    proximity to the antenna can result in a distorted pattern, but
+    this has not been studied in the frequency range of the PWS.
+ 
+ 
+  Electronics
+  ===========
+    The PWS electronics system consists of three basic sections.
+    The first is the power supply system which regulates and
+    filters the 28 volt, 2400 Hertz spacecraft power supply and
+    provides DC voltages to the remainder of the instrument
+    electronics.  The second section is the spectrum analyzer which
+    consists of two banks of 8 narrowband filters, and two
+    logarithmic detectors, each of which provides an analog voltage
+    proportional to the log of the signal strength delivered to the
+    detector from any of the eight filters it services.  The analog
+    outputs from these two compressors, as they are called, are
+    sent to the Flight Data System of the spacecraft for conversion
+    to an 8-bit digital value.  The spacecraft steps the inputs to
+    the two compressors periodically (once per 0.5 seconds in GS3
+    or encounter mode) so that signal strengths in each of the 16
+    channels is measured over a 4-second interval.  The third
+    section consists of a single broadband filter of 40 Hertz to 12
+    kiloHertz, an automatic gain controlled amplifier, and a 4-bit
+    A/D converter.  This section digitizes the electric field
+    waveform at a 28800 Hertz rate.  The output amplitude is
+    controlled by the automatic gain control in order to keep the
+    signals within the useful range provided by the 4-bit
+    digitization.
+ 
+ 
+    Section &apos;SA&apos;
+    ------------
+      Total Fovs                     : 1
+      Data Rate                      : 32.000000
+      Sample Bits                    : 8
+ 
+ 
+    &apos;SA&apos; Detectors
+    --------------
+      PWS ANTENNAS
+ 
+ 
+    &apos;SA&apos; Section FOV Shape &apos;DIPOLE&apos;
+    -------------------------------
+      Section Id                     : SA
+      Fovs                           : 1
+      Horizontal Fov                 : 360.000000
+      Vertical Fov                   : 180.000000
+ 
+ 
+    &apos;SA&apos; Section Parameter &apos;WAVE ELECTRIC FIELD INTENSITY&apos;
+    ------------------------------------------------------
+      A measured parameter equaling the electric field strength in
+      a specific frequency passband (in MKS unit: VOLTS/METER)
+      measured in a single sensor or antenna.
+ 
+      Instrument Parameter Name    : WAVE ELECTRIC FIELD INTENSITY
+      Sampling Parameter Name      : TIME
+      Instrument Parameter Unit    : VOLT/METER
+      Minimum Instrument Parameter : 0.000005
+      Maximum Instrument Parameter : 0.500000
+      Noise Level                  : 0.000005
+      Sampling Parameter Interval  : 4.000000
+      Sampling Parameter Resolution: 4.000000
+      Sampling Parameter Unit      : SECOND
+ 
+ 
+    Section &apos;WFRM&apos;
+    --------------
+      Total Fovs                     : 1
+      Data Rate                      : 115200.000000
+      Sample Bits                    : 4
+ 
+ 
+    &apos;WFRM&apos; Detectors
+    ----------------
+      PWS ANTENNA
+ 
+ 
+    &apos;WFRM&apos; Section FOV Shape &apos;DIPOLE&apos;
+    ---------------------------------
+      Section Id                     : WFRM
+      Fovs                           : 1
+      Horizontal Fov                 : 360.000000
+      Vertical Fov                   : 180.000000
+ 
+ 
+    &apos;WFRM&apos; Section Parameter &apos;ELECTRIC FIELD COMPONENT&apos;
+    ---------------------------------------------------
+      A measured parameter equaling the electric field strength
+      (e.g.  in milli-Volts per meter) along a particular axis
+      direction.
+ 
+      Instrument Parameter Name    : ELECTRIC FIELD COMPONENT
+      Sampling Parameter Name      : TIME
+      Instrument Parameter Unit    : VOLT/METER
+      Minimum Instrument Parameter : 0.000005
+      Maximum Instrument Parameter : 0.500000
+      Noise Level                  : 0.000005
+      Sampling Parameter Interval  : 0.000035
+      Sampling Parameter Resolution: 0.000035
+      Sampling Parameter Unit      : SECOND
+ 
+ 
+  Operating Modes &apos;GS3GAINHI/WFMPWRON&apos;
+  ====================================
+    Data Path Type                 : REALTIME
+    Gain Mode Id                   : HIGH
+    Instrument Power Consumption   : 1.600000
+ 
+    The PWS instrument gain is high and the waveform receiver power
+    is on.  This is the normal encounter operating mode of the
+    instrument and places it in its most sensitive input gain state
+    with the waveform receiver section turned on.  The fact that
+    the waveform receiver power is on does not guarantee that
+    waveform data is available.  The spacecraft is in the GS-3 data
+    mode which cycles the plasma wave spectrum analyzer so that a
+    complete spectrum is obtained every 4 seconds.
+ 
+ 
+  Mounted On Platform &apos;SPACECRAFT BUS&apos;
+  ====================================
+    Cone Offset Angle              : UNK
+    Cross Cone Offset Angle        : UNK
+    Twist Offset Angle             : UNK
+ 
+    The PWS is mounted on top of the Planetary Radio Astronomy
+    experiment on top of spacecraft bus bays 8 and 9.  The two
+    orthogonal antenna elements are attached to the Planetary radio
+    astronomy package.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+  
+  <Identification_Area>
+      <logical_identifier>urn:nasa:pds:context:target:planet.venus</logical_identifier>
+      <version_id>1.3</version_id>
+      <title>Venus</title>
+      <information_model_version>1.13.0.0</information_model_version>
+      <product_class>Product_Context</product_class>
+    
+      <Alias_List>
+          <Alias>
+              <alternate_title>NAIF ID 299</alternate_title>
+          </Alias>
+      </Alias_List>
+    
+    <Modification_History>
+        <Modification_Detail>
+            <modification_date>2020-07-12</modification_date>
+            <version_id>1.3</version_id>
+            <description>
+                Upgrade for MESSENGER migration by PDS Radio Science Advisor.
+                Format improvements for easier reading.
+            </description>
+        </Modification_Detail>
+      
+        <Modification_Detail>
+            <modification_date>2018-11-18</modification_date>
+            <version_id>1.2</version_id>
+            <description>
+                From PDS Rings node.
+            </description>
+        </Modification_Detail>
+        
+        <Modification_Detail>
+            <modification_date>2018-06-23</modification_date>
+            <version_id>1.1</version_id>
+            <description>
+                From PDS RINGS node. 
+                Added NAIF ID alias. 
+                Shortened description
+            </description>
+        </Modification_Detail>
+      
+        <Modification_Detail>
+            <modification_date>2016-10-01</modification_date>
+            <version_id>1.0</version_id>
+            <description>
+                Extracted metadata from PDS3 catalog and
+                modified to meet PDS4 requirements.
+            </description>
+        </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  
+  <Reference_List>
+      <External_Reference>
+          <reference_text>
+              https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html
+          </reference_text>
+          <description>
+              Fact sheet maintained by NASA Space Science Data Coordinated Archive.
+              Includes some comparative Earth values.
+          </description>
+      </External_Reference>
+      
+      <External_Reference>
+          <reference_text>
+              https://en.wikipedia.org/wiki/Venus
+          </reference_text>
+          <description>
+              Overview and summary list of orbital parameters and physical characteristics.
+          </description>
+      </External_Reference>
+      
+      <External_Reference>
+          <reference_text>
+              Bougher, Steven W., Donald M. Hunten, and Roger J. Phillips (editors).  
+              Venus II: Geology, Geophysics, Atmosphere, and Solar Wind Environment, 
+              Tucson: The University of Arizona Press, 1362 pp., 1997.
+          </reference_text>
+          <description>
+              A compendium of knowledge about Venus as of the late 1990s, after the Galileo
+              flyby (1990), end of the Pioneer Venus Orbiter mission (1992), and end of the
+              Magellan mission (1994). Thirty-six chapters under nine major headings cover 
+              the solar wind environment, upper atmosphere (100 km and above), lower atmosphere, 
+              surface processes, geologic structure, volcanism, tectonism, impact cratering, 
+              and geodynamics.
+          </description>
+      </External_Reference>
+      
+      <External_Reference>
+          <reference_text>
+              Venus III, edited by Bruno Bézard, Christopher T. Russell, Takehiko Satoh, Suzanne E. Smreka
+              and Colin F. Wilson.  Springer Nature, 2018.
+	          https://link.springer.com/journal/11214/topicalCollection/AC_2be6ce3ade85a8ca6cb138adb26c7055
+          </reference_text>
+          <description>
+              Ten papers plus an introduction summarizing the state of Venus knowledge at
+	          the end of the Venus Express mission.
+          </description>
+      </External_Reference>
+  </Reference_List>
+  
+  <Target>
+      <name>Venus</name>
+      <type>Planet</type>
+      <description>
+          The second planet from the Sun in the Solar System.
+          One of the terrestrial (rocky) planets.
+      </description>
+  </Target>
+</Product_Context>

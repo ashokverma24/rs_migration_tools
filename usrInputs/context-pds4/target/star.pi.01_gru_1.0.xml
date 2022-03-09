@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.pi.01_gru</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Pi1 Gruis</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Pi1 Gru</alternate_title></Alias>
+      <Alias><alternate_title>pi.01 Gru</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>pi. Gru</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>161 Gru</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>I 135</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AC2000 3976182</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J22227-4557AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-46 14292</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 0 19877</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-46 10395</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSS 1294</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 31273</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00212087J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 08439-00392</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 212087</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Hen 4-202</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 110478</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 110478</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 8521</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 22166-4627 AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 22196-4612</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 3477</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J22224445-4556524</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 328190</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 4289</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>S1* 702</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 231105</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 42605</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 8439-392-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 21720</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC3 89-416212</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC4 221-187339</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J22227-4557AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WISE J222244.22-455652.6</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 2216-46</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Pi1 Gruis</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 22 hours 22 minutes 44.20571 seconds
+Declination, ICRS coord, ep=J2000: -45 degrees 56 minutes 52.6115 seconds
+    </description>
+  </Target>
+</Product_Context>

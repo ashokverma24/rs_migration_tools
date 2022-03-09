@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.t_cep</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>T Cephei</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>T Cep</alternate_title></Alias>
+      <Alias><alternate_title>Variable Star T Cep</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>T Cep</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+68 892</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+67 1291</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 29611</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 13320</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00202012</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 04460-02400</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 202012</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 104451</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 104451</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 8113</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 21088+6817</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +70168</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J21093180+6829268</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5101</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5101.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 22648</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 2721</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 19229</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 40253</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 4460-2400-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 25536</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 19014</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 2108+68</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2270451142960378752</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>T Cephei</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 21 hours 09 minutes 31.7832206157 seconds
+Declination, ICRS coord, ep=J2000: +68 degrees 29 minutes 27.190142015 seconds
+    </description>
+  </Target>
+</Product_Context>

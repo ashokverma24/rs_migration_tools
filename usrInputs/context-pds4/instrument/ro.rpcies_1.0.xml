@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:instrument:ro.rpcies</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ROSETTA PLASMA CONSORTIUM - ION AND ELECTRON SENSOR for RO</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:rpcies.ro</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.ro</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Burch, J. et al., IES - The ROSETTA Ion and Electron Spectrometer, Space Sci.
+                   Rev., 128(1-4), 697-712, Feb. 2007.
+            </reference_text>
+            <description>reference.BURCHETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ROSETTA PLASMA CONSORTIUM - ION AND ELECTRON SENSOR</name>
+        <type>Particle Detector</type> <!--RChen/EN was Plasma Instrument. No obvious choice. TBD in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    Instrument Overview
+    ===================
+    The Ion and Electron Sensor (IES) is one of the 5 instrument
+    members of Rosetta Plasma Consortium (RPC). The objective of the
+    instrument is to measure the flux of ions and electrons as a
+    function of energy and direction in the solar wind, and in the
+    environment during the flybys of Earth, Mars, the two asteroids,
+    and comet 67p/Churyumov-Gerasimenko.
+ 
+    Scientific Objectives
+    =====================
+    The scientific objectives of the instrument are to measure and
+    understand the dynamics, structure, and evolution of the plasma
+    properties in these environments.  Of particular interest is the
+    interaction of the solar wind with the comet, especially the
+    formation of pickup ion structures and their relation to the local
+    magnetic field.
+ 
+    Calibration
+    ===========
+    The IES instrument was calibrated on the ground in the ion
+    calibration facility at the Southwest Research Institute,
+    San Antonio, TX, USA. In addition cross-calibrations are performed
+    in flight with the RPC-LAP and RPC-ICA instruments.
+ 
+    Operational Considerations
+    ==========================
+    RPC-IES should be operated continuosly as long as power and
+    telemetry rate permit.  When possible, all other RPC instruments
+    should be operated while RPC-IES is in operation in order to allow
+    joint analysis of the resulting data. RPC-IES high voltages should
+    be turned off 5 min before until 5 min after thruster firings to
+    prevent arcing.
+ 
+    RPC-IES Instrument Description
+    =========
+    The Rosetta Ion and Electron Sensor (RPC-IES) is comprised of a
+    double toroidal top-hat electrostatic analyzer (ESA), one analyzer
+    for electrons, the other for ions, arranged back-to-back.  The
+    common entrance aperture has a 360 degree field of view in the
+    symmetry (denoted here by azimuth) plane. Electrostatic angular
+    deflection optics give a scanned field of view of +/- 45 degrees
+    normal to the sensor symmetry axis (denoted here by the elevation
+    angle).
+ 
+    The instrument objective is to obtain ion and electron
+    distribution functions over the energy range from 4.32 eV/e to
+    17.67 keV/e, with a basic time resolution of 128 s. This geometry
+    allows IES to analyze both electrons and positive ions with a
+    single entrance aperture, simultaneously. The IES top hat
+    analyzers have toroidal geometry with a smaller radius of
+    curvature in the deflection plane than in the orthogonal plane.
+    This toroidal feature results in a flat deflection plate geometry
+    at the poles of the analyzers and has the advantage that the focal
+    point is located outside the analyzers rather than within them, as
+    is the case with spherical top hat analyzers. The IES field of
+    view (FOV) thus encompasses a total solid angle of 2.8 Pi
+    steradians.
+ 
+    Ions and electrons approaching the IES first encounter a
+    toroidal-shaped grounded grid encircling the instrument. Once
+    inside the grid the electric field produced by bipolar electrodes
+    deflects ions and electrons with a range of energies and incident
+    directions into a field-free entrance aperture containing serrated
+    walls to minimize scattering of ultraviolet light and stray
+    charged particles into the instrument. The particles then enter
+    the top hat region and the electric field produced by the flat
+    electrostatic analyzer segments of the ion and electron analyzers.
+ 
+    Particles with an energy accepted by the ESA and within a narrow
+    4% energy pass band will pass through the analyzers and be focused
+    onto either the electron or ion microchannel plates (MCPs), which
+    produce charge pulses on 16 discrete anodes for each, which define
+    the azimuth acceptance angles. For electrons the anodes are of
+    equal width so the azimuth resolution is 22.5 degrees.  (It was
+    discovered after launch that electron channel 11 was noisy so it
+    was decided not to download the data from that channel.  Hence
+    only fill data appear for that channel.)  For ions the 16 anodes
+    are divided unequally in size, with 9 of them (each 5 degrees
+    wide) oriented in the direction expected to view the solar wind
+    most of the time (anodes 3 to 11).  The remaining 7 anodes are
+    each 45 degrees wide. For both electrons and ions the nominal
+    resolution in the elevation direction is 5 degrees.  This
+    resolution would provide 18 measurement bins over the 90 degrees
+    full elevation FOV.  However, in order to simplify the instrument
+    electronics, the FOV has been divided into 16 (=24) bins.  This
+    results in a small gap in coverage between bins.
+ 
+    The selected energy will correspond to a particular 5 degree
+    elevation entrance angle, depending on the ratio of voltages on
+    the angle deflectors and the ESAs.  Note that the use of the terms
+    &apos;azimuth&apos; and &apos;elevation&apos; angle for IES differs from the
+    conventional terminology of &apos;polar&apos; and &apos;azimuth&apos;.
+ 
+    Viewing Maps (from the RPC-IES IK data)
+    ======================================
+ 
+    IES/Electron Sector Layout
+ 
+    The IES/Electron Sector&apos;s 360.0 x 90.0 degrees aperture is split
+    into 256 sectors -- 16 in-plane (azimuthal) by 16 cross-plane
+    (polar). In the in-plane direction the sectors are numbered from 0
+    to 15, in the cross-plane direction the sectors are also numbered
+    0 to 15. All 16 in-plane sectors are 22.5 degrees wide with their
+    center view directions 22.5 degrees apart. In the cross-plane
+    direction all sectors have the same size of 5 degrees with their
+    center view directions 6 degrees apart. In-plane the &apos;view
+    direction&apos; of each sector is looking inwards, from the sector
+    position through the center of the aperture.
+ 
+    This diagram illustrates in-plane (azimuthal) IES/Electron sector
+    layout:
+ 
+                  ^ +Yies
+                  |                        A# indicate the azimuthal
+              V12 |  V11                     sector # position in
+         V13  ....|....   V10                 the sensor assembly.
+           .&apos; A4  |  A3 `.
+      V14.&apos; A5    |     A2`. V9            V# indicate the # sector
+        . A6      |       A1.                     view direction.
+    V15.          |          . V8
+       .A7        |        A0.                 For example, for
+       .          o--------------&gt; +Xies       Sector 2 the view
+       .A8       / +Zies  A15.              direction is the vector
+    V0 .        /            . V7             emanating from the
+        .A9    /         A14.               aperture center through
+      V1 .A10 /         A13.  V6            the point designated
+          `. / A11  A12  .&apos;                         by V2.
+          V2 `......... &apos; V5
+           /   V3   V4
+          V
+       Azimuthal sector &apos;3&apos;
+          view direction
+ 
+ 
+    This diagram illustrates cross-plane (polar) IES/Electron Sensor
+    sector layout:
+ 
+ 
+                  +Yies     Polar Sector &apos;3&apos;
+                    ^         ^ view dir.     P# indicate the polar
+                 V8 | V7     /                 sector # position in
+               .----|----.  V3                  the sensor assembly.
+       V15  ,-&apos;   P8|P7   `/.   V0
+          .&apos;        |     P3 `.
+         `.P15      |    /  P0.&apos;             V# indicate the # sector
+           `.       |   /   .&apos;                    view direction.
+             `.     |  /  .&apos;
+               `.   | / .&apos;                    For example, for polar
+                 `. |/.&apos;                       Sector 3 the view
+     &lt;-------------`o&apos;+Xies                  direction is the vector
+   +Zies          .&apos; `.                        emanating from the
+                .&apos;     `.                    aperture center through
+              .&apos;         `.                     the point designated
+            .&apos;             `.                       by V3.
+          .&apos;P15            P0`.
+          `.                 .&apos;
+        V15 `-.   P8 P7   ,-&apos;  V0
+               `---------&apos;
+                 V8   V7
+ 
+ 
+    IES/Ion Sector Layout
+ 
+    The IES/Ion Sector&apos;s 360.0 x 90.0 degrees aperture is split into
+    256 sectors -- 16 in-plane (azimuthal) by 16 cross-plane (polar).
+    In the in-plane direction the sectors are numbered from 0 to 15,
+    in the cross-plane direction the sectors are numbered 0 to 15.
+    Not all 16 in-plane sectors have the same size: seven of them --
+    sectors 0-2 and 12-15 -- are 45 degrees wide while the other
+    nine -- sectors 3-11 -- are 5 degrees wide. In the cross-plane
+    direction all sectors have the same size of 5 degrees with their
+    center view directions 6 degrees apart. In-plane the &apos;view
+    direction&apos; of each sector is looking inwards, from the sector
+    position through the center of the aperture.
+ 
+    This diagram illustrates in-plane (azimuthal) IES/Ion sector
+    layout:
+ 
+                      +Yies
+                    ^
+                    |                        A# indicate the azimuthal
+                    |                          sector # position in
+            V15 ....|....  V0                    the sensor assembly.
+             .&apos; A7 A11    `.
+           .&apos; A3    |   A12 `.               V# indicate the # sector
+       V14.         |         . V1                  view direction.
+         . A2       |      A13 .
+         .          |          .     +Xies       For example, for
+         .          o--------------&gt;           Sector 12 the view
+         .         / +Zies     .              direction is the vector
+         . A1     /        A14 .               emanating from the
+       V13.      /            . V2            aperture center through
+           .    /            .                 the point designated
+            `.A0        A15.&apos;                         by V12.
+            V12 ......... &apos; V3
+             /      V11  V7
+            V
+  Azimuthal sector &apos;12&apos;
+     view direction
+ 
+ 
+    This diagram illustrates cross-plane (polar) IES/Ion Sensor sector
+    layout:
+ 
+ 
+                   +Yies     Polar Sector &apos;3&apos;
+                     ^         ^ view dir.     P# indicate the polar
+                  V8 | V7     /                 sector # position in
+                .----|----.  V3                  the sensor assembly.
+        V15  ,-&apos;   P8|P7   `/.   V0
+           .&apos;        |     P3 `.
+          `.P15      |    /  P0.&apos;             V# indicate the # sector
+            `.       |   /   .&apos;                    view direction.
+              `.     |  /  .&apos;
+                `.   | / .&apos;                    For example, for polar
+                  `. |/.&apos;                       Sector 3 the view
+      &lt;-------------`o&apos;+Xies                  direction is the vector
+    +Zies          .&apos; `.                        emanating from the
+                 .&apos;     `.                    aperture center through
+               .&apos;         `.                     the point designated
+             .&apos;             `.                       by V3.
+           .&apos;P15            P0`.
+           `.                 .&apos;
+         V15 `-.   P8 P7   ,-&apos;  V0
+                `---------&apos;
+                  V8   V7
+ 
+ 
+    Electronics
+    ===========
+    Pulses from the segmented anode are amplified by charge-sensitive
+    preamplifiers (CSPs) and recorded in the 16 x 24 bit ion and
+    electron counters. The data are buffered before being sent to the
+    output serial register for transmission to the RPC Plasma
+    Interface Unit (PIU) as serial telemetry packets. The stepping
+    sequences of the angle and energy deflection voltages of the
+    instrument are fixed in memory.
+ 
+    The IES instrument contains a single micro-controller (RTX20X10)
+    which communicates with the RPC-PIU over the IEEE 1355 bus,
+    transmits the collected science data, and monitors the instrument
+    status. The flight software is written in the C and Forth
+    programming languages. The PIU stores and re-transmits to the
+    spacecraft the data stream that the instrument produces. No
+    special data handling is required. Commands and command sequences
+    for IES are formulated by the IES team, sent to Imperial College,
+    where they are translated to the proper format and sent to the
+    project ground system.  They are eventually uploaded to the
+    spacecraft and are stored for later execution. In some cases the
+    command may be executed immediately.  The sequence provides for
+    selection of one or more operational modes (see below) or in some
+    cases repeated cycling through a series of modes.
+ 
+    High Voltages
+    =======
+    The voltages for the ESAs, deflector (DEF), and MCPs are derived
+    from a single supply of 8514 volts.  The ESA and DEF voltages are
+    stepped according to LUTs. The ESA sweeps between 0.407 V and
+    1667 V in 128 approximately logarithmically spaced steps.  The DEF
+    steps between -6667 and +6667 V, alternating negative to positive
+    and positive to negative between the 2 deflector plates.  The MCP
+    potentials can be set to a potential between +/- 2500 V and
+    +/-3500 V, the positive level for the electrons and negative for
+    the ions.  Except for a short test on May 1-2, 2010, the levels
+    have been at 2500 V based on measurements on the ground before
+    flight.
+ 
+    Data Binning
+    =======
+    Since IES produces more data than can be transmitted within its
+    telemetry allocation, in order to compress the data they are
+    binned in a lossy fashion by use of look up tables (LUTs) stored
+    onboard in the instrument.  (See the specific documentation on the
+    details of the different data modes.) For example, the counts from
+    adjacent energy steps can be combined and the sums transmitted to
+    ground, or the counts from a range of energy and/or angle bins or
+    any combination of these, are transmitted, depending on the
+    scientific objective for a particular observation period. Hence
+    the appearance of the data structure will depend on the mode for
+    that particular observation.
+ 
+    Flyback
+    =======
+    Cycling of ESA voltages is completed using 128 steps (0 to 127)
+    which include 4 steps (124 to 127) during &apos;flyback&apos; (FB), the
+    transition from the highest voltage of 1667 V (step 123) to 0 V
+    (step 127). While the actual transition time does not require all
+    4 steps, i.e. the 0 V level may be attained in 2 steps or less,
+    science data readings during the first three steps of the flyback
+    should be considered unreliable. When flyback steps are averaged,
+    they are averaged only with other flyback steps. Step 127 may be
+    considered as 0V for background measurements if not averaged.
+ 
+    Location
+    ========
+    The IES instrument is located on the +Z deck of the Rosetta
+    spacecraft in the corner formed by the +X and +Y spacecraft
+    surfaces.  The instrument is oriented such that the symmetry axis
+    of the ESAs (i. e. through their poles) is at 45 degrees to the +Z
+    as well as the +X and +Y spacecraft surfaces.  Hence the azimuth
+    plane of the FOV (and hence the elevation 0 degrees) is also
+    tilted upward 45 degrees.  This arrangement was selected in order
+    to minimize interference to the FOV by any spacecraft or other
+    instrument structures but will still allow viewing the solar wind
+    when the spacecraft is oriented favorably (i.e. when the angle
+    between the spacecraft +Z axis and the sun is between 70 degrees
+    and 100 degrees).
+ 
+    Operational Modes
+    =================
+    When powered on, the IES instrument runs its boot PROM code. The
+    boot PROM, by default, checks all RAM, EEPROM and PROM resources
+    within the IES instrument and reports their status in
+    housekeeping. Whether the PAUSE-PROM or RESUME-PROM mode is
+    entered depends on what was planned for the first operation.
+    PAUSE-PROM prevents the PROM from going automatically into the
+    EEPROM code so that telecommanding or maintenance mode
+    telecommands can be executed. The boot PROM can execute the entire
+    suite of maintenance mode commands but only a limited set of
+    telecommands. In order to program the EEPROM using the activate
+    patch function in maintenance mode, IES must be running from the
+    boot PROM. This is because the boot PROM code runs using a lower
+    clock frequency which is amenable to the EEPROM write timing. The
+    EEPROM code is run at a faster clock frequency to accommodate all
+    the tasks that must be executed during science data acquisition.
+    Housekeeping is generated every 32 seconds. Maintenance and event
+    messages are possible from this mode.
+ 
+    RESUME-PROM is a waiting mode to allow telecommands or maintenance
+    mode commands to be received by IES before automatically going to
+    the EEPROM code. Housekeeping is generated every 32 seconds. Event
+    messages are possible from this mode. LVSCI-EEPROM is the first
+    EEPROM mode entered and allows IES commands to be executed. This
+    is the mode used for low-voltage stimulation operation.
+    Housekeeping is generated every 32 seconds. Science and event
+    messages are possible from this mode.
+ 
+    HVSCI-EEPROM is entered if an IES-INSTR-PROG-MODE HVSCI
+    telecommand is received. Here, high-voltage telecommands can be
+    executed to turn on the HV supplies and manipulate their settings.
+    All plasma science data are acquired in this mode. Housekeeping is
+    generated every 32 seconds. Science and event messages are
+    possible from this mode.
+ 
+    LVENG-EEPROM is used for executing maintenance commands and memory
+    manipulation telecommands. Note that the EPROM cannot be written
+    in this mode due to the timing constraints mentioned in the
+    PAUSEPROM description. Housekeeping is generated every 32 seconds.
+    Maintenance and event messages are possible from this mode.
+ 
+    A science data collection mode is determined by the LUT(s)
+    specified in the definition of the mode and determined by the
+    command sequence sent to the instrument.  See the 3 tables in the
+    Appendix to the Rosetta-RPC-IES Planetary Science Archive
+    Interface Control Document, Document No. 10991-IES-EAICD-01 for
+    details of the data collapsing for each science mode. These tables
+    give the definitions currently stored in IES memory and show how
+    the full 128 energy by 16 azimuth by 16 elevation bins are
+    selected and or combined to fit either the normal or burst
+    telemetry cases.
+ 
+    Acquisition Timing
+    ==================
+    IES uses cycles of varying durations to acquire ION and ELC data
+    across the energy and angular ranges to allow tailoring of
+    energy/angular resolution and time resolution. A cycle requires
+    128, 256, 512 or 1024 seconds to complete sweeping across the
+    energy range using 128 steps. At each energy step, the deflection
+    voltages are swept using 16 steps (elevations). Each step requires
+    a rise and settle time of 30ms during which no acquisition takes
+    place followed by integration time or acquisition window. The
+    following table lists the cycle durations, and the associated
+    acquisition times.
+ 
+    Cycle Duration (seconds): 128
+    Duration to complete each energy step which inclues 16 elevation
+    steps (seconds): 1
+    Acquisition/integration time at each elevation/deflection step
+    (milliseconds): 32.5
+ 
+    Cycle Duration (seconds): 256
+    Duration to complete each energy step which inclues 16 elevation
+    steps (seconds): 2
+    Acquisition/integration time at each elevation/deflection step
+    (milliseconds): 95
+ 
+    Cycle Duration (seconds): 512
+    Duration to complete each energy step which inclues 16 elevation
+    steps (seconds): 4
+    Acquisition/integration time at each elevation/deflection step
+    (milliseconds): 220
+ 
+    Cycle Duration (seconds): 1024
+    Duration to complete each energy step which inclues 16 elevation
+    steps (seconds): 8
+    Acquisition/integration time at each elevation/deflection step
+    (milliseconds): 470
+ 
+    Measured Parameters
+    ===================
+      Energy:  Range                   4.32 eV to 17.67 KeV
+               Resolution              4%
+ 
+      Angle:   Range (FOV)            90 deg x 360 deg  (2.8 Pi sr)
+               Resolution (electrons) 5 deg (elev) x 22.5 deg (azim)
+                                      (16 azimuthal x 16 elevation)
+               Resolution (ions)      5 deg (elev) x 45 deg (azim)
+                                          for 7 sectors
+                                      5 deg (elev) x 5 deg (azim)
+                                          for 9 sectors
+                                      (16 azimuthal x 16 elevation)
+ 
+     Temporal resolution:
+               3D distribution         128s
+               downlink rates           Normal: 5 bps
+                                        Burst:  250 bps
+ 
+     Geometric factor:
+      total (ions)            5 x 10e-4 cm^2 sr eV/eV counts/ion
+      per 45 deg sector       5 x 10e-5 cm^2 sr eV/eV counts/ion
+      per 5 deg sector        7 x 10e-6 cm^2 sr eV/eV counts/ion
+      total (electrons)       5 x 10e-5 cm^2 sr eV/eV counts/electron
+      per sector (electrons)  5 x 10e-6 cm^2 sr eV/eV counts/electron
+
+        </description>
+    </Instrument>
+</Product_Context>

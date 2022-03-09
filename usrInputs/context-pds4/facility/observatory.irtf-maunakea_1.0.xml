@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context 
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.irtf-maunakea</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Infra Red Telescope Facility-Maunakea</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:facility:observatory.irtf</alternate_title></Alias>  <!-- deprecated LID -->
+            <Alias><alternate_id>IRTF</alternate_id></Alias>
+            <Alias><alternate_id>NASA IRTF</alternate_id></Alias>
+            <Alias><alternate_title>NASA Infrared Telescope Facility</alternate_title></Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-11-05</modification_date>
+                <version_id>1.0</version_id>
+                <description>Revised version produced by RMS Node, including LID, Title, Alias, and Reference List</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:irtf-maunakea.3m2</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Facility>
+        <name>Infra Red Telescope Facility-Maunakea</name>
+        <type>Observatory</type>
+        <address>Summit of Mauna Kea, C/O 640 N. Aohoku Place, #209, Hilo, HI 96720</address>
+        <country>United States</country>
+        <description>
+            The IRTF is an observatory that currently houses a 3.0-meter telescope, optimized for infrared observations, and located at
+            the summit of Mauna Kea, Hawai`i. The observatory is operated and managed for NASA by the University of Hawai`i Institute for 
+            Astronomy, located in Honolulu as part of the Mauna Kea Observatories. NASA provides the costs of operation and NSF provides 
+            funding for new focal plane instrumentation through the peer review process. Observing time is open to the entire astronomical 
+            community, and 50% of the IRTF observing time is reserved for studies of solar system objects.
+            
+            The coordinates for this site are: 
+            
+                                       NAD 83                    Old Hawaiian (UTM)	      Altitude
+                          Latitude(North)	Longitude (West)	North	     East	      (feet)
+            IRTF	      19 49 34.38594	155 28 19.19564	    361667.615	 508669.260	  13674.76
+            
+            NAD 83 references the North American Datum from 1983.
+            
+            Old Hawaiian coordinates refernce the 5 State Plane Coordinate Systems for Hawaii in 
+            Universal Transverse Mercator (UTM). Typical grid convergence for the Old Hawaiian coordinates 
+            is 0 00 30. Typical scale factor for the Old Hawaiian coordinates is 0.99996675.
+            
+        </description>
+    </Facility>
+</Product_Context>

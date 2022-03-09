@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:tvs.vega1</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>TELEVISION SYSTEM for VEGA1</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vega1::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abergel, A. and J.L. Bertaux, Evolution of Comet Halley in Early March 1986 as
+                   Observed from Vega Pictures, Astronomy and Astrophysics, 187, 829-834, 1987.
+            </reference_text>
+            <description>reference.ABERGEL-BERTAUX1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abergel, A. and J.L. Bertaux, Le Noyau de la Comete de Halley de la Comete
+                   de Halley d&apos;Apres les Images Transmises par les Sondes Vega, Journees
+                   d&apos;Etude de de l&apos;ATP Planetologie, Besancon, Mai 1988, 183-186, 1988.
+            </reference_text>
+            <description>reference.ABERGEL-BERTAUX1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abergel, A. and J.L. Bertaux, Surface Features and the Rotation State of
+                   Comet-Halley, Annales Geophysicae, 7, 129-140, 1989.
+            </reference_text>
+            <description>reference.ABERGEL-BERTAUX1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abergel, A. and J.L. Bertaux, Rotation States of the Nucleus of Comet
+                   Halley Compatible with Spacecraft Images, Icarus, 86, 21-29, 1990.
+            </reference_text>
+            <description>reference.ABERGEL-BERTAUX1990</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abergel, A., Traitment et Analyses des Images Transmises Lors des Surols de
+                   la Comete de Halley par les Sondes Vega, Thesis of the University of Paris,
+                   1987.
+            </reference_text>
+            <description>reference.ABERGEL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abergel, A., L&apos;imagerie Numerique Appliquee a la Technique Spaciale, Revue
+                   du Palais de la Decouverrte, 17, 14-31, 1988.
+            </reference_text>
+            <description>reference.ABERGEL1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abergel, A., J.L. Bertaux, and F. Dimarellis, Image Processing on Vega
+                   Pictures, Proceedings of the Symposium on the Diversity and Similarity of
+                   Comets, Bruxelles, Belgique 6-9 April 1987, ESA SP-278, 689-694, 1987.
+            </reference_text>
+            <description>reference.ABERGELETAL1987A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abergel, A., J.L. Bertaux, G.A. Avanesov, V.I. Tarnopolsky, and B.S.
+                   Zhukov, Photometric Characteristics of the Vega 1 and Vega 2 CCD Cameras
+                   for the Observations of Comet Halley, Applied Optics, 26, 4457-4468, 1987.
+            </reference_text>
+            <description>reference.ABERGELETAL1987B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abergel, A., J.L. Bertaux, and E. Dimarellis, La Decouverte du Noyau de la
+                   Comete de Halley, PIXIM 88, Paris, Octobre 1988, 425-444, 1988.
+            </reference_text>
+            <description>reference.ABERGELETAL1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bertaux, J.L. and A. Abergel, Some Physical Characteristics of Halley&apos;s
+                   Nucleus as Inferred from Vega and Giotto Pictures, Proceedings of the 20th
+                   ESLAB Symposium on the Exploration of Halley&apos;s Comet, Heidelberg, 27-31,
+                   Octobre 1986, ESA SP-250, Vol II, 341-345, 1986.
+            </reference_text>
+            <description>reference.BERTAUX-ABERGEL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Danz, M., G. Elter, T. Mangoldt, D. Mohlmann, B. Rubbert, and U. Weidlich,
+                   Processing for the Vega-Mission to Comet Halley, Computer Analysis of
+                   Images and Patterns, Proceedings of the II.INT.CONF CAIP &apos;87 on Automatic
+                   Processing Held in Wismar 1987, Mathematical Research Series, Vol 40, L.P.
+                   Yaroslavskii, A. Rosenfeld, and W. Wilhelmi (eds.), Akademie-Verlag Berlin,
+                   222-226, 1987.
+            </reference_text>
+            <description>reference.DANZETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Dimarellis, E., J.L. Bertaux, and A. Abergel, Restoration of Vega-1
+                   Pictures of Comet Halley&apos;s Nucleus: A New Method Revealing Clear Contours
+                   and Jets, Astronomy and Astrophysics, 208, 327-330, 1989.
+            </reference_text>
+            <description>reference.DIMARELLISETAL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reinhard, R and B. Battrick (eds), &apos;Space Missions to Halley&apos;s Comet&apos;, European
+                   Space Agency ESA SP-1066, ESA Pub Div, Moordwijk, Netherlands, 1986.
+            </reference_text>
+            <description>reference.ESA-SP1066</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Foldy, L., K. Szego, and I. Toth, On the Rotation of Comet Halley, Preprint
+                   KFKI-1990-26/C.
+            </reference_text>
+            <description>reference.FOLDYETAL1990</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Horanyi, M., K. Kecskemety, T.I. Gombosi, K. Szego, T. Cravens, and A.F.
+                   Nagy, The Sponge Model of Cometry Nucleus, Proceedings of the International
+                   Conference on Cometary Exploration, Budapest, 1982, Vol I, 59, 1982.
+            </reference_text>
+            <description>reference.HORANYIETAL1982</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Horanyi, M., T.I. Gombosi, T.E. Cravens, A. Korosmezey, K. Kecskemety, A.F.
+                   Nagy, and K. Szego, The Friable Sponge Model of a Cometary Nucleus, The
+                   Astrophysical Journal, 278, 449-455, 1984.
+            </reference_text>
+            <description>reference.HORANYIETAL1984</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kondor, A., Destripping of the Vega-1 TV Images, MPAE-W-100-90-04, 1990.
+            </reference_text>
+            <description>reference.KONDOR1990A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kondor, A., Noise Supression Version of the Method of Convergent Weights,
+                   MPAE-W-100-90-05, 1990.
+            </reference_text>
+            <description>reference.KONDOR1990B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Merenyi, E., L. Foldy, K. Szego, I. Toth, and A. Kondor, The Landscape of
+                   Comet Halley, Icarus, 86, 9-20, 1990.
+            </reference_text>
+            <description>reference.MERENYIETAL1990</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mohlmann, D., H. Borner, M. Danz, G. Elter, T. Mangoldt, B. Rubbert, U.
+                   Weidlich, Physical Properties of P/Halley-Derived from Vega-Images,
+                   Proceedings of the 20th ESLAB Symposium on the Exploration of Halley&apos;s
+                   Comet, Heidelberg, Germany, 1986, SP-250, Vol II, 339-340, 1986.
+            </reference_text>
+            <description>reference.MOHLMANNETAL1986A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mohlmann, D., M. Danz, G. Elter, T. Mangoldt, B. Rubbert, U. Weidlich, H.
+                   Lorenz, and G. Richter, Image Processing of Vega-TV Observations,
+                   Proceedings of the 20th ESLAB Symposium on the Exploration of Halley&apos;s
+                   Comet, Heidelberg, Germany, 1986, ESA SP-250, Vol I, 313-315, 1986.
+            </reference_text>
+            <description>reference.MOHLMANNETAL1986B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mohlmann, D., M. Danz, and H. Borner, Properties of the Nucleus of
+                   P/Halley, Symposium on the Diversity and Similarity of Comets, ESA SP-278,
+                   487-492, 1987.
+            </reference_text>
+            <description>reference.MOHLMANNETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Richter, A.K., P.W. Daly, M.I. Verigin, K.I. Gringauz, G. Erdos, K.
+                   Kecskemety, A.J. Somogyi, K. Szego, A. Varga, and S. McKenna-Lawlor,
+                   Quasi-Periodic Variations, of Cometary Ion Fluxes at Large Distances from
+                   Comet Halley, Annales Geophysicae, 7, 115-120, 1989.
+            </reference_text>
+            <description>reference.RICHTERETAL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., and K. Szego, Near Nuclear Region of Comet Halley Based on
+                   the Imaging Results of the Vega Mission, KFKI Preprint, KFKI-1987-35/C.
+            </reference_text>
+            <description>reference.SAGDEEV-SZEGO1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., G.A. Avanesov, I.V. Barinov, A.I. Debabov, V.A. Krasikov,
+                   V.I. Moroz, V.A. Shamis, V.I. Tarnopolski, D.A. Usikov, YA.L. Ziman, B.S.
+                   Zhukov, F. Szabo, K. Szego, A. Kondor, E. Merenyi, B.A. Smith, S. Larson,
+                   P. Cruvellier, A. Abergel, J.L. Bertaux, J. Blamont, M. Danz, D. Mohlmann,
+                   H. Stiller, and H.P. Zapfe, Comet Halley: Nucleus and Jets (Results of the
+                   Vega Mission), Advances of Space Research, 5, 95-104, 1986.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1986A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., G.A. Avanesov, I.V. Barinov, V.I. Kostenko, V.A. Krasikov,
+                   V.A. Shamis, K.G. Sukhanov, V.I. Tarnopolski, YU.K. Zaiko, S.I. Zatsepin,
+                   YA.L. Ziman, B.S. Zhukov, F. Szabo, L. Szabo, K. Szego, A. Balazs, G.
+                   Endroczi, M. Gardos, M. Kanyo, Z. Nyitrai, I. Renyi, P. Rusznyak, B. Smith,
+                   S. Szalai, I. Toth, L. Varhalmi, M. Zsenei, P. Cruvellier, M. Detaille, T.
+                   Nguyen-Trong, A. Abergel, J.L. Bertaux, J. Blamont, E. Dimarellis, G.N.
+                   Dulnev, G. Tsukanova, and B.I. Valnicek, TV Experiment in Vega Mission:
+                   Strategy, Hardware, Software, Proceedings of the 20th ESLAB Symposium, ESA
+                   SP-250, Vol II, 289, 1986.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1986B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., G.A. Avanesov, V.A. Krasikov, V.A. Shamis, V.A. Tarnopolski,
+                   YA.L. Ziman, A.A. Kuzmin, K. Szego, E. Merenyi, and B.A. Smith, TV
+                   Experiment in Vega Mission: Image Processing Technique and some Results,
+                   Proceedings of the 20th ESLAB Symposium, ESA SP-250, Vol II, 295, 1986.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1986C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., J. Blamont, A.A. Galeev, V.I. Moroz, V.D. Shapiro, V.I.
+                   Shevchenko, K. Szego, Vega Spacecraft Encounters with Comet Halley, Nature,
+                   321, 259-262, 1986.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1986D</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., V.A. Krasikov, V.A. Shamis, V.I. Tarnopolski, K. Szego, I.
+                   Toth, B. Smith, S. Larson, and E. Merenyi, Rotation Period and Spin Axis of
+                   Comet Halley, Proceedings of the 20th ESLAB Symposium, ESA SP-250, Vol II,
+                   335, 1986.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1986E</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., F. Szabo, G.A. Avanesov, P. Cruvellier, L. Szabo, K. Szego,
+                   A. Abergel, A. Balazs, I.V. Barinov, J.L. Bertaux, J. Blamont, M. Detaille,
+                   E. Dimarellis, G.N. Dulnev, G. Krasikov, T. Nguyen-Trong, Z. Nyitrai, I.
+                   Renyi, P. Rusznyak, V.A. Shamis, B. Smith, K.G. Sukhanov, S. Szalai, V.I.
+                   Tarnopolski, I. Toth, G. Tsukanova, B.I. Valnicek, L. Varhalmi, YU.K.
+                   Zaiko, S.I. Zatsepin, YA.L. Ziman, M. Zsenei, and B.S. Zhukov, Television
+                   Observations of Comet Halley from Vega Spacecraft, Nature, 321, 262-265,
+                   1986.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1986F</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., YA.L. Ziman, G.A. Avanesov, V.A. Tarnopolski, V.A. Krasikov,
+                   D.A. Usikov, A.S. Debabov, K.G. Sukhanov, A.Yu. Kogan, V.N. Kheifets, and
+                   K. Szego, TV Experiment in Vega Mission: Nucleus Shape Reconstruction and
+                   Coma Tomography, Methods and Preliminary Results, Proceedings of the 20th
+                   ESLAB Symposium, ESA SP-250, Vol II, 307, 1986.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1986G</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., V.D. Shapiro, V.I. Shevchenko, and K. Szego, Jet Formation
+                   in Comets, Astrophysical Letters, 25, 247, 1987.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R.Z., K. Szego, B.A. Smith, S. Larson, E. Merenyi, A. Kondor, and
+                   I. Toth, The Rotation of P/Halley, The Astronomical Journal, 97, 546-551,
+                   1989.
+            </reference_text>
+            <description>reference.SAGDEEVETAL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Smith, B., K. Szego, S. Larson, E. Merenyi, I. Toth, R.Z. Sagdeev, G.A.
+                   Avanesov, V.A. Krasikov, V.A. Shamis, and V.I. Tarnopolski, The Spacial
+                   Distribution of Dust Jets Seen at Vega-2 Fly-By, Proceedings of the 20th
+                   ESLAB Symposium, ESA SP-250, Vol II, 327, 1986.
+            </reference_text>
+            <description>reference.SMITHETAL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Smith, B.A., K. Szego, R.Z. Sagdeev, and S. Larson, Rejection of a Proposed
+                   7.4-Day Rotation Period of the Comet Halley Nucleus, Nature, 326, 573,
+                   1987.
+            </reference_text>
+            <description>reference.SMITHETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Szego, K., Modeling a Cometary Nucleus, Astrophysics and Space Science,
+                   144, 439-449, 1988.
+            </reference_text>
+            <description>reference.SZEGO1988A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Szego, K., The Nucleus of Comet Halley, Acta Physics, Hungary, 64, 267-275,
+                   1988.
+            </reference_text>
+            <description>reference.SZEGO1988B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Szego, K., What Do We Know About the Nucleus of Comet Halley?,
+                   Bioastronomy-The Next Steps, Marx, G. (ed.), Kluwer Academic Publisher,
+                   31-37, 1988.
+            </reference_text>
+            <description>reference.SZEGO1988C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Szego, K., P/Halley, the Model Comet, in View of the Imaging Experiment
+                   Onboard the Vega Spacecraft, Comets in the Post-Halley Era, Newburn, R.L.,
+                   et al (eds.), Kluwer Academic Publisher, Netherlands, Vol 2, 713, 1991.
+            </reference_text>
+            <description>reference.SZEGO1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Szego, K., A. Kondor, I. Toth, R.Z. Sagdeev, K. Wilhelm, and H.U. Keller,
+                   Reconstruction of the Orientation and Shape of the Nucleus of Comet Halley,
+                   Proceedings on Diversity and Similarity of Comets, Brussels, Belgium, ESA
+                   SP-278, 463, 1987.
+            </reference_text>
+            <description>reference.SZEGOETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Szego, K., A. Kondor, S. Larson, E. Merenyi, R.Z. Sagdeev, B.A. Smith, and
+                   I. Toth, Analysis of the Rotation of Comet Halley, Advances in Space
+                   Research, 9, 73-76, 1989.
+            </reference_text>
+            <description>reference.SZEGOETAL1989A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Szego, K., E. Merenyi, A. Kondor, B.A. Smith, I. Toth, and L. Foldy,
+                   Surface and Dust Features Seen on the Nucleus of Comet Halley, Advances in
+                   Space Research, 9, 85-88, 1989.
+            </reference_text>
+            <description>reference.SZEGOETAL1989B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Szego, K., I. Toth, Z. Szatmary, B.A. Smith, A. Kondor, and E. Merenyi,
+                   Dust Photometry in the Near Nucleus of Comet Halley, Advances in Space
+                   Research, 9, 89-92, 1989.
+            </reference_text>
+            <description>reference.SZEGOETAL1989C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Toth, I., K. Szego, and A. Kondor, Dust Photometry in the Near Nucleus
+                   Region of Comet Halley from Vega-2 Observations, Proceedings on Diversity
+                   and Similarity of Comets, Brussels, Belgium, ESA SP-278, 343, 1987.
+            </reference_text>
+            <description>reference.TOTHETAL1987</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>TELEVISION SYSTEM</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    Instrument Overview
+    ===================
+ 
+      The television system consists of two telescopes,
+      one narrow-angle camera (TVY) for high-resolution
+      imaging of the nucleus, and one large-angle camera
+      (TDN) for detecting and tracking the comet.  The
+      TVY optics have a reflecting objective with a focal
+      length of 1200 mm and a detector which yields an
+      average angular resolution of 3 arcsec, i.e.  a
+      spatial resolution of the order of 150 m at the
+      nominal flyby distance of 10 000 km.  The maximum
+      angular dimension of the nucleus and its near
+      environment is expected to be 5 arcmin at closest
+      approach, and the pointing error is estimated to be
+      +/- 5 arcmin.  The field of view of the TVY must
+      therefore be not less than 15 arcmin.
+ 
+      The TDN has a refractory objective with a focal
+      length of 150 mm.  It is characterised by an
+      angular resolution of 0.5 arcmin, required for
+      early acquisition of the comet and its nucleus, and
+      a 2deg field of view imposed by the constraints
+      associated with control of the pointing platform.
+      The light collected by each telescope is divided
+      into two paths by a beam splitter, 0ne channel is
+      fitted with a fixed filter, the other has a set of
+      eight filters mounted on a rotating wheel, to yield
+      a spectral analysis of the signal.  The images are
+      forms on area CCDs cooled by a passive radiator
+      regulated by a Peltier plate.  The commutable
+      filters of the TDN have an additional function,
+      namely to adjust the amount of light collected by
+      the detector.  This channel is operated
+      autonomously and performs an independent analysis
+      of the video signal, thus providing redunant
+      information to the platform pointing system for the
+      sake of reliability.  The signals delivered by the
+      three other TDN and TVY channels are handled by the
+      same microprocessor system which analyses the
+      images and generates the commands that control the
+      motion of the platform.  The TVS electronics
+      include a 816 kbit memory to store both data and
+      programs, The main characteristics of the TVS are
+      given below.
+ 
+ 
+-------------------------------------------------------------------------
+Table . Television System characteristics
+ 
+Camera system           High resolution           Low resolution
+-------------------------------------------------------------------------
+Objective               Reflector                 Refractor
+Focal distance          1200 mm                   150 mm
+Aperture                 240 mm                    50 mm
+Relative aperture       1:5, effective 1:6.5        1:3
+Channel                 Multispectral  Integral   Multispectral Integral
+-------------------------------------------------------------------------
+Spectral range, micro m 0.4-1.1        0.63-0.76  (1) 0.4-1.1   0.63-0.76
+                                                  (2)0.63-0.76
+-------------------------------------------------------------------------
+Number of filters       8              1          Range (1):1    1
+                                                  Range (2):7
+-------------------------------------------------------------------------
+Field of view           26.4&apos;x39.6&apos;               211&apos;x316&apos;     211&apos;x158&apos;
+Resolution               3.1inx4.1in           24.75inx33in    99inx132in
+-------------------------------------------------------------------------
+Shutter                 Mechanical                             Electronic
+-------------------------------------------------------------------------
+Exposure time range     0.01-163 s                              6-800 ms
+-------------------------------------------------------------------------
+Detector area           5l2x512 pixels                     512x256 pixels
+-------------------------------------------------------------------------
+Data compression        Floating window of 128 X 128 pixels    Full image
+                        around brightest point                 of 128x128
+                                                               pixels
+                                                               after
+                                                              integration
+                                                            of 4x2 pixels
+-------------------------------------------------------------------------
+ 
+ 
+      The resolution of the images was a trade-off.
+      Scientists wanted nucleus images with the highest
+      possible resolution, but that was limited by weight
+      considerations and by selecting a trajectory for
+      the spacecraft which was far enough away from the
+      nucleus to guarantee a high survival probability.
+      The compromise solution was to use a
+      Ritchey-Chretien type telescope for scientific
+      imaging with a focal length of 1200 mm, an
+      effective aperture of f/6.5, and a field of view of
+      26.4x39.6 arcmin.  It was immediately obvious that
+      the field of view of this narrow angle camera (NAC)
+      was too small to find the nucleus autonomously.  It
+      was also not possible to steer the telescope from
+      the ground because the position of the nucleus in
+      the coma was not well enough known.  Therefore, a
+      wide angle scanning camera (WAC) had to be added to
+      the payload.
+ 
+      A major concern was the target definition, namely
+      what should the pointing system be aimed at.  The
+      sensors could identify only the centre of
+      brightness, but it obviously was not identical to
+      the centre of the nucleus.  This was partly due to
+      partial illumination of the nucleus by the Sun
+      (comparable to the phases of the Moon) and partly
+      due to jet activity.  The pointing system might
+      well have locked on to a bright dust jet and be
+      steered away from the nucleus.  As we found no way
+      to define an offset reliably, we decided simply to
+      aim at the centre of brightness.  This targeting
+      strategy worked well for Vega.
+ 
+      The main navigation system for the platform was the
+      imaging system itself.  However, as a backup an
+      eight-segmented light sensitive sensor was mounted
+      on the pointing platform.  Its working principle
+      was extremely simple: if the centre of light from
+      the comet would move away from the centre of the
+      sensor, a change of the platform orientation would
+      have been initiated to compensate for this offset.
+      Fairly sophisticated computer simulations proved
+      that this backup was reliable, but fortunately, it
+      never had to be used.
+ 
+      To have many backups was a major element in our
+      design philosophy.  A third navigational backup,
+      which used analog signals from a completely
+      independent CCD sensor, was added to the TV system.
+      The output signal was processed in a similar way to
+      the eight segmented light sensitive sensor but with
+      much higher precision.
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

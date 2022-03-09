@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:xrs.mess</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>X-Ray Spectrometer for MESSENGER</title>
+        <information_model_version>1.10.1.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-06-05</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Minor updates to support PDS3 to PDS4 migrations.
+                    Added DOI for reference, removed optional attributes with N/A as 
+                    values, added intstrument subtype, and did minor edits to the
+                    description field.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mess</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>https://doi.org/10.1007/s11214-007-9248-5</doi>
+            <reference_text>
+                   Schlemm, C.E., II, R.D. Starr, G.C. Ho, K.E. Bechtold, S.A. Benedict, J.D.
+                   Boldt, W.V. Boynton, W. Bradley, M.E. Fraeman, R.E. Gold, J.O. Goldsten, J.R.
+                   Hayes, S.E. Jaskulek, E. Rossano, R.A. Rumpf, E.D. Schaefer, K. Strohbehn, R.G.
+                   Shelton, R.E. Thompson, J.I. Trombka, and B.D. Williams, The X-Ray Spectrometer
+                   on the MESSENGER spacecraft, Space Science Reviews, 131, 393-415, 2007.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>X-Ray Spectrometer</name>
+        <type>Spectrometer</type>
+        <subtype>X-Ray Spectrometer</subtype>
+        <description>
+          The X-Ray Spectrometer (XRS) experiment was comprised of three
+          identical gas proportional counters (GPC) that measure X-rays
+          emitted from the surface of Mercury in the energy range from about
+          1 to 10 keV. X-rays in this energy range sample the planetary
+          surface to depths of a few tens of microns. The GPCs each had a
+          10-cm2 active area and used both anti-coincidence wires and pulse
+          shape discrimination to minimize background. Balanced filters were
+          used to resolve the lower energy X-ray lines from Mg, Al, and Si.
+          This technique was used previously on other orbital X-ray
+          experiments flown on the Apollo 15, 16 and NEAR-Shoemaker missions.
+          One GPC had a thin aluminum filter, which filtered out Si photons,
+          one had a thin Mg filter, which filtered out Al and Si photons, and
+          the third GPC had no filter. The energy resolution of the gas
+          counters was sufficient to resolve higher energy lines from S, Ca,
+          Ti, and Fe. A small Si-PIN detector was used as a solar monitor,
+          because the Sun is the source of the planetary X-ray fluorescence.
+        </description>
+    </Instrument>
+</Product_Context>

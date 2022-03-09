@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet_tau</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Elnath</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Beta Tauri</alternate_title></Alias>
+      <Alias><alternate_title>Beta Tau</alternate_title></Alias>
+      <Alias><alternate_title>Alnath</alternate_title></Alias>
+      <Alias><alternate_title>bet Tau</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>gam Aur</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>112 Tau</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+28 516</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J0526175+283625</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 15829</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 661203</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+28 795</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J05263+2836A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 688</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+28 795 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 202</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 6681</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 3257</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00035497</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 01859-01470</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 35497</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 398</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 25428</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 25428</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 1791</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 05200+2831 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 05231+2833</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +30112</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1072</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J0526+2836</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J05261751+2836271</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 1163</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1231</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1231.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 145</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 94361</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Renson 9110</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 794</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 77168</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 8655</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30202</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 4565</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 1859-1470-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 3965</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 5151</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 10935</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 1186-00083031</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100035497</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J05263+2836A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 4928</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Elnath</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 05 hours 26 minutes 17.51312 seconds
+Declination, ICRS coord, ep=J2000: +28 degrees 36 minutes 26.8262 seconds
+    </description>
+  </Target>
+</Product_Context>
+

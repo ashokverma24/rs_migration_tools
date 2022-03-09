@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.eps_ori</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Alnilam</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Epsilon Orionis</alternate_title></Alias>
+      <Alias><alternate_title>Epsilon Ori</alternate_title></Alias>
+      <Alias><alternate_title>eps Ori</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>46 Ori</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG-01 596</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14791</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-01 969</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J05363-0112A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Ced 55h</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 852</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-01 969 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1E 0533.6-0113</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1411</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 0533.6-0113</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EM* MWC 504</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J0536-01.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 210</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 6960</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 3454</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00037128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 37128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 449</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 26311</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 26311</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 1903</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 05311-0116 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 05336-0113</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +00079</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1181</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J05361280-0112070</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MCW 342</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 1204</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1283</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1283.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 151</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 175945</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 4428S</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 885</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J053612.8-011201</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 132346</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 9067</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 4963</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 4766-2450-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 5563</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 11224</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100037128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J05362-0112A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 5173</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WH 328</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Alnilam</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 05 hours 36 minutes 12.81335 seconds
+Declination, ICRS coord, ep=J2000: -01 degrees 12 minutes 06.9089 seconds
+    </description>
+  </Target>
+</Product_Context>

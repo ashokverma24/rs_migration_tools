@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd
+        http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ctio-cerro_tololo.smarts_1m50.cassegrainspec</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>CTIO 1.5-meter Cassegrain Spectrograph</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:ctio.smarts1m5.cassegrainspec</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-12-07</modification_date>
+                <version_id>1.0</version_id>
+                <description>per RMS, deprecated ctio in favor of ctio-cerro_tololo</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:ctio-cerro_tololo.smarts_1m50</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>CTIO 1.5-meter Cassegrain Spectrograph</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Spectrometer</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>The CTIO 1.5-meter Cassegrain spectrograph is an ultraviolet transmitting grating
+spectrograph which is used at the f/7.5 focus where the scale is 18.1 arcseconds/mm.
+It is identical to the 2.1-meter telescope White Cassegrain spectrograph at Kitt Peak
+National Observatory and therefore allows one to obtain similar spectrograms in both
+hemispheres.
+
+Plate Scale (at f/7.5 focal plane)      18.06 arcsec/mm
+Slit Length     25.4 mm, 459.7 arcsec
+Collimator Focal Length         766.1 mm
+Point source collimated beam diameter   101.6 mm
+Collimator-to-Camera Angle      55 degrees
+Grating size    127[INVALID_PDS_CHARACTER]152 mm
+Camera Focal Length     160 mm
+Demagnification         4.788
+Plate Scale (at detector)       86.7 arcsec/mm
+        </description>
+    </Instrument>
+</Product_Context>
+

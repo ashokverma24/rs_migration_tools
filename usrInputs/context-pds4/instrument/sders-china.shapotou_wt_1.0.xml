@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:sders-china.shapotou_wt</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Shapotou Wind Tunnel, Shapotou Desert Experimental Research Station, Institute od Desert Research, Chinese Academy</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-02-15</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                 Initial creation of the context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:laboratory.sders-china</lid_reference>
+            <reference_type>instrument_to_facility</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1016/S0169-555X(02)00170-8</doi>
+            <reference_text>Dong, Z., X. Lu, H. Wang, A. Zhao, and X. Wang, (2003), The flux profile of a blowing
+                sand cloud: a wind tunnel investigation, Geomorphology, 49(2-3): 219-230.</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Shapotou Wind Tunnel, Shapotou Desert Experimental Research Station, Institute od Desert Research, Chinese Academy</name>
+        <type>Atmospheric Sciences</type>
+        <description>
+            A large and complex wind tunnel used at the Shapotou Desert Experimental Research Station, China. The overall length of the tunnel 
+            is 37 m. The working section dimentions are 21 m length, 1.2 m width, 1.2 m height. The tunnel is subdived into several sections
+            including the power section (2.60 m length), expansion section (6.40 m length), stabilization section (honeycomb and drag screens,
+            1.50 m length), compression section (2.50 m length), work section (21.0 m length), and the diffusion section (3.00 m length).
+            The cross-sectional area varies by section and reaches a maximum in the expansion section at 2.4 m by 1.2 m. Wind speed can be 
+            continuously varied from 2 - 30 m s^-1.
+       </description>
+    </Instrument>
+</Product_Context>

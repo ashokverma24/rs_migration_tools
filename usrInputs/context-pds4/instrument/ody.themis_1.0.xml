@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:themis.ody</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>THERMAL EMISSION IMAGING SYSTEM for ODY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ody::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Christensen, P. R., Calibration Report for the Thermal Emission Imaging
+                   System (THEMIS) for the Mars 2001 Odyssey Mission, September 2002.
+            </reference_text>
+            <description>reference.CHRISTENSEN2002</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Christensen, P. R., B. M. Jakosky, H. H. Kieffer, M. C. Malin, H. Y.
+                   McSween, Jr., K. Nealson, G. L. Mehall, S. H. Silverman, S. Ferry, and M.
+                   Caplinger, The Thermal Emission Imaging System (THEMIS) for the Mars 2001
+                   Odyssey Mission, Space Science Rev., submitted.
+            </reference_text>
+            <description>reference.CHRISTENSENETAL2002</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>THERMAL EMISSION IMAGING SYSTEM</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The THEMIS flight instrument is a combined infrared and visible
+    multi-spectral pushbroom imager [CHRISTENSENETAL2002].  It has a
+    12-cm effective aperature telescope and co-aligned infrared and
+    visible area arrays.  The imaging system is comprised of a
+    three-mirror anastigmat telescope in a rugged enclosure, a
+    visible/infrared beamsplitter, a silicon focal plane for visible
+    detection, and a microbolometer for infrared detection.  A major
+    feature of this instrument is the use of an uncooled IR
+    microbolometer array operated at ambient temperature, eliminating
+    the need for complex passive or active cryogenic coolers.  A small
+    thermal electric cooler is used to stabilize the detector
+    temperature to 0.001K.  A calibration flag, the only moving part in
+    the instrument, provides thermal calibration and a DC restore
+    capability, and will also be used to protect the detectors from
+    unintentional direct illumination from the Sun when the instrument
+    is not in use.  The electronics provide digital data collection and
+    processing as well as the instrument control and data interface to
+    the spacecraft.  Infrared data will be collected in 9 wavelengths
+    centered from 6.6 to 15.0 microns at 100 meter per pixel resolution;
+    the 6.6 micron band is collected twice to result in a 10 band image.
+    Visible data will be collected in 5 spectral bands at a resolution
+    of 18 meters per pixel.  The instrument weighs 11.2 kg, is 29 cm by
+    37 cm by 55 cm in size, and consumes an orbital average power of
+    14W.
+ 
+ 
+    Optical Design
+    --------------
+      In order to integrate the visible and IR bands into a single
+      telescope, a fast, wide field-of-view reflective telescope has
+      been used.  The 3.5 degree (down-track) by 4.6 degree
+      (cross-track) field of view is achieved with a 3 mirror f/1.6
+      anastigmat telescope with an effective aperature of 12 cm and a
+      20-cm effective focal length.  The design allows for excellent
+      baffling to minimize scattered light.  It is based on a
+      diamond-turned bolt-together approach to telescope design,
+      fabrication, alightment and testing.  The manufacture utilized
+      high-precision machining capabilities that allowed the entire
+      optical stage to be machined and assembled without manual optical
+      component adjustments, and achieved diffraction-limited
+      performance in both the visible and infrared.  The optical
+      surfaces were machined with extremely tight tolerances (0.0002in).
+      The optical surfaces were machined directly from high order
+      aspheric equations.  The telescope was manufactured with aluminum
+      to reduce cost and to be significantly light-weight.  Nickel
+      plating and automated post polishing were used to keep the surface
+      scatter to levels unobtainable with conventional diamond turning
+      techniques.  The system was optimized to match the high signal
+      performance required for the IR imager and the spatial resolution
+      needed for the visible camera.  The 9 micron pitch of the visible
+      array maps to a ground sample distance (GSD) of 18 meters with an
+      MTF of approximately 0.1 at Nyquist.  Similarly, the 50 micron
+      pitch of the IR focal plane array maps to a GSD of 100 meters.
+ 
+ 
+    Focal Plane Assemblies
+    ----------------------
+      The THEMIS infrared design is based on a Raytheon hand-held
+      imager developed for rugged military use.  The microbolometer
+      array contains 320 pixels cross track by 240 pixels along track,
+      with a square 50 micron pixel pitch.  The microbolometer arrays
+      were grown directly on the surface of Readout Integrated Circuits
+      (ROIC) which are designed by Raytheon Santa Barbara Research
+      Center (SBRC) and utilize custom Digital Signal Processing
+      electronics.  Spectral discrimination in the infrared is achieved
+      with ten narrowband stripe filters.  Each filter covers 16 lines
+      in the along track directiona with an 8-line &apos;dead-space&apos; between
+      filters.  The stripe filters were fabricated as separate stripe
+      filters butted together on the focal plane.  The along-track
+      detectors under a common spectral filter are combined by the use
+      of time-delay and integration (TDI) to improve the instrument&apos;s
+      signal-to-noise performatnce.  The calculated dwell time for a
+      single pixel, at a martian orbit of 400km and a 100-meter
+      footprint is 29.9 msec, which closely matches the 30Hz frame rate
+      for the standard microbolometer.  The ten stripe filter produces
+      nine ~1 micron wide wavelength bands from 6.6 to 15 microns.  Two
+      filters (bands 1 and 2) cover the same spectral region centered at
+      6.6 microns.  The nine IR wavelengths include eight surface-
+      sensing wavelengths (bands 1 - 9) and one atmospheric wavelength
+      (band 10).
+ 
+      The visible camera was supplied by Malin Space Science Systems
+      (MSSS) and is a derivative of the MS&apos;98 MARDI camera.  It consists
+      of a small (5.5 x 8.5 x 6.5 cm, &lt;500 gm) unit incorporating a
+      focal plane assembly with five color filters superimposed on the
+      CCD detector, a timing board, a data acquisition subsystem and a
+      power supply.  The visible sensor utilizes a Kodak KAI-1001 CCD.
+      This detector has 1024 by 1024 9-micrometer pixels (1018 x 1008
+      photoactive).  The visible imager used a filter plate mounted
+      directly over the area-array detector on the focal plane.  On the
+      plate are multiple narrowband filter strips, each covering the
+      entire cross-track width of the detector, but only a fraction of
+      the along-track portion of the detector.  The five filter bands
+      are centered near 425, 550, 650, 750, and 860 nanometers.  Band
+      selection is accomplished by selectively reading out only part of
+      the resulting frame for transmission to the spacecraft computer.
+      The imager uses 5 stripes each 192 pixels in along-track extent.
+      The entire detector is read out every 1.3 seconds.
+ 
+ 
+    Electronics Design
+    ------------------
+      Both the visible and infrared cameras utilized commercial,
+      off-the-shelf electonics with modifications to accommodate space
+      environmental requirements.  Dedicated, miniaturized electronics
+      provide ultra-stable, low-noise clock and bias signals to the
+      focal planes, stabilize IR focal plane temperature with 0.001
+      degree C, and perform analog and digital processing of the output
+      signals.
+ 
+      The microbolometer readout electronics includes an initial 8-bit
+      analog DC offset correction which occurs on the focal plane, an
+      Analog-to-Digital Converter (ADC) coverts the signals to 12-bit
+      words, which are then corrected for gain and offsets.  The
+      correction is provided by the electronics of the IR camera and
+      consists of a 12-bit fine offset and 8-bit gain and responsivity
+      adjustment, performed in real time on a pixel-by-pixel basis.
+      This process eliminates all the significant noise elements with
+      the exception of the fundamental random noise term.  This noise is
+      reduced by applying TDI to the corrected digital data.  Internal
+      THEMIS data processing in firnmware includes a 16:1 TDI processing
+      and lossless data compression for the IR bands using a hardware
+      Rice data compression algorithm chip.
+ 
+      The visible sensor requires 7 clock signals: a two-phase
+      vertical clock (V1/V2), a two-phase horizontal clock (H1/H2), a
+      sub-state clear clock (S), a reset clock (R), and a fast-dump
+      clock (F).  In addition, the ADC requires a convert clock.  The
+      amplified CCD signal is digitized by an Analog Devices AD1672
+      12-bit ADC running at its maximum rate of 3 MSPS.  For each pixel,
+      both reset and video levels are digitized and then subtracted in
+      the digital domain to perform correlated double sampling (CDS).
+      The digital electronics are responsible for clock generation,
+      sampling of the CCD signal, conversion of the 12-bit samples to
+      8-bit encoded pixels, storage of the pixels, and finally readout
+      of the pixels to the spacecraft.  The zero reference (&apos;reset&apos;)
+      level for each pixel is digitized and stored in a register.  The
+      sum of the video plus zero reference (&apos;video&apos;) level is then
+      digitized, and an arithmetic subtraction is performed to produce
+      the final result.  The CCD output only requires scaling to the
+      ADC range; no analog sampling, delay or differencing is required.
+      The digital signal processor within the visible sensor generates
+      the CCD clocks, reads the reset and video levels from the ADC,
+      performs the correlated double sampling subtraction, reduces the
+      pixel from 12 to 8 bits, applies lossless (2:1) first-difference
+      Huffman compression, and transmits it digitally with handshaking
+      over the serial communications interface to the spacecraft CPU.
+ 
+      The spacecraft interface electronics supply final processing of
+      the focal plane data, a data and command interface to the
+      spacecraft, and overall instrument power conditioning.  The bulk
+      of the interface electronics is performed using Actel Field
+      Programmable Gate Arrays (FPGAs), that are packaged using a
+      mixture of conventional, and Sealed Chip-On-Board, High-Density
+      Multiple Interconnect technology and chip stack memory.  The
+      visible and IR subsystems have independent power supplies, the IR
+      power supply uses off-the-shelf modules and requires only a few
+      discrete components for input filtering to assure electromagnetic
+      compatibility with the rest of the spacecraft.  The spacecraft
+      processor performas final data stream formatting for both the IR
+      and the visible data.
+ 
+ 
+    Mechanical Design
+    -----------------
+      The THEMIS main frame is composed of aluminum and provides the
+      mounting interface to the spacecraft as well as the telescope
+      assembly, thermal blankets, and thermal control surface.  The
+      focal plane assemblies are mounted in the main frame using
+      brackets that provide for the necessary degrees of freedom for
+      alignment to the telescope.  The calibration shutter flag is
+      stored against a side wall that will maintain a known termperature
+      of the flag for calibration purposes.  Aluminum covers are
+      installed over the electronics circuit cards to provide EMI, RFI,
+      and radiation shielding as required.  There is no reliance on the
+      spacecraft for thermal control of THEMIS, other than the
+      application of replacement heater power when the instrument is
+      off.  The themal control plan includes the use of multi-layer
+      insulation blankets and appropriate thermal control surfaces to
+      provide a stable thermal environment and a heatsink for the
+      electronics and the TE termperature controller on the focal plane
+      arrays.
+ 
+ 
+    Performance Characteristics
+    ---------------------------
+      The predicted performance for the infrared bands produced noise
+      equivalent delta emissivity values ranging from 0.007 to 0.038
+      when viewing Mars at surface temperatures of 245K to 270K.  The
+      measured SNR values for each band at a reference surface
+      temperature of 245K are as follows:
+ 
+                      band 1,2 = 45
+                      band  3  = 107
+                      band  4  = 169
+                      band  5  = 193
+                      band  6  = 187
+                      band  7  = 194
+                      band  8  = 167
+                      band  9  = 128
+                      band 10  = 120
+ 
+      SNR ratios for the visible imager were computed for a low albedo
+      (0.25), flat-lying surface viewed at an incidence angle of 67.5
+      degrees under aphelion conditions.  The SNR values for this case
+      vary from 200 to 400.
+ 
+ 
+    Software
+    --------
+      The flight software for the IR imager resides on the spacecraft
+      computer and performs the formatting and data packetization.
+      Instrument commanding will be done using discrete spacecraft
+      commands to the THEMIS instrument over an RS-232 command line.
+      These commands will consist of:
+ 
+         1) IR camera on/off/standby;
+         2) visible camera on/off/stand-by;
+         3) calibration flag shutter control and electronics
+            synchronization;
+         4) instrument parameter settings (gain, offset, integration
+            time, etc.).
+ 
+      The visible imager software runs on two processors: the main
+      spacecraft CPU and the internal DSP.  The CPU will be responsible
+      for instrument operational commands and image post-processing and
+      compression.  The DSP is responsible for generating the CCD
+      clocks, emulating the required analog processing and transmitting
+      the data output to the CPU.  Lossless predictive compression is
+      implemented as part of the DSP firmware.  The algorithm employed
+      compresses each image line independently by encoding first
+      differences with a single, fixed Huffman table.  Selective readout
+      and pixel summing can also be performed by the DSP software.  The
+      result of an imaging command is a stream of raw or compressed
+      8-bit pixels.
+ 
+      Experience has shown that the volume of data likely to be
+      returned from a spacecraft often evolves during a mission.
+      Implementing data compression in software on the spacecraft
+      computer provides the maximum flexibility for the science and
+      spacecraft team to trade-off data return and buffer space usage.
+      The compression nodes developed are:
+ 
+         1) lossless predictive (capable of applications by the SDP in
+            real-time);
+         2) a relatively fast discrete cosine transform compression
+            (applied by the spacecraft CPU in &apos;near realtime&apos; a few
+             tens of seconds);
+         3) high-quality lossy wavelet compression (applied by the CPU
+            on a longer timescale).
+ 
+      Each compression node has optional pixel summing.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The objectives of the THEMIS experiment are:
+ 
+        1) to determine the mineralogy and petrology of localized
+           deposits associated with hydrothermal or sub-aqueous
+           environments, and to identify future landing sites likely to
+           represent these environments.
+        2) to search for pre-dawn thermal anomalies associated with
+           active sub-surface hydrothermal systems.
+        3) to study small-scale geologic processes and landing site
+           characteristics using morphologic and thermophysical
+           properties.
+        4) to investigate polar cap processes at all seasons using
+           infrared observations at high spatial resolution.
+        5) to provide a direct link to the global hyperspectral
+           mineral mappingfrom the Mars Global Surveyor TES
+           investigation by utilizing the same infrared spectral region
+           at high (100m) spatial resolution.
+ 
+ 
+  Calibration
+  ===========
+    The THEMIS instrument was radiometrically, spectrally, and
+    spatially calibrated prior to delivery.  Three categories of
+    calibration were performed: 1) spatial calibration; 2) spectral
+    calibration; and 3) radiometric calibration.  The radiometric
+    calibration included the absolute rediometry, the relative precision
+    (SNR), and the calibration stability during an image aquisition.
+    The data returned from the instrument in-flight will be converted
+    to scene radiance by:
+ 
+        1) adjusting for the gain and offset that were applied in the
+           instrument to optimize the dynamic range and signal
+           resolution for each scene;
+        2) correcting for drift or offest that occur between
+           observations of the calibrations flag;
+        3) converting signal to radiance using the instrument response
+           function determined prior to launch.
+ 
+    The response functions necessary to perform this calibration were
+    acquired prior to instrument delivery using a thermal vacuum chamber
+    at the SBRS facility.  See calibration report for details on IR and
+    visible image calibration methodologies [CHRISTENSEN2002]
+ 
+    THEMIS images will be calibrated using periodic views of the
+    internal calibration flag.  This flag will be closed, imaged, and
+    reopened at selectable intervals throughout each orbit.  Calibration
+    data are expected to be acquired every 3-5 minutes.  However, the
+    optimum spacing of these observations that meets the calibration
+    accuracy requirements, while minimizing the loss of surface
+    observations, will be determined in Mars orbit.
+ 
+ 
+  Operation of THEMIS
+  ===================
+    The THEMIS instrument is operated from ASU, building on the
+    facility and staff developed and in place for the MGS TES
+    investigation.  No special spacecraft operation or orientation is
+    required to obtain THEMIS data.  The instrument alternates between
+    data collection (&lt;3.5 hours per day) and idle modes based on
+    available DSN downlink rates.  These modes will fall within
+    allocated resources (e.g.  power), and will not require power
+    cycling of the instrument.  All instrument commands are generated
+    at ASU, delivered electronically to the Odyssey Project, and
+    transmitted to the spacecraft.
+ 
+ 
+    Image Collection
+    ----------------
+      IR images can be acquired at selectable image lengths, in
+      multiples of 256 lines (25.6 km).  The image width is 320 pixels
+      (32 km from the nominal mapping orbit) and the length is variable,
+      as given by ((#frames)*256 lines) - 240.
+      The allowable number of frames varies from 2 to 256, giving
+      minimum and maximum image lengths of 272 and 65,296 lines
+      respectively (27.2 km and 6,530 km from the nominal mapping
+      orbit).  The bands returned to the ground are selectable.  THEMIS
+      visible images can be acquired simultaneously with IR images, but
+      the spacecraft can only transfer data from one of the two THEMIS
+      imagers at a time.  The IR image transfers data as it is being
+      collected, while the visible images are stroed within an internal
+      THEMIS buffer for later transfer to the spacecraft CPU.
+ 
+      Visible images can be acquired in framelets that are 1024 samples
+      crosstrack by 192 lines downtrack in size.  The images can be
+      composed of any selectable combination of bands and image length
+      that can be stored within the 3.734 Mbytes THEMIS internal buffer.
+      The size of an image is given by:
+ 
+          (1024 * 192) * #framelets * #bands &lt; 3.734 Mbytes.
+      Thus, for example, either a single-band, 19 framelet (65.6 km)
+      image or a 5-band 3-framelet (10.3 km) image can be collected.
+      This buffer must be emptied to the spacecraft before a subsequent
+      image can be acquired.
+ 
+ 
+    Data Allocation
+    ---------------
+      THEMIS data collection will be distributed between the
+      mineralogic, temperature, and morphologic science objectives in
+      both targeted and global mapping modes.  A baseline observing plan
+      has been developed to prioritize the total data volume returned by
+      THEMIS between the different objectives.  This plan currently
+      devotes 62% of the total data to the IR imager and 38% to the
+      visible, averaged over the course of the Primary Mission.  In the
+      baselne plane the IR data will be further sub-divided into
+      9-wavelength daytime mineralogic observations (47% of total data
+      return) and 2-wavelength nighttime and polar temperature mapping
+      (15% of total data).  The visible data will be sub-divided into
+      monochromatic images (36% of total data) and 5-band multi-spectral
+      images (2%).
+ 
+      We have assumed a lossless data compression factor of 1.7 for
+      the IR imager and a combination of lossless (40%), and lossy with
+      compression factors of 4 (30%) and 6(30%) for the visible imager.
+      With these allocations, the Science and Relay phases of the
+      mission will fully map Mars in daytime IR and will map the planet
+      1.5 times in nighttime IR. The visible imaging will cover 60% of
+      the planet at 18 meter resolution in one band (80,000 18x50Km
+      frames) and &lt;1% in 5-band color.  Tradeoffs between monochromatic
+      and multi-spectral imaging, as well as variations in the degree of
+      lossy compression , will be made to maximize the science return
+      from the visible imager.
+ 
+      THEMIS data volume return varies significantly will mission
+      phase due to variations n the Earth-Mars distance.  In addition,
+      the equator crossing local time will vary between ~15.5 H (24 H
+      equals one martian day) and 18 H over the course of the mission.
+      The first ~180-day phase of the mission provides some of the best
+      viewing conditions for the IR imager and will allow ~40% of the
+      planet to be observed.  IR images acquried during this period will
+      be carefully selected using the TES global mineral maps to focus
+      on the sites of highest mineralogical or morphological interest.
+      During a second IR mapping phase, when the data rates are again
+      high and the local time close to 16.5 H, the remaining ~60% of the
+      planet will be mapped.
+ 
+ 
+  Principal Investigator
+  ======================
+    Philip R. Christensen
+    Arizona State University
+
+        </description>
+    </Instrument>
+</Product_Context>

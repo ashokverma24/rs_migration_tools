@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:las_campanas.magellan_baade_6m5</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Walter Baade Telescope at Las Campanas Observatory</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-12</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created by A.C.Raugh from information downloaded from the 
+                    Las Campanas Observatory web site on 2021-08-21.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:las_campanas.magellan_baade_6m5.imacs</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.las_campanas</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Telescope>
+        <aperture unit="m">6.5</aperture>
+        <telescope_altitude unit="m">2400</telescope_altitude>
+        <description>
+            The Walter Baade telescope is one of a twin pair (with the Landon T. Clay)
+            located on Cerro Manqui at Las Campanas Observatory. The primary mirror is
+            an f/1.25 parabaloid with a honeycomb internal structure to reduce weight.
+            The telescope optics include active controls, including correction of 
+            low-order aberrations by controlling the figure of the primary mirror.
+        </description>
+    </Telescope>
+</Product_Context>

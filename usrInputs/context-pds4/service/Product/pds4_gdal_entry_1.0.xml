@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:pds4_gdal</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PDS4 GDAL</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Citation_Information>
+            <publication_year>2019-06-28</publication_year>
+            <description>GDAL/OGR contributors (2019). GDAL/OGR Geospatial Data Abstraction software Library. Open Source Geospatial Foundation. URL https://gdal.org</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-10-10</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>PDS4 GDAL</name>
+        <abstract_desc>GDAL is a translator library for raster and vector geospatial data formats that is released under an X/MIT style Open Source license by the Open Source Geospatial Foundation.</abstract_desc>
+        <version_id>3.01</version_id>
+        <url>http://www.gdal.org/</url>
+        <release_date>2019-06-28</release_date>
+        <service_type>Tool</service_type>
+        <interface_type>Command-Line</interface_type>
+        <category>Analysis</category>
+        <category>Reader</category>
+        <category>Generation</category>
+        <category>Transformation</category>
+        <category>Validation</category>
+        <software_language>C++</software_language>
+        <software_language>C</software_language>
+        <software_language>C#</software_language>
+        <software_language>Python (via SWIG)</software_language>
+        <software_language>JAVA (via SWIG)</software_language>
+        <software_language>PERL (via SWIG)</software_language>
+        <supported_operating_system_note>Linux, FreeBSD, MS-Windows, Mac OS X, Android, IOS</supported_operating_system_note>
+        <system_requirements_note>Software applications which support the GDAL library may also include support for the formats listed above (which includes the planet definition, projection parameters, and label intricacies like pixel offset and multiplier. Some popular applications with GDAL support include QGIS, Esri's ArcMap and ArcGIS Pro, TuiView, GRASS GIS, SAGA, UDIG, Socet GXP, GMT, University of Minnesota's (UMN) MapServer, GeoServer, etc. For applications that do not use GDAL, the bundle routines released with GDAL (e.g. gdal_translate, gdalwarp, ogr2ogr) can be used to convert the planetary formats into many well supported geospatial formats (e.g. GeoTIFF, GeoJPEG2000, HDF, ENVI, and many others). Support for conversion of GIS vector files (e.g. shapefiles, GML, many SQL engines like PostGRES/POSTGIS) and tables was recently added. Builds are available on most platforms including mobile, but a simply recommended environment is Anaconda (once Anaconda is installed, install GDAL tools using "conda install -c conda-forge gdal" )</system_requirements_note>
+        <description>GDAL is a translator library for raster geospatial data formats that is released under an X/MIT style Open Source license by the Open Source Geospatial Foundation. As a library, it presents a single abstract data model to the calling application for all supported formats. It also comes with a variety of useful command-line utilities for data translation and processing. It has support to read most derived (map projected) PDS3, PDS4 (raster, GIS vector, and tables), ISIS2, ISIS3, and a forthcoming updated VICAR formats. It also supports FITS reading and writing using the CFITSIO library, including an extension to FITS for geospatial definitions informally called GeoFITS.
+
+more:
+PDS3: https://gdal.org/drivers/raster/pds.html
+PDS4: https://gdal.org/drivers/raster/pds4.html
+ISIS2: https://gdal.org/drivers/raster/isis2.html
+ISIS3: https://gdal.org/drivers/raster/isis3.html
+VICAR: https://gdal.org/drivers/raster/vicar.html
+FITS: https://gdal.org/drivers/raster/fits.html</description>
+    </Service>
+    <!--
+Submitter Information
+Submitter Name:        Trent Hare
+Submitter Institution: Astrogeology Science Center, U.S. Geological Survey
+Submitter Email:       thare@usgs.gov
+-->
+</Product_Service>

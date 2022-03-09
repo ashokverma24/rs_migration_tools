@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.target_identification.pds.type_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>type</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>type</name>
+        <version_id>1.10</version_id>
+        <class_name>Target_Identification</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.target_identification.pds.type_1a00</local_identifier>
+        <steward_id>pds</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The type attribute classifies a target according to its size and properties so that correct nomenclature can be applied.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <attribute_concept>Type</attribute_concept>
+        <Terminological_Entry>
+            <name>type</name>
+            <definition>The type attribute classifies a target according to its size and properties so that correct nomenclature can be applied.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <conceptual_domain>Short_String</conceptual_domain>
+            <specified_unit_id>none</specified_unit_id>
+            <DD_Permissible_Value_Full>
+                <value>Asteroid</value>
+                <value_meaning>The target is classified as an asteroid</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Calibration</value>
+                <value_meaning>The Target is classified as calibration</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Calibration Field</value>
+                <value_meaning>This type indicates a star field observed to be used for calibration purposes. Typically, this will correspond to a field defined in a published work like the Landolt photometric catalog.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Calibrator</value>
+                <value_meaning>This type indicates a piece of equipment specifically designed to generate a signal to be used for calibration.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Comet</value>
+                <value_meaning>The target is classified as a comet</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Dust</value>
+                <value_meaning>The target is classified as dust</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Dwarf Planet</value>
+                <value_meaning>The target is classified as a dwarf planet</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Equipment</value>
+                <value_meaning>Target is classified as a part of the host spacecraft or another (human) artifact</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Exoplanet System</value>
+                <value_meaning>This type indicates a target that is a star or stellar system (binary, trinary, etc.) with a known or suspected planetary system around it.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Galaxy</value>
+                <value_meaning>The target is classified as a galaxy</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Globular Cluster</value>
+                <value_meaning>The target is classified as a globular cluster</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Lunar Sample</value>
+                <value_meaning>The target is a sample collected on the Earth&apos;s Moon</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Meteorite</value>
+                <value_meaning>The target is classified as a meteorite</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Meteoroid</value>
+                <value_meaning>The target is classified as a meteoroid</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Meteoroid Stream</value>
+                <value_meaning>The target is classified as a meteoroid stream</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Nebula</value>
+                <value_meaning>The target is classified as a nebula</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Open Cluster</value>
+                <value_meaning>The target is classified as an open cluster</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Planet</value>
+                <value_meaning>The target is classified as a planet</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Planetary Nebula</value>
+                <value_meaning>The target is classified as a planetary nebula</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Planetary System</value>
+                <value_meaning>This type indicates a target consisting of a primary body and its satellite(s), ring(s), or similarly associated objects.  For example: Saturn and its rings, Jupiter and its moons, etc.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Plasma Cloud</value>
+                <value_meaning>The target is classified as a plasma cloud</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Plasma Stream</value>
+                <value_meaning>Target is classified as a plasma stream.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Ring</value>
+                <value_meaning>The target is classified as a ring</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Satellite</value>
+                <value_meaning>The target is classified as a satellite</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Star</value>
+                <value_meaning>The target is classified as a star</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Star Cluster</value>
+                <value_meaning>The target is classified as a star cluster</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Sun</value>
+                <value_meaning>The target is classified as a sun</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Synthetic Sample</value>
+                <value_meaning>The target is a sample created in a laboratory</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Terrestrial Sample</value>
+                <value_meaning>The target is classified as a terrestrial sample</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Trans-Neptunian Object</value>
+                <value_meaning>The target is classified as a trans-Neptunian object</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

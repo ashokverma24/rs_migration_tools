@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:lro.dlre</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DIVINER LUNAR RADIOMETER EXPERIMENT for LRO</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:dlre.lro</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.lro</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Paige, D.A., et al., The Lunar Reconnaissance Orbiter Diviner Lunar Radiometer
+                   Experiment, Space Sci. Rev., doi: 10.1007/s11214-009-9529-2, 2009.
+            </reference_text>
+            <description>reference.PAIGEETAL2009</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>DIVINER LUNAR RADIOMETER EXPERIMENT</name>
+        <type>Radiometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+Instrument Overview
+===================
+ 
+The Diviner Lunar Radiometer Experiment is in most respects a copy
+of the Mars Climate Sounder (MCS) instrument on Mars Reconnaissance
+Orbiter.  Both instruments observe radiation with 21 detectors in
+each of nine spectral bands.  MCS is primarily an atmospheric limb
+sounder that measures temperature, pressure, water vapor, dust, and
+condensates at Mars&apos; atmospheric limb.  In contrast, Diviner is a
+surface pushbroom mapper that measures emitted thermal radiation
+and reflected solar radiation from the surface of the moon. Two
+Diviner solar channels measure 0.3-3 micrometers reflected solar
+radiation.  Three Diviner channels near 8 micrometers classify
+regolith mineralogy by mapping the location of the Christiansen
+feature.  The remaining four Diviner channels measure surface
+temperature in four spectral bands ranging from 12.5 micrometers
+to beyond 200 micrometers.
+ 
+Hardware Overview
+=================
+ 
+The Diviner Lunar Radiometer Experiment is a nine channel
+infrared radiometer employing filter radiometry. These channels
+are distributed between two identical, boresighted telescopes,
+and an articulated elevation/azimuth mount allows the telescopes
+to view the lunar surface, space, and calibration targets. The
+instantaneous field-of-view (FOV) response of each channel is
+defined by a linear, 21-element, thermopile detector array at
+the telescope focal plane, and its spectral response is defined
+by a focal plane bandpass filter.
+ 
+The Diviner structure consists of an instrument optics bench
+assembly (OBA), an elevation/azimuth yoke, and an instrument
+mount. The OBA contains all of the instrument optical
+subassemblies, and is suspended from the yoke. Elevation and
+azimuth motors mounted on the yoke drive instrument articulation.
+The OBA can be temperature controlled, and internal temperature
+gradients are minimized by design. Radiometric calibration is
+provided by views of blackbody and solar targets mounted on the
+yoke. The electronics subassemblies control signal processing,
+instrument operation and articulation, command processing, and
+data processing.  These electronics are distributed between the
+OBA and the yoke.
+ 
+For more information, including instrument diagrams and channel
+bandpasses and functions, please see the EDR Software
+Interface Specification (SIS).
+
+        </description>
+    </Instrument>
+</Product_Context>

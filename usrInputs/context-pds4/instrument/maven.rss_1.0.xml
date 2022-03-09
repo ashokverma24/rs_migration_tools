@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.sch" 
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rss.maven</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Radio Science Instrument for MAVEN</title>
+        <information_model_version>1.8.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-10-04</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Original version.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:maven.rose.raw:document:rsr</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+              The version referenced is Rev. A, dated 2001, which should be adequate for 
+              most users.  Rev. B included minor content/format changes.  Subsequent versions
+              (now at Rev. F) have been issued solely to improve the documentation.  Status 
+              of Revs. B and C is unknown; Revs. D-F have not been cleared for ITAR release.
+            </comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:maven.rose.raw:document:dlf</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+              This document must be used in conjunction with maven_rose_rsr.  It describes 
+              variations in RSR tuning that allow better real-time frequency tracking of 
+              the downlink carrier when occultations are observed in two-way mode.  For 
+              MAVEN ROSE the RSR tuning is adjusted at millisecond cadence rather than at 
+              (nominal) one second cadence.
+            </comment>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Asmar, S. W., N. A. Renzetti, The Deep Space Network as an Instrument 
+                   for Radio Science Research, JPL Publication 80-93, Rev. 1, 15 April 
+                   1993.  Available at https://ntrs.nasa.gov/search.jsp?R=19950015039
+            </reference_text>
+            <description>
+                   A description of the technical capabilities of the NASA Deep Space Network 
+                   in the mid 1990s as they might be applied to radio science observations 
+                   conducted with spacecraft.  The report also provides an overview of six 
+                   types of radio science investigations conducted using the DSN (radio 
+                   propagation and occultation, solar corona and solar wind, celestial 
+                   mechanics, gravitational waves, relativistic time delay, and spacecraft 
+                   deceleration in cometary comae).  Although somewhat dated in technical 
+                   details, the overview remains useful since the antenna, transmitter, and 
+                   receiver performance has changed little since 1993.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Deep Space Mission Systems (DSMS) Telecommunications Link Design 
+                   Handbook (810-005), Jet Propulsion Laboratory, Pasadena, CA.  
+                   Available at https://deepspace.jpl.nasa.gov/dsndocs/810-005/
+            </reference_text>
+            <description>
+                   A modular document that provides technical information useful in designing 
+                   telecommunications interfaces and estimating their performance.  It provides 
+                   data on 26-, 34-, and 70-m antennas; solar, atmospheric, and environmental 
+                   effects; frequency assignments; doppler, ranging, commanding, 
+                   telecommunications, interferometry, and open-loop receiving subsystems; and 
+                   geometry, coverage, calibration, and test support.  A glossary is also 
+                   included.  The modular organization facilitates updates, the most recent 
+                   being in February 2017.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mars Reconnaissance Orbiter Telecommunications, 
+                   Jet Propulsion Laboratory, Pasadena, CA.  September 2006.
+                   Available at https://deepspace.jpl.nasa.gov/DPSummary/summary.html
+            </reference_text>
+            <description>
+                   The referenced document provides technical details about the 
+                   telecommunications subsystem flown on Mars Reconnaissance Orbiter.  
+                   The subsystem flown on MAVEN is similar.  Differences include a 2-meter 
+                   parabolic reflector high-gain antenna on MAVEN (rather than the 3-m offset 
+                   parabolic reflector with subreflector on MRO) and no special on-board
+                   oscillator on MAVEN, compared with an ultra-stable oscillator on MRO.
+                   The minimum downlink data rate for MAVEN was 271-550 kb/s whereas it was 
+                   500 kb/s for MRO.
+            </description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+            <name>Radio Science Instrument</name>
+            <type>Radio-Radar</type>
+            <description>
+                   In two-way mode a DSN ground station transmits an uplink carrier at about 
+                   7.2 GHz, referenced to the local frequency and timing standard (FTS), which 
+                   ensures greatest stability.  The uplink signal is received at the spacecraft; 
+                   there are small phase changes in the signal if it has passed through the 
+                   atmosphere/ionosphere of Mars.  The spacecraft telecommunication subsystem 
+                   locks to the uplink signal and echoes it back at about 8.4 GHz.  Additional 
+                   phase changes are imposed if the downlink signal passes through Mars 
+                   atmosphere/ionosphere.  The downlink signal is received by the DSN ground 
+                   station using its open-loop Radio Science Receiver, which is referenced to 
+                   the FTS.  
+            </description>
+    </Instrument>
+    
+</Product_Context>

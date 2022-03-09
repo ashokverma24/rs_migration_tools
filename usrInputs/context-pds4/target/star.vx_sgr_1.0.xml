@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.vx_sgr</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>VX Sagittarii</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>VX Sgr</alternate_title></Alias>
+      <Alias><alternate_title>Variable Star VX Sgr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>VX Sgr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AN 271.1904</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-22 4575</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-22 12589</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00165674</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 06276-00721</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 165674</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 88838</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 88838</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 18050-2213</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -20431</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2930</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J18080404-2213266</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>OH 8.3 -1.0</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>OH 8.344 -1.002</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 2071</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SCHB 299</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* HV 1152</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 6276-721-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 22627</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC2 22972679</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 1802-22</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 4069737050648231424</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>VX Sagittarii</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 18 hours 08 minutes 04.0431479808 seconds
+Declination, ICRS coord, ep=J2000: -22 degrees 13 minutes 26.629744195 seconds
+    </description>
+  </Target>
+</Product_Context>

@@ -1,0 +1,36 @@
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.jpl.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1700.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:partizanskoye.1m25_azt11</logical_identifier>
+        <version_id>0.0</version_id>
+        <title>1.25m Ritchey-Chretien Reflector AZT-11</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-03-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version exported from OLAF</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.partizanskoye</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>Crimean Astrophysical Observatory-Partizanskoye (OLAF observatory code 295)</comment>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit='m'>1.25</aperture>
+        <telescope_longitude unit='deg'>34.016700</telescope_longitude>
+        <telescope_latitude unit='deg'>44.728300</telescope_latitude>
+        <telescope_altitude unit='m'>550</telescope_altitude>
+        <coordinate_source>Astronomical</coordinate_source>
+        <description>
+        The 1.25m Ritchey-Chretien Reflector AZT-11 is a 1.25 m telescope located at 44.728300, 34.016700 at the Crimean Astrophysical Observatory-Partizanskoye.
+        
+        AZT-11 is the 1.25 m Ritchey-Chretien reflector of the Crimean Astrophysical Observatory, built in 1981 by the Leningrad Optical-Mechanical firm (LOMO) under the supervision by Prof. V.B. Nikonov.  Its focal length is 16 m, and available foci are the main and auxiliary Cassegrains. 
+        </description>
+    </Telescope>
+</Product_Context>

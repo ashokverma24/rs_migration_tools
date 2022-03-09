@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.las_cumbres</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Las Cumbres Observatory</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-13</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Create by A.C.Raugh using information downloaded from the observatory
+                    web site on 2021-08-13.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_cumbres.2m0_telescopes</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_cumbres.1m0_telescopes</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_cumbres.0m4_telescopes</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Facility>
+        <type>Observatory</type>
+        <description>
+            The Las Cumbres Observatory comprises a global network of telescopes of
+            various sizes (currently 0.4m, 1m, and 2m) and at various locations. Telescopes
+            of the same aperture are identical and are equipped with the same detectors. 
+            Scheduled observations are allocated to telescopes in the network based on 
+            requested instrumentation and optimal observing circumstances as determined by
+            the network scheduling software. Data documentation must be consulted to 
+            determine which  telescope was used to make any specific observation with the 
+            Las Cumbres network.
+        </description>
+    </Facility>
+</Product_Context>

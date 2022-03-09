@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+ xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+  https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:accel.msl</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Accelerometer for Mars Science Laboratory Entry, Descent and Landing</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-03-06</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.msl</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>Holstein-Rathlou et al., 2015</reference_text>
+            <description>C. Holstein-Rathlou, P. Withers, A. Maue, Atmospheric studies from the Mars Science La
+                boratory Entry, Descent and Landing atmospheric structure reconstruction, Planetary and Space Science, under re
+                view</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>Accelerometer</name>
+        <type>Atmospheric Sciences</type>
+        <subtype>Accelerometer</subtype>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ See external reference.
+        </description>
+    </Instrument>
+</Product_Context>

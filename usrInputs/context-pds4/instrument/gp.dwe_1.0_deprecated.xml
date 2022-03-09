@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:dwe.gp</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DOPPLER WIND EXPERIMENT for GP</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gp::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pollack, J.B., D. Atkinson, A. Seif, and J.D. Anderson, Retrieval of a wind
+                   profile from the Galileo Probe telemetry signal, Space Science Reviews, 60,
+                   143-178, 1992.
+            </reference_text>
+            <description>reference.POLLACKETAL1992</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>DOPPLER WIND EXPERIMENT</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Radio Science-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    Both the probe and orbiter were equipped with ultrastable
+    oscillators (USOs) for the purpose of generating/measuring a very
+    stable telemetry signal from the probe to orbiter.  The orbiter
+    measured the probe radio signal frequency every 2/3 seconds and
+    stored the frequency data on the tape recorder.  Half-resolution
+    data (4/3 second) were also stored in solid state memory.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The Doppler Wind Experiment was designed to extract the zonal
+    (east-west) motion of the Galileo entry probe during its descent
+    into the atmosphere of Jupiter on December 7, 1995.
+ 
+ 
+  Calibration
+  ===========
+    During cruise, the probe USO was powered-on and frequency
+    stability measurements were made three times.  The in-flight
+    tests were the SFT (System Functional Test) and the MST (Mission
+    Sequence Test).  Although these tests had different goals and
+    performed under different protocol, for the purposes of the DWE,
+    the tests were essentially identical.
+ 
+    The measured drift rates of the probe USO were (all fractional
+    frequency drifts for 30 minutes following a warmup of 5.5 to 6
+    hours)
+ 
+    Project (pre-launch): 4.3e-10
+    1989 SFT: 1.09e-9
+    1990 SFT: 1.49e-9
+    1992 MST: 1.2e-9
+ 
+    From our analysis the best estimate of the fractional frequency
+    drift at the time of the probe mission is 1.73e-9 (30 minutes)
+    with an uncertainty of +/-.93e-10.
+ 
+    The magnitude of the orbiter USO drift was at least one or two
+    orders of magnitude less than the probe USO, so the
+    characteristics of the orbiter USO are almost completely
+    irrelevant for purposes of the analysis.
+ 
+    High Temperature effects:
+ 
+    Following the probe mission of 7 December 1995 it was discovered
+    that the probe interior reached temperatures well in excess of
+    the qualification and acceptance level limits, and pre-launch
+    calibration testing levels.  Therefore, in late 1996 at NASA
+    Ames, high temperature tests of the USO stabilities were
+    performed on the flight spare oscillators at temperatures and
+    temperature rates experienced by the probe during the Jupiter
+    descent mission.
+ 
+    After the post-flight high temperature testing of the flight
+    spare USOs was completed, two simple thermal models of the probe
+    response to the changing temperatures were made.  These two
+    different models &apos;best fit&apos; the temperature-time curve in
+    different ways.  In the first (moderate thermal corrections) the
+    temperature-time curve for the USO thermal test was matched to
+    the actual measured probe USO data for the period 20 minutes
+    after entry to about 50 minutes after entry.  However, for this
+    model, the temperature peak was reached too early.  For the
+    second model (maximum thermal correction) the time of the
+    temperature peak was more consistent with the time of loss of
+    probe signal, but was several degrees below measured probe
+    temperatures from 20 minutes to 50 minutes after entry.  For this
+    model (maximum thermal correction) the temperature peak was
+    reached about 2.25 minutes earlier than the moderate thermal
+    correction model.
+ 
+    Under the assumption that it must behave like the flight spare
+    unit, the high temperature calibrations below were applied to the
+    actual probe data.
+ 
+    timee is time after probe entry (seconds) and delf_f is the 30
+    minute fractional frequency drift.
+ 
+    Maximum thermal corrections - drift model peaks at 59 min after
+    entry.
+ 
+                if(timee(i).gt.2394.)delf_f=-.161e-8
+                if(timee(i).gt.2503.)delf_f=-.593e-8
+                if(timee(i).gt.2599.)delf_f=-.966e-8
+                if(timee(i).gt.2703.)delf_f=-.122e-7
+                if(timee(i).gt.2799.)delf_f=-.123e-7
+                if(timee(i).gt.2900.)delf_f=-.994e-8
+                if(timee(i).gt.2999.)delf_f=-.619e-8
+                if(timee(i).gt.3099.)delf_f=-.427e-8
+                if(timee(i).gt.3199.)delf_f=-.983e-8
+                if(timee(i).gt.3299.)delf_f=-.308e-7
+                if(timee(i).gt.3399.)delf_f=-.769e-7
+                if(timee(i).gt.3499.)delf_f=-.157e-6
+                if(timee(i).gt.3599.)delf_f=-.278e-6
+ 
+    Moderate thermal corrections - drift model peaks at 61.5 min
+    after entry.
+ 
+                if(timee(i).gt.2398.)delf_f=-.565e-9
+                if(timee(i).gt.2497.)delf_f=-.211e-8
+                if(timee(i).gt.2593.)delf_f=-.538e-8
+                if(timee(i).gt.2698.)delf_f=-.880e-8
+                if(timee(i).gt.2794.)delf_f=-.108e-7
+                if(timee(i).gt.2894.)delf_f=-.110e-7
+                if(timee(i).gt.2994.)delf_f=-.911e-8
+                if(timee(i).gt.3094.)delf_f=-.601e-8
+                if(timee(i).gt.3194.)delf_f=-.425e-8
+                if(timee(i).gt.3294.)delf_f=-.831e-8
+                if(timee(i).gt.3394.)delf_f=-.246e-7
+                if(timee(i).gt.3494.)delf_f=-.613e-7
+                if(timee(i).gt.3594.)delf_f=-.127e-6
+                if(timee(i).gt.3694.)delf_f=-.228e-6
+                if(timee(i).gt.3816.)delf_f=-.400e-6
+                if(timee(i).gt.3901.)delf_f=-.543e-6
+ 
+    At times earlier than 2390 seconds the USO drift rate is assumed
+    to be the nominal 30 minute fractional frequency drift rate of
+    delf_f = +1.73e-9.  The total drift in Hz (offset) is then found
+    from
+ 
+    ddt=timee(i+1)-timee(i)
+    offset=offset+delf_f*ddt*f0/1800.0
+ 
+    Note on 30 minute drift rate: To make meaningful comparisons of
+    the probe performance under different operating conditions, it is
+    useful to have a common baseline.  All of the probe pre-flight
+    tests and calibrations are quantified in terms of 30 minute drift
+    rates, and this is the reference definition.  Therefore, at any
+    instant of time, we define the &apos;instantaneous&apos; 30 minute drift
+    rate to make references to the probe USO specs and predictions
+    easier.  Under severe operating conditions and a rapidly changing
+    environment, the 30 minute drift rate may well change minute to
+    minute.
+ 
+ 
+  Operational Considerations
+  ==========================
+    High temperature effects - see above.
+ 
+    The probe radio signal frequency was measured on board the
+    orbiter every 2/3 seconds.  The data were stored in a buffer in
+    the Relay Receiver Hardware (RRH) prior to delivery to the
+    orbiter.  Due to a slight timing mismatch between the RRH and
+    orbiter clocks, occasionally the orbiter would request a
+    frequency from the RRH just prior to a frequency measurement.  In
+    these cases the orbiter would measure a frequency of zero and
+    results in a discontinuity in the frequency-time profile of about
+    7 Hz.  To correct for this timing mismatch and the corresponding
+    null frequency measurements it is necessary to average through
+    the discontinuities.  This process, described in more detail
+    below, results in a frequency measurement period that is slightly
+    longer than 0.666 seconds.  For example, suppose N frequency
+    measurements (f_1,f_2,f_3,...f_N) are made at the N times
+    (t_1,t_2,t_3,...  t_N) where t_x - t_(x-1) = 0.666 seconds.  If,
+    due to a timing mismatch between the RRH and orbiter, frequency
+    f_k is discovered to be zero, then the remaining N-1 frequency
+    measurements are assumed to be uniformly distributed in time over
+    the time period t_1 to t_N.  In this case the times of the
+    remaining N-1 frequencies f_1, f_2, f_3 ...  f_N (with f_k
+    removed) are t_1, t_1+deltat, t_1+2*deltat, t_1+3*deltat, ...
+    where deltat = (t_N-t_1)/(N-2).
+ 
+    This is equivalent to averaging through the discontinuities.
+    Approximately 10 null measurements were experienced during the
+    reception of the probe data.
+ 
+    Additionally, there were several short periods when the tape
+    recorder data were not received.  Most of the gaps in the data
+    were filled in by the half-resolution data from solid state
+    memory.  In all, out of a total possible of 5173 frequency
+    measurements covering a period of 57 minutes, 28.66 seconds, 5015
+    frequency measurements were made.  The total missed data were 159
+    points (3.316%).  None of the missed points were consecutive.
+ 
+ 
+  Electronics
+  ===========
+    The frequency measured was the frequency of the RRH Numerically
+    controlled oscillator (NCO).  The NCO frequency is related to the
+    link frequency according to
+ 
+    f_link=57*f_uso + f_nco + 1024
+ 
+    where f_uso is the frequency of the orbiter USO (nominally
+    24.325553 MHz), and f_nco is the nco control word (frequency),
+    nominally 442455 Hz.
+ 
+    Due to the finite word length in the RRH buffer (24 bits), the
+    frequency measurement has an inherent digitization error.  This
+    finite word length leads to a digitization error of about .18124
+    Hz.
+
+        </description>
+    </Instrument>
+</Product_Context>

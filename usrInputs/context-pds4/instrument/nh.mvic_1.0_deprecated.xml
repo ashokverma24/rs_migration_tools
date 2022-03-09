@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mvic.nh</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MULTISPECTRAL VISIBLE IMAGING CAMERA for NH</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.nh::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reuter, D., A. Stern, J. Baer, L. Hardaway, D. Jennings, S. McMuldroch, J.
+                   Moore, C. Olkin, R. Parizek, J. Scherrer, J. Stone, J. VanCleeve, and L. Young,
+                   Ralph: a visible/infrared imager for the New Horizons Pluto/Kuiper Belt
+                   Mission, SPIE Int. Soc. Opt. Eng., vol. 5906, 2005.
+            </reference_text>
+            <description>reference.REUTERETAL2005</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reuter, D.C., S.A. Stern, J. Scherrer, D.E. Jennings, J. Baer, J. Hanley, L.
+                   Hardaway, A. Lunsford, S. McMuldroch, J. Moore, C. Olkin, R. Parizek, H.
+                   Reitsma, D. Sabatke, J. Spencer, J. Stone, H. Throop, J. Van Cleve, G.E.
+                   Weigle, and L.A. Young, Ralph: A Visible/Infrared Imager for the New Horizons
+                   Pluto/Kuiper Belt Mission, Space Sci. Rev., Volume 140, Numbers 1-4, pp.
+                   129-154, 2008.
+            </reference_text>
+            <description>reference.REUTERETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MULTISPECTRAL VISIBLE IMAGING CAMERA</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+########################################################################
+########################################################################
+REQUIRED READING:
+- Reuter et al. (2005) [REUTERETAL2005]
+- Reuter et al. (2007) [REUTERETAL2007]
+- SOC Instrument Interface Control Document (ICD)
+########################################################################
+########################################################################
+ 
+      The MVIC description was was adapted from Reuter et al. (2005)
+      [REUTERETAL2005], the MVIC section of the SOC Instrument ICD
+      (provided in the documentation with this archive), Reuter et al.
+      (2007) [REUTERETAL2007] (also provided with this archive), and
+      the New Horizons website.
+ 
+ 
+  Instrument Overview
+  ===================
+    MVIC is an imager that operates at both visible and near-infrared
+    wavelengths using seven separate Charge-Coupled Device detectors
+    (CCDs).  Four CCDs have color filters (methane, red, blue and
+    near-infrared) for producing color maps and three CCDs have
+    panchromatic filters for observations where maximum sensitivity to
+    faint light levels is required.  In all cases, the light passes from
+    the telescope through a filter and is focused onto the CCDs.
+ 
+    MVIC is integrated with another instrument, LEISA, into a composite
+    instrument named RALPH, which supplies A/D conversion, command and
+    data handling, and power to both MVIC and LEISA.
+ 
+ 
+    Specifications
+    --------------
+      NAME:                    MVIC (Multispectral Visible Imaging Camera)
+      DESCRIPTION:             Imaging camera
+      PRINCIPAL INVESTIGATOR:  Alan Stern, SwRI
+      WAVELENGTH RANGE:        (Note 1)
+      FIELD OF VIEW:           100 x N mRad (Note 2); 100 x 2.6 mRad
+                                 (Note 3)
+      ANGULAR RESOLUTION:      0.02 mRad/pixel
+      WAVELENGTH RESOLUTION:   See filter bandpasses (Note 1)
+ 
+      Note 1:  See Filters section below for Wavelength
+               ranges and filter bandpasses.
+ 
+      Note 2:  Time-delay integration (color and two panchromatic arrays).
+      The length of the scan determines the dimension of the scan denoted
+      by N.
+ 
+      Note 3:  Pan frame array only.
+ 
+ 
+    General Description
+    -------------------
+      MVIC uses two large format (5024x32 pixel) CCD arrays to provide
+      panchromatic hemispheric maps of Pluto at a double-sampled spatial
+      resolution of 1 km by 1 km or better.  Four additional 5024x32 CCDs
+      provide hemispheric maps in blue, red, Near IR and narrow band
+      methane color channels.  These 6 arrays all operate in Time Delay
+      Integration (TDI aka pushbroom) mode to increase sensitivity.  In
+      addition to the TDI arrays, MVIC has a 5024x128 pixel frame transfer
+      array.  For each of the arrays, the 12 pixels at either end of the
+      rows are not opically active.
+ 
+ 
+  Scientific Objectives
+  =====================
+    Hemispheric panchromatic maps of Pluto and Charon at a resolution
+    better than 0.5 km/pixel
+ 
+    Hemispheric 4-color maps of Pluto and Charon at a resolution better
+    than 5 km/pixel
+ 
+    Search for and map atmospheric hazes at a vertical resolution better
+    than 5 km/pixel
+ 
+    High resolution panchromatic maps of the terminator region
+ 
+    Panchromatic, wide phase angle coverage of Pluto, Charon, Nix, and
+    Hydra
+ 
+    Panchromatic stereo images of Pluto and Charon, Nix, and Hydra
+ 
+    Orbital parameters, bulk parameters of Pluto, Charon, Nix, and Hydra
+ 
+    Search for rings
+ 
+    Search for additional satellites
+ 
+ 
+  Detectors
+  =========
+    MVIC comprises seven independent CCD arrays on a single-substrate
+    focal plane.  It uses two of its large format (5024x32 pixels i.e. 32
+    rows each 5024 pixels wide) CCD arrays, operated in TDI mode, to
+    provide panchromatic images.  Four additional 5024x32 CCDs, combined
+    with the appropriate filters and also operated in TDI mode, provide
+    the capability of mapping in blue, red, near-IR and narrow-band
+    methane channels.
+ 
+    TDI operates by synchronizing the parallel transfer rate of each of
+    the CCDrows to the relative motion of the image across the surface of
+    the detector.  In this way, very large format images are obtained as
+    the spacecraft scans the FOV across the surface of a target.  The
+    presence of 32 rows increases the effective integration time by that
+    same factor, providing high signal-to-noise measurements.  The
+    measured spacecraft rotation rate can be fed back to the instrument to
+    optimize the frame transfer rate.  That is, after a scan has been
+    initiated, the spacecraft determines the actual rotation rate and
+    sends that information to RALPH, which uses it to calculate the frame
+    rate that minimizes smear in the along-track direction.
+ 
+    MVIC always produces image data in correlated double-sample (CDS)
+    mode; that is, the reset level is subtracted from the integrated level
+    and the difference is returned as the image.
+ 
+ 
+  Electronics
+  ===========
+    The RALPH control electronics comprise three boards:  the detector
+    electronics (DE) board; the command and data handling (C&amp;DH) board;
+    the low voltage power supply (LVPS) board.  These are contained within
+    an electronics box (EB) mounted directly on the spacecraft, and
+    operate essentially at the spacecraft surface temperature, which is
+    near ambient.  The DE board provides biases and clocks to both MVIC
+    and LEISA focal planes, amplifies the signals from the arrays and
+    performs the A/D conversion of the electrical charge of each pixel to
+    a digital number with 12 bits of resolution.  The C&amp;DH board
+    interprets the commands, performs the A/D conversion of the low-speed
+    engineering data and provides both the high-speed image data interface
+    and the low-speed housekeeping data interface.  The LVPS converts the
+    30V spacecraft power to the voltages required by RALPH.
+ 
+    In a long-duration mission such as New Horizons, reliability of the
+    electronics is of paramount importance, particularly for a core
+    instrument that addresses all major mission objectives.  To ensure
+    that RALPH is robust, almost all of the electronics are redundant.
+    RALPH can operate on two separate sides (side A or B) which have very
+    few components in common.  The only common elements are: 1) the relays
+    that choose whether side A or side B is to be powered, 2) The arrays
+    themselves and 3) the interface to the spacecraft.  However, the
+    spacecraft interface has two identical circuits and is inherently
+    redundant.  For MVIC, the potential single point failure mode of the
+    arrays is mitigated by dividing the six TDI arrays into two groupings,
+    each containing two color CCDs and one panchromatic CCD.  The first
+    grouping comprises a pan band and the red and CH4 channels.  The
+    second grouping comprises the other pan band and the blue and NIR
+    channels.  If either group should fail, the other would still be able
+    to meet the science requirement of observations in two color bands and
+    one panchromatic band.
+ 
+ 
+  Filters
+  =======
+    From Reuter et al. (2007)
+ 
+      _Bandpass__   Filter designation
+ 
+      400 - 975nm  Panchromatic (PAN)
+      400 - 550nm  Blue
+      540 - 700nm  Red
+      780 - 975nm  NIR
+      860 - 910nm  CH4
+ 
+    For more details see the individual filter transmission curves in the
+    /CALIB/ directory.
+ 
+ 
+  Optics
+  ======
+    See description above.  Also:
+ 
+    The FOV of a single MVIC pixel is 20x20 microradian^2.  The
+    panchromatic (pan) channels of MVIC will be used to produce
+    hemispheric maps of Pluto and Charon at a double-sampled spatial
+    resolution of 1 km^2 or better.  The static FOV of each of the TDI
+    arrays is 5.7 degrees x 0.037 degrees.  In addition to the TDI arrays,
+    MVIC has a 5024x128 element, frame transfer panchromatic array
+    operated in staring mode, with an FOV of 5.7 degrees x 0.15 degrees.
+    The primary purpose of the framing array is to provide image data for
+    optical navigation of the spacecraft.
+ 
+ 
+  Operational Modes
+  =================
+    RALPH-MVIC modes are intertwined with RALPH-LEISA modes.  See Reuter
+    et al.  (2007) [REUTERETAL2007], Section 7.0 &apos;IN-FLIGHT INSTRUMENT
+    OPERATION&apos; for details.
+ 
+ 
+  Calibration
+  ===========
+    See Reuter et al. (2007) [REUTERETAL2007], especially sections 5 and 6.
+ 
+ 
+  Measured Parameters
+  ===================
+    Radiance; errors less than one DN as of 20.April 2007.  See Reuter et
+    al. (2007) [REUTERETAL2007] section 6.0 COMBINED &apos;PRE-LAUNCH AND
+    IN-FLIGHT INSTRUMENT CALIBRATION RESULTS&apos; for more details.
+
+        </description>
+    </Instrument>
+</Product_Context>

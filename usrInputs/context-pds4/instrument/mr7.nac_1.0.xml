@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:nac.mr7</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARINER 7 Narrow Angle Camera</title>
+        <information_model_version>1.8.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-09-22</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial PDS4 version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mr7</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Danielson, G. E. and D. R. Montgomery (1971), Calibration of the Mariner Mars 1969 
+                   Television Cameras, J. Geophys. Res., 76, 2, 418 - 431, doi:10.1029/JB076i002p00418.
+            </reference_text>
+            <description>reference.DANIELSON_MONTGOMERY1971</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Rindfleisch, T. C., J. A. Dunne, H. J. Frieden, W. D. Stromberg and R. M. Ruiz 
+                   (1971), Digital Processing of the Mariner Mars 1969 Pictures, J. Geophys. Res., 76, 2, 
+                   394 - 417, doi:10.1029/JB076i002p00394.
+            </reference_text>
+            <description>reference.RINDFLEISH_ETAL1971</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MARINER 7 Narrow Angle Camera</name>
+        <type>Imager</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <description>The Narrow Angle (NAC) camera had Schmidt-Cassegrain reflector optics without filters. 
+        The narrow angle f/2.4 lens had a focal length of about 504 mm. The optics focused images onto a
+        vidicon to obtain images of Mars. The vidicon was etched with a 7 x 9 grid of reseaux to aid in 
+        computing the geometric distortions in the digital images. The NAC produced 945 sample by 704 line, 
+        8 bit/pixel digital images after ground processing to produce the image archive.</description>
+    </Instrument>
+</Product_Context>

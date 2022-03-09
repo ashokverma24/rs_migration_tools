@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.liciacube</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Light Italian CubeSat for Imaging of Asteroids (LICIACube) Spacecraft</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-12</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created by A.C.Raugh from information downloaded from the public
+                    DART mission website maintained by the Applied Physics Laboratory
+                    at Johns Hopkins University (JHU APL) on 2021-08-12.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.light_italian_cubesat_for_imaging_of_asteroids</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.double_asteroid_redirection_test</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                The LICIACube mission operated in conjunction with the Double Asteroid
+                Redirection Test (DART) mission.
+            </comment>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <type>Spacecraft</type>
+        <description>
+           The LICIACube is a CubeSat mission of the Agenzia Spaziale Italiana (ASI) that will
+           be carried by the DART impactor to the vicinty of the Didymos system, then be released
+           to observe the impact and aftermath of the collision of DART with Dimorphos. Note that
+           as of this writing, it is not clear if the LICIACube team will archive its results with
+           PDS.
+        </description>
+    </Instrument_Host>
+</Product_Context>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:instrument:uly.vhm-fgm</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>VECTOR HELIUM/FLUXGATE MAGNETOMETERS for ULY</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:vhm-fgm.uly</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.uly</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Balogh, A., T.J. Beek, R.J. Forsyth, P.C. Hedgecock, R.J. Marquedant, E.J.
+                   Smith, D.J. Southwood, and B.T. Tsurutani, The magnetic field investigation on
+                   the Ulysses mission: Instrumentation and preliminary scientific results,
+                   Astron. Astrophys. Suppl. Ser. 92, 221-236, 1992.
+            </reference_text>
+            <description>reference.BALOGHETAL1992A</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>VECTOR HELIUM/FLUXGATE MAGNETOMETERS</name>
+        <type>Magnetometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    (excerpted from: [BALOGHETAL1992A])
+ 
+    Abstract.  -- A fundamental feature of the heliosphere is the
+    three dimensional structure of the interplanetary magnetic
+    field.  The magnetic field investigation on Ulysses, the first
+    space probe to explore the out-of-ecliptic and polar
+    heliosphere, aims at determining the large scale features and
+    gradients of the field, as well as the heliolatitude dependence
+    of interplanetary phenomena so far only observed near the
+    ecliptic plane.  The Ulysses magnetometer uses two sensors, one
+    a Vector Helium Magnetometer, the other a Fluxgate
+    Magnetometer.  Onboard data processing yields measurements of
+    the magnetic field vector with a time resolution up to 2
+    vectors/second and a sensitivity of about 10 pT.  Since the
+    switch-on of the instrument in flight on 25 October 1990, a
+    steady stream of observations have been made, indicating that
+    at this phase of the solar cycle the field is generally
+    disturbed: several shock waves and a large number of
+    discontinuities have been observed, as well as several periods
+    with apparently intense wave activity.  The paper gives a brief
+    summary of the scientific objectives of the investigation,
+    followed by a detailed description of the instrument and its
+    characteristics.  Examples of wave bursts, interplanetary
+    shocks and crossings of the heliospheric current sheet are
+    given to illustrate the observations made with the instrument.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

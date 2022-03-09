@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_her</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Rasalgethi</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>64 Herculis A</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Herculis</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Her</alternate_title></Alias>
+      <Alias><alternate_title>CCDM J17146+1424AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>alf Her</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>STF 2140AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 10418 AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+14 3207</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+14 3207 5</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00156014J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 156014J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 84345</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 84345</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 17101+1430 AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J17143885+1423253</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J171439.3+142320</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 20143</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 14596</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J17146+1423AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 1710+14</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Rasalgethi</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 17 hours 14 minutes 38.85818 seconds
+Declination, ICRS coord, ep=J2000: +14 degrees 23 minutes 25.2262 seconds
+    </description>
+  </Target>
+</Product_Context>

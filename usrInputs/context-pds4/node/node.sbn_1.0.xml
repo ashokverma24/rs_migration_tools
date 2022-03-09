@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:node:node.sbn</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PDS Small Bodies Node</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>sbn</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.james_bauer::1.0</lidvid_reference>
+            <reference_type>node_to_manager</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.anne_raugh::1.0</lidvid_reference>
+            <reference_type>node_to_operator</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.anne_raugh::1.0</lidvid_reference>
+            <reference_type>node_to_data_archivist</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:agency:agency.nasa::1.0</lidvid_reference>
+            <reference_type>node_to_agency</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.james_bauer::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.carol_neese::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.eric_palmer::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.william_reach::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.beatrice_mueller::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.anita_cochran::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.daniel_britt::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.schelte_bus::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.donald_davis::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.mike_drum::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.tony_farnham::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.lori_feaga::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.yan_fernandez::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.mihaly_horanyi::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.michael_kelley::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.tilden_barnes::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.michael_bolton::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.ludmilla_kolokolova::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.anne_raugh::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.lev_nagdimunov::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.mark_sykes::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.jacob_ritchie::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.dennis_wellnitz::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.jesse_stone::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+
+    <Node>
+        <name>Small Bodies</name>
+        <institution_name>University of Maryland</institution_name>
+        <description>
+          The Small Bodies Node is located at the University of Maryla
+          and consists of three sub-nodes in the United States: Comets
+          University of Maryland; Asteroides, University of Hawaii; an
+          Interplanetary Dust, University of Arizona; and a European
+          subnode, the Konkoly Observatory, Budapest, Hungary.
+        </description>
+    </Node>
+</Product_Context>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.zet_per</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Zeta Persei</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Zeta Per</alternate_title></Alias>
+      <Alias><alternate_title>zet Per</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>44 Per</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 2843 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+31 368</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J0354079+315300</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14763</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+31 666</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J03541+3153A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+31 666 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+31 666 6</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 100357</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 902</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 0350.9+3144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 4688</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 2230</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00024398A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 02361-02820</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 24398</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 301</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 18246</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 18246</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 1203</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 03478+3135 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 03509+3144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +30068</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 828</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J03540793+3153011</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MCW 252</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 800</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 1397</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 856</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 104</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 68893</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 574</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J035407.3+315255</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 56799</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 5968</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* ZI 260</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 2623</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 2361-2820-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 3778</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 9778</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100024398 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J03541+3153A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 3522</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>XEST 27-079</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2XMM J035407.8+315300</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YPAC 14</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 168726523211214592</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Zeta Persei</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 03 hours 54 minutes 07.9224751 seconds
+Declination, ICRS coord, ep=J2000: +31 degrees 53 minutes 01.081262 seconds
+    </description>
+  </Target>
+</Product_Context>

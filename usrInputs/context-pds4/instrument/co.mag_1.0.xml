@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mag.co</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DUAL TECHNIQUE MAGNETOMETER for CO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.co::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Dougherty, M.K., S. Kellock, D.J. Southwood, A. Balogh, E.J. Smith, B.T.
+                   Tsurutani, B. Gerlach, K.H. Glassmeier, F. Gleim, C.T. Russell, G. Erdos, F.M.
+                   Neubauer, and S.W.H. Cowley, The Cassini Magnetic Field Investigation, Space
+                   Science Reviews, Vol. 114, Nos. 1-4, pp. 331-383, September 2004
+            </reference_text>
+            <description>reference.DOUGHERTYETAL2004</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kellock, S., P. Austin, A. Balogh, B. Gerlach, R. Marquedant, G. Musmann, E.
+                   Smith, D. Southwood and S. Szalai, Cassini dual technique magnetometer
+                   instrument (MAG), Proc. SPIE, Denver, Colorado, 2803, 141, 1996.
+            </reference_text>
+            <description>reference.KELLOCKETAL1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Smith, E.J., M.K. Dougherty, C.T. Russell, and D.J. Southwood, Scalar helium
+                   magnetometer observations at Cassini Earth swing-by, J. Geophys. Res., 106,
+                   30129, 2001.
+            </reference_text>
+            <description>reference.SMITHETAL2001</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>DUAL TECHNIQUE MAGNETOMETER</name>
+        <type>Magnetometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  ABSTRACT
+  ========
+    The dual technique magnetometer system onboard the Cassini orbiter is
+    described. This instrument consists of vector helium and fluxgate
+    magnetometers with the capability to operate the helium device in a scalar
+    mode. This special mode is used near the planet in order to determine with
+    very high accuracy the interior field of the planet. The four-year orbiting
+    Cassini mission will lead to a detailed understanding of the Saturn/Titan
+    system. In addition to the prime scientific measurement of the planetary
+    field, the instrument will also make measurements of the planetary
+    magnetosphere, and the interactions of Saturn with the solar wind, of Titan
+    with its environments, and of the icy satellites within the magnetosphere.
+ 
+  INSTRUMENT DESCRIPTION
+  ======================
+    The MAG instrument comprises a fluxgate magnetometer (FGM) and a
+    vector helium magnetometer capable of operating in both vector and
+    scalar mode (V/SHM). The instrument is intended to measure small
+    changes in fields spanning four orders of magnitude with extremely
+    high sensitivity. This goal is achieved in part by mounting the
+    sensors on an 11-metre spacecraft boom; the V/SHM at the end of the
+    boom, the FGM halfway along. The magnetometer boom distances the
+    sensors from the magnetic field associated with the spacecraft and
+    its subsystems, and especially from spacecraft-generated temporal
+    field variations. Spacing the sensors at different distances along
+    the boom allows the spacecraft fields to be better characterised and
+    removed from the observations. However, mounting the sensors on a
+    boom could result in their orientation with respect to the
+    spacecraft axes changing from time to time, for example after
+    spacecraft manoeuvres. A means of sensor-alignment determination has
+    been provided by the Cassini project - the Science CAlibration
+    Subsystem, SCAS. This system consists of two, perpendicular, coils
+    rigidly mounted on the spacecraft body with a known alignment to the
+    spacecraft axes. These coils produce well-defined magnetic fields on
+    command which can be detected by the sensors and used to correct for
+    any changes in sensor orientation.
+ 
+    Both magnetometers are capable of measuring the magnetic-field
+    vector at rates from 0 Hz up to 10 Hz (VHM) or at least 30 Hz (FGM).
+    The VHM optimises low-frequency vector measurements in weak fields.
+    The FGM is best suited to high-frequency measurements and can
+    operate over an extremely wide dynamic range, from very weak fields
+    up to Earth&apos;s strong field.
+ 
+    The twin-sensor configuration contributes to overall instrument
+    reliability; if one sensor fails, field measurements can be made
+    with the other sensor, with sufficient performance to achieve many
+    of the major objectives of the investigation. Reliability has been
+    further increased by the provision of redundant instrument power
+    supplies and data processing units, and by careful selection of
+    electronic components that can survive the radiation environments
+    encountered during the long cruise phase of the mission and in the
+    Saturnian system. The VHM provides the stability needed to maintain
+    calibrations, obtained in the solar wind, whilst Cassini is inside
+    the Saturnian magnetosphere for long periods during the four-year
+    tour.
+ 
+    An implicit feature of scalar or resonance magnetometers are null
+    zones which arise if the ambient field falls outside a cone of 45
+    degrees half angle with respect to the optical axis of the
+    magnetometer. These null zones result in the signal being
+    dramatically weakened, causing the absolute accuracy of the
+    instrument to suffer. When Cassini is inside 4 RS a requirement has
+    been placed on the mission to avoid spacecraft orientations which
+    cause the planetary field to lie within the null zones of the SHM.
+ 
+    Other features of the instrument that have been driven by the
+    characteristics of the mission and by the design of the spacecraft
+    are to be found in the data processing unit (DPU). The DPU contains
+    a bus interface unit (BIU), provided by the Cassini project for
+    interfacing to the onboard data handling subsystem (CDS) bus. In
+    line with the spacecraft design, the DPU is capable of handling
+    Packet Telemetry and Telecommands, and features a flexible telemetry
+    storage and generation scheme to support the multiple telemetry
+    modes of the spacecraft. The Tour operations concept requires that
+    the DPU is able to handle trigger commands which initiate multiple
+    actions within the instrument (macro commanding). Further, in order
+    to optimise the analysis of discrete events such as shock crossings,
+    a snapshot capability has been implemented by which up to 16 Mbytes
+    of data can be stored for later downlink at higher time resolution
+    than normal. This capability can be initiated by command or
+    triggered by pre-defined events.
+ 
+    Magnetic-field information is also needed by other investigations on
+    the spacecraft. To this end magnetic-field data are made available
+    to onboard users every second. These onboard ancillary data are raw
+    and uncalibrated vectors, the data source being selectable by
+    command between the two sensors.
+ 
+    In total, the instrument consists of the two boom-mounted sensors,
+    subchassis #1 (an assembly containing electronics for the FGM, VHM
+    and SHM, the heater-control electronics, the power supplies and
+    power-management system) and subchassis #2 (an assembly containing
+    the data processing unit). Both subchassis are mounted in bay 4 of
+    the Orbiter upper equipment module (UEM). The instrument
+    ground-support equipment was provided by KFKI and TUB.
+ 
+    Table I lists the main characteristics of the instrument. Power and
+    data-rate values vary according to instrument mode. The values given
+    in the table are for the delivered flight model where power values
+    include power drawn by the Cassini-provided BIU.
+ 
+      TABLE  I
+      Main Instrument Characteristics
+ 
+      MASS
+      V/SHM Sensor                                       0.71 kg
+      FGM Sensor                                         0.44 kg
+      Subchassis#1 (Power Supplies, Sensor Electronics)  5.15 kg
+      Subchassis#2 (DPU)                                 2.52 kg
+      Total                                              8.82 kg
+ 
+      POWER
+      Sleep Mode                                         7.50 W
+      Vector/Vector Mode (FGM+VHM)                      11.31 W
+      Vector/Scalar Mode (FGM+SHM)                      12.63 W
+ 
+      NORMAL DOWNLINK DATA RATE
+      FGM                                 32 Vectors per second
+      VHM                                  2 Vectors per second
+      SHM                                    1 Value per second
+      Housekeeping                           24 bits per second
+      Total                                2000 bits per second
+ 
+      DYNAMIC RANGE, RESOLUTION
+      FGM                                        +/-40nT, 4.9pT
+                                               +/-400nT, 48.8pT
+                                             +/-10,000nT, 1.2nT
+                                             +/-44,000nT, 5.4nT
+      VHM
+                                                 +/-32nT, 3.9pT
+                                               +/-256nT, 31.2pT
+      SHM
+                                          256nT - 16384nT,36 pT
+ 
+ 
+    THE FGM
+    -------
+      The FGM sensor is mounted halfway along the magnetometer boom; its
+      associated analog electronics form part of the electronics
+      assembly on Subchassis#1. A cable of approximately 6.5-meter
+      length runs along the boom between sensor and electronics. A high
+      efficiency, tuned drive design of the electronics has been chosen
+      to reduce power consumption and the effect of cable loading.
+ 
+      The FGM is similar to the Imperial College instrument flown on
+      Ulysses, and to many others flown on numerous missions. It is
+      based on three single-axis ring-core fluxgate sensors mounted
+      orthogonally on a machinable glass ceramic block. Ceramic is
+      chosen for its low thermal expansion coefficient, minimising
+      misalignments between sensors due to temperature changes. In each
+      sensor, a drive coil is wound around a high-permeability ring-core
+      which is completely enclosed in a sense winding. The drive coil is
+      driven by a crystal-controlled 15.625 kHz square wave which is
+      used to generate a magnetic field that drives the core into
+      saturation twice per cycle. The three drive coils are connected in
+      series to simplify the cabling and circuitry. The presence of an
+      ambient magnetic-field component parallel to the axis of the sense
+      coil causes the saturation of the core to become asymmetrical.
+      This asymmetry induces a second harmonic of the drive frequency in
+      the sense coil which is proportional to the magnitude of the
+      magnetic-field component along that axis. The signal is processed
+      through a narrow band amplifier tuned to the second harmonic of
+      the drive frequency, which attenuates harmonics other than the
+      second. The result is integrated, converted to a current and fed
+      back to the sensor coil to null the ambient field. The integrated
+      output voltage, amplified and corrected for scale factor and
+      alignment errors, is proportional to the ambient field. The three
+      analogue vector components are passed to the DPU for analogue to
+      digital conversion and data processing. The noise performance of
+      the FGM, measured on the ground at the analogue output of the
+      electronics, is better than 5 pT/Hz at 1 Hz. The electronics can
+      be checked in flight using an in-flight calibration (IFC)
+      capability built into the electronics and controlled by command
+      from the DPU. The IFC applies a fixed offset to each of the three
+      vector outputs corresponding to a signal of approximately 10 nT.
+      The frequency, number of on/off cycles, of the IFC is selectable
+      by command.
+ 
+      Changing the electronics feedback path and the output
+      amplification allows the sensor to be operated in one of four
+      different full scale magnetic field ranges, as listed in Table I.
+      The largest range (+/-44,000 nT) was included mainly for ground
+      testing in the Earth&apos;s field. Switching between ranges in normal
+      operations is automatic, controlled by the DPU. If the magnitude
+      of any of the FGM magnetic-field components exceeds an upper
+      threshold for more than a specified number of samples, the DPU
+      will switch the FGM to a higher range. Similarly, if all three
+      component value magnitudes fall below a lower threshold for more
+      than a specified number of samples, the DPU will switch the FGM to
+      a lower range. All parameters are modifiable by command and
+      autoranging can also be disabled and manual range changes
+      commanded.
+ 
+      A 1W heater has been provided to maintain the FGM within its
+      operating temperature range of -30 to +50 degrees C. The specially
+      designed, non-magnetic unit is mounted on the ceramic sensor block
+      and has control electronics on Subchassis#1. Further thermal
+      control is provided by an aluminised mylar-covered fibreglass case
+      over the sensor block and by three, project-provided, radioactive
+      heater units mounted at equal distances around the base of the
+      sensor (these units provide a total of 3W).
+ 
+ 
+    THE V/SHM
+    ---------
+      The V/SHM sensor is the flight-spare Ulysses vector-helium
+      magnetometer sensor with an added small pair of coils nested
+      inside the larger Helmholtz coils used in the vector mode. The
+      sensor is mounted at the end of the 11-meter magnetometer boom. A
+      set of cables running the length of the boom connects it to the
+      VHM and SHM electronics on Subchassis#1. The VHM electronics box
+      is also the Ulysses flight-spare unit with small modifications to
+      change the sensor operating ranges and to compensate for the
+      different boom cable lengths. A new electronics board has been
+      added to Subchassis#1 containing the electronics to operate in the
+      scalar mode.
+ 
+      The operation of the magnetometer is based on field-dependent
+      light absorption (the Zeeman effect) and optical pumping to sense
+      the magnetic field. Helium in an absorption cell is excited by a
+      radio-frequency (RF) discharge to maintain a population of
+      metastable long-lived atoms. Infrared radiation (wavelength 1083
+      nm) from a helium lamp, also generated by RF excitation, passes
+      through a circular polariser and the absorption cell to an
+      infrared detector. The absorption (pumping efficiency) of the
+      helium in the cell is dependent on the ambient magnetic-field
+      direction. The optical pumping efficiency is proportional to
+      cos^2(Theta) where Theta is the angle between the optical axis and
+      the direction of the magnetic field. This directional dependence
+      is utilised in the vector mode by applying low-frequency sweep
+      fields rotating about the cell which allow the extraction of the
+      three orthogonal ambient-field components. These fields are fed
+      back using a set of triaxial Helmholtz coils mounted on the sensor
+      housing around the cell. In the scalar mode, the directional
+      dependence results in a &apos;field of view&apos; restricted to a cone with
+      half angle approximately 45 degrees, centred on the optical axis
+      detector.
+ 
+      Changing the VHM sweep fields allows the sensor to operate in
+      different ranges. Two VHM ranges have been selected for Cassini
+      (see Table I). As for the FGM, automatic ranging has been
+      implemented in the DPU. The VHM electronics also have an internal
+      autoranging capability (used for the Ulysses instrument). A single
+      range has been implemented for the SHM. Injection of known
+      currents into the Helmholtz-coil system provide an in-flight
+      calibration (IFC) capability. The calibration fields apply an
+      offset of approximately 1/8 of the full scale range to each vector
+      component. A non-magnetic proportional heater using up to 2W is
+      incorporated into the V/SHM sensor and is controlled from
+      electronics built into the VHM electronics box on Subchassis#1.
+      The operating temperature range of the sensor is -10 to +40
+      degrees C.
+ 
+      In the scalar mode, a weak AC field at the Larmor frequency, which
+      opposes the optical pumping, is applied to the cell. This field
+      causes a reduction in the transmitted light  detected by the IR
+      detector. The Larmor frequency, which is proportional to the
+      ambient magnetic field, is measured. In order to track the ambient
+      field the applied field is frequency modulated so that the
+      detector output contains a signal component harmonically related
+      to the modulation frequency. The proportionality constant is the
+      gyromagnetic ratio which for helium is 28.023561 Hz/nT. Detection
+      and measurement of the Larmor frequency leads to a very accurate
+      measurement of the ambient field magnitude. The result is passed
+      as a 20-bit scalar word from the SHM electronics to the DPU. A
+      more detailed description of the V/SHM may be found in Kellock et
+      al. (1996).  Smith et al. (2001) provides a detailed description
+      of the SHM operation and observations from the Earth Swingby in
+      August 1999.
+ 
+ 
+  INSTRUMENT ELECTRONICS
+  ======================
+    The instrument electronics are all mounted in the Upper Equipment
+    Module in bay 4 and are split between two subchassis assemblies.
+    Subchassis#1 contains the sensor electronics, the power supplies and
+    power management system, as well as the heater control and
+    instrument housekeeping electronics; its mass is given in Table I.
+    On the underside of the subchassis are the power-management board,
+    the FGM electronics board and the SHM electronics board. The
+    power-management board contains a total of 14 non-latching power
+    switches and cross-strapping circuitry for the two redundant
+    secondary power supplies. The top side of the subchassis contains
+    the VHM electronics box, two small boards to the left of the VHM box
+    with latching relays to switch between VHM and SHM operation, two
+    redundant secondary power supplies (PSU1 and PSU2), a dedicated BIU
+    power supply (PSU0), and the FGM heater-control electronics and
+    housekeeping circuitry. Proportional control electronics for the VHM
+    heater are located within the VHM box. The power supplies and
+    switches are Imperial College designs used on previous missions and
+    feature built-in overcurrent trips.
+ 
+    The basic power distribution scheme is described in Kellock et al.
+    (1996). Power switches for the secondary voltage lines are
+    controlled by the active processing unit and power switches for the
+    power supplies and processing units themselves are controlled by
+    discrete commanding from the spacecraft via the BIU and the Common
+    Core (CC).
+ 
+    Subchassis#2 contains the DPU, consisting of two redundant processor
+    systems plus a small CC and the BIU. When power is first supplied
+    from the spacecraft, only the BIU and the CC become active, powered
+    from PSU0. The BIU allows data transfer to and from the spacecraft,
+    the CC processes commands and data for power up of the secondary
+    power supplies (PSU1 or PSU2) and the processors (PUA or PUB). Each
+    processor system is based on an 80C86 processor with 4-MHz clock,
+    32-kByte PROM, 128-kByte Hi-Rel RAM and 16-MByte state-of-the-art
+    commercial DRAM. The systems normally operate singly but can be
+    operated in parallel. A high-accuracy 16-bit analogue to digital
+    converter (ADC) is integrated into each processor system for sensor
+    data collection. Two ADC clock speeds are available, 1 MHz and 2
+    MHz, the former being the default speed. Tantalum shielding has been
+    used for the ADCs, DRAMs and Operational Amplifiers to reduce their
+    susceptibility to radiation.  The DPU boards are folded around the
+    subchassis. The electronic components face the subchassis, because
+    the 2.4 mm thick 16-layer boards provide additional radiation
+    shielding. The Sensor Interface Board is on the right hand side.
+    The flexible connection board goes through subchassis cutouts to the
+    Processor Board on the other side. The JPL-provided BIU, plus its
+    associated cabling, is located on the left side.
+ 
+    To satisfy the demands of a deep-space mission with limited
+    communications, the DPU has been designed with a large measure of
+    autonomy and sophisticated data-handling functions. These functions
+    include the following: telecommand handling, sensor autoranging and
+    IFC, sensor data collection, sensor data processing, snapshot data
+    handling, telemetry generation, error correction, fault detection
+    and recovery, and onboard ancillary data generation. Some of the
+    functions of the DPU are described below.
+ 
+    The DPU is designed to handle both the packet telecommand standard
+    adopted by Cassini, used for normal commanding, and discrete
+    telecommands used when the processor is not active. A variety of
+    command functions are supported and are discussed later. The DPU
+    must be able to accept telecommands at all times, in all operational
+    modes. Commands may be for immediate execution, or can contain
+    relative or absolute timetags for delayed execution (relative
+    timetags cause execution at a fixed time with respect to reception
+    of the command, absolute timetags cause execution at specific
+    spacecraft times). As noted earlier, a macro commanding capability
+    has been implemented whereby sequences of instrument commands can be
+    stored in the DPU and the sequence started by executing a macro
+    command.
+ 
+    Hamming single-bit error correction and double-bit error detection
+    is provided for all memory devices except those in the BIU. Single
+    Event Upsets (SEUs) can change the content of memory cells, cyclic
+    access to every memory cell corrects single-bit and reduces the risk
+    of double-bit errors. Memory scrubbing is initiated every 64 seconds
+    in the Hi-Rel RAM and the 16-MByte, multi-snapshot, DRAM. It takes
+    about 1 hour to scrub the complete RAM. Additional memory checks
+    can be initiated by command: occurences of single and double-bit
+    errors are monitored. The PROMS are checked separately and contain
+    a pre-defined error pattern for detection. If a permanent RAM
+    problem arises, the DPU can be commanded to run its software
+    directly from PROM. In-flight tests have also been implemented for
+    the ADC to check the noise and conversion and settling times on each
+    analogue channel.
+ 
+    Both processor systems contain four separate dual-level latch-up
+    detectors, one for the processor, one for the multi-snapshot memory,
+    and one each for the ADC +/-12V supply voltages. Detectors of
+    similar design have been flown on the GEOTAIL, WIND and SOHO
+    spacecraft. If a latch up is detected in the processor, it will be
+    immediately switched off and on again and the instrument will be
+    automatically reconfigured into its previous mode. Latch ups in
+    either the memory or the ADC will cause it to be immediately
+    switched off and back on again. There is also a hardware watchdog
+    function in the DPU which will detect problems in the DPU program
+    flow and which initiates a hardware reset followed by an automatic
+    instrument reconfiguration.
+
+        </description>
+    </Instrument>
+</Product_Context>

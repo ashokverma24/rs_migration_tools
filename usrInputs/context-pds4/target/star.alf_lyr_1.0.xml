@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_lyr</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Vega</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Alpha Lyrae</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Lyr</alternate_title></Alias>
+      <Alias><alternate_title>alf Lyr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>3 Lyr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 11510 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+38 1711</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J1836564+384703</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 507896</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+38 3238</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J18369+3847A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 4636</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+38 3238 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 101745</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1E 183515+3844.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J1836+38.7</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 699</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GAT 1285</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 25466</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 11085</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00172167</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 721</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 721.0</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 172167</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 706</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 91262</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 91262</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 7001</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 18336+3841 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 18352+3844</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS F18352+3844</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +40322</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSE J183656.4+384709</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSF J183656.4+384709</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2999</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J1836+3847</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 15486</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J18365633+3847012</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 4138</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 46746</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 11128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>8pc 128.93</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 4293</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 4293.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 496</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 81558</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 2208</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2633</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 67174</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 34103</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 22883</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 3105-2070-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 15842</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 23118</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 1287-00305764</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO 882</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100172167</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J18369+3846A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 15681</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WISE J183656.49+384703.9</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Zkh 277</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EQ 183456.7+384615.4</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Vega</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 18 hours 36 minutes 56.33635 seconds
+Declination, ICRS coord, ep=J2000: +38 degrees 47 minutes 01.2802 seconds
+    </description>
+  </Target>
+</Product_Context>
+

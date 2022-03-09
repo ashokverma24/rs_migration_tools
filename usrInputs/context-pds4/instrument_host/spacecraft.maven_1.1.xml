@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1
+        https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.maven</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>Mars Atmosphere and Volatile Evolution (MAVEN)</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_id>MVN</alternate_id></Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-05-14</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Added Instrument_Host/name, all lid_references, naif_host_id
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2015-03-16</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial version.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.maven</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:acc.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:euv.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:iuvs.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:lpw.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:mag.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:ngims.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:rss.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:sep.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:static.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:swea.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:swia.maven</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+         </Internal_Reference>
+<!-- Add reference MAVEN spacecraft description paper when available
+        <External_Reference>
+            <doi></doi>
+            <reference_text></reference_text>
+            <description></description>
+        </External_Reference>
+-->
+    </Reference_List>
+    <Instrument_Host>
+        <name>Mars Atmosphere and Volatile Evolution (MAVEN)</name>
+        <type>Spacecraft</type>
+        <naif_host_id>-202</naif_host_id>
+        <description>
+The MAVEN mission launched on an Atlas V November 18, 2013. After a ten-month
+ballistic cruise phase, Mars orbit insertion occurred on September 22, 2014.
+Following a 5-week transition phase, the spacecraft began orbiting Mars at a
+75 inclination, with a 4.5 hour period and periapsis altitude of 140-170 km
+(density corridor of 0.05-0.15 kg/km3). Over a one-Earth-year period,
+periapsis will precess over a wide range of latitude and local time, while
+MAVEN obtains detailed measurements of the upper atmosphere, ionosphere,
+planetary corona, solar wind, interplanetary/Mars magnetic fields, solar EUV
+and solar energetic particles, thus defining the interactions between the Sun
+and Mars.  MAVEN will explore down to the homopause during a series of five
+5-day “deep dip” campaigns for which periapsis will be lowered to an
+atmospheric density of 2 kg/km3 (~125 km altitude) in order to sample the
+transition from the collisional lower atmosphere to the collisionless upper
+atmosphere. These five campaigns will be interspersed though the mission to
+sample the subsolar region, the dawn and dusk terminators, the anti-solar
+region, and the north pole.
+        </description>
+    </Instrument_Host>
+</Product_Context>

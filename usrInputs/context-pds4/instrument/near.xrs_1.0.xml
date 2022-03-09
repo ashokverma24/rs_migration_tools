@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:xrs.near</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>XRAY SPECTROMETER for NEAR</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.near::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Adler, I., J.I. Trombka, J. Gerard, P. Lowman, R. Schamadebeck, H. Blodgett, E.
+                   Eller, L. Yin, R. Lamothe, P. Gorenstein, and P. Bjorkholm, Apollo 15
+                   Geochemical X-Ray Fluorescence Experiment: Preliminary Report, Science, Vol.
+                   175, pp. 436-440, 1972.
+            </reference_text>
+            <description>reference.ADLERETAL1972A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Adler, I., J. Gerard, J.I. Trombka, R. Schamadebeck, P. Lowman, H. Blodgett, L.
+                   Yin, E. Eller, and R. Lamothe, The Apollo 15 X-Ray Fluorescence Experiment,
+                   Proc. Lunar Sci Conf. 3rd, pp. 2157-2178, 1972.
+            </reference_text>
+            <description>reference.ADLERETAL1972B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Adler, I., J.I. Trombka, J. Gerard, P. Lowman, R. Schamadebeck, H. Blodgett, E.
+                   Eller, L. Yin, R. Lamothe, G. Osswald, P. Gorenstein, P. Bjorkholm, H. Gursky,
+                   and B. Harris, Apollo 16 Geochemical X-ray Fluorescence Experiment: Preliminary
+                   Report, Science, Vol. 177, pp. 256-259, 1972.
+            </reference_text>
+            <description>reference.ADLERETAL1972C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bielefeld, M., R. Reedy, A. Metzger, J. Trombka, and J. Arnold, Proc. Lunar
+                   Sci. Conf. 7th, pp. 2661-2676, 1976.
+            </reference_text>
+            <description>reference.BIELEFELDETAL1976</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bruckner, J., M. Koerfer, H. Waenke, A.N.F. Schroeder, D. Filges, P.
+                   Dragovitsch, P.A.J. Englert, R. Starr, J.I. Trombka, I. Taylor, D.M. Drake, and
+                   E.R. Schunk, IEEE Trans. Nucl. Sci., NS-38, pp. 209-217, 1991.
+            </reference_text>
+            <description>reference.BRUCKNERETAL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Clark, B.E., J.F. Bell, F.P. Fanale, and D.J. O&apos;Connor, Results of the Seven
+                   Color Asteroid Survey: Infrared spectral observations of ~50-km size S-, K-,
+                   and M-type asteroids, Icarus, Vol. 113, pp. 387-402, 1995.
+            </reference_text>
+            <description>reference.CLARKETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Goldsten, J.O., Johns Hopkins APL Technical Digest, Vol. 19, pp. 126-135, 1998.
+            </reference_text>
+            <description>reference.GOLDSTEN1998</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Goldsten, J.O., R.L. McNutt, R.E. Gold, S.A. Gary, E. Fiore, S.E. Schneider,
+                   J.R. Hayes, J.I. Trombka, S.R. Floyd, W.V. Boynton, S. Bailey, J. Bruckner,
+                   S.W. Squyres, L.G. Evans, P.E. Clark, and R. Starr, Space Sciences Review, Vol.
+                   82, pp. 169-216, 1997.
+            </reference_text>
+            <description>reference.GOLDSTENETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Knoll, G.F., Radiation Detection And Measurement, Wiley &amp; Sons, New York, 1989.
+            </reference_text>
+            <description>reference.KNOLL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Starr, R., P.E. Clark, L.G. Evans, S.R. Floyd, T.P. McClanahan, J.I. Trombka,
+                   J.O. Goldsten, R.H. Maurer, R.L. McNutt, Jr., and D.R. Roth, Radiation effects
+                   in the Si-PIN detector on the Near Earth Asteroid Rendezvous Mission, Nuclear
+                   Instruments and Methods in Physics Research Section A, Vol. 428, pp. 209-215,
+                   1999.
+            </reference_text>
+            <description>reference.STARRETAL1999</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Trombka, J., S. Floyd, W. Boynton, S. Bailey, J. Bruckner, S. Squyres, L.
+                   Evans, P. Clear, R. Starr, E. Fiore, R. Gold, J. Goldsten, and R. McNutt,
+                   Compositional Mapping With The Near X-ray/Gamma-ray Spectrometer, J. Geophys.
+                   Res., Vol. 102, pp. 23729-23750, 1997.
+            </reference_text>
+            <description>reference.TROMBKAETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Yin, L, J. Trombka, I. Adler, and M. Bielefeld, X-ray Remote Sensing Techniques
+                   For Geochemical Analysis Of Planetary Surfaces, Remote Geochemical Analysis:
+                   Geochemical And Mineralogical Composition, C. Pieters and P. Englert (eds.),
+                   Cambridge University Press, New York, NY, USA, pp. 199-212, 1993.
+            </reference_text>
+            <description>reference.YINETAL1993</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>XRAY SPECTROMETER</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    Instrument Overview
+    ===================
+ 
+      The Near Earth Asteroid Rendezvous mission (NEAR) was successfully
+      launched on 17 February 1996.  NEAR was the first launch under
+      NASA&apos;s Discovery Program, an initiative for small, low-cost
+      planetary missions.  As the first spacecraft to orbit an asteroid,
+      the NEAR mission will address fundamental questions about the
+      processes and conditions relevant to planetary formation.
+ 
+      The X-ray/Gamma-ray Spectrometer (XGRS) is one of several
+      instruments on-board the NEAR spacecraft that will study Eros during
+      one year of orbital operations beginning in February 2000. The X-ray
+      and gamma-ray spectrometers that comprise the XGRS are independent,
+      but complementary experiments.  In this document we focus on the X-Ray
+      Spectrometer, its design, operation, calibration, and procedures for
+      interpretation of the measurements to be made at Eros.
+ 
+ 
+    History
+    =======
+      In February 1996, the Near Earth Asteroid Rendezvous (NEAR) mission
+      was launched into space on a planned three-year cruise to the
+      near-Earth asteroid, 433 Eros.  The NEAR spacecraft, the first in
+      the Discovery mission program to be launched, was built by the John
+      Hopkins University, Applied Physics Laboratory (APL).  The
+      spacecraft will orbit Eros for one year and carries a group of
+      remote sensing instruments including an X-ray and gamma-ray
+      spectrometer system (XGRS).  Due to a problem with firing of the
+      main rocket engine in December 1998, the rendezvous was delayed
+      until February 2000.  The NEAR spacecraft will be the first
+      spacecraft to orbit a body as small as Eros, which is estimated to
+      be 33 km X 13 km X 13 km.
+ 
+      From telescopic, radar, and other observations, it has been inferred
+      that Eros is an S-type asteroid, one of the most common type of
+      near-Earth asteroids.  It is not known whether S-type asteroids come
+      from differentiated or undifferentiated parent bodies.  One of the
+      prime mission science objectives is to obtain global elemental
+      composition maps. These elemental composition results are needed
+      with sufficient accuracy to enable comparison with major meteorite
+      types. The results would also be used to assess the compositional
+      heterogeneity of the asteroid and help to answer questions about
+      differentiation.  The selection of X-ray and gamma-ray spectrometers
+      for this mission was based on their ability to produce global
+      elemental composition maps of the asteroid.  Gamma-ray measurements
+      can determine the abundance of elements such as O, Si, Fe, Ti, Mg,
+      K, Th, and U depending on the actual composition.
+ 
+ 
+    X-Ray Spectrometer Overview
+    ===========================
+      The X-Ray Spectrometer (XRS) will measure characteristic X-ray
+      emissions induced in the surface of the asteroid by the incident
+      solar flux.  The K-alpha lines for the elements Mg, Al, Si, Ca, Ti,
+      and Fe will be detected with spatial resolution on the order of 3 km
+      when counting statistics are not a limiting factor.  These
+      measurements can be used to obtain both qualitative and quantitative
+      information on elemental composition.
+ 
+      The X-ray spectrometer on the NEAR mission is a non-dispersive
+      spectroscopic system.  In this approach, the incoming X-ray photon
+      is absorbed by the detector material and a signal proportional to
+      the absorbed energy is measured by the detector as a voltage pulse
+      at the detector output.  An analog to digital conversion is then
+      performed and the count is binned by &apos;pulse height&apos; or energy loss
+      and a spectrum is obtained and telemetered to Earth.  From an
+      analysis of the pulse height spectrum, elemental composition can be
+      inferred.
+ 
+      The choice among various types of X-ray detectors was strongly
+      influenced by the constraints of the mission.  For the NEAR mission,
+      the detectors were chosen for the sensitivity in the energy regions
+      of scientific interest, while also being consistent with the cost,
+      mass, power and reliability constraints of the mission.
+ 
+      The most prominent fluorescent lines for the major elements Mg, Al,
+      Si, Ca, Ti, and Fe are the K-alpha lines (1-10 keV).  The strength
+      of these emissions from planetary surfaces is strongly dependent on
+      the chemical composition of the surface as well as on the incident
+      solar spectrum, but are of sufficient intensity to allow orbital
+      measurement by detectors like those on the NEAR spacecraft.
+ 
+      In addition to line fluorescence, solar X-rays also can be
+      coherently and incoherently scattered from a planetary surface,
+      contributing an unwanted background signal.  Astronomical X-ray sky
+      sources, which could be sources of background, are eliminated at
+      Eros, because the XRS is collimated to a 5-degree field of view and
+      the asteroid completely fills the field of view when the spacecraft
+      is below 100-km altitude.
+ 
+      The solar flux from 1 to 10 keV, the energy region of interest, can
+      be modeled with several prominent lines superposed on a continuum
+      described by a fourth to sixth order power law (depending on the
+      level of solar activity).  In modeling the solar output for the NEAR
+      mission the best estimates of solar output anticipated near solar
+      maximum have been used and range from approximately B1 to M1
+      levels.  The solar intensity decreases by three to four orders of
+      magnitude from 1 to 10 keV.  Fluorescent lines as well as the
+      scatter-induced background, therefore, have greater intensity at
+      lower energies.  As the level of solar activity increases,
+      relatively more output occurs at higher energies, the slope of the
+      spectrum becomes less steep, and the overall magnitude of the X-ray
+      flux increases.  This process is called hardening.  Solar output is
+      highly variable, and can typically change by an order of magnitude
+      or more within minutes. Higher solar activity will yield better
+      statistics, shorter integration times, and hence higher resolution
+      maps, especially for heavier elements such as Fe.  Because of its
+      variability, the Sun&apos;s output must be monitored in order to be able
+      to obtain quantitative results.  An introduction to X-ray remote
+      sensing techniques for geochemical analysis can be found in
+      [YINETAL1993].
+ 
+      Detectors
+      ---------
+       To detect X-rays in the 1 to 10 keV region, either solid state or
+       gas proportional counter detectors can be used.  Cryogenically
+       cooled Si(Li) detectors have good energy resolution in this energy
+       region, but are ruled out by cost and mass limitations.  Recently,
+       room temperature solid state detectors have been developed with
+       reasonably good energy resolution, but only for detectors of
+       limited size (~1 cm2).  Also, these detectors have no flight
+       heritage.  The only detectors that satisfied all of the
+       measurement and resource requirements for the NEAR mission are gas
+       proportional counters.
+ 
+       The asteroid-pointing detector package includes three large-area
+       (25 cm2) sealed gas proportional counters with thin (25 ?m) Be
+       windows.  The large area provides the necessary sensitivity to
+       achieve the desired spatial resolution and the Be windows absorb
+       the lower energy X-rays (below 1 keV) which would otherwise
+       dominate the detector count rate.  The fill gas is P-10 (90% argon
+       and 10% methane).  The Be window is supported by a rectangular Be
+       support structure.  The detector housing is steel with a Be liner
+       to absorb Fe line emission from the housing [GOLDSTENETAL1997].
+ 
+       The sealed gas proportional counters chosen for this experiment
+       are improved versions of instruments previously flown on Apollo 15
+       and 16.  The energy resolution of current gas proportional
+       counters is improved over those of the Apollo days, but is still
+       not sufficient to resolve the low energy Mg, Al, and Si lines.  As
+       with the Apollo missions it is necessary to use balanced filters
+       to resolve these closely spaced lines [ADLERETAL1972A],
+       [ADLERETAL1972B] and [ADLERETAL1972C].  Two of the detectors have
+       thin absorption filters, 8.5  m thick, mounted externally.  A Mg
+       filter on one detector attenuates the Al and Si lines, and an Al
+       filter on the other detector attenuates the Si line.  The very
+       steep absorption edges of the filters make the separation of the
+       lower energy lines possible.  At higher energies, the filters are
+       essentially transparent and the Ca and Fe lines are resolved
+       directly by the detectors.  The third detector has no filter.  The
+       energy resolution of these detectors is about 14.2% at 5.9 keV
+       [TROMBKAETAL1997].
+ 
+       Two sunward-pointing X-ray detectors positioned on the forward
+       deck of the spacecraft monitor the incident solar flux.  The solar
+       monitors experience very strong X-ray emissions directly from the
+       sun, especially during solar flares, so the active area for a
+       solar monitor needs to be only about 1 mm2.  One monitor is a
+       proportional counter identical to the three asteroid pointing
+       detectors, but with a specially designed graded shield that
+       reduces its effective area to about 1 mm2 (Clark, Trombka, and
+       Floyd, 1995 [CLARKETAL1995]).  The other solar monitor is a small
+       Si-PIN photodiode.  This solid-state detector is mounted on a
+       miniature thermo-electric cooler in a hermetic package 15-mm in
+       diameter.  A 76 m thick Be window rejects the intense solar flux
+       below 1 keV.  The Si-PIN solar monitor achieves an energy
+       resolution of 600 eV FWHM at 5.9 keV.
+ 
+       The accumulation times or integration periods for the XRS
+       measurement can be adjusted by ground command and may vary from 1
+       to 65535 seconds.  The default for orbital operations is 100
+       seconds.  During each integration period the XRS collects four
+       256-channel pulse height spectra: one for each of the three
+       asteroid pointing detectors and one from either the proportional
+       counter or the PIN solar monitor.  The two solar monitors may both
+       be powered on at the same time, but telemetry limitations forced a
+       design that allows only one of the solar monitors to be pulse
+       height analyzed at a time.  Additional details of the detector
+       design can be found in [GOLDSTENETAL1997].
+ 
+       A collimator is used to restrict the X-ray spectrometer field of
+       view to about 5 degrees.  In a 50-km orbit (on average about 40 km
+       from the surface of the asteroid) this results in a spatial
+       resolution of about 3 km.  The collimator is also useful in
+       reducing the cosmic X-ray background.  The collimator uses a
+       honeycomb design made of copper with 3% Be.  The K, L and M X-ray
+       lines excited in the collimator by solar X-rays, cosmic rays and
+       asteroidal X-rays do not interfere with the surface line
+       emissions.
+ 
+      Calibration Sources
+      -------------------
+       Three Fe-55 sources, mounted on a calibration rod, can be rotated,
+       one at a time, into the field of view of the three asteroid
+       pointing detectors to establish the energy calibration of the
+       XRS.  Knowledge of the energy calibration of the XRS and how it
+       changes over time is necessary to sum spectra obtained over the
+       same region of the asteroid, but collected at different times
+       during the mission.  The statistics in any one spectrum (typically
+       about a 100-s accumulation) are insufficient to perform detailed
+       analysis.
+
+        </description>
+    </Instrument>
+</Product_Context>

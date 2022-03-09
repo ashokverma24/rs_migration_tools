@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.gam_gru</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Aldhanab</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Gamma Gruis</alternate_title></Alias>
+      <Alias><alternate_title>Gamma Gru</alternate_title></Alias>
+      <Alias><alternate_title>gam Gru</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 15811</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-37 14536</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 18 11240</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-37 9119</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 822</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 30640</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 13749</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00207971</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 07494-01748</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 207971</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 108085</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 108085</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 8353</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 21508-3736</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 3414</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J21535573-3721535</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 4823</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5287</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5287.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 577</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 301949</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 3182</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 213374</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 41726</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30822</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 28542</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7494-1748-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 18734</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 25977</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100207971</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 19485</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 6586825380598277248</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Aldhanab</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 21 hours 53 minutes 55.7261962 seconds
+Declination, ICRS coord, ep=J2000: -37 degrees 21 minutes 53.478974 seconds
+    </description>
+  </Target>
+</Product_Context>

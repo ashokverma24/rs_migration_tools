@@ -1,0 +1,70 @@
+             <Table_Binary>
+                   <name>ODF Identifier Group Header</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                               The Identifier Group
+                               is usually the second of several groups of records in
+                               an Orbit Data File (ODF).  It is sometimes used to
+                               identify contents of data records that follow.  The
+                               Identifier Group Header is the first record in the
+                               Identifier Group.  It is one 36-byte record and is
+                               followed by one 36-byte Identifier Group data record.
+                               Occasionally the Identifier Group is omitted from an
+                               ODF. The row suffix bytes in the Identifier Group
+                               Header are set to 0."
+                   </description>
+                   <Record_Binary>
+                         <fields>4</fields>
+                         <groups>0</groups>
+                         <record_length unit="byte">36</record_length> 
+                         <Field_Binary>
+                               <name>Primary Key</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>SignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 1: The Primary Key indicates the type of data records to 
+                                           follow. In the Identifier Group Header this field is set to 107.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Secondary Key</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">5</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 2: The Secondary Key is not used in the ODF. It is set to 0.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Logical Record Length (in packets)</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">9</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 3:  The Logical Record Length gives the
+                                           number of 36-byte physical records making up each logical
+                                           record in an Identifier Group data record.  For the
+                                           Identifier Group it is set to 1.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Group Start Packet Number</name>
+                               <field_number>4</field_number>
+                               <field_location unit="byte">13</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 4:  The Group Start Packet Number
+                                           gives the number of the ODF packet containing the
+                                           Identifier Group Header.  Usually set to 2, since the
+                                           Identifier Group usually follows the Label Group
+                                           immediately in the ODF.
+                               </description>
+                         </Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>

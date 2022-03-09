@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:registry_service_instance</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Registry Service (Online Instances)</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-07-14</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>Registry Service (Online Instances)</name>
+        <abstract_desc>The Registry Service provides functionality for tracking, auditing, locating, and maintaining artifacts within the system. These artifacts can range from data files and label files, schemas, dictionary definitions for objects and elements, documents, services, etc.</abstract_desc>
+        <url>https://pds.nasa.gov/services/registry-pds3/</url>
+        <url>https://pds.nasa.gov/services/registry-pds4/</url>
+        <url>http://planetarydata.org/registry/</url>
+        <service_type>Service</service_type>
+        <interface_type>Service</interface_type>
+        <category>Search</category>
+        <system_requirements_note>Online access via common web browsers (e.g., Safari, Firefox, etc.), command-line utilities such as cURL or other applications supporting HTTP-based interfaces.</system_requirements_note>
+        <description>The Registry Service is a core component of the PDS4 data system. The service provides a REST-based interface for interacting with the service and harvesting metadata from the registered objects. The attached WADL file describes all of the end points provided by the service. This information is also available in HTML format by accessing the /docs end point from any service instance.</description>
+    </Service>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context_pds3:node:node.en</lid_reference>
+            <reference_type>has_node</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <File_Area_Service_Description>
+        <File>
+            <file_name>registry_service_instance_1.0.wadl</file_name>
+            <file_size unit="byte">81686</file_size>
+        </File>
+        <Service_Description>
+            <name>Registry Service REST-based Interface</name>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>WADL</parsing_standard_id>
+            <description>This file describes the details of the REST-based application programming interface for the Registry Service. It describes all of the end points provided by the service.</description>
+        </Service_Description>
+    </File_Area_Service_Description>
+    <!--
+    Submitter Information
+    Submitter Name:        Sean Hardman
+    Submitter Institution: PDS Engineering Node (JPL)
+    Submitter Email:       Sean.Hardman@jpl.nasa.gov
+    -->
+</Product_Service>

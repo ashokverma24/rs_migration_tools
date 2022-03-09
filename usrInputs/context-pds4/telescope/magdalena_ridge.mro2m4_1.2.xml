@@ -1,0 +1,66 @@
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:magdalena_ridge.mro2m4</logical_identifier>
+        <version_id>1.2</version_id>
+        <title>MRO 2.4m</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-12-20</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                   Adding lid_reference to instruments 
+                   u:n:p:c:i:magdalena_ridge.mro2m4.photdoc_camera
+                   u:n:p:c:i:magdalena_ridge.mro2m4.photgjon_camera
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-03-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version exported from OLAF</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-08-16</modification_date>
+                <version_id>1.2</version_id>
+                <description>
+                    Updated by A.C.Raugh for (new?) instrument reference; removed reference to stale URL.                    
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.magdalena_ridge</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>Magdelena Ridge Observatory (OLAF observatory code 4703)</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:magdalena_ridge.mro2m4.photdoc_camera</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+            <comment>added by GEO</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:magdalena_ridge.mro2m4.photgjon_camera</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+            <comment>added by GEO</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:magdalena_ridge.mro2m4.andor_2kx2k_ccd</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Telescope>
+        <aperture unit='m'>2.4</aperture>
+        <telescope_longitude unit='deg'>252.815278</telescope_longitude>
+        <telescope_latitude unit='deg'>33.976666</telescope_latitude>
+        <telescope_altitude unit='m'>3180</telescope_altitude>
+        <coordinate_source>Astronomical</coordinate_source>
+        <description>
+        The MRO 2.4m is a 2.4 m telescope located at 33.976666, 252.815278 at the Magdelena Ridge Observatory.
+        </description>
+    </Telescope>
+</Product_Context>

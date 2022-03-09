@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.sch" 
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:individual.greeley_field_amboycrater</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>R. Greeley Field Investigation, Amboy Crater, California</title>
+        <information_model_version>1.8.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-10-20</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:asurpif_photos_amboycrater:document_photos</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:asurpif_photos_amboycrater:document_database:ca_amboy_crater_field_photo_database</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:asurpif_photos_amboycrater:document_user_guide:users_guide_amboy_crater</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Investigation>
+        <type>Individual Investigation</type>
+        <start_date>1976</start_date>
+        <stop_date>1976</stop_date>
+        <description>This data set is composed of mostly black and white, and some color, photographs of the volcanic cindercone 
+            Amboy Crater and its surrounding lava flows, located in the Mojave Desert of southeast California. The photographs were 
+            taken by Dr. Ronald Greeley and Dr. James Iversen in 1976 and acquired using hand-held cameras. The photographs were taken 
+            at low altitude from a fixed-wing aircraft, on the ground near volcanic outcrops, and of flows from close up. The purpose 
+            of the images was to depict volcanic features on Earth that could be studied as an analog to features similar to those 
+            found on Mars and the Moon.</description>
+    </Investigation>
+</Product_Context>

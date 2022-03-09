@@ -1,0 +1,36 @@
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.jpl.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1700.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:asiago.copernico1m82</logical_identifier>
+        <version_id>0.0</version_id>
+        <title>Copernico 1.82m Telescope</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-03-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version exported from OLAF</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.asiago</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>Asiago Astrophysical Observatory (OLAF observatory code 157)</comment>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit='m'>1.82</aperture>
+        <telescope_longitude unit='deg'>11.571400</telescope_longitude>
+        <telescope_latitude unit='deg'>45.843400</telescope_latitude>
+        <telescope_altitude unit='m'>1350</telescope_altitude>
+        <coordinate_source>Astronomical</coordinate_source>
+        <description>
+        The Copernico 1.82m Telescope is a 1.82 m telescope located at 45.843400, 11.571400 at the Asiago Astrophysical Observatory.
+        
+        The Asiago 1.82m telescope, inaugurated in 1973 and dedicated to N. Copernicus, is a classic Cassegrain reflector. It is the main observing facility at the observing site of Cima Ekar (1350m) of the Asiago Astrophysical Observatory.
+        </description>
+    </Telescope>
+</Product_Context>

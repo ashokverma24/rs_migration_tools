@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mag.gio</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>FLUXGATE MAGNETOMETER for GIO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gio::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Acuna, M.H., 1974, &apos;FLUXGATE MAGNETOMETERS FOR OUTER PLANETS EXPLORATION&apos;, IEEE
+                   Trans., MAG-10, 519.
+            </reference_text>
+            <description>reference.ACUNA1974</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Alfven, H., 1958, &apos;On the Theory of Comet Tails&apos;, Tellus, 9, 92-96
+            </reference_text>
+            <description>reference.ALFVEN1958</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Behannon, K.W., M.H. Acuna, L.F. Burlaga, R.P. Lepping, N.F. Ness, and F.M.
+                   Neubauer, Magnetic Field Experiment for Voyagers 1 and 2, Space Sci. Rev., Vol.
+                   21, p. 235, 1977.
+            </reference_text>
+            <description>reference.BEHANNONETAL1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Cloutier, P. A., Tascione, T. F., Daniel, R. E. Jr., Taylor, H. A., and Wolfe,
+                   R. S., 1983, &apos;PHYSICS OF THE INTERACTION OF THE SOLAR WIND WITH THE IONOSPHERE
+                   OF VENUS: FLOW/FIELD MODELS&apos;, In: &apos;Venus&apos; (Eds Hunten, D. M. et al), Univ. of
+                   Arizona Press, 941-979.
+            </reference_text>
+            <description>reference.CLOUTIERETAL1983</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Hedgecock, P.C., A correlation technique for magnetometer zero level
+                   determination, Space Sci. Instr., 1, 83, 1975.
+            </reference_text>
+            <description>reference.HEDGECOCK1975</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Ip, W. H., and Axford, W. I., 1982, &apos;Theories of Physical Processes in the
+                   Cometary Comae and Ion Tails&apos;, In: Comets (Ed. Wilkering et. al), Univ. of
+                   Arizona Press, 588-634.
+            </reference_text>
+            <description>reference.IP-AXFORD1982</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   &apos;Encounters with Comet Halley, The first results&apos;, Nature, Volume 321, No.
+                   6067, 15 May 1986.
+            </reference_text>
+            <description>reference.NATURE321</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Ness, N.F., Acuna, M.H., Behannon, K.W., Burlaga, L.F., Connerney, J.E.P.,
+                   Lepping, R.P., , The Induced Magnetosphere of Titan, J. Geophys. Res., 87,
+                   13469-1381, 1982.
+            </reference_text>
+            <description>reference.NESSETAL1982</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Neubauer, F.M., The Giotto Magnetometer Experiment, ESA SP-169, 1981.
+            </reference_text>
+            <description>reference.NEUBAUER1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Neubauer, F.M., G. Musmann, M.H. Acuna, L.F. Burlaga, N.F. Ness, F. Mariani, M.
+                   Wallis, E. Ungstrup, and H. Schmidt, The Giotto magnetic field investigation,
+                   In: Cometary Exploration, Proc. Int. Conf. Cometary Exploration, 15-19,
+                   Budapest (Ed. Gombosi T I), 401-410, November 1982.
+            </reference_text>
+            <description>reference.NEUBAUERETAL1983</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Neubauer, F.M., D.A. Gurnett, J.D. Scudder, and R.E. Hartle, Titan&apos;s
+                   Magnetospheric Interaction, Saturn, ed. by T. Gehrels, Univ. of Arizona Press,
+                   Tucson, 760-787, 1984.
+            </reference_text>
+            <description>reference.NEUBAUERETAL1984</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell, C.T. and R.C. Elphic, 1979, Observation of magnetic flux ropes in the
+                   Venus ionosphere, Nature, 279, 616-618.
+            </reference_text>
+            <description>reference.RUSSELL-ELPHIC1979</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell C T &amp; O Vaisberg, The interaction of the solar wind with Venus, Venus
+                   (Eds. Hunten et al.) University of Arizona Press, 873-940, 1983.
+            </reference_text>
+            <description>reference.RUSSELL-VAISBERG1983</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Schmidt, H.U., and R. Wegmann, Plasma flow and magnetic field in comets, In:
+                   Comets (Ed. L.L.Wilkening), University of Arizona Press, 538-560, 1982.
+            </reference_text>
+            <description>reference.SCHMIDT-WEGMANN1982</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Wallis, M.K., Weakly shocked flows of the solar wind plasma through atmospheres
+                   of comets and planets, Planet. Space Sci., 21, 1647-1660, 1973.
+            </reference_text>
+            <description>reference.WALLIS1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Winske D., C.S. Wu, Y.Y. Li, Z.Z. Mou, and S.Y. Guo, Coupling of newborn ions
+                   to the solar wind by electromagnetic instabilities and their interaction with
+                   the bow shock, J. Geophys. Res., 90, 2713-2726, 1985.
+            </reference_text>
+            <description>reference.WINSKEETAL1985</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>FLUXGATE MAGNETOMETER</name>
+        <type>Magnetometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+      Instrument Overview
+      ===================
+      The Giotto Magnetometer Experiment consisted of a triaxial and separate
+      biaxial system of fluxgate sensors of the ring-core type, the
+      associated analog electronics and a digital processor.  Because of the
+      dust hazard near closest approach to comet 1P/Halley (the target of the
+      original Giotto mission), a magnetometer boom could not be included in
+      the spacecraft design.  The resulting magnetic contamination problem
+      was addressed by the use of the two magnetometers and by a magnetic
+      cleanliness program.
+ 
+      For details on the instrument design and operation, see the article
+      from ESA publication SP-1077 specifically concerning the magnetometer.
+      This article is republished as part of the documentation included in
+      the Giotto Extended Mission Archive.
+
+        </description>
+    </Instrument>
+</Product_Context>

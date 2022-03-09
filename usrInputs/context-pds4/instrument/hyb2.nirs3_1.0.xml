@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd
+                                     http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument:hyb2.nirs3</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Near InfraRed Spectrometer for Hayabusa2</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>nirs3</alternate_id>
+                <alternate_title>NIRS3</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-08-17</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument_host:spacecraft.hyb2</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-017-0341-0</doi>
+            <reference_text>
+                T. Iwata, K. Kitazato, M. Abe, M. Ohtake, T. Arai, T. Arai, N. Hirata, T. Hiroi,
+                C. Honda, N. Imae, M. Komatsu, T. Matsunaga, M. Matsuoka, S. Matsuura, T. Nakamura,
+                A. Nakato, Y. Nakauchi, T. Osawa, H. Senshu, Y. Takagi, K. Tsumura, N. Takato,
+                S. Watanabe, M. A. Barucci, E. Palomba, M. Ozaki,
+                NIRS3: The Near Infrared Spectrometer on Hayabusa2,
+                Space Sci. Rev., 208, 317-337, 2017.
+            </reference_text>
+            <description>The NIRS3 instrument paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Near InfraRed Spectrometer (NIRS3)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Spectrometer</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <naif_instrument_id>-37300</naif_instrument_id>
+        <description>The Near Infrared Spectrometer (NIRS3) onboard the Hayabusa2 spacecraft is a point spectrometer that operates over the effective wavelength range of 1.8-3.2 micrometers with a 0.1 degree field-of-view. The 3 of the name NIRS3 comes from 3 micrometers. Around 3 micrometers, there are absorption lines of minerals with hydroxyl groups (OH). The primary goal of NIRS3 is to map the distribution of hydrated minerals on the target near-Earth asteroid (162173) Ryugu.</description>
+    </Instrument>
+</Product_Context>

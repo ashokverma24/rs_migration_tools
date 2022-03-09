@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:lace.a17a</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Apollo 17 Lunar Atmospheric Composition Experiment (LACE)</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>Apollo 17 LACE</alternate_id>
+                <alternate_title>Apollo 17 LACE</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-12-16</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created by the NASA Space Science Data Coordinated Archive.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a17a</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 17 Preliminary Science Report, NASA SP-330, published by NASA, Washington,
+                   D.C., 1973.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo Scientific Experiments Data Handbook, JSC-09166, NASA TMX-58131, August
+                   1974 (revised April 1976), in Johnson Space Center History Office.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo Scientific Experiments Data Handbook, NASA Technical Memorandum X-58131,
+                   JSC-09166, published by NASA Johnson Space Center, Houston, Texas, Aug. 1974..
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bates, J.R., W.W. Lauderdale and H. Kernaghan, ALSEP termination report, NASA
+                   Reference Publication Series, NASA-RP-1036, 162 pages, published by NASA,
+                   Washington, D.C., 1979..
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1029/1999JE001165</doi>
+            <reference_text>
+                   Davies, M. E. and T. R. Colvin, Lunar coordinates in the regions of the Apollo
+                   landers, Journal of Geophysical Research, Volume 105, Issue E8, pp. 20227-20280,
+                   2000.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1029/1999JE001165</doi>
+            <reference_text>
+                   Hoffman, J. H., Apollo 17 Lunar Atmospheric Composition Experiment Final Report,
+                   University of Texas at Dallas, NASA-CR-150946, Richardson, Texas, 1975.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Apollo 17 Lunar Atmospheric Composition Experiment</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+        <serial_number>not applicable</serial_number>
+        <description>
+              The Apollo 17 Lunar Atmospheric Composition Experiment (LACE) was a miniature magnetic
+              deflection mass spectrometer designed to study the composition and variations in the
+              lunar atmosphere. Part of the Apollo Lunar Surface Experiments Package (ALSEP), LACE
+              was deployed on the lunar surface and oriented to intercept and measure the downward
+              flux of gases.
+        </description>
+    </Instrument>
+</Product_Context>

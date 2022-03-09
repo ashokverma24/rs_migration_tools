@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.magellan</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MAGELLAN</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>VENUS_RADAR_MAPPER_(VRM)</alternate_id>
+                <alternate_title>VENUS RADAR MAPPER (VRM)</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mgn::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.venus::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Arvidson, R.E., V.R. Baker, C. Elachi, R.S. Saunders, J.A. Wood, Magellan:
+                   Initial Analysis of Venus Surface Modification, Science, V. 252, pp. 270-275,
+                   1991.
+            </reference_text>
+            <description>reference.ARVIDSON1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Arvidson, R.E., R. Greeley, M.C. Malin, R.S. Saunders, N. Izenberg, J.J. Plaut,
+                   E.R. Stofan, and M.K. Shepard, Surface Modification of Venus as Inferred from
+                   Magellan Observations of Plains, Journal of Geophysical Research, 97,
+                   13303-13317, 1992.
+            </reference_text>
+            <description>reference.ARVIDSONETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Campbell, D. B., N.J.S. Stacy, W.I. Newman, R.E. Arvidson, E.M. Jones, G.S.
+                   Musser, A.Y. Roper, and C. Schaller, Magellan Observations of Extended
+                   Impact Crater Related Features on the Surface of Venus, Journal of
+                   Geophysical Research, 97, 16249-16277, 1992
+            </reference_text>
+            <description>reference.CAMPBELLETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Campbell, B. A., and D.B. Campbell, Analysis of Volcanic Surface Morphology
+                   on Venus from Comparison of Arecibo, Magellan, and Terrestrial Airborne
+                   Radar Data, Journal of Geophysical Research, 97, 16293-16314, 1992
+            </reference_text>
+            <description>reference.CAMPBELLETAL1992B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Davies, M.E., et al., The rotation period, direction of the North Pole, and
+                   geodetic control network of Venus, J. Geophys. Res., 97 (E8), pp. 13141-13151,
+                   1992.
+            </reference_text>
+            <description>reference.DAVIESETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Ford, P. G., and G.H. Pettengill, Venus Topography and Kilometer-Scale Slopes,
+                   Journal of Geophysical Research, 97, 13103-13114, 1992
+            </reference_text>
+            <description>reference.FORD-PETTENGILL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Greeley, R., R.E. Arvidson, C. Elachi, M.A. Geringer, J.J. Plaut, R.S.
+                   Saunders, G. Schubert, E.R. Stofan, E.J.P. Thouvenot, S.D. Wall, and C.M.
+                   Weitz, Aeolian Features on Venus: Preliminary Magellan Results, Journal of
+                   Geophysical Research, 97, 13319-13345, 1992
+            </reference_text>
+            <description>reference.GREELEYETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Greeley, R., G. Schubert, D. Limonadi, K.C. Bender, W.I. Newman, P.E. Thomas,
+                   C.M. Weitz, and S.D. Wall, Wind Streaks on Venus: Clues to Atmospheric
+                   Circulation, Science, 263, 358-361, 1994
+            </reference_text>
+            <description>reference.GREELEYETAL1994</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Head, J.W., D.B. Campbell, C. Elachi, J.E. Guest, D.P. McKenzie, R.S. Saunders,
+                   G.G. Schaber, and G. Schubert, Venus Volcanism: Initial Analysis from Magellan
+                   Data, Science, Vol. 252, pp. 276-288, 1991.
+            </reference_text>
+            <description>reference.HEAD1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Head, J.W., L.S. Crumpler, J.C. Aubele, J.E. Guest, and R.S Saunders, Venus
+                   Volcanism: Classification of Volcanic Features and Structures, Associations,
+                   and Global Distribution from Magellan Data, Journal of Geophysical Research,
+                   97, 13153-13197, 1992.
+            </reference_text>
+            <description>reference.HEADETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Special issue, The Geophysics of Venus, Icarus, 112, 1-295, 1994.
+            </reference_text>
+            <description>reference.ICARUSMGN1994</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Magellan at Venus special issues, Journal of Geophysical Research, 97, Nos. E8
+                   and E10, 13063-13689 and 15921-16382, 1992.
+            </reference_text>
+            <description>reference.JGRMGN1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   W.T.K. Johnson, Magellan Imaging Radar to unveil Venus, Microwave System News,
+                   Vol. 20, No. 3, pp. 25-31, 1990.
+            </reference_text>
+            <description>reference.JOHNSON1990</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Konopliv, A.S., N.J. Borderies, P.W. Chodas, E.J. Christensen, W. Sjogren, B.G.
+                   Williams, G. Balmino, and J.P Barriot, Venus Gravity and Topography: 60th
+                   Degree and Order Model, Geophysical Research Letters, 20, 2403-2406, 1993.
+            </reference_text>
+            <description>reference.KONOPLIVETAL1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   McNamee, J.B., N.J. Borderies, and W.L. Sjogren, Venus: Global Gravity and
+                   Topography, Journal of Geophysical Research, 98, 9113-9128, 1993.
+            </reference_text>
+            <description>reference.MCNAMEEETAL1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pettengill, G.H., Magellan Venus Radar Mapper Science Experiment Plan of the
+                   Radar Investigation Group (RADIG), MIT/JPL, 1988.
+            </reference_text>
+            <description>reference.PETTENGILL1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pettengill, G.H., P.G. Ford, W.T.K. Johnson, R.K. Raney, and L.A. Soderblom,
+                   Magellan: Radar Performance and Data Products, Science, Vol. 252, pp. 260-265,
+                   1991.
+            </reference_text>
+            <description>reference.PETTENGILL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pettengill, G.H., P.G. Ford, and R.J. Wilt, Venus Surface Radiothermal
+                   Emission as Observed by Magellan, Journal of Geophysical Research, 97,
+                   13091-13102, 1992.
+            </reference_text>
+            <description>reference.PETTENGILLETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Phillips, R.J., R.E. Arvidson, J.M. Boyce, D.B. Campbell, J.E. Guest, G.G.
+                   Schaber, and L.A. Soderblom, Impact craters on Venus: Initial Analysis from
+                   Magellan, Science, Vol. 252, pp. 288-297, 1991.
+            </reference_text>
+            <description>reference.PHILLIPS1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Plaut, J. J., and R.E. Arvidson, Comparison of Goldstone and Magellan Radar
+                   Data in the Equatorial Plains of Venus, Journal of Geophysical Research,
+                   97, 16279-16291, 1992
+            </reference_text>
+            <description>reference.PLAUT-ARVIDSON1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Saunders, R.S., and G.H. Pettengill, Magellan: Mission Summary, Science, Vol.
+                   252, pp. 247-249, 1991.
+            </reference_text>
+            <description>reference.SAUNDERS1991A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Saunders, R.S., R.E. Arvidson, J.W. Head III, G.G. Schaber, E.R. Stofan, and
+                   S.C. Solomon, An Overview of Venus Geology, Science, Vol. 252, pp. 249-252,
+                   1991.
+            </reference_text>
+            <description>reference.SAUNDERS1991B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Saunders, R.S., G.H. Pettengill, R.E. Arvidson, W.L. Sjogren, W.T.K. Johnson,
+                   and L. Pieri, The Magellan Venus Radar Mapping Mission, Journal of Geophysical
+                   Research, Vol. 95, pp. 8339-8355, 1990.
+            </reference_text>
+            <description>reference.SAUNDERSETAL1990</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Saunders, R. S., A.J. Spear, P.C. Allin, R.S. Austin, A.L. Berman, R.C.
+                   Chandlee, J. Clark, A.V. deCharon, E.M. DeJong, D.G. Griffith, J.M. Gunn, S.
+                   Hensley, W.T.K. Johnson, C.E. Kirby, K.S. Leung, D.T. Lyons, G.A. Michaels, J.
+                   Miller, R.B. Morris, A.D. Morrison, R.G. Piereson, J.F. Scott, S.J. Shaffer,
+                   J.P. Slonski, E.R. Stofan, T.W. Thompson, and S.D. Wall, Magellan Mission
+                   Summary, Journal of Geophysical Research, 97, 13067-13090, 1992.
+            </reference_text>
+            <description>reference.SAUNDERSETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Schaber, G.G., R.G. Strom, H.J. Moore, L.A. Soderblom, R.L. Kirk, D.J.
+                   Chadwick, D.D. Dawson, L.R. Gaddis, J.M. Boyce, and J. Russell, Geology and
+                   Distribution of Impact Craters on Venus: What Are They Telling Us? Journal of
+                   Geophysical Research, 97, 13257-13301, 1992.
+            </reference_text>
+            <description>reference.SCHABERETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Solomon, S.C., and J.W. Head, Fundamental Issues in the Geology of Venus,
+                   Science, Vol. 252, pp. 252-260, 1991.
+            </reference_text>
+            <description>reference.SOLOMON1991A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Solomon, S.C., J.W. Head, W.M. Kaula, D. McKenzie, B. Parsons, R.J. Phillips,
+                   G. Schubert, and M. Talwani, Venus Tectonics: Initial Analysis from Magellan,
+                   Science, Vol. 252, pp. 297-312, 1991.
+            </reference_text>
+            <description>reference.SOLOMON1991B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Solomon, S.C. et al., Venus tectonics: an overview of Magellan observations, J.
+                   Geophys. Res., Vol. 97, p. 13199, 1992.
+            </reference_text>
+            <description>reference.SOLOMONETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tyler, G.L., D.B. Campbell, C. Elachi, P.G. Ford, G.H. Pettengill, and R.A.
+                   Simpson, Magellan: Electrical and Physical Properties of Venus&apos; Surface,
+                   Science, Vol. 252, pp. 265-270, 1991.
+            </reference_text>
+            <description>reference.TYLER1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tyler, G.L., R.A. Simpson, M.J. Maurer, and E. Holmann, Scattering
+                   Properties of the Venusian Surface: Preliminary Results from Magellan,
+                   Journal of Geophysical Research, 97, 13115-13139, 1992
+            </reference_text>
+            <description>reference.TYLER1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Venus Radar Mapper Project Plan, Document 630-1, JPL D-814, 157 p., Jet
+                   Propulsion Laboratory, Pasadena, Calif., 1983.
+            </reference_text>
+            <description>reference.VRMPP1983</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>MAGELLAN</name>
+        <type>Mission</type>
+        <start_date>1989-05-04</start_date>
+        <stop_date>1994-10-12</stop_date>
+
+        <description>
+ 
+    Mission Overview
+    ================
+      The Magellan spacecraft was launched from the Kennedy Space
+      Center on 4 May 1989.  The spacecraft was deployed from the
+      Shuttle cargo bay after the Shuttle achieved parking orbit.
+      Magellan, using an inertial upper stage rocket, was then placed
+      into a Type IV transfer orbit to Venus where it carried out
+      radar mapping and gravity studies starting in August 1990.  The
+      Mission has been described in many papers including two special
+      issues of the Journal of Geophysical Research [VRMPP1983;
+      SAUNDERSETAL1990; JGRMGN1992].  The radar system is also
+      described in [JOHNSON1990].
+ 
+      Magellan was powered by single degree of freedom, sun-tracking,
+      solar panels.  The spacecraft was 3-axis stabilized by reaction
+      wheels using gyros and a star sensor for attitude reference.
+      The spacecraft carried a solid rocket motor for Venus orbit
+      insertion.  A small hydrazine system was used for trajectory
+      corrections and certain attitude control functions.  Earth
+      communication with the Deep Space Network (DSN) was by means of
+      S- and X-band channels.  The high-gain antenna also functioned
+      as the SAR mapping antenna during orbital operations.
+ 
+      The interplanetary cruise phase lasted until 10 August 1990.
+      During the cruise phase there were small trajectory correction
+      maneuvers to ensure proper approach geometry.  Using the solid
+      rocket motor, the spacecraft was placed into an elliptical orbit
+      around the planet, with a periapsis latitude of approximately 10
+      degrees north, a periapsis altitude of 295 km, a period of 3.263
+      hours, and an apoapsis altitude of approximately 7762 km.
+ 
+      After orbit insertion, the radar system acquired test data.
+      Then, unexpectedly, the signal from the spacecraft was lost
+      twice.  Following an intense recovery process, commands were sent
+      to avoid further communication interruptions, and the spacecraft
+      resumed mapping operations on 15 September 1990.
+ 
+      Each mapping cycle lasted 243 days, which was the time required
+      for Venus to make one rotation under the spacecraft orbit.  The
+      first mapping cycle ended on 15 May 1991.  Typical activities
+      during a single mapping pass on Cycle 1 were as follows.  As the
+      spacecraft neared periapsis, it was oriented so the high-gain
+      antenna pointed slightly to the side of the ground track.  At a
+      true anomaly of -59 degrees, the radar was commanded on.  The
+      radar continued to take data to a true anomaly of 80 degrees and
+      then the radar was commanded off.  On the next pass the swath
+      started at -80 degrees and went to 59 degrees.  Alternating
+      north and south swaths were repeated throughout Cycle 1.
+ 
+      The range of latitudes covered by the synthetic aperture radar
+      (SAR) during Cycle 1 was 67 degrees S to 90 degrees N.  The
+      range of SAR incidence angles was from just under 20 to just
+      over 40 degrees.  The SAR data were taken at a data rate of 750
+      kilobits/second and were stored in the spacecraft tape recorder.
+      Altimeter and radiometer data were also taken when SAR data were
+      acquired.  The altimeter data were taken using a small fan beam
+      antenna at a data rate of 30 kb/s.  As the spacecraft moved away
+      from the planet toward apoapsis, the spacecraft reoriented the
+      high-gain antenna towards Earth and the stored radar data were
+      transmitted to DSN stations.  This data taking- and
+      transmitting-cycle was repeated for every orbit.  By 15 May
+      1991, the planet had been completely mapped except for the area
+      near the South Pole and a few regions which had been missed
+      because of temporary equipment failures.
+ 
+      Cycle 2 observations focused on filling the gaps in Cycle 1
+      coverage (including the south pole area), acquiring SAR data at
+      a constant incidence angle (25 degrees), and conducting a suite
+      of ad hoc experiments, including high resolution imaging and
+      radar stereo.  To observe the south pole the spacecraft was
+      rotated 180 degrees about its nadir-pointing axis so as to
+      conduct right-looking SAR observations.  Gaps in the Cycle 1
+      coverage were filled by rotating the spacecraft back to its
+      initial left-looking direction.  The orbit plane was adjusted
+      slightly at the beginning of Cycle 2 so that altimetry tracks
+      would be offset by about 10 km at the equator, bisecting the
+      orbit-to-orbit offset of altimetry tracks in Cycle 1.  The
+      spacecraft was rotated 90 deg about the HGA boresight on orbits
+      3716-3719 to obtain SAR and radiometry data with VV
+      polarization.  Radio occultation measurements were made on
+      orbits 3212-3214.
+ 
+      The principal objective of Cycle 3 was to perform radar stereo
+      mapping of the Venusian surface.  About 30 percent of the Cycle
+      1 coverage was remapped in this cycle with a different,
+      left-looking incidence angle on the surface.  Gravity data were
+      collected over Artemis Chasma.  In addition, high resolution
+      altimetry data were collected by pointing the high gain antenna
+      straight down during orbits 4919 to 4921.  Transmission of
+      acquired radar data to Earth became nearly impossible after
+      spacecraft equipment failures late in Cycle 3, and the radar was
+      not used for science purposes after that.
+ 
+      Cycle 4 was used for full (360 degree) longitudinal collection
+      of gravity data because of favorable planetary and spacecraft
+      geometry.  The cycle was extended by about ten days to
+      compensate for passage of the radio ray through the Venus
+      atmosphere during the first ten days.  To improve sensitivity to
+      gravity features, orbit periapsis was lowered on orbit 5752.
+      Radio occultation measurements were made on orbits 6369, 6370,
+      6471, and 6472.
+ 
+      The aerobraking phase of the mission was designed to change the
+      Magellan orbit from eccentric to nearly circular.  This was
+      accomplished by dropping periapsis to less than 150 km above the
+      surface and using atmospheric drag to reduce the energy in the
+      orbit.  Aerobraking ended on 3 August 1993, and periapsis was
+      boosted above the atmosphere leaving the spacecraft in an orbit
+      that was 540 km above the surface at apoapsis and 197 km above
+      the surface at periapsis.  The orbit period was 94 minutes.  The
+      spacecraft remained on its medium-gain antenna in this orbit
+      until Cycle 5 began officially on 16 August 1993.
+ 
+      During Cycles 5 and 6 the orbit was low and approximately
+      circular.  The emphasis was on collecting high-resolution
+      gravity data.  Two bistatic surface scattering experiments were
+      conducted, one on 6 October 1993 (orbits 9331, 9335, and 9336) and
+      the second on 9 November 1993 (orbits 9846-9848).
+ 
+ 
+    Mission Phases
+    ==============
+      Mission phases were defined for significant spacecraft activity
+      periods.  During orbital operations a &apos;cycle&apos; was approximately
+      the time required for Venus to rotate once under the spacecraft
+      (about 243 days).  But there were orbit adjustments and other
+      activities that made some mapping cycles not strictly contiguous
+      and slightly longer or shorter than the rotation period.
+ 
+ 
+      PRELAUNCH
+      ---------
+        The prelaunch phase extended from delivery of the spacecraft
+        to Kennedy Space Center until the start of the launch
+        countdown.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1988-09-01
+        Mission Phase Stop Time        : 1989-05-04
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      LAUNCH
+      ------
+        The launch phase extended from the start of launch countdown
+        until completion of the injection into the Earth-Venus
+        trajectory.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1989-05-04
+        Mission Phase Stop Time        : 1989-05-04
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      CRUISE
+      ------
+        The cruise phase extended from injection into the Earth-Venus
+        trajectory until 10 days before Venus orbit insertion.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1989-05-04
+        Mission Phase Stop Time        : 1990-08-01
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      ORBIT INSERTION
+      ---------------
+        The Venus orbit insertion phase extended from 10 days before
+        Venus orbit insertion until burnout of the solid rocket
+        injection motor.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1990-08-01
+        Mission Phase Stop Time        : 1990-08-10
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      ORBIT CHECKOUT
+      --------------
+        The orbit trim and checkout phase extended from burnout of the
+        solid rocket injection motor until the beginning of radar
+        mapping.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1990-08-10
+        Mission Phase Stop Time        : 1990-09-15
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      MAPPING CYCLE 1
+      ---------------
+        The first mapping cycle extended from completion of the orbit
+        trim and checkout phase until completion of one cycle of radar
+        mapping (approximately 243 days).  Mapping orbits included in
+        the first cycle were 373 through 2165.  Orbits 2159-2171 were
+        used for an interferometry test, and orbits 2172-2175 were used
+        to conduct an orbit trim maneuver (OTM).
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1990-09-15
+        Mission Phase Stop Time        : 1991-05-15
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      MAPPING CYCLE 2
+      ---------------
+        The second mapping cycle extended from completion of the first
+        mapping cycle through an additional cycle of mapping.
+        Acquisition of &apos;right-looking&apos; SAR data was emphasized.
+        Orbits included in the second cycle were 2176 through 3976.
+        Radio occultation measurements were first carried out
+        on orbits 3212-3214.  A period of battery reconditioning
+        followed completion of Cycle 2.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1991-05-16
+        Mission Phase Stop Time        : 1992-01-17
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      MAPPING CYCLE 3
+      ---------------
+        The third mapping cycle extended from completion of battery
+        reconditioning through an additional cycle of mapping
+        (approximately 243 days).  Acquisition of &apos;stereo&apos; SAR data
+        was emphasized.  Orbits included in the third cycle were
+        4031 through 5747.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1992-01-24
+        Mission Phase Stop Time        : 1992-09-14
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      MAPPING CYCLE 4
+      ---------------
+        The fourth mapping cycle extended from completion of the third
+        mapping cycle through an additional cycle of mapping.
+        Acquisition of radio tracking data for gravity studies was
+        emphasized.  Radio occultation measurements were carried out
+        on orbits 6369, 6370, 6471, and 6472.  Because of poor
+        observing geometry for gravity data collection at the
+        beginning of the cycle, this cycle was extended 10 days beyond
+        the nominal 243 days.  Orbits included within the fourth cycle
+        were 5748 through 7626.  Periapsis was lowered on orbit 5752
+        to improve sensitivity to gravity features in Cycle 4.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1992-09-14
+        Mission Phase Stop Time        : 1993-05-25
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      AEROBRAKING
+      -----------
+        The aerobraking phase extended from completion of the fourth
+        mapping cycle through achievement of a near-circular orbit.
+        Circularization was achieved more quickly than expected; the
+        first gravity data collection in the circular orbit was not
+        scheduled until 11 days later.  Orbits included within the
+        aerobraking phase were 7627 through 8392.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1993-05-26
+        Mission Phase Stop Time        : 1993-08-05
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      MAPPING CYCLE 5
+      ---------------
+        The fifth mapping cycle extended from completion of the
+        aerobraking phase through an additional cycle of mapping
+        (approximately 243 days).  Acquisition of radio tracking data
+        for gravity studies was emphasized.  The first orbit in the
+        fifth cycle was orbit 8393, and the last was orbit 12248.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1993-08-16
+        Mission Phase Stop Time        : 1994-04-15
+        Spacecraft Operations Type     : ORBITER
+ 
+ 
+      MAPPING CYCLE 6
+      ---------------
+        The sixth mapping cycle extended from completion of the fifth
+        mapping cycle through an additional cycle of mapping
+        (approximately 180 days).  Acquisition of radio tracking data
+        for gravity studies was emphasized.  The first orbit in the
+        sixth cycle was orbit 12249, and the last was orbit 15032.
+        The sixth cycle ended when radio contact was lost as the
+        spacecraft entered the atmosphere and was destroyed in a
+        &apos;terminal windmill&apos; experiment.
+ 
+        Spacecraft Id                  : MGN
+        Target Name                    : VENUS
+        Mission Phase Start Time       : 1994-04-16
+        Mission Phase Stop Time        : 1994-10-12
+        Spacecraft Operations Type     : ORBITER
+        </description>
+    </Investigation>
+</Product_Context>

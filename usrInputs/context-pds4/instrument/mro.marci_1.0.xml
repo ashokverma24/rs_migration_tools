@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:marci.mro</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARS COLOR IMAGER for MRO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mro::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Malin, M.C., J.F. Bell III, W. Calvin, R.T. Clancy, R.M. Haberle, P.B. James,
+                   S.W. Lee, P.C. Thomas, and M.A. Caplinger, Mars Color Imager (MARCI) on the
+                   Mars Climate Orbiter, J. Geophys. Res., 106, E8, 17651-17672,
+                   doi:10.1029/1999JE001145, 2001.
+            </reference_text>
+            <description>reference.MALINETAL2001</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MARS COLOR IMAGER</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+The instrument overview provided here is the summary description from
+the EDR SIS (in the document directory).  [MALINETAL2001] describes
+the Mars Climate Orbiter MARCI; currently there is no published MRO-
+MARCI paper, but a paper describing the investigation is being written
+and may be included on future archive volumes.
+ 
+  Instrument Overview
+  ===================
+    MARCI is a framing camera with a 1024x1024 pixel interline
+    transfer CCD (Kodak KAI-1001) with 9x9 micron pixels.  MARCI has
+    two  all-refractive 180-degree &apos;fisheye&apos; lenses, one optimized for
+    the visible and near-IR and one for the UV bands.  The beams from
+    these two lenses are brought to the CCD  through  a prism.  A
+    color filter array with seven dif- ferent bandpasses (five
+    visible/near-IR and two UV) is directly  bonded to the CCD.  A
+    typical image consists of seven &apos;framelets&apos;, each 1024 pixels wide
+    and 16 pixels high, in each of these bandpasses.  The visible
+    bands can be optionally summed; the UV bands are always summed
+    8x8.  The visible resolution from 300 km is about 1 km/pixel at
+    nadir.
+ 
+    The core of the MARCI electronics is a Motorola 56166 DSP, which
+    interfaces to the spacecraft, generates the CCD clocks, and
+    received digitized pixels from an Analog Devices AD1672 analog-to-
+    digital converter.  Both lossless and lossy image data compression
+    can be applied by software running in the spacecraft computer.
+ 
+    MARCI was originally designed for the Mars Climate Orbiter
+    mission.  For MRO, a separate subsystem, the MARCI Interface
+    Adapter or MIA, was designed and built to translate the MRO
+    command/data protocol into a form that could be interpreted by the
+    heritage MARCI hardware.
+
+        </description>
+    </Instrument>
+</Product_Context>

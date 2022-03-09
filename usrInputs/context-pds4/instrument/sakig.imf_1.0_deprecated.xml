@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:imf.sakig</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>INTERPLANETARY MAGNETIC FIELD EXPERIMENT for SAKIG</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.sakig::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reinhard, R and B. Battrick (eds), &apos;Space Missions to Halley&apos;s Comet&apos;, European
+                   Space Agency ESA SP-1066, ESA Pub Div, Moordwijk, Netherlands, 1986.
+            </reference_text>
+            <description>reference.ESA-SP1066</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   &apos;Encounters with Comet Halley, The first results&apos;, Nature, Volume 321, No.
+                   6067, 15 May 1986.
+            </reference_text>
+            <description>reference.NATURE321</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>INTERPLANETARY MAGNETIC FIELD EXPERIMENT</name>
+        <type>Magnetometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    Instrument Overview
+    ===================
+      The Interplanetary Magnetic-Field Experiment is
+      designed to study macroscopic and microscopic
+      structures in the helio-magnetosphere and in the
+      cometary magnetosphere, as well as large-amplitude
+      low-frequency hydromagnetic waves in the solar
+      wind.  The data gathered will be compared with the
+      configuration, brightness and variations of
+      Halley&apos;s corona, which will be imaged by the UV
+      camera on Planet-A.  The IMF is to be measured by a
+      triaxial, ring-core, fluxgate magnetometer sensor
+      mounted on a 2 m-long boom.  This boom was extended
+      soon after injection of the spacecraft into orbit.
+ 
+      From a block diagram of the IMF instrument, the
+      dynamic ranges of which are +/- 64 nT and +/- 128
+      nT.  The table below summarizes the instrument&apos;s
+      sensitivity, resolution, bit rate, and sampling
+      rate.  The dynamic range and conversion output will
+      be selected by ground command.
+ 
+      During the initial period of the mission, when the
+      telemetry signals are strong enough, the
+      high-bit-rate data will be used for the study of
+      the ULF hydromagnetic waves.  The low-bit-rate data
+      will be used while the spacecraft is closer to
+      Comet Halley to study the macroscopic structure of
+      the helio-magnetosphere and the cometary
+      magnetosphere.
+ 
+_______________________________________________________________________
+Table. Characteristics of the Interplanetary Magnetic-Field Instrument
+ 
+            Sensitivity                                Sampling rate (s)
+ 
+Dynamic                      Resolution  Telemetry bit           Format-3
+range (nT)  Output (bit)     (nT/LSB)    rate (bit/s)  Format-1     &amp; 4
+-----------------------------------------------------------------------
+                                         h.b.r.        1/8       1/16
++/-  64     12 (high gain)  0.03125      l.b.r.        4         2
+(Narrow)    8 (low gain)    0.5          h.b.r.        1/16      1/32
+                                         l.b.r.        2         1
+-----------------------------------------------------------------------
+                                         h.b.r.        1/8       1/16
++/-  128    12 (high gain)  0.0625       l.b.r.        4         2
+(wide)       8 (low gain)   1.0          h.b.r.        1/16      1/32
+                                         l.b.r.        2         1
+-----------------------------------------------------------------------
+h.b.r. =  high bit rate (2048 bit/s)   l.b.r.  =  low bit rate (64 bit/s)
+ 
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

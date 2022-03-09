@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet01_sgr</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Arkab Prior</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Beta Sagittarii</alternate_title></Alias>
+      <Alias><alternate_title>Beta Sgr</alternate_title></Alias>
+      <Alias><alternate_title>Beta1 Sagittarii</alternate_title></Alias>
+      <Alias><alternate_title>Beta1 Sagittarii A</alternate_title></Alias>
+      <Alias><alternate_title>Beta1 Sgr A</alternate_title></Alias>
+      <Alias><alternate_title>bet01 Sgr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J19226-4428A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-44 13277</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 0 18125</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-44 9548</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-44 13277 21</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 1502</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 26703</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 11812</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00181454J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00181454A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 07943-02105</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 181454</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 95241</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 95241</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 7337</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 19154-4439 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J19223828-4427326</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 4289</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 325041</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2774</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 229646</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 36026</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7943-2105-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 16358</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 23680</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100181454 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100181454</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J19226-4428A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 16640</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 6664464851575462016</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Arkab Prior</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 19 hours 22 minutes 38.2988181587 seconds
+Declination, ICRS coord, ep=J2000: -44 degrees 27 minutes 32.347455419 seconds
+    </description>
+  </Target>
+</Product_Context>

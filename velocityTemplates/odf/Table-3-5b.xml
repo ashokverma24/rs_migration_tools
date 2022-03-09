@@ -1,0 +1,110 @@
+             <Table_Binary>
+                   <name>ODF Clock Offsets Group Data</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                                The Clock Offsets Group
+                                is usually the 5th of several groups of records in an
+                                Orbit Data File (ODF).  It contains information of
+                                clock offsets.  The Clock Offsets Group Header
+                                is the first record in the Clock Offsets Group.  It is
+                                one 36-byte record and is followed by 36-byte Clock
+                                Offsets Group data records.  The Clock Offsets
+                                Group may be omitted from an ODF.  
+                   </description>
+                   <Record_Binary>
+                         <fields>9</fields>
+                         <groups>0</groups>
+                         <record_length unit="byte">36</record_length> 
+                         <Field_Binary>
+                               <name>Item 1</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 1: Start Time, integer part
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Item 2</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">5</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 2: Start Time, fractional part (10^-9)
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Item 3</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">9</field_location>
+                               <data_type>SignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 3: Clock Offset, integer part (two's complement)
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Item 4</name>
+                               <field_number>4</field_number>
+                               <field_location unit="byte">13</field_location>
+                               <data_type>SignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 4: Clock Offset, fractional part (two's complement, 10^-9)
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Item 5</name>
+                               <field_number>5</field_number>
+                               <field_location unit="byte">17</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 5: Primary Station ID Number
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Item 6</name>
+                               <field_number>6</field_number>
+                               <field_location unit="byte">21</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 6: Secondary Station ID Number
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Item 7</name>
+                               <field_number>7</field_number>
+                               <field_location unit="byte">25</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 7: 0 (spare)
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Item 8</name>
+                               <field_number>8</field_number>
+                               <field_location unit="byte">29</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 8: 0 (reserved for End Time, integer part)
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Item 9</name>
+                               <field_number>9</field_number>
+                               <field_location unit="byte">33</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 9: 0 (reserved for End Time, fractional part)
+                               </description>
+                         </Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>

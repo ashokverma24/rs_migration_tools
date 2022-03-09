@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.infrared_astronomical_satellite</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>INFRARED ASTRONOMICAL SATELLITE</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>IRAS</alternate_id>
+                <alternate_title>IRAS</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.iras::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:dust.dust::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Beichman, C.A., G. Neugebauer, H.J. Habing, P.E. Clegg, and T.J. Chester,
+                   1988, Infrared Astronomical Satellite Catalog and Atlases, Volume 1,
+                   Explanatory Supplement, NASA RP-1190.
+            </reference_text>
+            <description>reference.BEICHMANETAL1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Neugebauer, G., H.J. Habing, R. van Duinen, H.H. Aumann, B. Baud, C.A.
+                   Beichman, D.A. Beintema, N. Boggess, P.E. Clegg, T. de Jong, J.P. Emerson, T.N.
+                   Gautier, F.C. Gillett, S. Harris, M.G. Hauser, J.R. Houck, R.E. Jennings, F.J.
+                   Low, P.L. Marsden, G. Miley, F.M. Olnon, S.R. Pottasch, E. Raimond, M.
+                   Rowan-Robinson, B.T. Soifer, R.G. Walker, P.R. Wesselius, and E. Young, The
+                   Infrared Astronomical Satellite (IRAS) Mission, Astrophysica Journal 278,
+                   L1-L6, 1984.
+            </reference_text>
+            <description>reference.NEUGEBAUERETAL1984</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Rowan-Robinson, M., P.E. Clegg, C.A. Beichman, G. Neugebauer, B.T. Soifer,
+                   H.H. Aumann, D.A. Beintema, N. Boggess, J.P. Emerson, T.N. Gautier, F.C.
+                   Gillett, M.G. Hauser, J.R. Houck, F.J. Low, and R.G. Walker, 1984, The
+                   IRAS minisurvey, AJ, 278, L7-L10.
+            </reference_text>
+            <description>reference.ROWAN-ROBINSETAL1984</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   YOUNG, E.T., G. NEUGEBAUER, E.L. Kopan, R.D. Benson, T.P. Conrow, W.L.
+                   Rice, and D.T. Gregorich, A User&apos;s Guide to IRAS Pointed Observation
+                   Products, IPAC Preprint No. PRE-008N, 1985.
+            </reference_text>
+            <description>reference.YOUNGETAL1985</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>INFRARED ASTRONOMICAL SATELLITE</name>
+        <type>Mission</type>
+        <start_date>1983-01-26</start_date>
+        <stop_date>1983-11-23</stop_date>
+
+        <description>
+ 
+ 
+    Mission Overview
+    ================
+      IRAS was launched on January 26, 1983 on a Delta rocket from
+      Vandenburg Air Force Base in California at 02h 17m Greenwich
+      Mean Time.  The project was initiated in 1975 as a joint
+      program of the United States, the Netherlands, and the United
+      Kingdom.  The satellite consisted of two main parts, the
+      spacecraft and the telescope system.  The telescope system
+      comprised the upper part of the satellite and was composed of a
+      two mirror, Ritchey-Chretien telescope mounted within a
+      toroidal superfluid helium tank, which in turn was mounted
+      within the evacuated main shell.  The optical system was
+      protected from contamination before launch and during the first
+      week of the mission by an aperture cover cooled with
+      supercritical helium.  After the cover was ejected, the
+      sunshade limited heat flow to the aperture by blocking direct
+      solar radiation and reflecting away terrestrial infrared
+      radiation.  The telescope was cooled by contact with the
+      superfluid helium tank to temperatures ranging from 2 to 5 K.
+      The surfaces of the sunshade which could be viewed by the
+      telescope aperture were cooled by a three-stage radiator to
+      about 95 K.
+ 
+      IRAS was succesfully placed into its planned 900 km altitude,
+      99 degree inclination Sun-synchronous polar orbit with an orbital
+      period of 103 minutes.  With the telescope pointing radially outwards
+      from the Earth and perpendicular to the Sun vector, no Earth or
+      sunlight could enter the telescope and all ecliptic latitudes
+      would be swept out during one orbit while, as the line of nodes
+      precessed at a rate of about 1 degree per day to remain
+      perpendicular to the Sun vector, all ecliptic longitudes would
+      be covered in a period of 6 months.  To allow mission
+      flexibility, the attitude control system and telescope were
+      designed to allow pointing away from the local vertical.
+ 
+      The satellite attitude was controlled by three orthogonal
+      reaction wheels; excess momentum was dumped via magnetic coils
+      to the Earth&apos;s magnetic field as necessary.  The attitude, and
+      changes in attitude, were sensed by a combination of a horizon
+      sensor, a sun-sensor and three orthogonal gyros.  The z-axis
+      gyro was used in all modes of control and was duplicated to
+      provide a redundant backup.
+ 
+      The telescope was constrained to point no further than 120
+      degrees away from the Sun, since at greater angles the fine Sun
+      sensor could no longer see the Sun well enough to function.  It
+      was constrained also to angles no closer than 60 degrees
+      towards the Sun in order to avoid solar radiation falling into
+      the inside of the sunshade.  A third pointing constraint arose
+      from prohibiting radiation from the Earth from falling upon the
+      inside of the sunshield or the top of the telescope baffle
+      system.
+ 
+      Infrared radiation from the Moon and the planet Jupiter was
+      sufficiently strong to affect the performance of the detectors
+      for a significant time after being scanned.  An avoidance
+      radius of 1 degree from Jupiter was set within which the
+      telescope did not point.  For the Moon, an avoidance radius of
+      25 degrees was used during the first two months of the survey,
+      but was lowered to 20 degrees after April 3 except between
+      August 26 and September 9 where it was lowered to 13 degrees.
+      At 25 degrees significant &apos;Moon glints&apos; were entered into the
+      data stream.  Diffraction spikes from Jupiter were also
+      introduced into the data stream.
+ 
+      Another constraint was a region of high proton density known as
+      the South Atlantic Anomaly (SAA).  Proton hits in the detectors
+      when passing through the SAA increased the noise to such an
+      extent that it was impossible to continue observations.  Data
+      usually were not taken whenever the satellite entered a
+      geographically fixed flux/energy contour shown in the IRAS
+      Explanatory Supplement.  This contour was mapped out during the
+      Presurvey portion of the mission.  On May 9, 1983, this
+      avoidance contour was reduced slightly.
+ 
+      Every 10-14 hours, as the satellite passed over its ground
+      station at Chilton, England, observations would cease for
+      typically 10 minutes as data from the preceding 10-14 hour
+      observation period were being transmitted from the on-board
+      tape recorders to the ground and the commands for the next
+      10-14 hours of observations were being sent to the satellite.
+ 
+      For more information see Neugebauer et al. 1984 [NEUGEBAUERETAL1984].
+ 
+ 
+    Mission Phases
+    ==============
+ 
+ 
+      PRESURVEY
+      ---------
+        After launch, numerous checks were required to verify the
+        health and safety of the satellite and to determine the best
+        modes of operation.  The cooled aperture cover was kept on
+        for the first six days to allow sufficient time for
+        contaminants carried up with the satellite to outgas and
+        disperse so that they would not freeze on the cold optics
+        when the cover was ejected.  The eight days after cover
+        ejection were used to test those aspects of the instrument
+        that could not be tested with the cover on.
+ 
+   SPACECRAFT_ID                  : IRAS
+   TARGET_NAME                    : SKY
+   MISSION_PHASE_START_TIME       : 1983-01-26
+   MISSION_PHASE_STOP_TIME        : 1983-02-10
+   SPACECRAFT_OPERATIONS_TYPE     : TEST
+ 
+      MINISURVEY
+      ----------
+        The Presurvey period was followed by the repeated surveying of
+        a limited region of sky to verify the survey strategy and the
+        data processing facilities.  The scans of the minisurvey were
+        hand-tailored for maximum efficiency coverage.  The area of the
+        sky chosen, approximately 900 square degrees, consisted of two
+        strips of sky centered approximately on ecliptic longitudes 60
+        and 252 degrees.  The region of the sky was that area available
+        immediately after cover ejection.  No part of the sky above
+        galactic latitude 40 degrees was scanned.  Part of the
+        minisurvey area was covered with four hours-confirming sets of
+        scans to provide a basis for testing the processing of the
+        survey.  Minisurvey scans included observations during SOPs 29,
+        30, 33, 34, 37, 38, 41, and 43.  More information on the
+        minisurvey may be found in the IRAS Explanatory Supplement
+        by Beichman et al. 1988 [BEICHMANETAL1988] and the IRAS
+        Minisurvey by Rowan-Robinson et al. 1984 [ROWAN-ROBINSETAL1984].
+ 
+   SPACECRAFT_ID                  : IRAS
+   TARGET_NAME                    : SKY
+   MISSION_PHASE_START_TIME       : 1983-02-09
+   MISSION_PHASE_STOP_TIME        : 1983-02-16
+   SPACECRAFT_OPERATIONS_TYPE     : TEST
+ 
+      SURVEY
+      ------
+        During this period, the strategy was to acquire four
+        coverages (two sets of hours-confirming coverages, HCON 1
+        and HCON 2) of the sky.  This was achieved by defining an area
+        of sky (&apos;lune&apos;) between two ecliptic meridians 30 degrees
+        apart which was &apos;painted&apos; by survey scans, one after another,
+        as they passed through the viewing window of the telescope.
+        Using two gyros the spacecraft scan rate was adjusted so that
+        the sky was scanned at a rate of 3.85 arcminutes per second,
+        independent of the solar elongation angle.  The first scan in
+        a lune was placed so that it crossed the ecliptic at the
+        lower longitude boundary of the lune.  Successive scans were
+        laid down at increasing ecliptic longitudes, each one shifted
+        over by 14.23 arcminutes, that is by half the width of the
+        focal plane minus a safety margin.  The overlap ensured that
+        measurements of the same area of sky were repeated within a
+        few orbits (for hours-confirmation) and by generally
+        restricting scans to be within 80 to 100 degrees solar
+        elongation, the curvature of scans would not be too severe.
+        The criterion for hours-confirmation was that the
+        hours-confirming scan had to be made within 34-38 hours of
+        each other.  After a lune was filled, a second lune in the
+        same hemisphere was started.  It overlapped half of the first
+        lune, ensuring that another hour&apos;s-confirming set of scans
+        was repeated after about one to two weeks, thus providing the
+        required repetition on the time scale of 7 to 11 days.
+        During this phase, 95 percent of the sky was covered.
+        See Beichman et al. 1988  [BEICHMANETAL1988].
+ 
+   SPACECRAFT_ID                  : IRAS
+   TARGET_NAME                    : SKY
+   MISSION_PHASE_START_TIME       : 1983-02-10
+   MISSION_PHASE_STOP_TIME        : 1983-08-26
+   SPACECRAFT_OPERATIONS_TYPE     : STRIP SCAN
+ 
+      SURVEY
+      ------
+        A third set of hours-confirming coverage of the sky (HCON 3)
+        was undertaken.  Half circles rather than lunes were used
+        during this period, beginning with solar elongations near 60
+        and 120 degrees in general, and working towards solar
+        elongations nearer 90 degrees on succeeding scans.  During
+        this mission phase, 72 percent of the sky was covered.
+        See Beichman et al. 1988 [BEICHMANETAL1988].
+ 
+   SPACECRAFT_ID                  : IRAS
+   TARGET_NAME                    : SKY
+   MISSION_PHASE_START_TIME       : 1983-08-26
+   MISSION_PHASE_STOP_TIME        : 1983-11-22
+   SPACECRAFT_OPERATIONS_TYPE     : STRIP SCAN
+ 
+      POINTED OBSERVATIONS
+      --------------------
+        Roughly 40 percent of the IRAS mission time was devoted to
+        pointed observations of selected objects.  Nearly 10,000 of
+        these observations were made of virtually every kind of
+        astronomical object.  Raster scans were made of these objects
+        with scan lengths ranging between 1.6 and 6 degrees,
+        different numbers of scan legs, different sizes of cross-scan
+        steps between legs, and different scan rates.
+        See Young et al. 1985 [YOUNGETAL1985].
+ 
+   SPACECRAFT_ID                  : IRAS
+   TARGET_NAME                    : POINT SOURCES
+   MISSION_PHASE_START_TIME       : 1983-02-10
+   MISSION_PHASE_STOP_TIME        : 1983-11-22
+   SPACECRAFT_OPERATIONS_TYPE     : RASTER SCAN
+        </description>
+    </Investigation>
+</Product_Context>

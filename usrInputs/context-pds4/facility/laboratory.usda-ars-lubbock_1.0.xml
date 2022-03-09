@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:laboratory.usda-ars-lubbock</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Wind Erosion and Water Conservation Research Unit, Cropping Systems Research Laboratory, Agricultural Research Service, 
+            United States Department of Agriculture, Lubbock, TX</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-02-20</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                 Initial creation of the context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:usda-ars-lubbock.usda-ars_wt</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1029/2004GL019485</doi>
+            <reference_text>Ravi, S., P. D'Odorico, T.M. Over, and T.M. Zobeck, (2007), On the effect of air humidity on soil 
+            susceptibility to wind erosion: The case of air-dry soils, Geophys. Res. Lett., 31, L09501.</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Facility>
+        <name>Wind Erosion and Water Conservation Research Unit, Cropping Systems Research Laboratory, Agricultural Research Service, 
+            United States Department of Agriculture, Lubbock, TX</name>
+        <type>Laboratory</type>
+        <description>
+            United States Department of Agriculture, Agricultural Research Service, Cropping Systems Research Laboratory, Wind Erosion and
+            Water Conservation Research Unit, Lubbock, TX
+        </description>
+    </Facility>
+</Product_Context>

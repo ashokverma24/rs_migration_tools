@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:tg.a17l</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>TRAVERSE GRAVIMETER for A17L</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a17l::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 17 Preliminary Science Report, NASA SP-330, published by NASA,
+                   Washington, D.C., 1973.
+            </reference_text>
+            <description>reference.APOLLO17A1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 17 mission - lunar roving vehicle traverse gravimeter experiment motion
+                   sensitivity test, NASA Johnson Space Center, JSC-07948, Houston, Texas, Dec.
+                   1973.
+            </reference_text>
+            <description>reference.APOLLO17B1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo Scientific Experiments Data Handbook, NASA Technical Memorandum X-58131,
+                   JSC-09166, published by NASA Johnson Space Center, Houston, Texas, Aug. 1974.
+            </reference_text>
+            <description>reference.APOLLOSEDH1974</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Buck, S. W., J. S. Eterno, G. Mamon, R. T. Martorana, R. G. Scott, and W. A.
+                   Vachon, Traverse gravimeter experiment final report, R-739, Charles Stark
+                   Draper Laboratory, Massechussetts Institute of Technology, Cambridge,
+                   Massechussetts, August 1973.
+            </reference_text>
+            <description>reference.BUCKETAL1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mamon, G., Traverse gravimeter for the lunar surface, E-2603, Charles Stark
+                   Draper Laboratory, Massechussetts Institute of Technology, Cambridge,
+                   Massechussetts, August 1971.
+            </reference_text>
+            <description>reference.MAMON1971</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Talwani, M., G. Thompson, B. Dent, H.-G. Kahle, and S. Buck, Traverse
+                   gravimeter experiment, In Apollo 17 Preliminary Science Report, NASA SP-330,
+                   published by NASA, Washington, D.C., 1973.
+            </reference_text>
+            <description>reference.TALWANIETAL1973</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>TRAVERSE GRAVIMETER</name>
+        <type>Atmospheric Sciences</type> <!-- RChen/EN was Accelerometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    The Apollo 17 Traverse Gravimeter was a self-contained, self-leveling
+    lunar gravimeter powered by an internal battery and capable of
+    resolving gravitational acceleration differences with an effective
+    accuracy of 0.5 to 1 milligal (1 gal = 0.01 meter/second^2) on the
+    Moon.  The primary objective of the Traverse Gravimeter (TG)
+    Experiment (Apollo Experiment S-199) was to make a high-accuracy
+    relative survey of the lunar gravitational field in the Apollo 17
+    landing area and to use these measurements to obtain information about
+    the geological substructure.  A secondary goal was to make an
+    Earth-Moon gravity tie. Specific objectives were to measure the value
+    of gravity, relative to the value at a lunar base station, at selected
+    known locations along the lunar traverse and to measure the value of
+    gravity at a known point on the lunar surface (base station), relative
+    to the gravity at a known point on Earth.
+ 
+    The Traverse Gravimeter instrument package was rectangular in shape
+    with a cylindrical surface at the front. It was approximately 51-cm
+    high, 28-cm wide, and 25-cm deep, with a mass of 12.7 kg.  The package
+    was insulated by a multilayer blanket for thermal protection.  A
+    folding handle at the top of the instrument was used for hand carrying
+    and for securing the instrument to the Lunar Roving Vehicle (LRV).  It
+    had three footpads at the base for surface operations. On top of the
+    case was a nine digit display.  A radiator for thermal control was
+    also located at the top of the case.  Inside the case was a 7.5-volt,
+    375- watt-hour battery pack and a two-axis gimbal system which
+    contained the gravity sensor housed in a thermally protected and
+    evacuated two-stage oven assembly, comprising an intermediate and a
+    precision oven.  The oven assembly was enclosed in an electronic frame
+    and ceramic insulating ball supported by the gimbal assembly, which
+    was attached through bearings to the housing.  Pendulums acted as
+    level sensors, supplying signals to stepper motors and a gear train
+    which position the gimbal assembly so that the gravity sensor is
+    within 3 minutes of arc of vertical.  The ovens maintained a constant
+    temperature (within 0.01 K) near 322 K using electric heaters and a
+    resistance thermometer.
+ 
+    The gravity sensor was a Bosch Arma D4E vibrating string accelerometer.
+    Each of the two strings is energized and generates continuous vibrations
+    with a frequency dependent on the local gravity.  The difference between
+    the frequencies is a simple function of gravity.  The apparatus is a
+    cylinder with ring magnets at either end.  At the center of the cylinder
+    is a soft spring attached to cylindrical masses above and below, the
+    masses are attached to the insides of the cylinder by cross supports.
+    At the center of each mass the electrically conducting vibrating strings
+    are attached, passing through the ring magnets before extending out each
+    end of the cylinder.  When a voltage is applied across the string, the
+    resulting current, running through the ring magnetic field, caused
+    motion in the string and induced a voltage.  The voltage was regenerated
+    through a stable high-gain amplifier and fed back to the string.  The
+    signal was fed to a phase-lock loop module to determine the difference
+    frequency.  The difference frequency was measured using a precision
+    125-kHz clock.
+ 
+    The TG could be operated mounted on a pallet on the back of the LVR
+    or placed directly on the surface.  The vertical axis of the package
+    had to be within 15 degrees of vertical to make a measurement and
+    required about 3 minutes of undisturbed operation. For a normal
+    measurement, the instrument would level itself and then measure the
+    difference frequency of the strings.  The number of counts of the
+    precision clock, from which the frequency can be determined, would be
+    given as the first seven digits on the display.  The eighth and ninth
+    digit were for thermal monitoring.  For calibration, the gravimeter
+    could be inverted and a &apos;bias&apos; measurement would be made.
+ 
+    In all, 26 measurements were made over the course of three extra
+    vehicular activities (EVAs).  The first measurement on each EVA was a
+    thermal monitor reading at the Lunar Module (LM) site to check the
+    thermal condition of the gravimeter.  Two inverted bias readings were
+    made, one near the beginning of the campaign and one as the last
+    measurement.  The instrument was disturbed during reading 8, this
+    reading is considered to be unreliable.  Following the reading at
+    Station 2 on the second EVA, which was particularly high, the
+    principal investigator requested a reading be made between Stations 2
+    and 3, this is referred to as reading 2a.  During the traverse from
+    Station 9 to the LRV on the third EVA, the pallet on which the
+    traverse gravimeter was mounted apparently swung loose and banged
+    against the LRV, potentially shocking the instrument.  Therefore, the
+    last two measurements, 25 and 26, made at the LM site after this
+    incident, are considered to be of suspect reliability.  A total of
+    eight gravity readings were made at the LM site and 13 were made at
+    other stations along the traverses, along with the three thermal
+    readings and two bias measurements.
+ 
+    Three pairs of readings were made at the same position, the first on
+    the rover and the second on the surface (readings 2 and 3, 21 and 22,
+    23 and 24).  These showed a decrease of roughly 6 milligal on the
+    ground compared to on the rover.  One possibility, suggested by
+    post-mission engineering tests on the flight spare and engineering
+    prototype, was that a one way bias shift could have been induced by
+    moving the gravimeter.  If the shift was unrecoverable it would result
+    in a &apos;staircase&apos; effect, with the bias (i.e. the effective baseline
+    reading) increasing each time the gravimeter was transferred from the
+    rover to the ground.
+ 
+    For more information, see the Apollo 17 Preliminary Science Report
+    [APOLLO17A1973], the Apollo 17 Traverse Gravimeter Motion Sensitivity
+    Test Report [APOLLO17B1973], the Apollo Scientific Experiments Data
+    Handbook [APOLLOSEDH1974], Buck, et al. (1973) [BUCKETAL1973], Mamon
+    (1971) [MAMON1971], and Talwani, et al. (1973) [TALWANIETAL1973].
+ 
+  This instrument description was provided by the NASA National Space
+  Science Data Center.
+
+        </description>
+    </Instrument>
+</Product_Context>

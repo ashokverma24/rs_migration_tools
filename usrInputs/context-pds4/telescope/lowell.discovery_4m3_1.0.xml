@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:lowell.discovery_4m3</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Lowell Discovery Telescope (LDT)</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_title>Discovery Channel Telescope (DCT)</alternate_title>
+                <comment>
+                    This telescope was originally funded as a partnership with the Discovery
+                    Channel (Discovery, Inc.). When ownership was tranferred wholly to Lowell
+                    Observatory, the name of the telescope was changed in February 2020 to 
+                    "Lowell Discovery Telescope".
+                </comment>
+            </Alias>
+        </Alias_List>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-13</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created by A.C.Raugh from information downloaded from the Lowell Observatory 
+                    website on 2021-08-13.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.lowell</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:lowell.discovery_4m3.lmi</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Telescope>
+        <aperture unit="m">4.3</aperture>
+        <description>
+            The Lowell Discovery Telescope, formerly known as the "Discovery Channel Telescope (DCT)",
+            is a 4.3m diameter telescope with an effective focal length of 26.04 m and an f/ratio of 
+            6.2. The LDT instrument cube allows simultaneous attachment of five instruments to the
+            telescope.
+        </description>
+    </Telescope>
+</Product_Context>

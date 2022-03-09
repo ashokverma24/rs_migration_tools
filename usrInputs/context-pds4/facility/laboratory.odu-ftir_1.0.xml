@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:laboratory.odu-ftir</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Old Dominion University Fourier Transform Infrared Spectrometer Laboratory</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-26</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                 Initial creation of the context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:multi-host.brukifs125hr_ftspec</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+            <comment>This instrument at this lab is a Bruker IFS 120HR Fourier Transform Spectrometer that has been internally upgraded to the equivalent of a Bruker IFS 125HR model.</comment>
+        </Internal_Reference>
+    </Reference_List>
+    <Facility>
+        <name>Old Dominion University Fourier Transform Spectrometer Laboratory</name>
+        <type>Laboratory</type>
+        <description>
+            Old Dominion University Fourier Transform Spectrometer Laboratory, under the direction of Dr. Peter Bernath, focuses on molecular spectroscopy and atmospheric remote sensing applications.
+            The laboratory uses a Bruker FTS 120/125HR Fourier transform spectrometer to assess pure and gas-broadened samples of hydrocarbon compounds useful in comparing to atmospheric chemistry
+            of Jupiter, Saturn, Saturn's moon Titan, and exoplanets. The spectrometer currently used is Bruker IFS 120HR hardware (“bench”) with Bruker IFS 125HR  electronics (i.e., our 120 was 
+            upgraded to a 125). The maximum optical path difference of the Fourier transform spectrometer is 4.2 m. We used a 20 cm long cold cell (25 C to about -50 C) with KBr windows in the sample 
+            compartment. The cell was cooled with a recirculating chiller that used ethanol. For these measurements in the 3 micron region a CaF2 beamsplitter and liquid N2 cooled InSb detector were used.
+            
+            The laboratory is located on the campus of Old Dominion University, Department of Chemistry and Biochemsitry, Chemistry Building, 4501 Elkhorn Ave., Norfolk, Virginia, 23529, USA. 
+        </description>
+    </Facility>
+</Product_Context>

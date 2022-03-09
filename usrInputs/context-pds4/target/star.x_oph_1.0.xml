@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.x_oph</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>X Ophiuchi</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>X Oph</alternate_title></Alias>
+      <Alias><alternate_title>Variable Star X Oph</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>X Oph</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HU 198</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HU 198AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 11524 AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+08 2342</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASAS J183821+0850.0</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+08 3780</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J18384+0850AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DO 4964</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 25485</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 11092</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00172171J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 01025-01976</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 172171</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 91389</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 91389</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 7002</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 18359+0847</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +10366</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J18382111+0850030</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 4294</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 4294.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 166252</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 2213</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 123744</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 34160</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 1025-1976-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J18384+0850AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 15703</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 8 8704</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 1833+08</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 4479466244818808832</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>X Ophiuchi</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 18 hours 38 minutes 21.1317164384 seconds
+Declination, ICRS coord, ep=J2000: +08 degrees 50 minutes 02.799217980 seconds
+    </description>
+  </Target>
+</Product_Context>

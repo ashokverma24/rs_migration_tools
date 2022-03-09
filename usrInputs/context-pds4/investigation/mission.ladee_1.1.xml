@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1201.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1
+            https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1201.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:investigation:mission.ladee</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Lunar Atmosphere and Dust Environment Explorer (LADEE)</title>
+    <information_model_version>1.2.0.1</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias>
+        <alternate_id>LADEE</alternate_id>
+      </Alias>
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-07-19</modification_date>
+        <version_id>1.1</version_id>
+        <description>Corrected URLs to schema and schematron
+        </description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2014-06-29</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial version merged from instruments' own versions
+          and EN's legacy context products for investigations.
+        </description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ladee</lid_reference>
+      <reference_type>investigation_to_instrument_host</reference_type>
+    </Internal_Reference>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:target:satellite.moon</lid_reference>
+      <reference_type>investigation_to_target</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <reference_text>
+        DES-12.LADEE.LPMD, LADEE PDS Mission Description, Rev 1.5,
+        Ames Research Center Document, May 13, 2014
+      </reference_text>
+    </External_Reference>
+    <External_Reference>
+      <doi>doi:10.1038/ngeo2024</doi>
+      <reference_text>
+        Lakdawalla, E., To the Moon with LADEE, Nature Geoscience,
+        Vol. 6, No. 12, pp. 987-1065, December 2013
+      </reference_text>
+    </External_Reference>
+  </Reference_List>
+  <Investigation>
+    <name>LADEE</name>
+    <type>Mission</type>
+    <start_date>2013-09-01</start_date>
+    <stop_date>2014-02-17</stop_date>
+    <description>
+LADEE will determine the composition of the lunar atmosphere and
+investigate the processes that control its distribution and variability,
+including sources, sinks, and surface interactions. LADEE will also address
+the longstanding mystery of whether dust is present in the lunar exosphere,
+and reveal the processes that contribute to its sources and variability.
+    </description>
+  </Investigation>
+</Product_Context>
+

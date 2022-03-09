@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.26_tau</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>26 Tauri</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>26 Tauri</alternate_title></Alias>
+      <Alias><alternate_title>26 Tau</alternate_title></Alias>
+      <Alias><alternate_title>HL 27A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+23 330</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+23 556</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 352</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Cl Melotte 22 K 82</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Cl Melotte 22 WCZ 353</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Cl Melotte 22 HII 2087</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Cl Melotte 22 2087</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EPIC 211055135</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 4582</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 2169</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +5.20222087</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 01800-02205</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 23822</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 17832</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 17832</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J03485693+2351259</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 92930</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 76225</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 5820</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 2541</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 1800-2205-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 41139</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 520222087</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J03489+2351A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 3423</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 23 1192</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 66504755379545728</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR1 66504751080064000</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>26 Tauri</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 03 hours 48 minutes 56.9418665794 seconds
+Declination, ICRS coord, ep=J2000: +23 degrees 51 minutes 25.675869789 seconds
+    </description>
+  </Target>
+</Product_Context>

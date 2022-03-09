@@ -1,0 +1,69 @@
+             <Table_Binary>
+                   <name>ODF File Label Group Header</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                                The File Label Group
+                                is usually the first of several groups of records in
+                                an Orbit Data File (ODF). It identifies the spacecraft,
+                                the file creation time, the hardware, and the software
+                                associated with the ODF.  The File Label Group Header
+                                is the first record in the File Label Group.  It is one
+                                36-byte record and is followed by one 36-byte data
+                                record.  Occasionally, the File Label Group is omitted
+                                from an ODF.  The row suffix bytes in the File Label
+                                Group Header are set to 0.
+                   </description>
+                   <Record_Binary>
+                         <fields>4</fields>
+                         <groups>0</groups>
+                         <record_length unit="byte">36</record_length> 
+                         <Field_Binary>
+                               <name>Primary Key</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>SignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 1: The Primary Key indicates the type of data records to 
+                                           follow. In the File Label Group Header this field is set to 101.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Secondary Key</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">5</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 2: The Secondary Key is not used in the ODF. It is set to 0.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Logical Record Length</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">9</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 3: The Logical Record Length gives the
+                                           number of 36-byte physical records making up each logical
+                                           record in a File Label Group data record.  For the File Label
+                                           Group it is set to 1.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Group Start Packet Number</name>
+                               <field_number>4</field_number>
+                               <field_location unit="byte">13</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 4: The Group Start Packet Number
+                                           gives the number of the ODF packet containing the File
+                                           Label Group Header.  Set to 0, since the File Label Group
+                                           Header, when it appears, is always first.
+                               </description>
+                         </Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pia.gio</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PARTICULATE IMPACT ANALYZER for GIO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gio::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Jessberger, E.K., and J. Kissel, Chemical Properties of Cometary Dust and a
+                   Note on Carbon Isotopes, Comets in the Post-Halley Era (II), Newburn, R.,
+                   M. Neugebauer, and J. Rahe (eds.), Kluwer Academic Publishers, Dordrecht,
+                   1075-1092, 1991.
+            </reference_text>
+            <description>reference.JESSBERGER-KISSEL91</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., und F.R. Krueger, Die Chemische Zusammensetzung des
+                   Kometenstaubes bei P/Halley, Sterne und Weltraum 26, No. 4, 191-194, 1987.
+            </reference_text>
+            <description>reference.KISSEL-KRUEGER1987A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., und F.R. Krueger, Die Physik der Massenspektrometrischen
+                   Staubanalyse beim Kometen Halley, Phys. Bl. 43, 131, Nr. 5, 1987.
+            </reference_text>
+            <description>reference.KISSEL-KRUEGER1987B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., The Particulate Impact Analyzer, an Instrument to Analyze Small
+                   Particles Released by Halley&apos;s Comet, Proceedings of the International
+                   Meeting on the GIOTTO Mission, Noordwijkerhout, The Netherlands, ESA SP
+                   169, 53-60, 1981.
+            </reference_text>
+            <description>reference.KISSEL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., Das Experiment PIA der ESA-Mission GIOTTO, Gerat zur
+                   Massenanalyse Kleinster Teilchen, die vom Halley&apos;schen Kometen Freigesetzt
+                   Werden, Kleinheubacher Berichte Bd. 26, 83-86, 1983.
+            </reference_text>
+            <description>reference.KISSEL1983</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., The Giotto Particulate Impact Analyser, ESA SP-1077, 67-83,
+                   1986.
+            </reference_text>
+            <description>reference.KISSEL1986A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., In Situ Investigation of Halley&apos;s Comet, Accademia Peloritana
+                   Dei Pericolanti Classe Di Science Fisiche Matematiche E Naturali,
+                   Supplemento N.1 64, 105-123, 1986.
+            </reference_text>
+            <description>reference.KISSEL1986B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., Mass Spectrometric Studies of Halley&apos;s Comet, Advances in Mass
+                   Spectrometry 1985, 175-184, 1986.
+            </reference_text>
+            <description>reference.KISSEL1986C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J. (1986). &apos;The Giotto Particulate Impact Analyzer&apos;. In &apos;The Giotto
+                   Mission - Its Scientific Investigations&apos; (R. Reinhard and B. Battrick,
+                   Eds.) ESA SP-1077, pp. 67-83. ESA Publications Division, ESTEC, Noordwijk.
+            </reference_text>
+            <description>reference.KISSEL86</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kissel, J., D.E. Brownlee, K. Buchler, B.C. Clark, H. Fechtig, E. Grun, K.
+                   Hornung, E.B. Igenbergs, E.K. Jessberger, F.R. Krueger, H. Kuczera, J.A.M.
+                   McDonnell, G.E. Morfill, J. Rahe, G.H. Schem, Z. Sekanina, N.G. Utterback,
+                   H.J. Volk, and H. Zook, Compostition of Comet Halley Dust Particles From
+                   GIOTTO Observations, Nature, Vol 321, No. 6067, 336-337, 1986.
+                   6067, 280-282, 1986.
+            </reference_text>
+            <description>reference.KISSELETAL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krueger, F.R., and J. Kissel, Experimental Investigations on Ion Emission
+                   with Dust Impact on Solid Surfaces, Proceedngs of the GIOTTO Plasma
+                   Environment Working Group Meeting, 10-12 April 1984, Bern, Switzerland, ESA
+                   SP-224, 43-48, 1984.
+            </reference_text>
+            <description>reference.KRUEGER-KISSEL1984</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krueger, F.R., A. Korth, and J. Kissel, The Organic Matter of Comet Halley
+                   as Inferred by Joint Gas Phase and Solid Phase Analyses, Space Science
+                   Reviews, 56, 167-175, 1991.
+            </reference_text>
+            <description>reference.KRUEGERETAL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Langevin, Y., J. Kissel, J.L. Bertaux, and E. Chassefiere, First
+                   Statistical Analysis of 5000 Mass Spectra of Cometary Grains Obtained by
+                   PUMA 1 (VEGA 1) and PIA (GIOTTO) Impact Ionisation Mass Spectro Meters in
+                   the Compressed Modes, Astronomy and Astrophysics, 187, 761-766, 1987.
+            </reference_text>
+            <description>reference.LANGEVINETAL1987A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Langevin, Y., J. Kissel, J.L. Bertaux, and E. Chassefiere, Impact
+                   Ionisation Mass Spectrometry of the Cometary Grains On-Board VEGA 1 and
+                   GIOTTO, VEGA 1, and VEGA 2 Spacecrafts, Lunar and Planetary Science XVIII,
+                   533-534, 1987.
+            </reference_text>
+            <description>reference.LANGEVINETAL1987B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   &apos;The Giotto Dust Impact Detection System&apos;, J.A.M.McDonnell, W.M.Alexander,
+                   W.M.Burton, E. Bussoletti, D.H. Clark, G.C. EVANS, S.T. Evans, J.G.Firth,
+                   R.J.L.Grard, E. Grun, M.S. Hanner, D.W. Hughes, E. Igenbergs, H.Kuczera,
+                   B.A. Lindblad, J.-C. Mandeville, A. Minafra, D. Reading, A. Ridgeley, G.H.
+                   Schwehm, T.J. Stevenson, Z. Sekanina, R.F. Turner, M.K. Wallis, J.C.
+                   Zarnecki, in The Giotto Mission - It&apos;s Scientific Investigations, edited by
+                   R. Reinhard and B. Battrick, ESA SP1077, 1986.
+            </reference_text>
+            <description>reference.MCDONNELLETAL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   McDonnell, J.A.M., W.M. Alexander, W.M. Burton, E. Bussoletti, G.C. Evans,
+                   J.G. Firth, R.J.L. Grard, S.F. Green, E. Grun, M.S. Hanner, D.W. Hughes, E.
+                   Igenbergs, J. Kissel, H. Kuczera, B.A.Lindblad, Y. Langevin, J.C.
+                   Mandeville, S. Nappo, G.S.A. Pankiewicz, C.H. Perry, G.H. Schwehm, Z.
+                   Sekanina, T.J. Stevenson, R.F. Turner, U. Weishaupt, M.K. Wallis, and J.C.
+                   Zarnecki, The Dust Distribution Within the Inner Coma of Comet P/Halley
+                   1982i: Encounter by GIOTTO&apos;s Impact Detectors, Astronomy and Astrophysics,
+                   187, 719-741, 1987.
+            </reference_text>
+            <description>reference.MCDONNELLETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   McDonnell, J.A.M., S.F. Green, E. Grun, J. Kissel, S. Nappo, G.S.
+                   Pankiewicz, and C.H. Perry, In Situ Exploration of the Dusty Coma of Comet
+                   P/Halley at Giotto&apos;s Encounter: Flux Rates and Time Profiles from 10**-19
+                   kg to 10**-5 kg, Advances in Space Research, Vol 9, No. 3, 277-280, 1989.
+            </reference_text>
+            <description>reference.MCDONNELLETAL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   &apos;Encounters with Comet Halley, The first results&apos;, Nature, Volume 321, No.
+                   6067, 15 May 1986.
+            </reference_text>
+            <description>reference.NATURE321</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>PARTICULATE IMPACT ANALYZER</name>
+        <type>Dust</type> <!--RChen/EN was Dust Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    Instrument Overview
+    ===================
+      Dust is collected from the ram direction of the
+      spacecraft (i.e., parallel to the spin axis)
+      through an adjustable, elliptical aperture which
+      has a collecting area variable between 5 cm^ and 1
+      mm^2 in order to limit the rate to &lt; 500 per
+      second, the maximum with which the instrument can
+      cope.  The particles, moving with roughly the
+      encounter speed of 69 km/second, are then incident
+      on an oblique target, the entrance aperture
+      projecting to a circle adjustable up to 35 mm
+      diameter.  Particles moving this fast can cause: -
+      a crater in the target - partial or complete
+      destruction of the particle, depending on the speed
+      - emission of secondary particles - a flash of
+      light - release of neutrals, electrons, and
+      positive and negative ions.
+ 
+      The target is a 10-micron thick roll of platinum
+      foil doped with 5% silver.  The roll is 700mm by
+      55mm and is unrolled and transported across the
+      entrance aperture at a rate of 0.6mm/sec whenever
+      the count- rate of dust particles exceeds a certain
+      level and can also be unrolled with commands in the
+      telemetry from Earth.  This transport ensures that
+      the portion of the target in use is always clean.
+ 
+      Four different detectors are used to sense the
+      impact of a particle and initiate the collection of
+      data for a mass spectrum.  Two detectors, although
+      shielded, are relatively exposed to the outside
+      environment, while the other two are completely
+      shielded from the outside environment.  The impact
+      of a particle onto the detector can cause
+      measurable pulses on any of these four detectors
+      but typically does not cause a detected pulse on
+      all of them. 1.  A photomultiplier (PMT) senses the
+      light-pulse produced on the impact of a particle
+      onto the target.  The output of the PMT is fed
+      through an rms noisemeter which is used to adjust
+      the triggering threshold automatically.  Although
+      shielded, ambient light fluctuations can reach the
+      PMT by scattering.  (Signal PM) 2.  Pulses of
+      positive ions are sensed as a pulse at the target
+      itself, which is held at +1kV.  This sensor is also
+      fed to an rms noise meter which adjusts the
+      discriminator.  Since the target is exposed to
+      ambient plasma from the ram direction, it is
+      sensitive to external fluctuations.  (Signal TG) 3.
+      Pulses of electrons are collected at the &apos;catcher
+      channel&apos;, an anode to the side of the main path for
+      ions.  This detector is well shielded from the
+      external environment so that pulses here should all
+      correspond to real events.  (Signal CA) 4.  Pulses
+      of positive ions are also sensed at the
+      accelerating grid, held at -2kV, which accelerates
+      the ions into the mass spectrometer.  This sensor
+      is also well isolated from the external
+      environment.  (Signal AC) Because a dynamic range
+      of at least 4 decades was desired (to detect
+      particles from 0.1 to 10 microns), the amplifiers
+      on these front-end channels can be switched between
+      two gain ranges, each three decades and separated
+      by a factor 100 (i.e.  gains 1-1000 and 100-100,000
+      in arbitrary units).  The outputs of the amplifiers
+      are each monitored by three single-channel
+      discriminators set at relative levels of 1x, 10x,
+      and 100x.
+ 
+      The mass spectrometer operates on the
+      time-of-flight principle, accelerating all ions to
+      a constant energy, thereby sorting them to
+      different velocities dependent on the mass.  Since
+      each particle produces a burst of ions in a very
+      narrow interval of time, the arrival time of the
+      ions at the detector is related directly to the
+      mass of the ions.  The positive ions, after passing
+      the accelerator grid (-2 kV), are decelerated to an
+      energy of 1 kV by a grid at the entrance to the
+      first drift tube.  While passing along this first
+      drift tube, the ions are focussed by an ion lens to
+      remove the transverse dispersion in the motions.
+      The charge induced on the lens by the passage of a
+      pulse of ions is recorded as an additional monitor
+      of the existence of a real particle event.  (Signal
+      MO) The ions then enter a reflector which serves as
+      a first order energy focussing device to remove the
+      dispersion due to the initial energies which the
+      ions have from the formation process (up to about
+      70 eV).  They then pass along the second drift tube
+      which contains a second ion lens.
+ 
+      At the end of the second drift tube, the ions are
+      incident on a multiplier with 20 dynodes.  At this
+      point, the ions from a single initial particle
+      impact have been sorted in time by their masses
+      with ions having masses from 1 to 110 amu arriving
+      roughly from 4 to 42.5 microseconds, mass being
+      proportional to the square of the arrival time.
+      The output of the multiplier is recorded by
+      converting the signals from dynodes 5, 8, 11, 14,
+      17, and 20 to a logarithmic scale and then summing
+      these six signals.  This yields an output signal
+      with 5 decades of dynamic range.  This signal is
+      digitized and stored in a memory together with the
+      digital output of a time^2 signal generator which
+      provides an index of the mass of the ions.
+ 
+      Instrument Manufacturer	:
+              Max-Planck-Institut-fuer-Kernphysik
+ 
+       Platform or Mounting Name :Spacecraft body
+ 
+    Science Objectives
+    ==================
+      The objective is the in-situ measurement of the
+      chemical and physical properties of cometary dust
+      particles.  The chemical compositions and masses of
+      individual particles will be measured.  Their
+      impact rate, determined as a function of position
+      relative to the comet&apos;s nucleus, will be used to
+      establish the mass distribution and production
+      characteristics of cometary dust.  In particular,
+      the goals are to: - determine the elemental
+      abundance of individual particles and to ascertain
+      whether there are distinct particle classes that
+      differ from each other chemically - investigate
+      whether the elemental particle composition depends
+      on the distance from the nucleus, and to look
+      specifically for the effects of ice evaporation
+      from particle surfaces - gain insight into the
+      molecular composition of the impacting particles,
+      with emphasis on possible evidence of organic
+      matter - determine specific isotopic ratios, such
+      as 6Li/7Li, 10B/11B, 12C/13C, and to try to
+      establish the origin of the comet&apos;s particulate
+      matter - study the mass distribution function of
+      impacting particles, derive the total dust
+      production rate in the measured mass range, and
+      compare the latter with theoretical models -
+      determine the extent of the dust envelope as a
+      function of particle mass and analyze possible
+      asymmetries in impact rate to model anisotropy
+      effects in the dust&apos;s production.
+ 
+    Calibration Description
+    =======================
+      The multiplier is calibrated in flight by an EPID
+      (Electronic Pulse Induced Desorption) ion
+      generator.  This provides ions of two masses with a
+      known intensity ratio.  The mass scale is
+      calibrated against the value from the t^2 generator
+      after receipt of the telemetry by identifying
+      specific lines, typically the two lines due to
+      silver produced from the target.
+ 
+    Electronics
+    ===========
+      The experiment runs entirely autonomously and was
+      designed to collect data for a period of 4 hours,
+      with nearly all the events occurring during the 20
+      minutes centered on the time of closest approach.
+      The control is implemented with an RCA 1802
+      microprocessor and several PROMs.  A number of
+      parameters about the previous measurements are
+      maintained in order to adjust the operating modes
+      of the system.  The normal state of the system is
+      one in which it is waiting for a particle impact to
+      occur.  If no impact occurs for a second, the
+      internal parameters are updated.  These parameters
+      include: i.  the impact rate for all events (rate
+      IR, number of events per second) ii.  the impact
+      rate for large events, i.e.  events in which the
+      100x threshold is exceeded in one of the front-end
+      channels (rate IRL, number of events per second)
+      iii.  the impact rate for events with mass spectra,
+      i.e.  events in which a minimum number of ions are
+      counted in the mass spectrum (various rates are
+      stored, IR4 is the rate of events of classes 4
+      through 7 as defined below) iv.  the onboard time
+      counter v.  the number of EDFs transmitted per
+      second.  After updating the parameters, whether
+      after an event or after the 1-second interval
+      without an event, the system processes any commands
+      received, sets the spectrum mode (0 to 3), enables
+      the trigger channels, sets the number of front-end
+      coincidences required to trigger an event, adjusts
+      the sensitivity settings, sets the high voltage on
+      the multiplier, adjusts the shutter position, and
+      moves the target if motion is required.
+ 
+      All instrument parameters are preset when the
+      instrument is turned on.  Values stored in PROM are
+      used when the instrument is turned on for the first
+      time on spacecraft power.  When the instrument is
+      turned off but spacecraft power is still in place,
+      all instrumental parameters are stored in RAM and
+      these values are used when the instrument is
+      reactivated.
+ 
+      Since small particles may not trigger all of the
+      front-end channels, at low count rates an event is
+      triggered whenever any single front-end channel is
+      triggered.  At higher count rates additional
+      front-end channels must be triggered.  Specifically
+      whenever IR4 &gt; 10/second and IR &gt; 2*IR4, a
+      coincidence with an additional front-end channel is
+      required.  Whenever the triggering rate of a
+      front-end channel exceeds the rate at which the
+      instrument can process events, the noise-detection
+      system on the front-end channel adjusts the
+      triggering level upwards.  If this level exceeds,
+      3.2 volts, that channel is disabled.  Normally, the
+      front-end channel amplifiers are set to the high
+      sensitivity range.  If all three front-end channels
+      become disabled due to excessively high count
+      rates, the amplifiers are automatically set to the
+      low sensitivity range and reenabled.  All front-end
+      channels (AC, PM, TG, CA, and MO) are set to the
+      low sensitivity mode if there are enough events to
+      fill the telemetry capacity, specifically if IRL &gt;
+      TMR + 3.
+ 
+      The mode in which spectra are recorded also depends
+      on the counting rate.  Every 26th event is always
+      recorded in mode 0.  The mode for the remaining
+      spectra (1 to 3) is increased by 1 whenever IR4 &gt;=
+      2*TMR or IR4 &gt; 128.  It is reduced by 1 whenever
+      IR4 &lt; 2*TMR.  These mode changes are implemented at
+      4-second intervals, if required.
+ 
+      The shutter aperture is also controlled by the
+      microprocessor through a stepping motor which takes
+      71 steps to go from 500 mm^2 to 1 mm^2 with the
+      default position (&apos;zero&apos; position) at 457 mm^2.
+      The positions at 500 m^2 and 52.4 mm^2 are sensed
+      by microswitches.  The control algorithm is based
+      on the value of IR4 (event rate for classes 4 to
+      7).
+ 
+      IR4 &lt;  15: open by 9 steps
+      IR4 &lt;  30: open by 6 steps
+      IR4 &lt;  60: open by 3 steps
+      IR4 &gt;  90: close by 3 steps
+      IR4 &gt; 180: close by 6 steps
+      IR4 &gt; 254: close by 9 steps
+ 
+      Since only one motor is allowed to be moving at any
+      given time, the shutter motor has priority over the
+      target motor.
+ 
+      The target motion is also controlled by the count
+      rate, unless the shutter is also moving, starting
+      when IR4 &gt; 60 and stopping when IR4 &lt; 30.  The rate
+      of motion is fixed at 0.6 mm/s.
+ 
+      Events are classified by the data processing system
+      as follows: 1.  Events with only 1 front-end signal
+      2.  Events with a coincidence between 2 front-end
+      channels 3.  Events that have a coincidence with
+      all 3 front-end channels but still do not exhibit a
+      mass spectrum 4.  Events that have a minimum of 52,
+      46, or 10 entries in the spectrum for modes 1, 2,
+      and 3, respectively 5.  Events that have a minimum
+      of 54/48/12 entries in the mass spectrum but not
+      more than 228/148/140 entries and which also have a
+      minimum of 26/21/6 entries in the mass range 6-58
+      amu. 6.  Class 5 events that also have at least 2
+      entries of at least 0.2 full scale in the range 5-8
+      amu. 7.  Class 5 events that have a minimum of
+      34/27/12 entries in the mass window but not more
+      than 93/49/46 8.  Events from the statistical
+      sample 9.  test pulses 10.  events from the AHV
+      routine (calibration) 0.  Events that have already
+      been transferred to the telemetry system.  When a
+      new event is classified, the controller searches
+      first for an empty section of memory in which to
+      store it.  Failing that, it searches for an event
+      of lower class to be overwritten.
+ 
+      The high voltage applied to the multiplier controls
+      the sensitivity and the dynamic range of the mass
+      spectra.  The value is set by telecommand to one of
+      128 discrete values between 0 and 4500 V.
+ 
+ 
+    Instrument Operating Mode Descriptions
+    ======================================
+ 
+      Mode 0
+      ------
+        15 MHz Mode.  In this mode, the output of the
+        multiplier is digitized and recorded in the event
+        memory every 66.66 nanoseconds.  The output of
+        the t^2 generator is not recorded in this mode.
+ 
+      Mode 1
+      ------
+        Max/Min Mode.  At each maximum of the signal
+        appearing at the MP output, a sample is taken of
+        the multiplier output and of the t^2 generator.
+        An additional sample is taken 1/2 mass unit after
+        each maximum in the multiplier output.  This
+        should correspond to the minimum between two
+        adjacent masses.  In addition, an sample is taken
+        every 1.13 microseconds if no other maximum has
+        occurred in that interval.
+ 
+      Mode 2
+      ------
+        Max/Time Mode.  For each maximum in the MP
+        output, a sample is taken of the MP output and of
+        the t^2 generator.  In addition, a sample is
+        taken every 1.13 microseconds if no other maximum
+        has occurred in that interval.
+ 
+      Mode 3
+      ------
+        Max Mode.  This is the same as mode 2 except that
+        samples are taken only after 8.6 microseconds.
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

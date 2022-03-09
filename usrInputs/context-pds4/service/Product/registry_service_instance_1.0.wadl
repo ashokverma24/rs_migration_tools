@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:application xmlns:ns2="http://wadl.dev.java.net/2009/02"><ns2:doc
+        jersey:generatedBy="Jersey: 1.18.3 12/01/2014 08:23 AM"
+        xmlns:jersey="http://jersey.java.net/"/><ns2:doc title=" "
+                        xml:lang="en"><![CDATA[
+    ]]><table><tr><td><img
+                        alt="PDS Logo"
+                        src="../images/pds4_logo.png"/></td><td><img
+                        alt="Spacer" src="../images/spacer.gif"
+            width="50"/></td><td><h1>Registry Service</h1></td>
+      </tr>
+    </table><![CDATA[
+    ]]><hr/><![CDATA[
+    ]]><p>This page describes the details of the REST-based application programming interface for the Registry Service. The following is a list of end points for the API:
+    </p><![CDATA[
+  ]]></ns2:doc><ns2:grammars><ns2:include
+            href="registry-service.xsd"/><ns2:include
+        href="xsd0.xsd"><ns2:doc/></ns2:include></ns2:grammars><ns2:resources
+            base="http://pds.nasa.gov/services/registry"><ns2:resource
+                path=""><ns2:doc><![CDATA[This is the top-level resource for the registry service.]]></ns2:doc><ns2:method
+                id="getRegistryResources"
+                        name="GET"><ns2:doc><![CDATA[Returns home page of the registry service and the list of available
+ resources in the header of the response. Can be used to ping the registry.]]></ns2:doc><ns2:response><ns2:representation
+                mediaType="*/*"/></ns2:response></ns2:method><ns2:resource
+                    path="report"><ns2:method id="getReport"
+                        name="GET"><ns2:doc><![CDATA[Returns a report of objects registered with the registry service. 
+ Can be used to monitor the health of the registry.]]></ns2:doc><ns2:response
+                            status="200"><ns2:doc><![CDATA[registry status]]></ns2:doc><ns2:representation
+                            element="ns3:report"
+                            mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;report status="OK" serverStarted="2016-04-06T20:04:09.005-07:00" associations="0" extrinsics="0" services="0" classificationSchemes="0" classificationNodes="0" packages="0" events="0" registryVersion="1.9.0" xmlns="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method></ns2:resource><ns2:resource
+                    path="extrinsics"><ns2:doc><![CDATA[This resource is responsible for managing Extrinsics with the registry
+ service.]]></ns2:doc><ns2:method
+                    id="getExtrinsics"
+                            name="GET"><ns2:doc><![CDATA[Allows access to all the extrinsics managed by the registry. This list of
+ extrinsics is based on the latest received extrinsic's logical identifier
+ (lid). The header will contain pointers to next and previous when
+ applicable.]]></ns2:doc><ns2:request><ns2:param
+                            name="start" style="query" type="xs:int"
+                            default="1"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="rows" style="query" type="xs:int"
+                            default="20"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="guid" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="name" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="lid" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="versionName" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="objectType" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="contentVersion" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="mimeType" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="status" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="queryOp" style="query"
+                            type="xs:string" default="AND"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="sort" style="query" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"/></ns2:request><ns2:response
+                            status="200"><ns2:doc><![CDATA[subset of managed products]]></ns2:doc><ns2:param
+                            name="Link" style="header" type="xs:anyURI"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[The URI to
+                 the next and previous pages.]]></ns2:doc></ns2:param><ns2:representation
+                            element="ns3:response"
+                            mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                    xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:response start="1" numFound="1" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:results&gt;
+        &lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" status="Submitted" description="Default Description" versionName="1.0" guid="urn:uuid176c2541-f58b-4b6b-9956-3a67451ee9cb" home="http://pds.jpl.nasa.gov/registry-service"&gt;
+            &lt;ns2:slot id="0" name="last-name"&gt;
+                &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+            &lt;/ns2:slot&gt;
+            &lt;ns2:slot id="0" name="phone"&gt;
+                &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+                &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+            &lt;/ns2:slot&gt;
+            &lt;ns2:slot id="0" name="first-name"&gt;
+                &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+            &lt;/ns2:slot&gt;
+        &lt;/ns2:extrinsicObject&gt;
+    &lt;/ns2:results&gt;
+&lt;/ns2:response&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method><ns2:method
+                    id="publishExtrinsic"
+                            name="POST"><ns2:doc><![CDATA[Publishes an extrinsic object to the registry. Publishing includes
+ validation, assigning an internal version, validating the submission, and
+ notification. The submitted extrinsic object should not contain the same
+ logical identifier as previously submitted extrinsic (412 Precondition
+ Failed), in that scenario the version interface should be used.]]></ns2:doc><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[optional package guid which this registry object will be a member of]]></ns2:doc></ns2:param><ns2:representation
+                            element="ns3:extrinsicObject"
+                            mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" description="Default Description" versionName="1.0" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:slot id="0" name="last-name"&gt;
+        &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="phone"&gt;
+        &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+        &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="first-name"&gt;
+        &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+&lt;/ns2:extrinsicObject&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation><ns2:representation
+                            element="ns3:extrinsicObject"
+                            mediaType="application/json"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" description="Default Description" versionName="1.0" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:slot id="0" name="last-name"&gt;
+        &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="phone"&gt;
+        &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+        &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="first-name"&gt;
+        &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+&lt;/ns2:extrinsicObject&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:request><ns2:response><ns2:representation
+                            mediaType="application/xml"/><ns2:representation
+                    mediaType="application/json"/></ns2:response></ns2:method><ns2:resource
+                        path="{guid}"><ns2:param name="guid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[unique identifier of registry item]]></ns2:doc></ns2:param><ns2:method
+                        id="getExtrinsic"
+                            name="GET"><ns2:doc><![CDATA[Retrieves a single extrinsic from the registry. The logical identifier with
+ the version uniquely identifies one extrinsic.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[ExtrinsicObject within the registry with the guid]]></ns2:doc><ns2:representation
+                                element="ns3:extrinsicObject"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                        xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" status="Submitted" description="Default Description" versionName="1.0" guid="urn:uuid176c2541-f58b-4b6b-9956-3a67451ee9cb" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:slot id="0" name="last-name"&gt;
+        &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="phone"&gt;
+        &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+        &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="first-name"&gt;
+        &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+&lt;/ns2:extrinsicObject&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method><ns2:method
+                        id="updateExtrinsic"
+                                name="POST"><ns2:doc><![CDATA[Updates the existing extrinsic with the given logical identifier and
+ version.]]></ns2:doc><ns2:request><ns2:representation
+                                element="ns3:extrinsicObject"
+                                mediaType="application/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:extrinsicObject"
+                                mediaType="application/json"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                                mediaType="application/xml"/><ns2:representation
+                        mediaType="application/json"/></ns2:response></ns2:method><ns2:method
+                        id="deleteExtrinsic"
+                                name="DELETE"><ns2:doc><![CDATA[Removes the extrinsic with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                                mediaType="application/xml"/><ns2:representation
+                    mediaType="application/json"/></ns2:response></ns2:method></ns2:resource><ns2:resource
+                        path="logicals/{lid}"><ns2:param name="lid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[local identifier of set extrinsics to retrieve]]></ns2:doc></ns2:param><ns2:method
+                        id="versionExtrinsic"
+                                name="POST"><ns2:doc><![CDATA[Creates a new version of an extrinsic in the registry. Follows the same
+ procedures as publishing with the caveat that the logical identifier this
+ product carries should already exist in the registry (412 Precondition
+ Failed).]]></ns2:doc><ns2:request><ns2:param
+                                name="major" style="query"
+                                type="xs:boolean" default="true"
+                                xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[if true indicates a major revision otherwise considered minor]]></ns2:doc></ns2:param><ns2:param
+                                name="packageGuid" style="query"
+                                type="xs:string"
+                                xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[optional package guid which this registry object will be a member of]]></ns2:doc></ns2:param><ns2:representation
+                                element="ns3:extrinsicObject"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                                xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" status="Submitted" description="Default Description" versionName="2.0" guid="urn:uuide47a7934-8a13-4874-b876-31a5fbe9a4ef" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:slot id="0" name="last-name"&gt;
+        &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="phone"&gt;
+        &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+        &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="first-name"&gt;
+        &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+&lt;/ns2:extrinsicObject&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation><ns2:representation
+                                element="ns3:extrinsicObject"
+                                mediaType="application/json"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                                xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" status="Submitted" description="Default Description" versionName="2.0" guid="urn:uuide47a7934-8a13-4874-b876-31a5fbe9a4ef" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:slot id="0" name="last-name"&gt;
+        &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="phone"&gt;
+        &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+        &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="first-name"&gt;
+        &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+&lt;/ns2:extrinsicObject&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:request><ns2:response><ns2:representation
+                                mediaType="application/xml"/><ns2:representation
+                        mediaType="application/json"/></ns2:response></ns2:method><ns2:method
+                        id="getExtrinsicVersions"
+                            name="GET"><ns2:doc><![CDATA[Retrieves the collection of extrinsics that share the same logical
+ identifier. This method supports finding all versions of extrinsic.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[collection of extrinsics]]></ns2:doc><ns2:representation
+                                element="ns3:response"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                    xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:response xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:results&gt;
+        &lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" status="Submitted" description="Default Description" versionName="1.0" guid="urn:uuid176c2541-f58b-4b6b-9956-3a67451ee9cb" home="http://pds.jpl.nasa.gov/registry-service"&gt;
+            &lt;ns2:slot id="0" name="last-name"&gt;
+                &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+            &lt;/ns2:slot&gt;
+            &lt;ns2:slot id="0" name="phone"&gt;
+                &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+                &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+            &lt;/ns2:slot&gt;
+            &lt;ns2:slot id="0" name="first-name"&gt;
+                &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+            &lt;/ns2:slot&gt;
+        &lt;/ns2:extrinsicObject&gt;
+        &lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" status="Submitted" description="Default Description" versionName="2.0" guid="urn:uuidd4c781d4-9dd4-43bd-b58b-ffb0572614f0" home="http://pds.jpl.nasa.gov/registry-service"&gt;
+            &lt;ns2:slot id="0" name="last-name"&gt;
+                &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+            &lt;/ns2:slot&gt;
+            &lt;ns2:slot id="0" name="phone"&gt;
+                &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+                &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+            &lt;/ns2:slot&gt;
+            &lt;ns2:slot id="0" name="first-name"&gt;
+                &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+            &lt;/ns2:slot&gt;
+        &lt;/ns2:extrinsicObject&gt;
+    &lt;/ns2:results&gt;
+&lt;/ns2:response&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method></ns2:resource><ns2:resource
+                        path="logicals/{lid}/earliest"><ns2:param
+                        name="lid" style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[local identifier of product to retrieve]]></ns2:doc></ns2:param><ns2:method
+                        id="getEarliestVersion"
+                            name="GET"><ns2:doc><![CDATA[Retrieves the earliest extrinsic from the registry. The logical identifier
+ points to a collection of versions of the same extrinsic.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[ExtrinsicObject within the registry with the lid and version]]></ns2:doc><ns2:representation
+                                element="ns3:extrinsicObject"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                    xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" status="Submitted" description="Default Description" versionName="1.0" guid="urn:uuid176c2541-f58b-4b6b-9956-3a67451ee9cb" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:slot id="0" name="last-name"&gt;
+        &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="phone"&gt;
+        &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+        &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="first-name"&gt;
+        &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+&lt;/ns2:extrinsicObject&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method></ns2:resource><ns2:resource
+                        path="logicals/{lid}/latest"><ns2:param
+                        name="lid" style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[the logical identifier to the extrinsic]]></ns2:doc></ns2:param><ns2:method
+                        id="getLatestVersion"
+                            name="GET"><ns2:doc><![CDATA[Retrieves the latest extrinsic from the registry. The logical identifier
+ points to a collection of versions of the same extrinsic.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[Extrinsic within the registry with the lid and version]]></ns2:doc><ns2:representation
+                                element="ns3:extrinsicObject"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                    xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:extrinsicObject lid="1234" objectType="ExtrinsicObject" status="Submitted" description="Default Description" versionName="1.0" guid="urn:uuid176c2541-f58b-4b6b-9956-3a67451ee9cb" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:slot id="0" name="last-name"&gt;
+        &lt;ns2:value&gt;Doe&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="phone"&gt;
+        &lt;ns2:value&gt;(818)123-4567&lt;/ns2:value&gt;
+        &lt;ns2:value&gt;(818)765-4321&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+    &lt;ns2:slot id="0" name="first-name"&gt;
+        &lt;ns2:value&gt;John&lt;/ns2:value&gt;
+    &lt;/ns2:slot&gt;
+&lt;/ns2:extrinsicObject&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method></ns2:resource><ns2:resource
+                        path="{guid}/{action}"><ns2:param name="guid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[unique identifier of registry item]]></ns2:doc></ns2:param><ns2:param
+                        name="action" style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[to take on extrinsic which will result in an update of status
+          {@link ObjectAction}]]></ns2:doc></ns2:param><ns2:method
+                        id="changeStatus"
+                                name="POST"><ns2:doc><![CDATA[Updates the status of the extrinsic with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                                mediaType="application/xml"/><ns2:representation
+                mediaType="application/json"/></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="associations"><ns2:doc><![CDATA[This resource is responsible for managing Associations with the 
+ registry service.]]></ns2:doc><ns2:method
+                    id="getAssociations"
+                            name="GET"><ns2:doc><![CDATA[Retrieves all associations managed by the registry given a set of filters.]]></ns2:doc><ns2:request><ns2:param
+                            name="start" style="query" type="xs:int"
+                            default="1"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[the index at which to start the result list from]]></ns2:doc></ns2:param><ns2:param
+                            name="rows" style="query" type="xs:int"
+                            default="20"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[how many results to return]]></ns2:doc></ns2:param><ns2:param
+                            name="targetObject" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[filter on the identifier of the target in the association supports
+          wildcard (*)]]></ns2:doc></ns2:param><ns2:param
+                            name="sourceObject" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[filter on the identifier of the source in the association supports
+          wildcard (*)]]></ns2:doc></ns2:param><ns2:param
+                            name="associationType" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[filter on the type of association supports wildcard (*)]]></ns2:doc></ns2:param><ns2:param
+                            name="queryOp" style="query"
+                            type="xs:string" default="AND"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[to apply to filters, valid values are AND or OR. Defaults to AND.]]></ns2:doc></ns2:param><ns2:param
+                            name="sort" style="query" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[defines what parameters to sort on. The format is
+          "parameter order" the order is optional. The default is "guid ASC"
+          and if unspecified the ordering is ASC.]]></ns2:doc></ns2:param></ns2:request><ns2:response
+                            status="200"><ns2:doc><![CDATA[all matching associations in the registry]]></ns2:doc><ns2:representation
+                            element="ns3:response"
+                            mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                    xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:response xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:results&gt;
+        &lt;ns2:association sourceObject="1234" targetObject="1234" objectType="Association" status="Submitted" guid="urn:uuidcf1f035d-a3db-4c7b-bde2-deecdee264df" home="http://pds.jpl.nasa.gov/registry-service"/&gt;
+        &lt;ns2:association sourceObject="1234" targetObject="1234" objectType="Association" status="Submitted" guid="urn:uuid53ea7512-3680-484d-a53f-72116502a1cb" home="http://pds.jpl.nasa.gov/registry-service"/&gt;
+    &lt;/ns2:results&gt;
+&lt;/ns2:response&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method><ns2:method
+                    id="publishAssociation"
+                            name="POST"><ns2:doc><![CDATA[Publishes an association to the registry. Publishing includes validation,
+ assigning an internal version, validating the submission, and notification.]]></ns2:doc><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[optional package guid which this registry object is a member of]]></ns2:doc></ns2:param><ns2:representation
+                            element="ns3:association"
+                            mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:association sourceObject="1234" targetObject="1234" objectType="Association" status="Submitted" guid="urn:uuidcf1f035d-a3db-4c7b-bde2-deecdee264df" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation><ns2:representation
+                            element="ns3:association"
+                            mediaType="application/json"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:association sourceObject="1234" targetObject="1234" objectType="Association" status="Submitted" guid="urn:uuidcf1f035d-a3db-4c7b-bde2-deecdee264df" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method><ns2:resource
+                        path="{guid}"><ns2:param name="guid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[of association]]></ns2:doc></ns2:param><ns2:method
+                        id="getAssociation"
+                            name="GET"><ns2:doc><![CDATA[Retrieves an association with the given global identifier.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[the association]]></ns2:doc><ns2:representation
+                                element="ns3:association"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                        xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:association sourceObject="1234" targetObject="1234" objectType="Association" status="Submitted" guid="urn:uuid53ea7512-3680-484d-a53f-72116502a1cb" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method><ns2:method
+                        id="deleteAssociation"
+                                name="DELETE"><ns2:doc><![CDATA[Deletes the association with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                mediaType="*/*"/></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="events"><ns2:doc><![CDATA[This resource is responsible for managing Auditable Events with the 
+ registry service.]]></ns2:doc><ns2:method
+                    id="getEvents"
+                            name="GET"><ns2:doc><![CDATA[Retrieves all auditable events managed by the registry given a set of 
+ filters.]]></ns2:doc><ns2:request><ns2:param
+                            name="start" style="query" type="xs:int"
+                            default="1"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="rows" style="query" type="xs:int"
+                            default="20"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="eventStart" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="eventEnd" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="eventType" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="requestId" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="user" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="queryOp" style="query"
+                            type="xs:string" default="AND"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="sort" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/></ns2:request><ns2:response><ns2:representation
+                            mediaType="application/xml"/><ns2:representation
+                    mediaType="application/json"/></ns2:response></ns2:method><ns2:resource
+                        path="{affectedObject}"><ns2:param
+                        name="affectedObject" style="template"
+                        type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[guid for object]]></ns2:doc></ns2:param><ns2:method
+                        id="getAuditableEvents"
+                            name="GET"><ns2:doc><![CDATA[Retrieves all auditable events for a given registry object.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[all events for the guid]]></ns2:doc><ns2:representation
+                                element="ns3:response"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:response xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:results&gt;
+        &lt;ns2:auditableEvent eventType="Created" timestamp="2016-04-06T20:04:09.006-07:00" user="username" objectType="AuditableEvent" guid="urn:uuid92279ef0-f56a-4f38-9871-7950693df8d2" home="http://pds.jpl.nasa.gov/registry-service"&gt;
+            &lt;ns2:affectedObject&gt;urn:uuid:foo&lt;/ns2:affectedObject&gt;
+        &lt;/ns2:auditableEvent&gt;
+        &lt;ns2:auditableEvent eventType="Approved" timestamp="2016-04-06T20:04:09.006-07:00" user="username" objectType="AuditableEvent" guid="urn:uuid4663f2e5-84d2-4d76-b39d-285479737b30" home="http://pds.jpl.nasa.gov/registry-service"&gt;
+            &lt;ns2:affectedObject&gt;urn:uuid:foo&lt;/ns2:affectedObject&gt;
+        &lt;/ns2:auditableEvent&gt;
+    &lt;/ns2:results&gt;
+&lt;/ns2:response&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="schemes"><ns2:doc><![CDATA[This resource is responsible for managing Classification Schemes with 
+ the registry service.]]></ns2:doc><ns2:method
+                    id="publishScheme"
+                            name="POST"><ns2:doc><![CDATA[Publishes a classification scheme to the registry.]]></ns2:doc><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[optional package guid which this registry object is a member of]]></ns2:doc></ns2:param><ns2:representation
+                            element="ns3:classificationScheme"
+                            mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:classificationScheme isInternal="true" nodeType="UniqueCode" name="Test Canonical Object Type Classification Scheme" objectType="ClassificationScheme" description="This is the canonical object type classification that is one of the core registry objects" guid="urn:registry:ObjectTypeScheme" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation><ns2:representation
+                            element="ns3:classificationScheme"
+                            mediaType="application/json"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:classificationScheme isInternal="true" nodeType="UniqueCode" name="Test Canonical Object Type Classification Scheme" objectType="ClassificationScheme" description="This is the canonical object type classification that is one of the core registry objects" guid="urn:registry:ObjectTypeScheme" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                    id="getServices"
+                            name="GET"><ns2:doc><![CDATA[Retrieves all classification schemes managed by the registry given a 
+ set of filters.]]></ns2:doc><ns2:request><ns2:param
+                            name="start" style="query" type="xs:int"
+                            default="1"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="rows" style="query" type="xs:int"
+                            default="20"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/></ns2:request><ns2:response><ns2:representation
+                            mediaType="application/xml"/><ns2:representation
+                    mediaType="application/json"/></ns2:response></ns2:method><ns2:resource
+                        path="{schemeGuid}/nodes"><ns2:param
+                        name="schemeGuid" style="template"
+                        type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[globally unique id of scheme]]></ns2:doc></ns2:param><ns2:method
+                        id="getClassificationNodes"
+                            name="GET"><ns2:doc><![CDATA[Retrieves the classification nodes for the given classification scheme.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[List of nodes]]></ns2:doc><ns2:representation
+                                element="ns3:response"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                    xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:response xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:results&gt;
+        &lt;ns2:classificationNode parent="urn:registry:ObjectTypeScheme" code="ExtrinsicObject" path="/urn:registry:ObjectTypeScheme/ExtrinsicObject" name="Extrinsic Object Node" objectType="ClassificationNode" description="This is the classification node for extrinsic." guid="urn:registry:ObjectTypeScheme:ExtrinsicObject" home="http://pds.jpl.nasa.gov/registry-service"/&gt;
+        &lt;ns2:classificationNode parent="urn:registry:ObjectTypeScheme:ExtrinsicObject" code="Test" path="/urn:registry:ObjectTypeScheme/ExtrinsicObject/Test" name="Test Extrinsic Object Node" objectType="ClassificationNode" description="This is the classification node for test." guid="urn:registry:ObjectTypeScheme:ExtrinsicObject:Test" home="http://pds.jpl.nasa.gov/registry-service"/&gt;
+    &lt;/ns2:results&gt;
+&lt;/ns2:response&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method></ns2:resource><ns2:resource
+                        path="{schemeGuid}"><ns2:param name="schemeGuid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[globally unique id of scheme]]></ns2:doc></ns2:param><ns2:method
+                        id="getClassificationScheme"
+                            name="GET"><ns2:doc><![CDATA[Retrieves the classification scheme with the given global identifier.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[the classification scheme]]></ns2:doc><ns2:representation
+                                element="ns3:classificationScheme"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                        xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:classificationScheme isInternal="true" nodeType="UniqueCode" lid="urn:uuid9dd8ac58-0224-49b8-b46e-64227eca3a4b" name="Test Canonical Object Type Classification Scheme" objectType="ClassificationScheme" description="This is the canonical object type classification that is one of the core registry objects" versionName="1.0" guid="urn:registry:ObjectTypeScheme" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method><ns2:method
+                        id="deleteClassificationScheme"
+                                name="DELETE"><ns2:doc><![CDATA[Deletes the classification scheme with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                mediaType="*/*"/></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="services"><ns2:doc><![CDATA[This resource is responsible for managing Service descriptions with the
+ registry service.]]></ns2:doc><ns2:method
+                    id="publishService"
+                            name="POST"><ns2:doc><![CDATA[Publishes a service to the registry.]]></ns2:doc><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[optional package guid which this registry object is a member of]]></ns2:doc></ns2:param><ns2:representation
+                            element="ns3:service"
+                            mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:service name="PDS Service" objectType="Service" description="This is a service to test adding a service description to the registry" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:serviceBinding accessURI="http://pds.jpl.nasa.gov" name="PDS Main Site" objectType="ServiceBinding" description="This is the PDS main web site"&gt;
+        &lt;ns2:specificationLink specificationObject="urn:uuid:HTTPSpecificationDocument" name="HTTP Specification Link" objectType="SpecificationLink" description="This is a link to the HTTP specification."&gt;
+            &lt;ns2:usageDescription&gt;Use a browser to access the PDS site. The acceptable browsers are listed in the usage parameters.&lt;/ns2:usageDescription&gt;
+            &lt;ns2:usageParameter&gt;Firefox&lt;/ns2:usageParameter&gt;
+            &lt;ns2:usageParameter&gt;Internet Explorer&lt;/ns2:usageParameter&gt;
+            &lt;ns2:usageParameter&gt;Chrome&lt;/ns2:usageParameter&gt;
+            &lt;ns2:usageParameter&gt;Safari&lt;/ns2:usageParameter&gt;
+        &lt;/ns2:specificationLink&gt;
+    &lt;/ns2:serviceBinding&gt;
+&lt;/ns2:service&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation><ns2:representation
+                            element="ns3:service"
+                            mediaType="application/json"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:service name="PDS Service" objectType="Service" description="This is a service to test adding a service description to the registry" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:serviceBinding accessURI="http://pds.jpl.nasa.gov" name="PDS Main Site" objectType="ServiceBinding" description="This is the PDS main web site"&gt;
+        &lt;ns2:specificationLink specificationObject="urn:uuid:HTTPSpecificationDocument" name="HTTP Specification Link" objectType="SpecificationLink" description="This is a link to the HTTP specification."&gt;
+            &lt;ns2:usageDescription&gt;Use a browser to access the PDS site. The acceptable browsers are listed in the usage parameters.&lt;/ns2:usageDescription&gt;
+            &lt;ns2:usageParameter&gt;Firefox&lt;/ns2:usageParameter&gt;
+            &lt;ns2:usageParameter&gt;Internet Explorer&lt;/ns2:usageParameter&gt;
+            &lt;ns2:usageParameter&gt;Chrome&lt;/ns2:usageParameter&gt;
+            &lt;ns2:usageParameter&gt;Safari&lt;/ns2:usageParameter&gt;
+        &lt;/ns2:specificationLink&gt;
+    &lt;/ns2:serviceBinding&gt;
+&lt;/ns2:service&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                    id="getServices"
+                            name="GET"><ns2:doc><![CDATA[Retrieves all services managed by the registry given a set of filters.]]></ns2:doc><ns2:request><ns2:param
+                            name="start" style="query" type="xs:int"
+                            default="1"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="rows" style="query" type="xs:int"
+                            default="20"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/></ns2:request><ns2:response><ns2:representation
+                            mediaType="application/xml"/><ns2:representation
+                    mediaType="application/json"/></ns2:response></ns2:method><ns2:resource
+                        path="{guid}"><ns2:param name="guid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[globally unique identifier of service]]></ns2:doc></ns2:param><ns2:method
+                        id="deleteService"
+                                name="DELETE"><ns2:doc><![CDATA[Deletes the service with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                        mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                        id="updateService"
+                                name="PUT"><ns2:doc><![CDATA[Updates the service and its contained objects with the given global
+ identifier.]]></ns2:doc><ns2:request><ns2:representation
+                                element="ns3:service"
+                                mediaType="application/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:service"
+                                mediaType="application/json"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                        mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                        id="updateServiceWithPost"
+                                name="POST"><ns2:doc><![CDATA[Updates the service and its contained objects with the given global
+ identifier. This method supports clients that can not do a PUT operation.]]></ns2:doc><ns2:request><ns2:representation
+                                element="ns3:service"
+                                mediaType="application/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:service"
+                                mediaType="application/json"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                        mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                        id="getService"
+                            name="GET"><ns2:doc><![CDATA[Retrieves the service with the given global identifier.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[the matching service]]></ns2:doc><ns2:representation
+                                element="ns3:service"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:service name="PDS Service" objectType="Service" description="This is a service to test adding a service description to the registry" xmlns:ns2="http://registry.pds.nasa.gov"&gt;
+    &lt;ns2:serviceBinding accessURI="http://pds.jpl.nasa.gov" name="PDS Main Site" objectType="ServiceBinding" description="This is the PDS main web site"&gt;
+        &lt;ns2:specificationLink specificationObject="urn:uuid:HTTPSpecificationDocument" name="HTTP Specification Link" objectType="SpecificationLink" description="This is a link to the HTTP specification."&gt;
+            &lt;ns2:usageDescription&gt;Use a browser to access the PDS site. The acceptable browsers are listed in the usage parameters.&lt;/ns2:usageDescription&gt;
+            &lt;ns2:usageParameter&gt;Firefox&lt;/ns2:usageParameter&gt;
+            &lt;ns2:usageParameter&gt;Internet Explorer&lt;/ns2:usageParameter&gt;
+            &lt;ns2:usageParameter&gt;Chrome&lt;/ns2:usageParameter&gt;
+            &lt;ns2:usageParameter&gt;Safari&lt;/ns2:usageParameter&gt;
+        &lt;/ns2:specificationLink&gt;
+    &lt;/ns2:serviceBinding&gt;
+&lt;/ns2:service&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="links"><ns2:doc><![CDATA[This resource is responsible for managing External Links with the registry
+ service. External links are essentially URIs to items that are outside the
+ control of the registry.]]></ns2:doc><ns2:method
+                    id="getLink"
+                            name="GET"><ns2:doc><![CDATA[Retrieves all external links managed by the registry given a set of
+ filters.]]></ns2:doc><ns2:request><ns2:param
+                            name="start" style="query" type="xs:int"
+                            default="1"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="rows" style="query" type="xs:int"
+                            default="20"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/></ns2:request><ns2:response><ns2:representation
+                            mediaType="application/xml"/><ns2:representation
+                    mediaType="application/json"/></ns2:response></ns2:method><ns2:method
+                    id="publishLink"
+                            name="POST"><ns2:doc><![CDATA[Publishes an external link to the registry.]]></ns2:doc><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[optional package guid which this registry object is a member of]]></ns2:doc></ns2:param><ns2:representation
+                            element="ns3:externalLink"
+                            mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:externalLink externalURI="http://pds.nasa.gov" objectType="ExternalLink" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation><ns2:representation
+                            element="ns3:externalLink"
+                            mediaType="application/json"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:externalLink externalURI="http://pds.nasa.gov" objectType="ExternalLink" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method><ns2:resource
+                        path="{guid}"><ns2:param name="guid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[globally unique identifier of the service]]></ns2:doc></ns2:param><ns2:method
+                        id="getLInk"
+                            name="GET"><ns2:doc><![CDATA[Retrieves the external link with the given global identifier.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[the matching service]]></ns2:doc><ns2:representation
+                                element="ns3:externalLink"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                        xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:externalLink externalURI="http://pds.nasa.gov" objectType="ExternalLink" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method><ns2:method
+                        id="deleteLink"
+                                name="DELETE"><ns2:doc><![CDATA[Deletes the external link with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                        mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                        id="updateLink"
+                                name="PUT"><ns2:doc><![CDATA[Updates the external link with the given global identifier.]]></ns2:doc><ns2:request><ns2:representation
+                                element="ns3:externalLink"
+                                mediaType="application/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:externalLink"
+                                mediaType="application/json"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                        mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                        id="updateLinkWithPost"
+                                name="POST"><ns2:doc><![CDATA[Updates the external link with the given global identifier. This method
+ supports clients that can not do a PUT operation.]]></ns2:doc><ns2:request><ns2:representation
+                                element="ns3:externalLink"
+                                mediaType="application/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:externalLink"
+                                mediaType="application/json"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                mediaType="*/*"/></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="classifications"><ns2:doc><![CDATA[This resource is responsible for managing Classifications with the 
+ registry service.]]></ns2:doc><ns2:method
+                    id="publishClassification"
+                            name="POST"><ns2:doc><![CDATA[Publishes a classification to the registry. Publishing includes validation,
+ assigning an internal version, validating the submission, and notification.]]></ns2:doc><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[optional package guid which this registry object is a member of]]></ns2:doc></ns2:param><ns2:representation
+                            element="ns3:classification"
+                            mediaType="application/xml"
+                            xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                            element="ns3:classification"
+                            mediaType="application/json"
+                            xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method><ns2:resource
+                        path="{guid}"><ns2:param name="guid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[of classification]]></ns2:doc></ns2:param><ns2:method
+                        id="getClassification"
+                            name="GET"><ns2:doc><![CDATA[Retrieves a classification with the given global identifier.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[the classification]]></ns2:doc><ns2:representation
+                                element="ns3:classification"
+                                mediaType="application/xml"
+                        xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:response></ns2:method><ns2:method
+                        id="deleteClassification"
+                                name="DELETE"><ns2:doc><![CDATA[Deletes the classification with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                mediaType="*/*"/></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="configure"><ns2:doc><![CDATA[This resource is responsible for managing configuration of the 
+ registry service.]]></ns2:doc><ns2:method
+                    id="configure"
+                            name="POST"><ns2:doc><![CDATA[Configures the registry with a set of classification schemes and 
+ nodes.]]></ns2:doc><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="name" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="description" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:representation
+                            element="ns3:registryObjectList"
+                            mediaType="application/xml"
+                            xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                mediaType="*/*"/></ns2:response></ns2:method></ns2:resource><ns2:resource
+                    path="packages"><ns2:doc><![CDATA[This resource is responsible for managing Packages with the 
+ registry service.]]></ns2:doc><ns2:method
+                    id="getPackages"
+                            name="GET"><ns2:doc><![CDATA[Retrieves all packages managed by the registry given a set of filters.]]></ns2:doc><ns2:request><ns2:param
+                            name="start" style="query" type="xs:int"
+                            default="1"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="rows" style="query" type="xs:int"
+                            default="20"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="guid" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="name" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="lid" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="status" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="queryOp" style="query"
+                            type="xs:string" default="AND"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="sort" style="query" type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/></ns2:request><ns2:response><ns2:representation
+                            mediaType="application/xml"/><ns2:representation
+                    mediaType="application/json"/></ns2:response></ns2:method><ns2:method
+                    id="publishPackage"
+                            name="POST"><ns2:doc><![CDATA[Publishes a package to the registry. Publishing includes validation,
+ assigning an internal version, validating the submission, and notification.]]></ns2:doc><ns2:request><ns2:representation
+                            element="ns3:registryPackage"
+                            mediaType="application/xml"
+                            xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                            element="ns3:registryPackage"
+                            mediaType="application/json"
+                            xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method><ns2:resource
+                        path="{packageGuid}"><ns2:param
+                        name="packageGuid" style="template"
+                        type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:method
+                        id="getPackage"
+                            name="GET"><ns2:doc><![CDATA[Retrieves the package with the given global identifier.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[the package]]></ns2:doc><ns2:representation
+                                element="ns3:registryPackage"
+                                mediaType="application/xml"
+                        xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:response></ns2:method><ns2:method
+                        id="deletePackage"
+                                name="DELETE"><ns2:doc><![CDATA[Deletes the package with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                        mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                        id="updatePackage"
+                                name="PUT"><ns2:doc><![CDATA[Updates the package with the given global identifier.]]></ns2:doc><ns2:request><ns2:representation
+                                element="ns3:registryPackage"
+                                mediaType="application/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:registryPackage"
+                                mediaType="application/json"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                        mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                        id="updatePackageWithPost"
+                                name="POST"><ns2:doc><![CDATA[Updates the package with the given global identifier. This method supports 
+ clients that can not do a PUT operation.]]></ns2:doc><ns2:request><ns2:representation
+                                element="ns3:registryPackage"
+                                mediaType="application/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:registryPackage"
+                                mediaType="application/json"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method></ns2:resource><ns2:resource
+                        path="{packageGuid}/members"><ns2:param
+                        name="packageGuid" style="template"
+                        type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[unique identifier of package to look up members of]]></ns2:doc></ns2:param><ns2:method
+                        id="deletePackageMembers"
+                                name="DELETE"><ns2:doc><![CDATA[Deletes all the members of a package with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method></ns2:resource><ns2:resource
+                        path="{packageGuid}/members/{action}"><ns2:param
+                        name="action" style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[to take on all members which will result in an update of status
+          {@link ObjectAction}]]></ns2:doc></ns2:param><ns2:param
+                        name="packageGuid" style="template"
+                        type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[unique identifier of package to look up members of]]></ns2:doc></ns2:param><ns2:method
+                        id="changeStatusOfPackageMembers"
+                                name="POST"><ns2:doc><![CDATA[Updates the status of all the members of the package with the given 
+ global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method></ns2:resource><ns2:resource
+                        path="{packageGuid}/{action}"><ns2:param
+                        name="action" style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[to take on package which will result in an update of status
+          {@link ObjectAction}]]></ns2:doc></ns2:param><ns2:param
+                        name="packageGuid" style="template"
+                        type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[unique identifier of package to look up]]></ns2:doc></ns2:param><ns2:method
+                        id="changeStatusOfPackage"
+                                name="POST"><ns2:doc><![CDATA[Updates the status of the package with the given 
+ global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                mediaType="*/*"/></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="batch"><ns2:doc><![CDATA[This resource is responsible for managing Batch of the 
+ registry service.]]></ns2:doc><ns2:method
+                    id="publishObjects"
+                            name="POST"><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:representation
+                            element="ns3:registryObjectList"
+                            mediaType="application/xml"
+                            xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method><ns2:resource
+                        path="versions"><ns2:method id="versionObjects"
+                                name="POST"><ns2:request><ns2:param
+                                name="major" style="query"
+                                type="xs:boolean" default="true"
+                                xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                                name="packageGuid" style="query"
+                                type="xs:string"
+                                xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:representation
+                                element="ns3:registryObjectList"
+                                mediaType="application/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:registryObjectList"
+                                mediaType="application/json"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                mediaType="*/*"/></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="identifiers"><ns2:doc><![CDATA[This resource is responsible for managing External Identifiers with the 
+ registry service.]]></ns2:doc><ns2:method
+                    id="publishIdentifier"
+                            name="POST"><ns2:doc><![CDATA[Publishes a package to the registry. Publishing includes validation,
+ assigning an internal version, validating the submission, and notification.]]></ns2:doc><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[optional package guid which this registry object is a member of]]></ns2:doc></ns2:param><ns2:representation
+                            element="ns3:externalIdentifier"
+                            mediaType="application/xml"
+                            xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                            element="ns3:externalIdentifier"
+                            mediaType="application/json"
+                            xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method><ns2:resource
+                        path="{guid}"><ns2:param name="guid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:method
+                        id="deleteIdentifier"
+                                name="DELETE"><ns2:doc><![CDATA[Deletes the external identifier with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                        mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                        id="getIdentifier"
+                            name="GET"><ns2:doc><![CDATA[Retrieves an external identifier with the given global identifier.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[the package]]></ns2:doc><ns2:representation
+                                element="ns3:externalIdentifier"
+                                mediaType="application/xml"
+                xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="nodes"><ns2:doc><![CDATA[This resource is responsible for managing Classification Nodes for a given
+ Classification Scheme.]]></ns2:doc><ns2:method
+                    id="publishNode"
+                            name="POST"><ns2:doc><![CDATA[Publishes a classification node to the registry.]]></ns2:doc><ns2:request><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[optional package guid which this registry object is a member of]]></ns2:doc></ns2:param><ns2:representation
+                            element="ns3:classificationNode"
+                            mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:classificationNode parent="urn:registry:ObjectTypeScheme" code="ExtrinsicObject" name="Extrinsic Object Node" objectType="ClassificationNode" description="This is the classification node for extrinsic object." guid="urn:registry:ObjectTypeScheme:ExtrinsicObject" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation><ns2:representation
+                            element="ns3:classificationNode"
+                            mediaType="application/json"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                            xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:classificationNode parent="urn:registry:ObjectTypeScheme" code="ExtrinsicObject" name="Extrinsic Object Node" objectType="ClassificationNode" description="This is the classification node for extrinsic object." guid="urn:registry:ObjectTypeScheme:ExtrinsicObject" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:request><ns2:response><ns2:representation
+                    mediaType="*/*"/></ns2:response></ns2:method><ns2:method
+                    id="getNodes" name="GET"><ns2:request><ns2:param
+                            name="start" style="query" type="xs:int"
+                            default="1"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/><ns2:param
+                            name="rows" style="query" type="xs:int"
+                            default="20"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"/></ns2:request><ns2:response><ns2:representation
+                            mediaType="application/xml"/><ns2:representation
+                    mediaType="application/json"/></ns2:response></ns2:method><ns2:resource
+                        path="{nodeGuid}"><ns2:param name="nodeGuid"
+                        style="template" type="xs:string"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[globally unique identifier of node]]></ns2:doc></ns2:param><ns2:method
+                        id="getClassificationNode"
+                            name="GET"><ns2:doc><![CDATA[Retrieves the classification node with the given global identifier.]]></ns2:doc><ns2:response
+                                status="200"><ns2:doc><![CDATA[classification node]]></ns2:doc><ns2:representation
+                                element="ns3:classificationNode"
+                                mediaType="application/xml"
+                                    xmlns:ns3="http://registry.pds.nasa.gov"><ns2:doc><ns4:p
+                        xmlns:ns4="http://www.w3.org/1999/xhtml"><ns4:h6>Example</ns4:h6><ns4:pre><ns4:code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ns2:classificationNode parent="urn:registry:ObjectTypeScheme" code="ExtrinsicObject" path="/urn:registry:ObjectTypeScheme/ExtrinsicObject" name="Extrinsic Object Node" objectType="ClassificationNode" description="This is the classification node for extrinsic." guid="urn:registry:ObjectTypeScheme:ExtrinsicObject" home="http://pds.jpl.nasa.gov/registry-service" xmlns:ns2="http://registry.pds.nasa.gov"/&gt;
+</ns4:code></ns4:pre></ns4:p></ns2:doc></ns2:representation></ns2:response></ns2:method><ns2:method
+                        id="deleteClassificationNode"
+                                name="DELETE"><ns2:doc><![CDATA[Deletes the classification node with the given global identifier.]]></ns2:doc><ns2:response><ns2:representation
+                mediaType="*/*"/></ns2:response></ns2:method></ns2:resource></ns2:resource><ns2:resource
+                    path="replication"><ns2:doc><![CDATA[This resource is responsible for managing replication requests.]]></ns2:doc><ns2:method
+                    id="performReplication"
+                            name="POST"><ns2:doc><![CDATA[Requests a replication of a remote registry contents to be initiated.]]></ns2:doc><ns2:request><ns2:param
+                            name="registryUrl" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[to replicate contents from]]></ns2:doc></ns2:param><ns2:param
+                            name="lastModified" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[time to constrain which registry objects are relevant to
+          replicate. This time is inclusive. If set to null all will be
+          pulled.]]></ns2:doc></ns2:param><ns2:param
+                            name="objectType" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[to replicate, all others will be ignored.]]></ns2:doc></ns2:param><ns2:param
+                            name="packageGuid" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[identifier for the package which all replicated items will be
+          associated with.]]></ns2:doc></ns2:param><ns2:param
+                            name="packageName" style="query"
+                            type="xs:string"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema"><ns2:doc><![CDATA[used for the replication package]]></ns2:doc></ns2:param></ns2:request><ns2:response><ns2:representation
+                            mediaType="application/xml"/><ns2:representation
+                    mediaType="application/json"/></ns2:response></ns2:method><ns2:resource
+                        path="report"><ns2:method
+                        id="getReplicationReport"
+                                name="GET"><ns2:doc><![CDATA[Retrieves information about an ongoing replication request.]]></ns2:doc><ns2:response><ns2:representation
+                                element="ns3:replicationReport"
+                                mediaType="application/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:replicationReport"
+                                mediaType="text/xml"
+                                xmlns:ns3="http://registry.pds.nasa.gov"/><ns2:representation
+                                element="ns3:replicationReport"
+                                mediaType="application/json" xmlns:ns3="http://registry.pds.nasa.gov"/></ns2:response></ns2:method></ns2:resource></ns2:resource></ns2:resource></ns2:resources></ns2:application>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch"
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+ xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+  https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:meca_elec.phx</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MECA COMMON ELECTRONICS for PHX</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-05-23</modification_date>
+                <version_id>1.0</version_id>
+                <description>Changed logical_identifier from meca_elec__phx to meca_elec.phx</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.phx</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Hecht, M.H., J. Marshall, W.T. Pike, U. Staufer, D. Blaney, D. Braendlin, S.
+                   Gautsch, W. Goetz, H.-R. Hidber, H.U. Keller, W.J. Markiewicz, A. Mazer, T.P.
+                   Meloy, J.M. Morookian, C. Mogensen, D. Parrat, P.H. Smith, H. Sykulska, R.J.
+                   Tanner, A. Tonin, S. Vijendran, M. Weilert, P.M. Woida, Microscopy capabilities
+                   of the Microscopy, Electrochemistry, and Conductivity Analyzer (MECA),
+                   submitted to J. Geophys. Res., 2008.
+            </reference_text>
+            <description>reference.HECHTETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kounaves, S.P. M.H. Hecht, S.J. West, J.M. Morookian, S.M.M. Young, R. Quinn,
+                   P. Grunthaner, X. Wen, M. Weilert, C. Cable, A. Fisher, K. Gospodinova, J.
+                   Kapit, S. Stroble, P.-C. Hsu, B.C. Clark, D.W. Ming, and P. Smith, The 2007
+                   Phoenix Mars Scout Lander MECA Wet Chemistry Laboratory, J. Geophys. Res., in
+                   press, 2008.
+            </reference_text>
+            <description>reference.KOUNAVESETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Zent, A., M.H. Hecht, D. Cobos, G. Cardell, M.C. Foote, S.E. Woods, M. Mehta.
+                   The Thermal Electrical Conductivity Probe (TECP) for Phoenix, J. Geophys. Res.,
+                   in press, 2008.
+            </reference_text>
+            <description>reference.ZENTETAL2008</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MECA COMMON ELECTRONICS</name>
+        <type>Regolith Properties</type> <!--RChen/EN was Electronics-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+ 
+    The MECA instrument suite on the Phoenix spacecraft returns 15
+    distinct unchannelized telemetry types, of which three are common to
+    all the component instruments (microscopes, chemistry laboratories, and
+    thermal and electrical properties probe). These are types 4
+    (CME_STATUS), 5 (POWER_DATA), and 6 (TABLES).
+ 
+    Type 4 is a direct response from the FPGA that controls all aspects
+    of MECA operations. The most common usage of this telemetry type is as
+    a reply to routine requests including turning on LEDs for imaging,
+    moving the microscope sample stage, deploying a chemistry actuator
+    (sample drawer, water release, or stirring motor), or simply a status
+    inquiry. The data return provides not only confirmation that the
+    requested operation occurred, but specific information necessary for
+    calibration, such as the position of the stage when the atomic force
+    microscope is engaged. A second usage of this telemetry type is in
+    response to a &apos;raw&apos; command, a direct instruction to the FPGA to execute
+    any of its allowed functions. While not recommended for routine science
+    measurements, this mode is often used for operations that are not
+    performed in the desired sequence by the standard flight software
+    commands. Notably, this may include voltammetry and potentiometry
+    measurements in the chemistry cells, in which case the Type 4 return
+    contains primary science data.
+ 
+    Type 5 data returns the voltage and current provided by the primary
+    MECA 5V (load and logic) and 15V (load and AFM) power supplies. These
+    results are diagnostic of the functioning of all subsystems and should
+    be indicative of many anomalous conditions.
+ 
+    Type 6 data returns, on request, the contents of any of six tables
+    that modify the operation of the MECA flight software (FSW). These
+    include a state table which is autonomously maintained by FSW as well
+    as several tables that can only be set by explicit user command. These
+    user-maintained tables contain the values and allowed ranges of
+    parameters and attributes that define the implementation of each
+    experiment. For microscopy, for example, they might define the
+    different substrate positions on the sample wheel as well as the
+    optimal focus position. Download of these latter tables is for the
+    purpose of confirmation that the actual parameters of an experiment
+    were set as intended.
+ 
+    More information is found in HECHTETAL2008, KOUNAVESETAL2008, and
+    ZENTETAL2008.
+ 
+  Scientific Objectives
+  =====================
+    N/A
+ 
+  Calibration
+  ===========
+    N/A
+ 
+  Operational Considerations
+  ==========================
+ 
+    N/A
+ 
+  Detectors and Electronics
+  =========================
+ 
+    MECA flight software (FSW) runs on the primary spacecraft computer and
+    communicates to MECA hardware at 9600 baud via a serial Payload and
+    Attitude Control Interface(PACI) interface. On the other side of that
+    interface is an FPGA, located on the Command and Measurement
+    Electronics (CME) board inside the MECA enclosure. The FPGA controls
+    all hardware functions in the MECA suite with the exception of the
+    Atomic Force Microscope (AFM), which has an embedded processor, and
+    discreet switches, controlled directly by the spacecraft computer, for
+    powering MECA and for switching between AFM processor and FPGA. Data
+    return described here is generated by the FPGA.
+ 
+  Filters
+  =======
+    N/A
+ 
+  Optics
+  ======
+    N/A
+ 
+  Location on spacecraft
+  ======================
+ 
+    Information described here is returned by the FPGA on the Command and
+    Measurement Electronics (CME) board, which is located inside the MECA
+    enclosure on the spacecraft deck.
+
+        </description>
+    </Instrument>
+</Product_Context>

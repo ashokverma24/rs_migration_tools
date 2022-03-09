@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Class_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:class:0001_nasa_pds_1.cart.spatial_domain_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>Spatial_Domain</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Class_Definition</product_class>
+    </Identification_Area>
+    <DD_Class_Full>
+        <name>Spatial_Domain</name>
+        <version_id>1.10</version_id>
+        <local_identifier>urn:nasa:pds:context:class:0001_nasa_pds_1.cart.spatial_domain_1a00</local_identifier>
+        <steward_id>cart</steward_id>
+        <type>PDS4</type>
+        <namespace_id>cart</namespace_id>
+        <submitter_name>cart</submitter_name>
+        <definition>The Spatial_Domain class describes the geographic areal domain of the data set.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <abstract_flag>false</abstract_flag>
+        <DD_Association>
+           <local_identifier>urn:nasa:pds:context:class:0001_nasa_pds_1:cart:bounding_coordinates</local_identifier>
+           <reference_type>component_of</reference_type>
+           <minimum_occurrences>1</minimum_occurrences>
+           <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <Terminological_Entry>
+            <name>Spatial_Domain</name>
+            <definition>The Spatial_Domain class describes the geographic areal domain of the data set.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+    </DD_Class_Full>
+</Product_Class_Definition>
+

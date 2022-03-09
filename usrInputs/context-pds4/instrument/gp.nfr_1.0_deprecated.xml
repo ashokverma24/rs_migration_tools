@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:nfr.gp</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>NET FLUX RADIOMETER for GP</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gp::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sromovsky, L.A. and P.M. Fry, Calibration of the Galileo Net Flux Radiometer,
+                   Proceedings of the Fourth SDL/USU Infrared Sensor Calibration Symposium, Utah
+                   State University, 1994.
+            </reference_text>
+            <description>reference.SROMOVSKY-FRY1994</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.SROMOVSKY1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sromovsky, L.A., F.A. Best, H.E. Revercomb, and J.L. Hayden, Galileo Net Flux
+                   Radiometer Experiment, Space Sci. Rev. 60, pp. 233-262, 1992.
+            </reference_text>
+            <description>reference.SROMOVSKYETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sromovsky, L.A., A.D. Collard, P.M. Fry, G.S. Orton, M.T. Lemmon, M.G. Tomasko,
+                   and R.S. Freedman, Galileo Probe Measurements of Thermal and Solar Radiation
+                   Fluxes in the Jovian Atmosphere, Submitted to J. Geophys. Res., 1998.
+            </reference_text>
+            <description>reference.SROMOVSKYETAL1998</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>NET FLUX RADIOMETER</name>
+        <type>Radiometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Galileo Probe Net Flux Radiometer (NFR) measured net and
+    upward radiation fluxes in Jupiter&apos;s atmosphere between about
+    0.44 bars and 14 bars, using five spectral channels to separate
+    solar and thermal components.  The instrument used an optical
+    head extending through the probe wall to obtain views of the
+    Jovian atmosphere.  It sampled upward and downward radiation
+    fluxes with a single 40 degree (full angle) conical field of view
+    chopped between directions +/- 45 degrees from horizontal.
+ 
+    The NFR consists of two major sub-assemblies: the electronics
+    module (EM), and optical head (OH).  The electronics module is
+    about 13 cm x 19.5 cm x 16 cm high, while the optical head is
+    about 8.5 cm x 8 cm high x 10.5 cm long.  The total weight of the
+    NFR is 3.134 kg, of which the optical head is 0.672 kg.  The
+    electronics module has four feet which are bolted to the Probe
+    instrument shelf.  The optical head, supported only by its
+    attachment to the electronics module, extends out of the Probe
+    through the Probe thermal blanket and aeroshell to allow the NFR
+    sensors to view atmospheric radiation.
+ 
+    The instrument was built by Martin Marietta Astronautics Group.
+    The principal investigator is Dr.  Lawrence Sromovsky of the
+    University of Wisconsin Space Science and Engineering Center.
+ 
+ 
+  Scientific Objectives
+  =====================
+    On December 7, 1995 the Galileo Probe Net Flux Radiometer made
+    the first in-situ measurements of radiative fluxes within
+    Jupiter&apos;s atmosphere.  The instrument&apos;s first targets were the
+    primary drives for atmospheric motions: absorbed solar radiation
+    and the flux of energy from the planet&apos;s interior.  Because solar
+    radiation absorption and planetary emission occur at different
+    places and altitudes, net radiative heating and cooling result in
+    buoyancy differences that force atmospheric motions.  An
+    understanding of Jovian circulation thus requires knowledge of
+    the vertical profile of radiative heating and cooling and its
+    horizontal distribution as well.
+ 
+    The NFR contributed to this understanding by measuring the
+    difference between upward and downward radiation fluxes, the net
+    flux, as a function of altitude during probe descent.  Because
+    the radiative power per unit area absorbed by an atmospheric
+    layer is equal to the difference in net fluxes at the boundaries
+    of the layer, the vertical derivative of the net flux defines the
+    radiative energy absorbed per unit volume, and thus defines the
+    radiative heating (or cooling) of the atmosphere.
+ 
+    However, because the Galileo probe provided only one sample
+    profile of Jovian atmospheric conditions at one location and
+    time, it is especially important to understand why the measured
+    radiative energy deposition occurs: we might then have some idea
+    of how to apply the results to other atmospheric regions which
+    were not samples.  The NFR experiment contributes to
+    understanding horizontal variations by making spectral
+    measurements which illuminate the mechanisms by which radiation
+    interacts with the atmosphere.  Five broad spectral bands were
+    used to separate the vertical distribution of radiative heating
+    by sunlight and radiative cooling and heating by exchanges of
+    thermal infrared radiation.  The profiles of radiation flux also
+    contain signatures of the substances that absorb and emit
+    radiation - gases and particulates, and thus provide independent
+    constraints on models of atmospheric composition and cloud
+    structure.  when these are interpreted with other probe
+    measurements and linked with orbiter observations they provide a
+    basis for using orbiter observations to extend radiative heating
+    determinations to other locations on the planet.
+ 
+    A full treatment of scientific objectives and results can be
+    found in [SROMOVSKYETAL1998].  Preliminary scientific results
+    were documented in [SROMOVSKYETAL1996].
+ 
+ 
+  Calibration
+  ===========
+    Calibration of the instrument was carried out at the University
+    of Wisconsin.  Details of calibration have been documented in
+    [SROMOVSKYETAL1992] and [SROMOVSKY&amp;FRY1994].  The calibration
+    constants and algorithms used for the flight instrument can be
+    found in [SROMOVSKYETAL1998].
+ 
+ 
+  Operational Considerations
+  ==========================
+    Several special factors affected the quality of data acquired
+    during descent into Jupiter&apos;s atmosphere.  Among them were
+    temperatures outside the range of instrument calibration, and
+    thermal perturbations which we were unable to duplicate in the
+    laboratory.  Details of our treatment of these factors can be
+    found in [SROMOVSKYETAL1998].
+ 
+ 
+  Optical Head
+  ============
+    The optical head contains a rotating optics assembly, support
+    structure, apertures, reference blackbody sources and a position
+    control system.  The rotating assembly includes detectors,
+    field-of-view shaping optics, and heated diamond window, all of
+    which rotate as a unit between three different pairs of four
+    distinct angular orientations.  Because the rotating optics could
+    not structurally support a high pressure differential, the
+    interior of the rotating optics is designed to admit ambient
+    external gas during descent.
+ 
+    To inhibit possible condensation on interior optical surfaces, as
+    flow into the rotor is controlled by vents within the electronics
+    module and at the base of the rotor.  These vents take advantage
+    of the dynamic pressure distribution around the Galileo descent
+    probe to constrain gas flow.  Gas enters the probe through a
+    large vent at the back (aft) of the probe.  some of this gas
+    enters the electronics module through a molecular sieve filter at
+    the top of the electronics.  The filtered gas, also warmed (in
+    upper descent) or cooled (in lower descent) by the electronics
+    module, enters the rear of the optical head through a vent at the
+    base of the electronics module.  From this point the gas flows
+    partly into the rotor through the rotor base vent (near the rear
+    bearing) and partly through the motor and rotor bearings into the
+    forward part of the optical head and then through the apertures
+    into the external atmosphere.  The differential pressure driving
+    this flow is approximately 1 mb and at 1 atmosphere the total
+    flow rate through the optical head will be approximately 100
+    cc/sec.
+ 
+    When the optical system is not viewing external radiation, it
+    views one of two internal radiation sources: an ambient blackbody
+    source which is thermally coupled to the wall of the front
+    housing, and a heated blackbody source which is servo-controlled
+    to a temperature of approximately 107 deg C (the servo point is
+    attained in air or vacuum, but generally is not attained in He or
+    H2 atmospheres where high gas conductivity limits the blackbody
+    temperature to a maximum differential above the ambient
+    atmospheric temperature).
+ 
+ 
+  Detector Package
+  ================
+    All NFR spectral channels use LiTaO3 pyroelectric thermal
+    detectors to convert absorbed radiation power to electrical
+    signals.  The NFR detector package contains an array of six
+    detectors mounted in close proximity on a single circuit board.
+    Spectral filters are mounted in a filter frame which is
+    hermetically sealed to the detector circuit board, trapping xenon
+    gas in the volume between the detectors and the filter frame.
+    (All channels experience additional spectral filtering by the 0.2
+    mm thick diamond window at the entrance to the rotating optics,
+    the spectral reflectivity of the mirrors, and the spectral
+    response of the detectors.) The backfill of the very heavy xenon
+    gas is used to buffer the small amount of hydrogen gas which will
+    diffuse into the detector package during descent.  The buffering
+    effect maintains low thermal conductivity inside the detector
+    package and thereby eliminates significant thermal crosstalk
+    which otherwise would occur via gas conduction between detector
+    elements.  There are two filter frames: an upper frame containing
+    only a CaF2 long-wave blocker for channel C, and a lower filter
+    frame containing five spectral filters and one opaque blocker for
+    the blind channel.  Each pyroelectric detector element consists
+    of a crystal approximately 1 mm x 2 mm x 25 microns thick mounted
+    on 0.015 inch high mesas made of a vibration dampening material
+    called Visilox.  Black paint (3M velvet) is applied to the top
+    surface so as to cover the active (electroded) area but not the
+    entire detector.  The typical paint thickness is 20-25 microns.
+ 
+    Detectors have a primary thermal time constant of approximately
+    110 ms, an electrical capacitance of about 40 pF, and a
+    responsivity of approximately 1400 V/W.  In the laboratory the
+    dominant noise source is Johnson noise associated with the
+    detector load resistor.
+ 
+ 
+  Spectral Response
+  =================
+    The NFR made measurements in five parallel spectral channels.
+    Two solar channels provided complete integration of all solar
+    wavelengths from 0.3-3.5 microns (B) and a red-weighted subset
+    from 0.6-3.5 microns (E) in which methane absorption is most
+    significant.  A broadband thermal channel (A) from 3-200 microns
+    measured sources and sinks of Jupiter&apos;s thermal radiation as a
+    whole.  Channel C (3.5-5.8 microns) sampled the narrow band
+    5-micron window in Jupiter&apos;s atmosphere where gaseous absorption
+    is relatively low.  Channel D (14-150 microns) sampled the
+    hydrogen-dominated longwave region of the thermal spectrum.
+    Channel F is a blind channel that measured non-radiative detector
+    perturbations, needed to correct for similar perturbations in the
+    other channels.  None of the spectral channels has a flat
+    responsivity, and thus energy deposition profiles and heating and
+    cooling rates are somewhat model dependent.  To compute a heating
+    rate due to thermal radiation exchange requires a uniform
+    weighting of the entire thermal spectrum.  But since the spectrum
+    isn&apos;t measured, we must integrate the spectral flux density of a
+    model spectrum that leads to the same simulated NFR measurement.
+ 
+ 
+  Electronics
+  ===========
+    The NFR electronics consist of: digital circuits, analog circuits
+    (detector pre-amplifiers, post-amplifiers, demodulators and
+    integrators), gain select amplifier, analog to digital converter,
+    housekeeping monitors, motor driver, and optics position sensors.
+ 
+ 
+  Digital Circuits
+  ================
+    The microprocessor system consists of the 1802 CPU (Central
+    Processing Unit), 256 words of RAM (Random Access Memory), 6144
+    8-bit words of PROM (Programmable Read-Only Memory), nine I/O
+    (Input/Output) ports and a power-up reset circuit.  The RAM is
+    used to provide 256 bytes of temporary storage for data values
+    during data accumulation and manipulation.  The six 1-Kbyte PROMs
+    contain the program necessary to operate the instrument.  At any
+    given time only one of the PROMs is turned on and for only 1
+    microsecond of the 8 microsecond machine cycle, providing a
+    factor of 48 reduction of power consumption by the PROMs.  Six
+    8-bit wide output ports are used to control the non-digital NFR
+    subsystem.  Three input ports are used to read data from the NFR
+    subsystems.  The 2048 Hz spacecraft clock is divided down to a
+    4-Hz signal which is used to interrupt the microprocessor.  The
+    Minor Frame signal from the spacecraft is used to synchronize the
+    4-Hz timer and also to synchronize the software with spacecraft
+    timing.  The software does not begin cycling in its normal mode
+    until the microprocessor detects a Minor Frame interrupt.
+ 
+    The PROM software controls the sequence, timing, and duration of
+    motor control pulses.  After each cycle of the optical rotor,
+    position sensor phototransistors are read to determine if the
+    optics are at the correct position.  If any one of the 22 half
+    cycles of one instrument cycle results in an incorrect optics
+    position, the microprocessor notes this in the data stream by
+    setting the motor position error bit to one for that IC.
+ 
+ 
+  Analog Circuits
+  ===============
+    There are six channels of analog processors, one for each
+    detector.  Each channel includes a detector signal pre-amplifier,
+    a post-amplifier, a demodulator and an integrator.  This six
+    pre-amplifiers are housed in a hybrid package placed adjacent to
+    the detectors on the rotating optics.  The rest of the analog
+    circuits reside on two circuits boards within the electronics
+    module.
+ 
+ 
+  Pre-Amplifiers
+  ==============
+    Each pre-amplifier is a DC differential amplifier with a gain of
+    6.67, using U423 dual JFET inputs.  The effective input load
+    resistance of 0.909E+10 ohm (1E+10 ohm in parallel with 1E+11
+    ohm) in combination with the typical detector capacitance of 40
+    pF leads to a detector electrical droop time constant of 0.36 s.
+    with this droop a typical detector will generate an electrical
+    offset of 0.055 V per deg C per minute of thermal ramp.  Because
+    the load resistance is so much less than 1E+13 ohm detector
+    resistance, detector noise is dominated by the Johnson noise of
+    the load resistors (modified by the detector shunt capacitance,
+    of course).
+ 
+ 
+  Post-Amplifiers
+  ===============
+    The six parallel post-amplifiers each consists of three
+    non-inverting amplifiers in series (except for channels B and E
+    which have one inversion to compensate for an inversion built
+    into the detector package).  Single pole RC filters are used to
+    block the DC component from the hybrid and to tailor the
+    frequency response of the circuit.  The filter components are
+    chosen to give a maximum response at 16 Hz.  This may seem
+    strange in view of our fundamental 2-Hz detector signal.
+    However, this filter function acts somewhat like a
+    differentiator, which, in combination with the following
+    integrator, results in a very small sensitivity to the details of
+    signal transitions and a high sensitivity only to the final
+    values attained after each flip of the rotor.  This effect
+    minimizes asymmetry errors.
+ 
+    FET (Field Effect Transistor) switches at the input of each post-
+    amplifier allow the inputs to be grounded through a 100 ohm
+    resistor, providing a zero reading to be integrated as the Analog
+    Zero (AZ) data.  The AZ value is intended to be a measure of
+    offset in the integration circuitry.
+ 
+    The gain of the post amplifiers is tailored to the dynamic range
+    expected from each channel.  To extend the dynamic range of
+    channels A, C, and D, which receive much stronger signals from
+    the internal heated blackbody than they do from Jupiter&apos;s
+    atmosphere (at least in laboratory situations), the third
+    amplifiers of the circuits for those channels (and also for
+    channel F) have two possible gains selectable with a FET switch.
+    The gain is switched to 8 for analog zero, up flux, and net flux
+    measurements, and switched to unity for the blackbody calibrate
+    measurement.  The solar channels, B and E, receive relatively
+    weak signals from the on-board calibration source and thus do not
+    need gain reduction capabilities.
+ 
+ 
+  Demodulator and Integrator
+  ==========================
+    Each demodulator is a gain unity, reversible polarity amplifier,
+    the polarity of which is controlled by two FET switches,
+    synchronized to the 2-Hz NFR decommutation signal.
+ 
+    The integrator consists of an inverting amplifier with a 0.82
+    microfarad capacitor in the feedback loop and a 1 megohm resistor
+    connected between the output of the demodulator and the input to
+    the integrating amplifier.  A FET switch is placed in parallel
+    with the capacitor to short out the charge after a measurement
+    has been taken.  Two other switches control input to the
+    integrator.  In one configuration the output of the demodulator
+    is connected to the integrator (enabling integration); in the
+    other configuration the demodulator output is disconnected and
+    the integrator input is grounded (holding the integrated value
+    for readout by the A/D converter).
+ 
+ 
+  Gain Select Amplifier (GSA)
+  ===========================
+    All six integrator outputs and all housekeeping monitor outputs
+    are routed by a 22-channel multiplexer to the gain selection
+    circuits which properly scale those analog signals for input to
+    the Analog to Digital Converter (ADC)described below.  A
+    3-channel gain select multiplexer selects either the output of
+    the 22-channel multiplexer or the output of one of two cascaded
+    amplifiers, each with a gain of eight.  The three multiplexed
+    channels view the output of the 22-channel multiplexer at gains
+    of 1, 8, and 64.
+ 
+ 
+  Analog to Digital Converter (ADC)
+  =================================
+    The ADC is a 12-bit, +10 to -10 V, successive approximation type
+    converter, used over a +5 to -5 V 11-bit range only.  The most
+    significant bit (bit 11) indicates polarity of the signal, and
+    the second most significant bit indicates a positive or negative
+    overrange.  Data reported to the Probe telemetry include the
+    sign, two bits indicating the gain setting of the GSA, and nine
+    bits of data from the ADC (bits 1 through 9 - bit zero is
+    unused).
+ 
+    The microprocessor changes the gain of the GSA as required to
+    obtain an on-scale reading for the ADC.  The GSA is first set to
+    its maximum gain of 64.  If the processor detects that the ADC is
+    in an overrange condition (input greater than +5 or less than -5
+    V), it sets the GSA to a gain of 8.  If this also leads to an
+    overrange condition, the GSA is set to a gain of one.
+ 
+ 
+  Housekeeping Monitors
+  =====================
+    The following is a list of housekeeping data that the NFR reports
+    in the probe telemetry stream:
+ 
+          HB - Hot Blackbody Temp
+          A1 - Ambient Wall Warm Temp
+          A2 - Ambient Wall Cold Temp
+          DT - Detector Temperature
+          WT - Window Temperature
+          ET - Electronics Temperature
+          V1 - +10 Volt ADC Reference
+          V2 - +7 Volt Supply
+          BI - Hot BB Current
+          WI - Window Heater Current
+          G1 - GSA Cal for gain=1
+          G2 - GSA Zero for gain=1
+          G3 - GSA Cal for gain=8
+          G4 - GSA Zero for gain=8
+          G5 - GSA Cal for gain=64
+          G6 - GSA Zero for gain=64
+ 
+    The diode voltage drop change with temperature of a 1N4148 serves
+    as the temperature sensor for the DT and ET temperature monitors.
+    The HB, A1, A2 and WT temperature sensors are Fenwal GB38SM43
+    thermistors.  The HB sensor is located on the back of the hot
+    blackbody printed circuit resistor.  The A1 and A2 thermistors
+    are located in an aluminum mount on the ambient wall.  The WT
+    sensor is located in the window housing structure on the rotating
+    optics.  The DT sensing diode is mounted directly to the detector
+    board on the rotating optics.
+ 
+ 
+  Motor Driver
+  ============
+    The motor driver is basically a pair of 28-V H-bridge circuits
+    capable of driving up to 250 mA of reversible current through
+    each of the two motor coils.  The microprocessor controls the
+    motor driver by writing a one into the appropriate latch bit to
+    turn on one of two coils in one of two polarities.  In addition
+    to these four latch bits, there is one additional bit reserved
+    for controlling eddy current damping by shorting one of the two
+    coils.  The exact time and duration of each motor coil pulse is
+    controlled by the PROM software, and is tuned, prior to burning
+    PROMs, to obtain stable symmetric optical head rotation
+    characteristics.
+ 
+    To obtain stable rotor motion characteristics under varying
+    temperature conditions, the motor drive currents are stabilized
+    by a current regulator circuit.
+ 
+ 
+  Optics Position Sensors
+  =======================
+    The rotor gear on the rotating optics has four slots cut into it
+    so that four LED-photo transistor pairs mounted around the gear
+    can determine if the rotor is at 0, 90, 180, or 270 degrees (+/-
+    5 deg).  Only one photo- transistor will be turned on indicating
+    the position of the rotor.  If the correct transistor is not
+    illuminated, this condition is reported in the data stream by
+    setting the position error flag.
+ 
+ 
+  Operating Modes
+  ===============
+    The detectors, field-of-view shaping optics, and heated diamond
+    window all rotate as a unit between three different pairs of four
+    distinct angular orientations.  Besides the upward and downward
+    viewing positions, there are two horizontal positions, one
+    providing a view of an ambient blackbody, and the other providing
+    a view of a heated blackbody reference, both blackbodies being
+    located in opposite instrument walls.  In the Net Flux (NF) Mode,
+    the rotating optics chops between upward and downward views.  In
+    the Blackbody Calibrate (BC) Mode the FOV is chopped between the
+    ambient and heated blackbody references.  In Upflux Mode (UF),
+    the FOV is chopped between the downward viewing direction and the
+    ambient blackbody reference.  Time-integrated measurements are
+    returned every six seconds for all channels in parallel.  During
+    each 2-minute Data Cycle (DC) there are 20 Integration Cycles
+    (IC) during which decommutated, filtered, and integrated signals
+    are computed.  Among these there are 17 cycles of net flux
+    measurements, one upflux measurement, one blackbody calibration
+    measurement, and one analog zero measurement.  All chopping is at
+    a 2-Hz rate, and the decommutated signal integration generally
+    extends for 5.5 seconds (the first 11 of 12 cycles for each six
+    seconds).  The two net flux measurements following AZ and UF mode
+    measurements (as well as AZ mode measurements themselves) are
+    &apos;short-cycled&apos;, meaning that only the last five cycles are
+    integrated, because of large DC level shifts after changing
+    operating modes.
+ 
+ 
+  Measured Parameters
+  ===================
+    The Net Flux Radiometer actually measures net radiance rather
+    that net flux.  This net radiance measurement is convoluted by
+    the instrument field-of-view and the non-flat spectral response.
+    A discussion of the relationship between measured net radiance
+    and true net flux can be found in [SROMOVSKYETAL1998] and
+    [SROMOVSKYETAL1992].
+ 
+ 
+  Timing
+  ======
+    NFR data can be related to data from other probe instruments via
+    the time after Minor Frame Zero.  This parameter is included in
+    all descent measurement files, for each data point.
+
+        </description>
+    </Instrument>
+</Product_Context>

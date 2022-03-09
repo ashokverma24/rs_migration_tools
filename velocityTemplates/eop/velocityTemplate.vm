@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>                                                                                                              
+<?xml-model href="$opt.schematron"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational
+   xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+      http://pds.nasa.gov/pds4/pds/v1
+      $opt.schema">
+
+#set ($Target=$Text.toTitleCase(${lbl.TARGET_NAME}))
+#set ($collection_id_pre=$opt.collection_id_pre)
+#set ($dataType="eop")
+
+       <Identification_Area>
+             <logical_identifier>urn:nasa:pds:$opt.bundle_id:$collection_id_pre$dataType:FILEWITHNOEXE</logical_identifier>
+             <version_id>1.0</version_id>
+             <title>Earth Orientation Parameter File Covering STARTTIMEZ To STOPTIMEZ</title>
+             <information_model_version>$opt.model_version</information_model_version>
+             <product_class>Product_Observational</product_class>
+             <Citation_Information>
+                   <author_list>$opt.author_list</author_list>
+                   <publication_year>$opt.publication_year</publication_year>
+                   <description>
+                        Earth Orientation Parameter (EOP) file for radio science
+                        observations, migrated from the original PDS3 archive to PDS4.  
+                   </description>
+             </Citation_Information>
+             <Modification_History>
+                   <Modification_Detail>
+                         <modification_date>CREATIONDATE</modification_date>
+                         <version_id>1.0</version_id>
+                         <description>
+                           Initial version created from the original file with PDS3 PRODUCT_ID
+                           $lbl.PRODUCT_ID in data set $lbl.DATA_SET_ID. If necessary,
+                           Line-Feed record delimiters in the original file have been replaced by
+                           Carriage-Return Line-Feed record delimiters, as required by PDS4.
+                           Any trailing blank characters in an original record have been deleted.
+                           A new PDS4 label has been generated.
+                         </description>
+                   </Modification_Detail>
+             </Modification_History>
+       </Identification_Area>
+       <Observation_Area>
+             <Time_Coordinates>
+                   <start_date_time>STARTTIMEZ</start_date_time>
+                   <stop_date_time>STOPTIMEZ</stop_date_time>
+             </Time_Coordinates>
+             <Primary_Result_Summary>
+                   <purpose>Calibration</purpose>
+                   <processing_level>Derived</processing_level>
+                   <description>
+                        Earth Orientation Parameter (EOP) file for radio science 
+                        observations, migrated from the original PDS3 archive to PDS4.
+                   </description>
+             </Primary_Result_Summary>
+             <Investigation_Area>
+                   <name>Geodesy</name>
+                   <type>Observing Campaign</type>
+                  <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:investigation:other_investigation.geodesy</lid_reference>
+                         <reference_type>data_to_investigation</reference_type>
+                   </Internal_Reference>
+             </Investigation_Area> 
+             <Observing_System>
+                   <Observing_System_Component>
+                         <name>EOP Analysis</name>
+                         <type>Literature Search</type>
+                         <description>
+                               Analysis leading to an EOP file uses data from very long 
+                               baseline interferometry of compact radio sources and 
+                               ranging/Doppler measurements to Earth orbiting satellites
+                               to determine the polar motion and nutation of the Earth's
+                               rotation axis. The data are collected using dozens of 
+                               stations fixed to the Earth's surface but which are subject
+                               to tidal forces and tectonic motions.
+                         </description>
+                   </Observing_System_Component>
+             </Observing_System>
+             <Target_Identification>
+                   <name>Earth</name>
+                   <type>Planet</type>
+                   <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:target:planet.earth</lid_reference>
+                         <reference_type>data_to_target</reference_type>
+                   </Internal_Reference>
+             </Target_Identification>
+       </Observation_Area>
+       <Reference_List>
+             <Internal_Reference>
+                   <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.trk-2-21:1997-08-04</lid_reference>
+                   <reference_type>data_to_document</reference_type>
+                   <comment>
+                     TRK-2-21 Software Interface Specification for EOP files.
+                     DSN documentation and product updates are not tightly synchronized.
+                     Other versions of the document may be available in the same collection.
+                   </comment>
+             </Internal_Reference>
+             <Internal_Reference>
+                   <lid_reference>urn:nasa:pds:radiosci.documentation:document:altamimi.2011</lid_reference>
+                   <reference_type>data_to_document</reference_type>
+                   <comment>
+                     The article describes derivation of International 
+                     Terrestrial Reference Frame 2008.  IRTF2008 is used
+                     for EOP2 files; EOP files use IRTF93, but the two 
+                     solution methods are comparable.
+                   </comment>
+             </Internal_Reference>
+             <Internal_Reference>
+                   <lid_reference>urn:nasa:pds:radiosci.documentation:document:folkner.1993</lid_reference>
+                   <reference_type>data_to_document</reference_type>
+                   <comment>
+                         The memo describes the models behind derivation of EOP files 
+                         and the format and use of an EOP file.
+                   </comment>
+             </Internal_Reference>
+             <Internal_Reference>
+                   <lid_reference>urn:nasa:pds:radiosci.documentation:document:moyer.1993</lid_reference>
+                   <reference_type>data_to_document</reference_type>
+                   <comment>
+                         The memo describes frame tie and nutation corrections for the Orbit
+                         Determination Program (ODP), the 1993 justification for the EOP.
+                   </comment>
+             </Internal_Reference>
+             <Source_Product_External>
+                   <external_source_product_identifier>
+                         $lbl.DATA_SET_ID:$lbl.PRODUCT_ID
+                   </external_source_product_identifier>
+                   <reference_type>data_to_derived_source_product</reference_type>
+                   <curating_facility>$opt.curating_facility</curating_facility>
+                   <description>
+                         The value of external_source_product_identifier is constructed 
+                         from the PDS3 DATA_SET_ID, an ASCII colon, and the PDS3 PRODUCT_ID.
+
+                         Migration of the original EOP to PDS4 included: (1) conversion
+                         of record delimiters to carriage-return line feed pairs (if 
+                         needed), (2) conversion of the file name to lower case, 
+                         (3) substitution  of ".tab" as the file name extension, and 
+                         (4) generation of a new label in XML.
+                   </description>
+             </Source_Product_External>
+       </Reference_List>
+       <File_Area_Observational>
+             <File>
+                   <file_name>FILENAME</file_name>
+                   <file_size unit="byte">FILESIZE</file_size>
+                   <md5_checksum>MD5</md5_checksum>
+                   <comment>
+                         Earth Orientation Parameter (EOP) files provide calibrations for 
+                         rotation of station locations from the Earth-fixed frame to the 
+                         inertial (radio) frame. The EOP file replaces the older STOIC 
+                         file. STOIC files include calibrations for UT1-UTC and polar 
+                         motion. EOP files include these calibrations and, in addition, 
+                         nutation correction parameters necessary to determine inertial 
+                         station locations at the few-cm level. The format of the EOP 
+                         file is described in documents referenced above.  
+
+                         The EOP file describes rotation from a specific Earth-fixed 
+                         reference frame to a specific inertial reference frame. In order
+                         to achieve cm-level accuracy for inertial station locations, the
+                         EOP file calibrations must be used according to a given set of 
+                         models for Earth rotation and must be used with Earth-fixed and
+                         inertial frames consistent with those to which the Earth 
+                         Orientation parameters refer. The models are described
+                         memo.folkneretal1993  and  sis.eop.
+                         
+                         The Earth-fixed and inertial frames for a given EOP file are given
+                         by parameters within the file. For Cassini the Earth-fixed frame 
+                         used by the EOP and STOIC files was consistent with the 
+                         International Earth Rotation Service (IERS) terrestrial reference
+                         frame labeled  ITRF93  while the inertial frame was consistent 
+                         with the IERS Celestial Reference Frame labeled  ICRF93.  These 
+                         frames are described in the IERS Annual Report for 1993 and in 
+                         IERS Technical Note 18.  DSN station locations consistent with the
+                         ITRF93 reference frame are available from the Station locations 
+                         home page.
+                         
+                         Cassini EOP files were produced by the Tracking System Analytic
+                         Calibration (TSAC) group.  A short version of the EOP contains
+                         Earth orientation values spanning slightly more than one year --
+                         from approximately 9 months prior to creation of the file to 
+                         approximately 3 months after the date of file creation, based on
+                         predictions.  A long version (not used by Cassini) was identical
+                         except that Earth orientation values were extended back to 1962.
+                         
+                         DSN and flight project navigation teams use Earth Orientation data
+                         in the process of reconstructing past orbits and generating orbit 
+                         predictions. Other groups in navigation, mission design, tracking 
+                         system and applications, and radio science also use EOP data.
+                   </comment>
+             </File>
+             <Header>
+                   <offset unit="byte">0</offset>
+                   <object_length unit="byte">HEADER_SIZE</object_length>
+                   <parsing_standard_id>7-Bit ASCII Text</parsing_standard_id>
+                   <description>
+                       The EOP Header has 15 records.  Record length is variable.  Records
+                       are delimited by ASCII carriage-return line-feed pairs.  The 
+                       records are:
+                          1. The file title "JPL Earth Orientation Parameter File"
+                          2. Date of the last data point
+                          3. Date of the last prediction
+                          4. A blank line except for the character "$" in the second 
+                             position.
+                          5. EOPLBL    character*80        
+                            A record used to identify the EOP file; it provides the date of
+                            the last input datum (LD) and the last date for which 
+                            predictions are given (PT).  Variable  UT1TYP  has been placed
+                            at the end of the record.  Only two values are allowed: 
+                            UT1TYP=UT1R  and  UT1TYP=UT1. UT1R is UT1 with the effects of 
+                            short-term tides removed.
+                          6. EOPFNG    character*80        
+                            This record gives the name of the program used to produce the 
+                            EOP file, the date and time the file was generated, and the 
+                            date and time the program was linked.
+                          7. EOPUT1    character*6        
+                            This record indicates whether the data in the file contain 
+                            TAI-UT1 or TAI-UT1R.  The two possible values of this variable
+                            are 'UT1' and 'UT1R'.
+                          8. EOPTYP    character*6        
+                            This record is used by the Orbit Determination Program (ODP) to
+                            determine  whether to use the EOP array or the UTPM STOIC (TP)
+                            array for the  computation of Earth orientation.  The allowed 
+                            values of this variable are 'EOP' and 'STOIC'.
+                          9. EOPTIM    character*25        
+                            Date and time (UTC) of creation of the EOP file (format
+                            dd-mmm-yyyy hh:mm:ss.ffff).
+                         10. EOPTRF    character*6        
+                            This record gives the Terrestrial Reference Frame for station
+                            locations  and site velocities to which the EOP parameters 
+                            refer; currently the value assigned is 'ITRF93'.
+                         11. EOPCRF    character*6        
+                            This record gives the Celestial Reference Frame to which the
+                            EOP parameters refer; currently the value assigned is 
+                            'ICRF93'.
+                         12-14. Three records providing column headers for the data which
+                            follow.
+                         15. The marker "EOP=" denoting the beginning of the EOP data 
+                            records.
+                   </description>
+             </Header>
+             <Table_Character>
+                   <name>Earth Orientation Parameters Table</name>
+                   <offset unit="byte">HEADER_SIZE</offset>
+                   <records>RECORDS</records>
+                   <description>
+                         The Table includes one or more records each with 8 fields 
+                         including modified Julian Date, polar motion offsets, timing 
+                         corrections to TAI, nutation corrections, and the date on which
+                         the corrections apply.  The values cover approximately 9 months
+                         prior to the file creation (based on measurements) to 
+                         approximately 3 months after file creation (based on 
+                         predictions).  Records have fixed lengths, fields are 
+                         delimited by commas, and records are delimited by ASCII 
+                         carriage-return line-feed pairs.
+                   </description>
+                   <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+                   <Record_Character>
+                         <fields>8</fields>
+                         <groups>0</groups>
+                         <record_length unit="byte">RECORD_SIZE</record_length>
+                         <Field_Character>
+                               <name>Modified Julian Date (MJD)</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>ASCII_Real</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <field_format>%8f</field_format>
+                               <unit>day</unit>
+                               <description>
+                                     The modified Julian date for the remaining fields 
+                                     in the record.  The number of days since midnight 
+                                     on November 17, 1858 (JD 2400000.5).
+                               </description>
+                         </Field_Character>
+                         <Field_Character>
+                               <name>Polar Motion X Coordinate</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">10</field_location>
+                               <data_type>ASCII_Real</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <field_format>%8f</field_format>
+                               <unit>milliarcsecond</unit>
+                               <description>
+                                     The X coordinate of polar motion in milliseconds of
+                                     arc.  One milliarcsecond is approximately 3 cm on 
+                                     the Earth's surface.
+                               </description>
+                         </Field_Character>
+                         <Field_Character>
+                               <name>Polar Motion Y Coordinate</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">19</field_location>
+                               <data_type>ASCII_Real</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <field_format>%8f</field_format>
+                               <unit>milliarcsecond</unit>
+                               <description>
+                                     The Y coordinate of polar motion in milliseconds 
+                                     of arc.  One milliarcsecond is approximately 3 cm
+                                     on the Earth's surface.
+                               </description>
+                         </Field_Character>
+                         <Field_Character>
+                               <name>TAI-UT1</name>
+                               <field_number>4</field_number>
+                               <field_location unit="byte">28</field_location>
+                               <data_type>ASCII_Real</data_type>
+                               <field_length unit="byte">11</field_length>
+                               <field_format>%11f</field_format>
+                               <unit>second</unit>
+                               <description>
+                                     The difference between International Atomic Time (TAI)
+                                     and Universal Time 1 (UT1), where the latter is the 
+                                     instantaneous rotation angle of the Earth, determined
+                                     from astronomical and satellite observations corrected
+                                     for polar motion and measured in time units.
+                               </description>
+                         </Field_Character>
+                         <Field_Character>
+                               <name>TAI-UTC</name>
+                               <field_number>5</field_number>
+                               <field_location unit="byte">40</field_location>
+                               <data_type>ASCII_Real</data_type>
+                               <field_length unit="byte">6</field_length>
+                               <field_format>%6f</field_format>
+                               <unit>second</unit>
+                               <description>
+                                     The difference between International Atomic Time (TAI)
+                                     and Coordinated Universal Time 1 (UTC), where the 
+                                     latter is Civil Time, formerly called GMT.  
+                                     By definition UTC runs at the same rate as TAI except
+                                     for the introduction of leap seconds, which are 
+                                     required to keep UTC within 0.9 s of UT1.
+                               </description>
+                         </Field_Character>
+                         <Field_Character>
+                               <name>dPsi</name>
+                               <field_number>6</field_number>
+                               <field_location unit="byte">47</field_location>
+                               <data_type>ASCII_Real</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <field_format>%8f</field_format>
+                               <unit>milliarcsecond</unit>
+                               <description>
+                                     The nutation correction for angle psi.
+                               </description>
+                         </Field_Character>
+                         <Field_Character>
+                               <name>dEps</name>
+                               <field_number>7</field_number>
+                               <field_location unit="byte">56</field_location>
+                               <data_type>ASCII_Real</data_type>
+                               <field_length unit="byte">8</field_length>
+                               <field_format>%8f</field_format>
+                               <unit>milliarcsecond</unit>
+                               <description>
+                                     The nutation correction for angle epsilon.
+                               </description>
+                         </Field_Character>
+                         <Field_Character>
+                               <name>Calendar Date</name>
+                               <field_number>8</field_number>
+                               <field_location unit="byte">68</field_location>
+                               <data_type>ASCII_String</data_type>
+                               <field_length unit="byte">11</field_length>
+                               <field_format>%11s</field_format>
+                               <description>
+                                     The calendar date corresponding to MJD in Field 1.
+                                     Format is DD-MMM-YYYY.
+                               </description>
+                         </Field_Character>
+                   </Record_Character>
+             </Table_Character>
+       </File_Area_Observational>
+</Product_Observational>

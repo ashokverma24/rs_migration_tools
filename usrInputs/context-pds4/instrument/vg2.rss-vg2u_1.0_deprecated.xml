@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rss-vg2u.vg2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>RADIO SCIENCE SUBSYSTEM for VG2</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vg2::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Allan, D.W., Statistics of Atomic Frequency Standards, Proceedings of the IEEE,
+                   54, 221-230, 1966.
+            </reference_text>
+            <description>reference.ALLAN1966</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Anderson, J.D., T.P. Krisher, S.E. Borutzki, M.J. Connally, P.M. Eshe, H.B.
+                   Hotz, S.Kinslow, E.R. Kursinski, L.B. Light, S.M. Matousek, K.I. Moyd, D.C.
+                   Roth, D.N. Sweetnam, A.H. Taylor, G.L. Tyler, D.L. Gresh, and P.A. Rosen, Radio
+                   Range Measurements of Coronal Electron Densities at 13 and 3.6 Centimeter
+                   Wavelengths During the 1985 Solar Conjunction of Voyager 2, Astrophysical
+                   Journal, 323, L141-L143, 1987.
+            </reference_text>
+            <description>reference.ANDERSONETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Anderson, J.D., J.K. Campbell, R.A. Jacobson, D.N. Sweetnam, A.H. Taylor,
+                   A.J.R. Prentice, and G.L. Tyler, Radio Science with Voyager 2 at Uranus:
+                   Results on Masses and Densities of the Planet and Five Principal Satellites,
+                   Journal of Geophysical Research, 92, 14877-14883, 1987.
+            </reference_text>
+            <description>reference.ANDERSONETAL1987B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Asmar, S.W., and R.G. Herrera, Radio Science Handbook, JPL D-7938, Volume 4,
+                   Jet Propulsion Laboratory, Pasadena, CA, 22 January 1993.
+            </reference_text>
+            <description>reference.ASMAR-HERRERA1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Asmar, S. W., N. A. Renzetti, The Deep Space Network as an instrument for radio
+                   science research, NASA Technical Reports Server, 1993STIN...9521456A, 1993.
+            </reference_text>
+            <description>reference.ASMAR-RENZETTI1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Asmar, S.W., R.G. Herrera, and T. Priest, Radio Science Handbook, JPL D-7938,
+                   Volume 6, Jet Propulsion Laboratory, Pasadena, CA, 1995.
+            </reference_text>
+            <description>reference.ASMARETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Deep Space Network / Flight Project Interface Design Book, Document 810-5, Jet
+                   Propulsion Laboratory, Pasadena, CA.
+            </reference_text>
+            <description>reference.DSN810-5</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Eshleman, V.R., G.L. Tyler, J.D. Anderson, G. Fjeldbo, G.E. Wood, and T.A.
+                   Croft, Radio Science Investigations with Voyager, Space Science Reviews, 21,
+                   207-232, 1977.
+            </reference_text>
+            <description>reference.ESHLEMANETAL1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Eshleman, V.R., G.L. Tyler, G.E. Wood, G.F. Lindal, J.D. Anderson, G.S. Levy,
+                   and T.A. Croft, Radio Science with Voyager at Jupiter: Initial Voyager 2
+                   Results and a Voyager 1 Measure of the Io Torus, Science, 206, 959-962, 1979.
+            </reference_text>
+            <description>reference.ESHLEMANETAL1979B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   DSN Geometry and Spacecraft Visibility, Document 810-5, Rev. D, Vol. 1,
+                   DSN/Flight Project Interface Design, Jet Propulsion Laboratory, Pasadena, CA,
+                   1987.
+            </reference_text>
+            <description>reference.GEO-10REVD</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gresh, D.L., E.A. Marouf, G.L. Tyler, P.A. Rosen, and R.A. Simpson, Voyager
+                   Radio Occultation by Uranus Rings - I. Observational Results, Icarus, 78,
+                   131-168, 1989.
+            </reference_text>
+            <description>reference.GRESHETAL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gurrola, E.M., Interpretation of radar data from the icy Galilean
+                   satellites and Triton, Ph.D. dissertation, Stanford University, Palo Alto,
+                   CA, 1995.
+            </reference_text>
+            <description>reference.GURROLA1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krisher, T.P., J.D. Anderson, and J.K. Campbell, Test of the Gravitational
+                   Redshift Effects at Saturn, Physical Review Letters, 64, No. 12, 1990.
+            </reference_text>
+            <description>reference.KRISHERETAL1990</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Levy, G.S., D.W. Green, H.N. Royden, G.E. Wood, and L.L. Tyler, Dispersive
+                   Doppler Measurement of the Electron Content of the Torus of Io, Journal of
+                   Geophysical Research, 86, 8467-8470, 1981.
+            </reference_text>
+            <description>reference.LEVYETAL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lindal, G.F., G.E. Wood, G.S. Levy, J.D. Anderson, D.N. Sweetnam, H.B. Hotz,
+                   B.J. Buckles, D.P. Holmes, P.E. Doms, V.R. Eshleman, G.L. Tyler, and T.A.
+                   Croft, The Atmosphere of Jupiter: An Analysis of the Voyager Radio Occultation
+                   Measurements, Journal of Geophysical Research, 86A, 8721-8727, 1981.
+            </reference_text>
+            <description>reference.LINDALETAL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lindal, G.F., G.E. Wood, H.B. Hotz, D.N. Sweetnam, V.R. Eshleman, and G.L.
+                   Tyler, The Atmosphere of Titan: An Analysis of the Voyager 1 Radio Occultation
+                   Measurements, Icarus, 53, 348-363, 1983.
+            </reference_text>
+            <description>reference.LINDALETAL1983</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lindal, G.F., D.N. Sweetnam, and V.R. Eshleman, The Atmosphere of Saturn: An
+                   Analysis of the Voyager Radio Occultation Measurements, Astronomical Journal,
+                   90, 1136-1146, 1985.
+            </reference_text>
+            <description>reference.LINDALETAL1985</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lindal, G.F., J.R. Lyons, D.N. Sweetnam, V.R. Eshleman, D.P. Hinson, and G.L.
+                   Tyler, The atmosphere of Uranus: Results of radio occultation measurements with
+                   the Voyager 2 spacecraft, Journal of Geophysical Research, 92, 14987-15001,
+                   1987.
+            </reference_text>
+            <description>reference.LINDALETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lindal, G.F., J.R. Lyons, D.N. Sweetnam, V.R. Eshleman, D.P. Hinson, and G.L.
+                   Tyler, The atmosphere of Neptune: Results of radio occultation measurements
+                   with the Voyager 2 spacecraft, Geophysical Research Letters, 17, 1733-1736,
+                   1990.
+            </reference_text>
+            <description>reference.LINDALETAL1990</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Marouf, E.A., and G.L. Tyler, Radio Occultation by Saturn&apos;s Rings: Observations
+                   of Structure and Particle Size with Voyager 1, Advances in Space Research, 5,
+                   No. 8, 117-120, 1985.
+            </reference_text>
+            <description>reference.MAROUF-TYLER1985</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tyler, G.L., V.R. Eshleman, J.D. Anderson, G.S. Levy, G.F. Lindal, G.E. Wood,
+                   and T.A. Croft, Radio Science Investigation of the Saturn System with Voyager
+                   1: Preliminary Results, Science, 212, 201-206, 1981.
+            </reference_text>
+            <description>reference.TYLERETAL1981B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tyler, G.L., V.R. Eshleman, J.D. Anderson, G.S. Levy, G.F. Lindal, G.E. Wood,
+                   and T.A. Croft, Radio Science with Voyager 2 at Saturn: Atmosphere and
+                   Ionosphere and the Masses of Mimas, Tethys, and Iapetus, Science, 215, 553-558,
+                   1982.
+            </reference_text>
+            <description>reference.TYLERETAL1982</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tyler, G.L., D.N. Sweetnam, J.D. Anderson, J.K. Campbell, V.R. Eshleman, D.P.
+                   Hinson, G.S. Levy, G.F. Lindal, E.A. Marouf, and R.A. Simpson, Voyager 2 Radio
+                   Science Observations of the Uranian System: Atmosphere, Rings, and Satellites,
+                   Science, 233, 79-84, 1986.
+            </reference_text>
+            <description>reference.TYLERETAL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tyler, G.L., D.N. Sweetnam, J.D. Anderson, S.E. Borutzki, J.K. Campbell, V.R.
+                   Eshleman, D.L. Gresh, E.M. Gurrola, D.P. Hinson, N. Kawashima, E.R. Kursinski,
+                   G.S. Levy, G.F. Lindal, J.R. Lyons, E.A. Marouf, P.A. Rosen, R.A. Simpson, and
+                   G.E. Wood, Voyager Radio Science Observations of Neptune and Triton, Science,
+                   246, 1466-1473, 1989.
+            </reference_text>
+            <description>reference.TYLERETAL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tyler, G.L., G. Balmino, D.P. Hinson, W.L. Sjogren, D.E. Smith, R. Woo, S.W.
+                   Asmar, M.J. Connally, C.L. Hamilton, and R.A. Simpson, Radio Science
+                   Investigations with Mars Observer, Journal of Geophysical Research, 97,
+                   7759-7779, 1992.
+            </reference_text>
+            <description>reference.TYLERETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Woo, R., Spacecraft Radio Scintillation and Solar System Exploration, Wave
+                   Propagation in Random Media (Scintillation), Society of Photo-Optical
+                   Instrumentation Engineers, Bellingham, WA, 1993.
+            </reference_text>
+            <description>reference.WOO1993</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>RADIO SCIENCE SUBSYSTEM</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Radio Science-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+     Instrument Overview
+     ===================
+       Voyager Radio Science investigations at the giant planets
+       utilized instrumentation with elements both on the spacecraft
+       and at the NASA Deep Space Network (DSN).  Much of this was
+       shared equipment, being used for routine telecommunications
+       as well as for Radio Science.  The performance and calibration
+       of both the spacecraft and tracking stations directly affected
+       the radio science data accuracy, and they played a major role
+       in determining the quality of the results.  The spacecraft part
+       of the radio science instrument is described immediately below;
+       unless noted otherwise, the description applies equally well to
+       both Voyager 1 and Voyager 2 and it applies throughout the
+       Voyager mission.  The description of the DSN (ground) part
+       of the instrument follows.  Because the DSN was continually
+       changing, that description has been tailored to each Voyager
+       encounter.
+ 
+ 
+     Instrument Specifications - Spacecraft
+     ======================================
+       The Voyager spacecraft telecommunications subsystem served as
+       part of a radio science subsystem for investigations of the
+       giant planets.  Many details of the subsystem are unknown; its
+       &apos;build date&apos; is taken to be 1977-08-20, the launch date for
+       Voyager 2.  Except for hardware failures, noted below, the
+       Voyager 1 and Voyager 2 spacecraft subsystems were identical.
+ 
+       Instrument Id                 : RSS-VG2U
+       Instrument Host Id            : VG2
+       Pi Pds User Id                : UNK
+       Instrument Name               : RADIO SCIENCE SUBSYSTEM
+       Instrument Type               : RADIO SCIENCE
+       Build Date                    : 1977-08-20
+       Instrument Mass               : UNK
+       Instrument Length             : UNK
+       Instrument Width              : UNK
+       Instrument Height             : UNK
+       Instrument Manufacturer Name  : UNK
+ 
+ 
+     Instrument Overview - Spacecraft
+     ================================
+       The spacecraft radio system was constructed around a redundant
+       pair of transponders.  Each transponder was equipped with an
+       S-band receiver (2115 MHz nominal frequency) and transmitters
+       at both S-band (2295 MHz nominal) and X-band (8415 MHz
+       nominal). Compared with S-band, X-band is less sensitive to
+       plasma effects by a factor of about 10; use of both frequencies
+       coherently on the &apos;downlink&apos; allowed estimation of plasma
+       content along the radio path.  Use of X-band also significantly
+       improved the quality of radio tracking data for gravity
+       investigations.
+ 
+       The transponder generated downlink signals in either &apos;coherent&apos;
+       or &apos;non-coherent&apos; modes, also known as &apos;two-way&apos; and &apos;one-way,&apos;
+       respectively.  When operating in the coherent mode, the
+       transmitted carrier frequency was derived coherently from the
+       received uplink carrier frequency with a &apos;turn-around ratio&apos; of
+       240/221 at S-band and (11/3)*240/221 at X-band.
+ 
+       In non-coherent mode the transmitted frequency was controlled
+       by an on-board oscillator; the X- and S-band remained coherent
+       in the ratio 11/3.  A single Ultra-Stable Oscillator (USO) was
+       used during radio occultations; it provided stabilities
+       several orders of magnitude better than the conventional
+       crystal oscillators, which were part of each transponder.
+ 
+       Stability of the Voyager USO was specified in terms of its
+       Allan Deviation -- the fractional frequency deviation from
+       linear drift [ALLAN1966].  Over 10 minute periods, the Allan
+       Deviation ranged from 10^-12 to 4 10^-12 for integrations of
+       1-10 sec.  Long-term fractional drift of the oscillator was
+       about 5 10^-11 per day.  Although the oscillator was hardened,
+       there were discontinuities in the drift when the spacecraft
+       passed through the radiation belts of the outer planets.
+       Equivalent X-band microwave frequencies for the Voyager 2 USO
+       during key events were (multiplying by 3/11 yields the S-band
+       frequency):
+ 
+                      8,420,430,593.447 Hz (Jupiter occultation)
+                      8,420,430,462.000 Hz (Saturn occultation)
+                      8,420,430,456.100 Hz (Uranus occultation)
+                      8,420,430,398.420 Hz (Neptune occultation)
+ 
+       Traveling wave tube or solid state amplifiers boosted the
+       transponder output.  Output powers of 9 and 26  watts could
+       be selected at S-band; the choices at X-band were 12 and 22
+       watts.
+ 
+       The signals were radiated via a 3.66 m diameter parabolic high
+       gain antenna (HGA).  The HGA transmit boresight gain of the HGA
+       was 36 dB at S-band and 47 dB at X-band.  The half-power
+       half-width of the antenna beam was 0.32 degrees at X-band and
+       1.1 degrees at S-band.  Transmit polarization was right-hand
+       circular at S-band and either right- or left-hand circular at
+       X-band.  A Low-Gain Antenna (LGA) was mounted on the feed
+       structure of the HGA and radiated approximately uniformly over
+       the hemisphere into which the HGA pointed.  It was used during
+       maneuvers, spacecraft anomalies, and at other times when the
+       HGA was not appropriate.
+ 
+       For receiving, the S-band HGA gain was 35 dB at 2115 MHz and
+       the polarization was right-hand circular.  The receiving system
+       noise temperature was approximately 2000K, the carrier tracking
+       loop bandwidth was 18 Hz, and the ranging channel noise
+       bandwidth was 1.5 MHz.
+ 
+       More information can be found in [ESHLEMANETAL1977].
+ 
+ 
+     Science Objectives
+     ==================
+       Science objectives fell into two broad areas of investigation
+       -- those that could be met using high-precision radiometric
+       data (sometimes known as &apos;tracking&apos; data) and those that could
+       be met from studying characteristics of the radio signal after
+       its interaction with an atmosphere, plasma, ring particles, or
+       other intervening medium.  The tracking data were fundamental
+       to inferring the gravitational forces on the spacecraft and
+       relativistic effects along the radio path; both the measured
+       time delay during a two-way transmission and the Doppler shift
+       were used.  Investigators seeking knowledge of atmospheric
+       structure, spatial and size distributions of ring particles,
+       and plasma properties (such as velocity of the solar wind and
+       structure of the Io plasma torus) measured amplitude, frequency
+       (and phase), and polarization of the radio signals which were
+       captured by Earth receiving systems.  There are, of course,
+       investigations which use both types of data.
+ 
+       For an overview of the pre-launch science goals see
+       [ESHLEMANETAL1977].  The preliminary science results were
+       published as follows:
+               Jupiter      [ESHLEMANETAL1979B]
+               Saturn       [TYLERETAL1982]
+               Uranus       [TYLERETAL1986]
+               Neptune      [TYLERETAL1989]
+ 
+ 
+       Gravity Measurements
+       --------------------
+         The frequency of the downlink carrier signal was precisely
+         measured to determine the magnitude of the Doppler shift
+         caused by acceleration of the spacecraft as it passed near
+         either a single body or a system of bodies.  Since the
+         magnitude of the Doppler shift is related to the
+         gravitational field strength, the mass of the body (or
+         bodies) can be determined.  If the radius of the body is
+         known (as from calibrated images), the density can be
+         calculated.
+ 
+         Doppler and range tracking measurements yield accurate
+         spacecraft trajectory solutions.  Simultaneously with
+         reconstruction of the spacecraft orbit, observation equations
+         for the central mass, low order coefficients for the field,
+         and a small number of ancillary parameters can be solved.
+         Measurements of the gravity field provide significant
+         constraints on inferences about the interior structure of
+         target bodies.
+ 
+         The Pioneer 10 and 11 spacecraft came closer to Jupiter than
+         Voyager, so there was no net improvement in the Jupiter mass
+         estimate from Voyager.  But Voyager probed the Galilean
+         satellites at closer range, and better mass estimates were
+         obtained.  The Voyager encounters with Saturn, in conjunction
+         with the close flyby of Pioneer 11, yielded a mass estimate
+         comparable to that of Jupiter along with several low-order
+         zonal harmonic coefficients.  Voyager 2 was targeted for a
+         close encounter with Miranda, an inner satellite of Uranus;
+         that, combined with long tracking arcs through the Uranian
+         system, yielded the first good estimates of masses for the
+         five largest satellites and an improved mass estimate for
+         Uranus itself [ANDERSONETAL1987].  The Voyager 2 very close
+         near-polar flyby with Neptune yielded estimates for the zonal
+         harmonic coefficients J2 and J4 in addition to estimates for
+         the mass of both Neptune and Triton.
+ 
+ 
+       Atmospheric and Ionospheric Radio Occultation Measurements
+       ----------------------------------------------------------
+         Atmospheric measurements by the method of radio occultation
+         contribute to an improved understanding of structure,
+         circulation, dynamics, and transport in atmospheres of remote
+         planetary bodies.  These results are based on detailed
+         analysis of the radio signal received from the spacecraft as
+         it enters and exits occultation by the planet.  Three phases
+         of an atmospheric investigation may be defined.  The first is
+         to obtain vertical profiles of atmospheric structure
+         (temperature and pressure in the neutral atmosphere and
+         electron density in the ionosphere) with emphasis on large-
+         scale phenomena.  During this stage, it is necessary to know
+         the mean molecular weight of the atmosphere; for Voyager
+         the hydrogen-helium mixing ratio could be determined for each
+         planet using the radio data in conjunction with Voyager IRIS
+         data.  Second is to investigate absorption at various levels
+         in the atmosphere -- such as by methane.  Third is to
+         study details of the structure, such as result from
+         propagation of buoyancy waves within a neutral atmosphere or
+         from alignment of charged particles along magnetic field
+         lines in an ionosphere.
+ 
+         Retrieval of atmospheric profiles requires coherent samples
+         of the radio signal that has propagated through the
+         atmosphere, plus accurate knowledge of the antenna pointing
+         and the spacecraft trajectory.  The spatial and temporal
+         coverage in radio occultation experiments are determined by
+         the observing geometry, including the spacecraft trajectory.
+         For deep atmospheres, changes in antenna pointing may be
+         required to compensate for refractive bending by the
+         atmosphere.  At Jupiter [LINDALETAL1981] and Saturn
+         [LINDALETAL1985] both diametric and grazing occultations were
+         obtained using the two Voyager spacecraft; measurements were
+         obtained at both equatorial and polar latitudes.  Voyager 1
+         also obtained profiles for Titan [LINDALETAL1983].  Voyager 2
+         continued to Uranus [LINDALETAL1987] and Neptune
+         [LINDALETAL1990], and also obtained occultation profiles at
+         Triton [GURROLA1995].
+ 
+ 
+       Radio Measurements on Planetary Rings
+       -------------------------------------
+         Radio occultation measurements of planetary rings are carried
+         out using procedures similar to those employed for
+         atmospheric occultations.  Although absorption by ring
+         particles must be considered, the dominant effect on strength
+         of the directly propagating signal is believed to be
+         conservative scattering-- that is, scattering which disperses
+         the signal in direction without significant absorption.
+         Profiles of received signal strength can be inverted to yield
+         the radial distribution of ring material.  Doppler spreading
+         of the signal scattered in the near-forward direction can be
+         used to infer the particle size distribution, especially when
+         measurements at the two Voyager radio wavelengths are
+         combined.
+ 
+         Ring occultations were planned and observed using Voyager 1
+         at Saturn [MAROUF&amp;TYLER1985] and Voyager 2 at Uranus
+         [GRESHETAL1989].  Measurements were carried out at Neptune
+         using Voyager 2, but no rings or arcs were detected using
+         the radio system.  A post-encounter search for a radio ring
+         occultation at Jupiter was unsuccessful [TYLERETAL1981B].
+ 
+         Voyager 2 also carried out an oblique forward scattering
+         experiment during its Saturn encounter.  The spacecraft high-
+         gain antenna was deflected from the Earth direction so that
+         it illuminated the ring system; but no scattered signal was
+         detected.
+ 
+ 
+       Solar Conjunction Experiments
+       -----------------------------
+         Solar conjunction experiments were conducted to improve
+         understanding of the structure and dynamics of the solar
+         corona and wind, to improve understanding of relativistic
+         effects when radio waves propagate near the Sun, and to test
+         the different elements of the radio science subsystem.
+         Approximately once per year, each Voyager spacecraft appeared
+         to pass behind the solar disk, as seen from Earth.  Radio
+         waves propagating between Voyager and Earth stations were
+         refracted and scattered (scintillation) by the solar plasma
+         [ANDERSONETAL1987B] [WOO1993].  Intensity fluctuations can be
+         related to fluctuations in electron density along the path,
+         while Doppler or phase scintillations can be related to both
+         electron density fluctuations and also the speed of the solar
+         wind. Many plasma effects decrease as the square of the radio
+         frequency; plasma effects are about an order of magnitude
+         stronger at S-band than X-band.
+ 
+ 
+       Io Plasma Torus Experiment
+       --------------------------
+         Both before and after the Voyager 1 occultation by Jupiter,
+         the radio signal to Earth passed through the Io Plasma Torus.
+         Using Earth satellites to provide measurements of the
+         terrestrial ionosphere, [LEVYETAL1981] determined the
+         electron density within the torus from differential phase
+         shift between the S- and X-band signals.
+ 
+ 
+       Experimental Relativity
+       -----------------------
+         The gravitational field of the Sun causes a time delay on
+         signals that propagate near the Sun of approximately 300
+         microseconds.  Although previous tests had verified the
+         effect to an accuracy of a few percent, Voyager measurements
+         could be conducted annually and at two frequencies, allowing
+         separation of plasma effects.
+ 
+         Gravitational fields of the gas giant planets also affected
+         radio signals by causing them to have apparent frequencies
+         lower than predicted.  The change in frequency is related to
+ 
+         the mass of the planet.  By measuring the change in frequency
+         as the spacecraft approached the planet, a value for the mass
+         could be calculated.  This value could then be compared with
+         the mass derived from two-way tracking data.  The spacecraft
+         Ultra-Stable Oscillator was used for these measurements;
+         two-way transmissions have nearly canceling frequency shifts
+         as the signal travels to the spacecraft and then returns.
+         The dual frequencies available from Voyager allowed
+         correction for plasma effects along the radio path, but
+         calibration for radiation damage to the USO during encounters
+         was more difficult [KRISHERETAL1990].
+ 
+ 
+     Operational Considerations - Spacecraft
+     =======================================
+       Descriptions given here are for nominal performance.  The
+       spacecraft transponder system comprised redundant units,
+       each with slightly different characteristics.  As
+       transponder units age, their performance changes slightly.
+       More importantly, the performance for radio science depended
+       on operational factors such as the modulation state for the
+       transmitters, which cannot be predicted in advance.  The
+       performance also depended on factors which were not always
+       under the control of the Voyager Project.
+ 
+       Spacecraft receivers were designed to lock to the uplink
+       signal.  Without locking, Doppler effects -- resulting from
+       relative motion of the spacecraft and ground station -- could
+       result in loss of the radio link as the frequency of the
+       received signal drifted.  Unfortunately, a series of failures
+       in the Voyager 2 receivers left that transponder unable to
+       track the uplink signal.  Beginning in April 1978, Doppler
+       shifts were predicted and the uplink carrier was tuned so
+       that Voyager 2 would see what appeared to be a signal at
+       constant frequency (to an accuracy of 100 Hz).
+ 
+       During deep occultations by the giant planets, the bending
+       angle resulting from refraction exceeded 10 degrees in some
+       cases -- well beyond the half power beamwidth of the spacecraft
+       antenna. In those cases, the pointing of the HGA was adjusted
+       so that it followed a &apos;virtual&apos; Earth and maximum signal
+       strength could be sustained.  These &apos;limb-track&apos; maneuvers were
+       critically dependent on accurate timing in the encounter.  To
+       protect against Voyager 1 timing errors at Titan (primarily
+       from uncertainties in the radius and position of the
+       satellite), no limb-track was attempted during ingress, and a
+       fixed antenna offset was used during egress.  Fortunately,
+       timing was accurate enough that useful data were obtained from
+       each event.
+ 
+       Although the spacecraft radioisotope thermoelectric generators
+       were not dependent on solar flux for power, their output
+       decayed as the Voyager spacecraft moved outward through the
+       solar system.  During encounters with the outer planets,
+       caution was required in budgeting power and the high-power mode
+       could not be used for the radio transmitters.
+ 
+ 
+     Calibration Description - Spacecraft
+     ====================================
+       Prior to and during some encounter sequences, the spacecraft
+       was commanded to execute a &apos;mini-ASCAL&apos; maneuver.  The HGA was
+       moved slightly above the Earth line then slightly below the
+       Earth line.  The procedure was repeated to the left and right
+       of the Earth line so that a &apos;cross-hair&apos; pattern was mapped
+       out.  During the maneuver, the amplitude of the carrier
+       signal was measured carefully.  Analysis of the results
+       showed whether the HGA was pointed accurately and, if not,
+       approximately the error magnitude and direction.
+ 
+       Prior to and after encounters, the spacecraft frequency
+       reference was switched to the USO for several hours and the
+       carrier signal was monitored using equipment at the DSN.
+       These &apos;USO Tests&apos; were used to calibrate the frequency and
+       frequency drift of the USO.  USO tests were particularly
+       important before and after the spacecraft entered a severe
+       radiation environment since the radiation typically damaged
+       the crystal and changed its characteristics slightly.
+ 
+ 
+     Platform Mounting Descriptions - Spacecraft
+     ===========================================
+       The centerline of the bus was the roll axis of the
+       spacecraft; it also served as the z-axis of the spacecraft
+       coordinate system with the high-gain antenna (HGA) boresight
+       defining the negative z-direction.  The HGA boresight was
+       also defined as cone angle 0 degrees and as azimuth 180
+       degrees, elevation 7 degrees.  The Low-Gain Antenna (LGA)
+       was mounted on the feed structure of the HGA and radiated
+       approximately uniformly over the hemisphere into which the
+       HGA pointed.
+ 
+ 
+     Principal Investigators
+     =======================
+       The Radio Science Team Leader through the Jupiter encounters
+       was Von R. Eshleman.  The Team Leader for the Saturn, Uranus,
+       and Neptune encounters was G. Leonard Tyler.
+ 
+       Members of the Voyager Radio Science Team and their primary
+       interests for the Uranus encounter  were:
+ 
+       J.D. Anderson Jet Propulsion Lab   Gravity, Relativity
+       V.R. Eshleman Stanford University  Atmospheres
+       G.F. Lindal   Jet Propulsion Lab   Atmospheres, Methodology
+       G.L. Tyler    Stanford University  Experiment Technique/Design
+ 
+ 
+     Instrument Section / Operating Mode Descriptions - Spacecraft
+     =============================================================
+       The Voyager radio system consisted of two sections, which
+       could be operated in the following modes:
+ 
+       Section      Mode
+       -------------------------------------------
+       Oscillator   two-way (coherent)
+                    one-way (non-coherent)
+       RF output    low-gain antenna (no information available)
+                    high-gain antenna
+ 
+       Selected parameters describing NASA Standard Transponder (NST)
+       performance are listed below:
+ 
+       Oscillator Parameters:                    S-Band     X-Band
+          Two-Way Transponder Turnaround Ratio  240/221    880/221
+          One-Way Transmit Frequency (MHz)        2296.      8415.
+          Nominal Wavelength (cm)                13.06       3.56
+ 
+       RF Output parameters:                     S-Band     X-Band
+          RF Power Output (w)                   9 or 26    12 or 22
+          Low-Gain Antenna:
+            Half-Power Half Beamwidth (deg)        UNK
+            Gain (dBi)                             UNK
+            EIRP (dBm)                             UNK
+            Polarization                         Circular
+          High-Gain Antenna:
+            Half-Power Half-Beamwidth (deg)        1.1       0.32
+            Gain (dBi)                              36        47
+            Polarization                           RCP    RCP or LCP
+ 
+ 
+     Instrument Overview - DSN
+     =========================
+       Three Deep Space Communications Complexes (DSCCs) (near
+       Barstow, CA; Canberra, Australia; and Madrid, Spain) comprise
+       the DSN tracking network.  During the Voyager-Uranus era each
+       complex was equipped with several antennas (including at least
+       one 64-m and one 26-m antenna), associated electronics,
+       and operational systems.  Primary activity at each complex
+       was radiation of commands to and reception of telemetry
+       data from active spacecraft.  Transmission and reception was
+       possible in several radio-frequency bands, the most common
+       being S-band (nominally a frequency of 2100-2300 MHz or a
+       wavelength of 14.2-13.0 cm) and X-band (7100-8500 MHz or 4.2-
+       3.5 cm).  Transmitter output powers up to 400 kw were
+       available.
+ 
+       Ground stations had the ability to transmit coded and uncoded
+       waveforms which could be echoed by distant spacecraft.
+       Analysis of the received coding allowed navigators to determine
+       the distance to the spacecraft; analysis of Doppler shift on
+       the carrier signal allowed estimation of the line-of-sight
+       spacecraft velocity.  Range and Doppler measurements were used
+       to calculate the spacecraft trajectory and to infer gravity
+       fields of objects near the spacecraft.
+ 
+       Ground stations could record spacecraft signals that had
+       propagated through or been scattered from target media.
+       Measurements of signal parameters after wave interactions with
+       surfaces, atmospheres, rings, and plasmas were used to infer
+       physical and electrical properties of the target.
+ 
+       The Deep Space Network was managed by the Jet Propulsion
+       Laboratory of the California Institute of Technology for the
+       U.S.  National Aeronautics and Space Administration.
+       Specifications included:
+ 
+       Instrument Id                  : RSS-VG2U
+       Instrument Host Id             : DSN
+       Pi Pds User Id                 : N/A
+       Instrument Name                : RADIO SCIENCE SUBSYSTEM
+       Instrument Type                : RADIO SCIENCE
+       Build Date                     : N/A
+       Instrument Mass                : N/A
+       Instrument Length              : N/A
+       Instrument Width               : N/A
+       Instrument Height              : N/A
+       Instrument Manufacturer Name   : N/A
+ 
+       For more information on the Deep Space Network and its use in
+       radio science investigations see the reports by
+       [ASMAR&amp;RENZETTI1993], [ASMAR&amp;HERRERA1993], and [ASMARETAL1995].
+       For design specifications on DSN subsystems see [DSN810-5].
+       For an example of use of the DSN for Radio Science see
+       [TYLERETAL1992].
+ 
+ 
+     Subsystems - DSN
+     ================
+       The Deep Space Communications Complexes (DSCCs) were an
+       integral part of the Radio Science instrument, along with other
+       receiving stations and the spacecraft Radio Frequency
+       Subsystem.  Their system performance directly determined the
+       degree of success of Radio Science investigations, and their
+       system calibration determined the degree of accuracy in the
+       results of the experiments.  The following paragraphs describe
+       the functions performed by the individual subsystems of a DSCC.
+       This material has been adapted from [ASMAR&amp;HERRERA1993] with
+       adjustments for the situation during the Voyager-Jupiter time
+       frame.  For additional information, consult [DSN810-5].
+ 
+       Each DSCC included a set of antennas, signal processing
+       equipment, and communication links to the Jet Propulsion
+       Laboratory (JPL).  The general configuration is illustrated
+       below; antennas (Deep Space Stations, or DSS) are listed in
+       the table.
+ 
+                     --------   --------   --------
+                    | DSS 11 | | DSS 12 | | DSS 14 |
+                    |  26-m  | |  26-m  | |  64-m  |
+                     --------   --------   --------
+                         |            |     |
+                         |            v     v
+                         |         --------------
+                          --------|COMMUNICATIONS|
+                                  |    CENTER    |
+                                   --------------
+                                         |
+                                         v
+                     ----------      ---------
+                    | NETWORK  |    |   JPL   |
+                    |OPERATIONS|    | CENTRAL |
+                    |   AND    |&lt;---|   COMM  |
+                    | CONTROL  |    | TERMINAL|
+                    |  CENTER  |     ---------
+                     ----------
+ 
+                           GOLDSTONE     CANBERRA      MADRID
+              Antenna      CALIFORNIA    AUSTRALIA     SPAIN
+             --------      ----------    ---------    --------
+               26-m          DSS 11       DSS 44       DSS 62
+               26-m          DSS 12       DSS 42       DSS 61
+               64-m          DSS 14       DSS 43       DSS 63
+             Developmental   DSS 13
+ 
+ 
+       DSCC Transmitter Subsystem
+       --------------------------
+         Two transmitters were available at 64-m antennas; output
+         power of the first could be adjusted over the range 0.2-20
+         kW, while the second could be adjusted over 10-100 kW.
+         Nominal tuning range was 2100-2120 MHz with the -1 dB points
+         at 2110 and 2118 MHz.
+ 
+         Only the 0.2-20 kW transmitter was available at 26-m
+         antennas. Tuning range was the same.
+ 
+ 
+       Open-Loop Receivers
+       -------------------
+         Multi-Mission Receivers provided as many as four channels of
+         data for occultation studies during Voyager encounters.  For
+         the Uranus encounter at Canberra, these were assigned as
+         follows:  DSS-43 S-RCP, DSS-42 S-RCP, DSS 45 X-RCP, and DSS
+         42 X-RCP.  A programmable local oscillator/synthesizer was
+         used to keep the signal as close to the center of a 10 MHz IF
+         filter as predictions would permit.  The output was then
+         sampled and recorded.  Filter bandwidths for S-RCP and X-RCP
+         were 20 kHz.  The samples were recorded for later analysis.
+ 
+         For signals with narrower spectral ranges, the 10 MHz IF
+         could be mixed to 100 kHz where filters as narrow as 100 Hz
+         could be applied.
+ 
+ 
+       DSS Frequency and Timing Subsystem
+       ----------------------------------
+         Frequency and timing were provided by a hydrogen maser.
+         Precisions are shown in the tables below:
+ 
+          Reference             Frequency Stability   Integration Time
+          -----------------     -------------------   ----------------
+          Hydrogen Maser         3   parts in 10^13         1 second
+                                 2   parts in 10^14       100 seconds
+                                 2   parts in 10^14        12 hours
+                                 2   parts in 10^13         1 year
+          Cesium Beam Standard   5   parts in 10^12         1 second
+                                 8   parts in 10^13       100 seconds
+                                 2.5 parts in 10^13      1000 seconds
+                                 8   parts in 10^14     10000 seconds
+ 
+ 
+     Optics - DSN
+     ============
+       Performance of DSN ground stations depended primarily on size
+       of the antenna and capabilities of electronics.  These are
+       summarized in the following set of tables.  Beamwidth is
+       half-power full angular width.  Polarization is circular; L
+       denotes left circular polarization (LCP), and R denotes right
+       circular polarization (RCP).
+ 
+                             DSS Antenna Characteristics
+ 
+                                 Transmit              Receive
+                             ---------------    --------------------
+         Quantity             64-m      26-m        64-m       26-m
+         --------            -----     -----    ------------   -----
+         Frequency (MHz)     2110-     2110-    2270-  8400-   2270-
+                              2120      2120     2300   8440    2300
+         Wavelength (m)      0.142     0.142    0.131  0.036   0.131
+         Gain (dBi)           60.7      51.8     61.7   71.3    53.2
+         Beamwidth (deg)      0.15      0.36     0.14  0.038    0.33
+         Polarization          RCP       RCP      RCP    RCP     RCP
+                               LCP       LCP      LCP    LCP     LCP
+                               LIN                LIN            LIN
+         CP Ellipticity (dB)   2.2       1.0     0.28    1.0     0.4
+         SNT-TWM1-unspec (K)                              25      33
+                 -diplex (K)                       22
+                 -orthog (K)                       18
+            -TWM2-unspec (K)                                      41
+                 -diplex (K)                       26
+                 -orthog (K)                       23
+ 
+          Notes: (1) DSS 14 receive gain was 71.3 dB at X-band; but
+                     gain at DSS 43 and DSS 63 was 71.8 dB
+                 (2) Polarizations available at 64-m antennas were
+                     RCP and LCP (simultaneously) or rotatable linear.
+                     Polarizations available at 26-m antennas were
+                     RCP or LCP or fixed linear.
+ 
+ 
+     Electronics - DSN
+     =================
+ 
+       DSCC Open-Loop Receiver (MMR)
+       -----------------------------
+         The open loop receiver block diagram shown below is for the
+         Multi-Mission Receiver (MMR) system at Canberra during the
+         Voyager Uranus encounter.  Based on a tuning prediction file,
+         the POCA controlled the DANA synthesizer, the output of which
+         (after multiplication) mixed input signals at both S- and
+         X-band to fixed intermediate frequencies for amplification.
+         These signals in turn were down converted and passed through
+         additional filters until they yielded Output with bandwidths
+         up to 45 kHz.  The Output was digitally sampled and either
+         written to magnetic tape or electronically transferred for
+         further analysis.
+ 
+            S-Band                                          X-Band
+           2295 MHz                                        8415 MHz
+            Input                         800 MHz            Input
+              |                              |                 |
+              v                              v      8115       v
+             ---        1995 MHz            ---      MHz      ---
+            | X |&lt;-------------            | X |------------| X |
+             ---               |            ---               ---
+              |                |             |                 |
+              |               ---           ---                |
+              |              |x 3|         |x11|               |
+              |               ---  approx   ---                |
+              |                |   665 MHz   |                 |
+              |                 -------------                  |
+           300|                       |                        |300
+           MHz|                      ---                       |MHz
+              |                     | X |&lt;--600 MHz            |
+              v                      ---                       v
+             ---                      ^                       ---
+            | X |&lt;--290 MHz           |            290 MHz--| X |
+             ---                    -----                     ---
+              |        9.9         |x 1.5|          9.9        |
+              |        MHz          -----           MHz        |
+              |         |             ^              |         |
+            10|         v             |              v         |10
+           MHz|        ---       -----------        ---        |MHz
+              |-------| X |     |   DANA    |      | X |&lt;------|
+              |        ---      |Synthesizer|       ---        |
+              |         |        -----------         |         |
+              v         v             ^              v         v
+           -------   -------          |           -------   -------
+          |Filters| |Filters|    ----------      |Filters| |Filters|
+          |  4-8  | |  1-3  |   |   POCA   |     |  1-3  | |  4-8  |
+           -------   -------    |Controller|      -------   -------
+              |         |        ----------          |         |
+            10|         |0.1                      0.1|         |10
+           MHz|         |MHz                      MHz|         |MHz
+              v         v                            v         v
+             ---       ---                          ---       ---
+  10 MHz ---| X |     | X |&lt;------ 0.1 MHz --------| X |     | X |&lt;-
+             ---       ---                          ---       ---   |
+              |         |                            |         |10 MHz
+              v         v                            v         v
+           Output     Output                      Output     Output
+ 
+         Reconstruction of the antenna frequency from the frequency of
+         the signal in the recorded data can be achieved through use
+         of one of the following formulas.  Filters are defined below.
+ 
+         FSant = (9/2)*SYN+2100*10^6-Fsamp+Frec    (Filters 1,2,3,8)
+               = (9/2)*SYN+2100*10^6+Frec          (Filters 4,5,6,7)
+ 
+         FXant = (33/2)*SYN+7700*10^6-3*Fsamp+Frec (Filters 1,2,3,8)
+               = (33/2)*SYN+7700*10^6+Frec         (Filters 4,5,6,7)
+ 
+         where
+          FSant,FXant  are the antenna frequencies of the incoming
+                        signals at S and X bands, respectively,
+          SYN          is the output frequency of the DANA
+                        synthesizer, commonly labeled the readback
+                        POCA frequency on data tapes,
+          Fsamp        is the effective sampling rate of the digital
+                        samples, and
+          Frec         is the apparent signal frequency in a spectrum
+                        reconstructed from the digital samples.
+ 
+ 
+     Filters - DSN
+     =============
+ 
+       DSCC Open-Loop Receiver (MMR)
+       -----------------------------
+         MMR filters and recommended sampling rates included the
+         following:
+ 
+                             S-Band                    X-Band
+                   ------------------------  -------------------------
+                   Output   3 dB Recommended Output   3 dB     Rec&apos;ded
+          Filter   Center   Band   Sampling  Center   Band    Sampling
+                    Freq    Width    Rate*   Freq     Width     Rate*
+                    (Hz)    (Hz)     (sps)   (Hz)     (Hz)      (sps)
+          ------   ------  ------  --------  ------  ------   --------
+             1        150     100       200     550     100        200
+             2        750     500      1000    2750     500       1000
+             3       1500    1000      2000    5500    1000       2000
+             4        409     818      2000    1500    3000       6000
+             5       1023    2045      5000    3750    7500      15000
+             6       2045    4091     10000    7500   15000      30000
+             7       4091    8182     20000   15000   30000      60000
+             8      37500   20000     50000  137500   20000      50000
+ 
+           * Sampling rates depend on resolution of samples and number
+             of analog-to-digital converters assigned to each channel;
+             see discussion of modes under &apos;DSCC Spectrum Processing
+             Subsystem&apos; below.  The rates at which single A/D
+             converters can operate with the MMR include:
+ 
+               8-bit samples:      12-bit samples:     16-bit samples:
+                     200                  200                1250
+                     250                 1000
+                     400                 1250
+                     500                 2000
+                    1000                 5000
+                    1250                10000
+                    2000
+                    2500
+                    3125
+                    4000
+                    5000
+                    6250
+                   10000
+                   12500
+                   15625
+                   20000
+                   25000
+                   31250
+                   50000
+ 
+ 
+     Detectors - DSN
+     ===============
+ 
+       DSCC Open-Loop Receivers
+       ------------------------
+         Open-loop receiver output was detected in software by the
+         radio science investigators.
+ 
+ 
+       DSCC Closed-Loop Receivers
+       --------------------------
+         Nominal carrier tracking loop threshold noise bandwidths at
+         S- and X-band were 10-12 and 30-48 Hz, respectively.  Sample
+         rates for Doppler were nominally 1 per 5 seconds at Uranus.
+ 
+ 
+     Calibration - DSN
+     =================
+       Calibrations of hardware systems were carried out periodically
+       by DSN personnel; these ensured that systems operated at
+       required performance levels -- for example, that antenna
+       patterns, receiver gain, propagation delays, and Doppler
+       uncertainties met specifications.  No information on specific
+       calibration activities is available.  Nominal performance
+       specifications are shown in the tables above.  Additional
+       information may be available in versions of [DSN810-5] or
+ 
+       equivalent documents applicable to the Uranus encounter time
+       frame.
+ 
+       Prior to each tracking pass, station operators performed a
+       series of calibrations to ensure that systems met
+       specifications for that operational period.  Included in
+       those calibrations was measurement of receiver system
+       temperature in the configuration to be employed during the
+       pass.  Results of the calibrations were recorded in (hard
+       copy) Controller&apos;s Logs for each pass.
+ 
+ 
+     Operational Considerations - DSN
+     ================================
+       The DSN is a complex and dynamic &apos;instrument.&apos; Its performance
+       for Radio Science depends on a number of factors from equipment
+       configuration to meteorological conditions.  No specific
+       information on &apos;operational considerations&apos; can be given here.
+ 
+ 
+     Operational Modes - DSN
+     =======================
+ 
+       Closed-Loop vs. Open-Loop Reception
+       -----------------------------------
+         Radio Science data could be collected in two modes: closed-
+         loop, in which a phase-locked loop receiver tracked the
+         spacecraft signal, or open-loop, in which a receiver sampled
+         and recorded a band within which the desired signal
+         presumably resided.  Closed-loop data were collected using
+         Closed-Loop Receivers, and open-loop data were collected
+         using Open-Loop Receivers in conjunction with the DSCC
+         Spectrum Processing Subsystem (DSP).  See the Subsystems
+         section for further information.
+ 
+ 
+       Closed-Loop Receiver AGC Loop
+       -----------------------------
+         The closed-loop receiver AGC loop could be configured to one
+         of three settings: narrow, medium, or wide.  Ordinarily it
+         was configured so that expected signal amplitude changes were
+         accommodated with minimum distortion.  The loop bandwidth was
+         ordinarily configured so that expected phase changes could be
+         accommodated while maintaining the best possible loop SNR.
+         For Uranus the nominal setting was narrow.
+ 
+ 
+       Coherent vs. Non-Coherent Operation
+       -----------------------------------
+         The frequency of the signal transmitted from the spacecraft
+         could generally be controlled in two ways -- by locking to a
+         signal received from a ground station or by locking to an
+         on-board oscillator.  These were known as the coherent (or
+         &apos;two-way&apos;) and non-coherent (&apos;one-way&apos;) modes, respectively.
+         Mode selection was made at the spacecraft, based on commands
+         received from the ground.  When operating in the coherent
+         mode, the transponder carrier frequency was derived from the
+         received uplink carrier frequency with a &apos;turn-around ratio&apos;
+         typically of 240/221.  In the non-coherent mode, the
+         downlink carrier frequency was derived from the spacecraft
+         on-board crystal-controlled oscillator.  Either closed-loop
+         or open-loop receivers (or both) could be used with either
+         spacecraft frequency reference mode.  Closed-loop reception
+         in two-way mode was usually preferred for routine tracking.
+         Occasionally the spacecraft operated coherently while two
+         ground stations received the &apos;downlink&apos; signal; this was
+         sometimes known as the &apos;three-way&apos; mode.
+ 
+ 
+       Open-Loop Sampling
+       ------------------
+         The Open-Loop Receiver sampling system could operate in four
+         sampling modes with from 1 to 4 input signals.  Input
+         channels were assigned to ADC inputs during configuration.
+         Modes were summarized in the tables below:
+ 
+         Mode   Analog-to-Digital Operation
+         ----   ----------------------------
+           1    4 signals, each sampled by a single ADC
+           2    1 signal, sampled sequentially by 4 ADCs
+           3    2 signals, each sampled sequentially by 2 ADCs
+           4    2 signals, the first sampled by ADC #1 and the second
+                            sampled sequentially at 3 times the rate
+                             by ADCs #2-4
+ 
+         Open loop data from the Uranus encounter were sampled
+         using Mode 1.
+ 
+ 
+     Location - DSN
+     ==============
+       Station locations are documented in [GEO-10REVD].  Geocentric
+       coordinates are summarized here.
+ 
+                             Geocentric  Geocentric  Geocentric
+       Station              Radius (km) Latitude (N) Longitude (E)
+       ---------            ----------- ------------ -------------
+       Goldstone
+         DSS 12 (26-m STD)  6371.997815  35.1186672   243.1945048
+         DSS 13 (develop)   6372.117062  35.0665485   243.2051077
+         DSS 14 (64-m)      6371.992867  35.2443514   243.1104584
+ 
+       Canberra
+         DSS 42 (26-m STD)  6371.675607 -35.2191850   148.9812546
+         DSS 43 (64-m)      6371.688953 -35.2209308   148.9812540
+ 
+       Madrid
+         DSS 61 (26-m STD)  6370.027734  40.2388805   355.7509634
+         DSS 63 (64-m)      6370.051015  40.2413495   355.7519776
+ 
+ 
+     Measurement Parameters - DSN
+     ============================
+ 
+       Open-Loop System
+       ----------------
+         Sampled output from the Open-Loop Receivers (OLRs) was a
+         stream of 8-bit two&apos;s complement voltage samples packed into
+         the most significant half of 16-bit data words.  The nominal
+         input to the Analog-to-Digital Converters (ADCs) was
+         +/-10 volts, but the precise scaling between input voltages
+         and output digitized samples was usually irrelevant for
+         analysis; the digital data were generally referenced to a
+         known noise or signal level within the data stream itself --
+         for example, the thermal noise output of the radio receivers
+         which had a known system noise temperature (SNT).  Raw
+         samples comprised the data block in each data record; header
+         and trailer records contained ancillary information such as a
+         time tag for the first sample in the data block.
+ 
+ 
+       Closed-Loop System
+       ------------------
+         Closed-loop data were recorded in Archival Tracking Data
+         Files (ATDFs), as well as certain secondary products such as
+         the Orbit Data File (ODF).  The ATDF Tracking Logical Record
+         contained entries such as status information and measurements
+         of ranging, Doppler, and signal strength.
+ 
+ 
+     ACRONYMS AND ABBREVIATIONS - DSN
+     ================================
+       ACS      Antenna Control System
+       ADC      Analog-to-Digital Converter
+       AMS      Antenna Microwave System
+       APA      Antenna Pointing Assembly
+       ARA      Area Routing Assembly
+       ATDF     Archival Tracking Data File
+       AZ       Azimuth
+       CMC      Complex Monitor and Control
+       CONSCAN  Conical Scanning (antenna pointing mode)
+       CRG      Coherent Reference Generator
+       CUL      Clean-up Loop
+       DANA     a type of frequency synthesizer
+       dB       decibel
+       dBi      dB relative to isotropic
+       dBm      dB relative to one milliwatt
+       DCO      Digitally Controlled Oscillator
+       DEC      Declination
+       deg      degree
+       DMC      DSCC Monitor and Control Subsystem
+       DSCC     Deep Space Communications Complex
+       DSN      Deep Space Network
+       DSP      DSCC Spectrum Processing Subsystem
+       DSS      Deep Space Station
+       DTK      DSCC Tracking Subsystem
+       E        east
+       EL       Elevation
+       FTS      Frequency and Timing Subsystem
+       GCF      Ground Communications Facility
+       GPS      Global Positioning System
+       HA       Hour Angle
+       HEF      High-Efficiency (as in 34-m HEF antennas)
+       IF       Intermediate Frequency
+       IVC      IF Selection Switch
+       JPL      Jet Propulsion Laboratory
+       K        Kelvin
+       kHz      kilohertz
+       km       kilometer
+       ksps     kilosamples per second
+       kW       kilowatt
+       L-band   approximately 1668 MHz
+       LAN      Local Area Network
+       LCP      Left-Circularly Polarized
+       LMC      Link Monitor and Control
+       LNA      Low-Noise Amplifier
+       LO       Local Oscillator
+       m        meters
+       MCA      Master Clock Assembly
+       MCCC     Mission Control and Computing Center
+       MDA      Metric Data Assembly
+       MHz      Megahertz
+       MMR      Multi-Mission Receiver
+       MON      Monitor and Control System
+       MSA      Mission Support Area
+       N        north
+       NAR      Noise Adding Radiometer
+       NBOC     Narrow-Band Occultation Converter
+       NIST     SPC 10 time relative to UTC
+       NIU      Network Interface Unit
+       NOCC     Network Operations and Control System
+       NSS      NOCC Support System
+       OCI      Operator Control Input
+       ODF      Orbit Data File
+       ODR      Original Data Record
+       ODS      Original Data Stream
+       OLR      Open Loop Receiver
+       POCA     Programmable Oscillator Control Assembly
+       PPM      Precision Power Monitor
+       RA       Right Ascension
+       REC      Receiver-Exciter Controller
+       RCP      Right-Circularly Polarized
+       RF       Radio Frequency
+       RIC      RIV Controller
+       RIV      Radio Science IF-VF Converter Assembly
+       RMDCT    Radio Metric Data Conditioning Team
+       RTLT     Round-Trip Light Time
+       S-band   approximately 2100-2300 MHz
+       sec      second
+       SEC      System Error Correction
+       SIM      Simulation
+       SLE      Signal Level Estimator
+       SNR      Signal-to-Noise Ratio
+       SNT      System Noise Temperature
+       SOE      Sequence of Events
+       SPA      Spectrum Processing Assembly
+       SPC      Signal Processing Center
+       SRA      Sequential Ranging Assembly
+       SRC      Sub-Reflector Controller
+       SSI      Spectral Signal Indicator
+       STD      Standard (as in 34-m STD antennas)
+       TID      Time Insertion and Distribution Assembly
+       TSF      Tracking Synthesizer Frequency
+       TWM      Traveling Wave Maser
+       UNK      unknown
+       UTC      Universal Coordinated Time
+       VF       Video Frequency
+       X-band   approximately 7800-8500 MHz
+
+        </description>
+    </Instrument>
+</Product_Context>

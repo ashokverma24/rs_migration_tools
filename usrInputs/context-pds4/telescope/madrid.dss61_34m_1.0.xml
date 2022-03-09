@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds ="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=
+    "http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:madrid.dss61_34m</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DSS-61 34-m Radio Telescope</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-07-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Original context file for the DSS-61 antenna near Madrid, Spain,
+                    when its aperture was 34 meters (1980s to 1999).
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.810-005</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+                This reference is to a PDS collection containing several versions of the NASA Deep 
+                Space Network (DSN) Telecommunications Link Design Handbook (Document 810-005).
+                The Handbook is maintained in a modular format to provide interface 
+                design data to flight projects using the DSN.  Modules are updated as appropriate.
+                Each member product in the PDS collection is the set of modules as they applied
+                at that point in time.  Modules include:
+                001 Handbook Introduction
+                101 70-m Subnet Telecommunications Interfaces
+                102 26-m Subnet Telecommunications Interfaces (omitted in 2009 and later versions)
+                103 34-m HEF Subnet Telecommunications Interfaces
+                104 34-m BWG Antennas Telecommunications Interfaces
+                105 Atmospheric and Environmental Effects
+                106 Solar Corona and Solar Wind Effects
+                107 Radio Source Catalog
+                201 Frequency and Channel Assignments
+                202 34-m and 70-m Doppler
+                203 Sequential Ranging
+                205 Command Service
+                206 Telemetry General Information
+                207 34-m and 70-m Telemetry Reception
+                208 Telemetry Data Decoding
+                209 Open-Loop Radio Science
+                210 Delta Differrential One-way Ranging
+                211 Wideband Very Long Baseline Interferometry
+                214 Pseudonoise and Regenerative Ranging
+                301 Coverage and Geometry
+                302 Antenna Positioning
+                303 Media Calibration
+                304 Frequency and Timing
+                305 Test Support
+                901 Handbook Glossary
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.dsn</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>
+                This context product provides more information on the NASA Deep Space Network as a whole.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.madrid</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>
+                This context product provides more information on the Madrid Deep Space Communications Complex.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss61_26m</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                This context product provides more information on DSS-61
+                when its aperture was 26 meters (1960s to 1980s).
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:dsn.rss</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+            <comment>
+                This context product provides more information on the commanding, radio tracking, and
+                radio science instrumentation at the telescope.  Only information appropriate to years
+                2000 and earlier would be applicable to DSS-61 operations.
+            </comment>
+        </Internal_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                DSN/Flight Project Interface Design
+                GEO-10, DSN Coverage and Geometry
+                Rev. E (Initial Issue, 1997-07-15)
+            </reference_text>
+            <description>
+                This document provides DSN station coordinates which are required for spacecraft 
+                navigation and location of stations with respect to other points on the Earth's 
+                surface.  This document is a precursor to Module 301 in DSN document 810-005, the
+                DSN Telecommunication Link Design Handbook, which was issued in its current form
+                (as Rev. E) on 2001-01-15.
+            </description>
+        </External_Reference>
+        
+        <External_Reference>
+            <reference_text>https://www.mdscc.nasa.gov/index.php/en/history/</reference_text>
+            <description>
+                An overview of the Madrid Deep Space Communications Complex with photographs.
+                Pull down the Radioastronomy menu and select "PARTNeR" for information about that program.
+            </description>
+        </External_Reference>
+        
+    </Reference_List>
+ 
+    <Telescope>
+        <aperture unit='m'>34</aperture>
+        <telescope_longitude unit='deg'>355.750975</telescope_longitude>
+        <telescope_latitude unit='deg'>40.428738</telescope_latitude>
+        <telescope_altitude unit="m">841.159</telescope_altitude>
+        <coordinate_source>
+            Geodetic coordinates derived using an ellipsoid with semi-major axis a = 6378136.3 m 
+            and flattening f = 298.257 (see Table 5, DSN/Flight Project Interface Design, GEO-10,
+            DSN Coverage and Geometry, Rev. E dated 1997-07-15)
+        </coordinate_source>
+        <description>
+            Deep Space Station 61 (DSS-61) is located at the Madrid Deep Space Communications Complex (MDSCC)
+            near Madrid, Spain.  It became part of the NASA Deep Space Network in the mid 1960s.  Its original
+            diameter was 26-m, but that was extended to 34-m in the 1980s.  DSS-61 was decommissioned in
+            1999 and transferred to the PARTNeR Project (for educational purposes) in 2001.
+            
+            The Madrid Deep Space Communications Complex (MDSCC) is located about 65 km west of Madrid,
+            near the town of Robledo de Chevala, Spain.  Under an agreement between the governments of Spain
+            and the United States, dated 1964-01-29, the National Institute for Aerospace 
+            Technology (INTA) and the U.S. space agency NASA signed a contract for operation and 
+            maintenance of the MDSCC facilities. The creation, in 1992, of the state-owned Aerospace 
+            Engineering and Services, SA (INSA, S.A.) under INTA, allowed the concentration of these 
+            responsibilities in the new company. INSA has disappeared and Ingeniería de Sistemas para la
+            Defensa de España is the company that has managed MDSCC since December 2012.
+        </description>
+    </Telescope>
+    
+</Product_Context>

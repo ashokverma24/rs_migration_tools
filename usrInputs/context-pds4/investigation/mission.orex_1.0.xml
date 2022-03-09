@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+	
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.orex</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Origins, Spectral Interpreation, Resource Identification, Security, Regolith Explorer (OSIRIS-REx) Mission</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>orex</alternate_id>
+                <alternate_title>orex</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-03-13</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Discipline_Area>
+    </Discipline_Area>
+    <Reference_List>
+       
+        <External_Reference>
+        	<doi>10.1007/s11214-017-0405-1</doi>
+            <reference_text>
+               D.S. Lauretta, S.S. Balram-Knutson, E. Beshore, W.V. Boynton, C. Drouet dAubigny,
+               D.N. DellaGiustina, H.L. Enos, D.R. Gholish, C.W. Hergenrother, E.S. Howell, 
+               C.A. Johnson, E.T. Morton, M.C. Nolan, B. Rizk, H.L. Roper, A.E. Bartels, B.J. Bos,
+               J.P. Dworkin, D.E. Highsmith, D.A. Lorenz, L.F. Lim, R. Mink, M.C. Moreau, J.A. Nuth, 
+               D.C. Reuter, A.A. Simon, E.B. Bierhaus, B.H. Bryan, R. Ballouz, O.S. Barnouin,
+               R.P. Binzel, W.F. Bottke, V.E. Hamilton, K.J. Walsh, S.R. Chesley, P.R. Christensen, 
+               B.E. Clark, H.C. Connolly, M.K. Crombie, M.G. Daly, J.P. Emery, T.J. McCoy, J.W. McMahon, 
+               D.J. Scheeres, S. Messenger, K. Nakamura-Messenger, K. Righter, S.A. Sandford, OSIRIS-REx: 
+               Sample Return from Asteroid (101955) Bennu, 	arXiv:1702.06981 [astro-ph.EP], 2017.
+            </reference_text>
+            <description>Open Source OSIRIS-REx mission description paper</description>
+        </External_Reference>
+    </Reference_List>
+    <Investigation>
+        <name>OSIRIS-REx</name>
+        <type>Mission</type>
+        <start_date>2016-09-08</start_date>
+        <stop_date xsi:nil="true" nilReason="unknown"></stop_date>
+        <description> The primary objective of the Origins, Spectral Interpretation, Resource
+        Identification, and Security-Regolith Explorer (OSIRIS-REx) mission is to
+        return pristine samples of carbonaceous material from the surface of a primitive
+        asteroid. The target asteroid, near-Earth object (101955) Bennu, is the most
+        exciting, accessible, and volatile- and organic-rich remnant from the early Solar
+        System. OSIRIS-REx returns a minimum of 60 g of bulk regolith and a separate
+        26 cm2 of fine-grained surface material from this body. Analyses of these
+        samples provide unprecedented knowledge about presolar history, from the
+        initial stages of planet formation to the origin of life. Prior to sample acquisition,
+        OSIRIS-REx performs comprehensive global mapping of the texture, mineralogy,
+        and chemistry of Bennu, resolving geological features, revealing its geologic
+        and dynamic history, and providing context for the returned samples. The
+        instruments also document the regolith at the sampling site in situ at scales down
+        to the sub-centimeter. In addition, OSIRIS-REx studies the Yarkovsky effect, a
+        non-Keplerian force affecting the orbit of this potentially hazardous asteroid
+        (PHA), and provides the first ground truth for telescopic observations of carbonaceous
+        asteroids.   
+        </description>
+    </Investigation>
+</Product_Context>

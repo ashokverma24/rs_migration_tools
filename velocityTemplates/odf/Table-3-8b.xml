@@ -1,0 +1,31 @@
+             <Table_Binary>
+                   <name>ODF End-of-File Group Data</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                                The End of File Group Data
+                                are the last several records in an Orbit Data File
+                                (ODF).  They are not defined, and simply fill out
+                                the final 8064-byte logical blocks in the file.
+                   </description>
+                   <Record_Binary>
+                         <fields>0</fields>
+                         <groups>1</groups>
+                         <record_length unit="byte">36</record_length> 
+                         <Group_Field_Binary>
+                               <repetitions>9</repetitions>
+                               <fields>1</fields>
+                               <groups>0</groups>
+                               <group_location unit="byte">1</group_location>
+                               <group_length unit="byte">36</group_length>
+                               <Field_Binary>
+                                     <name>Spare</name>
+                                     <field_number>1</field_number>
+                                     <field_location unit="byte">1</field_location>
+                                     <data_type>UnsignedMSB4</data_type>
+                                     <field_length unit="byte">4</field_length>
+                               </Field_Binary>
+                         </Group_Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.chi_cyg</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Chi Cygni</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Chi Cyg</alternate_title></Alias>
+      <Alias><alternate_title>chi Cyg</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+32 1840</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+32 3593</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J19505+3254A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+32 3593 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSS 1165</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 27481</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 12201</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00187796</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 02673-04643</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 187796</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Hen 4-220</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 97629</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 97629</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 7564</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 19468+3240 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 19486+3247</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +30395</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 3144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J19503392+3254509</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 4673</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 4673.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 83661</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 2465</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>S1* 625</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 68943</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 37119</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 2673-4643-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 21439</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC2 43322008</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J19506+3255A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 17165</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 1946+32</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2034702312273209216</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Chi Cygni</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 19 hours 50 minutes 33.9162220032 seconds
+Declination, ICRS coord, ep=J2000: +32 degrees 54 minutes 50.556353217 seconds
+    </description>
+  </Target>
+</Product_Context>

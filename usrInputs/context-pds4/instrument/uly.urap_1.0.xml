@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:instrument:uly.urap</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>UNIFIED RADIO AND PLASMA WAVE EXPERIMENT for ULY</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:urap.uly</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.uly</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   MacDowall, R.J., R.A. Hess, N. Lin, G. Thejappa, A. Balogh, and J.L. Phillips,
+                   Ulysses spacecraft observations of radio and plasma waves: 1991:1995, submitted
+                   to Astron. Astrophys., 1996.
+            </reference_text>
+            <description>reference.MACDOWALLETAL1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Stone, R.G., J.L. Bougeret, J. Caldwell, P. Canu, Y. de Conchy, N.
+                   Cornilleau-Wehrlin, M.D. Desch, J. Fainberg, K. Goetz, M.L. Goldstein, C.C.
+                   Harvey, S. Hoang, R. Howard, M.L. Kaiser, P.J. Kellogg, B. Klein, R. Knoll, A.
+                   Lecacheux, D. Lengyel-Frey, R.J. MacDowall, R. Manning, C.A. Meetre, A. Meyer,
+                   N. Monge, S. Monson, G. Nicol, M.J. Reiner, J.L. Steinberg, E. Torres, C. de
+                   Villedary, F. Wouters, and P. Zarka, The Unified Radio and Plasma Wave
+                   Investigation, Astron. Astrophys. Suppl. Ser. 92, 291-316, 1992.
+            </reference_text>
+            <description>reference.STONEETAL1992A</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>UNIFIED RADIO AND PLASMA WAVE EXPERIMENT</name>
+        <type>Plasma Wave Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    (excerpted from: [STONEETAL1992A])
+ 
+    Abstract.  -- The scientific objectives of the Ulysses Unifiewd
+    Radio and Plasma wave (URAP) experiment are twofold: 1) the
+    determination of the direction, angular size, and polarization
+    of radio sources for remote sensing of the heliosphere and the
+    Jovian magnetosphere and 2) the detailed study of local wave
+    phenomena, which determine the transport coefficients of the
+    ambient plasma.  The tracking of solar radio bursts, for
+    example, can provide three dimensional &apos;snap-shots&apos; of the
+    large scale magnetic field configuration along which the solar
+    exciter particles propagate.  URAP observations of Jovian radio
+    emissions should greatly improve the determination of source
+    locations and consequently our understanding of the generation
+    mechanism(s) of planetary radio emissions.  The study of
+    observed wave-particle interactions will improve our
+    understanding of the processes that occur in the solar wind and
+    at Jupiter and of radio wave generation . . . .  The URAP
+    sensors consist of a 72.5 m electric field antenna in the spin
+    plane, a 7.5-m electric field monopole along the spin axis and
+    a pair of orthogonal search coil magnetic antennas.  The
+    various receivers, designed to encompass specific needs of the
+    investigation, cover the frequency range from DC to 1 MHz.  A
+    relaxation sounder provides very accurate electron density
+    measurements.  Radio and plasma wave observations are shown to
+    demonstrate the capabilities and limitations of the URAP
+    instruments: radio observations include solar bursts, auroral
+    kilometric radiation, and Jovian bursts; plasma waves include
+    Langmuir waves, ion acoustic-like noise, and whistlers.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

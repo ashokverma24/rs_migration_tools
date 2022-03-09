@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:las_cumbres.0m4_telescopes</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Las Cumbres Global Telescope Network - 0.4m Telescopes</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-13</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created by A.C.Raugh using information downloaded from the Las Cumbres
+                    observatory website on 2021-08-13
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.las_cumbres</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:las_cumbres.0m4_telescopes.sbig_stl6303</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Telescope>
+        <aperture unit="m">2</aperture>
+        <description>
+            The 40cm telescopes of the Las Cumbres global network are built to be identical. They are
+            Meade 16-inch (40cm), 3-element optics telescopes mounted in LCO equatorial C-ring mountings.
+            Users should consult the data product documentation to determine which telescope was used to 
+            record any specific observation when that information is needed.
+        </description>
+    </Telescope>
+</Product_Context>

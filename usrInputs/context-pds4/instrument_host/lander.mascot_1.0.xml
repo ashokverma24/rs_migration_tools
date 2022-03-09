@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument_host:lander.mascot</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MASCOT (Mobile Asteroid surface SCOuT) Lander</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>mascot</alternate_id>
+                <alternate_title>MASCOT</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-06-08</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:investigation:mission.hyb2</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument:mascot.mascam</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument:mascot.masmag</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument:mascot.mara</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument:mascot.micromega</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-016-0251-6</doi>
+            <reference_text>
+                T.-M. Ho, V. Baturkin, C. Grimm, J. T. Grundmann, C. Hobbie, E. Ksenik, C. Lange, K. Sasaki,
+                M. Schlotterer, M. Talapina, N. Termtanasombat, E. Wejmo, L. Witte, M. Wrasmann, G. Wübbels,
+                J. Rößler, C. Ziach, R. Findlay, J. Biele, C. Krause, S. Ulamec, M. Lange, O. Mierheim,
+                R. Lichtenheldt, M. Maier, J. Reill, H.-J. Sedlmayr, P. Bousquet, A. Bellion, O. Bompis,
+                C. Cenac-Morthe, M. Deleuze, S. Fredon, E. Jurado, E. Canalias, R. Jaumann, J.-P. Bibring,
+                K. H. Glassmeier, D. Hercik, M. Grott, L. Celotti, F. Cordero, J. Hendrikse, T. Okada,
+                MASCOT - The Mobile Asteroid Surface Scout Onboard the Hayabusa2 Mission,
+                Space Sci. Rev., 208, 339-374, 2017.
+            </reference_text>
+            <description>This is the MASCOT system paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument_Host>
+        <name>MASCOT</name>
+        <type>Lander</type>
+        <naif_host_id>-37700</naif_host_id>
+        <description>The MASCOT (Mobile Asteroid surface SCOuT) is compact landing package onboard the Hayabusa2 Spacecraft, that was developed by DLR (German Aerospace Center) and CNES (French National Center for Space Studies). MASCOT has a wide-angle camera (MASCAM; MAScot CAMera) to capture images of the lander's surrounding, an infrared spectroscopic microscope (MicrOmega) to investigate the composition and characteristics of the minerals on the surface of Ryugu, a thermal radiometer (MARA; MAscot RAdiometer) to measure the surface temperature, and a magnetometer (MasMag; MAScot MAGnetometer) to measure any magnetic field. MASCOT has a hopping mechanism using a motor to rotate a swing-arm within the lander. This hopping mechanism is designed for correcting attiude with respect to the surface, and changing location only once. MASCOT does not use solar cells but is equipped with a lithium primary battery built into the lander. The duration of the battery is about 16 hours, which corresponds to about two rotations of Ryugu.</description>
+    </Instrument_Host>
+</Product_Context>

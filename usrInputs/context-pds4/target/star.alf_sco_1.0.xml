@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_sco</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Antares</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Alpha Scorpii</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Sco</alternate_title></Alias>
+      <Alias><alternate_title>CCDM J16294-2626AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>alf Sco</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>21 Sco</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GNT 1AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 10074 AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-26 11359</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Ced 132</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CMC 184415</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-26 5648</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-26 11359 21</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-26 11359 23</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DG 141</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Elia 2-74</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 616</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 22157</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 9479</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00148478</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00148479J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GN 16.26.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 06803-02158</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 80763</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 80763</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 6134</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 16233-2613 AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 16262-2619</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -30265</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LBN 1108</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LBN 351.88+15.11</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J16292443-2625549</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3686</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3741</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 439</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 265579</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1863</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2345</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 184415</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 29714</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30616</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 19208</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 21449</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 21661</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>VDB 107</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J16294-2626AB</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+     </Modification_Detail>
+   </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Antares</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 16 hours 29 minutes 24.45970 seconds
+Declination, ICRS coord, ep=J2000: -26 degrees 25 minutes 55.2094 seconds
+    </description>
+  </Target>
+</Product_Context>
+

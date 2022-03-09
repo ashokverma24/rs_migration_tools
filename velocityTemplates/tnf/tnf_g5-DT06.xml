@@ -1,0 +1,216 @@
+                        <Group_Field_Binary>
+                              <name>Doppler Count CHDO (Data Type 6)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>17</fields>
+                              <groups>0</groups>
+                              <description>Doppler Count CHDO (Data Type 6)</description>
+                              <group_location unit="byte">161</group_location>
+                              <group_length unit="byte">60</group_length>
+                              <Field_Binary>
+                                  <name>chdo_type</name>
+                                  <field_number>1</field_number>
+                                  <field_location unit="byte">1</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Type attribute of the Doppler Count data CHDO.
+                                      Set to 10 because CHDO contains binary data.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chdo_length</name>
+                                  <field_number>2</field_number>
+                                  <field_location unit="byte">3</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Length attribute of the Doppler Count data CHDO value field.
+                                      Number of bytes after this item.  Set to 56.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ref_rcv_type</name>
+                                  <field_number>3</field_number>
+                                  <field_location unit="byte">5</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Reference receiver type.
+                                        0 = Unknown; 
+                                        2 = MFR
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve1a</name>
+                                  <field_number>4</field_number>
+                                  <field_location unit="byte">6</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Reserved. One byte.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>sampl_interval</name>
+                                  <field_number>5</field_number>
+                                  <field_location unit="byte">7</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Sample interval -- interval between points.  
+                                      Values 1.0 to 60.0 are allowed; value -1.0 indicates interval is unknown.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rcv_sig_lvl</name>
+                                  <field_number>6</field_number>
+                                  <field_location unit="byte">11</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dBm</unit>
+                                  <description>
+                                      Received signal level. Carrier power (or data power, if suppressed carrier tracking).
+                                      Values -190.0 to -45.0 are allowed; value -300.0 indicates not valid.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ul_freq</name>
+                                  <field_number>7</field_number>
+                                  <field_location unit="byte">15</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Uplink frequency used in the Doppler computation at time tag.  
+                                      Also called the Doppler Reference Frequency.
+                                      Values 2.0e9 to 34.7e9 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dop_cnt_bias_freq</name>
+                                  <field_number>8</field_number>
+                                  <field_location unit="byte">23</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Doppler count bias frequency used in Doppler Count measurement.
+                                      Values -1.0e7 to 1.0e7 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dop_cnt</name>
+                                  <field_number>9</field_number>
+                                  <field_location unit="byte">31</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>count</unit>
+                                  <description>
+                                      Doppler Count. See TRK-2-34 documentation for definition of Doppler Count.
+                                      Values 0.0 to 242/1000 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dop_pseudo_resid</name>
+                                  <field_number>10</field_number>
+                                  <field_location unit="byte">39</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Doppler Pseudo Residual (actual minus predicted).
+                                      Values -228/1000 to 228/1000 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>time_tag_corr_flag</name>
+                                  <field_number>11</field_number>
+                                  <field_location unit="byte">47</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Time tag correction flag -- indicates the results of validation of the block time tag.
+                                         0 = No validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>type_time_corr_flag</name>
+                                  <field_number>12</field_number>
+                                  <field_location unit="byte">48</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Type of time tag correction flag -- indicates what type of time tag correction was made.
+                                         0 = No correction; 
+                                         1 = Year correction; 
+                                         2 = DOY correction; 
+                                         3 = Both Year and DOY correction
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dop_mode_corr_flag</name>
+                                  <field_number>13</field_number>
+                                  <field_location unit="byte">49</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Doppler mode correction flag -- indicates the results of validation of the Doppler mode.
+                                         0 = Not applicable or no validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ul_stn_corr_flag</name>
+                                  <field_number>14</field_number>
+                                  <field_location unit="byte">50</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Uplink station correction flag -- indicates the results of validation of the uplink station.
+                                         0 = Not applicable or no validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dl_band_corr_flag</name>
+                                  <field_number>15</field_number>
+                                  <field_location unit="byte">51</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Downlink frequency band correction flag -- indicates the results of validation 
+                                      of downlink band (for the 26m stations only).
+                                         0 = Not applicable or no validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dop_vld_flag</name>
+                                  <field_number>16</field_number>
+                                  <field_location unit="byte">52</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Doppler Validity Flag.
+                                         0 = Valid;  
+                                         1 = Invalid
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve8</name>
+                                  <field_number>17</field_number>
+                                  <field_location unit="byte">53</field_location>
+                                  <data_type>UnsignedMSB8</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <description>
+                                      Reserved. Eight bytes.
+                                  </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

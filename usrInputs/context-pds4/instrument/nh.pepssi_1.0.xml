@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:nh.pepssi</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PLUTO ENERGETIC PARTICLE SPECTROMETER SCIENCE INVESTIGATION for NH</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:pepssi.nh</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.nh</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Andrews, G.B., R.E. Gold, E.P. Keath, D.G. Mitchell, R.W. McEntire, R.L.
+                   McNutt, Jr., and N.P. Paschalidis, Compact particle detector for space
+                   measurements: prototype performance, Proceedings Vol. 3442 Missions to the Sun
+                   II, Clarence M. Korendyke, Editors, pp.105-114, 1998.
+            </reference_text>
+            <description>reference.ANDREWSETAL1998</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   McNutt, R.L., D.G. Jr., Mitchell, E.P. Keath, N.P. Paschalidis, R.E. Gold, and
+                   R.W. McEntire, Compact particle detector for low-energy particle measurements
+                   (Proceedings Paper), SPIE Int. Soc. Opt. Eng., vol. 2804, Missions to the Sun,
+                   David M. Rust, Editors, pp. 217-227, 1996.
+            </reference_text>
+            <description>reference.MCNUTTETAL1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Superseded by [MCNUTTETAL2008A], McNutt, R.E. et al., The Pluto Energetic
+                   Particle Spectrometer Science Investigation (PEPSSI) on the New Horizons
+                   Mission. Space Sci. Rev., Volume 140, Numbers 1-4, pp. 315-385, 2008.
+            </reference_text>
+            <description>reference.MCNUTTETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>PLUTO ENERGETIC PARTICLE SPECTROMETER SCIENCE INVESTIGATION</name>
+        <type>Spectrometer</type> <!--RChen/EN was Charged Particle Analyzer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+########################################################################
+########################################################################
+REQUIRED READING:
+- McNutt et al.  (2007) [MCNUTTETAL2007]
+- SOC Instrument Interface Control Document ICD, originally delivered with
+  this archive
+########################################################################
+########################################################################
+ 
+      This PEPSSI description was adapted from the New Horizons
+      website, the SOC Instrument ICD, and McNutt et al. (2007)
+      [MCNUTTETAL2007].
+ 
+ 
+  INSTRUMENT OVERVIEW
+  ===================
+ 
+ 
+    PEPSSI is a medium-energy particle spectrometer.
+ 
+ 
+    SPECIFICATIONS
+    --------------
+ 
+      NAME:                    PEPSSI
+      DESCRIPTION:             Medium energy particle spectrometer
+      PRINCIPAL INVESTIGATOR:  Ralph McNutt, APL
+      ENERGY RANGE:            25-1000 keV (protons)
+                               60-1000 keV (atomic ions)
+                               25-500 keV (electrons)
+      FIELD OF VIEW:           160 x 12 deg
+      ANGULAR RESOLUTION:      25 x 12 deg
+      ENERGY RESOLUTION:       0.25 keV
+ 
+      PEPSSI (Pluto Energetic Particles Spectrometer Science Investigation)
+is a hockey-puck-size (7.6cm diameter by 2.5cm thick), time-of-flight (TOF)
+spectrometer that measures ions and electrons over a broad range of energies
+and pitch angles.  Particle composition and energy spectra are measured for H
+to Fe from ~15 keV/nucleon to 1 MeV/nucleon and for electrons from 15 keV to
+700 keV.  The PEPSSI instrument traces its heritage back to the MESSENGER
+Energetic Particle Sensor (EPS) instrument. EPS/PEPSSI was developed with the
+support of a NASA Planetary Instrument Definition and Development (PIDDP)
+grant aimed at designing a low-mass, low-power sensor that can measure
+energetic pickup ions produced near planets and comets (Andrews et al., 1998
+[ANDREWSETAL1998]; McNutt et al., 1996 [MCNUTTETAL1996]).  The overall PEPSSI
+instrument weighs 1.5 kg and uses a maximum of 1.4 W of power.
+ 
+ 
+  Scientific Objectives
+  =====================
+ 
+    Summary
+    -------
+ 
+      1.  Determine the escape rate of Pluto&apos;s atmosphere.
+ 
+      2.  Measure the interaction of the solar wind with Pluto&apos;s
+          ionosphere.
+ 
+      3.  Determine the source and nature of energetic particles
+          found near Pluto.
+ 
+ 
+    Details
+    -------
+ 
+      PEPSSI&apos;s primary objective is to determine the mass, energy spectra,
+and directional distributions of energetic particles, with a resolution able
+to discriminate between the various types of species expected at Pluto.
+ 
+      PEPSSI will also search for neutral atoms that escape Pluto&apos;s atmosphere
+and subsequently become charged by their interaction with the solar wind.
+ 
+      Finally, PEPSSI will determine the Composition and density of pick-up
+ions from Pluto, which indirectly addresses the atmospheric escape rate.
+ 
+ 
+  Detector
+  ========
+ 
+    Summary
+    -------
+ 
+ 
+      A time-of-flight (TOF) section feeds a solid-state silicon detector
+(SSD) array. Each SSD has 4 pixels, 2 dedicated to ions, and 2 for electrons.
+PEPSSI&apos;s field of view (FOV) is fan-like and measures 160 degrees x 12
+degrees, divided into six angular sectors of 25 degrees x 12 degrees each.
+Ions entering the PEPSSI FOV generate secondary electrons as they pass
+through entrance and exit foils in the TOF section, providing &apos;start&apos; and
+&apos;stop&apos; signals detected by a microchannel plate (MCP).
+ 
+ 
+   Details
+   -------
+ 
+ 
+      PEPSSI is a compact particle telescope with a time-of-flight (TOF)
+section and a solid-state detector (SSD) array.  A mechanical collimator
+defines the acceptance angles for the incoming ions and electrons.  The TOF
+section is axially symmetric; entrance and exit apertures are 6 mm wide with
+an azimuthal opening angle of 160 degrees.  The entry and exit apertures are
+covered by thin (~7E-6 g/cm**2) polyimide/aluminum and (~10E-6  g/cm**2)
+palladium/carbon foil mounted on high-transmittance stainless-steel grids,
+respectively.  The foil thickness and composition is a compromise to minimize
+the energy threshold, secondary electron production, and scattering of
+particles in the foil while blocking UV from the direct Sun and Lyman-alpha
+background.  PEPSSI measures the ion TOF using secondary electrons generated
+as the ion passes through the entrance and exit foils in the spectrometer.
+Total energy is measured by the SSD array.  Each of the six SSDs has two
+pixels, three of the SSDs are dedicated for ion measurement.  The other three
+have one pixel covered with ~1E-6 m Al absorber, to block low energy ions and
+permit measurements of electrons.  The fan-like collimator together with the
+internal geometry defines the acceptance angles.  The FOV is 160 degrees by
+12 degrees with six angular sectors of 25 degrees each; the total geometric
+factor is ~0.15 cm**2-sr.  As an ion passes through the sensor, it is first
+accelerated by the potential of ~3 kV on the front foil prior to hitting it.
+The ion generates secondary electrons at the foils, which are then
+electrostatically steered to well-defined separate regions on a single micro
+channel plate (MCP), providing &apos;start&apos; and &apos;stop&apos; signals for the TOF
+measurements (from 1 ns to 320 ns).  The segmented MCP anode, with one start
+segment for each of the six angular entrance segments, allows determination
+of the direction of travel even for lower-energy ions that do not give an SSD
+signal above threshold.
+ 
+      The combination of measured energy and TOF provides unique particle
+identification by mass and particle energy in the range: for protons from 15
+keV to 1 MeV; for heavy (CNO) ions from 80 keV to 1 MeV.  Lower-energy (&gt;3
+keV) ion fluxes are measured by TOF and pulse-height analysis (PHA) of the
+signal they produce in the MCP, providing particle identification and
+velocity spectra at these energies as well.  Molecular ions, expected from
+Pluto&apos;s atmosphere, will break up in the foil prior to their full detection,
+but will be detected as high-mass events.  Internal event classification
+electronics determine the mass and produce an eight-point energy spectrum for
+each of four species for six arrival directions.  Energetic electrons are
+measured simultaneously in the dedicated electron pixels in the range from 20
+to 700 keV.  Only protons with energies &gt; 300 keV (expected to be very rare
+at Pluto) can penetrate the absorbers on these pixels, and even those would
+be eliminated by on-board MCP coincidence requirements and ground comparisons
+with the simultaneously measured ion flux.
+ 
+ 
+  Electronics
+  ===========
+ 
+ 
+    Extensive uses of miniaturization and custom electronic in the design
+allow PEPSSI to weigh less than 1.5 kg and consume less than 1.4 W.  PEPSSI
+is made up of six modular 10cm x 10cm slices.  They consist of:
+ 
+      1) Energy board;
+      2) High Voltage Power Supply (HVPS);
+      3) TOF board;
+      4) Digital processing board;
+      5) Common event processor board; and
+      5) Low Voltage Power Supply (LVPS) board.
+ 
+    See the SOC Instrument ICD, originally archived with this volume, and
+McNutt et al. (2007) [MCNUTTETAL2007] for further details.
+ 
+ 
+  Operational Modes
+  =================
+ 
+ 
+    The PEPSSI instrument can operate in two modes: Normal and Diagnostic. On
+the spacecraft, each event generates a PHA record.  This record is classified
+by event type: Electron, High-Energy Ion (or &apos;Hi-Ion&apos; or &apos;Triple&apos;), or
+low-energy ion (or &apos;Low-Ion,&apos;  &apos;Double,&apos; or &apos;TOF-only&apos;).  In diagnostic mode,
+events are not classified; alternatively, all events are &apos;diagnostic events&apos;.
+ Events of a given type are further classified into &apos;Rate Boxes&apos; by their
+energy and/or time of flight (TOF).  Thus each event has a type, a rate box,
+and a detector in which it occurred.
+ 
+ 
+    Bad Time Intervals (BTIs)
+    -------------------------
+ 
+ 
+      Various instrument conditions can make the PEPSSI data difficult or
+impossible to use for scientific purposes.  Powering down, ramping the high
+voltage power up or down, running in diagnostic mode, etc. will all make the
+PEPSSI data unusable for standard analysis.  The PEPSSI_BTI.TAB file contains
+a table of &apos;Bad Time Intervals&apos; which should not be used for science
+analysis.  It should be noted that the entire &apos;Launch&apos; phase of PEPSSI data
+is classified as a BTI.  While not actually a BTI, the period between 2007
+day 144 and day 178 should be treated with caution as well.  The PEPSSI Rate
+Box tables were changed on day 144 and calibration and analysis of this
+period is still preliminary.
+ 
+ 
+    See the SOC Instrument ICD, originally archived with this volume, and
+McNutt et al. (2007) [MCNUTTETAL2007] for details.
+ 
+ 
+  Measured Parameters
+  ===================
+ 
+    Particle energy information, measured by the SSD, is combined with TOF
+information to identify the particle&apos;s composition. Each particle&apos;s direction
+is determined by the particular 25 degrees sector in which it is detected.
+Event classification electronics determine incident mass and energy, with 12
+channels of energy resolution.
+ 
+A typical measurement includes 8-point spectra for protons and electrons and
+reduced resolution energy spectra for heavier ions for all six look
+directions.
+ 
+    In calibration, the rate, in counts/s, of each energy and/or TOF bin is
+converted to flux i.e. differential intensity (1/cm**2-sr-s-keV).
+ 
+ 
+  Calibration
+  ===========
+ 
+ 
+      The calibration parameters are ideally be determined through a
+combination of all of the following:  ground measurements; analysis of the
+in-flight calibration alpha-particle source; modeling; intercalibration with
+known measurements.  Currently only the final method has been employed, which
+has the obvious drawback of not providing an independent determination of the
+absolute flux.  Therefore the fluxes provided in CODMAC Level 3 data should
+not be used as is to conduct science that is relying on absolute fluxes for
+scientific interpretation unless the user determines the fluxes independently.
+ 
+    Brief summaries of the flux and PHA calibrations are given here.  See
+McNutt et al. (2007) [MCNUTTETAL2007] and the SOC Instrument Interface
+Control Document (distributed with this archive) for details.
+ 
+ 
+    Flux Calibration
+    ----------------
+ 
+      The calibration quantities are energy pass-band (dE = Ehi - Elo, lower
+and upper limit of the energies of the particles measured), measurement
+efficiency (N, the fraction of valid incident particles that are actually
+measured), the geometry factor (G, the measurement of the physical detector
+size and solid angle subtended by the field of view).  These values are all
+given and applied with uncertainties in the CODMAC Level 3 files.
+ 
+      The differential intensity, j (1/cm**2-sr-s-keV), is calculated in
+terms of the counts C, time coverage T (s), geometric factor G (cm**2-sr),
+upper and lower energy bounds Ehi and Elo (keV), and detection efficiency N:
+ 
+        j = (C/T)/(G * dE * N),
+ 
+where  E = Ehi - Elo.  The uncertainty values assume Poisson statistics for
+C, no error in T, absolute errors in G, Ehi, Elo and relative error in N.
+I.e., formally the counts are C = C +/- deltaC, the energies are E = E +/-
+deltaE, the geometry factor is G = G +/- deltaG.  The efficiency is N = [N *
+epsilon or N / epsilon], where epsilon = deltaN/N, to one sigma confidence.
+ 
+      In this initial delivery of the PEPSSI data from the Launch and Jupiter
+phases of the New Horizons mission these values are supplied to convert the
+instrument specific data (e.g., count rates) into physical
+instrument-independent units (e.g., differential intensity), as well as
+computing the physical quantities themselves.  It must be stressed that these
+are preliminary values that should not be used without significant effort
+from the user to understand their limitations (see the SOC Instrument ICD,
+provided with this archive, and McNutt et al., 2007 [MCNUTTETAL2007] for a
+description of the method used to calculate differential intensity, also
+called flux).
+ 
+ 
+    PHA Event Calibration
+    ---------------
+ 
+ 
+      The following quantities are provided in the calibrated data products.
+The linear calibration constants are in the data labels; see the SOC
+Instrument ICD and McNutt et al., 2007 [MCNUTTETAL2007] for details.
+ 
+      * Calibrated Deposited Energy and/or TOF values
+ 
+      * Speed column from the TOF assuming a 6.0cm flight path.
+ 
+      * The PHA_HIGH_ION calibrated data contain additional quantities,
+        where each value indicates the Incident energy assuming that
+        the event is of that (H, He, O, or S) species:
+        - H_Incident_Energy
+        - He_Incident_Energy
+        - O_Incident_Energy
+        - S_Incident_Energy
+ 
+      Events with the multi-hit (cross talk) flag set have been excluded.
+Quantities of limited usefulness (such as Heavy Ion Discriminator triggers)
+have been excluded.   Because of the difficulty of removing priority scheme
+biases from non-N2 PHA data, only N2 (APID == 0x692) PHA data is present in
+the calibrated PHA data.
+ 
+      The Rate_Normalized_Weight quantities have had Priority Group artifacts
+removed from the PHA data by the procedure described in the SOC Instrument
+ICD.  This column is usually used in making histograms of the High Energy Ion
+PHA data.
+ 
+ 
+  Filters, Optics, Locations, Subsystems
+  ======================================
+ 
+ 
+    N/A
+
+        </description>
+    </Instrument>
+</Product_Context>

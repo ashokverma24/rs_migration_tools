@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.gp</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>GALILEO PROBE</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.galileo</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:gp.asi</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:gp.dwe</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:gp.epi</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:gp.gpms</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:gp.had</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:gp.lrd</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:gp.nep</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:gp.nfr</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.jupiter</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Yeates, C.M., T.V. Johnson, L. Colin, F.P. Fanale, L. Frank, and D.M. Hunten,
+                   Galileo: Exploration of Jupiter&apos;s System, NASA SP-479 (REPLACED BY
+                   YEATESETAL1985), 1985.
+            </reference_text>
+            <description>reference.GLL1985</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   D&apos;Amario, L.A., L.E. Bright, and A.A. Wolf, Space Science Reviews, Volume 60
+                   Numbers 1-4, 1992, The Galileo Mission, Kluwer Academic Publishers, 1992.
+            </reference_text>
+            <description>reference.SSR1992</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>GALILEO PROBE</name>
+        <type>Spacecraft</type>
+        <naif_host_id>GP</naif_host_id>
+
+        <description>
+ 
+ 
+         Instrument Host Overview
+         ========================
+ 
+         The Galileo spacecraft consists of two parts, an orbiter
+         (SPACECRAFT_ID = &apos;GO&apos;) and a probe (SPACECRAFT_ID = &apos;GP&apos;).
+         Spacecraft power is provided by two radioisotope
+         thermoelectric generators. Propulsion is accomplished via a
+         bipropellant system of twelve 10- newton thrusters and one
+         400 newton engine. The command and data subsystem consists
+         of multiple microprocesors and a high-speed data bus.
+ 
+         The Galileo atmospheric probe will be deployed from the
+         orbiter 150 days prior to Jupiter encounter. The probe
+         consists of a deceleration module and a descent module. It
+         weighs about 331 kilograms, half of which is the heat
+         shield. After entering the Jovian atmosphere and slowing its
+         descent, the descent module deploys a 2.5 meter parachute
+         and begins transmitting data from its instruments at a rate
+         of 128 bits per second. (Refer to Yeates, et al, 1985;
+         Johnson, et al, 1992.)
+ 
+       Platform Description
+       --------------------
+ 
+         Platform PROBE DESCENT MODULE
+ 
+           The atmospheric descent module contains seven scientific
+           instruments: the atmospheric structure instrument (ASI), the
+           neutral mass spectrometer (NMS), the helium abundance
+           detector (HAD), the nephelometer (NEP), the net-flux
+           radiometer (NFR), the lightning and radio emissions detector
+           (LRD), and the energetic particles instrument (EPI). The
+           instruments are contained in hermetically sealed housings
+           designed to withstand a pressure of 20 bars. The instrument
+           data are transmitted to the orbiter over two simultaneously
+           operating channels in the L band. (Refer to Yeates, et al,
+           1985; Johnson, et al, 1992.)
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

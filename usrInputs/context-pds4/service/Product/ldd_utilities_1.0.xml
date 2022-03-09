@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:ldd_utilities</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>LDD Utilities</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-04-26</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>LDD Utilities</name>
+        <abstract_desc>A set of XSLT transformations that will generate documentation and visualizations for data dictionaries.</abstract_desc>
+        <url>https://github.com/sbn-psi/ldd_utilities</url>
+        <service_type>Tool</service_type>
+        <interface_type>Command-Line</interface_type>
+        <category>Design</category>
+        <category>Visualization</category>
+        <software_language>XSLT</software_language>
+        <description>LDD Utilities includes XSL transformations that work with Saxon and libxslt to generate HTML documentation for an LDDIngest file.
+
+There is also a tool that works with graphviz to generate a visualization of the LDDIngest file.</description>
+    </Service>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:node:node.sbn</lid_reference>
+            <reference_type>has_node</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <!--
+    Submitter Information
+    Submitter Name:        Jesse Stone
+    Submitter Institution: Planetary Science Institute
+    Submitter Email:       jstone@psi.edu
+    -->
+</Product_Service>

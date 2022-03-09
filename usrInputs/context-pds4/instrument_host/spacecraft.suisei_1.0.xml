@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.suisei</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SUISEI</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.suisei::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:esp.suisei::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:comet.halley::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <External_Reference>
+            <reference_text>
+                   Reinhard, R and B. Battrick (eds), &apos;Space Missions to Halley&apos;s Comet&apos;, European
+                   Space Agency ESA SP-1066, ESA Pub Div, Moordwijk, Netherlands, 1986.
+            </reference_text>
+            <description>reference.ESA-SP1066</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   &apos;Encounters with Comet Halley, The first results&apos;, Nature, Volume 321, No.
+                   6067, 15 May 1986.
+            </reference_text>
+            <description>reference.NATURE321</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>SUISEI</name>
+        <type>Spacecraft</type>
+        <naif_host_id>SUISEI</naif_host_id>
+
+        <description>
+ 
+    Instrument Host Overview
+    ========================
+ 
+      Planet-A and MS-T5 are identical except for their
+      scientific payloads.  The main spacecraft body is a
+      cylinder, 140 cm in diameter and 70 cm high.  The
+      spinning spacecraft is about 250 cm high, from the
+      top of the high- gain antenna dish to the bottom of
+      the medium-gain antenna.  Its outer wall is covered
+      by solar cells which produce 100 W of power under
+      optimum conditions.
+ 
+      An equipment platform mounted to a central thrust
+      tube carries most of the subsystems, including the
+      mechanically despun, high-gain antenna, two
+      hydrazine fuel tanks, the thrusters, and the
+      experiment sensors .  A star scanner and a nutation
+      damper are attached to the thrust tube.  Planet-A
+      and MS-TS weigh 139.5 kg and 138.1 kg,
+      respectively, including lO kg of hydrazine
+      propellant in each case.  Both spacecraft are
+      spin-stabilized, with the facility to change the
+      spin rate .  The spin axes of both spacecraft will
+      be kept perpendicular to the ecliptic plane.  The
+      spin-rate of Planet-A will be changed quite
+      frequently.  It must be reduced, for example, to
+      0.2 rpm during the UVI imaging operating using an
+      onboard momentum wheel, while during communication
+      periods and during solar-wind measurements a
+      spin-rate of 6.3 rpm is preferable.  The
+      spacecraft/Earth geometry and the data-rate
+      requirements preclude the use of a single antenna
+      for the duration of the mission.  The antenna
+      subsystem therefore consists of a high-gain
+      antenna, a medium-gain antenna as a backup, and a
+      low-gain antenna for near-Earth operation.  The
+      despun high-gain antenna has an offset- parabolic
+      reflector with a diameter of 80 cm and a gain of
+      21.5 dB in uplink and 22.5 dB in downlink
+      transmission.  The communications subsystem
+      operates in 5-band using a 5 W transmitter.
+      Planet-A has two data formats: Format-1 provides
+      Ultra-Violet Imager (UVI) data.  Format-2
+      Solar-Wind Experiment (ESP) data (Table below).
+      The data rates of both spacecraft are 2048 bit/s
+      (without coding) in &apos;high bit rate&apos; and 64 bit/s
+      (with convolutional coding) in &apos;low bit rate&apos; mode.
+      The bit rate used will depend on the communication
+      distance.
+ 
+      The ground station for the mission has been built
+      at Usuda, about 170 km northwest of Tokyo.  The
+      station&apos;s 64 m diameter dish antenna has a gain of
+      approximately 63 dB.  A 64 bit/s communication link
+      (convolutionally encoded PCM) is expected to be
+      possible from 1.1 AU, which will be the comet-Earth
+      distance during the Planet-A encounter.
+ 
+ 
+ 
+--------------------------------------------------------------------------
+Table.  The Planet-A scientific payload
+ 
+ 
+Experiment   Mass  Power Data rate (bit/s)   Principal Investigator
+             (kg)  (W)   Format 1/2
+--------------------------------------------------------------------------
+                         H 1568/0           E. Kaneda, Geophys. Res. lab.,
+UVI          7.5   8.9   L 98/0             Faculty of Science, Univ. of
+                                            Tokyo
+ 
+                         H 0/1408           T. Mukai, Res. Div. Planetary
+ESP          4.7   4.9   L 0/88             Science, ISAS, Tokyo
+--------------------------------------------------------------------------
+Format         UVI and UVI check        H = High bit rate
+               ESP                      L = law bit rate
+--------------------------------------------------------------------------
+ 
+ 
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

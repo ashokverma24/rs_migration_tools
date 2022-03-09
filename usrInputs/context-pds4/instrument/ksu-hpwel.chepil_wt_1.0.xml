@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ksu-hpwel.chepil_wt</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Chepil Wind Tunnel at The High Plains Wind Erosion Laboratory, Kansas State University</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-02-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                 Initial creation of the context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:laboratory.ksu-hpwel</lid_reference>
+            <reference_type>instrument_to_facility</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.2136/sssaj1959.03615995002300060019x</doi>
+            <reference_text>Chepil, W.S. (1959) Equilibrium of Soil Grains at the Threshold of Movement by Wind, Soil Science Society
+            of America Journal, 23(6): 422-428.</reference_text>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>Zingg, A. and W.S. Chepil, (1950), Aerodynamics of Wind Erosion, Agr. En., Vol.31, June 1950, pp. 279-282, 284.</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Chepil Wind Tunnel at The High Plains Wind Erosion Laboratory, Kansas State University</name>
+        <type>Atmospheric Sciences</type>
+        <description>
+            Historical wind tunnel build by W.S. Chepil at Kansas State University. The tunnel was 17.07 m in length with a cross-section
+            area of 0.91 m x 0.91 m, with a boundary layer depth of approximately 0.30 m.
+       </description>
+    </Instrument>
+</Product_Context>

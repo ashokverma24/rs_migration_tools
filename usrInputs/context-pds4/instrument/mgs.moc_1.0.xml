@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mgs.moc</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARS ORBITER CAMERA for MGS</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mgs::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Malin, M.C., G.E. Danielson, M.A. Ravine, and T.A. Soulanille, &apos;Design And
+                   Development Of The Mars Observer Camera&apos;, International Journal of Imaging
+                   Systems and Technology (Int. J. Imaging Sys. Tech.) Vol. 3, 76-91, 1991.
+            </reference_text>
+            <description>reference.MALINETAL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Malin, M.C., G.E. Danielson, A.P. Ingersoll, H. Masursky, J. Veverka, M.A.
+                   Ravine, and T.A. Soulanille, Mars Observer Camera, J. Geophys. Res., 97,
+                   7699-7718, 1992.
+            </reference_text>
+            <description>reference.MALINETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Malin, M.C., M.H. Carr, G.E. Danielson, M.E. Davies, W.K. Hartmann, A.P.
+                   Ingersoll, P.B. James, H. Masursky, A.S. McEwen, L.A. Soderblom, P. Thomas, J.
+                   Veverka, M.A. Caplinger, M.A. Ravine, T.A. Soulanille, J.L. Warren, Early views
+                   of the Martian surface from the Mars Orbiter Camera of Mars Global Surveyor,
+                   Science, 279, 1681-1685, 1998.
+            </reference_text>
+            <description>reference.MALINETAL1998</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MARS ORBITER CAMERA</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  (Note: the majority of this text was derived from that in
+  [MALINETAL1991])
+ 
+  Instrument Overview
+  ===================
+    The Mars Observer Camera (MOC) was initially developed as part of
+    the Mars Observer instrument complement.  After the loss of MO,
+    the MOC flight spare was completed and flown on the Mars Global
+    Surveyor spacecraft.  To avoid a confusing change of acronym, the
+    instrument on MGS is called the Mars Orbiter Camera, but is often
+    referred to internally to the MOC project as MOC2.  Regardless,
+    the two instruments are essentially identical.
+ 
+    MOC is a three-component imaging system (one narrow-angle and two
+    wide-angle cameras) designed to take high spatial resolution
+    pictures of the surface and to obtain lower spatial resolution,
+    synoptic coverage of the surface and atmosphere [MALINETAL1992,
+    MALINETAL1998].  The cameras are based on the &apos;push broom&apos;
+    technique, acquiring one line of data at a time as the spacecraft
+    orbits the planet.  Using the narrow-angle camera during the
+    Mapping Phase of the mission, areas ranging from 2.8 x 2.8 km to
+    2.8 x 25.2 km (depending on available internal digital buffer
+    memory) can be imaged at about 1.4 m/pixel.  Additionally,
+    lower-resolution pictures (to a lowest resolution of about 11
+    m/pixel) can be acquired by pixel averaging; these images can be
+    much longer, ranging up to 2.8 x 500 km at 11 m/pixel.
+ 
+    The following table summarizes MOC characteristics.
+ 
+ Camera         Min wave-  Max wave-  Focal   Aperture  F number  Reso-
+                 length     length    length                     lution
+                  (nm)       (nm)      (cm)                     (380 km,
+                                                                m/pixel)
+---------------------------------------------------------------- ------
+ Narrow angle     500        900      350.0    0.35 m   10        1.5
+ Wide angle red   600        630        1.1    1.7 mm    6.4      230
+ Wide angle blue  420        450        1.14   1.8 mm    6.3      230
+ ----------------------------------------------------------------------
+ 
+ 
+  Scientific Objectives
+  =====================
+    High-resolution data will be used to study sediments and
+    sedimentary processes, polar processes and deposits, volcanism,
+    and other geologic/geomorphic processes.  The MOC wide-angle
+    cameras are capable of viewing Mars from horizon to horizon and
+    are designed for low-resolution global and intermediate
+    resolution regional studies.  Low-resolution observations can be
+    made every orbit during the Mapping Phase, so that in a single
+    24-hour period a complete global picture of the planet can be
+    assembled at a resolution of at least 7.5 km/pixel.  Regional
+    areas (covering hundreds of km on a side) may be imaged at a
+    resolution of better than 250 m/pixel at the nadir.  These images
+    will be particularly useful in studying time-variable features
+    such as lee clouds, the polar cap edge, and wind streaks, as well
+    as acquiring stereoscopic coverage of areas of geological
+    interest.  The limb can be imaged at vertical and along-track
+    resolutions of better than 1.5 km.  Color filters within the two
+    wide-angle cameras permit color images of the surface and
+    atmosphere to be made to distinguish between clouds and the
+    ground and between clouds of different composition.
+ 
+ 
+  Calibration
+  ===========
+    MOC is fixed to the nadir panel of the spacecraft, and therefore
+    cannot view any spacecraft-mounted calibration targets.  Through
+    a combination of pre-launch calibration over temperature ranges
+    anticipated at Mars, and occasional coordinated observations with
+    TES, especially during regional or global dust storms when the
+    atmosphere obscures the surface and presents a relatively
+    featureless target, it is anticipated that MOC data can be
+    calibrated photometrically to about &lt;=10% in an absolute sense,
+    although the relative photometric precision of the data (pixel to
+    pixel) should be better than 3%.
+ 
+ 
+  Operational Considerations
+  ==========================
+    The pre-mapping MOC observations were taken while MGS was in its
+    elliptical capture and aerobraking orbits.  Imaging was only done
+    for a few minutes immediately after periapsis, when the
+    spacecraft was either tracking the nadir or performing the
+    so-called &apos;rollout&apos;, a reorientation maneuver that returned it
+    from the aerobraking drag pass to an Earth-pointed attitude.  (A
+    handful of images were taken when the spacecraft was explicitly
+    slewed to point at targets of interest, including the Viking and
+    Pathfinder landing sites, Phobos, and the &apos;Face on Mars&apos;.)
+    Altitudes were at times lower than those expected in mapping, but
+    the high velocity of the spacecraft usually precluded clocking
+    the line array fast enough to produce images with a 1:1 pixel
+    aspect ratio.  In this period, a wide variety of summing modes
+    and line times were used to address imaging goals in the best way
+    possible.  Global coverage with the wide angle cameras was not
+    possible in this period; typically a small fraction of the MOC
+    buffer was devoted to reduced-resolution WA images for regional
+    monitoring, while the lion&apos;s share of the buffer was used to
+    store targeted NA images.
+ 
+    The remainder of this discussion describes observations planned
+    from the mapping orbit.  Low resolution observations can be made
+    every orbit, so that in a single 24-hour period a complete global
+    picture of the planet can be assembled at a resolution of at
+    least 7.5 km/pixel.  Of course, because the Mars Global Surveyor
+    orbit is sun synchronous, this global picture shows how each part
+    of Mars appears at approximately 2:00 PM local time.  From an
+    imaging perspective, this global map also illustrates two
+    principal limitations in the Mars Global Surveyor orbit: the
+    absence of diurnal coverage (it samples Mars only at two times of
+    day, one of which is unsuitable for visible imaging) and the poor
+    illumination angle (chosen prior to the selection of a camera for
+    the mission).  Relief will be less apparent in images taken at
+    low incidence angles near the equator, but at higher latitudes
+    (i.e., nearer the terminator), relief shading will become more
+    prominent.  Shadows will be visible near the poles.
+ 
+    The fields of view of both the NA and WA cameras, the nature of
+    the Mars Global Surveyor spacecraft and mission, and specific
+    aspects of the MOC design place certain constraints on viewing
+    Mars.  The width of MOC NA frames is limited by the camera FOV to
+    be about 2.9 km.  Even if MGS orbits were uniformly spaced, it
+    would take over 600 days for the same location near the equator
+    to be viewed twice.  Given the 687 nominal mission duration and
+    the vagaries of the Mars Global Surveyor orbit that result from
+    gravitational perturbations and atmospheric drag, MOC will be
+    fortunate to pass over each equatorial area once.  At higher
+    latitudes, of course, the number of opportunities to image a
+    given location increases.  Unfortunately, the along- and
+    cross-track orbit prediction uncertainties are larger than the NA
+    FOV owing to mission operational constraints on Earth.  Thus,
+    targeting a given feature will be a probabilistic activity.
+    Contiguous &apos;mosaics&apos; of NA images are not possible.  The WA FOV
+    covers approximately 1300 km on the surface from nadir to each
+    limb.  At the equator, MGS orbits are spaced about 1500 km, so
+    the limb on one orbit is at the nadir on the subsequent orbit,
+    and again at the limb on the orbit after that.  There is
+    therefore good overlap at the equator, and excellent overlap
+    closer to the poles.  Contiguous WA mosaics are possible.
+ 
+    MOC image sizes are determined by the camera FOV (cross-track
+    dimension, as noted above) and by the size and utilization of the
+    12 MB digital buffer (along-track).  Using realtime compression,
+    it is possible to acquire an image longer than the orbit
+    determination along-track uncertainty.  However, other contents
+    of the buffer may prevent its use in this manner.  Buffer space
+    is thus an important resource that requires close management.
+    For this reason, MOC images can vary in size and compression
+    factor.  For the NA, areas ranging from 2.9 km X 2.9 km to 2.9 km
+    X 25.2 km (depending on available buffer memory) can be imaged at
+    about 1.4 m/pixel.  Additionally, lower resolution pictures (to a
+    lowest resolution of about 11 m/pixel) can be acquired by pixel
+    averaging.  Contingent as well upon available power, these images
+    can be much longer, ranging up to 2.9 X 500 km at 11 m/pixel.
+ 
+    Since payload selection and the Mars Observer project &apos;new start&apos;
+    in 1986, the data return from the MOC has grown significantly
+    with better understanding of the spacecraft and ground
+    telecommunication system.  Mission data rates, and the MOC data
+    rate allocation, vary substantially over the course of the MGS
+    mission, owing to Deep Space Network link performance.  They
+    include recording at 3.5, 7, and 14 Kbps, and transmitting in
+    realtime at 34.2 Kbps.  MOC data rates vary from 0.7 Kbps during
+    the lowest record rate to 9 Kbps during the highest record rate,
+    and 29 Kbps during realtime transmissions.  These rates permit
+    the daily transmission of roughly 2, 4, and 8 uncompressed 2048 X
+    2048 images during &apos;record only&apos; days and, once every three days,
+    14 such images during an eight hour realtime pass.  These numbers
+    can be larger or smaller, depending on the compression factors
+    used and the resolution of the global map that is being acquired
+    at the same time.  MOC is capable of simultaneously sending data
+    to both the record and realtime streams, and is further capable
+    of matching any data rate available on-board the spacecraft.
+ 
+ 
+  Detectors
+  =========
+    To minimize mass and complexity, and to increase reliability, all
+    three MOC camera heads are line-scan imagers.  This allows the
+    detectors to be electronically shuttered, eliminating the need
+    for a mechanical shutter.  The substantial advantages of
+    line-scan systems comes at the cost of fixed exposure times.
+    This is not a problem for the WA (f/6, 13 lines per second), but
+    is a substantial problem for the NA (f/10, 2200 lines per
+    second).  In order to meet the signal to noise requirement of
+    20:1 over an appreciable part of the planet, the overall signal
+    chain noise performance must be better than 100 electrons.  This
+    performance must be met at the raw acquisition pixel processing
+    rate of 5 million pixels per second.
+ 
+    In order to meet the noise and other performance requirements,
+    two custom CCDs were fabricated for the MOC by Ford Aeronutronics
+    (now Loral Aeronutronics): one for the MOC NA (2048 13 um pixels,
+    two outputs) and one for the MOC WA (3456 7 um pixels, one
+    output).  Development work also resulted in devices with thinner
+    polysilicon layers than used in Ford&apos;s standard process,
+    increasing their quantum efficiency in the blue (400 to 450 nm).
+ 
+    The custom CCDs are individually packaged and mounted on custom
+    hybrid ceramic substrates.  Each hybrid is attached to a small
+    printed circuit board (PCB) that contains a small amount of
+    pre-amplification circuitry inside the radiation shielding to
+    minimize low level signal path lengths.  The hybrid and PCB are
+    mounted together in a focal plane assembly that provides
+    mechanical alignment of the detector to the optics, radiation
+    shielding of the detector (down to &lt;1 kilorad for the NA, &lt;2
+    kilorad for the WA), and thermal control.  Each FPA has a heater
+    to keep it warm during the cold cruise to Mars, and each
+    incorporates a thermal path to conduct away heat produced during
+    operation.  In the case of the NA, the thermal path runs from the
+    FPA to an &apos;internal radiator&apos; behind the primary mirror.  This
+    radiator loses its heat by radiation to the back of the primary
+    mirror which, in turn, loses heat by radiation to Mars during the
+    nominal mission, or to space during interplanetary cruise.  The
+    focal plane assemblies are attached to the main analog circuitry
+    through flex cables with multiple isolated return paths to
+    minimize cross-talk.
+ 
+    Based on breadboard measurements, the NA signal chain has a
+    readout noise is less than 70 electrons, and a dark current noise
+    of less than 3 electrons rms at its operating rate.  The WA
+    signal chain has a readout noise of less than 15 electrons, and a
+    dark current noise of less than 25 electrons at WA operating
+    rates.  In-band quantum efficiency for the NA detector (i.e.,
+    between 500-900 nm) is better than 35%, for the WA red detectors
+    (575-625 nm) better than 35%, and for the WA blue detectors
+    (400-450 nm) better than 10%.  Both detector designs have charge
+    transfer efficiencies better than 0.999995.
+ 
+    Combined with the optics described previously, the 2048 X
+    1-element line array with 13 um pixels provides permits a NA
+    resolution of 1.41 m/pixel from 380 km altitude and better than
+    1.5 m/pixel over the entire range of operational altitudes, while
+    the WA cameras, using the 3456 X 1-element line array with 7 um
+    pixels, achieve nadir resolutions of 233 m/pixel (blue) and 242
+    m/pixel (red) from 380 km altitude.
+ 
+ 
+  Electronics
+  ===========
+ 
+    Analog Electronics
+    ------------------
+      Separate but similar processing chains are used for the NA and
+      WA cameras.  Both chains provide control of gain to 3 db (&apos;root
+      2&apos;) resolution.  Offset control in 256 steps covering the range
+      from 0 to 5 times the full scale of the analog-to-digital
+      converter (A/D) is provided to subtract the effects of, for
+      example, atmospheric scattering prior to A/D conversion.  All
+      camera outputs are digitized to eight bit resolution.
+ 
+      Correlated double sampling (CDS) is implemented in both cameras
+      to attenuate reset and low-frequency noise.  In the WA this is
+      performed by the fairly conventional means of using two
+      separate sample and hold circuits, one holding the reset level
+      and the other the video level, both driving the inputs of a
+      difference amplifier.  Owing to the high speed of the NA (each
+      of the two NA CCD outputs produces pixels at 400 ns intervals),
+      a 200 ns delay line comb filter is used in each output chain to
+      form the difference between the reset and video period, and
+      this difference is further filtered and sampled before the
+      offset and A/D operation.
+ 
+      All variable gain is taken before the CDS, while the signal is
+      effectively &apos;chopped,&apos; providing immunity from offset drift in
+      these amplifiers.  Monolithic transimpedance amplifiers are
+      extensively used in the NA for their compactness and
+      high-frequency performance.  A slow feedback loop maintains the
+      average reset level of the signal at a fixed voltage, keeping
+      the reset and video levels in a stable, linear range of the
+      amplifiers while the clock feedthrough transients are removed
+      by clipping stages to keep the amplifiers out of saturation.
+ 
+      For each of the NA and WA, dual-tracking linear field effect
+      transistor-series regulators, operating with about 300 mV of
+      headroom, provide overall post-regulation and ripple rejection
+      for the analog 10 V power rails.  L-C-R decoupling is used to
+      isolate individual amplifiers.  These regulators provide
+      overcurrent power cycling and current monitoring to the
+      housekeeping telemetry.  They operate as switches to shut down
+      the analog load by microprocessor command, to conserve power.
+ 
+      Both NA and WA analog systems show long-term gain stability of
+      better than 1% and gain stability over temperature excursions
+      of better than 0.5% per 10 degrees C.  The NA system uses about
+      700 parts and draws about 3 W; each of the WA systems uses
+      about 450 parts and draws 1 W.  Noise through the WA analog
+      system is 25 electrons, while noise through the NA analog
+      system is less than 80 electrons.
+ 
+ 
+    &apos;Slow Digital&apos; Electronics
+    --------------------------
+      The MOC digital system is divided into two parts: that
+      constrained to operate at the clock speed of the microprocessor
+      (the &apos;fast&apos; digital electronics) and that which is not so
+      constrained (the &apos;slow digital&apos; electronics).  In order to
+      isolate potential noise interactions between the &apos;slow&apos; and
+      &apos;fast&apos; electronics, and to minimize the amount of circuitry
+      that had to be placed on one face of a 35 cm diameter PCB, they
+      have been placed on separate faces of two-sided PCB assemblies.
+ 
+      The MOC &apos;slow digital&apos; electronics include the power supply,
+      bus interface unit (BIU), housekeeping/engineering measurement
+      circuitry, and power switching elements (PSE).  The power
+      supply consists of two flyback-type switching converters, each
+      capable of operating asynchronously at approximately 45 KHz but
+      normally synchronized to a common 50 KHz clock.  Both
+      converters share a common input filter.  One converter (the
+      &apos;digital&apos; converter) operates whenever the spacecraft-provided
+      28 VDC bias is present.  It provides +5 V to the digital logic
+      and +20, +10 and -10.5 V to various sensitive analog loads (for
+      which separate return lines are maintained).  The second
+      converter (the &apos;analog&apos; converter) also draws from the
+      spacecraft 28 VDC power, but may be turned off using secondary
+      control logic.  It supplies only analog referenced voltages:
+      +22.5, +10.5, -10.5, +12, -5, and -20 V.
+ 
+      Voltages from each of two &apos;slow digital&apos; boards are &apos;diode
+      or&apos;d&apos; to provide power redundancy to the analog and digital
+      systems.
+ 
+      The bus interface unit is Mars Global Surveyor Project-provided
+      hardware that acts as the link between the MOC and the
+      spacecraft Payload Data Sub-System (PDS).  Three functions are
+      accomplished by the BIU: 1) it receives MOC uplink commands
+      from the PDS (in the form of a serial bit-stream that is
+      converted by the BIU to a 16-bit parallel format at the BIU/MOC
+      interface), 2) it requests and receives from the MOC science
+      and engineering data in 16-bit words on specific polling
+      schedules, and 3) it provides a spacecraft timing reference
+      signal (the Real-Time Interrupt, RTI) eight times a second.
+      The PDS to BIU link is Manchester II encoded, and the BIU
+      incorporates a custom encoder/decoder chip to decode commands.
+      All three signals are carried over shielded differential
+      twisted wire pairs.
+ 
+      MOC housekeeping/engineering monitoring occurs for 48 points
+      within each redundant system--34 voltages and currents and 14
+      temperatures.  Test points are selected using analog switches;
+      the voltage from a selected test point is fed to a voltage
+      controlled oscillator (VCO) which is allowed to settle for two
+      output cycles.  VCO cycles are counted by an A/D converter,
+      with sampling initiated on an integer RTI and completed one RTI
+      later.  The final count may be read immediately thereafter.
+      Housekeeping telemetry is sampled four times each second.
+ 
+      Owing to power constraints, the MOC implements power management
+      circuity.  Power switching elements permit various sections of
+      the MOC digital and analog electronics to be power-cycled to
+      reduce orbit-average power consumption.  Some of these elements
+      also incorporate circuitry to sense overcurrents that result
+      from cosmic-ray induced single-event latchups (SEL).
+      Power-cycling these sections enables the MOC electronics to
+      avoid the deleterious effects of such latch-ups.
+ 
+ 
+    &apos;Fast Digital&apos; Electronics
+    --------------------------
+      The MOC digital electronics incorporate many advanced
+      technologies.  Three aspects of the all-CMOS digital
+      electronics are highlighted here: the microprocessor, the three
+      custom ASIC designs (on two chips), and the DRAM buffer memory.
+      Figure 5 shows the layout of the &apos;fast digital&apos; board,
+      illustrating the relationships between the main elements of the
+      digital design.
+ 
+      The MOC control system is based on a radiation-hard version of
+      the National Semiconductor 32C016 microprocessor developed by
+      Sandia National Laboratories (the Sandia SA3300).  The SA3300
+      is a 32-bit microprocessor with a 16-bit bus and a 24-bit
+      address space.  The MOC operates its SA3300 at 10 MHz, giving a
+      computational performance of just under 1 MIPS.  Among the
+      advantages of this processor is that all flight software could
+      be written in a high level programming language (&apos;C&apos;).  All
+      memory and control registers are located in the logical address
+      space of the microprocessor.  All of its address space is also
+      directly accessible by ground command through the PDS by direct
+      memory load.
+ 
+      All of the MOC digital design except the microprocessor,
+      memory, and BIU is implemented in gate arrays.  Three basic
+      designs are used, with two occurring on the same chip.  The
+      three designs are called the Control Gate Array (CGA), the
+      Buffer Gate Array (BGA), and the Narrow Angle Gate Array
+      (NAGA).  Four parts (1 CGA, 2 BGA, and 1 NAGA) are used in each
+      of the redundant half-systems.
+ 
+      The CGA provides the link between the SA3300 microprocessor and
+      the rest of the system by performing all address decoding and
+      memory mapping.  It incorporates interfaces to the program
+      memory and operational memory, three direct memory access (DMA)
+      channels to the BIU, and the housekeeping/engineering VCO.  It
+      also includes the reset/bootstrap controller and &apos;deadman&apos;
+      timer.  The CGA permits direct memory/register access without
+      CPU intervention, allowing the MOC to continue to function
+      should its microprocessors fail during the mission, albeit in a
+      degraded fashion.
+ 
+      The BGAs provide DRAM interfaces to each of two separate
+      &apos;banks&apos; consisting of 6 MByte each.  Each BGA also provides WA
+      CCD clocking, analog setting control, and downtrack summing for
+      one of the two WA cameras, as well as WA data DMA.  Each BGA
+      allows data DMA for both the Mars Balloon Relay (MBR) link and
+      the NA camera, and applies ECC to the MBR data.
+ 
+      The NAGA provides acquisition control and image processing
+      capabilities for the NA camera.  It generates the NA clocking
+      and acquisition control signals.  Image processing capabilities
+      include cross-track summing, and one- and two-dimensional
+      predictive compression, resampling, and Huffman encoding.  All
+      data acquired through the NAGA may be optionally impressed with
+      a 16-bit polynomial ECC syndrome capable of correcting 2 bit
+      errors in 256.
+ 
+      Each of the MOC&apos;s two half-systems incorporates more digital
+      memory than has cumulatively flown on planetary missions:
+      ninety- six 1 Mbit DRAMs arranged in two banks of 3 million
+      16-bit words each.  The primary use of this memory is image
+      storage and downlink data rate buffering, although
+      approximately 1 MByte is allocated for flight software use
+      (e.g., command sequences, scratch space, etc.).  Access
+      bandwidth to the RAM buffer is sufficient to accommodate NA,
+      WA, and MBR acquisitions, and memory refresh and PDS DMA
+      transfers, all simultaneously and at their maximum rates.  CPU
+      accesses are given lower priority and are delayed as necessary
+      to allow other system activities the access they require.
+ 
+      The DRAM devices are susceptible to both cosmic-ray induced
+      single event upset and latchup (SEU and SEL).  Based on tests
+      performed by the MOC design team, SEUs will probably occur less
+      than 100 times each day under normal solar conditions.  The ECC
+      applied to information stored in the DRAM was designed to
+      repair such data corruption; the software refresh rate is
+      selectable to match the actual upset rate.  Such procedures
+      will not work during energetic solar flares, but these are
+      expected to occur rarely during the Mars Observer mission.
+      Additionally, every set of three devices (i.e., one bit in the
+      16-bit word) has a separate power sensing element capable of
+      detecting SEL-induced overcurrent, and power-cycling those
+      parts.  As these devices use capacitive storage, the short-
+      duration power-cycles are non-destructive (i.e., the memories
+      retain their contents).
+ 
+      The MOC includes two other memory banks--one each for program
+      memory and operational memory.  The program memory consists of
+      128 KBytes of ultraviolet-erasable programmable read-only
+      memory (UVEPROM), while the operational memory consists of 192
+      KBytes of radiation-hard static random access memory (SRAM).
+      The flight software is stored in the UVEPROM, with ECC.  It is
+      copied into the SRAM for execution.  A small amount of SRAM is
+      also used as a high- speed line buffer for the NAGA.
+ 
+ 
+    Flight Software
+    ---------------
+      The MOC flight software is very sophisticated.  It is capable
+      of establishing the acquisition parameters of many different
+      data types, while simultaneously conducting routine
+      housekeeping and data compression tasks.  Among its
+      housekeeping tasks is the continual refreshing of the DRAM
+      buffer ECC.
+ 
+      WA commanding constitutes the most complicated task of the
+      flight software.  Owing to the desire to simultaneously acquire
+      global monitoring, NA context, and local and regional WA
+      coverage, a schema of &apos;virtual cameras&apos; was implemented.  The
+      BGA incorporates a 16-line &apos;ring buffer&apos; into which WA
+      observations are continuously acquired on each sun-lit pass;
+      the flight software routes lines from this buffer to separate
+      addresses, each representing a different acquisition or
+      &apos;camera.&apos; Downtrack and cross-track summing can be performed
+      separately from full- resolution acquisitions.  Different pixel
+      positions along the detectors may also be selected so that, for
+      example, both nadir &apos;context&apos; frames and limb observations can
+      be acquired at the same time without returning to Earth the
+      full 3456 pixel FOV.
+ 
+ 
+    Data Compression
+    ----------------
+      MOC has considerable capabilities to compress images to
+      optimize use of its buffer and downlink bandwidth allocation.
+      Three different forms of compression are available.  During
+      acquisition of images (i.e., in realtime), a predictive
+      compression technique can be employed, in either lossless or
+      &apos;lossy&apos; form, to acquire more data than would otherwise fit in
+      the MOC buffer.  As noted above, predictive compression is
+      implemented in hardware for the NA camera; the same algorithm
+      can be applied in software to WA data.  Depending on scene
+      content, lossless compression factors from 1.5 to 2.5 are
+      possible; with loss, the factors are larger but image quality
+      degrades rapidly, primarily by contouring that results from
+      insufficient bits to represent the actual image gray levels.
+      Once otherwise uncompressed data are in the buffer, they can be
+      compressed using two transform compression techniques: Walsh-
+      Hadamard (WH) and Discrete Cosine (DC).  WH transform
+      compression, which uses square-wave approximations of spatial
+      frequency content, can be used to compress images by factors of
+      3 to 5 with acceptable degradation, that appears mostly in the
+      form of &apos;blockiness&apos; associated with the loss of high frequency
+      information.  DC transform compression, using cosine
+      representation of spatial frequencies, provides the highest
+      compression factors with the least degradation, but takes about
+      30 minutes to compress a typical image (2048 X 2048).
+      Compression factors of 10:1 show little visual evidence of
+      degradation, although they may have increased radiometric noise
+      (in the 1-3 DN range) within each 16 X 16 pixel transform
+      block.  Visual degradation of DC transformed images typically
+      focuses on the boundaries between the transform blocks, which
+      become more obvious when these blocks contain different
+      information owing to requantization of the higher frequency
+      components.
+ 
+ 
+  Optics and Filters
+  ==================
+    The NA camera is a 3.5 m focal length (f/10) Ritchey-Chretien
+    telescope, filtered to operate in the 500-900 nm bandpass.  The
+    WA system consists of two cameras with the same FOV, one
+    optimized in the 400-450 nm (&apos;blue&apos;) bandpass and the other in
+    the 575-625 nm (&apos;red&apos;) bandpass.  The blue WA camera (f/6.3) has
+    an on-axis focal length of 11.4 mm, while the red WA camera
+    (f/6.4) has an on- axis focal length of 11.0 mm.
+ 
+    The MOC structure is approximately 88 cm in length and 40 cm in
+    diameter, including four major components.  The largest component
+    of the camera is the NA tube (called the Secondary Mirror Support
+    Assembly or SMSA), which holds the secondary mirror spider and
+    acts as both an optical baffle and the primary/secondary distance
+    metering bench.  The SMSA is fabricated of pseudo-isotropic
+    P75S/ERL1962 graphite/epoxy in a (0, 45, 90, 135) layup.
+    P75S/ERL1962 graphite/epoxy was selected as the main structural
+    material within the MOC primarily for its high strength and
+    stiffness per unit mass and low density (leading to a low mass)
+    and low coefficient of thermal expansion over a large temperature
+    range (allowing it to maintain focus without active mechanisms or
+    complicated matched-material thermal metering).  Attached to the
+    side of the SMSA is the WA assembly, consisting of a mechanical
+    support tube (the Wide Angle Support Assembly, or WASA) also made
+    of P75S/ERL1962 graphite/epoxy with Invar fittings, the two WA
+    optics and focal planes, and a WA baffle.  Beneath the SMSA is
+    the P75S/ERL1962 graphite/epoxy Main Body Structural Assembly
+    (MBSA), which supports the primary mirror, NA focal plane and
+    associated electronics, and connects these to the SMSA.  Below
+    the MBSA is the electronics assembly, housing three 2-sided
+    electronics boards within an aluminum chassis/radiator assembly,
+    connected to the MBSA by a T300/934 graphite/epoxy conical
+    &apos;flexure skirt.&apos;
+ 
+    Owing to the high magnification on the secondary mirror (7.75X)
+    required to fold a 3.5 m focal length into 45 cm (17.8 inches),
+    the NA optics are extremely sensitive to focus: a 1 um shift
+    between the primary and secondary mirrors results in a 60 um
+    movement of the plane of best focus, and the relatively fast
+    optics provides only a 115 um depth of field.  Thus, the NA
+    design is extremely sensitive to gravitational, vibrational, and
+    thermal loads, and to moisture absorption, which arises from the
+    hygroscopic nature of the epoxy.  Great care has been taken to
+    minimize the effects of temperature variations on the camera.
+    For example, the secondary spider vanes are arranged such that
+    expansion or contraction of their lengths will rotate rather than
+    despace, decenter or tilt the secondary mirror.  Adoption of a
+    passive, graphite/epoxy-based structural metering system, and the
+    uncertainties in its performance prior to actual testing of the
+    Flight system, led to the inclusion of a bakeout heater to
+    dehydrate the structure during cruise to Mars.
+ 
+    Owing to their short focal lengths and compact design, the WA
+    optics (each is a 9-element all refractive design) and their
+    titanium housings are relatively insensitive to gravitational,
+    vibrational, and thermal loading.
+ 
+    The MOC optics/structure weighs 9.5 Kg, the primary mirror and
+    its mechanical assembly accounting for 3.4 Kg (36%).  The primary
+    mirror has been lightweighted and sags slightly under its own
+    weight in a one-g field.  The WA lenses and housings, and the NA
+    secondary mirror and its housing, together weigh 0.6 Kg.  The
+    graphite/epoxy structures and associated fittings weigh 3.5 Kg,
+    and the aluminum electronics housing and radiator and
+    miscellaneous hardware, weigh 2.0 Kg.
+ 
+ 
+  Operational Modes
+  =================
+    The Narrow Angle system has:
+ 
+          16 gain settings
+        2 56 offset settings
+           8 summing settings (1 to 8)
+         128 crosstrack size settings (16 to 2048 by 16)
+      3 2768 downtrack size settings
+         256 data compression settings
+ 
+    The Wide Angle systems have:
+ 
+          20 gain settings
+        2 56 offset settings
+          32 summing settings (1 to 32)
+         128 crosstrack size settings (16 to 2048 by 16)
+      3 2768 downtrack size settings
+         256 data compression settings
+           4 crosstrack summing modes
+ 
+    The modes in effect for each image are described in keyword-value
+    pairs in the header of each image.
+
+        </description>
+    </Instrument>
+</Product_Context>

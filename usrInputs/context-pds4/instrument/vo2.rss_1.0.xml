@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rss.vo2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>RADIO SCIENCE SUBSYSTEM for VO2</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vo2::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sjogren, W.L., Mars Gravity: High-resolution results from Viking Orbiter 2,
+                   Science, 203, 1006-1010, 1979.
+            </reference_text>
+            <description>reference.SJOGREN1979</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>RADIO SCIENCE SUBSYSTEM</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Radio Science-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+        INSTRUMENT: RADIO SCIENCE SUBSYSTEM
+        SPACECRAFT: VIKING ORBITER 2
+ 
+ 
+    Instrument Information
+    ======================
+      Instrument Id                  : RSS
+      Instrument Host Id             : VO2
+      Instrument Name                : RADIO SCIENCE SUBSYSTEM
+      Instrument Type                : RADIO SCIENCE
+ 
+ 
+    Instrument Description
+    ======================
+      The Radio Science Subsystem (RSS) was used to support the radio
+      science investigation.  This investigation utilizes the radio
+      signals to and from the spacecraft to obtain a variety of
+      information.  Transponders on the spacecraft send back signals
+      that are coherent with those received from earth so that
+      precision Doppler and ranging measurements can be made.  The
+      downlinks from the spacecraft include two coherent frequencies
+      (S band and X band) so that dispersion in the interplanetary
+      medium can be measured and corrected for.
+ 
+ 
+    Science Objectives
+    ==================
+      From analysis of the radio signals a surprising diversity of
+      informatin can potentially be obtained and the Radio Science
+      Team has identified a large number of scientific objectives,
+      which fall into three categories: dynamical, surface, and
+      internal properties of Mars, atmospheric and ionospheric
+      properties of Mars, and miscellaneuos solar system properties.
+      For more information please refer to the Instrument Information
+      References user view.
+ 
+ 
+    Operational Considerations
+    ==========================
+      NOT APPLICABLE
+ 
+ 
+    Calibration Description
+    =======================
+      NOT APPLICABLE
+ 
+ 
+    Section &apos;RSS&apos;
+    =============
+      Total Fovs                     : UNK
+      Data Rate                      : UNK
+      Scan Mode Id                   : UNK
+      Sample Bits                    : UNK
+ 
+ 
+      &apos;RSS&apos; Detectors
+      ---------------
+        RSSDETEB
+        RSSDETSC
+ 
+ 
+      &apos;RSS&apos; Electronics
+      -----------------
+        RSSELECEB
+        RSSELECSC
+ 
+ 
+      In modes
+      --------
+        OPERATING
+ 
+ 
+      &apos;RSS&apos; Section FOV Shape &apos;UNK&apos;
+      -----------------------------
+        Section Id                     : RSS
+        Fovs                           : UNK
+        Horizontal Pixel Fov           : UNK
+        Vertical Pixel Fov             : UNK
+        Horizontal Fov                 : UNK
+        Vertical Fov                   : UNK
+ 
+ 
+      &apos;RSS&apos; Section Parameter &apos;RSSDETEB POWER&apos;
+      ----------------------------------------
+        RSSDETEB Power is the power measured by the Deep Space
+        Network antenna from the spacecraft antenna for tracking
+        purposes.
+ 
+        Instrument Parameter Name      : RSSDETEB POWER
+        Sampling Parameter Name        : TIME
+        Instrument Parameter Unit      : WATTS
+        Minimum Instrument Parameter   : UNK
+        Maximum Instrument Parameter   : UNK
+        Minimum Sampling Parameter     : UNK
+        Maximum Sampling Parameter     : UNK
+        Noise Level                    : UNK
+        Sampling Parameter Interval    : UNK
+        Sampling Parameter Resolution  : UNK
+        Sampling Parameter Unit        : SECOND
+ 
+ 
+    Instrument Detector &apos;RSSDETEB&apos;
+    ==============================
+      Detector Type                  : ANTENNA
+      Detector Aspect Ratio          : UNK
+      Minimum Wavelength             : UNK
+      Maximum Wavelength             : UNK
+      Nominal Operating Temperature  : UNK
+ 
+ 
+      Description
+      -----------
+        One of the three Deep Space Station Antennae: Goldstone,
+        California; Madrid, Spain; or Canberra, Australia.
+ 
+ 
+      Sensitivity
+      -----------
+        UNKNOWN
+ 
+ 
+    Instrument Detector &apos;RSSDETSC&apos;
+    ==============================
+      Detector Type                  : ANTENNA
+      Detector Aspect Ratio          : UNK
+      Minimum Wavelength             : UNK
+      Maximum Wavelength             : UNK
+      Nominal Operating Temperature  : UNK
+ 
+ 
+      Description
+      -----------
+        See instrument description for information on the spacecraft
+        antenna.
+ 
+ 
+      Sensitivity
+      -----------
+        UNKNOWN
+ 
+ 
+    Instrument Electronics &apos;RSSELECEB&apos;
+    ==================================
+ 
+      Description
+      -----------
+        See the instrument description for information on the
+        earth-based electronics.
+ 
+ 
+    Instrument Electronics &apos;RSSELECSC&apos;
+    ==================================
+ 
+      Description
+      -----------
+        See the instrument description for information on the
+        spacecraft electronics.
+ 
+ 
+    Instrument Mode &apos;OPERATING&apos;
+    ===========================
+      Data Path Type                 : UNK
+      Gain Mode Id                   : UNK
+      Instrument Power Consumption   : UNK
+ 
+ 
+      In sections
+      -----------
+        RSS
+ 
+ 
+      Description
+      -----------
+        UNKNOWN
+ 
+ 
+    Mounted On Platform &apos;UNK&apos;
+    =========================
+      Cone Offset Angle              : UNK
+      Cross Cone Offset Angle        : UNK
+      Twist Offset Angle             : UNK
+ 
+ 
+      Description
+      -----------
+        UNKNOWN
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

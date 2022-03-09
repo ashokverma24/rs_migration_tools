@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:node:node.geoscience</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PDS Geosciences Node</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>geo</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.raymond_arvidson::1.0</lidvid_reference>
+            <reference_type>node_to_manager</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.edward_guinness::1.0</lidvid_reference>
+            <reference_type>node_to_operator</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.edward_guinness::1.0</lidvid_reference>
+            <reference_type>node_to_data_archivist</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:agency:agency.nasa::1.0</lidvid_reference>
+            <reference_type>node_to_agency</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.raymond_arvidson::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.lars_arvidson::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.susan_slavney::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.margo_mueller::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.dan_scholes::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.thomas_stein::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.june_wang::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.jennifer_ward::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Node>
+        <name>Geosciences</name>
+        <institution_name>Washington University</institution_name>
+        <description>
+          Washington University is responsible for the development of
+          electronic catalogs of planetary images and data products
+          made from the images. These data products include those
+          housed in the Regional Planetary Image Facilities. The node
+          also develops and maintains database management software to
+          access the catalogs. These catalogs are available to local
+          users, visitors, and remote users on the Internet network.
+          Washington University also provides the ability to do
+          standardized processing of selected Viking Orbiter and
+          Voyager images, using the Planetary Image Cartography
+          System (PICS) software from the U. S. Geological Survey,
+          Flagstaff, Arizona. Standardized processing includes
+          radiometric calibration, geometric calibration, and
+          generation of mosaics. Remote users may place orders for
+          processed images and mosaics.
+        </description>
+    </Node>
+</Product_Context>

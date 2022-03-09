@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet_ori</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Rigel</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Algebar</alternate_title></Alias>
+      <Alias><alternate_title>Elgebar</alternate_title></Alias>
+      <Alias><alternate_title>19 Orionis</alternate_title></Alias>
+      <Alias><alternate_title>Beta Orionis</alternate_title></Alias>
+      <Alias><alternate_title>Beta Ori</alternate_title></Alias>
+      <Alias><alternate_title>bet Ori</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>19 Ori</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>bet Ori A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 3823 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14772</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-08 1063</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J05145-0812A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 579</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-08 1063 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 100463</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1238</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 0512.1-0814</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EM* MWC 487</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J0514-08.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 194</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 6410</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 3110</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GN 05.04.0</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05331-01752</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 34085</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 376</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 24436</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 24436</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 1713</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 05097-0819 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 05121-0815</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10085</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1014</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J05143226-0812060</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MCW 291</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 1120</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 1882</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1191</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1191.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 140</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMSC 05097-0819A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 187839</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 710</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 749</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J051431.5-081112</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SACS 113</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 131907</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 8263</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* ZI 362</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 4253</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5331-1752-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 5016</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 10750</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100034085</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>VDB 36</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J05145-0812A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 4731</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 0509-08</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Rigel</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 05 hours 14 minutes 32.27210 seconds
+Declination, ICRS coord, ep=J2000: -08 degrees 12 minutes 05.8981 seconds
+    </description>
+  </Target>
+</Product_Context>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:irtf.3m0.cvf</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Circularly Variable Filter</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-02-18</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:irtf.3m0</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <reference_text>Bugayevskiy, L.M., and J.P. Snyder, Map projections: A reference manual, Taylor &amp;
+Francis, London and Bristol, Pennsylvania, 328 pp., 1995.</reference_text>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>Circularly Variable Filter</name>
+    <type>Photometer</type>
+    <description>Instrument Overview
+===================
+  This document describes the instrument used to obtain the infrared
+  spectrum of 951 Gaspra reported in Goldader et al. 1991, A. J.
+  102, 1503-1509 [GOLDADERETAL1991].  The instrumentation consisted
+  of a double CVF with a liquid nitrogen cooled InSb photometer.
+  The short half of the CVF (denoted DCS) covered the region from
+  ~0.8 - 1.6 microns with 3% resolution, and the long half (denoted
+  DCL) covered ~1.5 - 2.5 microns at 5% resolution.  For this
+  spectrum, every other position of the CVF was sampled for the DCS
+  data.null</description>
+  </Instrument>
+</Product_Context>
+

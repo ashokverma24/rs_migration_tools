@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd
+        http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirlin</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Mid-Infrared Facility Camera (MIRLIN)</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:irtf.3m0.mirlin</alternate_title></Alias>  <!-- deprecated LID -->
+            <Alias><alternate_title>MIRLIN</alternate_title></Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-12-07</modification_date>
+                <version_id>1.0</version_id>
+                <description>per RMS, deprecated irtf in favor of irtf-maunakea</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:irtf-maunakea.3m2</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+
+    <Instrument>
+        <name>Mid-Infrared Facility Camera (MIRLIN)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Imager</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <!-- deprecated after 1B00 <subtype>Mid-Infrared</subtype> -->
+        <description>
+            MIRLIN is a 128 x 128 pixel, 7 - 25 µm infrared astronomical camera built at JPL and used on the 
+            Palomar 5-meter (200 inch) telescope, the NASA Infrared Telescope Facility 3-meter telescope,
+            and the Keck II 10-meter telescope.  MIRLIN's camera is based on Boeing's HF-16 128 x 128 Si:As BIB array.  
+            At the IRTF, MIRLIN has a plate scale of 0.475 arcsec/pixel and a field of view of 61 arcsec.  At the IRTF
+            its sensitivity for a 5-sigma detection in 60 seconds integration is 90 mJy at 10 microns.  The filter set
+            includes the M, N, Q, Q-short, and Q-long filters, the OCLI 6-filter 10 micron silicate set, a 7-filter 
+            narrow-band 20 µm set, and a 7-14 µm, 2 percent resolution CVF.
+            
+        </description>
+    </Instrument>
+</Product_Context>

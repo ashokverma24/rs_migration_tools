@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:sdu.dfmi</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DUST FLUX MONITOR INSTRUMENT for SDU</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:dfmi.sdu</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.sdu</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Economou, T.E., S.F. Green, B.C. Clark, D.E. Brownlee, more authors TBD (2011),
+                   Title TBD, Icarus (tentative), in press, Volume TBD, Issue TBD, Date TBD, Pages
+                   TBD.
+            </reference_text>
+            <description>reference.ECONOMOUETAL2011</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Green, S.F., J.A.M. McDonnell, N. McBride, M.T.S.H. Colwell, A.J. Tuzzolino,
+                   T.E. Economou, P. Tsou, B.C. Clark, and D.E. Brownlee (2004), The dust mass
+                   distribution of comet 81P/Wild 2, J. Geophys. Res., 109, E12S04,
+                   doi:10.1029/2004JE002318, preprint available at
+                   http://oro.open.ac.uk/5378/1/2004_Green_et_al_JGR_109_E12S04_pre-print.pdf
+            </reference_text>
+            <description>reference.GREENETAL2004</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tuzzolino, A.J., PVDF flux/mass/velocity/trajectory systems and their
+                   applications in space, Lunar and Planetary Inst., Workshop on Particle Capture,
+                   Recovery and Velocity/Trajectory Measurement Technologies p. 89-94 (SEE
+                   N95-19172 05-90), 1994, http://adsabs.harvard.edu/full/1994pcrv.work...89T.
+            </reference_text>
+            <description>reference.TUZZOLINO1994</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tuzzolino, A.J., T.E. Economou, R.B. McKibben, J.A. Simpson, J.A.M. McDonnell,
+                   M.J. Burchell, B.A.M. Vaughan, P. Tsou, M.S. Hanner, B.C. Clark, and D.E.
+                   Brownlee, Dust Flux Monitor Instrument for the Stardust mission to comet Wild
+                   2, J. Geophys. Res., 108, (E10), 8115, 2003, doi:10.1029/2003JE002086.
+            </reference_text>
+            <description>reference.TUZZOLINOETAL2003</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>DUST FLUX MONITOR INSTRUMENT</name>
+        <type>Dust</type> <!--RChen/EN was Dust Impact Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+      This description was assembled from various Stardust project
+      documents (with permission from the Stardust project) and
+      direct contributions from the instrument science lead, Dr.
+      Anthony J. Tuzzolino.
+ 
+      SDN:  This document has been updated for the Stardust-NExT (SDN)
+      mission, but mostly left intact from the prime mission data sets.
+      The prefix &apos;SDN:&apos; typically precedes updated material.
+ 
+ 
+      Instrument Overview
+      ===================
+      The Dust Flux Monitor Instrument (DFMI) was part of the STARDUST
+      instrument payload. It provided data on the particle flux and
+      mass distribution in the coma of the comet.
+ 
+ 
+      Scientific Objectives
+      =====================
+      The prime goal of the DFMI was to measure the particle flux and
+      mass distribution during passage through the coma of Comet Wild-2
+      in 2004. This information is valuable for assessment of
+      spacecraft risk and health, and also for interpretation of the
+      laboratory analysis of dust captured by the Aerogel dust
+      collectors and returned to Earth.
+ 
+      A secondary science goal was to measure the particle flux and mass
+      distribution during the ~7 year interplanetary portions of the
+      mission, where, in addition to measurements of the background
+      interplanetary dust over the radial range 0.98 AU to 2.7 AU,
+      multiple opportunities existed for possible detection by the DFMI
+      of interplanetary particles, meteor-stream particles, and
+      interstellar dust. This part of the investigation was not achieved
+      due to problems with the instrument&apos;s power supply.
+ 
+      SDN:  For SDN the primary goal was to measure the particle flux and
+      mass distribution during passage through the coma of Comet 9P/Tempel
+      1 in 2011.
+ 
+ 
+      Calibration
+      ===========
+      A description of the calibration of the DFMI sensors is provided
+      in the calibration report document provided with the DFMI data
+      set(s).
+ 
+      SDN:  The calibration did not change for Stardust-NExt other than
+      adjusting for the Tempel 1 flyby speed of 10.9 km/s.  Calibration
+      comprises converting the electrical threshold levels to the
+      corresponding particle masses, deriving new thresholds for shield
+      penetration and effective area for the acoustic sensors, and
+      converting from the raw counts generated by the electronics vs time
+      to fluence or flux.
+ 
+ 
+      Operational Considerations
+      ==========================
+      A problem with the power supply detected during post-launch
+      checkout precluded operation of the instrument for more than
+      thirty minutes. Fear of complete failure of the instrument led to
+      its use being restricted to about thirty minutes at each of the
+      Annefrank and Wild 2 encounters.
+ 
+      SDN:  With the exception of calibration events during CRUISE
+      phase, the same was true for the Stardust-NExT mission.
+ 
+ 
+      Detectors
+      =========
+      The DFMI consisted of two different dust detector systems --  a
+      polyvinylidene fluoride (PVDF) DUST SENSOR UNIT (DSU), which
+      measures particles with mass &gt; ~10^-11 g, and a DUAL ACOUSTIC
+      SENSOR SYSTEM (DASS), which utilized two quartz piezoelectric
+      accelerometers mounted on the first two layers of the spacecraft
+      Whipple dust shield to measure the flux of particles with mass &gt;
+      3 x 10^-8 g. The Whipple shield structures provided the large
+      effective sensitive area required for detection of the expected
+      low flux of high-mass particles. At the encounter speed of 6.1
+      km/s, the DFMI measurements extended over the particle mass
+      range of 8 decades, from 10^-11 to &gt;10^-3 g.  More detailed
+      description of the detectors is provided in Economou et al., 2011,
+      in Tuzzolino et al., 2003, in Green et al., 2004, and in Tuzzolino,
+      1994 ([ECONOMOUETAL2011], [TUZZOLINOETAL2003], [GREENETAL2004],
+      [TUZZOLINO1994]).
+ 
+      SDN:  DFMI comprised four sensor subsystems and associated
+      electronics:  Two PVDF sensors with sensitive areas of 0.002 and 0.02
+      m^2 and thicknesses of 6 and 28 um; the Dual Acoustic Sensor
+      Subsystem (DASS) with two piezoelectric sensor, one attached to each
+      of the first two layers of the Whipple Shield on the front of the
+      spacecraft.
+ 
+      Each sensor was designed to generate an electrical signal in the
+      event of being impacted by a dust particle.
+ 
+      See the Measured Parameters section below for the range of particle
+      masses detectable by the DFMI detectors at the 9P/Tempel 1 flyby
+      parameters.
+ 
+ 
+      Electronics
+      ===========
+      A detailed description of instrument electronics and internal
+      data processing is provided in Tuzzolino et al., 2003
+      [TUZZOLINOETAL2003].
+ 
+      SDN:  The electronics for each PVDF sensor comprised four channels
+      for each sensor.  Each channel corresponded to a particle mass range
+      dependent on spacecraft/particle relative velocity and the
+      composition of the particle.  The raw data in each PVDF channel
+      comprised a cumulative count of the number of events as a function
+      of time as the spacecraft passed through the coma.  The Acoustic
+      sensor operation was more complicated due to the limited bandwidth
+      available to the subsystem, so some interpretation is required to
+      derive the number of impacts.
+ 
+ 
+      Location
+      ========
+      The DSU sensor was mounted on the first layer of the central
+      Whipple shield, as is one of the DASS sensors. The second DASS
+      sensor was mounted on the second layer of the central Whipple
+      shield.
+ 
+ 
+      Operational Modes
+      =================
+      During the Wild 2 encounter DFMI operated in ENCOUNTER mode. In
+      this mode the instrument provided measurements at least once per
+      second, and up to 10 times per second, depending on the dust
+      particle flux on the PVDF sensors.  In this mode the counters were
+      not reset upon readout, providing accurate cumulative particle
+      fluences.
+ 
+      SDN:  During the Tempel 1 encounter DFMI operated in ENCOUNTER
+      mode.  For calibrations during non-encounter phases DFMI operated
+      in CRUISE mode.  In CRUISE mode the instrument provided measurements
+      up to ten times per second down to one measurement per twenty
+      seconds.
+ 
+ 
+      Subsystems
+      ==========
+      A detailed description of the DFMI subsystems is provided in Economou
+      et al., 2011, Green et al., 2004, and Tuzzolino et al., 2003
+      ([ECONOMOUETAL2011], [GREENETAL2004], TUZZOLINOETAL2003]).
+ 
+ 
+      Measured Parameters
+      ===================
+ 
+      The DFMI PDVF sensors measure differential and cumulative particle
+      fluxes over the particle mass range 10^-11 to 10^-4 g and cumulative
+      particle fluxes for masses &gt; 10^-4 g. The acoustic sensors measure
+      particle fluxes for particles having mass greater than 3 x 10^-4 g.
+ 
+      SDN:  At the Stardust(SDU)/Tempel 1 relative velocity of 10.9 km/s,
+      the mass ranges for differential fluxes were slightly lower but
+      similar to those for the Wild 2 prime mission.
+
+        </description>
+    </Instrument>
+</Product_Context>

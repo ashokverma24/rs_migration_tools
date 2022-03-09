@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:node:node.naif</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PDS NAIF Node</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>naif</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.charles_acton::1.0</lidvid_reference>
+            <reference_type>node_to_manager</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.charles_acton::1.0</lidvid_reference>
+            <reference_type>node_to_operator</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.charles_acton::1.0</lidvid_reference>
+            <reference_type>node_to_data_archivist</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:agency:agency.nasa::1.0</lidvid_reference>
+            <reference_type>node_to_agency</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.charles_acton::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.nathaniel_bachman::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.boris_semenov::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.edward_wright::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Node>
+        <name>Navigation and Ancillary Information Facility</name>
+        <institution_name>Jet Propulsion Laboratory</institution_name>
+        <description>
+          Responsible for development and implementation of the SPICE
+          system---a means for providing ancillary observation
+          geometry data needed to aide in the interpretation of
+          science instrument data sets returned from planetary
+          spacecraft. SPICE data sets, called kernels, exist for
+          spacecraft trajectory (S), planet and satellite ephemerides
+          and associated physical and cartographic constants (P),
+          instrument descriptions, including mounting alignment and
+          internal timing descriptions (I), orientation as a function
+          of time of any spacecraft structure upon which science
+          instruments are mounted (C); and spacecraft and ground data
+          system events, both planned and unplanned (E). The NAIF
+          node also provides users a portable Fortran 77 software
+          source code toolkit, called SPICELIB, which contains
+          readers for each of the SPICE kernels, plus a wide
+          assortment of geometry, math, and utility software useful
+          in computing instrument observation geometry parameters
+          such as range, optic axis intercept latitude and longitude,
+          and phase, incidence and emission angles.
+        </description>
+    </Node>
+</Product_Context>

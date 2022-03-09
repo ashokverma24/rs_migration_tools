@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" 
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:individual.campbell_venus_radar</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>B. Campbell Venus Earth-Based Radar Observations</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-04-09</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.arecibo</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.gbo</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:arecibo.305m</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:arecibo.305m.trans_s</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:arecibo.305m.recv_s</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:gbo.gbt_100m</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:gbo.gbt_100m.4mm_receiver</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.17189/1519464</doi>
+            <reference_text>Campbell, B.A., Earth-Based Radar Observations of Venus, ARCB/NRAO-V-RTLS/GBT-3-DELAYDOPPLER-V1.0, 
+                NASA Planetary Data System, 2016.</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Investigation>
+        <name>Venus Earth-Based Radar Observations</name>
+        <type>Individual Investigation</type>        
+        <start_date>1988</start_date>
+        <stop_date>2020</stop_date>
+        <description>This archive contains maps of radar backscatter from Venus assembled from individual looks collected in observing runs 
+            from 1988 to 2020. Those looks are also archived in delay-Doppler format with the PDS, and the documentation for that archive 
+            details the data collection steps (https://pds-geosciences.wustl.edu/missions/venus_radar/index.htm). In all but the 2012 
+            dataset, the echoes were transmitted from and received at the Arecibo Observatory. In 2012 the Green Bank Telescope was used 
+            as a receiver. For each observing year with Venus close to inferior conjunction, there are multi-look views of the "northern" 
+            and "southern" hemispheres, defined with respect to the sub-radar point latitude and longitude during the period. All maps are 
+            referenced to a 335 E projection longitude. Each map set contains an image in the opposite-sense circular polarization (OCP, 
+            sometimes called "polarized") and one in the same-sense circular polarization (SCP, sometimes called "depolarized"). Spatial 
+            sampling is at 1 km per pixel, or about 106 pixels per degree on Venus. The individual looks are normalized to the background 
+            noise level such that the OCP and SCP mosaics can be ratioed to obtain the circular polarization ratio (CPR). Offsets of order 
+            ten pixels with respect to the Magellan-defined cartographic grid may exist across the images and between observing years.</description>
+    </Investigation>
+</Product_Context>

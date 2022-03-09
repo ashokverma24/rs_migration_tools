@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+ 	
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ovirs.orex</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>The OSIRIS-REx Visible and Near InfraRed Spectrometer (OVIRS) aboard the OSIRIS-REx spacecraft</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-03-14</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.orex</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                D.C. Reuter, A.A. Simon, J. Hair, A. Lunsford, S. Manthripragada, V. Bly, B. Bos, C. Brambora, E. Caldwell, 
+                G. Casto, Z. Dolch, P. Finneran, D. Jennings, M. Jhabvala, E.Matson, M. McLelland, W. Roher, T. Sullivan, 
+                E. Weigle, Y. Wen, D. Wilson, and D.S. Lauretta, The OSIRIS-REx Visible and InfraRed Spectrometer (OVIRS): 
+                Spectral Maps of the Asteroid Bennu, Space Science Reviews, 2018, submitted
+            </reference_text>
+            <description>The OVIRS instrument paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>OVIRS</name>
+        <type>Spectrometer</type>
+        <description>The OSIRIS Visible and near-IR Spectrometer (OVIRS) is a point spectrometer with a 4-mrad field of view (FOV)
+         that provides spectra over the wavelength range of 0.4 – 4.3 μm to map the visible and near infrared characteristics of 
+         the surface of the asteroid (101955) Bennu. It employs wedged filters (also called a linear variable filter) to provide 
+         the spectrum. A wedged filter is a two-dimensional spectral filter in which the wavelength of transmitted light varies in 
+         a well-defined fashion with position along one of the spatial dimensions.
+        </description>
+    </Instrument>
+</Product_Context>

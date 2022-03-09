@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch"
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+ xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+  https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ra.phx</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ROBOTIC ARM for PHX</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-05-23</modification_date>
+                <version_id>1.0</version_id>
+                <description>Changed logical_identifier from ra__phx to ra.phx</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.phx</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Arvidson, R.E., R.G. Bonitz, M.L. Robinson, J.L. Carsten, R.A. Volpe, A.
+                   Trebi-Ollennu, M.T. Mellon, P.C. Chu, K.R. Davis, J.J. Wilson, A.S. Shaw, R.N.
+                   Greenberger, K.L. Siebach, T.C. Stein, S.C. Cull, W. Goetz, R.V. Morris, D.W.
+                   Ming, H.U. Keller, M.T. Lemmon, H.G. Sizemore, and M. Mehta, Results from the
+                   Mars Phoenix Lander Robotic Arm experiment. Journal of Geophysical Research,
+                   114, E00E02, 2009, doi:10.1029/2009JE003408.
+            </reference_text>
+            <description>reference.ARVIDSONETAL2009</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bonitz, R. G., et al., Phoenix Lander Robotic Arm and Icy Soil Acquisition
+                   Device, J. Geophys. Res., doi:10.1029/2007JE003030, 2008.
+            </reference_text>
+            <description>reference.BONITZETAL2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Heet, T. L., et al., Geologic setting of the Phoenix Lander mission landing
+                   site, J. Geophys. Res., 114, E00E04, doi:10.1029/2009JE003416, 2009.
+            </reference_text>
+            <description>reference.HEETETAL2009</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Shaw, A., R. E. Arvidson, R. Bonitz, J. Carsten, H. U. Keller, M. T. Lemmon, M.
+                   T. Mellon, M. Robinson, and A. Trebi-Ollennu, Phoenix soil physical properties
+                   investigation, J. Geophys. Res., 114, E00E05, doi:10.1029/2009JE003455, 2009.
+            </reference_text>
+            <description>reference.SHAWETAL2009</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ROBOTIC ARM</name>
+        <type>Regolith Properties</type> <!--RChen/EN was Robotic Arm-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Phoenix Robotic Arm (RA) is a 2.4-m long arm mounted on the Phoenix
+    Mars lander. It has three joints.  The shoulder joint, where the RA is
+    attached to the lander deck, has two degrees of freedom: motion in
+    azimuth and elevation.  The elbow and wrist joints each have one degree
+    of freedom allowing further motions in elevation.  Attached to the RA
+    are: a scoop, a Thermal and Electrical Conductivity Probe (TECP), and
+    the Robotic Arm Camera (RAC).  The RA was designed to acquire samples of
+    martian soil, dig trenches to uncover subsurface ice, modify the terrain
+    close to the lander, and serve as a means to insert the TECP into the
+    soil.  The scoop has a drill bit on its back; after rasping icy soil, a
+    series of RA motions was often used to send the material to the front of
+    the scoop.  Both the scoop and TECP were mounted on the wrist joint of
+    the arm.  Motor currents, link lengths, and joint positions of the RA
+    were used to determine the force the RA exerted during its motions and
+    the position of the scoop during these motions.  This information was
+    useful in monitoring the safety of the instrument and has the science
+    return of allowing analysis of soil properties at the landing site.
+    For more details, see Bonitz et al. 2008 [BONITZETAL2008], Arvidson et
+    al. 2009 [ARVIDSONETAL2009], and Shaw et al. 2009 [SHAWETAL2009].
+ 
+  Scientific Objectives
+  =====================
+    The science objectives of the RA are the following: (1) Collect soil
+    samples from various depths and locations relative to polygonal
+    landforms.  Deliver these samples to onboard instruments. (2) Uncover
+    subsurface ice. (3) Obtain vertical (and in some cases horizontal)
+    profiles of data relevant to scoop - soil interactions (e.g. during
+    scraping and excavation).  This data can be used to determine physical
+    properties of the soil (e.g. soil cohesion). (4) Expose trench walls to
+    aid in determining the presence/absence of fine-scale soil/ice layering.
+    (5) Position the RAC for viewing of various targets in the workspace and
+    below the lander deck. (6)Place the TECP in soil targets of interest;
+    also place it at various heights in the air for relative humidity
+    measurement. (7) Support any science investigations that require force
+    to be applied (e.g. moving a rock, pressing down on soil surfaces). (8)
+    Rasp icy soil for delivery to on-deck instruments.
+ 
+  Calibration
+  ===========
+    The RA was calibrated both in the field (Death Valley, January 2000) and
+    in the Payload Interoperability Testbed (PIT).  Calibration of the RA&apos;s
+    ability to position itself accurately and then measure its position was
+    conducted by commanding a series of movements and using a laser tracker
+    for a second position measurement.  Calibration of rasp cutting torque
+    was conducted with a dynamometer for measurement of output torque and
+    force; this was done for the range of expected temperatures. See Bonitz
+    et al. 2008 [BONITZETAL2008].  Position was repeatedly
+    calibrated during mission operations.  Maximum force limits were also
+    reset frequently during the mission.
+ 
+  Operational Considerations
+  ==========================
+    The quality of the data was affected by the characteristics of the
+    surface.  The data was collected at higher temporal resolution on sols
+    when the spacecraft was expected to be able to send higher data volume
+    to Earth.
+ 
+ Electronics
+  ===========
+    The RA is controlled by two circuit boards located in the lander&apos;s
+    Payload Electronics Box (PEB).  These circuit boards are responsible for
+    power conditioning, motor and heater drivers, motor and heater current,
+    motor and temperature sensor voltages, potentiometer voltage conversion,
+    and joint encoder counting.  Another board on the PEB controls rasp
+    current.  The PEB also provides sensor monitoring and command execution
+    for joint movement and heater and rasp function.  The PEB is responsible
+    for communication with the lander&apos;s Command and Data Handling computer.
+    See Bonitz et al. 2008 [BONITZETAL2008] for more information.
+ 
+  Location
+  =================
+    The instrument operated in the northern plains of Mars (68.22N, 234.25E
+    areocentric; [HEETETAL2009]).  The test instrument operated at the
+    University of Arizona, Tucson, Arizona, USA.
+ 
+  Operational Modes
+  =================
+    The RA employed variable frequencies of data collection.  Maximum force
+    limits were also variable.
+ 
+  Subsystems
+  ==========
+    The RA consists of the following subsystems: (1) links (e.g. upper and
+    lower arm), (2) joint actuators, potentiometers, and encoders (3) scoop
+    with rasp and two blades, (4) temperature sensors, (5) TECP, and (6)
+    RAC.
+ 
+  Measured Parameters
+  ===================
+    Measured parameters include: time of observation, position of scoop at
+    time of observation, and forces exerted at time of observation.
+
+        </description>
+    </Instrument>
+</Product_Context>

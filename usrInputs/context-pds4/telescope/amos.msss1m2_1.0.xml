@@ -1,0 +1,36 @@
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.jpl.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1700.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:amos.msss1m2</logical_identifier>
+        <version_id>0.0</version_id>
+        <title>Maui Space Surveillance Site (MSSS) 1.2m</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-03-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version exported from OLAF</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.amos</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>Air Force  Maui Optical and Supercomputing Site (AMOS) (OLAF observatory code 6490)</comment>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit='m'>1.2</aperture>
+        <telescope_longitude unit='deg'>203.742400</telescope_longitude>
+        <telescope_latitude unit='deg'>20.708010</telescope_latitude>
+        <telescope_altitude unit='m'>3040</telescope_altitude>
+        <coordinate_source>Astronomical</coordinate_source>
+        <description>
+        The Maui Space Surveillance Site (MSSS) 1.2m is a 1.2 m telescope located at 20.708010, 203.742400 at the Air Force  Maui Optical and Supercomputing Site (AMOS).
+        
+        The Maui Space Surveillance Site (MSSS) 1.2 m telescope located on the summit of Haleakala, Maui, HI.
+        </description>
+    </Telescope>
+</Product_Context>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:hfe.a15a</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>HEAT FLOW EXPERIMENT for A15A</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a15a::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 15 Preliminary Science Report, NASA SP-289, 546 pages, published by
+                   NASA, Washington, D.C., 1972.
+            </reference_text>
+            <description>reference.APOLLO15A1972</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo Scientific Experiments Data Handbook, NASA Technical Memorandum X-58131,
+                   JSC-09166, published by NASA Johnson Space Center, Houston, Texas, Aug. 1974.
+            </reference_text>
+            <description>reference.APOLLOSEDH1974</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Keihm, S.J., and M.G. Langseth, Jr., Surface brightness temperatures at the
+                   Apollo 17 heat flow site: Thermal conductivity of the upper 15 cm of regolith,
+                   Proceedings of the Lunar Science Conference, 4th, Volume 3, pages 2503-2513,
+                   1973.
+            </reference_text>
+            <description>reference.KEIHM-LANGSETH1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Keihm, S.J., J.L. Chute, K. Peters, and M.G. Langseth, Apollo 15 measurement of
+                   lunar surface brightness temperatures - thermal conductivity of the upper 1 1/2
+                   meters of regolith, Earth Planetary Science Letters, 19, No. 3, pages 337-351,
+                   July 1973.
+            </reference_text>
+            <description>reference.KEIHMETAL1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Langseth, M.G., Jr., Lunar Heat-Flow Experiment: Final Technical Report: 6 Jun.
+                   1966 - 30 Jun. 1975, NASA-CR-151619, CU-4-77, 289p, Lamont-Doherty Geological
+                   Observatory of Columbia University, Palisades, New York, 1977.
+            </reference_text>
+            <description>reference.LANGSETH1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Langseth, M.G., Jr., S.P. Clark Jr., J.L. Chute, Jr., S.J. Keihm, and A.E.
+                   Wechsler, The Apollo 15 Lunar Heat-Flow Measurement, In The Moon, Volume 4,
+                   Issue 3-4, pages 390-410, 1972.
+            </reference_text>
+            <description>reference.LANGSETHETAL1972A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Langseth, M.G., Jr., S.J. Keihm, J.L. Chute, Jr., and A.E. Wechsler, Heat flow
+                   experiment, In Apollo 15 Preliminary Science Report, Section 11, NASA SP-289,
+                   published by NASA, Washington, D.C., 1972.
+            </reference_text>
+            <description>reference.LANGSETHETAL1972B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Langseth, M.G., Jr., S.J. Keihm, and J.L. Chute, Jr., Heat flow experiment, In
+                   Apollo 17 Preliminary Science Report, Section 9, NASA SP-330, published by
+                   NASA, Washington, D.C., 1973.
+            </reference_text>
+            <description>reference.LANGSETHETAL1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Langseth, M.G., Jr., S.J. Keihm, and K. Peters, Revised lunar heat-flow values,
+                   Proceedings of the Lunar Science Conference, 7th, Volume 3, pages 3143-3171,
+                   1976.
+            </reference_text>
+            <description>reference.LANGSETHETAL1976</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Nagihara, M.G., Y. Saito, and P.T. Taylor, Reexamination Of the Apollo 15 Heat
+                   Flow Data Toward Understanding Potential Causes Of The Long-Term Subsurface
+                   Warming Observed, In: Abstracts of Papers Submitted to the 41th Lunar and
+                   Planetary Science Conference, Volume 41, Abstract 1353, 2010.
+            </reference_text>
+            <description>reference.NAGIHARAETAL2010</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>HEAT FLOW EXPERIMENT</name>
+        <type>Regolith Properties</type> <!--RChen/EN was Geothermal Heat Flow Probe. No obvious choice. "METEOROLGY PACKAGE" in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    The Heat Flow Experiment (HFE), part of the Apollo Lunar Surface
+    Experiment Package (ALSEP), was designed to determine the rate of heat
+    loss from the lunar interior by temperature and thermal property
+    measurements at and below the surface. The experiment was carried on
+    the Apollo 15, 16, and 17 missions and was essentially identical on all
+    three missions.  (The experiment was attempted during Apollo 16 but
+    failed due to a broken cable connection.) The experiment apparatus
+    consisted of two probes connected by 8 meter long cables to an
+    electronics box which was in turn connected by a flat ribbon cable to
+    the ALSEP station. The astronauts would drill two holes with the Apollo
+    Lunar Surface Drill (ALSD). The ALSD was equipped with borestem caps
+    and retainers, borestems, bore bits, a bore bit/drill adapter, a
+    treadle, and a bore stem/core stem wrench. The borestem assemblies used
+    in drilling consisted of lengths of hollow fiberglass tubes, 2.5 cm in
+    diameter, which would be connected together as the drilling progressed,
+    and remained in the holes to provide a casing to prevent collapse of
+    the hole walls during insertion of the probes. Nominally the holes were
+    to be drilled to a depth of 3 meters but in practice no holes reached
+    this depth. The probe would be lowered down into the borestem until it
+    came to rest on top of the drill bit at the bottom of the hole. The
+    borestem tube would project out of the surface a distance dependent on
+    the depth of the hole.
+ 
+ 
+    Heat Flow Probes
+    ----------------
+      Each heat flow probe was constructed of two rigid cylinders connected
+      by a flexible joint. Each cylinder was 50 cm in length and held four
+      platinum resistance elements which were electrically connected in
+      pairs to form two accurate (+/-0.001 K) differential thermometers.
+      The first pair of elements were located with one element near the top
+      and one near the bottom of the cylinder, 47 cm apart from each other,
+      and were connected in a bridge circuit. These sensors were designated
+      the gradient bridge (DTG). The other two sensors were located 9 cm
+      below the top DTG sensor and 9 cm above the bottom DTG sensor, 29 cm
+      apart from each other connected by a bridge circuit. This pair was
+      designated the ring bridge (DTR).
+ 
+      A thermocouple (the probe thermocouple) was mounted near the top of
+      the upper cylinder, colocated with the top gradient sensor. Attached
+      to the top of the upper cylinder was a long flexible cable which
+      connected the probe to the electronics box.  The cable contained 3
+      more thermocouples spaced 65 cm, 115 cm, and 165 cm from the probe
+      thermocouple. The thermocouples were spaced so that at least some of
+      them were outside the borehole on the lunar surface.
+ 
+      1000-ohm Karma-wire platinum resistor heaters surrounded each of the
+      four gradient bridge sensor housings on each probe. These were used
+      for conductivity experiments and could be energized at either 0.002 W
+      (low conductivity mode) or 0.5 W (high conductivity mode). The
+      heaters would be turned on for approximately 36 hours for the low
+      conductivity experiments and 6 hours in high conductivity mode.
+ 
+      The probes return absolute temperature data, differential temperature
+      data (across the bridges), low- and high-thermal conductivity data,
+      and thermocouple temperature data. Specifically, the experiment
+      measured lunar temperatures of the following types, with
+      corresponding accuracies noted in parentheses -- gradient bridge
+      high-sensitivity temperature difference  measurements (0.001 K)
+      low-sensitivity temperature difference measurements (0.01 K), and
+      absolute temperature measurements (0.05 K) over the temperature range
+      190 - 270 K; ring bridge temperature difference measurements (0.002
+      K) and absolute temperatures (0.05 K) over the range 190 - 270 K;
+      thermocouple temperatures (0.07 K) over 70 - 400 K; and the reference
+      bridge temperature (0.01 K) over 23 - 363 K.
+ 
+      The electronics box contained two multiplexers and amplifiers, dc/dc
+      converter, and an isothermal block which contained a reference
+      thermocouple and reference bridge.  The electronics box was nominally
+      kept at 278 to 328 K using heating elements, power control
+      thermostats, a layered aluminized mylar insulation bag. fiberglass
+      case, radiator plate, and sunshield.  The instrument was powered by
+      29 volt d.c. from the central station.
+ 
+ 
+    Sensor Naming Convention
+    ------------------------
+      The sensors were designated with a 6 character code, three letters
+      followed by two numbers and one letter.  The first of the two numbers
+      designates the probe number. The sensors on probe 1 were individually
+      designated as follows;  for the upper cylinder the second number is
+      &apos;1&apos;, the upper gradient bridge sensor was DTG11A and the lower sensor
+      was DTG11B; the upper ring bridge sensor was DTR11A and the lower
+      DTR11B. For the lower cylinder the second number was &apos;2&apos;, the upper
+      gradient bridge sensor was DTG12A, the lower DTG12B, and the upper
+      ring bridge sensor was DTR12A, the lower DTR12B.  The bridge sensor
+      pairs were designated DTG11, DTR11, DTG12, and DTR12. The sensors on
+      probe 2 had the same format except that the first number in each
+      designation was replaced with a &apos;2&apos;, so the upper cylinder, upper
+      gradient bridge sensor was DTG21A. Two numbering conventions exist in
+      the literature for the thermocouples.  We are using the convention
+      that TC14 designates the thermocouple at the top of probe 1, TC13 is
+      the cable thermocouple closest to probe 1, followed by TC12 and TC11.
+      Probe 2 would have TC24, etc. (Another convention, seen in the
+      Preliminary Science Reports, has the probe thermocouple designated as
+      TC11, followed successively in the cable by TC14, TC13, and TC12.)
+ 
+ 
+    Instrument Operation
+    --------------------
+      In normal operating mode a 7.25 minute measurement sequence is used
+      to collect the ambient high- and low-sensitivity differential data
+      from the gradient sensors and the thermocouple outputs. The same
+      measurement sequence would be used when the heaters were commanded on
+      for the low conductivity (0.002 W) mode, with the heaters activated
+      in turn for typically 36 hours.  For the high-conductivity (0.5 W)
+      sequence, the ring bridge sensors were used and were read every 54
+      seconds. This mode nominally would last 8 hours.  This mode could
+      also be done without the heaters on, with measurements simply being
+      made by the ring bridge sensors.  This mode, known as a ring bridge
+      survey, would be used approximately every 6 hours at first and less
+      frequently later in the experiment.  The measurement time intervals
+      for a given sensor would vary over the course of its operation,
+      such that the time sequences in resulting data do not necessarily
+      follow a linear pattern.
+ 
+ 
+    Apollo 15 Operational History
+    -----------------------------
+      The Apollo 15 heat flow electronics box was set up 9 meters north of
+      the central station, with the hole for probe 1 drilled 4 meters east
+      of the box and the hole for probe 2 drilled 4.5 meters west of the
+      box. Difficulty was encountered in drilling both holes due to the
+      resistant nature of the subsurface regolith.  The probe 1 borestem
+      only penetrated to 162 cm and the probe 2 borestem to 160 cm.
+      Additionally, an obstruction was encountered when emplacing probe 2,
+      possibly a break in the borestem, at a depth of about 1 meter,
+      leaving the top of the upper section of probe 2 above the surface and
+      rendering the readings from this section unusable for heat flow
+      studies.  For probe 1, the sensors were at the following depths:
+      DTG12B - 138 cm; DTR12B - 129 cm; DTR12A - 100 cm; DTG12A - 91 cm;
+      DTG11B - 83 cm; DTR11B - 74 cm; DTR11A - 45 cm; DTG11A - 36 cm.  All
+      three cable thermocouples were above the ground, TC13 was in the
+      borestem projecting above the surface.  For probe 2, the sensors were
+      at depths: DTG22B - 96 cm; DTR22B - 87 cm; DTR22A - 58 cm; DTG22A -
+      49 cm; DTG21B - 41 cm; DTR21B - 32 cm; DTR21A - 3 cm; DTG21A -
+      approximately 6 cm above the surface.  All three cable thermocouples
+      were above ground and out of the borestem.
+ 
+      Probe 1 was placed in the hole on 31 July 1971 at approximately 18:47
+      UT. The instrument was turned on at 19:28 UT on 31 July and the first
+      reading from probe 1 came at 19:47:59. (The turn on time is according
+      to the operational history in the Apollo Scientific Experiments Data
+      Handbook.  The time is actually listed as &apos;19.47 hours&apos; which could
+      be an error, possibly meaning 19:47). Because of the troubles with
+      the obstruction in the probe 2 hole, probe 2 was not placed
+      permanently in the hole until the end of the second EVA on 1 August
+      at approximately 17:17 UT.  Since the experiment was turned on the
+      previous day readings from probe 2 were coming in before it was
+      emplaced in the hole. In December 1975 the experiment began returning
+      anomalous data and only operated intermittently starting on 28 April
+      1976. The experiment was commanded off from Earth on 15 January 1977.
+ 
+ 
+    Heater schedule
+    ---------------
+      The heaters were turned on and off in the low power (0.002 W) mode in
+      1971 as follows, with the heater designation followed in parentheses
+      by the depth of the heater, the date and time the heater was turned
+      on, and the date and time the heater was turned off, in UT. For probe
+      1: H11 (36 cm, 30 Aug. 17:00 - 31 Aug. 17:00), H12 (83 cm, 4 Sep.
+      05:04 - 5 Sep. 16:55), H13 (91 cm, 26 Aug. 04:58 - 27 Aug. 16:57),
+      H14 (138 cm, 2 Sep. 05:01 - 3 Sep. 16:55). For probe 2 only the
+      bottom two heaters were used:  H23 (49 cm, 24 Aug. 05:00 - 25 Aug.
+      17:01), H24 (96 cm, 7 Sep. 05:00 - 8 Sep. 17:00).  In 1973 probe 1
+      heaters H11 and H12 were rerun in low power mode because they were
+      strongly affected by diurnal variations.  These times were chosen to
+      minimize the effects of transient variations near the surface: H11
+      (36 cm, 13 Mar. 15:01 - 15 Mar. 15:00), H12 (83 cm, 14 Feb. 14:42 -
+      16 Feb. 02:26).
+ 
+ 
+    For more information about the Apollo 15 Heat Flow Experiment, see
+    the Apollo 15 Preliminary Science Report [APOLLO15A1972], the
+    Apollo Scientific Experiments Data Handbook [APOLLOSEDH1974], the
+    Apollo 15 Lunar Heat-Flow Measurement Report by Langseth, et al.
+    (1972) [LANGSETHETAL1972A], the Apollo 15 Heat Flow Experiment
+    Report by Langseth, et al. (1972) [LANGSETHETAL1972B], &apos;Revised
+    Lunar Heat-flow Values&apos; by Langseth, et al. (1976) [LANGSETHETAL1976],
+    &apos;Lunar Heat-Flow Experiment: Final Technical Report&apos; by Langseth
+    (1977) [LANGSETH1977], &apos;Apollo 15 Measurement of Lunar Surface
+    Brightness Temperatures - Thermal Conductivity of the upper 1 1/2
+    meters of Regolith&apos; by Keihm, et al. (1973) [KEIHMETAL1973], and
+    &apos;Reexamination Of the Apollo 15 Heat Flow Data Toward Understanding
+    Potential Causes Of The Long-Term Subsurface Warming Observed&apos; by
+    Nagihara, et al. (2010) [NAGIHARAETAL2010].
+ 
+    Related publications include the Apollo 17 Heat Flow Experiment
+    Report by Langseth, et al. (1973) [LANGSETHETAL1973] and &apos;Surface
+    Brightness Temperatures at the Apollo 17 Heat Flow Site&apos; by Keihm
+    and Langseth (1973) [KEIHM&amp;LANGSETH1973].
+ 
+ 
+    This instrument description was provided by the NASA National Space
+    Science Data Center.
+
+        </description>
+    </Instrument>
+</Product_Context>

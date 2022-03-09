@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.mariner69</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARINER69</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>MARINER_6_and_7</alternate_id>
+                <alternate_title>MARINER 6 and 7</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mr6::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mr7::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.mars::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mariner Mars 1969 - A preliminary Report. NASA SP-225,
+                   1969.
+            </reference_text>
+            <description>reference.NASA_SP-225</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Preliminary reports for the Mariner 6 and 7 missions.
+                   Volumes 165-166, 1969.
+            </reference_text>
+            <description>reference.SCIENCE_1969</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>MARINER69</name>
+        <type>Mission</type>
+        <start_date>1969-02-25</start_date>
+        <stop_date>1969-08-05</stop_date>
+
+        <description>
+ 
+ 
+    Mission Overview
+    ================
+      The mission was designed to have two spacecraft encounter Mars
+      within a 5 day period, with TV images sent to Earth beginning
+      2-3 days before closest approach.  Analysis of Mariner 6 data
+      was required in time to reprogram Mariner 7.  Mariner 6 was
+      targeted for a nearly equatorial flyby, with Mariner 7 taking a
+      southerly route to enhance viewing of the south polar cap.  All
+      original plans for data return volume were exceeded by
+      substantial margins.  Refer to NASA SP-225 and other references
+      for more information.  Mission start date given is for
+      authorization given to JPL to proceed with the project.
+ 
+ 
+    Mission Phases
+    ==============
+ 
+      MARINER 6 MARS ENCOUNTER
+      ------------------------
+        The encounter phase for Mariner 6 began with pointing of the
+        scan platform at Mars, so that the planet sensor could track
+        Mars for the narrow-angle TV camera.  All science instruments
+        except the infrared spectrometer were activated at this time.
+        Picture acquisition began 2 hours later.  The IR spectrometer
+        filter motor and cooler were started at 35 min.  before
+        closest approach.  The second Mars tracker viewed the Mars
+        limb at -15 min., at 05:03 GMT July 31, starting the analog
+        and digital tape recorders.  After closest approach, data
+        playback continued for several days.
+ 
+        Spacecraft Id                  : MR6
+        Target Name                    : MARS
+        Mission Phase Start Time       : 1969-07-29T05
+        Mission Phase Stop Time        : 1969-07-31
+        Spacecraft Operations Type     : FLYBY
+ 
+ 
+      MARINER 7 MARS ENCOUNTER
+      ------------------------
+        The encounter phase for Mariner 7 began with pointing of the
+        scan platform at Mars, so that the planet sensor could track
+        Mars for the narrow-angle TV camera.  All science instruments
+        except the infrared spectrometer were activated at this time.
+        After closest approach, data playback continued for several
+        days.  The spacecraft returned to cruise mode for engineering
+        tests, communications performance test, and science operations
+        including star photography and scans by the UV spectrometer of
+        the Milky Way and an area containing comet 1969-B.
+ 
+        Spacecraft Id                  : MR6
+        Target Name                    : MARS
+        Mission Phase Start Time       : 1969-07-29T05
+        Mission Phase Stop Time        : 1969-07-31
+        Spacecraft Operations Type     : FLYBY
+ 
+        </description>
+    </Investigation>
+</Product_Context>

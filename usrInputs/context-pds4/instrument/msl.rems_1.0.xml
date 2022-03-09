@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rems.msl</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ROVER ENVIRONMENTAL MONITORING STATION for MSL</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.msl::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Dominguez, M., Jimenez, V., Ricart, J., Kowalski, L., Torres, J., Navarro, S.,
+                   Romeral, J. and Castaner, L.. A hot film anemometer for the Martian atmosphere.
+                   Planetary and Space Science; 56:1169-1179, 2008.
+            </reference_text>
+            <description>reference.DOMINGUEZETAL2009</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gomez-Elvira J, Armiens C, Castaner L, Dominguez M, Genzer M, Gomez F, Haberle
+                   R, Harri A-, Jimenez V, Kahanpaa H, Kowalski L, Lepinette A, Martin J,
+                   Martinez-Frias J, McEwan I, Mora L, Moreno J, Navarro S, de Pablo MA, Peinado
+                   V, Pena A, Polkko J, Ramos M, Renno NO, Ricart J, Richardson M,
+                   Rodriguez-Manfredi J, Romeral J, Sebastian E, Serrano J, de la Torre Juarez M,
+                   Torres J, Torrero F, Urqui R, Vazquez L, Velasco T, Verdasca J, Zorzano M-,
+                   Martin-Torres J. REMS: The environmental sensor suite for the mars science
+                   laboratory rover. Space Science Reviews 2012:1-58, 2012.
+            </reference_text>
+            <description>reference.GOMEZELVIRAETAL2012</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sebastian, E., C. Armiens, J. Gomez-Elvira, M.P. Zorzano, J. Martinez-Frias, B.
+                   Esteban, and M. Ramos, The Rover Environmental Monitoring Station Ground
+                   Temperature Sensor: A Pyrometer for Measuring Ground Temperature on Mars.,
+                   Sensors 2010, 10, 9211-9231, 2010.
+            </reference_text>
+            <description>reference.SEBASTIANETAL2010</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ROVER ENVIRONMENTAL MONITORING STATION</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Meteorology -->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    The Rover Environmental Monitoring Station (REMS) instrument is
+    intended to provide in situ near-surface measurements of air and
+    ground temperatures, wind speed and direction, pressure, humidity
+    and ultraviolet radiation. Its objective is to characterize the
+    Martian climate and to study Mars habitability.
+ 
+    Systematic measurement is the main driver for REMS operation. Each
+    hour, every sol, REMS will record 5 minutes of data at 1 Hz for
+    all sensors. This strategy will be implemented based on a high
+    degree of autonomy in REMS operations. The instrument will wake
+    itself up each hour and after recording and storing data, will go
+    to sleep independently of rover operations. REMS will record data
+    whether the rover is awake or not, and both day and night.
+ 
+    REMS operation is designed assuming a minimum of three hours of
+    operation each day, primarily constrained by power
+    availability. Since the hourly observations will use a total of
+    two hours of operational time, the third hour can be scheduled as
+    a continuous block, for example. Another option that has been
+    implemented in REMS flight software is a simple algorithm to
+    lengthen some of the regular observations autonomously when an
+    atmospheric event is detected. Depending on resources available
+    during the mission, and the science team wishes, REMS can operate
+    more than three hours per day.
+ 
+    REMS instrument is formed by four main subsets:
+ 
+    - ICU (instrument Control Unit), allowing power conditioning and
+      distribution, analog acquisition and control of some of the
+      sensor, thermal control loops, communications with the Booms and
+      data processing and communications with the RCE. The ICU is
+      composed of three boards: CPU, Analog and a DC/DC Converter. The
+      Analog board also integrates the Pressure Sensor (PS).
+ 
+    - Ultraviolet Sensor (UV), consisting of 6 photodiodes, each one
+      devoted to a different measurement band.
+ 
+    - Boom 1, hosting an Air Temperature Sensor (ATS), a Wind Sensor
+      (WS), the Ground Temperature Sensor (GTS) and the front-end ASIC
+      that processes all the received analog inputs from the
+      transducers and sends the data to the ICU via a transmission
+      link.
+ 
+    - Boom 2, hosting another Air Temperature Sensor, another Wind
+      Sensor, the Humidity Sensor (HS) and other front-end ASIC that
+      also processes all the received analog inputs from the
+      transducers and sends the data to the ICU via a transmission
+      link.
+ 
+    Booms are to be located orthogonal to the rover mast, with boom 1
+    looking to the side and slightly to the rear of the rover, while
+    boom 2 points in the driving direction of the rover. The UVS is
+    going to be placed on top of the Rover Deck and the ICU is to be
+    located inside the warm body of the rover.
+ 
+    An extensive description of the REMS instrument can be found in
+    [GOMEZELVIRAETAL2012].
+ 
+  Scientific Objectives
+  =====================
+    The five main science objectives of REMS are:
+ 
+    1) Microscale atmospheric Dynamics. Characterization of the
+       near-surface meteorological environment at Diurnal and Seasonal
+       Scales.
+ 
+    2) Mesoscale atmospheric Dynamics. It includes flows forced by
+       interaction of solar heating and large-scale winds with
+       topography or other surface inhomogeneity such as sharp
+       contrast in surface inhomogeneity (10-1000 km).
+ 
+    3) Synoptic atmospheric Dynamics. A fundamental scientific
+       objective is the characterization of the atmospheric global
+       waves (&gt; 1000 km) through the pressure fluctuations records.
+ 
+    4) The Local Water Cycle. The fluctuations of the diurnal water
+       vapour concentration will increase our knowledge about the Mars
+       water cycle at the boundary layer.
+ 
+    5) The Local UV Environment at the surface. To evaluate the role
+       of the UV radiation environment in the local chemical and
+       biological processes.
+ 
+ 
+  Calibration
+  ===========
+   The Calibration for the REMS instrument is provided in the REMS
+   Calibration Plan (DOCUMENT/REMS_CALIB_PLAN.PDF of this volume).
+ 
+ 
+  Operational Considerations
+  ==========================
+ 
+    Boom Thermal Management
+    ----------------------
+      Mixed ASIC inside each Boom needs to be warmed-up to
+      temperatures over -55C before they are used.  This is performed
+      automatically be a hardware (software-assisted) control-loop
+      implemented into the ICU for any operation that requires Booms
+      ASIC use (science data acquisition, engineering acquisition,
+      ground temperature sensor calibration).
+ 
+      When the Booms ambient temperature is too low, the ICU will
+      switch-on the Booms&apos; ASIC heater at temperatures below
+      approx. -54C nominally. On reaching -70C (this is a default but
+      modifiable parameter) the ASICs will be switched on and start
+      operation. The heater will be switched-off when the temperature
+      reaches approx -50C nominally.
+ 
+      Any operation requiring Booms operation will be automatically
+      delayed until the Booms reaches operation temperatures. This is
+      performed automatically by instrument and need just to be taken
+      into account in the operations planning.  The ICU includes a 15
+      minutes warming-up timeout. In case one ASIC does not reach
+      operation temperature before that timeout expires the ASIC is
+      declared failed and the operation continues with the other
+      available sensors.
+ 
+    Sensors management
+    ------------------
+      It is occasionally necessary to perform sensors management
+      procedures to allow correct operation and to improve the
+      performance of the sensors (e.g. by obtaining calibration data).
+ 
+      Three sensor management operations are presently defined: HS
+      regeneration, HS defrosting and GTS calibration.
+ 
+      HS Regeneration shall be done about once a month by ground
+      command when the ambient temperature is at its highest. Nominal
+      regeneration time target is between 3 and 10 minutes, being this
+      time a changeable parameter (via a System
+      Parameter). Regeneration temperature target is between +135C and
+      150C.  This restores Humicap calibration by removing
+      contamination from the sensor surface.
+ 
+      HS regeneration is performed by sending the corresponding
+      Instrument Command or by setting the equivalent entry into the
+      Schedule Table when operating in Auto mode.  Please note that
+      REMS software includes an enabling ambient temperature window
+      array that will be checked automatically by the software before
+      proceeding with the regeneration. Regeneration will then only be
+      performed if the ambient temperature as measured by the own HS
+      channel is between the upper and lower limits programmed in such
+      table (as System Parameters).
+ 
+      HS Defrosting procedure is similar to the regeneration one. It
+      requires no more than +100C as H-PRT temperature, thus removing
+      frost in the sensor heads. Defrosting shall be done every night
+      at coldest night hours (ambient temperature usually below -50C,
+      but depends on ICU H-PRT secondary voltage level at that time)
+      by pre-defined timeline commanding or by direct ground
+      command. Nominal defrosting time is between 3 and 5 minutes, but
+      this time shall be a changeable by a System Parameter.
+ 
+      HS Defrosting is performed by sending the corresponding I-cmd or
+      by setting the equivalent entry into the Schedule Table when
+      operating in Auto mode.  As with the regeneration, REMS software
+      includes an enabling ambient temperature window array that will
+      be checked automatically by the software before proceeding with
+      the defrosting. Defrosting will only be performed in case the
+      ambient temperature as measured by the own HS channel is inside
+      the upper and lower limits programmed in such table (as System
+      Parameters).
+ 
+      Humidity Sensor should be calibrated at night, when the
+      temperature is so low that the humidity reaches its saturation
+      level. Data for calibration will be taken through a standard
+      measurement cycle, not requiring any specific sensor operation.
+ 
+      For calibration of the GTS sensor thermopiles, a heater placed
+      in front of the thermopiles is implemented (intercepting part of
+      the thermopiles field of view) and heated to a known power
+      (~330mW, typical) during the calibration mode of the
+      instrument. In this way, it will provide a thermal gradient of
+      at least 30C between the calibration plate and the thermopiles
+      reference temperature, thus giving a good thermopile output
+      response. This operation should be performed when ambient
+      temperatures are as stable as possible (and consequently, there
+      are calm winds), to minimize error contributions.
+ 
+ 
+  Detectors
+  =========
+    Wind speed and direction will be derived based on information
+    provided by three two-dimensional wind sensors on each of the
+    booms. The basic concepts in which the two-dimensional wind
+    sensors are based can be found in [DOMINGUEZETAL2009]. The three
+    sensors are located 120 degrees apart around the boom axis. Each
+    of them will record local speed and direction in the plane of the
+    sensor. The convolution of the 12 data points will be enough to
+    determine wind speed as well as pitch and yaw angle of each boom
+    relative to the flow direction. The requirement is to determine
+    horizontal wind speed with 1 m/sec accuracy in the range of 0 to
+    70 m/sec, with a resolution of 0.5 m/sec. The directional accuracy
+    is expected to be better than 30 degrees. For vertical wind the
+    range is 0 to 10 m/sec, and the accuracy and resolution are the
+    same as for horizontal wind.
+ 
+    Ground temperature will be recorded with a thermopile on Boom 1
+    that views the Martian surface to the side of the rover through a
+    filter with a passband of 8 to 14 microns. The requirement is to
+    measure ground brightness temperature over the range from 150 to
+    300 K with a resolution of 2 K and an accuracy of 10 K.  Please
+    see [SEBASTIANETAL2010] for a further information about the GTS
+    sensor.
+ 
+    Air temperature will be recorded at both booms with two
+    PT1000-type sensors placed on a small rod long enough to be
+    outside the mast and boom thermal boundary layers. The information
+    provided by these two sensors alongside knowledge of the
+    temperature at the base of the rod (boom temperature) shall be
+    used to estimate the temperature of the fluid around it.  Its
+    measurement range is 150 to 300 K. It has an accuracy of 5 K and a
+    resolution of 0.1 K.
+ 
+    Boom 2 houses the humidity sensor, which is located inside a
+    protective cylinder. That sensor will measure relative humidity
+    with an accuracy of 10% in the 200-323 K range and with a
+    resolution of 1%. A dust filter protects it from dust deposition.
+ 
+    The UV sensor will be located on the rover deck and is composed of
+    six photodiodes in the following ranges: 315-370 nm (UVA), 280-320
+    nm (UVB), 220-280 nm (UVC), 200-370 nm (total dose), 230-290 nm
+    (UVD), and 300-350 nm (UVE), with an accuracy better than 8% of
+    the full range for each channel, computed based on Mars radiation
+    levels and minimum dust opacity. The photodiodes face the zenith
+    direction and have a field of view of 60 degrees. The sensor will
+    be placed on the rover deck without any dust protection. To
+    mitigate dust degradation, a magnetic ring has been placed around
+    each photodiode with the aim of maximizing their operational
+    time. Nevertheless, to evaluate dust deposition degradation,
+    images of the sensor will be recorded periodically. Comparison of
+    these images with laboratory measurements will permit evaluation
+    of the level of dust absorption.
+ 
+    The pressure sensor will be located inside the rover body and
+    connected to the external atmosphere via a tube. The tube exits
+    the rover body through a small opening with protection against
+    dust deposition. Its measurement range goes from 1 to 1150 Pa with
+    an end-of-life accuracy of 20 Pa (calibration tests give values
+    around 3 Pa) and a resolution of 0.5 Pa. As this component will be
+    in contact with the atmosphere, a HEPA filter will be placed on
+    the tube inlet to avoid contaminating the Mars environment.
+ 
+    More information about each sensor can also be found in the REMS
+    Calibration Plan.
+ 
+  Electronics
+  ===========
+    REMS electronics consist of the ICU and the ASICs on both
+    booms. The intra-instrument harness connecting these elements is
+    provided by JPL.
+ 
+    The development of an ASIC for data conditioning is motivated by
+    two requirements: the need for the booms to survive and operate in
+    a broad range of temperatures, and for the entire instrument to
+    have a mass less than 1.3 kg. The ASIC must survive a -130C to
+    +70C temperature range and minimize power consumption for
+    operation.
+ 
+    The Booms&apos; sensors signals (exception made of the Humidity Sensor)
+    are acquired through the Mixed Analog/Digital ASIC, which are
+    accommodated inside the booms housing. These ASICs communicates
+    via serial links with the Instrument Control Unit down in the
+    Rover warm body. There will be a master-slave communication
+    protocol, being the ICU the master of the communications; ICU will
+    sent commands to the ASICs and wait for reply from them (ASICs
+    cannot initiate communications), There will be always an answer
+    for every command sent. In addition, the ICU can not send a
+    command while a previous answer is pending. Humidity Sensor&apos;s
+    signals (Boom 2) are directly connected -via harness- to the ICU
+    for its control and data acquisition.
+ 
+    On board software runs inside the ICU microprocessor. There are
+    two on-board REMS software products:
+ 
+    - Start Up SW (SUSW): Stored in PROM, it can not be changed during
+      the mission. This product will be in charge of the booting
+      tasks, initial instrument initialization/testing and patching of
+      APSW. SUSW will start the execution of APSW.
+ 
+    - Application SW (APSW): Stored in EEPROM, it may be changed
+      during the mission. This product will perform the instrument
+      management operations and the scientific data
+      acquisition/downloading. EEPROM contains also a Memory
+      Management Parameters are (MMP) that defines important software
+      configuration parameters such as base pointers and sizes of
+      Application Software, REMS Data Product buffer, Schedule Table,
+      System parameters area, etc.
+ 
+    Science and Engineering data is stored into a Flash EEPROM (as
+    RDP_Data_Product) to be later on downloaded for telemetry. This
+    Flash Memory is used to store non volatile data structures that
+    need to be kept through REMS sleep/wake cycles but at the same
+    time they need to be often read/modified by REMS SUSW and APSW
+    during nominal operation.
+ 
+    The following data structures are stored in the Flash memory:
+ 
+    - Schedule Table, contains the specification of tasks to be done in
+      APSW Auto mode. This table needs to be loaded periodically into the
+      instrument.
+ 
+    - REMS Data Product, scientific and operational data gathered by the
+      instrument. This data has to be downloaded periodically.
+ 
+    - System Parameters (SP), persistent but modifiable information needed
+      for nominal instrument operation (e.g. Booms&apos; ASICs default power-on
+      configurations, sensors gains, sensors management limits and
+      operational durations, Event mode parameters, etc.
+ 
+    - Persistent data, SW internal variables that need to be kept
+      between resets, for example ST and RDP management information
+      (e.g. internal pointers to flash structures, measurements
+      averages for Event mode calculations, OBT value before going to
+      standby, etc.). The allocation and sizes for these structures
+      are specified inside the MMP stored in EEPROM.
+ 
+  Operational Modes
+  =================
+    REMS can operate either:
+ 
+    - Autonomously, in base of a given &apos;Schedule Table&apos; that is uploaded
+      to the instrument,
+ 
+    - Or supervised, by means of Instrument commands (I-cmds) sent
+      directly from the rover. This will be used mainly to load the
+      Schedule Table or to handle special situations.
+ 
+    The baseline operations scheme has the instrument waking up every
+    hour to take 5 minutes of observations, with each sensor
+    collecting samples at 1 Hz. This scheme will provide 2 hours of
+    data per sol, and will be implemented using the Schedule Table.
+ 
+    In addition to the baseline hourly observation cadence, REMS can
+    operate continuously for longer periods, be either in one single
+    block or into several smaller blocks distributed along the sol. It
+    is foreseen a total extra time of one hour each day, but can be
+    more depending on mission resources and the wishes of the science
+    team.
+ 
+    The additional observations can be handled in several ways. One is
+    by examining phenomena of known interest (e.g. atmospheric
+    conditions at dawn or dusk). Other one is by distributing several
+    observations along each sol and then shifting them the following
+    sols. That way, after several days, a full 24 hour cycle of
+    measurements can been covered.
+ 
+    There is also the possibility of using the extra observation time
+    by activating the REMS event mode. In that mode, REMS will make
+    real time comparisons between data taken during the hourly 5
+    minutes periods and an expected trend kept in memory. These
+    comparisons may trigger additional observations (up to a
+    predefined maximum) immediately following the scheduled hourly
+    periods. These triggers are based on observations statistics, such
+    as absolute values or unusual temporal variations, and try to
+    detect any ongoing transitory atmospheric event.
+
+        </description>
+    </Instrument>
+</Product_Context>

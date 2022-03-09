@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.mu._gem</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Tejat</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Mu Geminorum</alternate_title></Alias>
+      <Alias><alternate_title>13 Geminorum</alternate_title></Alias>
+      <Alias><alternate_title>Mu Gem</alternate_title></Alias>
+      <Alias><alternate_title>mu. Gem</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>13 Gem</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 4990 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+22 693</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+22 1304</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J06230+2230A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+22 1304 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 740</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DO 12155</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 241</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 8208</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 4046</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00044478</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 01878-01429</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 44478</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 30343</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 30343</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 2286</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 06169+2234</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 06199+2232</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +20144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1371</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J06225762+2230490</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 1373</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1475</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1475.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 173</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 95868</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 922</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 78297</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 10888</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30241</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* P 372</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 6876</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 1878-1429-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 6376</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 12013</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J06230+2231A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 6038</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YPAC 28</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 22 2337</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Tejat</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 06 hours 22 minutes 57.62686 seconds
+Declination, ICRS coord, ep=J2000: +22 degrees 30 minutes 48.8979 seconds
+    </description>
+  </Target>
+</Product_Context>

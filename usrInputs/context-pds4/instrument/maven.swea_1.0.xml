@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+   http://pds.nasa.gov/pds4/pds/v1 
+   http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.xsd 
+   ">
+   <Identification_Area>
+      <logical_identifier>urn:nasa:pds:context:instrument:swea.maven</logical_identifier>
+      <version_id>1.0</version_id>
+      <title>SWEA</title>
+      <information_model_version>1.4.0.0</information_model_version>
+      <product_class>Product_Context</product_class>
+      <Alias_List>
+         <Alias>
+            <alternate_title>Solar Wind Electron Analyzer</alternate_title>
+         </Alias>
+      </Alias_List>
+      <Modification_History>
+         <Modification_Detail>
+            <modification_date>2015-03-24</modification_date>
+            <version_id>1.0</version_id>
+            <description>
+               Initial version.
+            </description>
+         </Modification_Detail>
+      </Modification_History>
+   </Identification_Area>
+   <Reference_List>
+      <Internal_Reference>
+         <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+         <reference_type>instrument_to_instrument_host</reference_type>
+      </Internal_Reference>
+   </Reference_List>
+   <Instrument>
+      <name>Solar Wind Electron Analyzer</name>
+      <type>Energetic Particle Detector</type>
+      <description>
+         The Solar Wind Electron Analyzer (SWEA) is a symmetric, hemispheric electrostatic analyzer
+         designed to measure the energy and angular distributions of solar wind electrons and ionospheric
+         photoelectrons in the Mars environment. The instrument is a collaboration between the Space 
+         Sciences Laboratory at the University of California, Berkeley (UCB-SSL) and the Institut de 
+         Recherche en Astrophysique et Planétologie (IRAP) in Toulouse, France. SWEA is closely based on 
+         two instruments of the same name currently operating on the twin STEREO spacecraft. 
+      </description>
+   </Instrument>
+</Product_Context>

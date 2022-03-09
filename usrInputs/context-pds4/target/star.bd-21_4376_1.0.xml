@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd">
+    
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bd-21_4376</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>U17</title>  <!-- from mitch-->
+    <information_model_version>1.14.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>BD-21 4376</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-21 6180</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 06215-00892</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 80841</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 80841</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J16303128-2144310</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 265604</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 6215-892-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 6052288315170764928</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Uranus 017</alternate_title></Alias>  <!-- from mitch-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-05-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>U17</name>  <!-- from mitch-->
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 16 hours 30 minutes 31.2873917797 seconds        from simbad
+Declination, ICRS coord, ep=J2000: -21 degrees 44 minutes 31.126511076 seconds        from simbad
+    </description>
+  </Target>
+</Product_Context>
+

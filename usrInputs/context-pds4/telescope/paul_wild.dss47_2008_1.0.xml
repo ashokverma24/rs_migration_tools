@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds ="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=
+    "http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:paul_wild.dss47_2008</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Australia Telescope Compact Array - 2008</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-06-10</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Original context product describing the Australia Telescope Compact Array (ATCA) 
+                    near Narrabri, Australia.  Information was current as of 2021-06-10; but the 
+                    telescope was used for Cassini radio science data collection in 2008.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.paul_wild</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                A description of the Paul Wild Observatory, which hosts the Australia Telescope
+                Compact Array.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.dsn</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                A description of the NASA Deep Space Network, of which the ATCA is occasionally
+                a part.
+            </comment>
+        </Internal_Reference>
+
+        <External_Reference>
+            <reference_text>
+                https://www.narrabri.atnf.csiro.au
+            </reference_text>
+            <description>
+                The ATCA web site, current as of 2021-04-06.
+            </description>
+        </External_Reference>
+        
+        <External_Reference>
+            <reference_text>ATCA Users Guide, Stevens, J., R. Wark, P. Edwards, S. Breen, and 
+                K. Lee-Waddell, 15 March 2018.
+                https://www.narrabri.atnf.csiro.au/observing/users_guide/html/atug.pdf
+            </reference_text>
+            <description>
+                A manual describing how to apply for observing time, make a schedule file, 
+                and carry out an observation with the Australia Telescope Compact Array.  Chapter 1
+                describes the telescope and what observers need to know before proposing to use it.
+            </description>
+        </External_Reference>
+        
+    </Reference_List>
+    
+    <Telescope>
+        <aperture unit='m'>54</aperture>
+        <telescope_longitude unit='deg'>210.4498612</telescope_longitude>
+        <telescope_latitude unit='deg'>-30.3128846</telescope_latitude>
+        <telescope_altitude unit='m'>236.87</telescope_altitude>
+        <coordinate_source>WGS 84</coordinate_source>
+        <description>
+            The ATCA is an array of six 22 m diameter antennas of Cassegrain design.  The collecting 
+            area is equivalent to a single dish of diameter 54 m.  The array has a 
+            3 km east-west track with a 214 m northern spur. Five antennas can be moved along these 
+            tracks, with the sixth antenna at a fixed position 3 km to the west of the east-west track.  
+            The longest possible baseline is, therefore, 6 km. The array can be used for observations 
+            in five wavelength bands between 27 cm and (with five antennas only) 3 mm -- frequencies 
+            between 1.1 GHz and 105 GHz.  Orthogonal polarizations (linear or circular) can be 
+            observed simultaneously.
+        </description>
+    </Telescope>
+    
+</Product_Context>

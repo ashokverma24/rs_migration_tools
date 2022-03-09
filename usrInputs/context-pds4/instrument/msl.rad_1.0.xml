@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rad.msl</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>RADIATION ASSESSMENT DETECTOR for MSL</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.msl::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Hassler, D.M., C. Zeitlin, R.F. Wimmer-Schweingruber, S. Bottcher, C. Martin,
+                   J. Andrews, E. Bohm, D. E. Brinza, M. A. Bullock, S. Burmeister, B. Ehresmann,
+                   M. Epperly, D. Grinspoon, J. Kohler, O. Kortmann, K. Neal, J. Peterson, A.
+                   Posner, S. Rafkin, L. Seimetz, K. D. Smith, Y. Tyler, G. Weigle, G. Reitz, and
+                   F.A. Cucinotta, The Radiation Assessment Detector (RAD) Investigation, Space
+                   Sci. Rev, Vol. 170, pp. 503-558, 2012, doi:10.1007s/11214-012-9913-1
+            </reference_text>
+            <description>reference.HASSLERETAL2012</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>RADIATION ASSESSMENT DETECTOR</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+   Instrument Overview
+   ===================
+ 
+     The Radiation Assessment Detector (RAD) investigation is an
+investigation to detect and analyze the most biologically-significant
+energetic particle radiation on the Martian surface as a key element of
+the Mars Science Laboratory (MSL) mission. Fully characterizing and
+understanding the radiation environment on Mars is fundamental to
+quantitatively assessing the habitability of the planet, and is essential
+for future crewed Mars missions. RAD also addresses significant aspects
+of the MSL investigation, including the radiation effects on biological
+potential and past habitability, as well as keys to understanding the
+chemical alteration of the regolith due to impinging space radiation.
+ 
+ 
+   Scientific Objectives
+   =====================
+ 
+ 
+  1)  Characterize the Energetic Particle Spectrum on Mars
+ 
+ 
+  Galactic cosmic rays (GCRs) are high energy (100 MeV/nuc to 10 GeV/nuc
+and above) particles thought to be produced by supernovae shocks outside
+the heliosphere and are composed of roughly 89% protons, 10% alpha
+particles (He), and 1% heavier nuclei (Reedy and Howe, 1999). GCRs are
+modulated by the solar wind and the 11-year solar cycle, with roughly 30%
+higher flux at solar minimum, and show variability with respect to
+elemental composition and energy. Specifically, near solar minimum,
+substantially higher fluxes of lower-energy particles can access the
+inner heliosphere compared to times near solar maximum. Because of their
+high energies and continuous nature, GCRs are the dominant source of
+background radiation at the Martian surface, and are responsible for the
+production of secondary particles via complex interactions in the
+atmosphere and regolith. The radiation dose from these secondary
+particles is comparable to that from the primary GCR. The Earth&apos;s
+magnetic field (magnetosphere) and deep atmosphere (~ 1000 g cm**-2)
+effectively shield us from most of the hostile interplanetary radiation
+environment. No primary cosmic rays reach the surface of the Earth.
+However, this is not the case for Mars. Mars has no significant
+magnetosphere and only ~1-2% of the atmospheric mass of Earth. In the
+thick terrestrial atmosphere, most of the GCR energy deposition, and
+secondary particle production, occurs in the top 20 km of the atmosphere,
+while in the thin Martian atmosphere this occurs at ground level.
+ 
+  The secondary particles generated within the atmosphere include
+neutrons and gamma rays that, due to their lack of electric charge,
+penetrate the remaining column of the Martian atmosphere rather freely.
+The gamma rays do not contribute significantly to the radiation dose at
+the surface, but the neutrons do.  Also, some secondary neutrons
+generated within the regolith backscatter to the surface, where they
+contribute to the dose. GCR heavy ions also collide with carbon and
+oxygen in the atmosphere and regolith to produce a flux of energetic
+charged nuclear fragments at the surface. Some GCR heavy ions, such as C,
+N, and O are relatively abundant and have a significant probability to
+survive traversal of the atmosphere intact. Despite their relatively
+limited range in matter, these particles have high quality factors (a
+measure of biological effectiveness) and therefore need to be considered
+in radiation risk assessments.
+ 
+  Solar energetic particles (SEPs) are produced by the Sun as a result of
+shocks from coronal mass ejections (CMEs) associated with large solar
+storms and flares; they are dominantly protons. Although most SEPs have
+energies lower than 100 MeV/nuc, the flux of SEPs is highly variable and
+can vary by more than 5 orders of magnitude on time scales of hours to
+days, (Posner and Kunow, 2003) reaching energies as high as several GeV.
+About 140 MeV/nuc of kinetic energy is needed for protons and helium ions
+to penetrate the average column depth of the Martian atmosphere. Typical
+SEP events produce a flux composed of 98% protons, 1% alpha particles and
+1% heavier nuclei (Reedy et al., 2001). Because most SEPs have energies
+below 100 MeV, much of their flux does not reach the Martian surface,
+although even non-penetrating SEPs can create secondary neutrons that do
+reach the surface. Also, some events produce a significant SEP flux at
+energies above 100 MeV/nuc. Thus, although sporadic, SEP events may
+overwhelm the background GCR radiation at the Martian surface.
+ 
+ 
+  2) Determine the Radiation Dose Rate for Humans on Mars
+ 
+ 
+  Presently, no radiation exposure limits are established for surface
+Mars missions, but limits for low Earth orbit (LEO) provide a reasonable
+baseline from which to compare astronaut safety and risk.  The LEO limits
+are classified into short (30-day), annual, and career durations, and are
+also a function of the exposed organs.  Astronauts conducting Martian
+surface operations would be exposed to continuous GCR radiation, and
+potentially large bursts of SEP radiation. Although the GCR flux is less
+at solar maximum, the probability of large SEP events is greater, and the
+combined dose equivalent can easily approach annual exposure limits for
+blood forming organs, particularly at high elevations where the
+atmospheric column above is minimal.  Thus, it is critical to quantify
+through direct measurement the total radiation environment, including the
+baseline GCR flux and the secondaries it produces, as well as the range
+of episodic SEP radiation at the surface of Mars well in advance of any
+future manned missions in order to properly assess the safety risks and
+to develop potential mitigation strategies. RAD will provide the
+precursor measurements necessary to fully characterize GCR and SEP
+radiation, assess potential risks, and enable mitigation strategies to be
+adequately designed in preparation for future manned Mars missions.
+ 
+ 
+ 3) Transport of HZE (Heavier than Helium) Particles through the Martian
+    Atmosphere
+ 
+ 
+  The lack of direct observations necessitates the use of radiation
+transport models of the Mars atmosphere (e.g., HZETRN, SIREST).  However,
+radiation transport models that provide input to dosimetry models are
+static, driven by radiation inputs at the top of the atmosphere and Mars
+Orbital Laser Altimeter (MOLA) topographic data only.  Unfortunately,
+the true nature of the surface radiation environment is still highly
+uncertain.  The model outputs need to be tested (Wilson et al., 1999),
+and compared to observational ground truth in order to be validated and
+considered complete to the point of ensuring astronaut safety on future
+manned missions. Measurements from RAD will be compared to output from
+existing models of these interactions.  Disagreement between observations
+and model results elucidate weaknesses in the model physics, or the
+understanding of the modeled interactions, and will be used as feedback
+for improvement.
+ 
+ 
+  4) Characterize the Radiation Hazard for Extant Life on Mars
+ 
+ 
+  The radiation hazards for indigenous Martian life forms are unknown,
+but most current studies assume that life elsewhere will be based on
+polymeric organic molecules (Pace, 2001), and will in an overall sense,
+share with terrestrial life the vulnerability to energetic radiation.
+Thus the risks to extant organisms are assumed to be analogous to the
+risks to future human explorers.  Energetic charged particles ionize
+molecules along their tracks.  This ionization creates OH and other
+damaging free radicals which can in turn break DNA strands within cells.
+Double strand breaks are most significant, as they may be mis-repaired,
+leading to mutagenesis. Surviving cells may become cancerous.  While
+Martian life may not be based on DNA, most astrobiologists assume that it
+will require some system of heredity based on large polymeric organic
+molecules.  Thus it will likely have similar vulnerability to energetic
+radiation.
+ 
+RAD will quantify the flux of biologically hazardous radiation at the
+surface of Mars today, and measure how these fluxes vary on diurnal,
+seasonal, solar cycle and episodic (flare, storm) timescales.  Through
+such measurements, we can learn how deep life would have to be today for
+natural shielding to be sufficient.  This depth can be compared to the
+calculated diffusion depth of strong oxidants which will destroy organic
+molecules in the near surface environment of Mars today (Bullock et al.,
+1994), and thus learn whether radiation or oxidizing chemistry will
+determine the minimum depth needed to drill to look for extant life on
+Mars today.
+ 
+Much attention has been given to the possibility of life in subsurface
+voids (caves) that will be protected from the surface radiation
+environment (Boston et al., 1992).  It has been noted that the cave
+environments likely to exist on Mars could possibly facilitate the
+evolution of macroscopic life in the subsurface, as opposed to merely
+microbial life (Boston et al., 2001).  The shielding required to make
+such an environment suitable for life will depend on the surface
+radiation.  Measurements of the surface radiation will allow us to
+determine how deeply buried such voids must be to be safe from the
+high-energy radiation environment at the surface.  This, in turn, will
+directly impact future strategies involving drilling and digging to
+search for subsurface life.
+ 
+While the idea that life exists today on Mars is controversial, the idea
+of life on Mars in the past is much less so. The recent discoveries by
+the Mars Exploration Rovers (MER) and Mars Express of evidence for
+abundant surface liquid water in the past reinforce the widespread view
+that Mars, in the past, may have been a habitable planet.  In seeking to
+understand the limits of surface habitability in the past on Mars, it is
+important to be able to characterize the radiation environment during
+past epochs when surface water existed, the climate was more moderate,
+and presumably the atmosphere was substantially thicker than at present.
+Radiation is an important source of biological mutations, and as such may
+have been the dominant source of genetic diversity in the past on Earth
+and presumably on any planet (perhaps including Mars) where life is based
+on a genetic code (which is part of most definitions of life). How would
+the thicker past atmosphere, required for a warm, wet early Mars, modify
+the radiation environment?  According to accepted models of atmospheric
+evolution, how have the dose rates of radiation capable of doing tissue
+damage, and radiation-induced mutation, varied throughout Martian
+history?  How would extreme radiation events (solar flares, gamma ray
+bursts) have affected evolution of past organic life on Mars?  For any
+effort to understand this past radiation environment of Mars, the
+starting point must be a more thorough understanding of the role that the
+current atmosphere plays in modulating and altering the radiation from
+space. Understanding how radiation interacts with the contemporary
+atmosphere permits the extrapolation of this interaction with the
+ancient, thicker atmospheres.
+ 
+  5) Chemical and Isotopic Effects of Radiation on the Martian Surface
+  and Atmosphere
+ 
+  Space &apos;weathering&apos; is a well-known but fairly poorly understood
+phenomenon that alters the chemistry and appearance of the surfaces of
+airless bodies (Hapke 2001, Chapman 2004).  It usually consists of two
+components, that due to micrometeorite bombardment, and that caused by
+the impingement of charged particles on the surface of asteroids and
+airless satellites. An enormous fluence of high-energy charged primary
+and secondary particles has interacted with the Martian regolith
+throughout its history. The annual dose rate at the surface, and in the
+first several tens of cm of regolith, is expected to be on the order of
+0.1 Gy/year. Extremely large doses accumulate over the eons. There is
+thus reason to believe that radiation contributes significantly to the
+unique chemistry of the Martian surface.  The unique space weathering on
+Mars can only be understood and quantified with direct observations of
+energetic particles at the surface.
+ 
+  One of the primary objectives of the MSL mission is to emplace mobile
+analytical chemistry instruments at the surface of Mars, including those
+that can quantify light elements. A detailed analysis of the makeup of
+both bulk rocks and their surfaces will pave the way for a far greater
+understanding of the weathering and alteration processes active on Mars.
+RAD will supply the basic input to chemistry models that up to now has
+been lacking - the space radiation environment of the surface of Mars.
+Together with the analytic chemistry experiments on MSL, RAD will provide
+real constraints on how primary rocks weather to their current, highly
+altered state.
+ 
+ 
+   Calibration
+   ===========
+ 
+  Because RAD has limited storage and telemetry, much of the data is
+stored in the form of histograms. These depend on real-time calibration.
+The parameters that control this calibration are loaded into RAD via a
+configuration table. In addition, the RAD electronics, and some of the
+detectors, are temperature sensitive.  Prior to a RAD observation, the
+temperature of the detectors is taken and recorded.  The initial
+temperature is used to identify an additional onboard table of correction
+parameters.  Therefore, observational data is received on the ground
+having gone through onboard calibration.
+ 
+ 
+   Operational Considerations
+   ==========================
+ 
+ The RAD experiment requires long time integration to capture the
+statistics of GCR radiation and frequent observations to capture the
+random and nearly unpredictable SEP events.  A minimum of 15 minutes of
+observation per hour every hour is sufficient to achieve RAD science
+objectives.
+ 
+ 
+   Detectors
+   =========
+ 
+  Details of the RAD instrument are given in Hassler et al (2012).
+RAD&apos;s particle detection capabilities are achieved with a solid-state
+detector (SSD) stack (A, B, C), a CsI(Tl) scintillator (D), and a plastic
+scintillator (E) for neutron detection, as shown below. The D and E
+detectors are surrounded by an anticoincidence shield (F), also made of
+plastic scintillator. All scintillators are optically coupled to silicon
+diodes which convert scintillation light to electrons.
+ 
+ 
+ 
+            |------------|	&lt;--Si A Detector
+            |            |
+            |            |
+            |            |
+            |            |
+            |------------|	&lt;--Si B Detector
+            |------------|	&lt;--Si C Detector
+           //  /|-----|\ \\     |------------|
+          //  / /     \ \ \\
+         //  / /       \ \ \\
+        //  / /    D    \ \ \\
+       //  / /    CsI    \ \ \\
+      //  / /             \ \ \\ &lt;-- anti-coincidence wrapper F1
+     ||  --------------------  ||
+     ||    ----------------    ||
+     ||   |   Bicron 432   |   ||
+     ||   |   E Detector   |   ||
+     ||    ----------------    ||
+    |----------------------------|
+    |----------------------------|&lt;-- anti-coincidence wrapper F2
+ 
+ 
+ 
+ 
+  The D calorimeter stops protons with energies up to about 95 MeV and Fe
+ions up to 270 MeV/n. At high energies, charged particles produce
+ionization electrons in the detector material and undergo no significant
+change in direction. Thus, the path of energetic ions through RAD is, to
+a good approximation, along a straight line. The opening angle of 65
+degrees, defined by trajectories that hit both A and B (i.e., the A*B
+coincidence), provides for 1 cm^2 sr geometric factor of the instrument.
+This gives a fairly narrow distribution of possible path lengths through
+the detectors. The shape of the CsI scintillator conforms to the field of
+view as defined by the A*B coincidence. Identification of ion species is
+achieved with the dE/dx vs. E method (McDonald and Ludwig, 1964).
+ 
+  The high-energy threshold for ions is determined by the trigger settings
+for detectors A and B. Particles that penetrate the chain of detectors
+ABCD (and possibly E) and leave the system through F2 are accepted and
+counted in the &apos;penetrating particle&apos; histograms. It has been determined
+that the A*B trigger can and will be operated at a low threshold so that
+RAD efficiently detects minimum-ionizing, singly-charged particles (e.g.,
+GCR protons). Limited particle identification at energies beyond ~100
+MeV/n is possible for these events. The penetrating particle histograms
+extend the energy range of the instrument to accommodate up to ~500 MeV/n
+ion spectra with elemental resolution based on multiple dE/dx analysis.
+ 
+  The A detector has outer and inner segments, referred to as A1 and A2
+respectively.  During high fluence events such as SEPs, the outer segment
+(A1) can be disabled so as not to overwhelm the electronics with a high
+event rate.
+ 
+  The use of a scintillator anti-coincidence shield F1 and F2 is a
+requirement for neutron detection. Since neutral particles do not
+interact with electrons, which are the source for light emission in
+scintillator materials, the detection requires other means of energy
+transfer.  In the D/E scintillator system, neutrons of 2 to about 100 MeV
+are detected indirectly by elastic scattering with protons in the plastic
+detector E. Recoil protons carry on average half the kinetic energy of
+the incoming neutron. The detector has a 4-pi field of view. High energy
+neutrons may cause D/E coincidences. Neutrons that produce very
+high-energy recoils can go undetected if the recoil leaves E or D and
+strikes the F anti-coincidence shield. This process effectively sets the
+upper limit of reasonable neutron detection efficiency at about 100 MeV.
+ 
+  The lower energy range of neutrons detectable by RAD will be dominated
+by emission from the RTG that powers MSL.  RAD thresholds will be raised
+accordingly. It is not known exactly where these thresholds will be, but
+a preliminary test with the RTG at the Idaho National Laboratory suggests
+that thresholds will have to correspond to about 4-5 MeV of energy
+deposited in both D and E to keep the event rate manageable.
+Additionally, when active, the Dynamic Albedo of Neutrons (DAN) Pulse
+Neutron Generator (PNG) will provide a source of neutrons.
+ 
+  Gamma-rays are a by-product of high-energy nuclear interactions and can
+penetrate the anti-coincidence shield without interacting, in which case
+signals can be produced in E and (more likely) D via the photoelectric
+effect, Compton scattering, and pair production. The high-Z CsI material
+of D has a much higher sensitivity for the detection of gamma-rays than
+the plastic of detector E. D can be used as a gamma-ray spectrometer,
+albeit with poor resolution compared to the Odyssey Gamma Ray Spectrometer
+(GRS) in orbit around Mars, above the detector noise level of several
+hundreds of keV. However the RTG will produce a flux of gamma-rays in D at
+energies up to a few MeV
+ 
+  Solar flares and coronal mass ejections can accelerate electrons to
+energies of several MeV. Observations of relativistic solar electrons are
+vital for event onset timing studies. Electrons are low linear energy
+transfer (LET) particles with modest ranges in detector materials.
+High Energy Telescope with Neutrons (HETn) will measure electrons in
+the range from 150 keV up to 15 MeV.  The distinction from ions can
+be performed with dE/dx vs. E analysis. A distinct signature in the
+detectors comes from positrons, which are by-products of flare processes
+in the corona and also produced by interactions of high-energy particles
+in the atmosphere. The annihilation of the positron with a detector B
+electron generates characteristic 511 keV X-rays. A*B coincidences with
+electron-type energy loss signals in coincidence with a light pulse in D
+equivalent to the characteristic X-ray energy deposit define a positron
+detection.
+ 
+  Quantitative assessment of energy spectra depends on detailed response
+functions derived from calibration data and from Monte Carlo
+simulations. All particle detectors, and some of the analog electronics,
+are contained in the RAD Sensor Head (RSH). Additional analog
+electronics, and all of the digital electronics, are contained in the RAD
+Electronics Box (REB).
+ 
+ 
+ 
+   Electronics
+   ===========
+ 
+  The silicon diodes used both for direct detection of charged
+particles (A, B, and C) and for detection of scintillation light (D, E,
+F) are in all cases connected to charge-sensitive preamplifiers and
+shaping amplifiers in the sensor head. These are of a standard design,
+optimized for low noise and wide dynamic range. There are seventeen
+analog signals at the output of the RSH; these are split into 34
+redundant signal pairs at the input of a mixed signal Application
+Specific Integrated Circuit (ASIC) known as the VIRENA (Voltage-Input
+Readout for Nuclear Applications). The VIRENA provides, for each
+channel, an additional amplification stage, two adjustable threshold
+comparators, and a peak-hold circuit. The VIRENA is a 36-channel
+device, of which 34 channels are used as described above to read out
+the 17 RSH signals. The firmware requires that 32 of the 34 channels
+be selected to be used in the onboard analysis, i.e., 2 of the 34
+channels are not used. The choice of which 32 channels are used is
+configurable. Furthermore, depending on which Level 2 (L2) trigger fired
+to initiate the event readout(a process explained in more detail below),
+different sets of channels may be read out, ranging from a few to the
+full 32.
+ 
+  The VIRENA output signals are multiplexed into a single 14-bit
+analog-to-digital converter. For events with a valid L2 trigger, the
+appropriate set of pulse heights is read out and kept in local memory for
+analysis.
+ 
+ 
+   Triggers
+   ========
+ 
+  RAD has two trigger levels, Level 1 (L1) and Level 2 (L2). Level 1
+triggers are initiated by the VIRENA &apos;fast&apos; discriminators. These are
+enabled for one channel each for the A1, A2, B, C, D, and E detectors.
+When the firmware recognizes an L1 trigger, the &apos;slow&apos; discriminator
+outputs are examined to see if any L2 trigger patterns (which are for the
+most part coincidence conditions) are matched. If they are, the pulse
+height readout commences according to the readout mask for the specific
+L2 trigger that was matched.
+ 
+ 
+   Real-time Analysis
+   ==================
+ 
+  Valid events are analyzed in RAD&apos;s Level 3 (L3) firmware. Events are
+sorted as to whether they are caused by penetrating particles (those that
+go all the way through the RAD detector stack), stopping particles (those
+that hit at least A and B and possibly others, but not reaching F2), or
+neutral particles (those hitting only D and/or E). All events that meet
+selection criteria are entered into the appropriate histogram. A subset
+of these are stored in the form of full pulse height records (sometimes
+referred to as &apos;list data&apos; format), but storage space for the latter is
+quite limited.
+ 
+ 
+   Location
+   ========
+ 
+  The instrument sits within the body of the rover.  The telescope
+extends upward and sits nearly flush with the rover deck.  The telescope
+is covered by a kapton window.  The field of view is unobstructed subject
+to the variable position of the robotic arm.  RAD is sensitive to the
+neutron emissions from the RTG.
+ 
+ 
+   Operational Modes
+   =================
+ 
+  RAD uses a simple operational strategy.  Nominally, the instrument
+wakes once per hour, takes a fifteen minute observation, and then returns
+to sleep mode.  In the absence of specific changes to this sequence, RAD
+will operate in this wake-sleep cycle without commanding.
+ 
+  Upon waking, RAD takes a &apos;pre-observation&apos; to check if event counts are
+above a threshold indicative of a solar event.  In the event of solar
+event, the outer ring of the A detector is disabled.
+
+        </description>
+    </Instrument>
+</Product_Context>

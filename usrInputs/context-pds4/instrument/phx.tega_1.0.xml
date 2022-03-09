@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch"
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+ xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+  https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:tega.phx</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>THERMAL EVOLVED GAS ANALYZER for PHX</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-05-23</modification_date>
+                <version_id>1.0</version_id>
+                <description>Changed logical_identifier from tega__phx to tega.phx</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.phx</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Boynton, W. V., H. Enos, C. Fellows, D. K. Hamara, K. Harshman, M. S. Williams,
+                   M. R. Fitzgibbon, M. Finch, G. Droege, J. Hoffman, D. W. Ming, and P. Niles,
+                   The Thermal and Evolved-Gas Analyzer on the Phoenix Mars Lander, J. Geophys.
+                   Res., in prep.
+            </reference_text>
+            <description>reference.BOYNTONETAL2008</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>THERMAL EVOLVED GAS ANALYZER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Calorimeter/Spectrometer. Can't replace calorimeter well-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    The Thermal and Evolved Gas Analyzer (TEGA) on the Mars Phoenix
+    Lander is composed of two separate components which are closely
+    coupled: a Scanning Calorimeter (SC) and a mass spectrometer as
+    an Evolved Gas Analyzer (EGA). TEGA has the capability of
+    performing scanning calorimetry on eight small soil samples
+    selected in the vicinity of the lander. The samples will be
+    heated in ovens to temperatures up to 1000C, and the volatile
+    compounds (e.g.water and carbon dioxide), which are released
+    during the heating, will be analyzed in the EGA. The power
+    required by the sample oven is continuously
+    monitored during the heating, allowing analysis of both
+    endothermic and exothermic phase transitions, which can be used
+    to identify the phases present. By correlating the gas release
+    with the calorimetry, the abundance and composition of the
+    volatile compounds associated with the different phases can be
+    determined. The EGA mass spectrometer is sensitive to detection
+    levels down to 10 parts per billion, a level that may detect
+    minute quantities of organic molecules potentially existing in
+    the ice and soil. Please see [BOYNTONETAL2008] for a
+    comprehensive descrition of the TEGA instrument.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The main scientific objectives of TEGA are to determine the
+    abundance of climatologically important compounds (e.g. water,
+    carbon dioxide) in the Martian soil, and to determine the
+    mineral phases with which they are associated.TEGA. TEGA will
+    also be looking for traces of organic material that may
+    potentially exist. Additionally,the EGA mass spectrometer will
+    perform measurements of atmospheric constituent abundances and
+    isotopic ratios.
+ 
+ 
+  Operational Considerations
+  ==========================
+    TEGA is well suited to analyze the important volatile
+    constituents water and carbon dioxide. It combines two
+    instruments, a thermal analyzer and an evolved gas analyzer,
+    to make a synergistic analysis of the amount of volatiles in the
+    soil and the mineral phases with which they are associated.
+ 
+    The eight thermal analyzers that compose TEGA are scanning
+    calorimeters (SC). After being filed with sample, each oven is
+    heated according to a programmed temperature ramp, and the heat
+    needed to maintain the oven at the ramp temperature is monitored.
+    The heat required by the sample is attributed to that needed to
+    heat the sample at the commanded temperature ramp. The output of
+    the instrument is simply the heat flow to the oven plotted as a
+    function of time (or temperature).
+ 
+    When a phase transition occurs, the enthalpy associated with the
+    transition will be noted in the output. If the transition is
+    endothermic, for example, the melting of ice, the heat required
+    to effect the melting, 334 J/g, will be added to the sample oven
+    as the sample is heated past the ice melting point. This heat is
+    in addition to that required by the heat capacity of the sample
+    and results in a positive peak in the output. In contrast, if
+    there is an exothermic transition, the sample will require less
+    heat than otherwise, and a negative peak in the output will be
+    observed. In both cases the area of the peak is equal to the
+    enthalpy (deltaH) of the reaction.
+ 
+    While the sample is being heated, a carrier gas of N2 is passed
+    through the ovens to transport any evolved gases to the EGA. The
+    EGA continuously monitors the gas stream, and the output is time
+    correlated to the SC output in order to associate gas release
+    with any observed phase transitions.
+ 
+    The EGA consists of magnetic sector-field mass spectrometer. The
+    key EGA mass spectrometer instrument parameters are as follows:
+ 
+        Mass analyzer:    Magnetic sector-field.
+        Electron source:  Thermal emission type.
+        Mass ranges:      4 - extending from 0.7 Da to 140 Da.
+                                    Channel 1 - 0.7-4 Da,
+                                    Channel 2 - 7-35 Da,
+                                    Channel 3 - 14-70 Da
+                                    Channel 4 - 28-140 Da.
+        Mass resolution:  M/deltaM = 140
+                                (highest mass range- others
+                                appropriate to the mass range)
+        Volume:           9.5 x 9 x 7  inches
+        Mass:             5.7 kg.
+        Operating Power:  13 watts
+ 
+     The EGA measures relative abundances of evolved gases and the
+     isotopic ratios of its principal constituents. In addition to
+     measuring evolved gasses the EGA mass spectrometer makes two
+     different kinds of atmospheric measurements. The atmosphere is
+     sampled through a constricted flow tube to measure the relative
+     abundances and isotopic ratios of carbon, nitrogen, oxygen,
+     hydrogen and argon. Atmospheric samples are also collected in
+     the Gas Enrichment Cell. The atmospheric sample is admitted to
+     a small volume. A getter removes active gases increasing the
+     partial pressure of noble gases sixty times. The sample is then
+     admitted to EGA mass spectrometer to measure noble gas isotopic
+     ratios and methane.
+ 
+ 
+  Calibration
+  ===========
+    Calibration information for the TEGA instrument is provided
+    in the TEGA Calibration Report (calib/tega_calibration_report.pdf).
+ 
+ 
+  Operational Modes
+  =================
+    The TA assembly has several modes of operation. First the TA is
+    operated with the oven empty and open. As the oven is filled with
+    sample, the sample fill mechanisms and the sample fill indicator
+    LED are operational. Once the oven is full, it is closed, and the
+    oven heating portion of the operations begins. Heating continues
+    until a maximum temperature is reached and sample is finished
+    evolving gasses.
+ 
+    The EGA has two operational modes, sweep mode and mass hopping
+    mode. In sweep mode, the EGA collects count data in four channels
+    with discrete mass ranges. In mass hopping mode, the EGA collects
+    counts in 5 or 7 contiguous masses, then hops to the next mass
+    peak area of interest, thus ignoring uninteresting protions of the
+    mass spectrum.
+
+        </description>
+    </Instrument>
+</Product_Context>

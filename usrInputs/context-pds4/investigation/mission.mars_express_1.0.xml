@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:investigation:mission.mars_express</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARS EXPRESS</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:investigation:mission.mars_express</alternate_title></Alias>  <!-- deprecated LID -->
+            <Alias>
+                <alternate_id>MEX</alternate_id>
+                <alternate_title>MEX</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.mex</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:plasma_stream.solar_wind</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bibring, J-P, et. al., OMEGA: Observatoire pour la Mineralogie, l&apos;Eau, les
+                   Glaces et l&apos;Activite, ESA SP-1240, September 2004
+            </reference_text>
+            <description>reference.BIBRINGETAL2004</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Deep Space Network / Flight Project Interface Design Book, Document 810-5, Jet
+                   Propulsion Laboratory, Pasadena, CA.
+            </reference_text>
+            <description>reference.DSN810-5</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Formisano, V., et. al., The Planetary Fourier Spectrometer(PFS) for Mars
+                   Express, ESA SP-1240, September 2004
+            </reference_text>
+            <description>reference.FORMISANOETAL2004</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   MEX-ESC-PL-5500, &apos;Mars Express Mission Implementation Plan&apos;, Issue 1.0,
+                   September 1999
+            </reference_text>
+            <description>reference.MEX-ESC-PL-5500</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   MEX-ESC-RP-5500, &apos;Mars Express Consolidated Report on Mission Analysis
+                   (CREMA)&apos;, M. Hechler, Arturo Yanez, Issue 3.1, 6 May 2003.
+            </reference_text>
+            <description>reference.MEX-ESC-RP-5500</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   MEX-EST-PL-13128, &apos;Mars Express, Master Science Plan&apos;, ESA Project
+                   Documentation, Patrick Martin, Version 1.5, July 2004
+            </reference_text>
+            <description>reference.MEX-EST-PL-13128</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mars Express, Spacecraft User Manual, Issue 4, Revision 0, 15 May 2003, Volume
+                   1: Mission and Spacecraft Design
+            </reference_text>
+            <description>reference.MEX-MMT-MA-1091</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   MEX-MMT-RP-0221, &apos;Mars Express Mission Plan&apos;, Issue 4.0, July 2000.
+            </reference_text>
+            <description>reference.MEX-MMT-RP-0221</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Neukum, G. and Jaumann, R., HRSC: the High Resolution Stereo Camera of Mars
+                   Express, ESA SP-1240, September 2004
+            </reference_text>
+            <description>reference.NEUKUM-JAUMANN2004</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Paetzold, M., F.M. Neubauer, L. Carone, A. Hagermann, C. Stanzel, B. Haeusler,
+                   S. Remus, J. Selle, D. Hagl, D.P. Hinson, R.A. Simpson, G.L. Tyler, S.W. Asmar,
+                   W.I. Axford, T. Hagfors, J.-P. Barriot, J.-C. Cerisier, T. Imamura, K.-I.
+                   Oyama, P. Janle, G. Kirchengast, and V. Dehant, MaRS: Mars Express Radio
+                   Science, in Mars Express: The Scientific Payload, European Space Agency
+                   SP-1240, 141-163, August 2004.
+            </reference_text>
+            <description>reference.PAETZOLDETAL2004</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Picardi, G. et. al., MARSIS: Mars Advanced Radar for Subsurface and Ionosphere
+                   Sounding, ESA-SP-1240, September 2004
+            </reference_text>
+            <description>reference.PICARDIETAL2004</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pullan, D., et. al., Beagle 2: the Exobiological Lander of Mars Express, ESA
+                   SP-1240, September 2004
+            </reference_text>
+            <description>reference.PULLANETAL2004</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>MARS EXPRESS</name>
+        <type>Mission</type>
+        <start_date>1997-10-31</start_date>
+        <stop_date nilReason="unknown" xsi:nil="true"></stop_date>
+
+        <description>
+ 
+  Mission Overview
+  ================
+    Mars Express was the first flexible mission of the revised long-term
+    ESA Science Programme Horizons 2000 and was launched to the planet
+    Mars from Baikonur (Kazakhstan) on June 2nd 2003.  A Soyuz-Fregat
+    launcher injected the Mars Express total mass of about 1200 kg into
+    Mars transfer orbit. Details about the mission launch sequence and
+    profile can be obtained from the Mission Plan [MEX-MMT-RP-0221] and
+    from the Consolidated Report on Mission Analysis (CREMA)
+    [MEX-ESC-RP-5500].
+ 
+    The mission consisted of (i) a 3-axis stabilized orbiter with a fixed
+    high-gain antenna and body-mounted instruments, and (ii) a lander
+    named BEAGLE-2, and was dedicated to the orbital and in-situ study of
+    the interior, subsurface, surface and atmosphere of the planet. After
+    ejection of a small lander on 18 December 2003 and Mars orbit
+    insertion (MOI) on 25 December 2003, the orbiter experiments began
+    the acquisition of scientific data from Mars and its environment in a
+    polar elliptical orbit.
+ 
+    The nominal mission lifetime for the orbiter was 687 days following
+    Mars orbit insertion, starting after a 5 months cruise. The nominal
+    science phase was extended (tbc) for another Martian year in order to
+    complement earlier observations and allow data relay communications
+    for various potential Mars landers up to 2008, provided that the
+    spacecraft resources permit it.
+ 
+    The Mars Express spacecraft represented the core of the mission,
+    being scientifically justified on its own by investigations such
+    as high- resolution imaging and mineralogical mapping of the
+    surface, radar sounding of the subsurface structure down to the
+    permafrost, precise determination of the atmospheric circulation
+    and composition, and study of the interaction of the atmosphere
+    with the interplanetary medium. The broad scientific objectives of
+    the orbiter payload are briefly listed thereafter and are given
+    more extensively in the experiment publications contained in ESA&apos;s
+    Special Publication Series. See [NEUKUM&amp;JAUMANN2004],
+    [BIBRINGETAL2004], [PICARDIETAL2004], [FORMISANOETAL2004],
+    [BERTAUXETAL2004], [PAETZOLDETAL2004] and [PULLANETAL2004].
+ 
+    The Mars Express lander Beagle-2 was ejected towards the Mars
+    surface on 19 December 2003, six days before the orbiters capture
+    manoeuvre. The probe mass was limited to about 70 kg by the
+    mission constraints, which led to a landed mass of 32 kg. The
+    complete experimental package was weighed in approximately at 9kg.
+    The landers highly integrated scientific payload was supposed to
+    focus on finding whether there is convincing evidence for past
+    life on Mars or assessing if the conditions were ever suitable.
+    Following safe landing on Mars, this lander mission would have
+    conducted dedicated studies of the geology, mineralogy,
+    geochemistry, meteorology and exobiology of the immediate landing
+    site located in Isidis Planitia (90.74 deg E, 11.6 deg N), as well
+    as studies of the chemistry of the Martian atmosphere. Surface
+    operations were planned to last about 180 sols or Martian days (
+    about 6 months on Earth), see [SIMSETAL1999]. As no communication
+    could be established to the BEAGLE-2 lander, it was considered
+    lost in February 2004 after an extensive &apos;search&apos;.
+ 
+    A nominal launch of Mars Express allowed the modify the orbit to a
+    &apos;G3-ubeq100&apos; orbit. The &apos;G3-ubeq100&apos; orbit is an elliptical orbit,
+    starting with the sub-spacecraft point at pericentre at the equator
+    and a sun elevation of 60 degrees.
+    At the beginning of the mission, the pericentre moves southward with
+    a shift of 0.54 degree per day. At the same time the pericentre steps
+    towards the terminator which will be reached after about 4 months,
+    giving the optical instruments optimal observing conditions during
+    this initial period. Throughout this initial phase lasting until mid-
+    May 2004, the downlink rate will decrease from 114 kbit/s to
+    38 kbit/s.
+    After an orbit change manoeuvre on 06 May 2004 the pericentre
+    latitude motion is increased to guarantee a 50/50 balance between
+    dayside and nightside operations. With this manoeuvre, the apocentre
+    altitude is lowered from 14887 km to 13448 km, the orbital period
+    lowered from ~7.6 hours to 6.645 hours, and the pericentre latitude
+    drift slightly increased to 0.64 degree per day.
+    After 150 days, at the beginning of June 2004, the South pole region
+    was reached with the pericentre already behind the terminator.
+    Following, the pericentre moves northward with the Sun elevation
+    increasing. Thus, the optical instruments covered the Northern Mars
+    hemisphere under good illumination conditions from mid-September 2004
+    to March 2005.
+    During the next mission phase, lasting until July 2005, the
+    pericentre was again in the dark. It covered the North polar region
+    and moves southward.
+    Finally, throughout the last 4 months of the nominal mission, the
+    pericentre was back to daylight and moves from the equator to the
+    South pole, and the downlink rate reached its highest rate of 228
+    kbit/s. The osculating orbit elements for the eq100 orbit are listed
+    below:
+ 
+    Epoch                                 2004:1:13 - 15:56:0.096
+    Pericentre (rel. sphere of 3397.2 km) 279.29 km
+    Apocentre (rel. sphere)               11634.48 km
+    Semimajor axis                        9354.09 km
+    Eccentricity                          0.60696
+    Inclination                           86.583
+    Right ascension of ascending node     228.774
+    Argument of pericentre                357.981
+    True anomaly                          -0.001
+ 
+ 
+  Mission Phases
+  ==============
+    The mission phases are defined as:
+ 
+    (i) Pre-launch, Launch and Early Operations activities, including
+       (1) science observation planning;
+       (2) payload assembly, integration and testing;
+       (3) payload data processing software design, development and
+           testing;
+       (4) payload calibration;
+       (5) data archive definition and planning;
+       (6) launch campaign.
+ 
+    (ii) Near-Earth verification (EV) phase, including
+       (1) commissioning of the orbiter spacecraft;
+       (2) verification of the payload status;
+       (3) early commissioning of payload.
+ 
+    (iii) Interplanetary cruise (IC) phase
+       (1) payload checkouts
+       (2) trajectory corrections
+ 
+    (iv) Mars arrival and orbit insertion (MOI)
+       (1) Mars arrival preparation;
+       (2) lander ejection;
+       (3) orbit insertion;
+       (4) operational orbit reached and declared;
+       (5) no payload activities.
+ 
+    (v) Mars commissioning phase
+       (1) final instrument  commissioning,
+       (2) first science results,
+       (3) change of orbital plane.
+ 
+    (vi) Routine phase;
+       Opportunities for dawn/dusk observations, mostly spectroscopy and
+       photometry. This phase continued into a low data rate phase (night
+       time; favorable for radar and spectrometers).
+       Then daylight time, and went into a higher data rate period
+       (medium illumination, zenith, then decreasing illumination
+       conditions).
+       Observational conditions were most favorable for the optical
+       imaging instruments at the end of the routine phase, when both
+       data downlink rate and Sun elevation are high.
+ 
+    (vii) MARSIS Deployment
+       The dates of the MARSIS antenna deployment is not known as of
+       writing this catalogue file.
+ 
+    (viii) Extended operations phase
+       A mission extension will be proposed in early 2005 to the Science
+       Programme Committee (SPC).
+ 
+    (ix) Post-mission phase (final data archival).
+ 
+ 
+  Science Subphases
+  =================
+    For the purpose of structuring further the payload operations
+    planning, the mission phases are further divided into science
+    subphases. The science subphases are defined according to operational
+    restrictions, the main operational restrictions being the downlink
+    rate and the Sun elevation.
+ 
+    The Mars Commissioning Phase and the Mars Routine Phase are therefore
+    divided into a number of science subphases using various combinations
+    of Sun elevations and available downlink bit rates.
+ 
+    The discrete downlink rates available throughout the nominal mission
+    are:
+     -  28 kbits/seconds
+     -  38 kbits/seconds
+     -  45 kbits/seconds
+     -  57 kbits/seconds
+     -  76 kbits/seconds
+     -  91 kbits/seconds
+     - 114 kbits/seconds
+     - 152 kbits/seconds
+     - 182 kbits/seconds
+     - 228 kbits/seconds
+ 
+    The adopted Sun elevation coding convention is as follows:
+     - HSE for High Sun Elevation (&gt; 60 degrees)
+     - MSE for Medium Sun Elevation (between 20 and 60 degrees)
+     - LSE for Low Sun Elevation (between -15 and 20 degrees)
+     - NSE for Negative Sun Elevation (&lt; -15 degrees)
+ 
+    The science subphase naming convention is as follows:
+      - Science Phase
+      - Sun Elevation Code
+      - Downlink Rate
+      - Science Subphase Repetition Number
+ 
+    The following tables gives the available Science Subphases:
+ 
+      NAME       START        END          ORBITS     BIT  SUN
+                                                     RATE  ELE
+    ----------------------------------------------------------
+    MC Phase 0  2003-12-30 - 2004-01-13    1  -   16
+    MC Phase 1  2004-01-13 - 2004-01-28   17  -   58  114   59
+    MC Phase 2  2004-01-28 - 2004-02-12   59  -  105   91   69
+    MC Phase 3  2004-02-12 - 2004-03-15  106  -  208   76   71
+    MC Phase 4  2004-03-15 - 2004-04-06  209  -  278   57   51
+    MC Phase 5  2004-04-06 - 2004-04-20  279  -  320   45   33
+    MC Phase 6  2004-04-20 - 2004-06-04  321  -  475   38   22
+ 
+    MR Phase 1  2004-06-05 - 2004-08-16  476  -  733   28  -13
+    MR Phase 2  2004-08-16 - 2004-10-16  734  -  951   28  -26
+    MR Phase 3  2004-10-16 - 2005-01-07  952  - 1250   28   16
+    MR Phase 4  2004-01-08 - 2005-03-05 1251  - 1454   45   63
+    MR Phase 5  2004-03-05 - 2005-03-24 1455  - 1522   76   16
+    MR Phase 6  2004-03-25 - 2005-07-15 1523  - 1915   91    0
+ 
+    The data rate is given in kbit per seconds and represents
+    the minimal data rate during the subphase.
+    The sun elevation is given in degrees and represents the
+    rate at the beginning of the subphase.
+ 
+    Detailed information on the science subphases can be found in
+    [MEX-EST-PL-13128].
+        </description>
+    </Investigation>
+</Product_Context>

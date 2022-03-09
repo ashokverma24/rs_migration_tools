@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:esa:psa:context:instrument:rl.romap</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>ROSETTA Lander Magnetometer and Plasma Monitor for RL</title>
+    <information_model_version>1.16.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2021-06-15</modification_date>
+        <version_id>1.0</version_id>
+        <description>Migrated from PDS3 catalog file.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.rl</lid_reference>
+      <reference_type>instrument_to_instrument_host</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <doi>10.1007/s11214-006-9033-x</doi>
+      <reference_text>Auster U. et al., ROMAP: Rosetta Magnetometer and        
+        Plasma Monitor Space Sci. Rev., 128(1-4), 221-240, Feb. 2007.</reference_text>
+      <description>Reference to the instrument paper.</description>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>ROSETTA Lander Magnetometer and Plasma Monitor</name>
+    <Type_List_Area>
+      <ctli:Type_List>
+        <ctli:type>Magnetometer</ctli:type>
+      </ctli:Type_List>
+    </Type_List_Area>
+    <naif_instrument_id>not applicable</naif_instrument_id>
+    <serial_number>not applicable</serial_number>
+    <description>
+
+        Instrument Overview
+        ===================
+        The ROMAP sensors (fluxgate magnetometer, electrostatic 
+        analyser and Faraday cup) measure the magnetic field from
+        0 to 32Hz, ions up to 8.0 keV and electrons up to 4.2 keV. 
+        High integration level of sensors and electronics is the basic
+        for a combined field/plasma measurement instrument with less
+        than 1 Watt power consumption and 1 kg mass. 
+        Additional two pressure sensors are included in the ROMAP 
+        sensor arrangement.
+        The sensors are moved from COSAC to ROMAP to optimise long
+        term operation of pressure sensors. Data of both pressure
+        sensors are transmitted within the housekeeping frame and
+        are handled / archived as housekeeping values.
+  
+        Scientific Objectives
+        =====================
+        Main scientific goals of ROMAP are
+        (1) long term measurements on the surface to study the
+            cometary activity as function of the distance from the Sun
+        and
+        (2) magnetic measurements during the descent phase of the
+            Lander to investigate the structure of the remnant
+            magnetization of the nucleus.
+  
+        Calibration
+        ===========
+        MAG : Data are precalibrated by nominal scaling. Offsets can 
+              not be corrected automatically. This will be done by
+              sequence specific cal files (L3). 
+              Finally corrected data (includes the removal of
+              spacecraft disturbances) are only available for selected
+              data of scientific interest (L5).
+        SPM : Instrument calibration will be done preliminary (L3) and
+              finally for derived data products (L5).
+  
+  
+        Operational Considerations
+        ==========================
+        Main measurement sequences are:
+        - During Flybys
+        - During Descent
+        - On cometary Surface
+       Common operation with Instruments generating magnetic
+       interferences shall be avoided.
+       Common operation with RPC-MAG onboard the orbiter is highly
+       desirable
+  
+        Electronics
+        ===========
+       The ROMAP electronics consists of two boards placed inside the
+       common electronics box. The central part of the near sensor
+       electronics on the first board is a FPGA which controls AD and
+       DA-converters. The 16-bit AD converters are digitising science
+       and housekeeping data from all three sensors. Typical analogue
+       parts of fluxgate magnetometers like filters or phase-sensitive
+       integrators are substituted by fast digitalization of the sensor
+       AC-signal and the following data processing in FPGA's (which
+       overtakes the functions of the former analogue parts). In this
+       way mass is saved without any loss of accuracy. The resolution
+       is still restricted by sensor noise (less than 5pT/sqrt(Hz)
+       at 1Hz), not by electronics. Compensation fields for the magnetometer
+       and high voltage steps for electrostatic analyser and Faraday cup
+       are controlled via DA-converters (dashed lines). The near sensor
+       electronics is developed by Magson GmbH Berlin The high voltage
+       generator (developed by the KFKI) is in a separate shielded box
+       on the front panel of the common electronics box. The controller
+       is located on the second ROMAP board.
+       It controls MAG and SPM, stores their data output and implements
+       the interface to the Lander Command and Data Management System 
+       (CDMS). It triggers the measurement cycle of the magnetometer,
+       implements the digital magnetometer algorithm, controls the 
+       magnetometer feedback and generates data frames. For the SPM
+       sensors the controller has implemented the counting logic for
+       electrons and ions, samples Faraday cup data, generates SPM data
+       frames, controls the high voltage parameters (energy,
+       elevation), controls the channeltron HV-supply and computes the
+       plasma parameters. In the parameter mode only the sums of the
+       rows and columns of the sampled ion and ion-current arrays are
+       transmitted.
+       The controller is based on a RTX2010. Address decoder, reset
+       logic, clock generators, control signals generator, watchdog
+       logic and CDMS interface are integrated within a FPGA. Hard- and
+       software are developed by the IWF Graz.
+  
+        Sensor / Sensor Location
+        ========================
+       The magnetometer sensor consists of two ringcores (crossed in to
+       each other) as well as pick-up coils and Helmholtz coils for
+       each sensor axis. The coil system design without mechanical
+       support allows the compensation of the external field on the
+       ringcore position with high homogeneity and low weight (the
+       overall sensor weight is 30g). Dynamic feedback fields as well
+       as offset fields up to 2000nT can be generated in order to
+       compensate Lander and/or Orbiter DC stray fields. The main part
+       of the SPM-sensor is a hemispherical electrostatic analyzer with
+       two channeltrons (CEM's) for ions measurement and one for
+       electrons measurement. The entry of the ion channels is equipped
+       with deflection plates to realize the spatial resolution. 
+       Despite the small size of the sensor, the sensitivity and
+       resolution of the instrument are high and its field of view wide
+       (appr. 100 degree).
+       The E/q-range extends from 0 to 8 kV. Using CEMs in counting
+       mode the electrostatic analyzer measures electron and ion
+       distribution in a wide energy range. Hemisherical deflection
+       plates analyze the energy in 32 or 64 steps. All major plasma
+       parameters as bulk velocity, density and isotropic temperature
+       of protons and electrons can be derived.
+       A retarding-grid Faraday cup sensor is implemented to measure
+       currents due to fluxes of low energy charged particles on a
+       collector plate. The Faraday cup measures the 'reduced' velocity
+       distribution of the plasma due to its inherent integration over
+       velocities contained in a plane of differential thickness
+       perpendicular to the axis of the sensor. The combined
+       magnetometer / SPM sensor is mounted on a 60 cm boom which is
+       fixed with a hinge on the upper edge of the Lander structure
+       and with a launch lock on the Lander balcony. After opening the
+       launch lock, the boom will be deployed by two springs inside
+       the hinge. 
+       Two pressure sensors are selected to cover the whole pressure
+       range from 10^-8 mbar to 10 mbar. For the range from 10^-8 mbar
+       to 10^-3 mbar an ionising system (Penning) is deployed while for
+       the range from 10^-3 mbar to 10 mbar a heat conduction sensor
+       (Minipirani) is available.
+  
+  
+        Operational Modes
+        =================
+        ROMAP can be basically operated in 3 modes:
+        - Slow Mode
+        - Fast Mode
+        - Surface Mode
+  
+        Subsystems
+        ==========
+        The sub-systems are described in Auster et al, 2005.
+  
+  
+        Measured Parameters
+        ===================
+        Magnetic field; resolution 10 pT
+        Electrons: 0.35 ... 4200 eV
+        Ions: 40 ... 8000 eV
+        Pressure; 10^-8 mbar to 10 mbar.
+  
+      </description>
+  </Instrument>
+</Product_Context>

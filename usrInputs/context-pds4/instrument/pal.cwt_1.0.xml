@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pal.cwt</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Carousel Wind Tunnel</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-12-18</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial version under new LID naming convention.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:laboratory.pal</lid_reference>
+            <reference_type>instrument_to_facility</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+        
+    <Instrument>
+        <name>Carousel Wind Tunnel</name>
+        <type>Atmospheric Sciences</type>
+        <subtype>Wind Tunnel</subtype>
+        <description>
+One of several wind tunnels operated by Arizona State University at the Planetary Aeolian Laboratory at NASA Ames Research 
+Laboratory, Moffett Field, CA, Building N242. This wind tunnel is no longer in operation.
+
+A small portable wind tunnel used for low-gravity and reduced-pressure tests. It consists of two concentric cylinders
+constructed of clear Lexan plastic, each 30 cm deep. The outer cylinder is 60 cm in diameter and the inner cylinder is 40 cm
+in diameter; the space between the cylinders is the test section. The inner cylinder is spun at speeds of up to 3000 rpm by 
+a variable-speed motor driving a belt-and-pulley arrangement, which causes an airflow between the cylinders. Instrumentation
+consists of a tachometer, which measures the inner-cylinder rotational speed, and an accelerometer which measures the gravity.
+The tunnel has been used onboard the NASA KC-135 0g test aircraft to obtain particle thresholds at 0-1.8 g. This information
+provided verification of the equations used to correct for the difference between thresholds obtained at Earth gravity and
+those which would be obtained at martian or other gravity levels. The CWT also provided a convenient means of measuring
+the interparticle force, which becomes the predominant force resisting entrainment at 0g. This tunnel has also been used in 
+the vertical gun vacuum chamber (VGCG) to obtain particle thresholds as low as 15 mbar. This capability is especially useful
+when only a small amount of material is available for testing, because the particles are confined in the closed system and 
+not dispersed outside the tunnel, as is the case with MARSWIT. Threshold information is obtained primarily visually, with 
+videotaping of some of the runs for later analysis.
+        </description>
+    </Instrument>
+</Product_Context>

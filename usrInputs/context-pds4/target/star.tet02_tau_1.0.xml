@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.tet02_tau</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Chamukuy</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Theta2 Tauri</alternate_title></Alias>
+      <Alias><alternate_title>Theta Tauri B</alternate_title></Alias>
+      <Alias><alternate_title>78 Tauri</alternate_title></Alias>
+      <Alias><alternate_title>78 Tau</alternate_title></Alias>
+      <Alias><alternate_title>tet02 Tau</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>78 Tau</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>tet02 Tau</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MKT 13</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+15 370</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+15 632</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BDS 2212 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 407</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Cl* Melotte 25 S 35</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Cl* Melotte 25 VA 491</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Cl Melotte 25 72</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Cl Melotte 25 721</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1053</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 0425.8+1546</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J0428+15.8</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 5436</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 2609</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00028319</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +5.20250072</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 01265-01172</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 28319</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 20894</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 20894</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 1412</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 04257+1545</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 4866</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J04283971+1552151</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 933</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 989</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 989.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 5881</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 119937</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Renson 7240</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 3873</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 93957</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC7 180</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC9 248</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 6924</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 3206</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 1265-1172-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 4306</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 10149</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 41278</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC4 530-008822</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 520250072</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J04287+1552Aa,Ab</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J04287+1552A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 4012</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YPAC 349</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 15 1190</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 3312744219987686144</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Chamukuy</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 04 hours 28 minutes 39.7445471109 seconds
+Declination, ICRS coord, ep=J2000: +15 degrees 52 minutes 15.122606898 seconds
+    </description>
+  </Target>
+</Product_Context>

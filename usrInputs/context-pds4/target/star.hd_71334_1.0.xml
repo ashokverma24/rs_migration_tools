@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.hd_71334</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>HD 71334</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>LTT 3128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-29 6145</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-29 2596</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 11521</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 59658</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00071334</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 9263</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 306.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 71334</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 41317</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 41317</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J08254952-2955505</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 19521</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2009</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2009.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 254477</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 175807</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 16017</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SPOCS 384</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 6581-745-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 8059</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 14325</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100071334</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 7996</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WISEA J082549.61-295553.0</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 119 5107</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 5644325284591298688</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR1 5644328235222649344</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>HD 71334</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 08 hours 25 minutes 49.5157058164 seconds
+Declination, ICRS coord, ep=J2000: -29 degrees 55 minutes 50.130492534 seconds
+    </description>
+  </Target>
+</Product_Context>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:iras.fpa</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>FOCAL PLANE ARRAY for IRAS</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:fpa.iras</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.iras</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Beichman, C.A., G. Neugebauer, H.J. Habing, P.E. Clegg, and T.J. Chester,
+                   1988, Infrared Astronomical Satellite Catalog and Atlases, Volume 1,
+                   Explanatory Supplement, NASA RP-1190.
+            </reference_text>
+            <description>reference.BEICHMANETAL1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Boulanger, F., Gain and offset corrections for ZOHF Version 3, IRAS
+                   Circular, December 28, 1988.
+            </reference_text>
+            <description>reference.BOULANGER1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Moshir, M., Et al., Explanatory Supplement to the IRAS Faint Source
+                   Survey, (Pasadena:JPL), 1989.
+            </reference_text>
+            <description>reference.MOSHIRETAL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Oken, C.A., Gautier, T.N., and Wheelock, S.L., Version 3 of the Zodiacal
+                   History File, IRAS Circular, December 28, 1988.
+            </reference_text>
+            <description>reference.OKENETAL1988</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>FOCAL PLANE ARRAY</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+ 
+    The IRAS Focal Plane Array (FPA) was located at the focal plane of the
+    IRAS Ritchey-Chretien telescope. The mirror surfaces were beryllium,
+    and the baffles were aluminum coated with Martin Optical black. The
+    telescope had an entrance pupil diameter of 57 cm, and a central
+    obscuration diameter of 24 cm, for an effective collecting area of
+    2019 cm**2. The measured system focal length was 545 cm and the system
+    F/ number was 9.56. The measured plate scale at the focal plane was
+    1.585 mm/arcminute. Imaging was diffraction limited at 25, 60 and 100
+    microns, but not at 12 microns. The telescope was cooled by contact
+    with the superfluid helium tank to temperatures ranging from 2 to 5 K.
+    The operating temperature of the FPA was 2.6 K.
+ 
+    The focal plane assembly contained the survey detectors, visible
+    star sensors for position reconstruction, a Low Resolution
+    Spectrometer (LRS) and a Chopped Photometric Channel (CPC).
+ 
+    The LRS was a slitless spectrometer sensitive from 7.5 to 23
+    microns with a resolving power of about 20.
+ 
+    The CPC operated during some pointed observations. It mapped
+    sources simultaneously at 50 and 100 microns, and used a cold
+    internal chopper for flux reference. However, the focal plane
+    temperature was lower than expected, which resulted in CPC detector
+    anomalies that rendered CPC data very difficult to use.
+ 
+  The FPA survey array consisted of 62 infrared detectors divided into
+  eight parallel modules, two for each color band. Each module contained
+  either seven or eight detectors. The layout of the detectors is given in
+  the IRAS Explanatory Supplement, Beichman et al. 1988 [BEICHMANETAL1988].
+  The detectors were rectangular with their narrow dimension arrayed
+  parallel to the scan path of infrared sources.  The design was such
+  that the image of a real source would cross a detector in one module
+  and subsequently cross another detector of the same band in a second
+  module, providing a &apos;seconds-confirmation&apos;.  This allowed for
+  discrimination between real source and spurious sources, such as
+  cosmic rays. Most of the detectors in each band had standard size
+  apertures (see table below), with one or two being half-sized.
+ 
+    The infrared detectors were sampled at 16, 16, 8, and 4 Hz at 12, 25,
+    60, and 100 microns, respectively. The response functions of the four
+    spectral bands used in the focal plane array are given in the IRAS
+    Spectral Response dataset distributed through PDS and are listed in
+    the IRAS Explanatory Supplement.
+ 
+    The detectors exhibited a photon-induced responsivity enhancement
+    (hysteresis), evidenced as they crossed bright sources. This was
+    particularly noted when comparing ascending and descending scans of
+    the galactic plane at 100 microns.
+ 
+    Detector responsivity was also a function of frequency (dwell time).
+    The ratio of the responsivity at nominal survey scan speed of point
+    sources to that of a very extended background was adopted as
+    0.78, 0.82, 0.92 and 1.0 at 12, 25, 60, and 100 microns,
+    respectively.
+ 
+    To check the photometric calibration, the internal reference sources
+    were flashed at the beginning and end of every scan, including scans
+    broken by the South Atlantic Anomaly (SAA). The internal reference
+    sources were themselves regularly checked against an astronomical
+    reference source. For diffuse emission, the secondary calibration
+    source was an area of the sky with a smoothly varying sky brightness,
+    free from point sources and near the north ecliptic pole and NGC6543.
+    The area was called the total flux photometric reference or TFPR.
+    The calibration was boot-strapped from a model of the annual brightness
+    variation of the TFPR and extended to the rest of the sky. This
+    variation was caused by the changing viewing geometry through the
+    zodiacal cloud over the course of the mission.
+ 
+    The brightness model for the TFPR has varied with time, affecting the
+    resultant calibration and data products generated using that
+    calibration. The Medium Resolution Zodiacal History Files make use of
+    an earlier TFPR brightness model that assumed the orbit of the Earth
+    to be circular. This is referred to as Version 2. The Low Resolution
+    Zodiacal History File uses an improved model, taking into account the
+    eccentricity of the Earth&apos;s orbit and making other corrections, such
+    as more accurate field of view measurements for the detectors. These
+    are explained more fully in Oken 1988 [OKENETAL1988] and Boulanger
+    1988 [BOULANGER1988].
+ 
+    Output from FPA detectors is typically reported in units of flux
+    density (Jansky, where 1 Jy = 1.e-26 Watt/(meter**2)Hz), calculated
+    from in-band flux (Watts/meter**2) assuming the external source
+    function to be proportional to 1/frequency. Jy (BD) is converted to
+    Watt/(meter**2) (IB) by the relation BD*K=IB, where K is given in
+    Moshir et al. 1989 [MOSHIRETAL1989] and is listed below:
+ 
+              Wavelength         K
+                  12          1.348e-13
+                  25          5.155e-14
+                  60          2.577e-14
+                 100          1.000e-14
+ 
+ 
+    Instrument Summary
+    ------------------
+ 
+    In the table below, the center wavelengths are in microns. For the
+    survey array, the FOV is determined by the rather large detector
+    mask size and is roughly the native resolution of the data in
+    that band. The resolution of the IRAS image data is not governed by
+    the resolution of the telescope, which was diffraction limited
+    longwards of 12 microns, but by the size of the detectors.
+ 
+    ------------------------------------------------------------------
+ 
+                              SURVEY ARRAY
+ 
+      Center  # working    FOV     Bandpass  Detector Average 10-sigma
+    Wavelength detectors (arcmin)  (micron)  Material Sensitivity (Jy)
+ 
+       12         16    .75 x 4.5  8.5- 15    Si:As        0.7
+       25         13    .75 x 4.6  19 - 30    Si:Sb        0.65
+       60         15    1.5 x 4.7  40 - 80    Ge:Ga        0.85
+      100         13    3.0 x 5.0  83 -120    Ge:Ga        3.0
+ 
+    ------------------------------------------------------------------
+ 
+                                 CPC
+ 
+      Center  # working    FOV     Bandpass  Detector Average 10-sigma
+    Wavelength detectors (arcmin)  (micron)  Material Sensitivity (Jy)
+ 
+       50         1        1.2     41 - 63    Ge:Ga        7.0
+      100         1        1.2     84 -114    Ge:Ga        7.0
+ 
+    ------------------------------------------------------------------
+ 
+                                 LRS
+ 
+     Slit width    Wavelength Range    Detector   Resolving
+      (arcmin)         (micron)        Material     Power
+ 
+        5.0           8  - 13           Si:Ga      14-35
+        7.5           11 - 23           Si:As      14-35
+ 
+    ------------------------------------------------------------------
+ 
+    For more information see Beichman et al. 1988 [BEICHMANETAL1988].
+
+        </description>
+    </Instrument>
+</Product_Context>

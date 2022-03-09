@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds ="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=
+    "http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:canberra.dss46_26m</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DSS-46 Radio Telescope</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-07-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Original context file for the DSS-46 antenna near Canberra, Australia.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.810-005</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+                This reference is to a PDS collection containing several versions of the NASA Deep 
+                Space Network (DSN) Telecommunications Link Design Handbook (Document 810-005).
+                The Handbook is maintained in a modular format to provide interface 
+                design data to flight projects using the DSN.  Modules are updated as appropriate.
+                Each member product in the PDS collection is the set of modules as they applied
+                at that point in time.  Modules include:
+                001 Handbook Introduction
+                101 70-m Subnet Telecommunications Interfaces
+                102 26-m Subnet Telecommunications Interfaces (omitted in 2009 and later versions)
+                103 34-m HEF Subnet Telecommunications Interfaces
+                104 34-m BWG Antennas Telecommunications Interfaces
+                105 Atmospheric and Environmental Effects
+                106 Solar Corona and Solar Wind Effects
+                107 Radio Source Catalog
+                201 Frequency and Channel Assignments
+                202 34-m and 70-m Doppler
+                203 Sequential Ranging
+                205 Command Service
+                206 Telemetry General Information
+                207 34-m and 70-m Telemetry Reception
+                208 Telemetry Data Decoding
+                209 Open-Loop Radio Science
+                210 Delta Differrential One-way Ranging
+                211 Wideband Very Long Baseline Interferometry
+                214 Pseudonoise and Regenerative Ranging
+                301 Coverage and Geometry
+                302 Antenna Positioning
+                303 Media Calibration
+                304 Frequency and Timing
+                305 Test Support
+                901 Handbook Glossary
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.dsn</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>
+                This context product provides more information on the NASA Deep Space Network as a whole.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.canberra</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>
+                This context product provides more information on the Canberra Deep Space Communication Complex.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:dsn.rss</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+            <comment>
+                This context product provides more information on the commanding, radio tracking, and
+                radio science instrumentation at the telescope. 
+            </comment>
+        </Internal_Reference>
+
+        <External_Reference>
+            <reference_text>https://www.cdscc.nasa.gov/Pages/welcome.html</reference_text>
+            <description>
+                An overview of the Canberra Deep Space Communications Complex with photographs.
+                Pull down the Antennas menu and select "DSS 46" for this antenna.
+            </description>
+        </External_Reference>
+        
+    </Reference_List>
+    
+    <Telescope>
+        <aperture unit='m'>26</aperture>
+        <telescope_longitude unit='deg'>148.983079</telescope_longitude>
+        <telescope_latitude unit='deg'>-35.405015</telescope_latitude>
+        <telescope_altitude unit="m">677.510</telescope_altitude>
+        <coordinate_source>
+            Geodetic coordinates derived using an ellipsoid with semi-major axis a = 6378136.3 m 
+            and flattening f = 298.257 (see DSN document 810-005, Module 301 issued 2001-01-15, 
+            Table 5 and associated text). These coordinates are valid for the years 1983-2009.
+        </coordinate_source>
+        <description>
+            DSS-46 was used primarily for communication with Earth orbiting spacecraft and for
+            initial acquisition of any spacecraft immediately after launch. It partnered with
+            DSS-16 (at Goldstone, CA) and DSS-66 (near Madrid, Spain) in a 26-m subnet for
+            this purpose.  DSS-46 could transmit 50-2000 W at 2.1 GHz (S-band).  It could receive
+            right- and left-circularly polarized signals simultaneously at both 2.3 GHz and 8.4 GHz; 
+            its receiver could combine the signals to obtain a rotatable linear polization. 
+            
+            The antenna was constructed in 1965 at the Honeysuckle Creek Tracking Station in
+            Australia to support the Apollo missions. On 21 July 1969 (Australian time) the 
+            antenna received and relayed to the world the first television images of Neil 
+            Armstrong's historic first steps on the Moon. The Honeysuckle Creek station was 
+            converted for use in NASA's Deep Space Network after the end of the Apollo and 
+            Skylab programs, with the antenna given the new designation DSS-44. The antenna 
+            supported many missions, including those to Venus, Mars, Jupiter, Saturn and the Sun,
+            until the closure of the Honeysuckle Creek Tracking Station in December 1981.  In 
+            1983 the antenna was moved to its current location at Tidbinbilla, re-designated 
+            DSS-46 and modified to expand its capabilities for early launch acquisition (tracking
+            a spacecraft after it has launched from Earth).  The antenna continued to support 
+            NASA and international missions studying the Sun, Earth, Moon and the planets in 
+            our solar system until its retirement from deep space service in December 2009.
+            
+            The Canberra Deep Space Communications Complex (CDSCC) is managed by the Commonwealth 
+            Scientific and Industrial Research Organisation (CSIRO), Australia's national science 
+            research agency. The CDSCC is at Tidbinbilla, about 35 km southwest of Canberra, ACT.
+        </description>
+    </Telescope>
+    
+</Product_Context>

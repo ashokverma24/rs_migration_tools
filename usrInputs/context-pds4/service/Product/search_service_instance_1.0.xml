@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:search_service_instance</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Search Service (Online Instances)</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-07-15</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>Search Service (Online Instances)</name>
+        <abstract_desc>The Search Service provides functionality querying PDS holdings. This component acts as the interface to the Registry Service for the end user. The service itself consists of indexed metadata utilizing common facets to facilitate search across the Nodes along with Node-specific facets utilized by Node-specific search applications.</abstract_desc>
+        <url>https://pds.nasa.gov/services/search/search/</url>
+        <url>https://pds.nasa.gov/services/search/pdap/</url>
+        <service_type>Service</service_type>
+        <interface_type>Service</interface_type>
+        <category>Search</category>
+        <system_requirements_note>Online access via common web browsers (e.g., Safari, Firefox, etc.), command-line utilities such as cURL or other applications supporting HTTP-based interfaces.</system_requirements_note>
+        <description>The Search Service is a core component of the PDS4 data system. The service provides a REST-based interface for interacting with the service and querying PDS holdings. The service provides two separate protocols for accessing the service, the PDS Search Protocol and the PDAP Search Protocol.</description>
+    </Service>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context_pds3:node:node.en</lid_reference>
+            <reference_type>has_node</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <!--
+    Submitter Information
+    Submitter Name:        Sean Hardman
+    Submitter Institution: PDS Engineering Node (JPL)
+    Submitter Email:       Sean.Hardman@jpl.nasa.gov
+    -->
+</Product_Service>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:lecp.vg1</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>LOW ENERGY CHARGED PARTICLE for VG1</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vg1::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Carbary, J.F., and S.M. Krimigis, Encounters with Jupiter: The Low Energy
+                   Charged Particle Results of Voyager, APL Tech. Digest, Vol. 1, p. 60, 1980.
+            </reference_text>
+            <description>reference.CARBARY-KRIMIGIS1980</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Khurana, K.K., M.G. Kivelson, T.P. Armstrong, and R.J. Walker, Voids in
+                   Jovian Magnetosphere Revisited: Evidence of Spacecraft Charging, Geophys.
+                   Res. Lett., Vol. 92, p. 13399, 1986.
+            </reference_text>
+            <description>reference.KHURANAETAL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krimigis, S.M., A Post-Voyager View of Jupiter&apos;s Magnetosphere, Endeavour,
+                   Vol., 5, p. 50, 1981.
+            </reference_text>
+            <description>reference.KRIMIGIS1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krimigis, S.M., Voyager Encounters with Jupiter&apos;s Magnetosphere: Results
+                   of the Low Energy Charged Particle (LECP) Experiment, Compendium in
+                   Astronomy, Mariolopoulos, et. al. (Eds.), Reidel Publishers, Holland, p.
+                   191, 1982.
+            </reference_text>
+            <description>reference.KRIMIGIS1982A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krimigis, S.M., T.P. Armstrong, W.L. Axford, C.O. Bostrom, C.Y. Fan, G.
+                   Gloeckler, and L.J. Lanzerotti, The Low Energy Charged Particle (LECP)
+                   Experiment on the Voyager Spacecraft, Space Sci. Rev., Vol. 21, p. 329,
+                   1977.
+            </reference_text>
+            <description>reference.KRIMIGISETAL1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krimigis, S.M., J.F. Carbary, E.P. Keath, C.O. Bostrom, W.I. Axford, G.
+                   Gloeckler, L.J. Lanzerotti, and T.P. Armstrong, Characteristics of the hot
+                   plasma in the Jovian magnetosphere: Results from the Voyager spacecraft,
+                   J. Geophys. Res., Vol. 86, p. 8227, 1981.
+            </reference_text>
+            <description>reference.KRIMIGISETAL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mauk, B.H., E.P. Keath, and S.M. Krimigis, The Voyager Program at APL, APL
+                   Tech. Dig., Vol. 11, p. 63, 1990.
+            </reference_text>
+            <description>reference.MAUKETAL1990</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mauk, B.H., E.P. Keath, M. Kane, S.M. Krimigis, A.F. Cheng, M.H. Acuna,
+                   T.P. Armstrong, and N.F. Ness, The Magnetosphere of Neptune: Hot Plasmas
+                   and Energetic Particles, J. Geophys. Res., Vol. 96, p. 19061, 1991.
+            </reference_text>
+            <description>reference.MAUKETAL1991</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>LOW ENERGY CHARGED PARTICLE</name>
+        <type>Particle Detector</type> <!--RChen/EN was Energetic Particle Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  INSTRUMENT: LOW ENERGY CHARGED PARTICLE
+  SPACECRAFT: VOYAGER 1
+ 
+  Instrument Information
+  ======================
+    Instrument Id                  : LECP
+    Instrument Host Id             : VG1
+    PI Pds User Id                 : KRIMIGIS
+    PI Full Name                   : STAMITIOS M. KRIMIGIS
+    Instrument Name                : LOW ENERGY CHARGED PARTICLE
+    Instrument Type                : CHARGED PARTICLE ANALYZER
+    Build Date                     : 1977-09-05
+    Instrument Mass                : 6.652000
+    Instrument Length              : UNK
+    Instrument Width               : UNK
+    Instrument Height              : UNK
+    Instrument Serial Number       : 03
+    Instrument Manufacturer Name   : JOHNS HOPKINS UNIVERSITY
+                                     APPLIED PHYSICS LABORATORY
+ 
+ 
+  Instrument Overview
+  ===================
+    The low energy charged particle experiment employs a set of
+    many solid state detectors arranged to characterize, with
+    various levels of energy, directional, and compositional
+    discriminations, the in-situ charged particle environment of
+    the spacecraft, both within interplanetary and planetary
+    magnetospheric regions.  Electrons can be characterized, with
+    various electron rate energy channels, between 26 keV and
+    greater than 10 meV (mode dependent).  Ions, without mass
+    species discriminations, can be characterized with various ion
+    rate energy channels between 30 keV and greater than 152 keV
+    (mode dependent).  Rate data is telemetered as simple counts
+    per accumulation time period.  The different channels
+    correspond to different onboard energy discrimination windows
+    (for ions the discrimination values are mass species dependent,
+    leading to some ambiguity).  Above about 200 keV/nucleon, the
+    ions can be discriminated as to their mass species composition
+    by the use of multiple parameter measurements.  These
+    measurements consist of the energies that individual particles
+    deposit in more than one detector.  This information is
+    telemetered both as ion rate data, obtained by on-board species
+    identification circuitry (with various channels representing
+    various energy-species combinations), and as particle multiple
+    parameters data, consisting of pulse-height-analysis values
+    from each of the affected particle detectors for each analyzed
+    particle.  (A maximum of about 2 to 5 particles per second can
+    be analyzed in this fashion due to telemetry limitations.  A
+    priority scheme avoids saturation by one species group.  there
+    are three such groups defined: atomic number z = 1,2 each group
+    in a rotating fashion.) Angular information is obtained through
+    mechanical rotation of the detectors.  The main detectors look
+    within a single scan plane that is rotated 360 degrees,
+    stopping at 8 different look sectors (one of the sectors is
+    blocked to obtain a background measurement: sector 8).  The
+    lower energy detectors have full width viewcones of about 45
+    degrees.  The scan plane is oriented such that a line that
+    passes exactly between sectors 8 and 1, and also exactly
+    between sectors 4 and 5, is exactly parallel to the roll axis
+    of the spacecraft (which nominally points at earth).  When the
+    roll orientation of the spacecraft is such that the star sensor
+    is locked on Canopus, the scan plane is tilted about 30 degrees
+    out of the ecliptic plane, with sector 3 tilting towards north
+    ecliptic (and also in the direction that is retrograde with
+    respect to the planetary orbits).  Sectors 1 and 8 point in the
+    general direction of earth.  The scan rate is variable between
+    48 seconds to 48 minutes per 360 degree scan.  There are some
+    electron detectors (whose properties are not as well
+    established as the others) that view out of the scan plane
+    described here (see [KRIMIGISETAL1977]).  Some of the data is
+    subject to substantial contamination depending on the region
+    under consideration.  Before the data from this instrument can
+    be used, it is vital that the contamination descriptions be
+    examined (&apos;CONTAMINATION_ DESC&apos;) for each contamination type
+    (&apos;CONTAMINATION_ID&apos;) and that the contaminations levels be
+    determined (&apos;DATA_QUALITY_ID&apos; AND &apos;DATA_QUALITY_DESC&apos;).  While
+    sector 8 is the background sector for most (and generally the
+    most used) data channels, sector 4 is the background sector for
+    some channels.  Of those channels documented in this catalog,
+    sector 4 is the background sector for channels: ESA0, ESB0,
+    AB10, AB12, AB13, PSA1, PSA2, PSA3, PSB1, PSB2, AND PSB3.
+ 
+ 
+  Science Objectives
+  ==================
+    Characterize the energy spectra, angular distributions, species
+    composition, spatial structures, and temporal variations of the
+    hot plasmas, energetic particles, and particulate radiation
+    that exist in the vicinity of the outer planets (Jupiter,
+    Saturn, Uranus, and Neptune) and within the interplanetary
+    environment.  To study the mechanisms by which such particles
+    are energized and transported throughout such systems.  To
+    study in particular the energization and transport processes
+    associated with hot plasmas and particulate radiation in the
+    vicinity of planetary bow shocks, magnetopauses, magnetotail
+    plasma sheets, inner radiation zones, the auroral zones, etc.,
+    and to study the interaction of such media with planetary
+    satellites and the planetary atmospheres and ionospheres.
+ 
+ 
+  Operational Considerations
+  ==========================
+    Instrument operates continuously sampling data over uniform
+    accumulation intervals.  The accumulation intervals are
+    different for the different channels of information (almost 100
+    channels).  The scan head of the LECP Instrument usually scans
+    back-and-forth continuously (forward by 315 degrees and then
+    back by 315 degrees).  The scanning head pauses at 8 different
+    scan sectors for periods ranging between 6 seconds and 48
+    seconds (for the encounter time periods) and takes about 0.5
+    seconds to scan between the sectors.  Specially scanning modes
+    for Voyager 2 at Uranus and Neptune have been developed whereby
+    1 or 2 quick scans are performed followed by 6 to 12 minutes of
+    no scanning.  Also, for Voyager 2 at Jupiter there was an
+    extended period of no scanning.  The roll orientation of the
+    spacecraft is of crucial importance as to the type of data
+    returned since that orientation determines the orientation of
+    the scan plane of the LECP Instrument.  That orientation also
+    has safety consequences since a poor orientation could expose
+    the LECP detectors to ring particulate damage.
+ 
+ 
+  Calibration
+  ===========
+    The instrument was calibrated on the ground by placing it into
+    beam chambers (e.g.  Van DeGraf machines) and firing calibrated
+    beams of known composition at it.  Also, a radioactive source
+    is positioned behind the &apos;sunshield&apos; positioned at sector 8 for
+    in-flight calibration of some detector-electronic gains.  Also,
+    the instrument has a calibration mode whereby pulses of known
+    strength are sent into the pre-amplifier chains following the
+    detectors.  Information about calibration can be found in:
+    [KRIMIGISETAL1977], [KRIMIGISETAL1981], [ARMSTRONGETAL1981],
+    and [HAMILTONETAL1981].
+ 
+ 
+  &apos;LECP&apos; Detector
+  ===============
+    Total Fovs                     : 8
+    Data Rate                      : 600
+    Scan Mode Id                   : UNK
+    Sample Bits                    : 10
+ 
+    Detector Type                  : SOLID STATE
+    Detector Aspect Ratio          : 0.000000
+    Nominal Operating Temperature  : 273.000000
+ 
+    The LECP Instrument consists of a variety (about 28) of &apos;Solid
+    State Detectors&apos; that are used individually and in combinations
+    (using coincidence and anti-coincidence criterion) to detect
+    and characterize nuclear particles.  The detector thicknesses
+    range from 2 to 2450 microns to cover a very broad range of
+    particle energy and mass characteristic.
+ 
+    Detectors count particles that have appropriate discriminated
+    characteristics with an efficiency that approaches 1.
+    Therefore the sensitivity is strictly a function of the
+    geometric factors of the detectors (geometric factors
+    associated with different data channels are documented
+    elsewhere in this catalog) and the energy and species
+    band-widths of the data channels (also documented elsewhere).
+    The geometric factors have units of area X Steradians (CM^2 X
+    STR).
+ 
+ 
+    &apos;LECP&apos; Section Parameter &apos;ELECTRON RATE&apos;
+    ----------------------------------------
+      Instrument Parameter Name      : ELECTRON RATE
+      Sampling Parameter Name        : ENERGY PER NUCLEON
+      Instrument Parameter Unit      : COUNTS/SECOND
+      Minimum Instrument Parameter   : 0.000000
+      Maximum Instrument Parameter   : 0.000000
+      Minimum Sampling Parameter     : 0.026000
+      Maximum Sampling Parameter     : 20.000000
+      Noise Level                    : 0.000000
+      Sampling Parameter Interval    : 0.000000
+      Sampling Parameter Resolution  : 0.000000
+      Sampling Parameter Unit        : MEV PER NUCLEON
+ 
+      A measured parameter equaling the number of electrons hitting
+      a particle detector per specified accumulation interval.  The
+      counted electrons may or may not be discriminated as to their
+      energies (e.g.  greater than E1, or between E1 and E2).
+ 
+ 
+    &apos;LECP&apos; Section Parameter &apos;ION RATE&apos;
+    -----------------------------------
+      Instrument Parameter Name      : ION RATE
+      Sampling Parameter Name        : ATOMIC NUMBER
+      Instrument Parameter Unit      : COUNTS/SECOND
+      Minimum Instrument Parameter   : 0.000000
+      Maximum Instrument Parameter   : 0.000000
+      Minimum Sampling Parameter     : 1.000000
+      Maximum Sampling Parameter     : 26.000000
+      Noise Level                    : 0.000000
+      Sampling Parameter Interval    : 0.000000
+      Sampling Parameter Resolution  : 0.000000
+      Sampling Parameter Unit        : ATOMIC NUMBER
+ 
+      A measured parameter equaling the number of ions striking a
+      particle detector per specified accumulation interval.  The
+      counted ions may or may not be discriminated as to their
+      energies (e.g.  energy/nucleon or energy/charge between E1
+      and E2 or greater than E1) and/or as to their ion composition
+      (atomic number Z or mass number greater than Z1 or M1, or
+      between Z1 and Z2 or M1 and M2).
+ 
+ 
+    &apos;LECP&apos; Section Parameter &apos;PARTICLE MULTIPLE PARAMETERS&apos;
+    -------------------------------------------------------
+      Instrument Parameter Name      : PARTICLE MULTIPLE PARAMETERS
+      Sampling Parameter Name        : ATOMIC NUMBER
+      Instrument Parameter Unit      : MEV X MEV
+      Minimum Instrument Parameter   : 0.000000
+      Maximum Instrument Parameter   : 0.000000
+      Minimum Sampling Parameter     : 1.000000
+      Maximum Sampling Parameter     : 26.000000
+      Noise Level                    : 0.000000
+      Sampling Parameter Interval    : 0.000000
+      Sampling Parameter Resolution  : 0.000000
+      Sampling Parameter Unit        : ATOMIC NUMBER
+ 
+      A set of measured parameters which yield multiple pieces of
+      information about each particle (generally ions) that Q
+      enters the system.  These pieces of information can, for
+      example, consist of the energy deposited by a single particle
+      in two or more separate detectors, or the time-of-flight
+      between two different detectors plus the energy deposited in
+      a third, etc..  The multiple pieces of information can be
+      used to perform mass, atomic number, and/or charge state
+      discriminations on ions.  The information can be
+      discriminated on-board and telemetered in the form of ion
+      rate channels, or the multiple information about each
+      particle analyzed can be telemetered for obtaining the finest
+      species discriminations.
+ 
+ 
+      (the following table is excerpted from: [MAUKETAL1991])
+ 
+      TABLE 1. Voyager 2 LECP Channel Characteristics
+      ----------------------------------------------------------
+                               Effective
+                               Field
+                               of         Energy
+      Channel      Species,    View,      Passband,*     [epsilon]G,
+      Designation     Z        deg        MeV/nucleon    cm^2 sr
+      ----------------------------------------------------------
+                               Ion/Proton Channels
+      PL01            Z&gt;=1        45      0.028-0.043   1.13x10^-1
+      PL02            Z&gt;=1        45      0.043-0.080   1.13x10^-1
+      PL03            Z&gt;=1        45      0.080-0.137   1.13x10^-1
+      PL04            Z&gt;=1        45      0.137-0.215   1.13x10^-1
+      PL05            Z&gt;=1        45      0.215-0.540   1.13x10^-1
+      PL06            Z&gt;=1        45      0.54-0.99     1.13x10^-1
+      PL07            Z&gt;=1        45      0.99-2.14     1.13x10^-1
+      PL08            Z&gt;=1        45      2.14-3.5      1.13x10^-1
+      39              Z&gt;=2        60      0.035-0.069**  9.7x10^-2
+      38              Z&gt;=6        60      0.069-0.20**   9.7x10^-2
+      32              Z=1         60      0.33-0.61      2.6x10^-3
+      1               Z=1         60      0.52-1.45      4.4x10^-1
+      33              Z=2         60      0.23-0.48      9.7x10^-2
+ 
+                               Electron Channels
+      E[beta]01                   45      0.022-0.035      6x10^-3
+      E[beta]02                   45      0.035-0.061      6x10^-3
+      E[beta]03                   45      0.061-0.112      6x10^-3
+      E[beta]04                   45      0.112-0.183    3.9x10^-3
+      E[beta]05                   45      0.183-0.5        2x10^-3
+      E[gamma]06                  45     &gt;0.252          8.1x10^-3***
+      E[gamma]07                  45     &gt;0.480          3.5x10^-3***
+      E[gamma]08                  45     &gt;0.853          1.7x10^-4***
+      E[gamma]09                  45     &gt;1.20
+       ----------------------------------------------------------
+          Note: this table shows only a subset (the most commonly
+                    used) of the channels available.
+ 
+          * For Z&gt;=1 channels, passband is given for protons only.
+         ** Indicates oxygen passband.
+        *** [epsilon]G for the difference between adjacent integral
+            channels.
+ 
+ 
+  Electronics
+  ===========
+    Timed accumulations of particle counts satisfying various
+    analog pulse-height discrimination levels.  Timed accumulations
+    of particle counts satisfying simultaneous analog pulse-height
+    discriminations for multiple detectors.  Pulse-height
+    analog-to- digital conversions from multiple, simultaneous
+    detectors for direct telemetry.
+ 
+ 
+  Operational Modes
+  =================
+ 
+    FAR ENCOUNTER
+    -------------
+      Data Path Type                 : UNK
+      Instrument Power Consumption   : 4.725000
+ 
+      Used in the vicinity of planetary encounters.  High intensity
+      detectors turned off (A, B, DELTA, DELTA PRIME).  (Affected
+      channels are documented in detailed level catalog.) Bit Rate
+      allocated 1/3 for Particle Multiple Parameters (PMP) data,
+      also called Pulse Height Analysis data, and 2/3 for Rate data
+      (counts/second).  Full composition discrimination
+      capabilities enabled (in both Rate and PMP forms).  Angular
+      scanning is typically 6.4 minutes per 360 degree scan but is
+      often changed.  Experiment Bit Rate is 600 bits per second.
+      Electrons measured up to 0.5 MEV.  minimum sample time is 0.4
+      sec.
+ 
+ 
+    NEAR ENCOUNTER
+    --------------
+      Data Path Type                 : UNK
+      Instrument Power Consumption   : 4.525000
+ 
+      Sometimes used at the closest-in positions during a planetary
+      encounter.  The high intensity detectors are turned on (A, B,
+      DELTA, DELTA PRIME).  (Affected channels are documented in
+      the detailed level catalog.) Particle Multiple Parameter
+      (PMP) composition discrimination capabilities are turned off
+      (including the rate channels derived from the multiple para-
+      meter information).  All data appears in rate (counts/second)
+      form.  Angular scanning is typically 6.4 minutes per 360
+      degrees scan but is often changed.  Scanning cyclics driven
+      by the spacecraft computer are included.  Experiment Bit Rate
+      is 600 bits per second.  Electrons are measured up to greater
+      than 10 MEV.  Minimum sample time is 0.4 sec.
+ 
+ 
+  Instrument Mounting
+  ===================
+    Cone Offset Angle              : UNK
+    Cross Cone Offset Angle        : UNK
+    Twist Offset Angle             : UNK
+ 
+    LECP Instrument is mounted on the science boom about half way
+    between the boom&apos;s spacecraft anchor point and imaging scan
+    platform.  The mounting is such that the 360 degree scan plane
+    of the LECP scanning head (not to be confused with the scanning
+    of the imaging instruments) is coplanar with the spacecraft&apos;s
+    roll axis.  Also, on the Canopus star lock the LECP scan plane
+    is about 30 degrees rotated away from the ecliptic plane.  A
+    line passing between sectors 1 and 8, and between sectors 4 and
+    5, is parallel to the spacecraft roll axis.  Sectors 1 and 8
+    point in the general direction or earth, and with the Canopus
+    lock, sector 3 points generally in the retrograde direction
+    (referring to the direction with respect to the directions of
+    motion of the orbiting planets) and about 30 degrees north of
+    the ecliptic.
+
+        </description>
+    </Instrument>
+</Product_Context>

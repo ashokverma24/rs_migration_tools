@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.mpfr</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MICROROVER FLIGHT EXPERIMENT</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.mars_pathfinder::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:apxs.mpfr::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:rclt.mpfr::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:rcrr.mpfr::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:rcrt.mpfr::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.mars::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Matijevic, J., Microrover Flight Experiment Requirements, Architecture and
+                   Verification Document, JPL Document 10925, PF-R00-5.0-02, Rev B, 68 pp.,
+                   April 15, 1994.
+            </reference_text>
+            <description>reference.MATIJEVIC1994</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Matijevic, J.R., L.W. Avril, R.S. Banes, D.B. Bickler, R.S. Blomquist, G.S.
+                   Bolotin, D.F. Braun, D.R. Burger, B.K. Cooper, J. Crisp, F. Deligiannis,
+                   W.C. Dias, H.J. Eisen, D. Ferguson, B.H. Fujiwara, R.D. Galletly, G.S.
+                   Hickey, P. Jenkins, K.A. Jewett, E.J. Jorgensen, J. Kilecki, H.A. Kubo,
+                   G.A. Landis, W.E. Layman, L.H. Matthies, D.P. McQuarie, R.J. Menke, A.H.
+                   Mishkin, D.S. Mittman, H.J. Moore, J.C. Morrison, T.T. Nguyen, D.E. Noon,
+                   L. Oberle, T.R. Ohm, G.M. Shinn, D.L. Shirley, A.R. Sirota, C.B. Stell, S.
+                   Stevenson, H.W. Stone, L.F. Sword, H.C. Ta, A.D. Thompson, L.M. van
+                   Nieuwstadt, M.T. Wallace, L. -C. Wen, B.H. Wilcox, and Y.C. Wu, The
+                   Pathfinder Microrover, J. Geophys. Res., 102, 3989-4001, 1997.
+            </reference_text>
+            <description>reference.MATIJEVICETAL1997A</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>MICROROVER FLIGHT EXPERIMENT</name>
+        <type>Spacecraft</type>
+        <naif_host_id>MPFR</naif_host_id>
+
+        <description>
+ 
+  Instrument Host Overview
+  ========================
+    The Microrover Flight Experiment (MFEX), also known as the &apos;Mars
+    Pathfinder Rover&apos; and &apos;Sojourner&apos;, is a NASA Office of Advanced
+    Concepts and Technology (OACT) flight experiment for autonomous
+    mobile vehicle technologies.  Its primary mission was to
+    determine microrover performance in the poorly understood
+    planetary terrain of Mars.  The microrover was delivered,
+    integrated with the Mars Pathfinder (MPF) Lander, to Mars on July
+    4, 1997.  After landing, the microrover was deployed from the
+    lander and began a nominal 7 sol mission, which was later
+    extended, to conduct technology experiments such as determining
+    wheel-soil interactions, autonomous navigation and hazard
+    avoidance capabilities, and engineering characterizations
+    (thermal control, power generation performance, etc.).  In
+    addition, the microrover carried an Alpha Proton X-ray
+    Spectrometer (APXS) which when deployed on rocks and soil
+    provided element composition.  Lastly, the microrover imaged the
+    lander to assist in status and damage assessment.
+ 
+ 
+    Mechanical, Thermal, and Mobility Subsystem
+    -------------------------------------------
+      The microrover is a 6-wheeled vehicle of a rocker bogie design
+      which allows the traverse of obstacles a wheel diameter (13 cm)
+      in size.  Each wheel is independently actuated and geared
+      (2000:1) providing superior climbing capability in soft sand.
+      The front and rear wheels are independently steerable,
+      providing the capability for the vehicle to turn in place.  The
+      vehicle has a top speed of 0.4 m/min.
+ 
+      Microrover components not designed to survive ambient Mars
+      temperatures (-110 degrees Celsius during a Martian night) are
+      contained in the warm electronics box (WEB).  The WEB is
+      insulated, coated with high and low emissivity paints, and
+      heated with a combination of 3, 1W RHUs, resistive heating
+      under computer control during the day and waste heat produced
+      by the electronics.  This design allows the WEB to maintain
+      components between -40 and +40 degrees Celsius during a Martian
+      day.
+ 
+ 
+      Control and Navigation Subsystem
+      --------------------------------- Control is provided by an
+      integrated set of computing and power distribution electronics.
+      The computer is an 80C85 rated at 100 Kips which uses, in a 16
+      Kbyte page swapping fashion, 176 Kbytes of PROM and 576 Kbytes
+      of RAM.  The computer performs I/O to some 70 sensor channels
+      and services such devices as the cameras, modem, motors and
+      experiment electronics.
+ 
+      Vehicle motion control is accomplished through the on/off
+      switching of the drive or steering motors.  An average of motor
+      encoder (drive) or potentiometer (steering) readings determines
+      when to switch off the motors.  When motors are off, the
+      computer conducts a proximity and hazard detection function,
+      using its laser striping and camera system to determine the
+      presence of obstacles in its path.  The vehicle is steered
+      autonomously to avoid obstacles but continues to achieve the
+      commanded goal location.  While stopped, the computer also
+      updates its measurement of distance traveled and heading using
+      the averaged odometry and on-board gyro.  This provides an
+      estimate of progress to the goal location.
+ 
+ 
+    Power Generation and Distribution
+    ---------------------------------
+      The microrover is powered by a 0.22 sqare meter solar panel
+      comprised of 13 strings of 18, 5.5 mil GaAs cells each.  The
+      solar panel is backed up by 9 LiSOCL2 D-cell sized primary
+      batteries, providing up to 150 W-hr.  This combined
+      panel/batteries system allows microrover power users to draw up
+      to 30W of peak power (mid-sol) while the peak panel production
+      is 16 W.  The normal driving power requirement for the
+      microrover is 10 W.
+ 
+ 
+    Radio Communications
+    --------------------
+      Command and telemetry is provided by modems on the microrover
+      and lander.  The microrover is the link commander of this 1/2
+      duplex, UHF system.  During the day, the microrover regularly
+      requests transmission of any commands sent from Earth and
+      stored on the lander.  When commands are not available, the
+      microrover transmits any telemetry collected during the last
+      interval between communication sessions.  The telemetry
+      received by the lander from the microrover is stored and
+      forwarded to the earth the same as any lander telemetry.  In
+      addition, this communication system is used to provide a
+      &apos;heartbeat&apos; signal during vehicle driving.  While stopped, the
+      microrover sends a signal to the lander.  Once acknowledged by
+      the lander, the microrover proceeds to the next stopping point
+      along its traverse.
+ 
+      Commands for the microrover are generated and analysis of
+      telemetry is performed at the microrover control station, a
+      Silicon Graphics workstation which is a part of the MPF ground
+      control operation.  At the end of each sol of microrover
+      traverse, the camera system on the lander takes a stereo image
+      of the vehicle in the terrain.  Those images, portions of a
+      terrain panorama and supporting images from the microrover
+      cameras, are displayed at the control station.  The operator is
+      able to designate on the display points in the terrain which
+      will serve as goal locations for the microrover traverse.  The
+      coordinates of these points are transferred into a file
+      containing the commands for execution by the microrover on the
+      next sol.  In addition, the operator can use a model which,
+      when overlayed on the image of the vehicle, measures the
+      location and heading of the vehicle.  This information is also
+      transfered into the command file to be sent to the microrover
+      on the next sol to correct any navigation errors.  This command
+      file is incorporated into the lander command stream and is sent
+      by the MPF ground control to the lander, earmarked for
+      transmission to the microrover upon request.
+ 
+      For more information on the Microrover Flight Experiment, see
+      the papers [MATIJEVIC1994] and [MATIJEVICETAL1997A].
+ 
+      Copyright 1996, Jet Propulsion Laboratory, California Institute
+      of Technology and the National Aeronautics and Space
+      Administration.
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

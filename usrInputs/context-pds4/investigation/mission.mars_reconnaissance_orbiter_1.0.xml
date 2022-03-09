@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.mars_reconnaissance_orbiter</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARS RECONNAISSANCE ORBITER</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>MRO</alternate_id>
+                <alternate_title>MRO</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mro::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.mars::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.unk</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>MARS RECONNAISSANCE ORBITER</name>
+        <type>Mission</type>
+        <start_date>2005-08-12</start_date>
+        <stop_date nilReason="unknown" xsi:nil="true"></stop_date>
+
+        <description>
+ 
+  Mission Overview
+  ================
+ 
+    The Mars Reconnaissance Orbiter spacecraft was launched from Cape
+    Canaveral Air Force Station on 12 August 2005 aboard a Lockheed-Martin
+    Atlas V-401 launch vehicle. After a five-month cruise and a two-month
+    approach to Mars, MRO entered Mars&apos; orbit on 10 March 2006 and began
+    aerobraking.  The primary science phase began on 8 November, 2006.
+ 
+ 
+  Mission Phases
+  ==============
+ 
+    The Mars Reconnaissance Orbiter Mission is divided in time into seven
+    phases: Launch, Cruise, Approach and Orbit Insertion, Aerobraking,
+    Primary Science, Extended Science, and Relay.
+ 
+    LAUNCH
+    ------
+      Launch extended from the start of the countdown to the initial
+      acquisition, by the DSN, of the orbiter in a safe and stable
+      configuration.
+ 
+      The baseline launch vehicle for the MRO mission was the Lockheed-Martin
+      Atlas V 401.  This launch vehicle was selected by NASA-KSC (Kennedy
+      Space Flight Center) via a competitive procurement under the NASA
+      Launch Services (NLS) contract.  The Atlas V 401 was a two-stage
+      launch vehicle consisting of the Atlas Common Core Booster and a
+      single engine Centaur upper stage.  The Centaur upper stage could
+      perform multiple restarts of its main engine.  For precise pointing and
+      control during coast and powered flight, the Centaur used a flight
+      control system that was 3-axis stabilized. The Atlas large payload
+      fairing was used to protect MRO during the Atlas boost phase.  This
+      fairing had a diameter of 4.2m and a length of 12.2m.
+ 
+      The launch and injection of MRO occured during the Mars opportunity
+      of August 2005. The Atlas booster, in combination with the Centaur
+      upper stage, delivered the MRO spacecraft into a targeted parking
+      orbit. After a short coast, a restart of the Centaur upper stage
+      injected MRO onto an interplanetary transfer trajectory.
+ 
+      Mission Phase Start Time : 2005-08-12
+      Mission Phase Stop Time  : 2005-08-12
+ 
+    CRUISE
+    ------
+      Duration: About five months. The cruise phase extended from DSN
+      initial acquisition, in a safe and stable configuration, until two
+      months prior to the Mars Orbit Insertion (MOI) maneuver. Primary
+      activities during cruise included spacecraft and payload checkout and
+      calibration.  These activities, along with daily monitoring of orbiter
+      subsystems, were performed in order to fully characterize the
+      performance of the spacecraft and its payload prior to arrival at
+      Mars.  In addition, standard navigation activities were performed
+      during this flight phase, the first being the largest TCM performed
+      fifteen days after launch.
+ 
+      Mission Phase Start Time : 2005-08-12
+      Mission Phase Stop Time  : 2006-01-10
+ 
+    APPROACH AND ORBIT INSERTION
+    ----------------------------
+      This phase extended from two months prior to Mars Orbit Insertion
+      (MOI), through MOI, and until the orbiter was checked out and ready to
+      begin aerobraking. The orbiter was inserted into a nearly polar orbit
+      with a period of 35 hours.
+ 
+      During the last sixty days of the interplanetary transit, spacecraft
+      and ground activities were focused on the events necessary for a
+      successful arrival and safe capture at Mars. Navigation techniques
+      included the use of delta-DOR measurements in the orbit determination.
+      This technique yielded a precise determination of the inbound
+      trajectory with a series of final TCMs used to control the flight path
+      of the spacecraft up to the MOI maneuver.
+ 
+      Also during the approach phase, MRO performed the Optical Navigation
+      experiment.  This involved pointing the optical navigation camera
+      (ONC) at the moons of Mars - Phobos and Deimos, and tracking their
+      motion. By comparing the observed position of the moons to their
+      predicted positions, relative to the background stars, the ground was
+      able to accurately determine the position of the orbiter.
+ 
+      Upon arrival at Mars on March 10, 2006, the spacecraft performed its
+      MOI maneuver using its six main engines.  MOI inserted the spacecraft
+      into an initial, highly elliptical capture orbit.  The delta-V
+      required to accomplish this critical maneuver was 1015 m/s and took
+      about 26 minutes to complete. For most of the burn, the orbiter was
+      visible from the DSN stations.  The signal was occulted as the orbiter
+      went behind Mars, and appeared again a short time later. The reference
+      MRO capture orbit had a period of 35 hours and a periapsis altitude of
+      300km.  The orientation of the ascending node was 8:30 PM LMST.  The
+      capture orbit was been selected such that aerobraking would be
+      completed prior to the start of solar conjunction (September 23,
+      2006).
+ 
+      Mission Phase Start Time : 2006-01-10
+      Mission Phase Stop Time  : 2006-03-10
+ 
+ 
+    AEROBRAKING
+    -----------
+      The Aerobraking Phase of the mission consisted of three sub-phases,
+      Aerobraking Operations, Transition to PSO Operations, and Solar
+      Conjunction.
+ 
+      Aerobraking Operations Sub-Phase
+      --------------------------------
+ 
+      One week after MOI, aerobraking operations commenced.  During this
+      time period, the orbiter used aerobraking techniques to supplement its
+      onboard propulsive capability and to reduce its orbit period to that
+      necessary for the primary science orbit (PSO).  Aerobraking Operations
+      consisted of a walk-in phase, a main phase, and a walkout phase, and
+      was followed by a transition to the PSO.  During the walk-in phase, the
+      spacecraft established initial contact with the atmosphere as the
+      periapsis altitude of the orbit was slowly lowered.  The walk-in phase
+      continued until the dynamic pressures and heating rate values required
+      for main phase, or steady state aerobraking, were established.  During
+      the main phase of aerobraking operations, large scale orbit period
+      reduction occurred as the orbiter was guided to dynamic pressure
+      limits. Main phase aerobraking continued until the orbit lifetime of
+      the orbiter reached 2 days.  (Orbit lifetime is defined as the time it
+      takes the apoapsis altitude of the orbit to decay to an altitude of
+      300km.)  When the orbit lifetime of the orbiter reached 2 days, the
+      walkout phase of aerobraking operations began.  During the walkout
+      phase, the periapsis altitude of the orbit was slowly increased as the
+      2 day orbit lifetime of the orbiter was maintained.  Once the orbit of
+      the orbiter reached an apoapsis altitude of 450km, the orbiter
+      terminated aerobraking by propulsively raising the periapsis of its
+      orbit out of the atmosphere.
+ 
+      Because the PSO had nodal orientation requirements, the aerobraking
+      phase of the MRO mission had to proceed in a timely manner and be
+      completed near the time the desired nodal geometry was achieved. After
+      approximately 4.5 months of aerobraking, the dynamic pressure control
+      limits were reset such that the orbiter will fly to the desired 3:00
+      pm LMST nodal target.
+ 
+      Transition to PSO Operations Sub-Phase
+      --------------------------------------
+ 
+      Once the orbit apoapsis altitude was reduced to 450 km, the orbiter
+      terminated aerobraking by raising periapsis to a safe altitude and
+      begin a transition to the Primary Science Phase.  The periapsis of
+      the transition orbit rotated around Mars from over the equatorial
+      latitudes to the North Pole.  When periapsis reached the North Pole,
+      apoapsis was reduced propulsively to 255 km and orbit rotation stopped
+      - the orbit was frozen with periapsis over the South Pole and apoapsis
+      over the North Pole.  The SHARAD antenna and the CRISM cover were
+      deployed, the instruments were checked out and remaining calibrations
+      were performed.  The payloads collected data in their normal operating
+      modes to ensure that the end-to-end data collection and processing
+      systems worked as planned.
+ 
+      Solar Conjuction Sub-Phase
+      --------------------------
+ 
+      Orbiter activities in preparation for science were then temporarily
+      suspended during a four week period surrounding solar conjunction.
+ 
+ 
+      Mission Phase Start Time : 2006-03-17
+      Mission Phase Stop Time  : 2006-11-07
+ 
+      Aerobraking Operations Sub-Phase Start Time: 2006-03-17
+      Aerobraking Operations Sub-Phase Stop Time: 2006-09-15
+ 
+      Transition to PSO Operations Sub-Phase Start Time: 2006-09-15
+      Transition to PSO Operations Sub-Phase Stop Time: 2006-10-09
+ 
+      Solar Conjunction Sub-Phase Start Time: 2006-10-09
+      Solar Conjunction Sub-Phase Stop Time: 2006-11-07
+ 
+ 
+    PRIMARY SCIENCE
+    ---------------
+      The 255 x 320 km Primary Science Orbit (PSO) was a near-polar orbit
+      with periapsis frozen over the South Pole.  It was sun-synchronous with
+      an ascending node orientation that provided a Local Mean Solar Time
+      (LMST) of 3:00 p.m. at the equator.  Because of the eccentricity of
+      the Mars orbit around the Sun, true solar time varied by nearly 45
+      minutes over the course of one Mars year.
+ 
+      The Primary Science Phase of the mission began after solar conjunction
+      and after turn-on and checkout of the science instruments in the
+      Primary Science Orbit.  The phase started on 8 November 2006 and
+      extended for about one Mars year, through December 19, 2008.
+ 
+      The science investigations were functionally divided into daily global
+      mapping and profiling, regional survey, and globally distributed
+      targeting investigations.  The global mapping instruments were the MCS
+      and the MARCI.  The targeted investigations were HiRISE, CRISM, and
+      CTX. The survey investigations were CRISM and CTX (in survey modes),
+      and SHARAD.  The global mapping instruments required nadir pointing,
+      low data rate, and continuous or near-continuous operations.  The
+      global mapping investigations were expected to use less than 5% of the
+      expected downlink data volume.  The targeted and survey instruments
+      were high data rate instruments and required precise targeting in
+      along-track timing and/or cross-track pointing for short periods of
+      time over selected portions of the surface.  More than 95% of the
+      available downlink data volume was expected to be used for
+      targeted and survey investigations. All instruments were able to take
+      data simultaneously.
+ 
+      The Phoenix lander arrived at Mars on May 25, 2008. Phoenix used
+      MRO to characterize its prime landing site choices early in the
+      Primary Science Phase. MRO also provided relay support for Entry,
+      Descent, and Landing (EDL) activities and for telecommunications late
+      in the PSP after Phoenix arrived at Mars.
+      Phoenix and MRO also coordinated some observations to maximize
+      science return to the Mars Exploration Program.
+ 
+      NASA may approve, as resources and on-orbit capability permit,
+      continuation of science observations beyond the Primary Science Phase
+      until end of the Relay Phase (also End of Mission).  The orbiter will
+      remain in the Primary Science Orbit during the Relay Phase.
+ 
+      Mission Phase Start Time : 2006-11-08
+      Mission Phase Stop Time  : 2008-12-19
+ 
+ 
+    EXTENDED SCIENCE
+    ---------------
+      NASA approved continuation of science observations after the Primary
+      Science Phase ended. MRO operations are continuing in the Extended
+      Science Phase, which is funded for another Mars year. MRO carries
+      enough fuel to continue operating for several more years.
+ 
+      Mission Phase Start Time : 2008-12-20
+      Mission Phase Stop Time  : 2010-12-19
+ 
+ 
+    RELAY
+    -----
+      MRO provides critical relay support to missions launched as part
+      of the Mars Exploration Program after MRO.  For spacecraft launched in
+      the 2007 opportunity, this relay support occurred before the end of
+      the MRO Primary Science Phase.   Following completion of the Primary
+      and Extended Science Phases, MRO will continue to provide critical
+      relay support for Mars missions until its end of mission.
+ 
+      The Phoenix lander arrived at Mars on May 25, 2008. MRO provided
+      science imaging support for site characterization and selection
+      and relay support for Phoenix Entry,
+      Descent and Landing activities and for its science data return.
+      Another mission, the Mars Science Laboratory (MSL) was originally
+      proposed for the 2009 Mars launch opportunity but has been delayed
+      until the 2011 opportunity.  MSL will also need science imaging support
+      for site characterization and selection and relay support for EDL and
+      science data return.  The MRO Mission Plan describes the generic
+      support activities for any mission as well as current early planning
+      in support of Phoenix and MSL.
+ 
+      The orbiter has been designed to carry enough propellant to remain
+      operational for 5 years beyond the end-of-mission (EOM) on December
+      31, 2010 to support future MEP missions.  As this is beyond the EOM,
+      no activities have been planned for this time period.  To ensure that
+      the orbiter remains in a viable orbit during this time, its orbit
+      altitude will be increased at EOM to about 20 km inside the orbit of
+      the Mars Global Surveyor spacecraft.
+ 
+      The MRO approach to planetary protection differs from any previous
+      Mars orbiter.  The NASA requirements for planetary protection,
+      NPG8020.12B, allow a class III mission, like MRO, to use either the
+      &apos;probability of impact/orbit lifetime&apos; or a &apos;total bio burden&apos;
+      approach.  Implementing the Level 1 MRO requirements with the
+      instruments selected via the NASA AO requires low orbits whose
+      lifetimes are incompatible with a &apos;probability of impact/orbit
+      lifetime&apos; approach to Planetary Protection.  Therefore, MRO is
+      implementing the requirements of NPG8020.12B using the &apos;total
+      bio-burden&apos; approach.  This approach has been documented in the MRO
+      Planetary Protection Plan (D-23711). The details of cleaning
+      requirements are documented in the MRO Planetary Protection
+      Implementation Plan, MRO 212-11, JPL D-22688. The MRO launch targets
+      will be biased away from a direct intercept course with Mars to ensure
+      a less than 1 in 10,000 chance of the launch vehicle upper stage
+      entering Mars atmosphere.
+ 
+      The End-of-Mission (EOM) is planned for December 31, 2010 just prior
+      to the third solar conjunction of the mission.  The orbiter will
+      perform a propulsive maneuver to place itself in a higher orbit to
+      increase the orbit lifetime and enable extended mission operations.
+ 
+      Mission Phase Start Time : 2010-12-20
+      Mission Phase Stop Time  : to be determined
+        </description>
+    </Investigation>
+</Product_Context>

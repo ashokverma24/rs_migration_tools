@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.mr9</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARINER 9</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.mariner71::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:iris.mr9::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:iss.mr9::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.mars::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mariner Mars 1971 Project Final Report, Science Experiment Reports, JPL
+                   Technical Report 32-1550, Vol. V, Aug. 20, 1973.
+            </reference_text>
+            <description>reference.MR91971SCITEAMS1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Steinbacher, R.H., and S.Z. Gunter, Mariner Mars 71 Experiments Introduction,
+                   ICARUS-International Journal of Solar System Studies Vol. 12, No. 1, January
+                   1970.
+            </reference_text>
+            <description>reference.STEINBACHER-GUN1970</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>MARINER 9</name>
+        <type>Spacecraft</type>
+        <naif_host_id>MR9</naif_host_id>
+
+        <description>
+ 
+ 
+    Spacecraft Overview
+    ===================
+      The design of Mariner Mars 1971 spacecraft was similar to that
+      of Mariner Mars 1969, but incorporated changes required by the
+      different payload complements, changes required to increase
+      reliability for a nominal transit cruise and a 90-day-in-orbit
+      operational lifetime, and changes required for the spacecraft to
+      accomplish the mission.  The spacecraft weighed approximately
+      2238 lbs; of this weight 1050 lb was propellant required to
+      correct the transit trajectory and to perform the orbital
+      insertion and 152 lb.  which constituted the science payload.
+      The spacecraft configuration consisted of four solar panels, a
+      low-gain antenna, a maneuver engine, a Canopus sensor, two
+      propulsion tanks, two propulsion pressurization tanks,
+      temperature control louvers, four acquisition sun sensors, a
+      cruise sun sensor, a medium-gain antenna, a high-gain antenna
+      and a scan platform.
+ 
+ 
+    Platform Descriptions
+    =====================
+      The scan platform was an articulating instrument mount providing
+      a pointing selection capability of 215 degrees in azimuth and 69
+      degrees in elevation.  The scan platform contained the following
+      instruments; the infrared radiometer, the wide-angle TV, the
+      ultraviolet spectrometer, the narrow- angle TV and the IR
+      Interferometer spectrometer.
+ 
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

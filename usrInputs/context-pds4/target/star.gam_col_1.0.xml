@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.gam_col</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Gamma Columbae</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Gamma Col</alternate_title></Alias>
+      <Alias><alternate_title>gam Col</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J0557321-351659</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14860</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J05575-3517A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-35 2612</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 18 2201</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-35 780</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-35 2612 21</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 1160</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 7536</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 3725</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00040494A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 07066-02024</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 40494</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 28199</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 28199</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 2106</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 05540-3518 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 05557-3517</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1298</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J05573221-3516596</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 1277</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 777</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 282087</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 6895</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 196352</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 9883</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 31160</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 5746</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7066-2024-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 6080</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 11680</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100040494 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J05575-3517A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 5518</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2887631548188825600</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Gamma Columbae</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 05 hours 57 minutes 32.2095768 seconds
+Declination, ICRS coord, ep=J2000: -35 degrees 16 minutes 59.815276 seconds
+    </description>
+  </Target>
+</Product_Context>

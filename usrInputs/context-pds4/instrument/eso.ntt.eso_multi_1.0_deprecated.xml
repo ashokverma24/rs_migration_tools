@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:eso.ntt.eso_multi</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Eso Multimode Instrument</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-02-18</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:eso.ntt</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <reference_text>Schulz, R., Th. Encrenaz, J.A. Stuewe, and G. Wiedemann. Near-IR emissions in the
+upper Jovian atmosphere after SL-9 impact: Indications of possible northern
+counterparts, Geophysical Research Letters, 22, 17, 2421-2424, 1995.</reference_text>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>Eso Multimode Instrument</name>
+    <type>Imager</type>
+    <description>Instrument Overview
+===================
+EMMI is a flexible instrument which allows a wide range of observing
+modes, from wide-field imaging to high-dispersion echelle
+spectroscopy, including long-slit and multi-object spectroscopy.
+This manual also describes SUSI (SUperb Seeing Imager) which is
+mounted in the other Nasmyth focus of the NTT and complements the
+imaging capabilities of EMMI.  A brief description of the active
+optics system of the NTT and its basic operational principles are
+also provided in this manual.
+
+The driving concepts in the instrument definition were the high
+image quality foreseen for the NTT, the need to complement or
+improve on the instrumentation on the 3.6m telescope, and the need
+to minimize instrument change-overs.  The concept which was adopted
+is that of a dual-beam instrument, fully dioptric, and based on the
+white pupil principle.  CCD detectors were foreseen for the two arms
+with the possibility to adapt to the geometric characteristics of
+future detectors by changing the cameras only.  The main advantages
+of this type of design are the high efficiency in both channels and
+the easy conversion from wide field imaging to grism and grating
+spectroscopy.
+
+After the first observations with the NTT, it became clear that the
+telescope and the atmosphere at La~Silla could provide stellar
+images with diameters as good as 0.3 arcsec.  Images of this quality
+could not be sampled adequately with EMMI, which scale had also to
+be adapted to the spectroscopic modes of observation.  Thus, SUSI
+was designed and built for the other Nasmyth arm of the NTT.  The
+design is such that switching between EMMI and SUSI is done in a
+matter of minutes, so that they can be considered as different parts
+of the same instrument.
+
+
+Optics
+======
+A detailed description of the optical design of EMMI can be found in
+Dekker et al. (1986).
+
+It has two 'arms' with separate detectors. One arm ('EMMI blue arm')
+is coated for high efficiency in the region 300 to 500 nm, the other
+('EMMI red arm') for 400 to 1000~nm.  Each arm supports several
+different observing modes.  The capabilities of the blue and the red
+arm are not identical, e.g. Multi-Object Spectroscopy (MOS) is only
+available in the red arm.
+
+Each of the two arms has two possible light paths: one is used for
+grating spectroscopy and the other for imaging and (only in the red
+arm) low-resolution spectroscopy using grisms.  In grating
+spectroscopy, a dichroic can be inserted into the beam allowing the
+use of both arms at the same time. Each of the five possible light
+paths (two per arm plus the dichroic mode) is called an 'Observing
+Mode'. The five modes are called:
+
+BIMG: Blue Imaging
+For wavelengths less than 500 nanometer, 0.37 arc sec/pixel
+resolution and a field of view of 6.2 arc min by 6.2 arc min.
+
+
+Cameras and Detectors
+=====================
+EMMI works with two scientific CCD cameras, one at the red arm and
+one in the blue arm.
+
+The image scale at the F/11 Nasmyth foci of the NTT is 5.36
+arcsec/mm or 186 micron per arc sec.  This is also the scale of the
+direct imaging with SUSI.  The actual field size and scale depend on
+the detector and camera being used and are given in
+
+Image scale for EMMI and SUSI
+
+EMMI BIMG   #31 TEK 1024  F/4   24 micron/0.37 arc sec
+
+CCD characteristics for EMMI and SUSI
+
+# 31 slow mode  1.7e/ADU conversion  2.5ADU RON  280.2ADU BIAS 8e DARK
+     fast       3.4                  1.6         275.2         8
+
+Saturation is in most cases defined by the ADU converter, at 65
+kADU. The actual well depth is around 2 x 10^6 e so that the
+linearity is good up to digital saturation. The exceptions are EMMI
+red and SUSI when read out in fast mode. For EMMI red in the fast
+mode, exposure levels should be kept below 40 kADU, and for SUSI
+below 24kADU. Otherwise, the linearity of the CCD is better than
+0.5%. The measured linearity curves can be found in the CCD test
+reports.
+
+The fast readout mode has as main advantage a reduced readout time.
+This becomes important on EMMI red where fast readout saves two
+minutes. It is much less important in SUSI. The disadvantage is
+increased readout noise and digitization noise, and sometimes
+increased electric interference. For broadband imaging and many
+spectroscopic programmes, the readout noise is not important
+compared to the photon background, and the fast readout mode would
+be recommended.  Electronic interference could be larger in fast
+readout:  when in doubt, it is worthwile to take a few biases in the
+afternoon to check on the readout noise and on the presence of
+pattern noise.  Remember that, in general, calibration frames such
+as bias, flat fields, and darks taken with slow readout cannot be
+used for correcting fast exposures, and vice versa.
+
+CCDs have an electronic bias that can be evaluated by averaging
+several 0s dark exposures and subtracted from the science images to
+take it out. By using these exposures the observer can check the CCD
+readout noise and possible pick-up patterns in the electronic
+background.  At least one, but if possible more, long (at least 1
+hour) dark exposures are important to monitor the dark current of
+the CCD (if possible, take a dark longer than the longest science
+exposure).
+
+
+Filters
+=======
+EMMI has four filter wheels: the blue and red imaging filter wheels,
+and the blue and the red below-slit wheels. The last two are only
+used for grating spectroscopy and usually contain neutral density
+filters only. Each of the two filter wheels used for imaging has 9
+positions of which 8 are available for mounting filters and one is
+kept free. The R-filter is usually needed for focusing.  Both red
+and blue filters have a free circular diameter of 80 mm and an
+outside diameter of 85~mm.  Adapter trays are available for filters
+of other instruments (e.g. EFOSC) but use of smaller filters will
+produce vignetted images only useful in the centre of the CCD.  In
+such cases it might be better to use SUSI.
+
+The SUSI filterwheel has 8 positions of which 7 are available for
+filters.  In contrast to EMMI, SUSI uses 60-mm filters which are the
+same size as the ones used for EFOSC. EFOSC filters can therefore
+also be mounted in SUSI (if they are not required by the EFOSC
+observer!).  There are also a large number of 60-mm filters which
+are not allocated to a particular instrument and which can be
+requested.
+
+All filters are permanently mounted in special cells which make
+replacement very easy.  EMMI red-arm filters, which are inserted in
+a parallel beam, are mounted at 5 degree inclination to avoid
+reflections between the CCD and the filter.  Blue arm filters, used
+in the converging beam in front of the blue camera, do not show this
+effect and hence are mounted with no inclination.  Using a red-arm
+filter in the blue will result in a slight change of the central
+wavelength and will cause some astigmatism. If a blue filter is used
+in the red arm, every object in the field produces a ghost due to
+the mentioned reflections, which is about 5 magnitudes fainter than
+the original object. Thus, although it is possible to use blue
+filters in the red and vice-versa (one might want to do this in the
+overlap region, 400 to 500 nm), filters should normally be used in
+the wheel they are intended for.
+
+Filters with very narrow bandwidths are not really suitable for the
+red arm. Because the filters are mounted in the parallel beam, the
+central wavelength will change across the field. In extreme cases,
+the central wavelength may be outside the filter response near the
+edge of the CCD.  The tabulated wavelength corresponds to the centre
+of the CCD. The effect is further described in Chapter 11. As a
+guide line, avoid filters with wavelength change &lt;5 nm for
+wide-field imaging.  This effect also affects wide-field photometry
+if using narrow filters.
+
+The ESO Image Quality Filters Catalogue (Gilliotte, 1992) contains a
+list of available filters and transmission curves.  More recently
+(1995), a number of new filters have been acquired and all
+transmission curves re-measured.  This new data can be viewed using
+the MIDAS graphical user interface (GUI) {\tt FILTERS}, available in
+MIDAS version 94NOV or later. The most recent version is always
+available in La Silla. Lists of standard EMMI filters are also given
+in Chapters 5 (RILD) and 6 (BIMG), respectively (Tables 5.1 and
+6.1), and a list of standard SUSI filters in Chapter 11 (of the
+manual).
+
+
+Calibration
+===========
+There is a system of calibration lamps associated with the
+adapter/rotators at the NTT which can be used for most of the
+wavelength calibrations required for the EMMI data.  The main
+component of the calibration system is an integrating sphere mounted
+on the side of the adapter.  Light from the output aperture of the
+integrating sphere passes a lens and is reflected to the center of
+the focal plane by a 45 degree mirror which is moved to the optical
+axis. On the integrating sphere He, Ar, and ThAr lamps are mounted,
+while the light of flatfield and other spectral lamps that are
+mounted in a rack on the floor is fed to the sphere through an
+optical fibre.  The fiber induces some broad absorption features
+around 724 micron and 880 micron which do not occur in the
+scientific data.  The angular size, location, and shape (including
+central obscuration) of the NTT exit pupil are approximately
+simulated.  The illumination is homogeneous and unvignetted in a 3
+arc min by 6 arc min field and is still usable in a field of 5 arc
+min by 8 arc min which is the maximum field size for MOS.
+
+
+Processing
+==========
+The data from the EMMI and SUSI detectors are simultaneously
+transmitted to IHAP and MIDAS databases.  MIDAS runs on a Unix
+workstation equipped with a DAT tape unit. IHAP uses standard 1/2
+inch 2400~foot tapes at 6250 BPI with a total capacity of 45 by 1024
+times 1024 images in FITS format.
+
+The FITS headers of CCD files contain all the information necessary
+for the scientific use of the data, that is all the telescope,
+instrument, and detector parameters. Most of these parameters are
+stored in so-called hierarchical keywords. MIDAS can read these
+keywords, but some other packages may not since these are an
+extension of the FITS standard. If you are not using MIDAS, it is
+worth to check the actual FITS header for further information which
+may be useful.
+
+
+Electronics
+===========
+The NTT is controlled by two HP1000/A900 computers, one for the
+telescope (called NTT) and one for the instruments (called NTI).
+The control software of EMMI is organized in such a way that EMMI is
+presented as five sub-instruments called RILD, REMD, BIMG, BLMD, and
+DIMD.  Depending on the type of observations, the user selects one
+of these modes and the control software automatically moves the
+functions to be set for this mode.  This leaves only the parameters
+of the particular type of observation to be defined.  For instance,
+when setting up an exposure in RILD, the required mirror unit and
+the upper red folding mirror are automatically set. The observer
+must only specify the camera focus, the choice of slit, filter
+and/or grism, and exposure parameters (see section Getting
+started).
+
+The user interface (UIF) consists of a RAMTEK monitor where mouse
+driven menus and forms are displayed, and a CRT (LU:53) monitor
+where messages from the system about the instrument are given and
+commands may be entered.  Parameters are entered by filling in forms
+on the RAMTEK screen.
+
+Once all optional optical elements are installed by the operation
+group, according to the observer's request, a setup form is
+produced. A printout of this form is left in the control room so
+that the observer can verify the setup and can use it as reference
+during the night.  The positions in the wheels of filters,
+grisms,and slits, and the gratings in the housing will be displayed,
+on the RAMTEK UIF in sofar as it is used in the chosen mode,
+whenever a setup in that mode is defined.
+
+
+System Performance
+==================
+The pointing of the NTT is better than 1.5 arcsec rms. Guiding the
+telescope is normally done by the night assistant by centering a
+star on one of the two guide probes in the adapter and starting the
+autoguider.
+
+The camera on the blue arm of EMMI is at F/4 and the detector
+presently used is a TEK CCD of 1024x1024 pixels, 24 micron in size
+(ESO No  31).  This gives a scale of 0.37 arcsec/pixel and a field
+of view of 6.2 by 6.2 arcmin.
+
+
+Ancillary Data
+==============
+Bias and darks
+--------------
+It is not safe to assume the bias to be always a scalar and
+therefore it is recommended to take many bias exposures.
+
+It has proven to be extremely difficult to isolate the CCD
+electronics from electrical interference from components in the NTT
+adapters/rotators. Therefore to some extent, the EMMI CCDs show
+pick-up patterns in the electronic background (the bias).  This
+noise is minimized in  SLOW readout mode, but may be rather strong
+in FAST readout frames. The patterns are not stable, but change from
+one exposure to the next, so it is difficult to remove them
+completely by substracting bias frames.  However, some reduction can
+be achieved and, therefore, it is recommended to take a good number
+of bias frames throughout the observing run.  Should strong patterns
+(i.e. more than a few ADUs) appear on SLOW readout bias frames, call
+the NTT coordinator (93-50).  Note that spurious patterns are
+introduced if images are displayed with demagnification factors.
+
+At least one, but preferably more, long (1 hour) dark exposures
+should be taken to monitor the dark current and any exposure
+dependent features.
+
+Flat fields
+-----------
+The linearity of CCD No 31 is very good up to 160,000 e/pixel.  The
+most accurate results for flat fields in broad band imaging are
+obtained using sky flats. This may be achieved by median filtering
+of science images, if they are not too densely populated with stars
+and do not contain very extended objects, or by doing multiple
+exposures of sparsely populated fields, using spatial offsets. A
+list of such fields is available in the control room. Another
+approach is to use morning and evening twilight.
+
+Shutter timing
+--------------
+A time delay of 0.80 seconds has been measured for the shutter in
+the blue F/4 camera.  Because of the location of the shutter in the
+optical path, the exposure time over the field is constant and equal
+to the chosen time plus the average shutter delay.  If critical for
+your application, it is recommended that you check the shutter
+timing by either taking exposures of increasing duration on a star,
+or using one of the internal lamps and a pinhole in the aperture
+wheel.
+
+Typical count rates
+-------------------
+In blue imaging the efficiency of EMMI is the product of the
+transmission of the atmosphere, three reflections in the telescope,
+the transmission of the blue coated optics of mode BIMG, filter, and
+quantum efficiency of the CCD. The efficiency in B and U was checked
+for the F/4 camera and TEK CCD No 31 in 1993.  The count rates in
+e/sec deduced for a 15th magnitude A star with approximately zero
+colour are U: 2200, B: 16,900 at unit airmass.
+
+Wallander A.:  1993, Remote Control of the 3.5m NTT User Guide, ESO
+Operating Manual No 17.
+
+Dekker. H.,  Delabre, B.:  1987, Applied Optics, 26, 8, 1375
+
+Dekker, H.,  Delabre, B.,  D'Odorico, S.:  1986, SPIE, 627, 339
+
+Gilliotte, A.:  1992, Image Quality Filters Catalogue, Internal ESO
+publication
+
+Melnick, J.,  Dekker, H.,  D'Odorico, S.:  1989, ESO Operating
+Manual #4
+
+Prieur, J. L., Rupprecht, G.: 1990, Efficiencies of EMMI, ESO
+internal report.</description>
+  </Instrument>
+</Product_Context>
+

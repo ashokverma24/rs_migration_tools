@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.soho</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>SOLAR AND HELIOSPHERIC OBSERVATORY</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-02-13</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Changed :instrument:lasco.soho to instrument:soho.lasco,
+                    added reference to :instrument:soho.swan,
+                    changed :target:sun.sun to :target:star.sun
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.solar_and_heliospheric_observatory::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:soho.lasco::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:soho.swan::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:star.sun::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Fleck B., V. Domingo, A.I. Poland, The SOHO Mission, Solar Phys., 162, 1-531,
+                   1995.
+            </reference_text>
+            <description>reference.FLECKETAL1995</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>SOLAR AND HELIOSPHERIC OBSERVATORY</name>
+        <type>Spacecraft</type>
+        <naif_host_id>SOHO</naif_host_id>
+
+        <description>
+ 
+ 
+  Instrument Host Overview
+  ========================
+ 
+ 
+    The SOHO spacecraft was launched in December 1995, however the LASCO
+    instrument did not begin regular observing until January 21, 1996. It
+    has operated nearly continuously since then except for an interruption
+    from June 25, 1998 until October 22, 1998. Smaller unplanned interruptions
+    have occurred periodically, and pre-planned interruptions for routine
+    maintenance, calibration, and satellite control have occurred, and will
+    continue to occur until the conclusion of the mission.
+ 
+    The SOHO spacecraft is three-axis stabilized and pointed towards the
+    Sun with an accuracy of +/- 10 arcsec per 15 min. It consists of a
+    Payload Module to accommodate the instruments and a Service Module
+    carrying the spacecraft subsystems and solar arrays. SOHO occupies a
+    halo orbit at the Earth-Sun L1 Lagrangian point to obtain uninterrupted
+    sunlight. The design life was two years, but on-board consumables were
+    sufficient for at least an extra four years of operations, and the nominal
+    mission end is now March 2007.
+ 
+    Twelve instruments comprise the payload, producing a continuous stream
+    of data at 40 kbs, except when the solar oscillations imager
+    Michelson Doppler Imager (MDI) operates in high-bit-rate mode,
+    producing 160 kbs. The high-bit-rate mode is used during scheduled
+    daily eight-hour periods or during dedicated campaigns. Magnetic tape
+    stores data between telemetry contacts with the Experiment Operations
+    Facility, located at NASA-GSFC. For more information, see B. Fleck, V.
+    Domingo, and A. I. Poland, eds., Solar Physics, V. 162, 1995
+    [FLECKETAL1995].
+ 
+    Author
+    -------
+    The text in this file was compiled by Matthew Knight, University of
+    Maryland
+    from online resources made publicly available by the SOHO website.
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

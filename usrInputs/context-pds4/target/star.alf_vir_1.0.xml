@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_vir</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Spica</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Alpha Virginis</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Vir</alternate_title></Alias>
+      <Alias><alternate_title>alf Vir</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>67 Vir</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J1325115-110940</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14813</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-10 3672</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J13252-1109A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-10 3672 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 3039</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1322.5-1053</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1ES 1322-10.8</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J1325-11.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 498</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 18144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 7963</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00116658</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05547-01518</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 116658</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 623</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 65474</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 65474</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 5056</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 13200-1038 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 13225-1054</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10286</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2392</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J13251158-1109404</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MCW 553</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3066</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3063</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 354</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMSC 13199-1038Aabcd</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 227262</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1622</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RBS 1263</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J132508-111117</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J1325-111</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J132512-110856</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J1325-110</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 1963</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RX J1325.2-1109</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J132511.6-110932</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SACS 290</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 157923</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC7 487</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC9 766</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 24751</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 16831</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5547-1518-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 12103</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 19362</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100116658</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J13252-1110A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 11556</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+     </Modification_Detail>
+   </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Spica</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 13 hours 25 minutes 11.57937 seconds
+Declination, ICRS coord, ep=J2000: -11 degrees 09 minutes 40.7501 seconds
+    </description>
+  </Target>
+</Product_Context>
+

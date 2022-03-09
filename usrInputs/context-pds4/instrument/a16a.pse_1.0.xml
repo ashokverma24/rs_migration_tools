@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pse.a16a</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Apollo 16 Passive Seismic Experiment (PSE)</title>
+        <information_model_version>1.10.1.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-10-04</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial PDS4 version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a16a</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                Apollo 16 Preliminary Science Report, NASA SP-315, 622 pages, published by
+                NASA, Washington D.C., 1972.
+            </reference_text>
+            <description>reference.APOLLO16A1972</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>Apollo Scientific Experiments Data Handbook, NASA Technical Memorandum X-58131, 
+                JSC-09166, published by NASA Johnson Space Center, Houston, Texas, Aug. 1974.
+            </reference_text>
+            <description>reference.APOLLOSEDH1974</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                Bates, J.R., W.W. Lauderdale, and H. Kernaghan, ALSEP termination report, NASA
+                Reference Publication Series, NASA-RP-1036, 162 pages, published by NASA,
+                Washington, D.C., 1979.
+            </reference_text>
+            <description>reference.BATESETAL1979</description>
+        </External_Reference> 
+    </Reference_List>
+    <Instrument>
+        <name>Apollo 16 Passive Seismic Experiment (PSE)</name>
+        <type>Seismometer</type>
+        <description>The Apollo Passive Seismic Experiment consisted of four seismic stations deployed on the 
+            lunar near side between 1969 and 1972 (Apollo 12, 14, 15, 16). These operated continuously from 
+            inception to mid-1977, when funding was cut and the data were no longer recorded. Each station 
+            consisted of a 3-axis long-period seismometer (sample rate 6.6252 Hz) and vertical-axis 
+            short-period seismometer (sample rate 15 Hz.).
+        </description>
+    </Instrument>
+</Product_Context>

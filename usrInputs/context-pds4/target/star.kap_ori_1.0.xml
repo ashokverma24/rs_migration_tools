@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.kap_ori</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Saiph</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>53 Orionis</alternate_title></Alias>
+      <Alias><alternate_title>141 G. Orionis</alternate_title></Alias>
+      <Alias><alternate_title>Kappa Orionis</alternate_title></Alias>
+      <Alias><alternate_title>Kappa Ori</alternate_title></Alias>
+      <Alias><alternate_title>53 Ori</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>kap Ori</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14795</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-09 1235</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 976</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 100683</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1E 0545.4-0940</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1562</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 0545.3-0941</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 220</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 7264</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 3603</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00038771</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05351-00760</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 38771</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 477</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 27366</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 27366</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 2004</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 05453-0941</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10098</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1262</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>KMS 121</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J05474538-0940105</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MCW 363</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 1242</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 2641</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1330</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1330.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 158</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 188455</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 929</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J054745.2-094013</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 132542</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 9544</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* ZI 484</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 5371</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5351-760-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 5932</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 11510</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100038771</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 5378</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WH 507</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 0543-09</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 3011968416163350272</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Saiph</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 05 hours 47 minutes 45.3888404 seconds
+Declination, ICRS coord, ep=J2000: -09 degrees 40 minutes 10.577707 seconds
+    </description>
+  </Target>
+</Product_Context>

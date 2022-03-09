@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:marsis.mex</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARS ADVANCED RADAR FOR SUBSURFACE AND IONOSPHERE SOUNDING for MEX</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mex::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Picardi, G. et. al., MARSIS: Mars Advanced Radar for Subsurface and Ionosphere
+                   Sounding, ESA-SP-1240, September 2004
+            </reference_text>
+            <description>reference.PICARDIETAL2004</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MARS ADVANCED RADAR FOR SUBSURFACE AND IONOSPHERE SOUNDING</name>
+        <type>Altimeter</type> <!--RChen/EN was RADAR-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    MARSIS is a multi-frequency nadir-looking pulse-limited radar sounder and
+    altimeter, which uses synthetic aperture techniques and a secondary
+    receiving antenna to enhance subsurface reflections. MARSIS can be
+    effectively operated at any altitude lower than 800 km in subsurface
+    sounding mode, and below 1200 km in ionosphere sounding mode. The
+    instrument consists of two antenna assemblies and an electronics assembly.
+    Maximum penetration depths are achieved at the lowest frequencies, and
+    penetration is in the order of a few kilometres, depending on the nature
+    of the material being sounded. On the dayside of Mars, the solar wind-
+    induced ionosphere does not allow subsurface sounding at frequencies below
+    approximately 3.5 MHz, as the signal would be reflected back at the radar
+    without reaching the surface. To achieve greater subsurface probing
+    depths, operations on the night side of Mars are thus strongly preferred.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The primary objective of MARSIS is to map the distribution of water, both
+    liquid and solid, in the upper portions of the crust of Mars. Detection of
+    such reservoirs of water addresses key issues in the hydrologic, geologic,
+    climatic and possible biologic evolution of Mars, including the current
+    and past global inventory of water, mechanisms of transport and storage of
+    water, the role of liquid water and ice in shaping the landscape of Mars,
+    the stability of liquid water and ice at the surface as an indication of
+    climatic conditions, and the implications of the hydrologic history for
+    the evolution of possible Martian ecosystems.
+ 
+    Three secondary objectives are defined for the MARSIS experiment. The
+    first objective consists in probing the subsurface of Mars, to
+    characterise and map geologic units and structures in the third dimension.
+    An additional secondary objective consists in acquiring information about
+    the surface of Mars: the specific goals of this part of the experiment are
+    to characterise the roughness of the surface at scales of tens of meters
+    to kilometres, to measure the radar reflection coefficient of the surface
+    and to generate a topographic map of the surface at approximately 15-30
+    kilometres lateral resolution. A final secondary objective is to use
+    MARSIS as an ionosphere sounder to characterize the interactions of the
+    solar wind with the ionosphere and upper atmosphere of Mars.
+ 
+ 
+  Calibration
+  ===========
+    In order to get the predicted performances in the dual antenna clutter
+    cancellation procedure, and consequently to reach the expected penetration
+    depth, the null of the monopole antenna has to be determined.
+ 
+    An estimation of the direction of the null in the monopole channel can be
+    obtained by acquiring calibration data over a rough (related to the
+    wavelength) area (range - azimuth transform to detect the null direction).
+    This requires MARSIS to operate at full power with the pitch set at zero
+    degree and over a rough terrain to get a strong surface clutter and with
+    proper illumination condition in order to use all the frequencies.
+ 
+    After data analysis, the pitch (along track) null region direction is
+    identified with a coarse accuracy; around this point we require S/C
+    manoeuvre to get the 1 degree accuracy required. The following procedure
+    has been applied over a smooth area:
+ 
+    - Every orbit had a different roll (cross track) pointing: from -2 to 2
+    degrees with steps of 1 degree
+ 
+    - In each orbit the pitch pointing has been varied continuously (with
+    steps of 1 degree) during the pericenter passage from -4 to 1 degrees.
+ 
+ 
+  Operational Considerations
+  ==========================
+    MARSIS has been designed to perform subsurface sounding at each orbit when
+    the altitude is below 800 Km. A highly eccentric orbit such as the
+    baseline orbit places the spacecraft within 800 km from the surface for a
+    period of about 26 minutes. This would allow mapping of about 100 degrees
+    of arc on the surface of Mars each orbit, allowing extensive coverage at
+    all latitudes within the nominal mission duration. To achieve this global
+    coverage MARSIS has been designed to support both day side and night side
+    operations, although performances are maximized during night time (solar
+    zenith angle &gt; 80 degrees), when the ionosphere plasma frequency drops off
+    significantly and the lower frequency bands, which have greater subsurface
+    penetration capability, can be used.
+ 
+    Active Ionosphere Sounding is also carried out by MARSIS at certain passes
+    when the spacecraft is below 1200 Km of altitude, both during day and
+    night time.
+ 
+    The instrument is commanded by means of two tables, the Operations
+    Sequence Table and the Parameters Table, which are up-linked from ground
+    as part of the instrument programming and commanding, and loaded in the
+    instrument memory at switch-on.
+ 
+ 
+  Detectors
+  =========
+    MARSIS antenna assembly consists of two antennas, a dipole and a monopole.
+    The primary dipole antenna, parallel to the surface and to the direction
+    of spacecraft motion, is used for transmission of pulses and for reception
+    of pulse echoes reflected by the Martian surface, subsurface and
+    ionosphere. The secondary monopole antenna, oriented along the nadir, has
+    a null in the nadir direction, and it is thus sensitive to off-nadir
+    surface returns. Such surface returns could mask subsurface echoes
+    arriving at the same time, and are thus an undesired contribution to the
+    received echoes (clutter): the monopole antenna is used in subsurface
+    sounding to remove clutter from the signal received by the dipole.
+ 
+ 
+  Electronics
+  ===========
+    Due to limits in permitted data rate for data transmission between the
+    instrument and the solid state mass memory of the spacecraft, and
+    constraints on the data volume that can be down-linked to Earth, most data
+    processing is performed within the instrument itself. Major tasks
+    performed by MARSIS digital processing unit are Doppler processing, range
+    processing, and multi-looking. Different operative modes requires all,
+    some or none of these capabilities.
+ 
+    Conceptually, Doppler processing of pulse echoes consists in artificially
+    adding a delay, corresponding to a phase shift of the complex signal, to
+    the samples of each pulse, and then in summing the samples so as to allow
+    the constructive sum of the signal component whose delay (phase shift)
+    from one pulse to the next corresponds to a desired direction (usually
+    nadir or close to nadir). This is called also synthetic aperture
+    processing, and is used to improve both horizontal resolution in the
+    along-track direction and signal-to- noise ratio: horizontal resolution
+    becomes that of an equivalent antenna whose length is equal to the segment
+    of the spacecraft trajectory over which pulse echoes are summed
+    coherently, whereas signal-to-noise ratio improves by a factor equal to
+    the number of coherently summed pulses.
+ 
+    Range processing consists in computing the correlation between the
+    transmitted pulse and received echoes. If the transmitted amplitude is
+    constant during the pulse, the correlation with an echo identical to the
+    transmitted signal takes the form of a (sin x)/x pulse. This process,
+    called also range compression, is performed on ground for most subsurface
+    sounding modes, on the digitally sampled data, to properly compensate
+    ionospheric effects: accurate coherent pulse compression requires in fact
+    detailed knowledge of the modulation of the returning signals, whose phase
+    structure is distorted in their (two-way) propagation through the
+    ionosphere.
+ 
+    Multi-look processing is the non-coherent sum of echoes (that is, phase
+    information in the complex signal is ignored), after both Doppler and
+    range processing, performed to increase the signal-to- noise ratio and
+    reduce speckle, this last being the effect of random fluctuations in the
+    return signal observed from an area-extensive target represented by one
+    pixel. Because this process requires that multiple observations of the
+    same area are available for the summing, it spans across several frames in
+    which the same spot on the surface is observed at slightly different
+    angles of incidence in different adjacent synthetic apertures.
+ 
+ 
+  Filters
+  =======
+    In MARSIS subsurface sounding, the same group of echoes undergoing
+    synthetic aperture processing can be used to focus multiple points on the
+    surface, by changing the phase shift from echo to echo so as to produce
+    constructive interference in different directions. The resulting processed
+    echoes are also called Doppler filters.
+ 
+ 
+  Operational Modes
+  =================
+    For subsurface sounding, a chirp signal is generated and transmitted at
+    each operating frequency for a period of about 250 microseconds. The
+    instrument then switches to a receive mode and records the echoes from the
+    surface and subsurface. The total transmit-receive cycle lasts a few
+    milliseconds, depending on altitude. The received signals are passed to a
+    digital-to-analogue converter and compressed in range and azimuth. The
+    azimuth integration accumulates a few seconds of data and results in an
+    along-track footprint size of 10 km. The cross-track footprint size is on
+    the order of 20 km. Digital on-board processing greatly reduces the output
+    data rate to 75 kilobits per second or less. For each along-track
+    footprint, echo profiles show the received power as a function of time
+    delay, with a depth resolution of 50-100 m, depending on the wave
+    propagation speed in the crust.
+ 
+    Active ionosphere sounding consists of transmitting a pulse from MARSIS at
+    a frequency f, and then measuring the intensity of the reflected radar
+    echo as a function of time delay.  For a radar signal incident on a
+    horizontally stratified ionosphere, a strong specular reflection occurs
+    from the level where the wave frequency is equal to the electron plasma
+    frequency. By measuring the time delay for the reflected signal
+    (controlled by the group delay), the plasma frequency, and therefore the
+    electron density can be derived as a function of height. The frequency of
+    the transmitted pulse is systematically stepped to yield time delay as a
+    function of frequency.
+ 
+    In addition to subsurface and ionosphere sounding, MARSIS is capable of
+    two more data collection modes that are not science-related, but are
+    rather used for the testing of the instrument. Hardware calibration mode
+    and receive-only mode are identical in their sequencing of data
+    acquisition, differing only for the fact that in receive-only mode no
+    pulses are actually transmitted. In both modes, 80 echoes are collected
+    from both antennas at one of the frequency bands used in subsurface
+    sounding, stored in a buffer as they come out of the analogue-to-digital
+    converter, and, because the resulting data rate would be too high for the
+    spacecraft data bus, transferred to the spacecraft mass memory over a time
+    span eighty times longer than the one used for data acquisition.
+ 
+ 
+  Subsystems
+  ==========
+    From the functional point of view, the instrument can be split into three
+    subsystems:
+ 
+    - Antenna (ANT)
+    - Radio Frequency Subsystem (RFS)
+    - Digital Electronics Subsystem (DES)
+ 
+    From the mechanical point of view, DES and the receiver section (RX) of
+    the RFS subsystem are allocated in the same box inside the spacecraft.
+    Inside the spacecraft is also allocated the mechanical box for the
+    transmission electronics (TX). The dipole antenna and monopole antenna are
+    located outside the spacecraft.
+ 
+ 
+  Measured Parameters
+  ===================
+    MARSIS data are organized into groups of echoes called frames. A frame
+    contains one or more echoes, with or without on-board processing. Each
+    echo, depending on the kind of processing it underwent, is recorded either
+    as a time series of signal samples, or as the complex spectrum of the
+    signal itself produced by means of a FFT. Scientific data in a frame are
+    complemented by a set of ancillary data, produced by the instrument and
+    recording parameter values used in pulse transmission, echo reception and
+    on-board processing.
+
+        </description>
+    </Instrument>
+</Product_Context>

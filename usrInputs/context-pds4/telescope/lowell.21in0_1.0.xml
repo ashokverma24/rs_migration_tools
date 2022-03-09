@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:lowell.21in0</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Lowell Obersvatory 21-in Reflector</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-23</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.lowell</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit='m'>0.5334</aperture>
+        <telescope_longitude unit='deg'>248.335556</telescope_longitude>
+        <telescope_latitude unit='deg'>35.202778</telescope_latitude>
+        <telescope_altitude unit='m'>2210</telescope_altitude>
+        <coordinate_source>Geodetic - North American (1927) Datum</coordinate_source>
+        <description>
+            21.0-in (53 cm) reflector telescope at Lowell Observatory, Mars Hill, Flagstaff, AZ, was built for Harold Johnson, in 1953.
+            The telescope ushered in photoelectric astronomy at Lowell. The 21-in is the only manually slewed telescope at Lowell
+            and is still in use with minimal upgrades since 1953.
+        </description>
+    </Telescope>
+</Product_Context>

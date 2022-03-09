@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.del_lup</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Delta Lupi</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Delta Lup</alternate_title></Alias>
+      <Alias><alternate_title>del Lup</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 15010</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-40 9538</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 4364</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 0 13238</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-40 6933</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 101496</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J1521-40.6</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 1402</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 20620</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 8871</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00136298</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 07839-02803</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 136298</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 2032</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 75141</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 75141</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 5695</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 15180-4028</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2592</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J15212233-4038510</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3450</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 320495</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2169</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SACS 334</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 225691</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 27808</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SVI ZI 1116</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 18138</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7839-2803-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 13201</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 20698</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100136298</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 12818</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 6005678131786964352</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Delta Lupi</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 15 hours 21 minutes 22.3252367778 seconds
+Declination, ICRS coord, ep=J2000: -40 degrees 38 minutes 51.022228791 seconds
+    </description>
+  </Target>
+</Product_Context>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet_umi</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Kochab</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>7 Ursae Minoris</alternate_title></Alias>
+      <Alias><alternate_title>Al Kaukab al Shamaliyy</alternate_title></Alias>
+      <Alias><alternate_title>Beta Ursae Minoris</alternate_title></Alias>
+      <Alias><alternate_title>Beta UMi</alternate_title></Alias>
+      <Alias><alternate_title>7 UMi</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>bet UMi</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+74 412</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+74 595</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J14506+7410A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+74 595 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 101477</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 550</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 20029</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 8646</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00131873J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 04416-01799</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 131873</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 72607</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 72607</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 5563</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 14510+7434 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 14508+7421</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +70125</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2549</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J14504235+7409199</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3361</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 6846</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3373</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3373.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 390</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 8758</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1740</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2127</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 8102</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 26960</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* ZI 1097</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 17825</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 4416-1799-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 12983</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 20451</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO 853</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100131873</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J14507+7409A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 12482</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Kochab</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 14 hours 50 minutes 42.32580 seconds
+Declination, ICRS coord, ep=J2000: +74 degrees 09 minutes 19.8142 seconds
+    </description>
+  </Target>
+</Product_Context>

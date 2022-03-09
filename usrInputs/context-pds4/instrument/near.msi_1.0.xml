@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:msi.near</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MULTI-SPECTRAL IMAGER for NEAR</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.near::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Hawkins, S. Edward III, E.H. Darlington, S.L. Murchie, K. Peacock, T.J. Harris,
+                   C.B. Hersman, M.J. Elko, D.T. Prendergast, B.W. Ballard, R.E. Gold, J. Veverka,
+                   and M.S. Robinson, Multi-spectral imager on the Near Earth Asteroid Rendezvous
+                   Mission, Space Science Reviews, 82, 31-100, 1997.
+            </reference_text>
+            <description>reference.HAWKINSETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Murchie, S.L., M. Robinson, S.E. Hawkins III, A. Harch, P. Helfenstein, P.
+                   Thomas, K. Peacock, W. Owen, G. Heyler, P. Murphy, E.H. Darlington, A. Keeney,
+                   R. Gold, B. Clark, N. Izenberg, J.F. Bell III, W. Merline, J. Veverka, Icarus,
+                   Vol. 140, No. 1, 66-91, 1999.
+            </reference_text>
+            <description>reference.MURCHIEETAL1999</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MULTI-SPECTRAL IMAGER</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  This catalog file contains excerpts from:
+  [HAWKINSETAL1997]
+ 
+  Additional MSI instrument information can be found in:
+  [MURCHIEETAL1999]
+ 
+  Instrument Overview
+  ===================
+  The Multi-Spectral Imager (MSI) on the Near-Earth Asteroid Rendezvous
+  (NEAR) spacecraft uses a five-element refractive optical telescope,
+  has a field of view of 2.93 x 2.25 degrees, a focal length of 167.35
+  mm, and has a spatial resolution of 16.1 x 9.5 m at a range of 100 km.
+  The spectral sensitivity of the instrument spans visible to near
+  infrared wavelengths, and was designed to provide insight into the
+  nature and fundamental properties of asteroids and comets. Seven
+  narrow-band spectral filters were chosen to provide multicolor imaging
+  and to make comparative studies with previous observations of S
+  asteroids and measurements of the characteristic absorption in Fe
+  minerals near 1 micron. An eighth filter with a much wider spectral
+  passband will be used for optical navigation and for imaging faint
+  objects, down to visual magnitude of +10.5. The camera has a fixed 1
+  Hz frame rate and the signal intensities are digitized to 12 bits. The
+  detector, a Thomson-CSF TH7866A Charge-Coupled Device, permits
+  electronic shuttering which effectively varies the dynamic range over
+  an additional three orders of magnitude. Communication with the NEAR
+  spacecraft occurs via a MIL-STD-1553 bus interface, and a high speed
+  serial interface permits rapid transmission of images to the
+  spacecraft solid state recorder. On-board image processing consists of
+  a multi-tiered data compression scheme. The instrument was extensively
+  tested and calibrated prior to launch; some inflight calibrations have
+  already been completed. For a detailed overview of the Multi-Spectral
+  Imager and its objectives, design, construction, testing and
+  calibration, see [HAWKINSETAL1997] Space Science Reviews 82, 31-100.
+  The text in this data set catalog object has been extracted from this
+  paper.
+ 
+  Two major subassemblies make up the MSI instrument: a camera and a
+  Data Processing Unit, or DPU. These two assemblies are physically
+  separated by about 100 mm and are located on the aft deck of the NEAR
+  spacecraft, with the camera&apos;s optical axis parallel to the X&apos;-axis of
+  the spacecraft. A refractive optical telescope, a filter wheel, and a
+  detector with its associated electronics are all part of the camera.
+  The DPU provides a digital interface to the spacecraft and supplies
+  power and the master timing to the camera.
+ 
+ 
+  Camera Assembly
+  ===============
+  The camera specifications are summarized here:
+ 
+  Mass:           Camera           3.7 kg
+                  DPU              4.0 kg
+  Power:          Camera           1.43 W
+                  DPU              5.49 W
+  FOV                              2.93 x 2.25 degrees
+  Spectral Range                   400 - 1100 nm
+  Refractive Optics                5 Elements
+  Focal Length                     167.35 mm
+  Clear Aperture (no cover)        18.6 cm^2
+  Clear Aperture (with cover)      4.35 cm^2
+  Frame Size                       537 x 244
+  Frame Rate                       1 Hz
+  Frame Size (no compression)      1.6 Mbits
+  Quantization                     12 bits
+  Exposure Control                 1 ms to 999 ms
+  Filter Wheel                     8 Position
+       Broadband (&apos;Clear&apos;)         700 nm
+       Green                       550 nm
+       Blue                        450 nm
+       Red                         760 nm
+       IR1                         950 nm
+       IR2                         900 nm
+       IR3                         1000 nm
+       IR4                         1050 nm
+ 
+ 
+  Data Processing Unit Assembly
+  =============================
+  The MSI Data Processing Unit (DPU) provides the necessary digital
+  interface to the camera&apos;s FPD, and houses all of MSI&apos;s power
+  converters, filter wheel control electronics, and the master clocking
+  required by the camera. A microprocessor within the DPU receives
+  commands from one of the two redundant spacecraft Command Telemetry
+  Processors (CTPs). The CTP distributes commands, collects data from
+  all instruments, and formats the data for recording and downlinking.
+  Communication with the spacecraft takes place via a MIL-STD-1553 bus
+  or alternatively through a high speed serial link (2 Mbits/s). Eight
+  image buffers within the DPU allow temporary storage of the image
+  data, permitting a variety of data compression algorithms to be
+  applied to the data. Implementation of a multi-tiered compression
+  scheme allows any algorithm to be applied to the data individually, or
+  in combination. Both lossy and lossless compression algorithms are
+  available. Images acquired and digitized by the camera are transferred
+  to the DPU in parallel through a short harness.
+ 
+  A 1 Hz timing signal from the spacecraft synchronizes commands from
+  the DPU to the camera. Integration times may be commanded from 1 to
+  999 ms, effectively varying the sensitivity of the instrument by
+  nearly three orders of magnitude. Each full image is made up of 244 x
+  537 pixels and contains a header of all the parameters associated with
+  the image, including the time the image was taken, CCD temperature,
+  exposure time, filter, data compression information, etc. The data are
+  packetized within the DPU. In addition to the image data, each packet
+  also includes information to locate its data within the overall image.
+  This design minimizes data loss in the event of a single lost or
+  corrupted packet.
+
+        </description>
+    </Instrument>
+</Product_Context>

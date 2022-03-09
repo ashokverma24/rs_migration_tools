@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:naoj-hawaii.subaru_8m2.comics</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Cooled Mid-Infrared Camera and Spectrometer</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_title>COMICS</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-10-05</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial creation of the context product. 
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:naoj-hawaii.subaru_8m2</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Cooled Mid-Infrared Camera and Spectrometer</name>
+        <type>Spectrometer</type>
+        <subtype>Mid-Infrared</subtype>
+        <description>
+            COMICS is a mid-infrared camera and spectrometer with the ability to study cool interstellar
+            dust, galaxies and active galactic nuclei, protoplanetary/planetary applications mounts on the 
+            Cassegrain focus of the Subaru 8.2 m telecope at the National Astronomical Observatory of Japan
+            on Mauna Kea, in Hawai'i. The instrument measures 2 m x 2 m x 2m and weighs 2 t. COMICS operates
+            in the wavelength range 7.5 - 25 µm and is optimized for use in the N-band (7.5 - 13.5 µm) and Q-
+            band (16 - 25 µm). The detectors used are 6 320-pixel by 240-pixel Si:As BIB detectors: 1 for 
+            imaging/slit viewing (40" slit length) and 5 arrays for spectroscopy, which provide high sensitivity,
+            high spatial resolution, and observational efficiency. The field of view (FOV) is 42 arcsec x 32 arcsec
+            for imaging, with a pixel size of 50 µm. Pixel scale is 0.13 arcsec (imaging) or 0.165 arcsec
+            (spectroscopy), which translates into specrtral resolution of 250-10,000 in N-band and 2,500 in Q-band.
+            
+            Taken from instrument web page: https://www.subarutelescope.org/Introduction/instrument/COMICS.html
+        </description>
+    </Instrument>
+</Product_Context>

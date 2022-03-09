@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.del_oph</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Yed Prior</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Delta Ophiuchi</alternate_title></Alias>
+      <Alias><alternate_title>Delta Oph</alternate_title></Alias>
+      <Alias><alternate_title>1 Oph</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>del Oph</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-03 3903</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J16143-0342A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-03 3903 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 603</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 21838</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 9340</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00146051</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 146051</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 79593</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 79593</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 6056</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 16091-0326 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 16117-0334</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +00280</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2719</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J16142073-0341393</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3639</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 7556</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3684</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3684.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 430</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 199443</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1837</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 141052</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 29317</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 18991</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5037-1068-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 13793</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 21279</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J16143-0342A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 13466</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 93 5613</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Yed Prior</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 16 hours 14 minutes 20.73853 seconds
+Declination, ICRS coord, ep=J2000: -03 degrees 41 minutes 39.5612 seconds
+    </description>
+  </Target>
+</Product_Context>

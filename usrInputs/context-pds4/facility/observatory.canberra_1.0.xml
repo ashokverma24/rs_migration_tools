@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+        
+      <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.canberra</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Canberra Deep Space Communications Complex</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-07-30</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Written for use with a large set of other DSN context products.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.dsn</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                This context product describes the NASA Deep Space Network as a single,
+                worldwide observatory within which the Canberra Deep Space Communications
+                Complex is one component.
+            </comment>
+        </Internal_Reference>
+    
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.810-005</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                DSN document 810-005 is the Telecommunication Link Design Handbook for the
+                NASA Deep Space Network.  It contains design data for flight projects using the
+                NASA DSN. The document is modular, and modules are updated as appropriate.  
+                This reference is to a PDS4 collection; products within the collection are 
+                versions of the Handbook, released at various times.  Modules include:
+                   001 Handbook Introduction
+                   101 70-m Subnet Telecommunications Interfaces
+                   102 26-m Subnet Telecommunications Interfaces (omitted in 2009 and later versions)
+                   103 34-m HEF Subnet Telecommunications Interfaces
+                   104 34-m BWG Antennas Telecommunications Interfaces
+                   105 Atmospheric and Environmental Effects
+                   106 Solar Corona and Solar Wind Effects
+                   107 Radio Source Catalog
+                   201 Frequency and Channel Assignments
+                   202 34-m and 70-m Doppler
+                   203 Sequential Ranging
+                   205 Command Service
+                   206 Telemetry General Information
+                   207 34-m and 70-m Telemetry Reception
+                   208 Telemetry Data Decoding
+                   209 Open-Loop Radio Science
+                   210 Delta Differential One-way Ranging
+                   211 Wideband Very Long Baseline Interferometry
+                   214 Pseudonoise and Regenerative Ranging
+                   301 Coverage and Geometry (including antenna coordinates)
+                   302 Antenna Positioning
+                   303 Media Calibration
+                   304 Frequency and Timing
+                   305 Test Support
+                   901 Handbook Glossary
+            </comment>
+        </Internal_Reference>
+
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.820-100</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                An overview of the capabilities available from the Deep Space Network to support flight 
+                projects and experiment investigations. The capabilities described are focused on deep 
+                space missions, near-Earth missions above Geosynchronous Earth Orbit (GEO), 
+                and ground-based observational science.  Included are tables summarizing uplink
+                commanding, downlink telemetry, radio frequency, and ground communication capabilities
+                as well as pricing information for mission support. The document is aimed at mission 
+                designers working at the proposal stage; it is updated as appropriate.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss33_34m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-33 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss34_34m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-34 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss35_34m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-35 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss36_34m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-36 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss42_26m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-42 antenna.
+            </comment>
+        </Internal_Reference>
+
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss42_34m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-42 antenna.
+            </comment>
+        </Internal_Reference>
+
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss43_64m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 64-m DSS-43 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss43_70m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 70-m DSS-43 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss45_34m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-45 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss46_26m</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-46 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                Basics of Space Flight.
+                Section 3: Operations, Chapter 18: Deep Space Network.
+                https://solarsystem.nasa.gov/basics/chapter18-1
+            </reference_text>
+            <description>
+                A set of very readable web pages connected by hyperlinks that describes the mission
+                of the NASA Deep Space Network and the roles of its many components.
+            </description>
+        </External_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                Deep Space Network: Canberra Deep Space Communications Complex
+                https://www.cdscc.nasa.gov
+            </reference_text>
+            <description>
+                A set of web pages providing an overview of the Canberra Deep Space Communications 
+                Complex (CDSCC) with emphasis on its history and evolution.  One page provides information
+                on the CDSCC Visitor Centre, including hours of operation.
+            </description>
+        </External_Reference>
+        
+    </Reference_List>
+    
+    <Facility>
+        <name>Canberra Deep Space Communications Complex</name>
+        <type>Observatory</type>
+        <address>
+            421 Discovery Drive
+            Tidbinbilla, ACT
+        </address>
+        <country>Australia</country>
+        <description>
+            The NASA Deep Space Network (DSN) comprises three Deep Space Communications Complexes (DSCCs)
+            spaced by approximately 120 degrees in longitude and within about 40 degrees latitude
+            of Earth's equator. As the Earth rotates, this configuration provides nearly continuous 
+            coverage of spacecraft in the ecliptic -- that is, spacecraft flying to or orbiting most 
+            solar system objects.  The Canberra Deep Space Communications Complex (CDSCC) is one of 
+            these three DSCCs.  The first antenna at the complex (DSS-42) became operational in 1964.  
+            The CDSCC is managed by the Commonwealth Scientific and Industrial Research Organisation.
+            
+            The CDSCC includes several Deep Space Stations (DSSs, or antennas), a Signal Processing
+            Center (SPC), and administrative and support facilities.  Each DSCC handles several types of 
+            data including: frequency and timing, tracking, telemetry, command, monitor, radio science, 
+            and very long baseline interferometry. These data types support uplink (to spacecraft) or 
+            downlink (from spacecraft) operations or passive reception.  Data received from spacecraft
+            are relayed via the local SPC to the Network Operations Control Center (NOCC) at JPL where
+            where they are distributed to the offices responsible for each spacecraft.  Commands, 
+            generated in those offices, are sent via the NOCC, SPC, and DSS to the spacecraft.
+        </description>
+    </Facility>
+    
+</Product_Context>

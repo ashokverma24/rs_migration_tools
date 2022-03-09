@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:trans-neptunian_object.65489_ceto</logical_identifier>
+    <version_id>1.1</version_id>
+    <title>65489 Ceto</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+      <Alias_List>
+        <Alias><alternate_title>(65489) Ceto</alternate_title></Alias>
+        <Alias><alternate_title>65489 Ceto (2003 FX128)</alternate_title></Alias>
+        <Alias><alternate_title>(65489) 2003 FX128</alternate_title></Alias>
+        <Alias><alternate_title>2003 FX128</alternate_title></Alias>
+        <Alias><alternate_title>Ceto</alternate_title></Alias>
+        <Alias><alternate_title>Minor Planet 65489</alternate_title></Alias>
+        <Alias><alternate_title>NAIF ID 2065489</alternate_title></Alias>
+      </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2018-11-18</modification_date>
+        <version_id>1.1</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+      <Modification_Detail>
+        <modification_date>2018-06-23</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS RINGS node</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>65489 Ceto</name>
+    <type>Trans-Neptunian Object</type>
+    <description>none</description>
+  </Target>
+</Product_Context>

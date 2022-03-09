@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.vl1</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>VIKING LANDER 1</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.viking::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:cam1.vl1::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:cam2.vl1::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:instrument:fc1b.vl1::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_instrument</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:instrument:fc2a.vl1::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_instrument</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:fts.vl1::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:lr1.vl1::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:met.vl1::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:planet.mars::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.deimos::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.phobos::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:star.star::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:sun.sun::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Moore, H.J., R.E. Hutton, G.D. Clow, and C.R. Spitzer, Physical properties
+                   of the surface materials at the Viking landings sites on Mars, USGS
+                   Professional Paper 1389, 1987.
+            </reference_text>
+            <description>reference.MOOREETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Snyder, C.W., and I.V. Moroz, Spacecraft Exploration of Mars, in Mars,
+                   Kieffer et al., eds., Univ. of Arizona Press, Tucson, 1992.
+            </reference_text>
+            <description>reference.SNYDER-MOROZ1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Soffen, G.A., &apos;The Viking Project&apos;, Journal of Geophysical Research, vol. 82,
+                   p. 3959, 1977.
+            </reference_text>
+            <description>reference.SOFFEN1977</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>VIKING LANDER 1</name>
+        <type>Spacecraft</type>
+        <naif_host_id>VL1</naif_host_id>
+
+        <description>
+ 
+ 
+    Instrument Host Overview
+    ========================
+      The two Viking Lander spacecraft were the first spacecraft to
+      operate successfully for an extended period of time on the
+      surface of Mars.  Both spacecraft operated from 1976 through
+      April 1980 and Viking Lander 1 (VL1) continued to operate until
+      November 1982.  In 1981, Viking Lander 1 was renamed the Thomas
+      A.  Mutch Memorial Station in honor of Tim Mutch, Lander
+      Imaging Team Leader and later NASA Associate Administrator for
+      Space Sciences.  Tim Mutch was killed in a climbing accident in
+      1980.
+ 
+      The Viking Landers were identical to each other and had the
+      same instrument packages.  The main lander structure was a
+      hexagonal prism body that housed the spacecraft computers, tape
+      recorder, batteries, several science instruments, and controls
+      for the surface sampler, thermal system, and data handling
+      system.  The spacecraft body was supported above the surface by
+      three legs, each with a curved footpad.  The legs were arranged
+      in a triangle pattern with two at the front of the lander and
+      one at the rear.  Mounted to the sides of the spacecraft were
+      three terminal descent engines, two propellant tanks, and the
+      extendible surface sampler arm and collector head.  Also
+      mounted on the spacecraft body were two cameras, two
+      radioisotope thermoelectric generators (RTG) with covers,
+      sample entry ports for the biology, organic chemistry and
+      inorganic chemistry instruments, the seismometer, the
+      meteorology boom, a magnifying mirror, and three imaging
+      reference test charts.  The spacecraft had three antennas for
+      communications; a high-gain S-band antenna (the large disk
+      antenna), a low-gain S-band antenna, and a UHF antenna.  The
+      two S-band antennas were used to communicate with Earth,
+      whereas the UHF antenna communicated with the orbiters.  The
+      spacecraft had several redundant systems for computers,
+      batteries, and communication systems [Moore et al., 1987].
+ 
+      The lander was about 1.5 m across.  Clearance between the
+      spacecraft body and the surface was about 22 cm.  After landing
+      the spacecraft weighted about 610 kg.  Power for the spacecraft
+      was generated by the two RTGs in which plutonium-238 produced
+      about 70 watts of electric power and also charged a series of
+      batteries.  Excess heat from the RTGs was used to heat the
+      instruments and control systems in the spacecraft body [Soffen,
+      1977].
+ 
+ 
+    Science Packages
+    ================
+      Lander science packages included eight investigations.  The
+      imaging system included two identical facsimile cameras.  The
+      meteorology package was mounted on a mast and had instruments
+      to measure atmospheric temperature, pressure, and wind speed
+      and direction.  Each lander had a three-axis, short-period
+      seismometer to measure Mars seismic activity.  The seismometer
+      on VL1 failed to deploy and no data was returned from it, while
+      the one on VL2 operated as planned.  A X-ray fluorescence
+      spectrometer (XRFS) measured the inorganic elemental
+      composition of soils at the landing sites.  A gas chromatograph
+      mass spectrometer (GCMS) measured the composition of the
+      atmosphere and searched for organic compounds in the soils.
+      The biology investigation consisted of three experiments to
+      search for biological metabolism, growth, or photosynthesis:
+      carbon assimilation, labeled release of carbon-14, and gas
+      exchange.  The physical properties investigation used
+      information from many lander operations, such as sampling
+      activities, digging trenches, pushing rocks, forming soil
+      piles, and footpad penetration during landing to characterize
+      the properties of rocks and soils at the landing sites.  The
+      magnetic properties experiment was the only Viking experiment
+      to directly study the mineralogy of soils.  This experiment
+      consisted of magnets mounted on the surface sampler collector
+      head and on the lander deck to collect magnetic minerals.
+      Finally, lander communication systems were used for radio
+      science experiments [Snyder and Moroz, 1992].
+ 
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

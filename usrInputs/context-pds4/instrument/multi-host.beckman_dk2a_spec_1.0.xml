@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:multi-host.beckman_dk2a_spec</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Beckman DK2A Ratio Recording Spectroreflectometer</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-09-17</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Instrument>
+    <name>Beckman DK2A Ratio Recording Spectroreflectometer</name>
+    <type>Spectrometer</type>
+    <description>The Beckman DK2A Ratio Recording Spectroreflectometer is a
+      spectroreflectometer using an integrating sphere with                 
+      three ports: one for the detector; one for the sample;                  
+      and one for the standard. Detectors are interchangable.                 
+      A photomultiplier is used for visible wavelengths; a                    
+      lead sulfide cell for infrared wavelengths. The detectors               
+      measure relative reflectance of the sample with respect to              
+      the standard by alternately illuminating both (via a                    
+      mirror-chopper) and measuring the AC voltage resulting                  
+      in the detector.                                                        
+                                                                              
+      The output is the relative reflectivity of the sample                   
+      presented in two forms: as a plot on a stationary chart                 
+      recorder; and as a sequence of values on punched paper                  
+      tape spaced at 50 Angstrom intervals. The instrument                    
+      also has an 'expanded scale' output option.                             
+                                                                              
+      The Beckman DK2A is described in detail by Adams and                    
+      McCord (1970) [ADAMS&amp;MCCORD1970].</description>
+  </Instrument>
+</Product_Context>
+

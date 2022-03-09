@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:ctio-cerro_tololo.soar_4m1</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SOAR</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:telescope:ctio.soar4m1</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-12-07</modification_date>
+                <version_id>1.0</version_id>
+                <description>per RMS, deprecated ctio in favor of ctio-cerro_tololo</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.ctio-cerro_tololo</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:ctio-cerro_tololo.soar_4m1.ghts</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit="m">4</aperture>
+        <telescope_longitude unit="deg">289.266389</telescope_longitude>
+        <telescope_latitude unit="deg">-30.238056</telescope_latitude>
+        <telescope_altitude unit="m">2700</telescope_altitude>
+        <coordinate_source>Astronomical</coordinate_source>
+        <description>The Southern Astrophysical Research (SOAR) Telescope is a 4.1 meter aperture
+telescope designed to produce the best quality images of any observatory in its
+class, across a several arcmin field of view. It can work from 320 nm to the near
+infrared, and features fast slewing and a suite of optical and infrared instruments
+mounted and ready for use. It is situated on Cerro Pachón - IV Región - Chile, at
+2,700 meters (8,775 feet) above sea level.</description>
+    </Telescope>
+</Product_Context>

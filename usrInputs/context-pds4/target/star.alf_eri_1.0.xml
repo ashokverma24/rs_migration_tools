@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_eri</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Achernar</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Alpha Eridani</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Eri</alternate_title></Alias>
+      <Alias><alternate_title>alf Eri</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 16724</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-57 316</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 20 447</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-57 334</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EM* CDS 176</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 54</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 1979</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 916</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00010144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 08478-01395</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 10144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 7588</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 7588</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 472</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 01358-5729</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 517</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J01374284-5714119</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 335</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 15353</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 344</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 344.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 331199</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 233</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 232481</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 2444</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 938</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 8478-1395-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 1700</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 8330</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100010144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 1623</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2XMM J013742.5-571413</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Achernar</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 01 hours 37 minutes 42.84548 seconds
+Declination, ICRS coord, ep=J2000: -57 degrees 14 minutes 12.3101 seconds
+    </description>
+  </Target>
+</Product_Context>

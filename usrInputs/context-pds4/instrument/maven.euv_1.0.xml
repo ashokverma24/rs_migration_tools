@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+   http://pds.nasa.gov/pds4/pds/v1 
+   http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.xsd 
+   ">
+   <Identification_Area>
+      <logical_identifier>urn:nasa:pds:context:instrument:euv.maven</logical_identifier>
+      <version_id>1.0</version_id>
+      <title>EUV</title>
+      <information_model_version>1.4.0.0</information_model_version>
+      <product_class>Product_Context</product_class>
+      <Alias_List>
+         <Alias>
+            <alternate_title>Extreme Ultraviolet Monitor</alternate_title>
+         </Alias>
+      </Alias_List>
+      <Modification_History>
+         <Modification_Detail>
+            <modification_date>2015-03-24</modification_date>
+            <version_id>1.0</version_id>
+            <description>
+               Initial version.
+            </description>
+         </Modification_Detail>
+      </Modification_History>
+   </Identification_Area>
+   <Reference_List>
+      <Internal_Reference>
+         <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+         <reference_type>instrument_to_instrument_host</reference_type>
+      </Internal_Reference>
+   </Reference_List>
+   <Instrument>
+      <name>Extreme Ultraviolet Monitor</name>
+      <type>Ultraviolet Spectrometer</type>
+      <description>
+         The EUV monitor is designed to measure the solar irradiance in three broad bands in the soft xray
+         and extreme ultraviolet wavelength range. It consists of three filter radiometers that each
+         have a limiting aperture, bandpass limiting filter, silicon photodiode detector, and an
+         electrometer to measure the current in the detector. A fourth detector-electrometer combination
+         that is blocked from receiving any light input is used as a “dark” detector to monitor changes in
+         the thermal and radiation induced background signals. A temperature diode is also included in
+         the EUV instrument. There is also a mechanism to place or remove additional fused silica
+         windows in front of the three science apertures. These filters block the EUV and X-ray sunlight,
+         but still allow longer wavelength light (primarily visible) through into the radiometers. This
+         allows for a measurement of the out-of-band contribution to the signals from the science
+         channels. 
+      </description>
+   </Instrument>
+</Product_Context>

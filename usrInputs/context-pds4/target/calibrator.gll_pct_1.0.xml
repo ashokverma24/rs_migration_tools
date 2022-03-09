@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:target:calibrator.gll_pct</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GLL PCT</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Target>
+        <name>GLL PCT</name>
+        <type>Calibrator</type> <!--RChen/EN was Calibration-->
+
+        <description>
+ 
+    Description
+    ===========
+      From [CARLSONETAL1992]:
+ 
+      The Photometric Calibration Target (PCT) and an associated optical
+      element, the Photometric Calibration Mirror (PCM) together form a
+      source of diffusely reflected solar radiation which can be used by
+      the remote sensing experiments for intra- and inter-instrument
+      comparisons. These two elements are mounted on the Science Boom; the
+      mirror reflects solar radiation onto the diffusing target surface
+      which is placed outboard from the mirror and in a position that can
+      be viewed from the scan platform. In order that the target be
+      illuminated over the nominal range of solar cone angles, the mirror
+      is convex, with a radius of curvature of 46 cm and located 53 cm
+      from the target. The reflecting surface is vacuum deposited
+      aluminum, with a protective overcoat formed by its natural oxide.
+      The target surface is similar to the Voyager diffuser plate,
+      consisting of sand blasted aluminum. The combination produces a
+      spectrally gray diffuse surface, with an effective albedo of roughly
+      0.05.  They were calibrated over the spectral range of 0.3 to 5.2
+      micrometers and for a variety of incidence angles.
+        </description>
+    </Target>
+</Product_Context>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:mount_bigelow.1m54.mont4k</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Mont4K CCD Imager</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-11-09</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:mount_bigelow.1m54</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:mount_bigelow.1m54</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>Mont4K CCD Imager</name>
+    <type>Imager</type>
+    <description>Device:                                  Fairchild CCD486 4Kx4K CCD Backside
+Processed at the University of 
+                                                   Arizona  Technology Laboratory
+ Device Names:                   Mont4K SN3088
+ Device Size:                         4096 x 4097 pixels (15 micron pixels)
+ Image Scale:                        0.14 arcsec/pixel (7.1 pixels/arcsec)
+ Field of View:                       580 x 580 arcsec^2 (9.7 x 9.7 arcmin^2)
+ Gain:                                        3.1 electrons/ADU
+ Readout Noise:                   5.0 electrons
+ Dark Current:                       16.6 electrons/pixel/hour
+Full Well:                                131,000 electrons unbinned (191 Ke for 2x2
+binned)
+ Operating temperature: -130 C</description>
+  </Instrument>
+</Product_Context>
+
+

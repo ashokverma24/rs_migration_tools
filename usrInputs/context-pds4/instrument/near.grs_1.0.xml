@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:grs.near</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GAMMA RAY SPECTROMETER for NEAR</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.near::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Adler, I., J.I. Trombka, J. Gerard, P. Lowman, R. Schamadebeck, H. Blodgett, E.
+                   Eller, L. Yin, R. Lamothe, P. Gorenstein, and P. Bjorkholm, Apollo 15
+                   Geochemical X-Ray Fluorescence Experiment: Preliminary Report, Science, Vol.
+                   175, pp. 436-440, 1972.
+            </reference_text>
+            <description>reference.ADLERETAL1972A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Adler, I., J. Gerard, J.I. Trombka, R. Schamadebeck, P. Lowman, H. Blodgett, L.
+                   Yin, E. Eller, and R. Lamothe, The Apollo 15 X-Ray Fluorescence Experiment,
+                   Proc. Lunar Sci Conf. 3rd, pp. 2157-2178, 1972.
+            </reference_text>
+            <description>reference.ADLERETAL1972B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Adler, I., J.I. Trombka, J. Gerard, P. Lowman, R. Schamadebeck, H. Blodgett, E.
+                   Eller, L. Yin, R. Lamothe, G. Osswald, P. Gorenstein, P. Bjorkholm, H. Gursky,
+                   and B. Harris, Apollo 16 Geochemical X-ray Fluorescence Experiment: Preliminary
+                   Report, Science, Vol. 177, pp. 256-259, 1972.
+            </reference_text>
+            <description>reference.ADLERETAL1972C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bielefeld, M., R. Reedy, A. Metzger, J. Trombka, and J. Arnold, Proc. Lunar
+                   Sci. Conf. 7th, pp. 2661-2676, 1976.
+            </reference_text>
+            <description>reference.BIELEFELDETAL1976</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Boynton, W.V., J.I. Trombka, W.C. Feldman, J.R. Arnold, P. Englert, A.E.
+                   Metzger, R.C. Reedy, S.W. Squyres, H. Waenke, S.H. Bailey, J. Bruckner, J.L.
+                   Callas, D.M. Drake, P. Duke, L.G. Evans, E.L. Haines, F.C. McCloskey, H. Mills,
+                   C. Shinohara, and R. Starr, Science Applications Of The Mars Observer Gamma Ray
+                   Spectrometer, J. Geophys. Res., Vol. 97, pp. 7681-7698, 1992.
+            </reference_text>
+            <description>reference.BOYNTONETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Boynton, W.V., L.G. Evans, R.C. Reedy, and J.I. Trombka, The Composition Of
+                   Mars And Comets By Remote And In-situ Gamma-ray Spectrometry, Remote
+                   Geochemical Analysis: Geochemical And Mineralogical Composition, C. Pieters and
+                   P. Englert (eds.), Cambridge University Press, New York, NY, USA pp. 395-412,
+                   1993.
+            </reference_text>
+            <description>reference.BOYNTONETAL1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bruckner, J., M. Koerfer, H. Waenke, A.N.F. Schroeder, D. Filges, P.
+                   Dragovitsch, P.A.J. Englert, R. Starr, J.I. Trombka, I. Taylor, D.M. Drake, and
+                   E.R. Schunk, IEEE Trans. Nucl. Sci., NS-38, pp. 209-217, 1991.
+            </reference_text>
+            <description>reference.BRUCKNERETAL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Clark, B.E., J.F. Bell, F.P. Fanale, and D.J. O&apos;Connor, Results of the Seven
+                   Color Asteroid Survey: Infrared spectral observations of ~50-km size S-, K-,
+                   and M-type asteroids, Icarus, Vol. 113, pp. 387-402, 1995.
+            </reference_text>
+            <description>reference.CLARKETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Evans, L.G., R.C. Reedy, and J.I. Trombka, Introduction to Planetary Remote
+                   Sensing, Remote Geochemical Analysis: Elemental and Mineralogical Composition,
+                   C. Pieters and P. Englert (eds.), University of Cambridge, Cambridge, England,
+                   pp. 167-198, 1993.
+            </reference_text>
+            <description>reference.EVANSETAL1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Evans, L.G., P.E. Clark, and J.I. Trombka, Acta Astron., Vol. 35, pp. 79-88,
+                   1995.
+            </reference_text>
+            <description>reference.EVANSETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Goldsten, J.O., Johns Hopkins APL Technical Digest, Vol. 19, pp. 126-135, 1998.
+            </reference_text>
+            <description>reference.GOLDSTEN1998</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Goldsten, J.O., R.L. McNutt, R.E. Gold, S.A. Gary, E. Fiore, S.E. Schneider,
+                   J.R. Hayes, J.I. Trombka, S.R. Floyd, W.V. Boynton, S. Bailey, J. Bruckner,
+                   S.W. Squyres, L.G. Evans, P.E. Clark, and R. Starr, Space Sciences Review, Vol.
+                   82, pp. 169-216, 1997.
+            </reference_text>
+            <description>reference.GOLDSTENETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Knoll, G.F., Radiation Detection And Measurement, Wiley &amp; Sons, New York, 1989.
+            </reference_text>
+            <description>reference.KNOLL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Starr, R., P.E. Clark, L.G. Evans, S.R. Floyd, T.P. McClanahan, J.I. Trombka,
+                   J.O. Goldsten, R.H. Maurer, R.L. McNutt, Jr., and D.R. Roth, Radiation effects
+                   in the Si-PIN detector on the Near Earth Asteroid Rendezvous Mission, Nuclear
+                   Instruments and Methods in Physics Research Section A, Vol. 428, pp. 209-215,
+                   1999.
+            </reference_text>
+            <description>reference.STARRETAL1999</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Trombka, J., S. Floyd, W. Boynton, S. Bailey, J. Bruckner, S. Squyres, L.
+                   Evans, P. Clear, R. Starr, E. Fiore, R. Gold, J. Goldsten, and R. McNutt,
+                   Compositional Mapping With The Near X-ray/Gamma-ray Spectrometer, J. Geophys.
+                   Res., Vol. 102, pp. 23729-23750, 1997.
+            </reference_text>
+            <description>reference.TROMBKAETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Yin, L, J. Trombka, I. Adler, and M. Bielefeld, X-ray Remote Sensing Techniques
+                   For Geochemical Analysis Of Planetary Surfaces, Remote Geochemical Analysis:
+                   Geochemical And Mineralogical Composition, C. Pieters and P. Englert (eds.),
+                   Cambridge University Press, New York, NY, USA, pp. 199-212, 1993.
+            </reference_text>
+            <description>reference.YINETAL1993</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>GAMMA RAY SPECTROMETER</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    Instrument Overview
+    ===================
+ 
+      The Near Earth Asteroid Rendezvous mission (NEAR) was successfully
+      launched on 17 February 1996.  NEAR was the first launch under
+      NASA&apos;s Discovery Program, an initiative for small, low-cost
+      planetary missions.  As the first spacecraft to orbit an asteroid,
+      the NEAR mission will address fundamental questions about the
+      processes and conditions relevant to planetary formation.
+ 
+      The X-ray/Gamma-ray Spectrometer (XGRS) is one of several
+      instruments on-board the NEAR spacecraft that will study Eros during
+      one year of orbital operations beginning in February 2000. The X-ray
+      and gamma-ray spectrometers that comprise the XGRS are independent,
+      but complementary experiments.  In this paper we focus on the Gamma Ray
+      Spectrometer, its design, operation, calibration, and procedures for
+      interpretation of the measurements to be made at Eros.
+ 
+ 
+    History
+    =======
+      In February 1996, the Near Earth Asteroid Rendezvous (NEAR) mission
+      was launched into space on a planned three-year cruise to the
+      near-Earth asteroid, 433 Eros.  The NEAR spacecraft, the first in
+      the Discovery mission program to be launched, was built by the John
+      Hopkins University, Applied Physics Laboratory (APL).  The
+      spacecraft will orbit Eros for one year and carries a group of
+      remote sensing instruments including an X-ray and gamma-ray
+      spectrometer system (XGRS).  Due to a problem with firing of the
+      main rocket engine in December 1998, the rendezvous was delayed
+      until February 2000.  The NEAR spacecraft will be the first
+      spacecraft to orbit a body as small as Eros, which is estimated to
+      be 33 km X 13 km X 13 km.
+ 
+      From telescopic, radar, and other observations, it has been inferred
+      that Eros is an S-type asteroid, one of the most common type of
+      near-Earth asteroids.  It is not known whether S-type asteroids come
+      from differentiated or undifferentiated parent bodies.  One of the
+      prime mission science objectives is to obtain global elemental
+      composition maps. These elemental composition results are needed
+      with sufficient accuracy to enable comparison with major meteorite
+      types. The results would also be used to assess the compositional
+      heterogeneity of the asteroid and help to answer questions about
+      differentiation.  The selection of X-ray and gamma-ray spectrometers
+      for this mission was based on their ability to produce global
+      elemental composition maps of the asteroid.  Gamma-ray measurements
+      can determine the abundance of elements such as O, Si, Fe, Ti, Mg,
+      K, Th, and U depending on the actual composition.
+ 
+ 
+    Gamma-Ray Spectrometer Overview
+    ===============================
+      The gamma-ray spectrometer (GRS) on the NEAR mission is a
+      non-dispersive system.  For this type of detector, the incident
+      gamma-ray photon is absorbed in the detector material and a signal
+      proportional to the energy absorbed is measured as a voltage from
+      the detector output.  An analog-to-digital conversion is performed
+      and the resulting count is binned by &apos;pulse height&apos; or energy loss
+      in memory.  From an analysis of the pulse height spectra, elemental
+      composition can be inferred.
+ 
+      The choice among various types of gamma-ray detectors was made early
+      in the planning for NEAR, the first Discovery mission of low-cost,
+      rapid delivery planetary missions.  While cooled solid-state
+      detectors dominate laboratory measurements due to their inherent
+      better energy resolution, this was not the case for this space
+      mission. A NEAR GRS design was selected that could meet the required
+      sensitivity in the energy region 0.1-10 MeV, while being consistent
+      with the cost, mass, power, and reliability constraints of the
+      mission.
+ 
+      Gamma-ray photons in the energy region 0.1-10 MeV are emitted by
+      excited nuclei and have discrete energies characteristic of that
+      element.  The excitation of nuclei can come from the radioactive
+      decay of very-long lived radioisotopes in planetary materials, such
+      as 40K, 238U, and 232Th.  For other elements in space, excitation is
+      provided by cosmic-ray bombardment.  Except for periods of time
+      during and immediately after major solar flares, this excitation is
+      caused mainly by galactic cosmic rays (GCR) [EVANSETAL1993].
+ 
+      GCR are nuclear particles, mainly protons and helium nuclei (alpha
+      particles), with a broad range in energy, but typically of order a
+      GeV and a nearly isotropic flux of about 2-3 particles/cm2-s.  These
+      particles generate nuclear cascades on striking dense matter.  The
+      cascade particles most effective in generating gamma rays are
+      neutrons.  The high-energy neutrons produced in this manner can
+      undergo further nuclear collisions.  They may excite stable nuclei
+      to higher energy levels by inelastic scatter.  The resulting
+      de-excitation of the nucleus can result in the emission of a gamma
+      ray and is termed an inelastic scatter reaction; (n,n&apos;gamma).
+      Neutrons may also lose energy by elastic scatter until their energy
+      is comparable to the thermal energy of a nucleus at a given
+      temperature.  These thermal neutrons can be captured by a nucleus
+      and the resulting decay to the ground state of this new isotope, can
+      produce a capture gamma ray; (n,gamma).  The intensity of gamma rays
+      emitted by a particular element and for a particular process depends
+      on the concentration of that element, the reaction cross-section for
+      the process, and the number of neutrons available with the
+      appropriate energy.  The inelastic scatter reactions have a large
+      cross-section for all common nuclei at energies above the reaction
+      threshold energy.  Therefore, all the most abundant elements give a
+      useful yield of gamma rays from this process.  Thermal neutron
+      cross-sections vary by orders-of-magnitude and yields for neutron
+      capture gamma rays for the most abundant elements also vary widely
+      [EVANSETAL1993].  Material containing large concentrations of
+      elements with large neutron capture cross-sections can alter the
+      thermal flux and lead to a flux depression of neutron capture
+      gamma-rays.
+ 
+      The neutron cascade penetrates into a planetary surface to a depth
+      of hundreds of g/cm2, a few meters into the regolith on an object
+      like an asteroid with no atmosphere.  Gamma rays are scattered (with
+      loss of characteristic energy) or absorbed on a distance scale of
+      tens of g/cm2.  This indicates that only those gamma rays generated
+      in the first tens of g/cm2 can be detected on the surface or from
+      orbit, and the important part of the neutron equilibrium
+      distribution in the planetary body is that near the surface.  The
+      moderation and thermalization of the neutrons depend strongly on the
+      composition of the near surface material, particularly on the
+      hydrogen and carbon content, if any.  Gamma-ray detectors on the
+      surface or in an orbiting spacecraft can measure the discrete energy
+      gamma rays and determine the elements that emitted these gamma rays
+      [BOYNTONETAL1992], [BOYNTONETAL1993], [TROMBKAETAL1997].
+ 
+      Besides the characteristic gamma rays emerging from the asteroid
+      surface, there will be a number of other sources of gamma rays that
+      will be a background from which the gamma rays of interest will have
+      to be separated.  Some of these sources of background produce
+      discrete lines and some appear as part of a continuum.  Based on
+      previous spaceflight experience, the major background components
+      measured in orbit are: partial energy deposition in the detector
+      (Compton effect); cosmic-ray activation of the detector and
+      materials surrounding the detector; characteristic gamma rays
+      emitted from the surface material, but scattered before emerging
+      from the asteroid; cosmic-ray activation and natural radioactivity
+      in the spacecraft; and gamma emission from astrophysical sources
+      [BIELEFELDETAL1976].
+ 
+      Detectors
+      ---------
+       Most current non-dispersive gamma-ray detectors utilize either
+       inorganic scintillation material, such as sodium iodide (NaI) or
+       bismuth germinate (BGO), or solid state material, such as
+       high-purity germanium (Ge).  The Ge detectors have significantly
+       better energy resolution than scintillation detectors and are
+       generally favored for laboratory measurements.  For example, the
+       typical energy resolution (expressed as the full-width at half-
+       maximum, FWHM, of the peak) for a Ge detector is 2 keV measured at
+       1332 keV from a 60Co calibration source.  A similar FWHM for a NaI
+       detector is 80 keV at 1332 keV.  In addition, the Ge detector has
+       a much better peak-to-Compton ratio, typically about 50 compared
+       to 2 for a NaI detector [KNOLL1989].  These two factors give a Ge
+       detector a decided advantage in resolving peaks close in energy
+       and detecting peaks in the presence of significant continuum.
+       Figure 1 shows measurement spectra of an extended soil sample
+       irradiated by a neutron generator collected by both Ge and NaI
+       detectors.  Identification by element of some of the prominent
+       gamma-ray peaks in the spectrum is indicated.
+ 
+       While Ge detectors improve detection capability, they also require
+       operation at cryogenic temperatures (typically &lt;100 K) and suffer
+       serious degradation in performance when exposed to cosmic
+       radiation over long periods of time [BRUCKNERETAL1991].  Typically
+       Ge detectors on planetary missions (such as Mars Observer) are
+       designed with anneal capability to offset the expected resolution
+       degradation during spaceflight. These limitations of a Ge detector
+       along with the added cost and complexity reduced some of the
+       advantages that might be expected for this mission. The question
+       that had to be answered for the NEAR mission was: Could a
+       scintillation detector meet the mission science requirements for
+       elemental sensitivity?
+ 
+       Analysis during the preliminary design phase of the NEAR mission
+       indicated that a scintillation detector could meet the science
+       objectives of the mission [EVANSETAL1995].  Experience in both
+       U.S. and Russian planetary missions and in the oil well-logging
+       industry have shown that good results could be obtained using
+       scintillation detectors for such elements as K, Th, O, H, Mg, Si,
+       and Fe.  In addition, proposed design changes were expected to
+       greatly improve detector performance over scintillators that have
+       previously flown in space.
+ 
+       NaI was chosen as the scintillator for NEAR because it has the
+       best energy resolution of common scintillation materials in
+       combination with a photomultiplier tube (PMT).  These systems are
+       rugged and have been used successfully on space flight missions
+       for many years [EVANSETAL1993].
+ 
+       The pulse height spectrum obtained when monoenergetic gamma rays
+       are detected has a shape determined by the gamma-ray energy and
+       the characteristics of the detector.  Important factors are: (1)
+       the relative magnitude of the photoelectric,  Compton, and
+       pair-production cross-sections as a function of energy, and (2)
+       the statistical fluctuations and losses involved in collecting the
+       signal generated in the detector [KNOLL1989].  A measurement
+       reflects the amount of energy that is lost in the detector and
+       transferred as kinetic energy to electrons.  At energies where the
+       photoelectric absorption dominates, the kinetic energy imparted to
+       a secondary electron is equal to the gamma-ray energy minus the
+       electron binding energy.  This energy can be reclaimed, in a
+       sense, by the absorption of the X-rays produced by photoelectric
+       absorption.  At higher energies, when Compton scattering becomes
+       more important, the gamma ray may lose part of its energy to the
+       detector and escape the crystal or may then be photo absorbed.
+       The gamma ray will lose all or part of its energy in the detector
+       and possible escape with diminished energy.  This generates a
+       continuum that adds to the background up to the energy of the
+       initial gamma ray minus the minimum scattered energy.
+ 
+       At energies above 1022 keV, electron-positron pair production
+       becomes possible.  The electron eventually loses all its kinetic
+       energy in the detector while the positron annihilate with another
+       electron producing two 511 keV photons.  The energy of these
+       photons can either be absorbed in the detector or can escape.
+       Therefore, three peaks will be created: (1) pair production with
+       eventual absorption of both 511 keV photons to give a peak at the
+       initial gamma-ray energy; (2) pair production with the absorption
+       of one 511 photon and the escape of the other giving a peak at the
+       initial gamma-ray energy minus 511 keV; and (3) pair production
+       with the escape of both 511 keV photons giving a peak at the
+       initial gamma-ray energy minus 1022 keV.
+ 
+       Cosmic-ray interactions in the spacecraft produce gamma-rays
+       characteristic of the spacecraft materials.  These gamma rays
+       would constitute an unwanted background signal and could
+       potentially degrade the science return of the mission.  Gamma-ray
+       detectors of previous missions have often used a boom to move the
+       gamma-ray detector away from the spacecraft reducing substantially
+       the spacecraft background.  On Mars Observer, for example, the
+       gamma-ray detector was mounted on a boom that could be extended 6
+       meters from the spacecraft.  The NEAR detector had to be body
+       mounted on the lower deck along with all the other instruments.
+       This required some other method of reducing the spacecraft
+       background.
+ 
+       Plastic scintillators are very effective charged particle shields,
+       but higher density materials are needed to shield gamma rays.
+       Passive shielding is not practical because of the large volume and
+       mass of material needed to absorb the cosmic rays and the
+       secondary radioactive products produced in the shield. An active
+       collimator is used to reduce the charged particle, spacecraft and
+       cosmic gamma-ray background as well as the Compton continuum.
+       Charged particles or photons that interact in the shield produce a
+       corresponding output signal.  This signal can be used to trigger
+       an anti-coincidence system to reject any counts in the central
+       detector that are in coincidence with the shield within some time
+       window.  Bismuth Germinate (BGO) was chosen for the NEAR shield.
+       It has a density of 7.13 g/cm2 which makes it especially effective
+       for gamma ray interactions.
+ 
+       As useful as the NEAR shield would be to reduce the detector
+       background, significant information on the gamma-ray flux from the
+       asteroid could be lost.  The first and second escape peaks
+       produced in the central detector will be mostly eliminated in the
+       anti-coincidence spectrum.  For a small central detector like the
+       NEAR design, this loss would be unacceptable since the escape
+       peaks would have many more counts than the full-energy peak for
+       many energies of interest.  For example, at 6 MeV, calculations
+       indicate that 85% of all the counts would be in the escape peaks
+       and only 15% in the full-energy peak.  The NEAR design recovers
+       these peaks with two additional NaI spectra; one in coincidence
+       with 511 keV and one in coincidence with 1022 keV energy
+       deposition in the BGO shield.  Calibrations with the NEAR detector
+       indicates the effectiveness of this design.
+ 
+       Analysis of the coincidence window spectra during calibrations
+       showed that not only photons generated by pair production were
+       collected in the coincidence spectra.  Any photons that Compton
+       scattered in the central detector and then deposited 511 or 1022
+       keV in the shield were also collected.  This was confirmed for
+       energies where no pair production was possible (for incident
+       energies less than 1022 keV), but the first coincidence spectrum
+       showed a peak at the incident energy minus 511 keV.  Thus, the
+       number of counts in the peaks for both coincidence spectra were
+       greater than that expected by calculations of efficiency for just
+       pair production [TROMBKAETAL1997].  Subsequent calculations
+       that modeled the coincidence process in the central detector and
+       the shield to understand these measurements showed results similar
+       to the measured efficiencies.  This will be discussed further
+       below.
+ 
+       A radioactive source for energy calibration was not included in
+       the NEAR design. It was expected that enough discrete lines from
+       background sources would be measured in the spectra that the
+       energy calibration could be monitored.  The strongest of these
+       would be the 511 keV line due to electron/positron annihilation in
+       the spacecraft and materials surrounding the detector.  Other
+       gamma rays from cosmic ray interactions in the scintillation
+       materials would be expected.  Measurements taken during the cruise
+       portion of the mission confirmed these predictions and will be
+       discussed below.
+ 
+       A picture of the NEAR GRS detector is shown in Figure 2 and a
+       cross-section diagram in shown in Figure 3.  A complete
+       description of the GRS hardware is given in [GOLDSTENETAL1997] and
+       [GOLDSTEN1998].  The central detector is a 2.54 cm X 7.62 cm right
+       circular cylinder of NaI(Tl).  A 3 cm diameter metal ceramic PMT
+       is attached to the NaI in the asteroid facing direction.  The
+       shield is a BGO cup with outside dimensions of 8.9 cm X 14 cm.  A
+       7.6 cm diameter metal ceramic PMT is attached to the BGO.  The
+       measured energy resolution at 662 keV (from 137Cs) was 8.7% for
+       the NaI detector and 14% for the BGO.  The energy range of both
+       detectors could be controlled by changing the high-voltage setting
+       for each detector, but was nominally 0.1-10 MeV.
+ 
+       A generalized block diagram of the GRS detection scheme is shown
+       in Figure 4 [GOLDSTENETAL1997].  An incoming photon is absorbed by
+       the detector material and produces an output signal proportional
+       to the energy absorbed.  The detector signal is amplified,
+       filtered, and its peak value measured using an analog-to-digital
+       converter.  A data processor collects the measurements and bins
+       them according to the energy absorbed into a pulse-height
+       spectrum.  Five 1024-channel spectra are collected
+       simultaneously.  These are: the NaI raw spectrum, with no
+       coincidence or anti-coincidence rejection; the BGO raw spectrum;
+       the NaI spectrum measured in anti-coincidence with the BGO; the
+       NaI spectrum measured in coincidence within a window around 511
+       keV in the BGO detector;  the NaI spectrum measured in coincidence
+       within a window around 1022 keV in the BGO detector.  In addition
+       two 21 channel spectra are collected from the BGO detector in
+       coincidence with the NaI and in the windows specified around the
+       511 keV and 1022 keV energies.
+ 
+       Temperature and voltage stability are extremely important to
+       maintain system performance.  The light outputs of the NaI and BGO
+       detectors vary significantly with temperature.  The detectors are
+       thermally isolated and wrapped with operational heaters to
+       stabilize the temperature to within 0.25 degC.  The signal gains
+       of the PMTs are not particularly sensitive to temperature, but are
+       very sensitive to voltage variations.  The XGRS uses an external
+       feedback control system to produce ultra-stable high-voltage
+       outputs from the on-board high-voltage power supplies
+       [GOLDSTENETAL1997].  No gain changes due to temperature or
+       high-voltage variation were observed during cruise.
+
+        </description>
+    </Instrument>
+</Product_Context>

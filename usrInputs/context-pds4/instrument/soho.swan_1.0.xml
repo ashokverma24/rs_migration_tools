@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+	
+<?xml-model href="http://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1000.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd http://pds.nasa.gov/pds4/ctli/v1 http://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1000.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:soho.swan</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>SOHO Solar Wind ANisotropies (SWAN) Instrument</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Citation_Information>
+      <author_list>Combi, M.</author_list>
+      <publication_year>2020</publication_year>
+      <description>The SWAN instrument onboard the SOHO spacecraft.</description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-01-17</modification_date>
+        <version_id>1.0</version_id>
+        <description>Creation</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <External_Reference>
+      <doi>10.1007/BF00733435</doi>
+      <reference_text>Bertaux, J.-L., Kyrola, E., Quemerais, E., Pellinen, R.,
+		Lallement, R., Schmidt, W., Berthe, M., Dimarellis, E., Goutail, J. P.,
+		Taulemesse, C., Bernard, C., Leppelmeier, G., Summanen, T., Hannula,
+		H., Huomo, H., Kehla, V., Korpela, S., Leppala, K., Strommer, E.,
+		Torsti, J., Viherkanto, K., Hochedez, J. F., Chretiennot, G., Peyroux,
+		R., and Holzer, T. 1995. SWAN: A Study of Solar Wind Anisotropies on
+		SOHO with Lyman Alpha Sky Mapping. Solar Physics 162, 403-439.</reference_text>
+	  <description>Full discussion of the instrument and main observations of the interplanetary medium.</description>
+	</External_Reference>
+    <External_Reference>
+      <doi>10.1088/0004-6256/141/4/128</doi>
+      <reference_text>Combi, M.R., Lee, Y., Patel, T.S., Maekinen, J.T.T.,
+		Bertaux, J.-L., and Quemerais, E. 2011. SOHO/SWAN Observations of
+		Short-Period Spacecraft Target Comets. Astron. J. 141, 128.</reference_text>
+	  <description>Details of new calibration factors that varied in time over the first several years of SWAN operation.</description>
+	</External_Reference>
+    <External_Reference>
+      <doi>10.1006/icar.1999.6335</doi>
+      <reference_text>Combi, M.R., Reinard, A.A., Bertaux, J.L., Quemerais, E.,
+		and Maekinen, T. 2000. SOHO/SWAN Observations of the Structure and
+		Evolution of the Hydrogen Lyman-alpha Coma of Comet Hale-Bopp (1995 O1).
+		Icarus 144, 191-202.</reference_text>
+	  <description>Aspects of the instrument related to comet observations.</description>
+	</External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>SOHO Solar Wind ANisotropies (SWAN) Instrument</name>
+	<Type_List_Area>
+	  <ctli:Type_List>
+	    <ctli:type>Camera</ctli:type>
+	  </ctli:Type_List>
+	</Type_List_Area>
+	<description>SOlar Heliospheric Observatory (SOHO) 
+       Solar Wind ANisotropies (SWAN) Instrument Overview
+
+
+A full discussion of the Solar Wind ANisotropies instrument and main 
+observations of the interplanetary medium are found in the paper by 
+Bertaux et al. (1995). Aspects related to comet observations are found in 
+the paper by Combi et al. (2000) from which excerpts are provided here.
+
+
+SWAN Overview
+-------------
+The SOHO spacecraft is stationed at the L1 Lagrange point which lies about 
+1.5 million km in front of the Earth, enabling continuous temporal 
+coverage of solar and solar wind events. One of the on-board instruments, 
+the Solar Wind ANisotropies (SWAN) camera, makes all-sky hydrogen 
+Lyman-alpha (H Ly-alpha) images of the hydrogen distribution in the 
+interplanetary medium (IPM), providing a global picture both of the solar 
+Ly-alpha flux, which is responsible for illuminating the hydrogen, and of 
+the solar wind, which is responsible for shaping the hydrogen distribution 
+through charge impact ionization. The typical brightness of Ly-alpha 
+emission from the IPM seen from the vicinity of Earth is in the range of 
+500 to 1000 Rayleighs. On top of the IPM emission background, brightnesses 
+of comets in the field of view can range from a few tens to tens of 
+thousands of Rayleighs.
+
+SWAN has two identical sensor units, SU+Z and SU-Z, for observing north 
+and south of the ecliptic, respectively. SWAN's initial absolute 
+calibration was such that 1 Rayleigh of intensity gives 0.84 counts per 
+second per pixel in SU+Z and a factor of 2.6 less in SU-Z. A new 
+calibration was performed using Hubble Space Telescope Goddard High 
+Resolution Spectrometer observations of the IPM, and new calibration 
+factors that varied in time over the first several years of SWAN operation 
+were found. Details are provided in the paper by Combi et al. (2011). Each 
+sensor has an instantaneous field of view (IFOV) of 5 degrees by 5 degrees 
+with a multianode detector of 25 1 degree by 1 degree pixels. Full coma 
+images are made by mosaicking the IFOV across the sky. Some comets in the 
+early years were specifically targeted with special observations that 
+oversampled the 1 degree pixels by a factor, but most comet observations 
+were derived from the standard daily full-sky images. The uncertainties in 
+the tabulated data reflect the mode in which the observations were made.
+
+
+References
+----------
+
+Bertaux, J.-L., Kyrola, E., Quemerais, E., Pellinen, R., Lallement, R., 
+  Schmidt, W., Berthe, M., Dimarellis, E., Goutail, J. P., Taulemesse, C., 
+  Bernard, C., Leppelmeier, G., Summanen, T., Hannula, H., Huomo, H., 
+  Kehla, V., Korpela, S., Leppala, K., Strommer, E., Torsti, J., 
+  Viherkanto, K., Hochedez, J. F., Chretiennot, G., Peyroux, R., and 
+  Holzer, T. 1995. SWAN: A Study of Solar Wind Anisotropies on SOHO with 
+  Lyman Alpha Sky Mapping. Solar Physics 162, 403-439.
+
+Combi, M.R., Lee, Y., Patel, T.S., Maekinen, J.T.T., Bertaux, J.-L., and 
+  Quemerais, E. 2011. SOHO/SWAN Observations of Short-Period Spacecraft 
+  Target Comets. Astron. J. 141, 128.
+
+Combi, M.R., Reinard, A.A., Bertaux, J.L., Quemerais, E., and Maekinen, T. 
+  2000. SOHO/SWAN Observations of the Structure and Evolution of the 
+  Hydrogen Lyman-alpha Coma of Comet Hale-Bopp (1995 O1). Icarus 144, 
+  191-202.</description>
+  </Instrument>
+</Product_Context>

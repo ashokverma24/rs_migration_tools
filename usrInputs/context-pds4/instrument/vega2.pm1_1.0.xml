@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:vega2.pm1</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PLASMA ENERGY ANALYZER for VEGA2</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:pm1.vega2</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vega2</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apathy, I., A.P. Remizov, K.I. Gringauz, V.M. Balebanov, I. Szemerey, S.
+                   Szendro, T. Gombosi, I.N. Klimenko, M.I. Verigin, E. Keppler, and A.K.
+                   Richter, Plazmag-1 Experiment, ESA SP-250, Vol I, 65-70, 1986.
+            </reference_text>
+            <description>reference.APATHYETAL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reinhard, R and B. Battrick (eds), &apos;Space Missions to Halley&apos;s Comet&apos;, European
+                   Space Agency ESA SP-1066, ESA Pub Div, Moordwijk, Netherlands, 1986.
+            </reference_text>
+            <description>reference.ESA-SP1066</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Galeev, A.A., K.I. Gringauz, S.I. Klimov, A.P. Remizov, R.Z. Sagdeev, S.P.
+                   Savin, A.Yu. Sokolov, M.I. Verigin, K. Szego, M. Tatrallyay, R. Grard,
+                   Ye.G. Yeroshenko, M.J. Mogilevsky, W. Riedler, and K. Schwingenschuh,
+                   Physical Processes in the Vicinity of the Cometopause Interpreted on the
+                   Basis of Plasma, Magnetic Field and Plasma Wave Data Measured On Board the
+                   Vega-2 Spacecraft, Proceedings of the Symposium on the Diversity and
+                   Similarity of Comets, Brussels 1987, ESA SP-278, 83-87, 1987.
+            </reference_text>
+            <description>reference.GALEEVETAL1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Galeev, A.A., K.I. Gringauz, S.I. Klimov, A.P. Remizov, R.Z. Sagdeev, S.P.
+                   Savin, A.Yu. Sokolov, M.I. Verigin, K. Szego, M. Tatrallyay, R. Grard,
+                   Ye.G. Yeroshenko, M.J. Mogilevsky, W. Riedler, and K. Schwingenschuh,
+                   Physical Processes in the Vicinity of the Cometopause Interpreted on the
+                   Basis of Plasma, Magnetic Field and Plasma Wave Data Measured On Board the
+                   Vega-2 Spacecraft, Journal of Geophysical Research, 93, 7527-31, 1988.
+            </reference_text>
+            <description>reference.GALEEVETAL1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., I. Apathy, L.I. Denshchikova, T. Gombosi, E. Keppler, I.N.
+                   Klimenko, A.P. Remizov, A.K. Richter, G.A. Skuridin, A. Somogyi, L. Szabo,
+                   I. Szemerey, S. Szendro, M.I. Verigin, G.A. Vladimirova, and G.I. Volkov,
+                   The Vega Probe Instrument Package for Measuring Charged Particles with
+                   Energies Less Than 25 keV, Cometary Exploration III, Gombosi, T.I. (ed.),
+                   333-349, 1983.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1983</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., I. Klimenko, A. Remizov, M.I. Verigin, G. Vladimirova, I.
+                   Apathy, K. Szego, I. Szemerey, S. Szendro, M. Tatrallyay, E. Keppler, and
+                   A. Richter, The Vega Plasmag-1 Experiment: Description and First
+                   Experimental Results, Field, Particle and Wave Experiments on Cometary
+                   Missions, Schwingenschuh, K. and W. Riedler (eds.), 157-171, 1985.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1985</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., A.P. Remizov, M.I. Verigin, A.K. Richter, M. Tatrallyay, K.
+                   Szego, I.N. Klimenko, I. Apathy, T.I. Gombosi, and I. Szemerey, Electron
+                   Component of the Plasma Around Halley&apos;s Comet Measured by the Electrostatic
+                   Electron Analyzer of PLASMAG-1 On Board Vega-2, ESA SP-250, Vol I, 195-198,
+                   1986.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1986A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., I.N. Klimenko, A.P. Remizov, M.I. Verigin, G.A.
+                   Vladimirova, I. Apathy, K. Szego, I. Szemerey, S. Szendro, M. Tatrallyay,
+                   E. Keppler, and A.K. Richter, The Vega PLASMAG-1 Experiment: Description
+                   and First Experimental Results, Field, Particle and Wave Experiments on
+                   Cometary Missions, Austrian Academy of Sciences, Proceedings of
+                   International Workshop, Graz, Austria 1985, 203-216, 1986.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1986B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., M.I. Verigin, A.K. Richter, T.I. Gombosi, K. Szego, M.
+                   Tatrallyay, A.P. Remizov, and I. Apathy, Cometary Plasma Region in the Coma
+                   of Comet Halley: Vega-2 Measurements, ESA SP-250, Vol I, 93-98, 1986.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1986C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., T.I. Gombosi, A.P. Remizov, I. Apathy, I. Szemerey, M.I.
+                   Verigin, L.I. Denchikova, A.V. Dyachkov, E. Keppler, I.N. Klimenko, A.K.
+                   Richter, A.J. Somogyi, K. Szego, S. Szendro, M. Tatrallyay, A. Varga, and
+                   G.A. Vladimirova, First In Situ Plasma and Neutral Gas Measurements at
+                   Comet Halley: Initial Vega Results, Nature, 321, 282-285, 1986.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1986D</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., T.I. Gombosi, A.P. Remizov, I. Apathy, I. Szemerey, M.I.
+                   Verigin, L.I. Denchikova, A.V. Dyachkov, E. Keppler, I.N. Klimenko, A.K.
+                   Richter, A.J. Somogyi, K. Szego, S. Szendro, M. Tatrallyay, A. Varga, and
+                   G.A. Vladimirova, First Results of Plasma and Neutral Gas Measurements from
+                   Vega-1/2 Near Comet Halley, Advances of Space Research, 5, No. 12, 165-174,
+                   1986.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1986E</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., T.I. Gombosi, M. Tatrallyay, M.I. Verigin, A.P. Remizov,
+                   A.K. Richter, I. Apathy, I. Szemerey, A.V. Dyachkov, O.V. Balakina, and
+                   A.F. Nagy, Detectionof a New &apos;Chemical&apos; Boundary at Comet Halley,
+                   Geophysical Research Letters, 13, 613-616, 1986.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1986F</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., A.P. Remizov, M.I. Verigin, A.K. Richter, M. Tatrallyay, K.
+                   Szego, I.N. Klimenko, I. Apathy, T.I. Gombosi, and T. Szemerey, Analysis of
+                   the Electron Measurement from the PLASMAG-1 Experimet On Board Vega-2 in
+                   the Vicinity of Comet P/Halley, Astronomy and Astrophysics, 187, 287-289,
+                   1987.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1987A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., A.P. Remizov, M.I. Verigin, A.K. Richter, M. Tatrallyay, K.
+                   Szego, I.N. Klimenko, I. Apathy, T.I. Gombosi, and I. Szemerey, Electron
+                   Component of Plasma in Vicinity of Comet Halley According to Measurement
+                   from the Electron Electrostatic Analyzer of the &apos;Plazmag-1&apos; Complex on the
+                   Vega-2 Spacecraft, Cosmic Research, 25, 729-733, 1987.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1987B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gringauz, K.I., M.I. Verigin, A.K. Richter, T.I. Gombosi, K. Szego, M.
+                   Tatrallyay, A.P. Remizov, and I. Apathy, Quasi Periodic Features and the
+                   Radial Distribution of Cometary Ions in the Cometary Plasma Region of Comet
+                   P/Halley, Astronomy and Astrophysics, 187, 191-194, 1987.
+            </reference_text>
+            <description>reference.GRINGAUZETAL1987C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Verigin, M.I., K.I. Gringauz, A.K. Richter, T.I. Gombosi, A.P. Remizov, K.
+                   Szego, I. Apathy, I. Szemerey, M. Tatrallyay, and L.A. Lezhen,
+                   Characteristic Features of the Cometosheath of Comet Halley: Vega-1 and
+                   Vega-2 Observations, ESA SP-250, Vol I, 169-174, 1986.
+            </reference_text>
+            <description>reference.VERIGINETAL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Verigin, M.I., K.I. Gringauz, A.K. Richter, T.I. Gombosi, A.P. Remizov, K.
+                   Szego, I. Apathy, I. Szemerey, M. Tatrallyay, and L.A. Lezhen, Plasma
+                   Properties from the Upstream Region to the Cometopause of Comet P/Halley:
+                   Vega Observations, Astronomy and Astrophysics, 187, 121-124, 1987.
+            </reference_text>
+            <description>reference.VERIGINETAL1987A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Verigin, M.I., K.I. Gringauz, A.K. Richter, T.I. Gombosi, A.P. Remizov, K.
+                   Szego, I. Apathy, I. Szemerey, M. Tatrallyay, and L.A. Lezhen, Plasma
+                   Transitional Region of Comet Halley (Cometosheath): Vega-1 and Vega-2 Data,
+                   Cosmic Research, 25, 712-718, 1987.
+            </reference_text>
+            <description>reference.VERIGINETAL1987B</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>PLASMA ENERGY ANALYZER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Electrostatic Analyzer. From JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    Instrument Overview
+    ===================
+ 
+      The instrument includes six detectors: two ion
+      analysers, one electron analyser, two collectors
+      which measure the integral plasma ion flux, and one
+      sensor which monitors the integral electron current
+      produced from its surface by photon and particle
+      bom- bardment.  The ion detectors are designed for
+      the study of the energy distribution of the solar
+      and cometary particles, and not for the
+      investigation of their three- dimensional velocity
+      distribution.  Each sensor consists of a
+      quadripolar electrical lens (2), a hemispherical
+      plate analyser (3) and a channeltron (4).  The
+      energy spectrum is swept once per second by
+      stepping the bias voltage U(A) applied between the
+      plates.  The detector oriented towards the Sun has
+      a conical of view (1) with a half angle of 15deg,
+      wide enough to detect the solar wind both upstream
+      and downstream of the cometary bow shock.  The ion
+      detector oriented along the spacecraft-comet
+      velocity vector is intended for operation in the
+      innermost part of the coma, where the cometary ions
+      are expected to have thermal velocities that are
+      negligible with respect to their relative drift
+      velocity of 78 km/s.  This system can therefore be
+      used as a mass spectrometer in the range 1-110 amu
+      with a resolution m/delta m = 20; the minimum
+      measurable ion density is 10**-3/cm**3.  The
+      electron analyser has an aperture of 0.03 cm**2, an
+      angular resolu- tion of +/-2.5deg, and an energy
+      resolution of +/-5%; its geometrical factor is
+      10**-5 E (keV) (cm**2.sr.keV).  Its aperture is
+      oriented perpendicular to the Sun and relative-
+      velocity directions in order to eliminate
+      interferences generated by photon and particle
+      impacts.  The energy spectrum is scanned by
+      applying a series of logarithmically distributed
+      voltage steps U(A) to a cylindrical deflection unit
+      (1).  The entrance of the instrument is controlled
+      by a collimator (2) and a grid (3); the detector is
+      a channeltron (4).  The integral detector which
+      measures the solar-wind ions consists of a
+      collimator, a number of grids to limit the flux of
+      photoelectrons, and a collector.  A potential of
+      +3500 V is periodically applied to one of the grids
+      in order to stop the ion flux and evaluate the
+      interference background.  The aperture has an area
+      of 5 cm**2 and the dynamic range of the
+      measurements extends from +/- 10**-11 A to +/-
+      3x10**-9 A.  The integral detector, which is
+      aligned with the relative-velocity vector, has
+      similar features, but the electrodes are configured
+      such that the incoming dust par- ticles and neutral
+      molecules can only impact on the first diaphragm
+      and on the collec- tor.  By biasing the electrodes
+      differently, in an alternative configuration, it is
+      possible to discriminate between the cometary ions
+      and the charged particles produced by various
+      impact ionisation processes.  The impact plasma
+      monitor is a gold electrode, biased at a fixed
+      potential of -17 V, which measures the integral
+      flux of electrons emitted by the impact of neutral
+      gas, dust particles and photons, in the range
+      10**-10-3x10**-5 A.  The characteristics of the
+      various detectors are summarised in the table
+      below.
+ 
+ 
+ --------------------------------------------------------------------------
+ Table. Plasma Energy Analyser characteristics
+ 
+Detector: Channeltron
+ 
+ Particles            Solar ions        Cometary ions  Electrons
+ ---------------------------------------------------------------------
+ Pointing direction   Sun               Relative        Perpendicular
+                                        velocity        to Sun and relative
+                                                        velocity
+ Energy range         50 eV-3.5 keV     15 eV-3.5 keV   3 eV-10 keV
+                                                        3 eV-30 eV
+ Points per specttum  60                120             30
+ Time resolution      1 s               1 s             1 s
+ Aterture             15deg half cone   15deg half cone 5deg X 10deg
+ 
+ 
+Detector:
+ 
+ Particles	     Solar ions       Cometary ions   Emitted electrons
+ ---------------------------------------------------------------------
+ Pointing direction   Sun             Relative        Relative
+                                      velocity        velocity
+ 
+ Energy range         Integral        Integral        Integral
+ 
+ Points per specttum  1               1
+ Time resolution      0.125 s         0.125 s         1 s
+ Aterture             45deg half cone 8deg half cone  90deg half cone
+ Detector             Electrode       Electrode       Electrode
+ ----------------------------------------------------------------------
+ 
+ Instrument summary
+ 
+ The PLASMAG-1 instument package included six different sensors:
+ A0 plasma impact detector for measuring neutral particle flux,
+    (manufactured by R. Grard, ESA/ESTEC, Noordwijk, The Netherlands)
+ A1 Faraday cup for measuring integral ion flux from solar direction,
+ A2 Faraday cup for measuring integral ion flux and neutral particles
+    from ram direction,
+ A3 spherical electrostatic analyzer for measuring ions from ram
+    direction in the energy range of 15 eV - 3.6 keV in 120
+    logarithmically spaced channels,
+ A4 spherical electrostatic analyzer for measuring ions from solar
+    direction in the energy range of 60 eV - 30 keV in 60
+    logarithmically spaced channels,
+ A5 cylindrical electrostatic analyzer for measuring ions perpendicular
+    to the ecliptic plane in the energy range of 2 eV - 10 keV in
+    30 logarithmically spaced channels.
+ 
+ 
+      Scientific objectives
+ 
+      The electrostatic ion analyzers A3 and A4 were
+      designed to study the change of the energy
+      distribution of the solar wind and cometary ions as
+      a function of the distance from the nucleus.  The
+      detector oriented in the ram direction could
+      determine the mass distribution of cometary ions
+      close to the nucleus with a resolution of
+      m/dm=20-25.  The ram Faraday cup A2 had four modes
+      of operation.  Two of these provided information on
+      the neutral particle flow from the comet.
+ 
+      For further informations on instrument overview and
+      scientific objectives (also first results) see the
+      following papers:
+ 
+      1) Gringauz et al., The Vega probe instrument for
+      measuring charged particles with energies less
+      than 25 keV, in Cometary exploration Vol. III.,
+      ed. by T.I. Gombosi, pp. 333-350, Central Res.
+      Inst. Physics, Budapest, 1982.
+ 
+      2) Gringauz et al., First in situ plasma and
+      neutral gas measurements at Comet Halley,
+      Nature 321, 282-285, 1986.
+ 
+      3) Apathy et al., Plazmag-1 experiment,
+      in Exploration of Halley&apos;s Comet, ESA SP-250,
+      Vol. I., ed. by B. Battrick, E.J. Rolfe,
+      and R. Reinhard, pp. 65-70, Paris, 1986.
+ 
+ 
+ Operational considerations
+ 
+ The sensitivity of the electron analyzer A5 was very low.
+ Detectors A3 and A5 of Vega-1 were fatally damaged
+ during the cruise phase.  Detector A3 of Vega-2 was
+ fatally damaged 2.5 min before closest approach.
+ The channeltrons of A3 were saturating at higher count rates.
+ 
+ Calibration description
+ 
+ The sensors were calibrated at the Max-Planck-Institut
+ for Aeronomy in Katlenburg/Lindau, Germany. The viewing
+ angle and energy resolution of the electrostatic analyzers
+ were determined in vacuum chamber using monoenergetic
+ ion and electron beams, respectively.(For further details
+ see reference #3 above.)
+ The spectrometers used Soviet-made channeltrons as particle
+ detectors.An in-flight calibration was performed every day
+ to select the optimum voltage for the channeltrons.
+ A post-launch calibration was performed in order to correct
+ the saturating count rates of detector A3 of Vega-2 using the
+ integral fluxes provided by the ram Faraday cup A2.
+ 
+ Principal investigator:
+     K.I. Gringauz, Space Res. Inst., Moscow,
+ Co-principal investigator:
+     T.I. Gombosi, Cent. Res. Inst. Physics, Budapest,
+ Co-investigators:
+     A.P. Remizov, M.I. Verigin, L.I. Denchikova, A.V. Dyachkov,
+     I.N. Klimenko, G.A, Vladimirova, Space Res. Inst., Moscow
+     I. Apathy, T. Szemerey, S. Szendro, A.J. Somogyi, K. Szego,
+     M. Tatrallyay, A. Varga, Cent. Res. Inst. Physics, Budapest,
+     E. Keppler, Max-Planck-Inst. Aeronomy, Lindau, Germany.
+ 
+ 
+ 
+ Instrument section
+ 
+ Field of view of the detectors:
+	A1: 90x90 deg (centered on solar direction),
+        A2: 26x26 deg (centered on ram direction),
+        A3: 32x12 deg (centered on ram direction),
+        A4: 36x32 deg (centered on solar direction),
+        A5: 7x7 deg (perpendicular to ecliptic plane).
+ 
+ Effective apperture: A1: 1.6 cm**2
+                      A2: 0.93  cm**2
+                      A3: 0.0193 cm**2
+                      A4: 0.00455 cm**2
+                      A5: 0.0036  cm**2
+ 
+ Energy resolution:   A3: 3.2 %
+                      A4: 3.85%
+                      A5: 7.5 %
+ 
+ One complete spectrum was taken by A3, A4, and A5 in every
+ second during the BRL (high telemery rate) seance.
+ Sampling times for each energy channel:
+                      A3: 0.005 sec
+                      A4: 0.005 sec
+                      A5: 0.021 sec
+ 
+ During the cruise phase data were recorded by an on-board
+ magnetometer at lower telemetry rate.
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

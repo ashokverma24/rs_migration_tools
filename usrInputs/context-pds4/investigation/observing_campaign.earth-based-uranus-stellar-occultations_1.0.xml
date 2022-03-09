@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:observing_campaign.earth-based-uranus-stellar-occultations</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Earth-based Observations of Uranus System Stellar Occultations</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-12-09</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                Initial set up of the investigation product. 
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+
+<!--  Key Document  -->
+
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:uranus_occ_support:document:earth-based-uranus-stellar-occultations-user-guide::1.0</lidvid_reference>
+            <reference_type>investigation_to_document</reference_type>
+            <comment>The Users Guide for all of the Earth-based Uranus system occultations.</comment>
+        </Internal_Reference>
+
+<!--  Targets  -->
+
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.uranus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:ring.uranus.rings</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>        
+
+<!--  Facilities  -->
+
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.caha-calar_alto</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+       <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.ctio-cerro_tololo</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.eso-la_silla</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.irtf-maunakea</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.kuiper-airborne</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.las_campanas</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.lowell</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.mcdonald</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.mount_stromlo</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.pic_du_midi</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.palomar</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.saao</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.siding_spring</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.teide</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.maunakea</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+
+<!--  Telescopes/Instrument Hosts  -->
+
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:caha-calar_alto.1m23</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:ctio-cerro_tololo.smarts_1m50</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:ctio-cerro_tololo.victorblanco_4m0</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-la_silla.1m04</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-la_silla.2m2</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:eso-la_silla.3m6</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:irtf-maunakea.3m2</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:kuiper-airborne.0m91</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_campanas.swope_1m0</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_campanas.ireneedupont_2m5</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:lowell.perkins_warner1m83</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:mcdonald.harlanjsmith_2m7</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:mount_stromlo.1m9</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:pic_du_midi.1m06</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:pic_du_midi.bernardlyot_2m0</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:palomar.hale_5m08</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:saao.radcliffe_1m88</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:siding_spring.anu_2m3</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:siding_spring.aat_3m9</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:teide.carlossanchez_1m55</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:maunakea.ukirt_3m8</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.hst</lid_reference>
+          <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+
+<!--  Instruments  -->
+
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:multi-host.generic_insp_hsp</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:multi-host.generic_gaas_hsp</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:multi-host.generic_ir_hsp</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:multi-host.generic_vis_hsp</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:multi-host.generic_ccd_camera</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:multi-host.generic_nicmos_ir_camera</lid_reference>
+            <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:hst.fos</lid_reference>
+          <reference_type>investigation_to_instrument</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>Earth-based Observations of Uranus System Stellar Occultations</name>
+        <type>Observing Campaign</type>
+        <start_date>1972-03-10</start_date>
+        <stop_date>2002-07-29</stop_date>
+        <description>
+            This observing campaign collates Earth-based observations of Uranus stellar occultations (1972-2002). 
+            Observations were primarily obtained using a variety of high speed photometers, and include several 
+            early events that were recorded only on strip charts, additional high-SNR unpublished ground-based 
+            observations, two occultations observed from the Hubble Space Telescope, and two occultations observed 
+            using 2D imaging arrays.
+        </description>
+    </Investigation>
+</Product_Context>

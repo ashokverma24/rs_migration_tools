@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.new_horizons</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>NEW HORIZONS</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>NH</alternate_id>
+                <alternate_title>NH</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.nh</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:calibrator.calibration</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:dust.dust</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.earth</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.jupiter</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:dwarf_planet.134340_pluto</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:plasma_stream.solar_wind</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+<!--notyet        <Internal_Reference> -->
+<!--notyet            <lid_reference>urn:nasa:pds:context:target:ring.j_rings</lid_reference> -->
+<!--notyet            <reference_type>investigation_to_target</reference_type> -->
+<!--notyet        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.callisto</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.134340_pluto.charon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.ganymede</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.134340_pluto.hydra</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.io</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.callirrhoe</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.europa</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.himalia</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.elara</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.134340_pluto.kerberos</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.134340_pluto.nix</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.134340_pluto.styx</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lunine, J.I., et al., Report of the Pluto-Kuiper Express Science Definition
+                   Team (NASA; unpublished; reconstructed and provided with the New Horizons data
+                   sets starting in 2014), 1995.
+            </reference_text>
+            <description>reference.LUNINEETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   NASA, Pluto Kuiper Belt Mission Announcement of Opportunity. AO 01-OSS-01, 2001.
+            </reference_text>
+            <description>reference.NASAAO2001</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Stern, A., and J. Spencer, New Horizons: The first reconnaissance mission to
+                   bodies in the Kuiper Belt, Proceedings of the First Decadal Review of the
+                   Edgeworth-Kuiper Belt, A. Davies Ed., ISBN 1-4020-1781-2, reprinted from Earth
+                   Moon and Planets 92, 2004.
+            </reference_text>
+            <description>reference.STERN-SPENCER2004A</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>NEW HORIZONS</name>
+        <type>Mission</type>
+        <start_date>2006-01-19</start_date>
+        <stop_date nilReason="unknown" xsi:nil="true"></stop_date>
+
+        <description>
+ 
+  This material has been adapted from the New Horizons web site.
+ 
+ 
+  Mission Overview
+  ================
+    The primary science goals of the NEW HORIZONS mission are to
+    characterize the global geology and morphology of Pluto and Charon, to
+    map the surface composition of Pluto and Charon, and to characterize
+    the neutral atmosphere of Pluto and its escape rate (NASA AO, 2001
+    [NASAAO2001]; Stern &amp; Spencer, 2004 [STERN&amp;SPENCER2004A]).
+ 
+ 
+  Mission Design
+  ==============
+    The New Horizons spacecraft trajectory was designed to have as early
+    an arrival time at Pluto as practicable.
+ 
+    There are two reasons why the New Horizons science team wanted to
+    reach Pluto and Charon quickly. The first has to do with the Pluto
+    atmosphere: Since 1989, Pluto has been moving farther from the Sun,
+    getting less heat every year [LUNINEETAL1995]. As Pluto gets colder
+    scientists expect its atmosphere will freeze out, so the team wanted
+    to arrive while there is a chance to see a thicker atmosphere.
+ 
+    The second reason is to map as much of Pluto and Charon as possible.
+    As New Horizons approaches and flies by the Pluto system, parts of
+    Pluto or Charon will be in constant darkness, and, the later the
+    flyby, the more of Pluto and Charon that will be unlit.
+ 
+    In addition, the trajectory was designed to enable all of the science
+    goals, including Solar and Earth occultations by Pluto and Charon.
+ 
+ 
+    Prime Opportunity:  Jupiter
+    ---------------------------
+      By launching in January 2006, New Horizons took advantage of a
+      gravity assist from Jupiter. In February 2007, New Horizons passed
+      through the Jupiter system at about 80,000 kmph, ending up on a path
+      that gets it to Pluto on July 14, 2015.
+ 
+      Science Opportunities at Jupiter included meteorology, aurora
+      studies, magnetospheric sampling, and dust sampling and ultraviolet
+      mapping of the torus around Io. Surface mapping, compositional
+      mapping and atmospheric studies of the Jovian moons were possible,
+      as was a close encounter with a small Jovian satellite.
+ 
+ 
+    Cruise from Jupiter to Pluto
+    ----------------------------
+      During the PLUTOCRUISE mission phase from Jupiter to Pluto, the
+      mission team monitored the health of the spacecraft while planning
+      and practicing for the encounter with Pluto and Charon. At the same
+      time, observers used telescopes on Earth and in Earth orbit to
+      search for Kuiper Belt Objects (KBOs) the spacecraft can fly by
+      after Pluto and Charon (as part of an extended mission). The KBOs
+      are ancient, icy bodies that orbit beyond Neptune.
+ 
+ 
+    Closing In:  Pluto
+    ------------------
+      The cameras on New Horizons started taking data on Pluto and Charon
+      months before the spacecraft arrived. Pluto and Charon will first
+      appear as unresolved bright dots, but the planet and its moon appear
+      larger as the encounter date approaches. About three months from the
+      closest approach - when Pluto and Charon are about 105 million
+      kilometers away - the cameras on the spacecraft can make the first
+      maps. For those three months, the mission team took pictures and
+      spectral measurements.
+ 
+      Pluto and Charon each rotate once every 6.4 Earth days. For the last
+      three Pluto days before encounter (21 Earth days), the team compiled
+      maps and gathered spectral measurements of Pluto and Charon every
+      half-day. The team then compared these maps to look for changes over
+      a Pluto day, at a scale of about 48 kilometers.
+ 
+ 
+    The Encounter
+    -------------
+      The busiest part of the Pluto-Charon flyby lasted a full Earth day,
+      from a half-day before closest approach to a half-day after. On the
+      way in, the spacecraft looked for ultraviolet emission from the
+      Pluto atmosphere and made the best global maps of Pluto and Charon
+      in green, blue, red and a special wavelength detector that is
+      sensitive to methane frost on the surface. It also made spectral
+      maps in the near infrared, telling the science team about the Pluto
+      and Charon surface compositions and locations and temperatures of
+      these materials.
+ 
+      In current mission designs, the spacecraft comes as close as about
+      9,600 kilometers from Pluto and about 27,000 kilometers from Charon.
+      During the half-hour when the spacecraft is closest to Pluto or its
+      largest moon, it will take close-up pictures in both visible and
+      near-infrared wavelengths. The best pictures of Pluto depict surface
+      features as small as about 60 meters across.
+ 
+      Even after the spacecraft passed Pluto and its moons, its work is
+      far from done. Looking back at the mostly dark side of Pluto or
+      Charon is the best way to spot haze in the atmosphere, to look for
+      rings, and to figure out whether their surfaces are smooth or rough.
+      Also, the spacecraft flew through the shadows cast by Pluto and
+      Charon. It looked back at the Sun and Earth, and watched the light
+      from the Sun or the radio waves from transmitters on Earth. A unique
+      time to measure the atmosphere occurs as the spacecraft watches the
+      Sun and Earth set behind Pluto and Charon.
+ 
+ 
+                Launch:  January 19, 2006
+ 
+        Launch Vehicle:  Atlas V 551 first stage; Centaur second stage;
+                         STAR 48B solid rocket third stage
+ 
+              Location:  Cape Canaveral Air Force Station, Florida
+ 
+            Trajectory:  To Pluto via Jupiter Gravity Assist
+ 
+ 
+  Mission Phases
+  ==============
+ 
+    Summary of mission phases
+    -------------------------
+      Mission phases provide convenient handles and approximate time
+      boundaries to
+ 
+      1) partition the data into very broad categories of mission activity
+ 
+      2) provide approximate time boundaries for PDS archive data sets
+ 
+      The mission is continuous, so the boundaries are very soft i.e. in
+      an operational sense they do not exist in a noticeable way.
+ 
+      That being the case, the user should not expect the actual range of
+      times covered by data in this data set to exactly agree with the
+      boundaries of the corresponding mission phase described below; the
+      data set time range may be far less or it may overlap the
+      boundaries. This is intentional and will not be changed.
+ 
+      For example, during the New Horizons mission it was decided to
+      deliver data sets for the first three years of the 7.5-year Pluto
+      Cruise mission phase before that mission phase was complete.  As
+      such, the time range of those data sets was from 2007 until mid- to
+      late-2010, while the mission phase described below extends through
+      the end of 2014.  The intention was to deliver the balance of the
+      Pluto Cruise at a later date.  Once all Pluto Cruise data are
+      delivered this paragraph will become obsolete; nonetheless this
+      paragraph may be left in place as an example of the intentional
+      flexibility of the boundaries between the mission phases defined in
+      the dates below.
+ 
+ 
+                                            Full MISSION_PHASE_NAME,
+      Short name    Start(1,3)  Stop(2,3)   plus optional Description
+      ----------    ----------  ---------   -------------------------
+ 
+      LAUNCH        2006-01-19  2006-12-31  POST-LAUNCH CHECKOUT
+ 
+      JUPITER       2007-01-01  2007-06-26  JUPITER ENCOUNTER
+ 
+      PLUTOCRUISE   2007-06-27  2014-12-31  PLUTO CRUISE,
+                                            Jupiter-Pluto/Charon
+                                              Interplanetary Cruise
+ 
+      PLUTO_CHARON  2015-01-01  2016-04-30  PLUTO ENCOUNTER,
+                                             Pluto/Charon approach,
+                                              flyby, post-encounter
+ 
+      KBO1CRUISE    2016-05-01  TBD         KBO1 CRUISE,
+                                            Pluto-KBO1 Cruise (4)
+ 
+      KBO1          TBD         TBD         KBO1 ENCOUNTER
+                                            KBO1 approach, flyby,
+                                              post-encounter (4)
+ 
+      KBO2CRUISE    TBD         TBD         KBO2 CRUISE,
+                                            KBO1-KBO2 Cruise (4)
+ 
+ 
+      KBO2          TBD         TBD         KBO2 ENCOUNTER
+                                            KBO2 approach, flyby,
+                                              post-encounter (4)
+      Notes:
+ 
+      1 Start at 00:00:00 UTC on the spacecraft that day
+      2 End before 00:00:00 UTC on the spacecraft next day
+      3 Start and end dates are not exact and identical for all
+      instruments; some instruments take single observations over several
+      days which span these mission phase boundaries.
+      4 All mission phases after PLUTO ENCOUNTER assume an extended
+      mission for NH; as of early 2016, no extension to the mission has
+      been approved.
+ 
+ 
+    The Voyage
+    ----------
+      Post-Launch Checkout:
+ 
+        Short phase name (in DATA_SET_ID; DSID):  LAUNCH
+        Formal mission phase name:  POST-LAUNCH CHECKOUT
+        Mission Phase Start Time - 2006-01-19
+        Mission Phase Stop Time  - 2006-12-31
+ 
+        The first 13 months include spacecraft and instrument checkouts,
+        instrument calibrations, trajectory correction maneuvers, and
+        rehearsals for the Jupiter encounter.
+ 
+ 
+      Jupiter Encounter:
+ 
+        Short phase name (in DSID):  JUPITER
+        Formal mission phase name:  JUPITER ENCOUNTER
+        Mission Phase Start Time - 2007-01-01
+        Mission Phase Stop Time  - 2007-06-26
+ 
+        Closest approach occurred on Feb. 28, 2007. Moving about 21
+        kilometers per second, New Horizons flew 3 to 4 times closer to
+        Jupiter than the Cassini spacecraft, coming within 32 Jupiter
+        radii of Jupiter.
+ 
+ 
+      Pluto Cruise:
+ 
+        Short phase name (in DSID):  PLUTOCRUISE
+        Formal mission phase name:  PLUTO CRUISE
+        Mission Phase Start Time - 2007-06-27
+        Mission Phase Stop Time  - 2015-01-15
+ 
+        Activities during the approximately 8-year PLUTOCRUISE mission
+        phase to Pluto include annual spacecraft and instrument checkouts
+        (ACOs), trajectory corrections, instrument calibrations and Pluto
+        encounter rehearsals.
+ 
+ 
+    Pluto-Charon Encounter
+    ----------------------
+      Short phase name (in DSID):  PLUTO_CHARON
+      Formal mission phase name:  PLUTO ENCOUNTER
+      Mission Phase Start Time - 2015-01-15
+      Mission Phase Stop Time  - 2016-04-30
+ 
+      This phase will be broken down into three sub-phases:
+ 
+      Approach:
+ 
+        Mission Sub-phase Start Time - 2015-01-15
+        Mission Sub-phase Stop Time  - 2015-07-14
+ 
+        Ten weeks before encounter, image resolution will exceed that of
+        the best Hubble Space Telescope images.  Four weeks before
+        encounter, daily studies will begin.  New Horizon will acquire
+        maps and spectra throughout this period.
+ 
+ 
+      Near Encounter Phase (NEP, or Flyby):
+ 
+        Mission Sub-phase Start Time - 2015-07-14
+        Mission Sub-phase Stop Time  - 2015-07-14
+ 
+        Activities include taking the highest resolution visible and
+        spectral imaging at closest approach to Pluto and Charon.  The
+        time near occultations (Pluto/Sun, Pluto/Earth, Charon/Sun and
+        Charon/Earth) will be used for atmospheric studies.
+ 
+ 
+      Departure (Post-Encounter):
+ 
+        Mission Sub-phase Start Time - 2015-07-14
+        Mission Sub-phase Stop Time  - 2016-04-30
+ 
+        Four weeks of post-encounter studies and nine months of
+        downloading data.
+ 
+ 
+      KBO 1 Cruise:
+ 
+        Short phase name (in DSID):  KBO1CRUISE
+        Formal mission phase name:  KBO1 CRUISE
+        Mission Phase Start Time - 2016-05-01
+        Mission Phase Stop Time  - TBD
+ 
+        Activities during the KBO1CRUISE mission phase to the first KBO
+        encounter will be similar to those for Pluto Cruise phase.
+ 
+ 
+      KBO 1 Encounter
+ 
+        Short phase name (in DSID):  KBO1
+        Formal mission phase name:  KBO1 ENCOUNTER
+        Mission Phase Start Time - TBD
+        Mission Phase Stop Time  - TBD
+ 
+        Activities during this encounter are TBD, but will be similar to
+        the Pluto Encounter phases.
+ 
+ 
+      KBO 2 Cruise:
+ 
+        Short phase name (in DSID):  KBO2CRUISE
+        Formal mission phase name:  KBO2 CRUISE
+        Mission Phase Start Time - TBD
+        Mission Phase Stop Time  - TBD
+ 
+        Activities during the KBO2CRUISE mission phase to the first KBO
+        encounter will be similar to those for Pluto and KBO 1 Cruise
+        phases.
+ 
+ 
+      KBO 2 Encounter
+ 
+        Short phase name (in DSID):  KBO2
+        Formal mission phase name:  KBO2 ENCOUNTER
+        Mission Phase Start Time - TBD
+        Mission Phase Stop Time  - TBD
+ 
+        Activities during this encounter are TBD, but will be similar to
+        the Pluto and KBO Encounter phases.
+        </description>
+    </Investigation>
+</Product_Context>

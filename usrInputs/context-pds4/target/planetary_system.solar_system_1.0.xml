@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:target:planetary_system.solar_system</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SOLAR_SYSTEM</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Target>
+        <name>SOLAR_SYSTEM</name>
+        <type>Planetary System</type>
+
+        <description>
+ 
+  Target Overview
+  ===============
+    The Solar System consists of the Sun, all celestial bodies orbiting
+    the Sun (including the planets, their satellites, asteroids, comets,
+    and meteroids), and the interplanetary medium (including dust)
+    extending to the heliopause. This target is primarily used by the
+    PDS to describe data acquired during the interplanetary cruise
+    portion of planetary missions. The assignment of the &amp;apos;SOLAR SYSTEM&amp;apos;
+    target to a data set does not imply that the data within the data
+    set are unmodified by the interstellar medium or other sources
+    outside of the Solar System.
+ 
+  Target Parameters
+  =================
+    None of the normal parameters that the PDS maintains about other
+    targets apply to the Solar System, except possibly mass. The Sun
+    (1.9891E30 Kg) contains 99.86% of the mass of the Solar System and
+    most of the remaining mass is contained in Jupiter. The Solar System
+    Barycenter moves in a nearly circular orbit about the center of the
+    Galaxy (which lies about 8500 parsecs away in the constellation
+    Sagittarius) at a mean speed of about 220 km/sec.
+        </description>
+    </Target>
+</Product_Context>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.gam_ara</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Gamma Arae</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Gamma Ara</alternate_title></Alias>
+      <Alias><alternate_title>gam Ara</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HJ 4942A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ANT 5A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J1725236-562239</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 15048</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J17254-5623A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 20 5567</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-56 8225</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-56 8225 41</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 3895</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1721.2-5619</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J1725-56.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 23517</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 10045</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00157246A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 08736-03857</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 157246</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 85267</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 85267</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 6462</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 17170-5617 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 17211-5619</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J17252367-5622404</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 345992</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2441</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 244726</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 31439</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 20322</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 8736-3857-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 14806</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 22143</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100157246 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J17254-5623A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 14396</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2XMM J172523.7-562240</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 5922299343254265088</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Gamma Arae</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 17 hours 25 minutes 23.6593111 seconds
+Declination, ICRS coord, ep=J2000: -56 degrees 22 minutes 39.814775 seconds
+    </description>
+  </Target>
+</Product_Context>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.rings.occultation_time_series.rings.time_series_direction_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>time_series_direction</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>time_series_direction</name>
+        <version_id>1.10</version_id>
+        <class_name>Occultation_Time_Series</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.rings.occultation_time_series.rings.time_series_direction_1a00</local_identifier>
+        <steward_id>rings</steward_id>
+        <type>PDS4</type>
+        <namespace_id>rings</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>time_series_direction indicates the direction the occultation proceeds through the target within a particular data product. Possible values are 'ingress', 'egress', 'both' or 'multiple'. The value 'Multiple' is only used for some Hubble-based occultations where the occultation track is not monotonic over relatively short time scales. Not intended as a value for a table field.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <Terminological_Entry>
+            <name>time_series_direction</name>
+            <definition>time_series_direction indicates the direction the occultation proceeds through the target within a particular data product. Possible values are 'ingress', 'egress', 'both' or 'multiple'. The value 'Multiple' is only used for some Hubble-based occultations where the occultation track is not monotonic over relatively short time scales. Not intended as a value for a table field.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>false</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <specified_unit_id>none</specified_unit_id>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

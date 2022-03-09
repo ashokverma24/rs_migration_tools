@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:giada.ro</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GRAIN IMPACT ANALYSER AND DUST ACCUMULATOR for RO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ro::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bussoletti E. et al., The GIADA experiment for Rosetta mission to comet
+                   46P/Wirtanen: design and performances, Adv. Space Res., 24, 1139, 1999.
+            </reference_text>
+            <description>reference.BUSSOLETTIETAL1999</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Colangeli, L. et al., The Grain Impact Analyser and Dust Accumulator (GIADA)
+                   experiment for the Rosetta mission: design, performances and first results,
+                   Space Sci. Rev., 128(1-4), p.803-821, Feb 2007.
+            </reference_text>
+            <description>reference.COLANGELIETAL2007</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Esposito F. et al., Physical aspect of an &apos;Impact sensor&apos; for the detection of
+                   Cometary dust Momentum onboard the Rosetta Space Mission, Adv. Space Res., 29,
+                   8, 1159-1163, 2002.
+            </reference_text>
+            <description>reference.ESPOSITOETAL2002</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mazzotta Epifani E. et al., The Grain Detection System for the GIADA
+                   instrument: design and expected performances, Adv. Space Res., 29, 8, 1165,
+                   2002.
+            </reference_text>
+            <description>reference.MAZZOTTAEPIFETAL2002</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Palomba, E., et al., The sticking efficiency of quartz crystals for cosmic
+                   sub-micron grain collection, Planet. Space Sci., 49, 919, 2001.
+            </reference_text>
+            <description>reference.PALOMBAETAL2001</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Palomba, E., et al., Performance of Micro-Balances for dust flux measurement,
+                   Adv. Space Res., 29, 1155-1158, 2002.
+            </reference_text>
+            <description>reference.PALOMBAETAL2002</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>GRAIN IMPACT ANALYSER AND DUST ACCUMULATOR</name>
+        <type>Dust</type> <!--RChen/EN was Dust Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+ 
+    The Grain Impact Analyser and Dust Accumulator (GIADA) is the
+    instrument on-board the ROSETTA Orbiter that has been designed to
+    study the dust environment of comet 67P/Churyumov-Gerasimenko.
+    Thanks to the rendezvous configuration of the mission, GIADA will
+    be plunged into the dust environment of the coma and will explore
+    the dust flux evolution and grain dynamics vs. position and time.
+    This is a unique opportunity to perform measurements on key
+    parameters that no ground-based observation or fly-by mission are
+    able to obtain and that no tail or coma model elaborated so far
+    have been able to properly simulate. The coma and nucleus
+    properties shall be, then, clarified with consequent improvement
+    of models describing both inner and outer coma evolution and dust
+    and gas emission from the nucleus during different evolution
+    phases. GIADA shall measure mass/size of single particles larger
+    than about 15 micron, together with momentum in the range
+    6.5 x 10^(-10) - 4.0 x 10^(-4) kg m s^(-1) and for velocities up
+    to about 300 m s^(-1). The cumulative mass shall be detected,
+    with sensitivity 10^(-10) g, for micron/submicron particles.
+    These performances shall provide a statistically relevant set of
+    data about dust physical and dynamic properties in the environment
+    of comet 67P/Churyumov-Gerasimenko.
+    GIADA is based on three different sensing methods. A Grain
+    Detection System (GDS) shall detect optically the transit of each
+    single grain entering GIADA, without affecting its dynamic
+    properties; an Impact Sensor (IS) shall monitor, by piezoelectric
+    sensors (PZTs), the momentum released by the same grain upon
+    impact onto an aluminium plate. Independently, five Micro Balance
+    Systems (MBSs), pointing towards different space directions, will
+    measure the cumulative deposition in time of fine dust.
+ 
+    A more complete description of the GIADA instrument is in
+    RO_GIA_OACUPA_IF_011_I3 (reported in DOCUMENT dir). Other
+    additional information are given in the following papers (as cited
+    in REF.CAT):
+        [BUSSOLETTIETAL1999] and [COLANGELIETAL2007] for what
+        concerns the overall GIADA instrument description,
+        [ESPOSITOETAL2002] for what concerns working principle
+        and tests on IS,
+        [MAZZOTTAEPIFETAL2002] for what concerns working principle
+        and tests on GDS,
+        [PALOMBAETAL2001] and [PALOMBAETAL2002] for what concerns
+        the performances and working principle of Microbalances.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pvo.orpa</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ORBITER RETARDING POTENTIAL ANALYZER for PVO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-08-26</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.pvo::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Knudsen W.C. , Evaluation and demonstation of the use of retarding
+                   potential analyzers for measuring several ionospheric quantities, J.
+                   Geophys. Res., vol. 71, pp. 4669-4678, 1966.
+            </reference_text>
+            <description>reference.KNUDSENETAL1966</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Knudsen, W.C., J. Bakke, K. Spenner, and V. Novak, Retarding Potential
+                   Analyzer for the Pioneer Venus Orbiter, Space Sci. Inst., 4, 351, 1979.
+            </reference_text>
+            <description>reference.KNUDSENETAL1979</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Knudsen, W.C., K. Spenner, J. Bakke, and V. Novak, Pioneer Venus Orbiter
+                   Planar Retarding Potential Analyzer Plasma Experiment, IEEE Trans. on
+                   Geosci. Remote Sens., 18, 1, 60, 1980.
+            </reference_text>
+            <description>reference.KNUDSENETAL1980</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ORBITER RETARDING POTENTIAL ANALYZER</name>
+        <type>Particle Detector</type> <!--RChen/EN was Plasma Analyzer. No obvious choice. TBD in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+The Pioneer Venus Orbiter Retarding Potential Analyzer (ORPA) is
+a plane gridded, retarding potential device. It is designed to
+measure both ion and electron quantities in the 0-50eV energy range
+in the Venusian ionosphere and solar wind. The PVO spacecraft
+had an eccentric orbit with approximately a 24 hour period. For the
+initial phase of the mission, periapsis was maintained at about 200 km
+and apoapsis was at about 66,00 km. The low periapsis allowed
+sounding of the Venusian ionosphere while the apoapsis altitude
+provided an opportunity for observing the solar wind interaction.
+ 
+  The quantities measured by the ORPA were electron
+temperature* (Te), total ion concentration (Ni), individual
+ion temperature Ti(j) of the most abundant species, their
+concentrations Ni(j),  thermal ion drift velocity
+(approximately D), and energy distribution of suprathermal
+electron and ion fluxes f(E) up to 50 eV.
+ 
+* The following conventions are used to create ASCII versions of
+  equations, subscripts, etc.:
+ 
+Xe or Xi is the electron or ion value, respectively, of parameter X
+X(j)     is the jth value of a sweep of parameter X
+^        indicates exponentiation
+ 
+-----------------------------------------------------------
+                     Measured Plasma Quantities
+-----------------------------------------------------------
+                                     Closest
+                                     Distance
+                           Sample    Between
+                          Distance   Samples    Range     Uncert.
+ Symbol    Quantity       (km) (1)   (km) (2)    (3)       (4)
+===========================================================
+Ni = Ne    Total Ion       1x10^-3  20x10^-3   ~10-10^7      ~5%
+           concentration                        (cm^-3)
+ 
+Ni(j)      Concentration    1.6     120        ~10^2-10^7    ~5%
+           of up to 4 (j)                       (cm^-3)
+           abundant ions
+ 
+Ti(j)      Temperature of   1.6     120        100-10,000K   ~5%
+           the jth ion                       ~10^2&lt;N-i&lt;10^7
+                                                (cm^-3)
+ 
+Mi(j)      Mass of the      1.6     120         1 - 56       ~1
+           jth ion                              (amu)       (amu)
+ 
+D          Ion drift        1.6,    500         0.05 - 5     ~50
+           velocity         240                 (km/s)      (m/s)
+ 
+fe         Low-energy       0.5     120         1-50ev       ~25%
+           electron                           ~10^6-10^12
+           distribution                  (cm^-2s^-1sr^-1eV^-1)
+           function
+ 
+Te         Ionospheric      0.4     0.4,        300-25000K   ~10%
+           electron                 120        ~10^2&lt;N-e&lt;10^7
+           temperature                            (cm^-3)
+ 
+Te         Solar Wind       0.4     120       25000-5x10^5K  ~25%
+           electron                            N-e &gt;= 0.5
+           temperature                          (cm^-3)
+ 
+Ne         Solar Wind       0.3      120      ~0.5-10^2      ~30%
+           Electron                             (cm^-3)
+           Concentration
+============================================================
+(1) This is the distance traveled by the spacecraft at a velocity
+    of 10 km/s during which the plasma is sampled.
+(2) This distance is dictated by the assigned bit rate.
+(3) These ranges depend in some instances on the values of other
+    parameters such as ion composition.
+(4) These uncertainties apply to the higher concentration ranges. As
+    the concentration drops toward the lower range value, the
+    accuracies degrade.
+ 
+ 
+The assembled ORPA consists of the sensor head which is surrounded by a
+large ground plane 30 cm in diameter and the necessary electronics. The
+planar sensor consists of a sequence of grids. The physical quantities
+can be derived for a plasma from the integral flux of ions or electrons,
+gathered by collector C, as a function of energy.  Only particles whose
+energy is greater than the retarding voltage applied on the retarding
+grid G-2 can strike the collector. Use of appropriate voltage programs
+allows analysis of the particle energy.  The other grids and the
+collector are biased with voltages, which separate positive and negative
+particles and minimize secondary electrons produced by particle impact
+and photons.
+ 
+The sensor is used to measure both electrons and ions by changing the
+sensor voltages.  The voltage program can be subdivided into three basic
+modes with different options selectable through ground command.
+ 
+Electron mode
+ 
+In the electron mode, the ion current to the collector is negligible
+with the collector at 47 V,  A potential difference of 20 V between G-4
+and C was found sufficient to suppress most of the secondary electrons
+produced by ion or electron impact at the collector.  The three front
+grids G-0, G-1 and G-2 are the energy analyzing grids.  They are stepped
+together from +6.8 to -4.2 V in the coarse scan. The corresponding
+collector current is measured by an electrometer and then digitized. The
+straight line portion is the retarding region, and the logarithmic slope
+determines the electron temperature by the relation:
+ 
+       e      D V
+Te = - -  ------------                                               (1)
+       k   D log (- Ie)
+ 
+where e is the electron charge; k, the Boltzmann constant; and Ie, the
+electron current.  The left side with larger positive voltage is the
+attractive region.  The voltage Vp at which these two portions of the
+curve join is the potential of plasma relative to spacecraft.  Vp is
+expected to vary from a few volts negative in interplanetary space to 1
+or 2 V positive in the Venusian ionosphere.  For the simulation it was
+set to zero. The lower portion of the curve bends away from the
+straight-line portion because the velocity distribution is not a true
+Maxwellian distribution.  An additional population of suprathermal
+electrons exists with higher energies than the thermal distribution.
+ 
+  The retarding region of the characteristic curve is auto- matically
+recognized by taking the measured differences of a logarithmic
+electrometer.  On-board logic selects the peak difference and 4 or 10
+adjacent values, depending on the commanded option.  The retarding
+voltage in the electron mode consists of a coarse scan over the entire
+voltage range followed by one or three fine scans over the appropriate
+subrange centered where the largest difference in the coarse mode has
+occurred. The retarding voltage at which the largest value of -delta
+log (-Ie) occurs in the coarse electron scan is quite close to the
+plasma potential and is used as a reference potential for the
+retarding voltage in the ion mode.
+ 
+ 
+------------------------------------------------------------
+                     Control Voltage
+------------------------------------------------------------
+                                                Suprathermal
+                          Electron (a) Ion (a)   Electron(a)
+Symbol  Element            Mode (V)    Mode (V)    Mode (V)
+============================================================
+ G0   Entrance Grid       6.8 - -4.2     0 or -4.6      0
+ G1   Ion Suppressor Grid 6.8 - -4.2   -0.1 to 36(b)   47
+ G2   Retarding Grid      6.8 - -4.2   -0.1 to 36(b) 0 - -50
+ G3   Displacement           47           -4.6         47
+      Current Shield
+ G4   Electron Suppressor    27          -24.6         27
+      Grid
+C, GR Collector, Guard       47           -4.6         47
+      Ring
+============================================================
+(a) Referenced to satellite ground except where otherwise
+    indicated.
+(b) Referenced to plasma potential.
+ 
+------------------------------------------------------------
+                 Retarding Potential Programs
+------------------------------------------------------------
+                        Number   Step Size  Voltage Range(a)
+Mode Scan               of steps    (V)           (V)
+============================================================
+ E   Electron, coarse   64      -0.176         6.8 - -4.6
+     Electron, fine     20      -0.044(c)       0.88(c)
+ I   Ion                80      J x 0.011(d)  -0.1 to 36(b)
+ S   Suprathermal       48      J x 0.044(d)    0 - -50
+     Electron
+============================================================
+(a) Referenced to satellite ground except where otherwise
+    indicated.
+(b) Referenced to plasma potential.
+(c) Subdivides 5 coarse steps.
+(d) The step size is proportional to J.
+ 
+ 
+ 
+ION MODE
+ 
+The basic principles of ion measurements with an RPA are
+described by W.C. Knudsen (1966).  The ion current given by
+ 
+  I = A * Tr * e * v * cos(alpha) * SIGMA(j)                   (2)
+ 
+where
+ 
+           --                                    exp(- K(j)^2)
+SIGMA(j) = &gt;     (Ni(j) [ 0.5 + 0.5 * erf(K(j)) + -------------------
+           --                                    2 * sqrt(pi * Bi)
+           j
+ 
+ 
+  K(j)   =     B(j)  -  sqrt( e * s^2 / (k * Ti(j)) )
+ 
+              v * cos(alpha)
+  B(j)   =    -----------------
+            sqrt(2 * k * Ti(j) / Mi(j))
+ 
+ 
+  s     =     V - Vi
+ 
+where e is the electron charge (1.6X10^-19 Coulomb),v is the
+ion velocity relative to the satellite, alpha is the angle
+of attack, Tr is the grid transparency, A is the grid area
+and V is the retarding voltage.  The array index j denotes
+the ion species and the subscript i denotes that the
+quantities refer to ions.  The expression for dI/ds is
+ 
+  dI        --    Ni(j)          s          -e
+  --  =  -c &gt;  -------------- * --- * exp[-------- * (s - s(j))^2] (3)
+  ds        -- sqrt(k * Ti(j))   si       k * Ti(j)
+             j
+ 
+where
+ 
+                   Mi(j) * v^2 * cos^2(alpha)
+   s(j)  =   sqrt[  --------------------------  ]
+                           2 * e
+ 
+and
+ 
+             A * Tr * e^1.5 * v * cos(alpha)
+   c    =    -----------------------------------
+                       sqrt(pi)
+ 
+ 
+The current derivative with respect to the square root of
+the effective retarding potential s is the sum of individual
+ion terms.  Each term contains a Gaussian factor centered
+on the value s(j), which is determined by the ion mass.
+The half width of the Gaussian, sqrt( kTi(j)/e), is
+proportional to the square root of the ion temperature
+and the peak value is proportional to Ni(j)/sqrt(Ti(j)).
+  The 80 retarding potential step height increments in the
+ORPA ion mode vary according to the relation
+ 
+   delta V = V(j-1) - V(j) =  J * 0.011V    J = 1, 79,
+ 
+and the beginning value Vi(j) is started at Vref.  Thus,
+ 
+                  J * (J - 1)                0.011
+   Vi - Vref   =  ---------- * 0.011 ~ J^2 * ------,   J &gt; 10 (4)
+                     2                         2
+ 
+The difference in collector current between adjacent
+retarding potential steps becomes
+ 
+ 
+ delta I(j)    = I * [ V(j-1) - I * V(j)]
+ 
+                        0.011
+              ~ - sqrt( -----) * c * SIGMA(j)                 (5)
+                        J(j)
+ 
+where
+ 
+             --   Ni(j)          J         -0.011 * e
+ SIGMA(j) =  &gt; ------------ *   --- * exp[ ---------- * (J-J(j))^2]
+             -- sqrt(k * Ti(j)) J(j)       2k * Ti(j)
+             j
+ 
+and
+ 
+                     Mi(j) * v^2 * cos^2(alpha)
+   J(j)      =  sqrt( --------------------------- )
+                             0.011 * e
+ 
+ 
+Depending on the commanded mode of operations, either I(j) values or -
+delta I(j) values are selected and stored in temporary storage registers
+for subsequent readout to the spacecraft.  The -delta I(j) values are
+seen to consist of well separated Gaussian peaks and, as expected from
+Equation (5) the values of -delta Ii(j) are approximately proportional
+to the concentrations Ni(j).  The computer simulation is described in
+somewhat more detail hereafter.  In what we anticipate to be the most
+common mode of operations, the ORPA program logic recognizes and selects
+a maximum of two sets of -delta I values  corresponding to the ion
+masses.  Each set consists of a peak value and the five adjacent values
+on either side.
+ 
+In an optimal peak mode of operation, the ORPA selects up to four sets
+of -delta I values.  Each set consists of the peak value and two
+alternate values of -delta I on either side.  If more that four (two)
+peaks are sensed, the logic retains the largest peak and three (one)
+additional peaks. Ion temperatures, masses, concentrations, v cos alpha,
+and plasma potential are deduced from the sets of -delta I values by
+fitting the theoretical values for -delta I(j) formed from Expression
+(2) to the measured values.  The approximation, Equation (5), is not
+used. In addition to the peak values of -delta I, the first current
+value I(1) is stored in all modes and permits computation of the total
+ion concentration given by
+ 
+                            I(1)
+   Ni    =      ---------------------------                      (6)
+                 A * Tr * e * v * cos(alpha)
+ 
+The technique of taking differences in log Ie or Ii in the electron and
+ion mode, respectively, and selecting values only around the sensed
+peaks reduces the number of telemetry words needed to define a scan
+without losing much scan information. The finest possible spatial
+resolution of plasma quantities is obtained with a limited bit rate.
+For special investigations, 48 consecutive or alternate values of the
+electron or ion characteristic curve (log Ie or Ii) may be measured and
+transmitted with consequent reduction in spatial resolution.
+ 
+PHOTOELECTRON MODE
+ 
+The retarding potential varies quadratically through the range 0 to -50
+V.  The photoelectron energy distribution function fe is derived from a
+set of 25 or 49 values of Ie(j) depending on commands.
+ 
+ 
+MEASUREMENT SEQUENCE
+ 
+The basic measurement sequence of the ORPA is EIIIP where E, I and P
+represent electron, ion, and photoelectron modes, respectively.  The
+instrument remains in each mode for one complete spacecraft spin cycle
+before executing the next mode.  The complete sequence takes five spin
+cycles.  An individual retarding potential scan is completed as rapidly
+as possible consistent with required measurement accuracy so that the
+scan will closely represent a &apos;point&apos; measurement.  The scan together
+with other activities, including zero adjustment, background current
+adjustment, and background current measurement, typically requires only
+0.3s.  Thus, approximately 40 scans can be completed in one spacecraft
+spin cycle.  The telemetry rate assigned to the ORPA is sufficient for
+only one of these scans to be telemetered to earth for each spin cycle.
+In one command option, the ORPA selects that scan which has the largest
+first current value.  This scan will have been recorded when the angle
+of attack was smallest (Equation (2)) when the ORPA is in the I mode,
+and close to optimum orientation in the E and P modes.  Alternatively,
+in a second command option, the ORPA selects the first scan that occurs
+after receipt of a ram pulse from the spacecraft.  The space- velocity
+vector lies in or close to the plane defined by the spacecraft spin axis
+and the centerline to the ORPA at the time of receipt of this pulse.
+Three ion scans at three different directions are required to determine
+the ion drift velocity. To provide the second and third directions, the
+ion scans in the second and third ion spin cycles are selected 45 degree
+in roll angle before and after the first scan. By command, the basic
+measurement sequence described above may be altered by skipping over one
+or more of the modes in the sequence.
+ 
+SENSOR SUBASSEMBLY
+ 
+The sensor has seven grids of large diameter (6 cm diameter) covering
+nearly the whole sensor front (8 cm   diameter). The large entrance grid
+and the small collector plate (1.9 cm diameter) surrounded by a guard
+ring provide for a radially uniform particle flux around the sensor
+axis. The collector samples either electrons or ions from the uniform
+central region.  Disturbing field effects at the grid edges are thus
+avoided.  The first two grids are connected together to reduce the
+electric field produced outside the sensor by the stepping retarding
+potential in the ion mode. Any change in spacecraft potential produced
+by the ORPA is thus minimized. The retarding grid G-2 is also a double
+grid which provides a reasonably uniform retarding voltage in the
+photoelectron mode.  To satisfy the need for a more uniform potential in
+the ion and electron modes additional grids are biased with the same
+retarding voltage during these modes. The grids G-0, G-1, G-2 are coated
+with Aquadag, a graphite emulsion, to achieve a uniform surface
+potential. All other conduction sensor parts are gold plated.  The grid
+material of G-0, G-1, G-2 consists  of electro-formed copper- beryllium
+with about 30 lines/cm and 82 percent transparency. The distance between
+individual grids is approximately 0.3 cm. Electrical connection to the
+grids is provided by two redundant connectors.  This design provides for
+easy grid exchange without soldering from the front side of the sensor.
+To provide a plane plasma sheath, the ORPA is surrounded by  an Aquadag
+coated aluminum ground plane 20 cm in diameter. It is thermally
+insulated from the experiment to reduce the heat flux to both the
+experiment and spacecraft but is electrically connected to spacecraft
+ground. With the sensor axis at 25 degrees from the spacecraft spin
+axis, the angle the sensor axis makes with the spacecraft velocity
+vector will be zero or small during a portion of each roll period when
+the spacecraft is within the ionosphere.  For ion measurements, it is
+important that the angle of attack be small, otherwise the assumptions
+used in deriving Equation (2) are progressively violated.  The angle of
+attack must not change too much during one scan to avoid ambiguous
+results.  With our 160-ms scan time, the angle of attack changes only
+approximately 5 degrees. To estimate and correct for systematic errors
+arising from nonuniform retarding potential in the plane of the
+retarding grids, the average potential must be known. The difference in
+potential between the applied potential and the mean potential has been
+arrived at through capacity measurements.  For the ion mode, the mean
+potential differs from that applied by less than one part in a thousand:
+ 
+    delta Vr = (-2 - 0.8Vr) * 10^-3 * V                  (7)
+ 
+  The highest accuracy is required in this mode.  For the
+  photoelectron mode:
+ 
+    delta Vr = (380 - 8 * Vr) * 10^-3 * V                (8)
+ 
+  The deviation in the electron mode is still smaller than
+that given for the ion mode because of the five grids. The
+grids are coated with Aquadag to minimize work function
+variation in the plane of the grids.  The one sigma
+variation from the mean is approximately 5 mV.
+Equations (7) and (8) do not include the work function
+variation.
+ 
+CURRENT AMPLIFIER
+ 
+The collector current of either polarity is
+amplified by a linear electrometer.  The electrometer has
+a sensitivity of approximately 6 X 10-13 to 1.3 X 10-4 A
+in eight overlapping ranges.
+ 
+The absolute accuracy within 1 year of aging was about 1
+percent.  A zero adjustment in the input of the electro-
+meter after every scan provides for long-term stability.
+The collector is disconnected from the electrometer during
+this adjustment and the differential input is controlled
+by the output signal.  Additionally, the gain of the
+electrometer can be checked internally by a calibration
+command.  Five different current values are produced by
+high impedance resistors and a well-regulated
+voltage supply.  The largest feedback resistor is a 309
+megaohm  metal oxide resistor with 100 ppm temperature
+variation.  This  means that a temperature correction in
+the expected temperature range from 0 to 60 degree C is not
+necessary even in the most sensitive range.  The amplifier
+time constant is 0.4 ms in all ranges.  The linear output
+voltage is rectified to get only positive signals
+between 0 and 10 V for currents of positive and negative
+polarity.  The sign of the current is provided by an
+additional logic signal. The linear output voltage V-lin is
+related to the input current by the formula
+ 
+              V-lin * 8^(L - 3)
+     I   =    --------------------- * sign                 (9)
+                        R
+ 
+where R is the feedback resistor (309 megaohm) and L
+is one of the automatically  adjusted ranges between
+0 and 7.
+  In the ion mode, the linear output voltage Vhn is
+digitized.  In the electron mode, a logarithmic
+scale has to be used and therefore a logarithmic post-
+amplifier converts the linear signal to a logarithm
+voltage where 10 V and 1.25 V linear are related to 7.5 V
+and 5 V, respectively, in a logarithmic scale.  The
+electrometer and directly related circuits such as
+calibration generator and background compensation are built
+in a shielding box.  The electrometer potential depends on
+the mode and therefore all circuits connected with the
+electrometer and the shielding case are insulated from the
+normal signal ground and biased with the collector voltage.
+  A background compensation circuit is incorporated in the
+sensor electronics to provide the full dynamic range and
+accuracy of the instrument available in the most
+sensitive range even when a constant background current
+is superposed on the signal current.  The retarding
+potential at its maximum retarding value before every
+retarding scan, the background current produced by highly
+energetic particles or by secondary electrons in the sensor
+is compensated to a very low value.  The compensation
+circuits add current of the opposite polarity to the input
+of the electrometer until the output voltage is less than
+0.5 V in the most sensitive range.  The compensation
+current is held fixed for the duration of the following
+scan.  Currents from approximately 10^-8 to 3 X 10^-12 A
+can be compensated with a stability of about 3 X 10^-13 A,
+which is in the overall electrometer noise.  The output
+noise (standard deviation) of the complete system
+corresponds  to a current below 10^-12 A or 0.02 %,
+whichever is higher.
+  Some attention was given to minimizing the microphonic
+sensitivity of the sensor since the spacecraft
+contains a despun antenna and several instruments
+have stepping mechanisms.  To this end the G-4 grid was
+given a very high tension to reduce the amplitude of
+any possible oscillation.  Further, all connections to
+the electrometer input were quite rigid and short and
+the electronic board was fastened with some damping
+material.  The microphonic noise was below 5 X 10^-12 A
+for a sinusoidal 0.1-g acceleration at all frequencies.
+ 
+CONTROL VOLTAGES
+ 
+The voltages are supplied by low impedance amplifiers which are
+controlled by a 12 bit digital-to-analog (D/A) converter.  The retarding
+potential steps are generated by appropriate digital values transferred
+to the D/A converter and appropriately amplified.  The time interval
+between successive steps is 2 ms when no range change occurs.  Every
+range change increases the step length by 2 ms. The noise ripple on the
+retarding potentials in the pass- band of the electrometer has been
+measured at 0.8 mV peak to peak (=4 sigma). In the electron mode, the
+retarding potential uncertainty is 1 mV or 0.1 percent, whichever is
+larger.  In the ion mode the uncertainty is 5 mV or 0.1 percent,
+whichever is higher.
+ 
+DATA PROCESSING
+ 
+Depending on mode, the linear or logarithmic amplifier output is
+digitized during the last 100 microseconds before the next retarding
+potential is applied. A 12-bit analog-to-digital (A/D) converter is used
+but only the 10 most significant bits are retained. The 10-bit mantissa
+and a  3-bit range value formed for each measurement are shifted into a
+memory during the photoelectron mode and also during the electron and
+ion modes when the I-V option is exercised.  At the completion of the
+roll period, the memory is normally enabled for read- out within the
+next spin period.  In the &apos;peak select&apos; mode of operation, each current
+value is subtracted from the preceding value, and the difference -delta
+I, together with the range information, is shifted into a buffer
+register. Second differences delta(delta I) are also formed and used to
+recognize when a peak in -delta I has occurred.  The criteria used are:
+ 
+ delta I(j-2) , delta I(j-1) , delta I(j) , delta I(j+1)  &lt; 0
+ 
+ delta delta I(j-2) , delta delta I(j-1) , delta delta I(j)  &lt; 0
+ 
+ delta delta I(j+1) &gt;= 0.
+ 
+These criteria reject noise peaks but permit detection of a genuine
+peak.  When the criteria are satisfied, either 4 alternate or 10
+adjacent values around a peak together with the peak value and retarding
+potential step information are transferred into memory for later
+transfer to the spacecraft.
+  In addition to the differences -delta I, the first measured current I-
+1 of a scan is stored.  It is used by instrument logic to recognize
+and return the scan with the smallest angle of attack measured during
+a spin revolution.
+ 
+COMMAND SYSTEM
+ 
+The ORPA can be commanded from earth into several mode sequences.  The
+normal sequence starts with an electron mode followed by three ion modes
+and one photoelectron mode. The photoelectron mode can be removed to
+increase the spatial resolution of the other measured quantities.
+Alternately, a photoelectron-only mode can be commanded with
+measurements spaced at 90 degrees in roll angle to investigate the
+angular distribution.  An electron-only mode may also be commanded for
+high resolution of thermal electron parameters.
+ 
+In both the ion and electron modes, one may choose either the peak-
+select option in which -delta I values are stored or the I-V option in
+which I values are stored.  The spatial resolution is typically reduced
+by one-third in the latter option.  With the peak-select option, it is
+possible to choose 4 peaks with 5 -delta I values each or 2 peaks with
+11 -delta I values, as previously explained.
+ 
+In a special mode of operation, with the control voltages set to measure
+ions and the retarding potential fixed at its lowest step, the ion
+current is sampled at 2-ms intervals until the memory is filled.  The
+saturation ion current thus measured with high time resolution.
+Irregularities in total ion density are measured at distance intervals
+of 20 m.  Beginning with the next roll period the total ion
+concentration is sampled at approx- imately 4-km intervals until the
+memory is filled.
+ 
+The voltage of the entrance grid may be commanded to 0 or -4.6 V
+relative to spacecraft ground when the ORPA is in the ion mode.  This
+option will permit measurement of low-mass, low-energy ions should the
+spacecraft become slightly positive relative to the plasma.
+ 
+THE CALIBRARTION SEQUENCE
+ 
+When the ORPA is commanded into calibration the experiment cycles
+through two calibration sequences of EIIIP and then returns to the
+normal measuring sequence.  In the first calibration sequence the
+electrometer is disconnected from the collector.  In the electron mode a
+sequence of internal calibration currents satisfying the peak criteria
+are produced to permit an evaluation of electrometer sensi- tivity and
+peak selection logic.  In the ion mode the internal noise is measured in
+the most sensitive range. In the second sequence the retarding voltage
+is sampled to verify amplifier gain and proper logic operation.
+ 
+------------------------------------------------------------
+             Instrument Parameter Summary
+------------------------------------------------------------
+Parameter                        Value
+============================================================
+Current Range &lt;A&gt;                     10^-4 - 10^-12
+Current Accuracy &lt;percent&gt;            98 (10 bit A/D)
+Sampling Interval &lt;s&gt;                 0.002
+Retarding Voltage Uncert. &lt;percent&gt;   0.1
+Bit Rate &lt;bps&gt;                        40 or less
+Commands                              6
+Power &lt;W&gt;                             2.4
+Weight &lt;kg&gt;                           2.9
+Volume &lt;cm^3&gt;                         4440
+============================================================
+ 
+References
+ 
+Knudsen, W. C., Evaluation and Demonstration of the use
+of Retarding Potential Analyzers for Measuring Several
+Ionospheric Quantities, J. Geophys. Res., 71, 4669, 1966.
+ 
+Knudsen, W. C., J. Bakke, K. Spenner, and V. Novak, Retarding
+Potential Analyzer for the Pioneer Venus Orbiter, Space Sci. Inst.,
+4, 351, 1979.
+ 
+Knudsen, W. C.,  K. Spenner, J. Bakke, and V. Novak, Pioneer Venus
+Orbiter Planar Retarding Potential Analyzer Plasma Experiment, IEEE
+Trans. on Geoscience and Remote Sensing, 18, 1, 60-65, 1980.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.naoj-hawaii</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>National Astronomical Observatory of Japan at Mauna Kea, Hawai'i</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_title>Subaru Telescope</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-10-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created from information from NAOJ website:     https://www.nao.ac.jp/en/
+                    and the telescope website:                      https://subarutelescope.org
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:naoj-hawaii.subaru_8m2</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>Iye et al., (2004) Current Performance and On-Going Improvements of the 8.2 m
+            Subaru Telescope, Publ. Astron. Soc. Japan, 56, 381-397.</reference_text>
+            <description>Published document providing an overview of the Subaru telescope and facility.</description>
+        </External_Reference>
+    </Reference_List>
+    <Facility>
+        <name>National Astronomical Observatory of Japan at Mauna Kea, Hawai'i</name>
+        <type>Observatory</type>
+        <address>Summit of Mauna Kea, C/O 640 N. A'ohoku Place, #209, Hilo, HI 96720</address>
+        <country>United States</country>
+        <description>
+            Located on the summit of Mauna Kea in Hawai'i, access is managed by Mauna Kea Observatories, through
+            the University of Hawai'i's Hilo Base Facility. The observatory is located at 19°49'33" N, 155°28'35" W.
+            
+            Excerpt from (Iye et al., 2004):
+            Following the recommendations of the Science Council of Japan, the project was fully approved and construction 
+            of JNLT began in 1991 April (Kogure, Kodaira 1991). A call for proposals for renaming JNLT ended up with its 
+            new name, Subaru Telescope, after the old and familiar Japanese name for the visible star cluster Pleiades 
+            (Kodaira 1992). Progress of the project and the instrumentation plan was critically reviewed at another international 
+            conference held in Tokyo in 1994 (Iye, Nishimura 1995). The Subaru Telescope base facility was established at the 
+            University of Hawaii campus in Hilo, Hawaii, in 1997 April, and more than 20 NAOJ staff relocated from the Mitaka 
+            campus to begin work on the telescope in collaboration with local staff recruited through the Research Corporation 
+            of the University of Hawaii. The progress of construction was reported on several occasions (Iye 1997; Kaifu 1998), 
+            and the engineering First Light of the Subaru Telescope was achieved on 1998 December 24. Reports on First Light 
+            observations were published in 2000 (Kaifu et al. 2000; Iye et al. 2000). An inauguration ceremony was held in 
+            1999 September. The 9- year construction project was completed in 2000 March, and the telescope has been made 
+            available to both Japanese and the international community of astronomers since 2000 December.
+        </description>
+    </Facility>
+</Product_Context>

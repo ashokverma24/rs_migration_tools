@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.ross_905</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Gliese 436</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>LHS 310</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AC +27 28217</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 683818</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BPS BS 15625-0002</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+26-11395</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+27-11395</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+27-11394</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 7104</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +9.80120068</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>G 120-68</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>G 147-68</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>G 121-7</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 436</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 57087</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 57087</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LFT 838</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LP 319-75</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J1142+2642</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 13213</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J11421096+2642251</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MCC 616</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 28288</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2704.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2704.10</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PM 11395+2700</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PM J11421+2642</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Ross 905</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J114211.9+264328</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>StKM 2-754</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 1984-2613-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC2 41198281</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC4 584-046777</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 1167-00204205</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>VVO 171</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 10275</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WISEA J114211.79+264215.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Zkh 164</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 4017860992519744384</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR1 4017861056947245696</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Gliese 436</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 11 hours 42 minutes 11.0933874353 seconds
+Declination, ICRS coord, ep=J2000: +26 degrees 42 minutes 23.658083337 seconds
+    </description>
+  </Target>
+</Product_Context>
+

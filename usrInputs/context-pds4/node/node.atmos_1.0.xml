@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:node:node.atmos</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PDS Atmospheres Node</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>atmos</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.nancy_chanover::1.0</lidvid_reference>
+            <reference_type>node_to_manager</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.lyle_huber::1.0</lidvid_reference>
+            <reference_type>node_to_operator</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.lyle_huber::1.0</lidvid_reference>
+            <reference_type>node_to_data_archivist</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:agency:agency.nasa::1.0</lidvid_reference>
+            <reference_type>node_to_agency</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.irma_trejo::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.brigette_hesman::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.joni_johnson::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.james_murphy::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.lyle_huber::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.lynn_neakrase::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.mark_shirley::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.melinda_kahre::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.nancy_chanover::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.paul_withers::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.raffaella_noschese::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.reta_beebe::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.ralph_lorenz::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.rosemary_killen::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+
+    <Node>
+        <name>Planetary Atmospheres</name>
+        <institution_name>NEW MEXICO STATE UNIVERSITY</institution_name>
+        <description>
+          The PDS Planetary Atmospheres Node provides online access
+          to a variety of data sets related to planetary atmospheres.
+          The Atmospheres database is accessed via the Planetary
+          Atmospheres Node Data Analysis (PANDA) system. PANDA
+          provides users a means of examining the available data
+          sets, constraining individual data sets, and creating ASCII
+          files containing those records of a data set satisfying the
+          specified constraints; a variety of analysis and plotting
+          utilities are also provided. Users may copy any files
+          created (data and/or plots) to their host computer system
+          for further analysis.
+        </description>
+    </Node>
+</Product_Context>

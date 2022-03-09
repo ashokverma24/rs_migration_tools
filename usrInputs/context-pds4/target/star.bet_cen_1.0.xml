@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet_cen</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Beta Centauri</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>bet Cen</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>VOU 31AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14992</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J14038-6022AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-59 5054</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 4298</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 20.1 4149</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-59 5365</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 3163</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1400.2-6008 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J1403-60.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 518</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 18971</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 8251</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00122451J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 122451</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 68702</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 68702</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 5267</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 13568-5953 AB </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 14002-6008</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J14034938-6022226</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3189</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Agena</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Hadar</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3198</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3198.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 360515</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2025</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J140348.7-602242</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SACS 302</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 252582</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 25751</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 17207</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 12426</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100122451 ABV</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J14038-6022AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 12025</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Beta Centauri</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 14 hours 03 minutes 49.40535 seconds
+Declination, ICRS coord, ep=J2000: -60 degrees 22 minutes 22.9266 seconds
+    </description>
+  </Target>
+</Product_Context>
+

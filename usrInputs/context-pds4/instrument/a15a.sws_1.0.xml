@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:sws.a15a</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SOLAR WIND SPECTROMETER for A15A</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a15a::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 15 Preliminary Science Report, NASA SP-289, 546 pages, published by
+                   NASA, Washington, D.C., 1972.
+            </reference_text>
+            <description>reference.APOLLO15A1972</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bates, J.R., W.W. Lauderdale, and H. Kernaghan, ALSEP termination report, NASA
+                   Reference Publication Series, NASA-RP-1036, 162 pages, published by NASA,
+                   Washington, D.C., 1979.
+            </reference_text>
+            <description>reference.BATESETAL1979</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Clay, D.R., B.E. Goldstein, M. Neugebauer and C.W. Snyder, Apollo 15 - solar
+                   wind spectrometer experiment, Apollo 15 Preliminary Science Report, SP-289,
+                   pages 10-1 to 10-7, published by NASA, Washington, DC, 1972.
+            </reference_text>
+            <description>reference.CLAYETAL1972</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Clay, D.R., B.E. Goldstein, M. Neugebauer and C.W. Snyder, Lunar surface solar
+                   wind observations at the Apollo 12 and Apollo 15 sites, Journal of Geophysical
+                   Research, 80, 1751-1760, 1975.
+            </reference_text>
+            <description>reference.CLAYETAL1975</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Goldstein, B.E., D.R. Clay, C.W. Snyder and M. Neugebauer, ALSEP solar wind
+                   spectrometer plasma data as observed at the Apollo 12 and 15 landing sites, Jet
+                   Propulsion Laboratory, Contract NAS7-100, 1973.
+            </reference_text>
+            <description>reference.GOLDSTEINETAL1973</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>SOLAR WIND SPECTROMETER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Faraday Cup-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    The Solar Wind Spectrometer (SWS), designed to measure protons and
+    electrons at the lunar surface, was part of the Apollo 15 Lunar Surface
+    Experiments Package (ALSEP) package left on the Moon.  It consisted of
+    seven modulated Faraday cups opened toward different, but slightly
+    overlapping, portions of the lunar sky.  The instrument was used to
+    observe the directional intensities of the electron (6-1480 eV) and
+    positive ion (30-10400 eV) components of the solar wind and magnetotail
+    plasma that strike the surface of the Moon.  The scientific objectives
+    of the SWS experiment were to measure electron charge fluxes at the
+    lunar surface, study the interaction of the solar wind with the local
+    magnetic field, determine if lunar limb shocks can be detected at dawn
+    or dusk, measure solar wind conditions, make simultaneous comparisons
+    with Apollo 12 data, and study time-dependent phenomena.
+ 
+    Each Faraday cup had a circular opening, five circular grids, and a
+    circular collector.  The five circular grids were an aperture grid, a
+    modulator grid, a screen grid, a screen plate, and a suppressor grid.
+    These served to apply an AC modulating field to incoming particles and
+    screen the modulating field from the sensitive preamplifiers.  Sensor
+    covers were over each cup to protect against dust during the
+    extravehicular activities and the lunar module ascent.  Charged
+    particles entered the cup and a current amplifier determined the
+    resultant current flow.  Energy spectra of positively and negatively
+    charged particles were obtained by applying fixed sequences of
+    square-wave AC retarding potentials to a modular grid and measuring the
+    resultant changes in current.  One cup (number 7) was oriented
+    vertically and the other six cups (numbered 1-6 clockwise) surrounded
+    it symmetrically facing 60 degrees off vertical.  The number 1 cup
+    faced east on Apollo 15.  The electronics were in a
+    temperature-controlled container below the sensor assembly attached to
+    a radiator.  The instrument had deployed dimensions of 30.5 x 28.2 x
+    34.5 cm, a mass of 5.7 kg, used 12.5 Watts total power, and had an
+    average data rate of 66.2 bits/second.
+ 
+    A sequence of plasma measurements was made every 28.1 seconds,
+    consisting of 14 energy steps spaced a factor of square root of 2 apart
+    for positive ions and 7 steps a factor of 2 apart for electrons.  Flux
+    rates of 2.5E6 to 2.5E11 particles cm**-2 sec**-1 could be measured.  A
+    large number of internal calibrations are provided.   The instrument as
+    deployed had the east-west axis of the instrument 1 degree south of
+    east and 2-degree slope to the east and a 2.5-degree splope to the
+    north.  The north-south axis was self-leveling.   These were well
+    within the 5-degree specifications for the instrument.  The ALSEP
+    central station was located at 26.13407 degrees North latitude and
+    3.62981 degrees East longitude on the lunar surface.  The solar wind
+    spectrometer was situated 4 meters north of the central station and
+    was emplaced so that cup number 1 faced east and the point between
+    cups 5 and 6 faced north.
+ 
+    The instrument was deployed on 31 July 1971 and turned on with the
+    sensor covers in place to provide background data at 19:37:10 UT.  The
+    covers were removed by command from Earth on 2 August 1971 at 18:07:32
+    UT, approximately one hour after lunar module ascent. The experiment
+    performed well until 5 November 1971, when intermittent modulation
+    dripping in proton channels 13 and 14 occurred.  This intermittent,
+    though scientifically usable, behavior continued until 30 June 1972,
+    when the instrument experienced loss of science and engineering data.
+    Analysis indicated that high-voltage arcing was occurring in the
+    instrument electronics.  To prevent the additional power consumption
+    this entailed, the instrument was put into standby mode indefinitely.
+    Tests were done periodically but no change in status was detected, and
+    the solar wind spectrometer was permanently commanded off on 14 June
+    1974.
+ 
+  This instrument description was provided by the NSSDC.
+
+        </description>
+    </Instrument>
+</Product_Context>

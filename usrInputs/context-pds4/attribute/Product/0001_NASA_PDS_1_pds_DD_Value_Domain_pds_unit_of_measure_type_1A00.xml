@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.dd_value_domain.pds.unit_of_measure_type_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>unit_of_measure_type</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>unit_of_measure_type</name>
+        <version_id>1.10</version_id>
+        <class_name>DD_Value_Domain</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.dd_value_domain.pds.unit_of_measure_type_1a00</local_identifier>
+        <steward_id>ops</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The unit_of_measure_type attribute identifies the class from which the attribute being defined in this data dictionary draws its possible expressions for units.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <attribute_concept>Type</attribute_concept>
+        <Terminological_Entry>
+            <name>unit_of_measure_type</name>
+            <definition>The unit_of_measure_type attribute identifies the class from which the attribute being defined in this data dictionary draws its possible expressions for units.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <conceptual_domain>Short_String</conceptual_domain>
+            <specified_unit_id>none</specified_unit_id>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Acceleration</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Acceleration.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Amount_Of_Substance</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Amounts_of_Substance</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Angle</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Angle</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Angular_Velocity</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Angular_Velocity</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Area</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Area</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Current</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Current</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Frame_Rate</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Frame_Rate</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Frequency</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Frequency</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Length</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Length</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Map_Scale</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Map_Scale</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Mass</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Mass</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Misc</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Misc</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_None</value>
+                <value_meaning>The attribute being defined is dimensionless.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Optical_Path_Length</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Optical_Path_Length</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Pixel_Resolution_Angular</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Pixel_Resolution_Angular</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Pixel_Resolution_Linear</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Pixel_Resolution_Linear</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Pixel_Scale_Angular</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Pixel_Scale_Angular</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Pixel_Scale_Linear</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Pixel_Scale_Linear</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Pressure</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Pressure</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Radiance</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Radiance</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Rates</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Rates</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Solid_Angle</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Solid_Angle</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Spectral_Irradiance</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Spectral_Irradiance</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Spectral_Radiance</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Spectral_Radiance</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Storage</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Storage</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Temperature</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Temperature</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Time</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Time</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Velocity</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Velocity</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Voltage</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Voltage</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Volume</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Volume</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Units_of_Wavenumber</value>
+                <value_meaning>The attribute being defined uses one of the values of unit_id listed in class Units_of_Wavenumber</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

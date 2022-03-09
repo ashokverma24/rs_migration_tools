@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:issw.vg1</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>IMAGING SCIENCE SUBSYSTEM - WIDE ANGLE for VG1</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vg1::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Barros, P.A., Voyager Flight Data System Flight Software Description, Reissued
+                   January 1988, 618-236, Rev. A., Jet Propulsion Laboratory, California Institute
+                   of Technology, Pasadena, California, JPL D-1772, 1988.
+            </reference_text>
+            <description>reference.BARROS1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Benesh, M., and P. Jepsen, Voyager Imaging Science Subsystem Calibration
+                   Report, Voyager Document Number 618-802, Jet Propulsion Laboratory, California
+                   Institute of Technology, Pasadena, California, 1978.
+            </reference_text>
+            <description>reference.BENESH1978</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Danielson, G. Edward, et al, Radiometric Performance of the Voyager Cameras,
+                   Journal of Geophysical Research, 86, 8683-8689, 1981.
+            </reference_text>
+            <description>reference.DANIELSONETAL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Harch, Ann P., IPPS Boresight Offset Database Validation, JPL Interoffice
+                   Memorandum, VGR-006-87, 1987.
+            </reference_text>
+            <description>reference.HARCH1987</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Harch, Ann P., IPPS Boresight Offset Database Update Philosophy and Offset
+                   Update for Voyager 2 Wide Angle Camera and PPS, JPL Interoffice Memorandum,
+                   VGR-002-88, 1988.
+            </reference_text>
+            <description>reference.HARCH1988A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Harch, Ann P., IPPS Boresight Offset Database Update for the Voyager-2
+                   Scan-platform Instruments, JPL Interoffice Memorandum, VGR-003-88, 1988.
+            </reference_text>
+            <description>reference.HARCH1988B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Harch, Ann P., IPPS Boresight Offset Database Update Clarification, JPL
+                   Interoffice Memorandum, Voyager-APH-88-007, 1988.
+            </reference_text>
+            <description>reference.HARCH1988C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Multimission Image Processing Laboratory, Real-Time Processing Subsystem,
+                   Software Design Document, Jet Propulsion Laboratory, California Institute of
+                   Technology, Pasadena, California, JPL D-2468, 1985.
+            </reference_text>
+            <description>reference.JPL_D-2468</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Voyager Neptune/Interstellar Mission Flight Science Office, Science and
+                   Missions Systems Handbook, Rev. D, Jet Propulsion Laboratory, California
+                   Institute of Technology, Pasadena, California, JPL D-498, 1987.
+            </reference_text>
+            <description>reference.JPL_D-498</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Martin, M.D., G. Laughlin, and C.L. Stanley, Planetary Image Conversion Task,
+                   Final Report, JPL Publication 85-50, 1985.
+            </reference_text>
+            <description>reference.MARTINETAL1985</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Nave, E.L., Voyager Spaceflight Operations Plan, Volume IV, Sec. IV, Rev. B,
+                   618-505, Spaceflight Telemetry Dictionary and Launch Operational Limits,
+                   Reissued 21 July 1980, Jet Propulsion Laboratory, California Institute of
+                   Technology, Pasadena, California, 1980.
+            </reference_text>
+            <description>reference.NAVE1980</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   This issue of Science provides a detailed account of Voyager 1&apos;s encounter with
+                   Jupiter. Science, Vol. 204, No. 4392, 1979.
+            </reference_text>
+            <description>reference.SCIENCEV204N4392</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   This issue of Science provides a detailed account of Voyager 2&apos;s encounter with
+                   Jupiter. Science, Vol. 206, No. 4421, 1979.
+            </reference_text>
+            <description>reference.SCIENCEV206N4421</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Science, Vol. 212, No. 4491, 1981.
+            </reference_text>
+            <description>reference.SCIENCEV212N4491</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Science, Vol. 215, No. 4532, 1982.
+            </reference_text>
+            <description>reference.SCIENCEV215N4532</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Science, Vol. 233, No. 4759, 1986.
+            </reference_text>
+            <description>reference.SCIENCEV233N4759</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Science, Vol. 246, No. 4936, 1989.
+            </reference_text>
+            <description>reference.SCIENCEV246N4936</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.SNYDER,L1979</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   This issue of Space Science Reviews is a collection of the first six of twelve
+                   papers providing a detailed description of the Voyager objectives and
+                   investigations of the Jupiter and Saturn planetary systems, Papers seven
+                   through twelve appear Space Science Reviews, Vol. 21, No.3, 1977. Space Science
+                   Reviews, Vol. 21, No. 2, 1977.
+            </reference_text>
+            <description>reference.SSRV21N2</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   This issue of Space Science Reviews is a collection of six papers, seven
+                   through twelve, providing a detailed description of the Voyager objectives and
+                   investigations of the Jupiter and Saturn planetary systems, Papers one through
+                   six appear in Space Science Reviews, Vol. 21, No. 2, 1977. Space Science
+                   Reviews, Vol. 21, No. 3, 1977.
+            </reference_text>
+            <description>reference.SSRV21N3</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>IMAGING SCIENCE SUBSYSTEM - WIDE ANGLE</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+        INSTRUMENT: IMAGING SCIENCE SUBSYSTEM - WIDE ANGLE
+        SPACECRAFT: VOYAGER 1
+ 
+ 
+    Instrument Information
+    ======================
+      Instrument Id                  : ISSW
+      Instrument Host Id             : VG1
+      Pi Pds User Id                 : BASMITH
+      Naif Data Set Id               : UNK
+      Instrument Name                : IMAGING SCIENCE SUBSYSTEM - WIDE
+                                         ANGLE
+      Instrument Type                : VIDICON CAMERA
+      Build Date                     : 1976-12-17
+      Instrument Mass                : 13.300000
+      Instrument Length              : 0.550000
+      Instrument Width               : 0.200000
+      Instrument Height              : 0.200000
+      Instrument Serial Number       : SN06
+      Instrument Manufacturer Name   : JET PROPULSION LABORATORY
+ 
+ 
+    Instrument Description
+    ======================
+      The Voyager Imaging Science Subsystem (ISS) is a modified
+      version of the slow scan vidicon camera designs that were used
+      in the earlier Mariner flights.  The system consists of two
+      cameras, a high resolution Narrow Angle (NA) camera and a lower
+      resolution, more sensitive Wide Angle (WA) camera.  Unlike the
+      other on board instruments, operation of the cameras is not
+      autonomous, but is controlled by an imaging parameter table
+      residing in one of the spacecraft computers, the Flight Data
+      Subsystem (FDS) (Voyager Science and Mission Systems Handbook,
+      1987, JPL D-498, an internal JPL document available from JPL
+      vellum files).
+ 
+      The original mission was to Jupiter and Saturn.  Voyager
+      surpassed expectations and Voyager 2 went on to encounter
+      Uranus and Neptune.  As the Voyager mission progressed the
+      objects photographed were further from the sun so they appear
+      more faint even though longer exposures were used.  As the
+      Voyager spacecrafts&apos; distance from the Earth increases, the
+      telecommunications capability at each encounter decreases.  The
+      difference in capabilities from the Jupiter and Saturn
+      encounters and that at Uranus and Neptune was considerable.
+      The reduced telecommunications capability limits the number of
+      data modes that imaging can use.  Because of the diminished
+      brightness of the objects being photographed, longer exposure
+      times were used, many beyond the stated maximum of 15.360
+      seconds.  Longer exposure times were all 48-second increments
+      added to the maximum.  In addition, the camera was slewed in
+      order to avoid smeared imaging.  The light flood state (on/off)
+      was independent of the instrument mode.
+ 
+ 
+    Science Objectives
+    ==================
+      The overall objective of this experiment is exploratory
+      reconnaissance of Jupiter, Saturn, Uranus, Neptune and their
+      satellites and rings.  Such reconnaissance, at resolutions and
+      phase angles unobtainable from Earth, provides much new data
+      relevant to the atmospheric and/or surface properties of these
+      bodies.  The experiment also has the following specific
+      objectives: observe and characterize global circulation and
+      meteorology; determine the horizontal and vertical structure of
+      visible clouds; characterize the nature of any colored material
+      which may be in clouds.
+ 
+ 
+    Operational Considerations
+    ==========================
+      To make full scientific use of the image collection, it is
+      necessary to understand the radiometric and geometric
+      characteristics of the camera system and perform corrections to
+      data.
+ 
+      Each Voyager camera is unique in terms of its calibrated
+      characteristics.  Each has intrinsic shading (spatially
+      non-uniform output DNs from flat field target) and exhibits
+      barrel distortions typical of TV cameras flown on previous
+      planetary missions.  Because of these characteristics, the
+      cameras were calibrated before launch.  The response of the
+      pixels to known targets, illumination, exposures, etc.  was
+      measured and Calibration Files were generated to remove
+      radiometric and geometric distortions from the flight images.
+      These Calibration Files and detailed information on their use
+      are available through the Imaging Node.
+ 
+ 
+    Calibration Description
+    =======================
+      The calibration program for the Voyager television cameras
+      consisted of three parts: (1) component calibrations (&apos;Voyager
+      Imaging Science Subsystem Calibration Report&apos; July 31, 1978, M.
+      Benesh and P.  Jepsen, D618-802); (2) subsystem calibrations;
+      and, (3) system calibrations.  In addition, provision was made
+      for in-flight calibrations.  Component calibrations were
+      carried out prior to camera assembly.  Important measurements
+      include spectral transmittance of the lens and filters, actual
+      exposure times and shading characteristics of the shutter, and
+      pertinent electro-optical properties of the vidicon.  After the
+      optics and sensor were assembled it was possible to run
+      calibrations at the camera, or subsystem, level.  Particular
+      activities accomplished during this period included radiometric
+      calibrations, focal length measurement, determination of the
+      modulation transfer function, measurement of the geometric
+      distortion, and calibrations required for color reconstruction.
+      System calibrations were conducted after the cameras were
+      installed on the spacecraft.  Important tasks included
+      measurement of the Field-Of-View alignment and verification of
+      the flat-field light transfer characteristics.  Noise
+      measurements were also made at the system level.
+ 
+      A method for in-flight calibration was also available.  It
+      consisted of a flat reflective surface which is located about 2
+      m from the camera.  A flat-field light transfer curve can be
+      constructed by orienting the spacecraft so that the plaque is
+      illuminated by the sun and by photographing it at the proper
+      exposure times.
+ 
+      However, calibration data was collected but no new calibration
+      files were generated during the Jupiter, Saturn, or Uranus
+      encounters or their related cruise periods.
+ 
+      Although the INSTRUMENT_PARAMETER_NAME has been provided as
+      Radiance, the Voyager Experiment Data Record (EDR) data set has
+      not been radiometrically corrected, and thus images do not
+      represent radiance units.  In order to convert an image from
+      Data Number (DN) to radiance units, the image must be
+      calibrated.  Radiometric calibration files, and selected
+      radiometrically corrected images are available through the
+      Imaging Node.
+ 
+ 
+    Section &apos;ISSW&apos;
+    ==============
+      Total Fovs                     : 1
+      Sample Bits                    : 8
+ 
+ 
+      &apos;ISSW&apos; Detectors
+      ----------------
+        ISSW
+ 
+ 
+      &apos;ISSW&apos; Electronics
+      ------------------
+        ISSW
+ 
+ 
+      &apos;ISSW&apos; Filters
+      --------------
+        BLUE
+        CLEAR
+        GREEN
+        METHANE-JST
+        METHANE-U
+        ORANGE
+        SODIUM-D
+        VIOLET
+ 
+ 
+      &apos;ISSW&apos; Section Optic IDs
+      ------------------------
+        ISS-WA
+ 
+ 
+      In modes
+      --------
+        IM10
+        IM11
+        IM12
+        IM13
+        IM14
+        IM15
+        IM2
+        IM3
+        IM4
+        IM5
+        IM6
+        IM7
+        IM8
+        IM9
+ 
+ 
+      &apos;ISSW&apos; Section FOV Shape &apos;SQUARE&apos;
+      ---------------------------------
+        Section Id                     : ISSW
+        Fovs                           : 1
+        Horizontal Pixel Fov           : 0.003960
+        Vertical Pixel Fov             : 0.003960
+        Horizontal Fov                 : 3.169000
+        Vertical Fov                   : 3.169000
+ 
+ 
+      &apos;ISSW&apos; Section Parameter &apos;RADIANCE&apos;
+      -----------------------------------
+        Radiance is the amount of energy per time per projected area
+        per steradian.
+ 
+        Instrument Parameter Name      : RADIANCE
+        Sampling Parameter Name        : PIXEL
+        Instrument Parameter Unit      : DIMENSIONLESS
+        Noise Level                    : UNK
+ 
+ 
+    Instrument Detector &apos;ISSW&apos;
+    ==========================
+      Detector Type                  : VIDICON
+      Detector Aspect Ratio          : 1.000000
+      Minimum Wavelength             : 0.280000
+      Maximum Wavelength             : 0.640000
+      Nominal Operating Temperature  : 282.000000
+ 
+ 
+      Description
+      -----------
+        The sensor used in the Voyager Imaging Science Subsystem
+        (ISS) camera system is a 25 mm diameter magnetic deflection
+        vidicon (number B41-003, General Electro-dynamics Co.).  The
+        vidicon storage surface (target) is selenium sulphur and can
+        store a high resolution (1500 TV lines) picture for over 100
+        s at room temperature.  The active image area on the target
+        is 11.14 x 11.14 mm.  Each frame consists of 800 lines with
+        800 picture elements (pixels) per line, i.e., 1 pixel =14
+        microns.  One frame requires 48 s for electronic readout.  In
+        addition to the normal frame readout of 48 s (1:1), four
+        extended frame-time modes of 2:1, 3:1, 5:1, and 10:1 are
+        available by command.  Following readout, light flooding is
+        used to remove any residual image that might remain from the
+        previous frame.  At the end of light flooding, 14 erase
+        frames are used to stabilize and prepare the vidicon target
+        for the next exposure sequence (VGR ISS Calibration Report,
+        1978, an internal JPL document available from JPL vellum
+        files).
+ 
+ 
+      Sensitivity
+      -----------
+        Calibration experiments show the gain map indicating higher
+        sensitivity toward the top of the frame in a radial manner.
+        Dark-current ratio results indicate a mean within
+        plus-or-minus 3% of the true linearity of the light transfer
+        function.  The required accuracy of the light-transfer
+        functions was plus-or-minus 5% of half-scale signal averaged
+        over any randomly selected area of 10 contiguous pixels.
+        This requirement was consistently met for all Imaging Science
+        Subsystem (ISS) flight cameras.  The radiance of the used
+        light cannons was supposed to be plus-or-minus 5% or better
+        of the level to produce a half-scale signal.  This criterion
+        was also met.  It is not clear whether the color spatial
+        dependence is due to the vidicon, or whether the filters have
+        varying transmissions.  In the latter case, the ratios would
+        be independent of light level; and this has been observed to
+        be the case for all flight cameras.  Moreover, vidicons have
+        not shown scale variations of this magnitude in the past, so
+        that it is easier to believe that they are due to the
+        spectral filters rather than to the vidicons.  The color
+        sensitivity is sufficient to require a separate decalibration
+        file for each spectral filter, which has been done, but not
+        gross enough to cause concern about the quality of the image
+        itself (VGR ISS Calibration Report, 1978, an internal JPL
+        document available from JPL vellum files).
+ 
+ 
+    Instrument Electronics &apos;ISSW&apos;
+    =============================
+ 
+      Description
+      -----------
+        The ISS electronics consist of the vidicon support circuits
+        and the signal chain.  The vidicon support circuits are the
+        vertical and horizontal sweep circuits, and the various power
+        supplies for the vidicon filament, and the focus and
+        alignment coils.  The signal chain consists of the analog
+        signal amplifiers, bandpass filters, and an eight bit
+        analog-to-digital converter.  The digital output is sent to
+        the Flight Data Subsystem for editing.
+ 
+ 
+    Instrument Filter &apos;0 - METHANE-JST&apos;
+    ===================================
+      Filter Name                    : METHANE-JST
+      Filter Type                    : INTERFERENCE
+      Minimum Wavelength             : 0.614000
+      Maximum Wavelength             : 0.624000
+      Center Filter Wavelength       : 0.619000
+ 
+ 
+      Description
+      -----------
+        Spectral measurements at the manufacturer were taken on
+        Beckman spectro-photometers, and verifications at Jet
+        Propulsion Laboratory (JPL) were made with a Cary 14
+        spectro-photometer.  Each test scan was run from 2000 to 7000
+        Angstroms to check for eventual leaks outside the passband
+        (VGR ISS Calibration Report, 1978, an internal JPL document
+        available from JPL vellum files).  For spectral information
+        on each filter, see Danielson, E.  G., et al.  Radiometric
+        Performance of the Voyager Cameras, JGR, v.  86, Sept. 1981.
+ 
+ 
+    Instrument Filter &apos;1 - BLUE&apos;
+    ============================
+      Filter Name                    : BLUE
+      Filter Type                    : INTERFERENCE
+      Minimum Wavelength             : 0.430000
+      Maximum Wavelength             : 0.530000
+      Center Filter Wavelength       : 0.480000
+ 
+ 
+      Description
+      -----------
+        Spectral measurements at the manufacturer were taken on
+        Beckman spectro-photometers, and verifications at Jet
+        Propulsion Laboratory (JPL) were made with a Cary 14
+        spectro-photometer.  Each test scan was run from 2000 to 7000
+        Angstroms to check for eventual leaks outside the passband
+        (VGR ISS Calibration Report, 1978, an internal JPL document
+        available from JPL vellum files).  For spectral information
+        on each filter, see Danielson, E.  G., et al.  Radiometric
+        Performance of the Voyager Cameras, JGR, v.  86, Sept. 1981.
+ 
+ 
+    Instrument Filter &apos;2 - CLEAR&apos;
+    =============================
+      Filter Name                    : CLEAR
+      Filter Type                    : ABSORPTION
+      Minimum Wavelength             : 0.280000
+      Maximum Wavelength             : 0.640000
+      Center Filter Wavelength       : 0.460000
+ 
+ 
+      Description
+      -----------
+        Spectral measurements at the manufacturer were taken on
+        Beckman spectro-photometers, and verifications at Jet
+        Propulsion Laboratory (JPL) were made with a Cary 14
+        spectro-photometer.  Each test scan was run from 2000 to 7000
+        Angstroms to check for eventual leaks outside the passband
+        (VGR ISS Calibration Report, 1978, an internal JPL document
+        available from JPL vellum files).  For spectral information
+        on each filter, see Danielson, E.  G., et al.  Radiometric
+        Performance of the Voyager Cameras, JGR, v.  86, Sept. 1981.
+ 
+ 
+    Instrument Filter &apos;3 - VIOLET&apos;
+    ==============================
+      Filter Name                    : VIOLET
+      Filter Type                    : INTERFERENCE
+      Minimum Wavelength             : 0.350000
+      Maximum Wavelength             : 0.450000
+      Center Filter Wavelength       : 0.400000
+ 
+ 
+      Description
+      -----------
+        Spectral measurements at the manufacturer were taken on
+        Beckman spectro-photometers, and verifications at Jet
+        Propulsion Laboratory (JPL) were made with a Cary 14
+        spectro-photometer.  Each test scan was run from 2000 to 7000
+        Angstroms to check for eventual leaks outside the passband
+        (VGR ISS Calibration Report, 1978, an internal JPL document
+        available from JPL vellum files).  For spectral information
+        on each filter, see Danielson, E.  G., et al.  Radiometric
+        Performance of the Voyager Cameras, JGR, v.  86, Sept. 1981.
+ 
+ 
+    Instrument Filter &apos;4 - SODIUM-D&apos;
+    ================================
+      Filter Name                    : SODIUM-D
+      Filter Type                    : INTERFERENCE
+      Minimum Wavelength             : 0.588000
+      Maximum Wavelength             : 0.590000
+      Center Filter Wavelength       : 0.589000
+ 
+ 
+      Description
+      -----------
+        Spectral measurements at the manufacturer were taken on
+        Beckman spectro-photometers, and verifications at Jet
+        Propulsion Laboratory (JPL) were made with a Cary 14
+        spectro-photometer.  Each test scan was run from 2000 to 7000
+        Angstroms to check for eventual leaks outside the passband
+        (VGR ISS Calibration Report, 1978, an internal JPL document
+        available from JPL vellum files).  For spectral information
+        on each filter, see Danielson, E.  G., et al.  Radiometric
+        Performance of the Voyager Cameras, JGR, v.  86, Sept. 1981.
+ 
+ 
+    Instrument Filter &apos;5 - GREEN&apos;
+    =============================
+      Filter Name                    : GREEN
+      Filter Type                    : INTERFERENCE
+      Minimum Wavelength             : 0.530000
+      Maximum Wavelength             : 0.640000
+      Center Filter Wavelength       : 0.585000
+ 
+ 
+      Description
+      -----------
+        Spectral measurements at the manufacturer were taken on
+        Beckman spectro-photometers, and verifications at Jet
+        Propulsion Laboratory (JPL) were made with a Cary 14
+        spectro-photometer.  Each test scan was run from 2000 to 7000
+        Angstroms to check for eventual leaks outside the passband
+        (VGR ISS Calibration Report, 1978, an internal JPL document
+        available from JPL vellum files).  For spectral information
+        on each filter, see Danielson, E.  G., et al.  Radiometric
+        Performance of the Voyager Cameras, JGR, v.  86, Sept. 1981.
+ 
+ 
+    Instrument Filter &apos;6 - METHANE-U&apos;
+    =================================
+      Filter Name                    : METHANE-U
+      Filter Type                    : INTERFERENCE
+      Minimum Wavelength             : 0.536000
+      Maximum Wavelength             : 0.546000
+      Center Filter Wavelength       : 0.540000
+ 
+ 
+      Description
+      -----------
+        Spectral measurements at the manufacturer were taken on
+        Beckman spectro-photometers, and verifications at Jet
+        Propulsion Laboratory (JPL) were made with a Cary 14
+        spectro-photometer.  Each test scan was run from 2000 to 7000
+        Angstroms to check for eventual leaks outside the passband
+        (VGR ISS Calibration Report, 1978, an internal JPL document
+        available from JPL vellum files).  For spectral information
+        on each filter, see Danielson, E.  G., et al.  Radiometric
+        Performance of the Voyager Cameras, JGR, v.  86, Sept. 1981.
+ 
+ 
+    Instrument Filter &apos;7 - ORANGE&apos;
+    ==============================
+      Filter Name                    : ORANGE
+      Filter Type                    : INTERFERENCE
+      Minimum Wavelength             : 0.590000
+      Maximum Wavelength             : 0.640000
+      Center Filter Wavelength       : 0.615000
+ 
+ 
+      Description
+      -----------
+        Spectral measurements at the manufacturer were taken on
+        Beckman spectro-photometers, and verifications at Jet
+        Propulsion Laboratory (JPL) were made with a Cary 14
+        spectro-photometer.  Each test scan was run from 2000 to 7000
+        Angstroms to check for eventual leaks outside the passband
+        (VGR ISS Calibration Report, 1978, an internal JPL document
+        available from JPL vellum files).  For spectral information
+        on each filter, see Danielson, E.  G., et al.  Radiometric
+        Performance of the Voyager Cameras, JGR, v.  86, Sept. 1981.
+ 
+ 
+    Instrument Optics &apos;ISS-WA&apos;
+    ==========================
+      Telescope Diameter             : 0.057143
+      Telescope F Number             : 3.500000
+      Telescope Focal Length         : 0.200465
+      Telescope Resolution           : 0.000140
+      Telescope Serial Number        : WAO-06
+      Telescope T Number             : 4.140000
+      Telescope T Number Error       : 0.020000
+      Telescope Transmittance        : 0.800000
+ 
+ 
+      Description
+      -----------
+        The wide-angle camera optics is a 200 mm.  focal length six
+        element lens of the Petzval-type.  It consists of five
+        elements plus an additional dust lens, located between the
+        shutter and the vidicon.  The f stop number is 3.5 (VGR ISS
+        Calibration Report, 1978,an internal JPL document available
+        from JPL vellum files)
+ 
+ 
+    Instrument Mode &apos;IM10&apos;
+    ======================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 1:1, centered frame, approx.
+        160 pix/line (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM11&apos;
+    ======================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 5:1, centered frame, 800
+        pix/line (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM12&apos;
+    ======================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 5:1, centered frame, approx.
+        440 pix/line (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM13&apos;
+    ======================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 10:1, centered frame, 800
+        pix/line (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM14&apos;
+    ======================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 1:1, centered frame, approx.
+        80 pix/line (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM15&apos;
+    ======================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 2:1, centered frame, top read
+        out in frame #1, bottom read out in frame #2, 800 pix/line
+        (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM2&apos;
+    =====================
+      Data Path Type                 : RECORDED DATA PLAYBACK
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 1:1, full frame image, 800
+        pix/line (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM3&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 1:1, full frame, 800 pix/line
+        (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM4&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 1:1, centered frame, 608
+        pix/line (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM5&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 2:1, Top read out in frame
+        #1, bottom read out in frame #2, 800 pix/line (Jupiter and
+        Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM6&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 1:1, centered frame, 440
+        pix/line (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM7&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 3:1, full frame, 800 pix/line
+        (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM8&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 1:1, centered frame, 272
+        pix/line (Jupiter and Saturn only)
+ 
+ 
+    Instrument Mode &apos;IM9&apos;
+    =====================
+      Data Path Type                 : REALTIME
+      Gain Mode Id                   : LOW
+      Instrument Power Consumption   : 14.000000
+ 
+ 
+      In sections
+      -----------
+        ISSW
+ 
+ 
+      Description
+      -----------
+        Scan rate (minor frame:line) is 3:1, centered, approx.  480
+        pix/line (Jupiter and Saturn only)
+ 
+ 
+    Mounted On Platform &apos;SCAN PLATFORM&apos;
+    ===================================
+      Cone Offset Angle              : 0.031500
+      Cross Cone Offset Angle        : 0.024700
+      Twist Offset Angle             : 0.275000
+ 
+ 
+      Description
+      -----------
+        The measurements recorded below are the coordinates
+        representing the center of the Wide Angle Field Of View (FOV)
+        in relation to the center of the Narrow Angle FOV.  As of
+        5/26/88 the Voyager 2 scan platform offset values were
+        updated and the removal of all extraneous offset values for
+        VG1 and VG2 accomplished.  Only the most recently input
+        values remain in the database for each spacecraft.  These
+        values are effective for all periods of data inclusive from
+        launch to present.  (June 7, 1989).
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:lsrp.a16l</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>LUNAR SELF-RECORDING PENETROMETER for A16L</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a16l::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 16 Preliminary Science Report, NASA SP-315, 622 pages, published by
+                   NASA, Washingtion, D.C., 1972.
+            </reference_text>
+            <description>reference.APOLLO16A1972</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 16 - Expedition to Descartes (mission report), NASA MR-11, published by
+                   NASA, Washingtion, D.C., 1972.
+            </reference_text>
+            <description>reference.APOLLO16B1972</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Costes, N.C., G.T. Cohron, and D.C. Moss, Cone penetration resistance test - An
+                   approach to evaluating in-place strength and packing characteristics of lunar
+                   soils, Proceedings of Second Lunar Science Conference, 3, 1973-1987, M.I.T.
+                   Press, 1971.
+            </reference_text>
+            <description>reference.COSTESETAL1971</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mitchell, J.K., L.G. Bromwell, W.D. Carrier, III, N.C. Costes, and R.F. Scott,
+                   Soil mechanics experiment, Apollo 16 Preliminary Science Report, NASA SP-315,
+                   8-1, published by NASA, Washington D.C., 1972.
+            </reference_text>
+            <description>reference.MITCHELLETAL1972B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Scott, R.E., Apollo program soil mechanics experiment, Final Report California
+                   Inst. of Tech., Pasadena, 1975.
+            </reference_text>
+            <description>reference.SCOTT1975</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>LUNAR SELF-RECORDING PENETROMETER</name>
+        <type>Regolith Properties</type> <!--RChen/EN was Soil Strength Analyzer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    The Self-Recording Penetrometer facilitated the soil mechanics
+    experiment, which was designed to obtain data on the characteristics
+    and mechanical behavior of the lunar soil at the surface and
+    subsurface and the variation of its properties in lateral and vertical
+    directions, on slopes, and between different regions of the Moon.  The
+    equipment used included an adjustable sampling scoop, a self-recording
+    penetrometer, core tubes, and the Apollo lunar surface drill and bore
+    stems.  Further soil testing could be done at LRL in Houston on
+    returned soil samples, including the core tube and other geologic
+    samples, especially the fine-grained soil sample.  Photography
+    requirements of this experiment were met with a battery-operated 16-mm
+    data acquisition camera (DAC) with a 10-mm focal length lens, a
+    Hasselblad electric data camera (HEDC) with a 60-mm focal length lens,
+    and real-time TV transmissions.  The astronauts performed the required
+    trenching activity, penetrometer load plate and cone tests, and soil
+    behavior/characteristic observations such as the LRV wheel/lunar soil
+    interaction and LM footpad/soil interaction.  After tests were
+    completed, an astronaut removed the head from the penetrometer and
+    stowed it for return to Earth.  This head contained the recording drum
+    that indicated the penetrometer test results.
+ 
+    The Lunar Self-Recording Penetrometer (LSRP) had a mass of 2.3 kg and
+    consisted of an upper cannister housing attached to the top of a long
+    shaft and a reference pad assembly attached to the bottom.  A
+    recording drum was contained in the upper cannister and captured a
+    record of each penetration.  The LSRP was equipped with a 2.54 x 12.7
+    cm bearing plate and three penetrating cones with base areas of 1.29,
+    3.22, and 6.45 square cm and a 30 degree apex angle that could be
+    attached to the bottom of the penetration shaft at the reference pad.
+    The reference pad, which folded for storage, acted as a datum on the
+    lunar surface for measurement of penetration depth.  When an astronaut
+    pushed on the upper end, the bearing plate or lower cone and shaft
+    would penetrate into the lunar soil while the reference pad stayed on
+    the surface.  A retractor cable mechanism running from the reference
+    pad to the upper housing actuated a stylus which would move axially
+    along the recording drum to measure the depth of penetration.  The
+    force applied through the extension handle by the astronaut would
+    deflect a calibrated coil spring which would cause the recording drum
+    to rotate under the stylus by an amount proportional to the force.  The
+    maximum force caused a 30 degree rotation.  The LSRP had a maximum
+    penetration depth of 76 cm and the ability to measure penetration
+    force to a maximum of 215 Newtons.  After each run, the astronaut
+    would manually advance an index register to a new number.  The surface
+    reference pad had a tendency to ride up the penetrometer shaft slightly
+    if the LSRP was vibrated after the initial indexing and positioning.
+    This was due to the friction between the reference pad brushing and
+    shaft being less than anticipated and had a small effect on the
+    readings, which is described in the DATASET.CAT file of the archived
+    Apollo 16 Soil Mechanics dataset. A16L-L-LSRP-2/3-SOIL-MECHANICS-V1.0.
+    After tests were completed, an astronaut removed the head from the
+    penetrometer and stowed it for return to Earth.  This head contained
+    the recording drum that indicated the penetrometer test results.
+ 
+    The core tubes were thin-walled hollow aluminum tubes, 37.5 cm long
+    with an inside diameter of 4.13 cm and an outside diameter of 4.38 cm.
+    The lower tubes could be used individually or screwed together with an
+    upper tube to make a longer, or double tube.  The lower tube had a
+    stainless steel bit on the bottom for penetrating the soil.  A
+    &apos;keeper&apos;, a flat disk with the same inside diameter as the tube, fit
+    inside the top end of the tube and an adapter was screwed on top.  The
+    tubes would be driven into the ground with a hammer as far as they
+    could go.  Then the keeper would be pushed down inside the tube by a
+    long rod which fit into a hole in the top of the adapter.  The keeper
+    would be pushed to the top of the sample in order to keep the sample
+    in place.  The tube was then removed from the ground, the end covered
+    with a teflon cap, and the sample was brought back to Earth for
+    analysis.
+ 
+    The Apollo lunar surface drill consisted of an electric drill with a
+    set of long hollow bore stems which could be screwed together.  The
+    top of the drill had a battery pack and handle, directly underneath
+    this was a power head and thermal shield.  The drill stem extended
+    from this through a treadle placed on the surface and into the
+    regolith.  At the bottom of the first drill stem was a 6 cm long drill
+    bit with five tungsten-carbide blades.  The drill was used to retrieve
+    deep samples (down to 4.6 meters) of lunar regolith.
+ 
+    Eleven tests were made using the SRP during the second Apollo 16 EVA:
+    four cone penetration tests at station 4 and five cone penetration and
+    two plate load tests in the station 10 ALSEP area.  Double core tube
+    samples were taken from stations 4, 8, 10, and 10&apos; and a single core
+    tube sample from station 9, a total of over 6 kg of drive tube
+    samples.  A deep drill core was taken to a depth of 2.24 m in the ALSEP
+    area.  The drum was returned to Earth and the etchings made by the
+    penetrometer were read and recorded on hand-written charts by the
+    investigators.  Copies of the charts were sent to the National Space
+    Science Data Center (NSSDC), where they were microfilmed and archived.
+ 
+    This instrument description was provided by the NASA National Space
+    Science Data Center.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_ori</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Betelgeuse</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Alpha Orionis</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Ori</alternate_title></Alias>
+      <Alias><alternate_title>alf Ori</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>58 Ori</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>H 639A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>KAR 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 4506 AP</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+07 681</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+07 1055</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J05552+0724AP</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+07 1055 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EIC 108</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 224</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 7451</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 3679</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00039801J</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 00129-01873</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 39801</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 27989</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 27989</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 2061</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 05524+0723</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +10100</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSE J055510.1+072426</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSF J055510.1+072426</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1282</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J05551028+0724255</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 1266</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1362</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1362.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 162</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 149643</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 836</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 113271</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 9804</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 5587</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 129-1873-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 21314</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J05552+0724Aa,Ab</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J05552+0724Aa,Ac</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J05552+0724A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 5485</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 7 2503</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 0549+07</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+     </Modification_Detail>
+   </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Betelgeuse</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 05 hours 55 minutes 10.30536 seconds
+Declination, ICRS coord, ep=J2000: +07 degrees 24 minutes 25.4304 seconds
+    </description>
+  </Target>
+</Product_Context>
+

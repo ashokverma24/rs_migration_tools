@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:eso-paranal.vlt_yepun_8m2_ut4</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Very Large Telescope (VLT) Unit Telescope 4 (UT4) Yepun, 8.2-m Telescope</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>   
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-10-09</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created from information from ESO Website: https://www.eso.org/public/teles-instr/paranal-observatory/
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.eso-paranal</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit="m">8.2</aperture>
+        <telescope_longitude unit="deg">109.59604</telescope_longitude>
+        <telescope_latitude unit="deg">-24.62704</telescope_latitude>
+        <telescope_altitude unit="m">2635.43</telescope_altitude>
+        <description> Unit Telescope 4 (Yepun) of the Very Large Telescope (VLT) at ESO's Paranal Observatory, Chile.
+            The telescope is one of four 8.2-m Ritchey-Chretien Cassegrain telescopes with a 22-tonne Zerdour primary 
+            mirror of 14.4 m focal length, and a 1.1-m lightweight beryllium secondary mirror.
+            
+            The unit telescope has alt-azimuth mount. In such a mount the telescope tube moves around a horizontal axis 
+            called elevation axis. The two bearings which support the tube are mounted on a fork rotating around a vertical 
+            axis, called azimuth axis, thus allowing for pointing over the entire sky. The telescope tube itself consists 
+            of a steel structure supporting at the bottom the primary mirror (M1) in its cell, and at the top the M2 Unit 
+            by means of metallic beams called "spiders".
+            
+            The Very Large Telescope uses active optics.The optical quality of the image is continually monitored by an image 
+            analyser using a reference star and the contributions of the various optical aberrations (defocus, astigmatism, 
+            coma, etc.) are computed. To achieve the best optical quality, discrete correction commands are given to the primary 
+            mirror support system, controlling the shape of the thin flexible M1,and to the M2 Unit, which controls the position 
+            of the M2 mirror along 5 degrees of freedom, namely one for focusing,two for centering, and two for pointing. 
+            The M2 mirror itself is configured as a rigid lightweight convex hyperboloid.
+        
+        Information from the ESO telescope website: http://www.eso.org/sci/facilities/paranal/telescopes/ut.html
+        </description>
+    </Telescope>
+</Product_Context>

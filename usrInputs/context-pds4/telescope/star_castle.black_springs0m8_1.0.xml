@@ -1,0 +1,36 @@
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.jpl.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1700.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:star_castle.black_springs0m8</logical_identifier>
+        <version_id>0.0</version_id>
+        <title>Black Springs 0.8m</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-03-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version exported from OLAF</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.star_castle</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>Star Castle Observatory (OLAF observatory code 7753)</comment>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit='m'>0.8</aperture>
+        <telescope_longitude unit='deg'>138.888000</telescope_longitude>
+        <telescope_latitude unit='deg'>-33.899000</telescope_latitude>
+        <telescope_altitude unit='m'>4650</telescope_altitude>
+        <coordinate_source>Astronomical</coordinate_source>
+        <description>
+        The Black Springs 0.8m is a 0.8 m telescope located at -33.899000, 138.888000 at the Star Castle Observatory.
+        
+        30" Newtonian Reflector
+        </description>
+    </Telescope>
+</Product_Context>

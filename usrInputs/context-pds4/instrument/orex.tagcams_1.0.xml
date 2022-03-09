@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+	 
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:tagcams.orex</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>The Touch-and-Go Camera Suite (TAGCAMS) aboard the OSIRIS-REx spacecraft</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-03-14</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.orex</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                B.J. Bos, M.A. Ravine, M. Caplinger, J.A. Schaffner, J.V. Ladewig, R.D. Olds, C.D. Norman, D. Huish, 
+                M. Hughes, S.K. Anderson, D.A. Lorenz, A. May, C.D. Jackman, D. Nelson, M. Moreau, D. Kubitschek, K. Getzandanner,
+                K.E. Gordon, A. Eberhardt, and D.S. Lauretta, Touch And Go Camera System (TAGCAMS) for the OSIRIS-REx 
+                Asteroid Sample Return Mission, Space Science Reviews, 2018, submitted.
+            </reference_text>
+            <description>The TAGCAMS instrument paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>TAGCAMS</name>
+        <type>Imager</type>
+        <description>The Touch-and-Go Camera Suite (TAGCAMS) consists of three similar camera heads, each suited
+         for a particular purpose. The Navigation Camera (NavCam) is a wide-angle framing camera used for 
+         optical navigation. The Natural Feature Tracking Camera NFTCam) is a second framing camera used for 
+         landmark identification and autonomous feature tracking to aid in sample acquisition. Finally, the 
+         Stowage Camera (StowCam) is used to document the insertion of the sample collection head into the Sample 
+         Return Capsule (SRC). The OSIRIS-REx Science Processing and Operation Center located at the University 
+         of Arizona produces these data products and distributes them to the OSIRIS-REx Flight Dynamics Team, the 
+         Lockheed Martin Mission Support Area, the Science Team and the Planetary Data System.
+        </description>
+    </Instrument>
+</Product_Context>

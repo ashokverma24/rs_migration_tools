@@ -1,0 +1,36 @@
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.jpl.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1700.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:smt.heinrich_hertz10m</logical_identifier>
+        <version_id>0.0</version_id>
+        <title>10-m Heinrich Hertz Submillimeter Telescope (SMT)</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-03-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version exported from OLAF</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.smt</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>Submillimeter Telescope Observatory (OLAF observatory code 333)</comment>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit='m'>10</aperture>
+        <telescope_longitude unit='deg'>250.108780</telescope_longitude>
+        <telescope_latitude unit='deg'>32.701611</telescope_latitude>
+        <telescope_altitude unit='m'>3190</telescope_altitude>
+        <coordinate_source>Satellite Determined - Datum Unknown</coordinate_source>
+        <description>
+        The 10-m Heinrich Hertz Submillimeter Telescope (SMT) is a 10 m telescope located at 32.701611, 250.108780 at the Submillimeter Telescope Observatory.
+        
+        Operational 1993+
+        </description>
+    </Telescope>
+</Product_Context>

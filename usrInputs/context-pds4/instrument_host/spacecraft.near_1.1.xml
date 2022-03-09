@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.near</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>NEAR EARTH ASTEROID RENDEZVOUS</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.near_earth_asteroid_rendezvous</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+<!--removed in 1.1    	<Internal_Reference> -->
+<!--removed in 1.1    		<lid_reference>urn:nasa:pds:context:investigation:mission.support_archives::1.0</lid_reference> -->
+<!--removed in 1.1    		<reference_type>instrument_host_to_investigation</reference_type> -->
+<!--removed in 1.1    	</Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:grs.near</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:mag.near</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:msi.near</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:nis.near</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:nlr.near</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:rss.near</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--noSpice        <Internal_Reference> -->
+<!--noSpice            <lid_reference>urn:nasa:pds:context:instrument:spice.near</lid_reference> -->
+<!--noSpice            <reference_type>instrument_host_to_instrument</reference_type> -->
+<!--noSpice        <Internal_Reference> -->
+<!--:grs        <Internal_Reference> -->
+<!--:grs            <lid_reference>urn:nasa:pds:context:instrument:xgr.near</lid_reference> -->
+<!--:grs            <reference_type>instrument_host_to_instrument</reference_type> -->
+<!--:grs        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:xrs.near</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:asteroid.253_mathilde</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:asteroid.433_eros</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:asteroid.asteroid</lid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planetary_system.solar_system</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Santo, A.G., S.C. Lee, and R.E. Gold, NEAR Spacecraft and Instrumentation, The
+                   Journal of the Astronautical Sciences, Vol. 43, No. 4, pp. 373-397,
+                   October-December 1995.
+            </reference_text>
+            <description>reference.SANTOETAL1995</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>NEAR EARTH ASTEROID RENDEZVOUS</name>
+        <type>Spacecraft</type>
+        <naif_host_id>NEAR</naif_host_id>
+
+        <description>
+ 
+This description contains excerpts from:
+   Santo, A.G., S.C. Lee, and R.E. Gold, NEAR Spacecraft and
+   Instrumentation, The Journal of the Astronautical Sciences, Vol. 43,
+   No. 4, pp. 373-397, October-December 1995 [SANTOETAL1995] describing
+   the NEAR spacecraft.
+ 
+ 
+    Instrument Host Overview
+    ========================
+      The NEAR spacecraft design is mechanically simple, and geared toward
+      a short development and test time. Except for the initial deployment
+      of the solar panels and protective instrument covers, the spacecraft
+      has only one moveable mechanism. A distributed architecture allows
+      parallel development and test of each subsystem, yielding an
+      unusually short spacecraft integration and test period. Several
+      innovative features of the NEAR design include the first use of an
+      X-band solid state power amplifier for an interplanetary mission,
+      the first use of a hemispherical resonator gyroscope in space, and
+      extremely high-accuracy high voltage power supply control.
+ 
+ 
+    System Description
+    ====================
+      Most electronics are mounted on the forward and aft decks. The
+      science instruments, except for the magnetometer, are hard-mounted
+      on the outside of the aft deck with co-aligned fields-of-view. The
+      magnetometer is mounted on the High Gain Antenna (HGA) feed. The
+      interior of the spacecraft contains the propulsion module.
+ 
+      The spacecraft design was selected for its mechanical simplicity.
+      The solar panels, the HGA, and the instruments are all fixed. The
+      solar panels and HGA can be fixed because throughout most of the
+      mission the Sun-spacecraft-Earth  angle is less than 40 degrees.
+      While the HGA is pointed to the Earth, the Sun to solar panel angle
+      is small and the energy output from the resultant solar illumination
+      incident on the panels is sufficient. During the first two months
+      after launch and for a short time during the Earth flyby, the
+      Sun-spacecraft-Earth angle is greater than 40 degrees. At these
+      times, the telecommunication link is sufficient to allow
+      communications with the Earth through the medium or low gain
+      antennas while keeping the solar panels pointed within 40 degrees of
+      the Sun. During asteroid operations, the geometry allows the
+      spacecraft to be oriented as needed for scientific data collecting,
+      while maintaining the required Sun to solar panel angle. While
+      mechanically simple and reliable, hard-mounting the HGA, solar
+      panels, and instruments drives other areas of spacecraft and mission
+      design. The resultant spacecraft moments-of-inertia are such that
+      closed-loop control of the vehicle pointing must be maintained
+      throughout the mission. Because the power system is designed for
+      100% sunlight operation, the 450 N thruster location is chosen such
+      that the panels can be oriented towards the Sun during all large
+      delta(V) maneuvers. Finally, scientific operations and high speed
+      downlink to Earth cannot always be carried out simultaneously.
+ 
+    Command and Data Handling Subsystem
+    ======================================
+      The Command and Data
+      Handling (C&amp;DH) subsystem comprises redundant APL-built command and
+      telemetry processors, redundant Solid State Recorders (SSR), a power
+      switching unit to control spacecraft relays, and an interface to-a
+      redundant 1553 standard bus for communicating with other
+      processor-controlled subsystems. The redundant components are
+      cross-strapped among themselves, and among the redundant uplink
+      chains of the telecommunications subsystem.  The functions provided
+      by the C&amp;DH subsystem are command management, telemetry management,
+      and autonomous operations.
+ 
+      The command function operates on cross-strapped inputs from the two
+      CDUs at either of two rates: 125 bps (normal mode) or 7.8 bps
+      (emergency rate). The format of the uplinked commands is
+      Consultative Committee for Space Data Systems (CCSDS) compliant,
+      with a separate virtual channel for each side of the redundant C&amp;DH
+      subsystem. Four types of commands are supported: relay commands are
+      directed to the power switching unit to change the state of the
+      spacecraft relays; dedicated data commands are directed over
+      specific serial interfaces to control SSR and telecommunications
+      subsystem operation; 1553 data commands are directed to a specified
+      remote terminal on the 1553 bus; and C&amp;DH-specific commands are
+      interpreted within the C&amp;DH to control its own operation.  Some of
+      the C&amp;DH-specific commands provide facilities for storing commands
+      for later execution, either at a specified Mission Elapsed Time
+      (MET), or when the spacecraft conditions warrant autonomous action.
+      A series of commands that perform a specific function can be stored
+      as a command macro; the entire series of commands can be invoked by
+      a single macro execute command. During normal operations, the C&amp;DH
+      will invoke command macros that have been scheduled for execution at
+      a specific MET.  In this way, operations are carried out when the
+      spacecraft is out of ground contact. Command macros can also be
+      invoked by the autonomy function of the C&amp;DH, to place the
+      spacecraft in a safe condition. Approximately 56 K bytes of memory,
+      4000 commands, is available for stored commands in each processor.
+ 
+      The telemetry function collects engineering status and science data
+      from the housekeeping interface, from dedicated serial interfaces,
+      from the remote terminals on the 1553 bus, and from the C&amp;DH
+      internal event history buffers. This data is packetized where
+      necessary, and placed into CCSDS-compliant transfer frames. The
+      transfer frames are directed to the SSRs, the downlink, or both.
+      Data recorded on the SSRs is read back, packed into transfer frames
+      and placed into the downlink on command. Recorder playback data can
+      be interleaved with realtime data on the downlink, and data can be
+      recorded on one of the redundant SSRs while the other recorder is
+      read back.
+ 
+      SEAKR provides the SSRs. These recorders are constructed out of 16
+      Mbit IBM Luna-C DRAMs. One recorder has 0.67 Gbits of storage; the
+      other recorder has 1.1 Gbits of storage because it contains an
+      additional memory board which is designated as the flight spare, and
+      will be used to replace either of the other memory boards in the
+      event of a ground test failure.
+ 
+      The downlink data rate is selectable among eight rates ranging from
+      26.5 kbps to 9.9 bps to match the communication link capability
+      throughout the mission. For all except the highest downlink rate,
+      the recorder capacity exceeds the downlink capacity, so bandwidth is
+      limited by the downlink.  While the C&amp;DH subsystem controls the rate
+      of collection of realtime data to match the downlink rate, the rate
+      at which data is placed on the recorder is under the control of the
+      subsystems. Each remote terminal on the 1553 bus can request the
+      C&amp;DH to pick up and record up to 5336 bits of data per second. This
+      feature allows the spacecraft operators complete flexibility with
+      respect to the bandwidth used by each instrument.
+ 
+ 
+    Guidance and Control Subsystem
+    ================================
+      The Guidance and Control (G&amp;C) subsystem is composed of a suite of
+      sensors for attitude determination, actuators for attitude
+      corrections, and processors to provide continuous, closed loop
+      attitude control.  In
+      operational mode, the attitude is controlled to a commanded pointing
+      scenario. In safe modes, the G&amp;C maintains the solar panels pointed
+      to the Sun for maximum power, and attempts to place the Earth within
+      the medium-gain antenna pattern to establish ground communications.
+      The G&amp;C subsystem also controls the thrusters for delta(V)
+      maneuvers. Finally, the G&amp;C subsystem recognizes many internal
+      failure modes and initiates autonomous actions to correct them.
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

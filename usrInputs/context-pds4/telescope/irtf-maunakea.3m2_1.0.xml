@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context 
+    xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:irtf-maunakea.3m2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>IRTF 3.2m</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:telescope:irtf.3m0</alternate_title></Alias>  <!-- deprecated LID -->
+            <Alias><alternate_title>InfraRed Telescope Facility 3.0-Meter Telescope</alternate_title></Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-11-06</modification_date>
+                <version_id>1.0</version_id>
+                <description>Revised version produced by RMS Node, including LID, Title, Alias, Reference List, and Aperture</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.irtf-maunakea</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.cvf</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirac</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirac2</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirli</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirlin</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirsi</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.primo_1</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.spex</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:multi-host.generic_insp_hsp</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit="m">3.2</aperture>
+        <telescope_longitude unit="deg">155.4719</telescope_longitude>
+        <telescope_latitude unit="deg">19.8262</telescope_latitude>
+        <telescope_altitude unit="m">4168.07</telescope_altitude>
+        <description>A 3.0-meter (9.8 ft) telescope optimized for use in infrared astronomy and located on Mauna Kea in Hawaii. 
+            It was first built to support the Voyager missions and is now the US national facility for infrared astronomy, providing 
+            continued support to planetary, solar neighborhood, and deep space applications. The IRTF is operated by the University 
+            of Hawaii under a cooperative agreement with NASA. According to the IRTF's time allocation rules, at least 50% of the 
+            observing time is devoted to planetary science.
+            
+            The IRTF is a 3.0 m (118" effective aperture) classical Cassegrain telescope. The Cassegrain focus f/ratio is f/38 and the
+            primary mirror f/ratio is 2.5. Several aspects of the design of IRTF are optimized for IR observations. The secondary mirror 
+            is undersized to prevent the instrument from seeing the thermal emission from the telescope structure around the primary mirror. 
+            The primary mirror itself is 126" in diameter, but only the center 118" is used. A small mirror in the center of the secondary 
+            mirror prevents the instrument from seeing its own thermal emission. The f/ratio is long to have a small secondary mirror, 
+            again to minimize the telescope's thermal emission. The mirror coatings are chosen to have minimal thermal emission. The emissivity 
+            of the telescope is usually below 4%. The secondary mirror is mounted on a chopping mechanism to rapidly switch the pointing of 
+            the telescope from target to sky at up to 4 Hz.
+            
+            The IRTF is mounted on a large English yoke equatorial mount. The mount is very stiff, reducing flexure and allowing for accurate 
+            pointing of the telescope. Since the telescope is on an equatorial mount, the telescope can observe targets through the zenith without 
+            concern for field rotation. The yoke mount prevents the telescope from pointing north of +69 degrees declination. Since the telescope
+            was primarily intended for planetary science, this restriction was considered to be acceptable. Since the telescope is on a heavy 
+            mounting, it is relatively immune from vibration or wind shake.
+            
+            Telescope Limits Declination	The Hour Angle Limits
+                +69:56:00
+                -59:00:00	                  +/- 5:04:47
+            
+        </description>
+    </Telescope>
+</Product_Context>

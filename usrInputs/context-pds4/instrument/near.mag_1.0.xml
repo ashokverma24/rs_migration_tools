@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mag.near</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MAGNETOMETER for NEAR</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.near::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Acuna, M., C.T. Russell, L.J. Zanetti, and B.J. Anderson, The NEAR Magnetic
+                   Field Investigation: Science Objectives at Asteroid Eros 433 and Experimental
+                   Approach, Journal of Geophysical Research, Vol. 102(E10), pp. 23751-23760, 1997.
+            </reference_text>
+            <description>reference.ACUNAETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Cheng, A.F., A. Santo, K. Heeres, J. Landshof, R. Farquhar, et al., Near-Earth
+                   Asteroid Rendezvous: Mission Overview, Journal of Geophysical Research, Vol.
+                   102, pp. 23695-23708, 1997.
+            </reference_text>
+            <description>reference.CHENGETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kivelson, M., L. Bargatze, K. Khurana, D. Southwood, R. Walker, and P. Coleman,
+                   Magnetic Field Signatures Near Galileo&apos;s Closest Approach to Gaspra, Science,
+                   Vol. 261, pp. 331-334, 1993.
+            </reference_text>
+            <description>reference.KIVELSONETAL1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kivelson, M.G., Z. Wang, S. Joy, K.K. Khurana, C. Polanskey, D.J. Southwood,
+                   and R.J. Walker, Solar wind interaction with small bodies: 2. What can
+                   Galileo&apos;s detection of magnetic rotations tell us about Gaspra and Ida,
+                   Advances in Space Research, Vol. 16, Issue 4, pp. 59-68, 1995.
+            </reference_text>
+            <description>reference.KIVELSONETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lohr, D.A., L.J. Zanetti, B.J. Anderson, T.A. Potemra, J.R. Hayes, R.E. Gold,
+                   R.M. Henshaw, F.F. Mobley, D.B. Holland, M.H. Acuna, and J.L. Sheifele, Near
+                   Magnetic Field Investigation, Instrumentation, Spacecraft Magnetics and Data
+                   Access, Science Reviews, Vol. 82, pp. 255-281, 1997.
+            </reference_text>
+            <description>reference.LOHRETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Wang, Z., Kivelson, M.G., S. Joy, K.K. Khurana, C. Polanskey, D.J.
+                   Southwood, R.J. Walker, Solar wind interaction with small bodies. 2: What
+                   can Galileo&apos;s detection of magnetic rotations tell us about Gaspra and
+                   Ida, Advances in Space Research (ISSN 0273-1177), vol. 16, no. 4, p.
+                   (4)59-(4)68, 1995.
+            </reference_text>
+            <description>reference.WANGETAL1995</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MAGNETOMETER</name>
+        <type>Magnetometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Near Earth Asteroid Rendezvous (NEAR) mission is the first in the
+    Discovery Program of low cost planetary and space science missions.
+    Its objective is to characterize the S-type near-Earth asteroid 433
+    Eros to determine its composition and structure to help understand the
+    origin of Eros in particular and near-Earth asteroids in general.
+    After achieving rendezvous, NEAR will orbit the asteroid for one year
+    conducting extensive observations using infrared and visible
+    spectroscopic imaging, X-ray and gamma-ray fluorescence spectroscopy,
+    laser ranging and in-situ magnetic field measurements
+    [CHENGETAL1997].  The magnetic field experiment (MAG) will be used to
+    characterize the magnetization intensity and geometry of 433 Eros as
+    described in detail by [ACUNAETAL1997].  This paper describes the
+    in-flight calibration activities for MAG including analyses of
+    spacecraft magnetic fields and the post-reception processing steps
+    developed to remove these effects to yield valid data for scientific
+    study. Because Eros is immersed in the magnetized plasma of the solar
+    wind, the performance requirements of the MAG instrument are related
+    to the orbit distances and the solar wind perturbation signatures
+    associated with the asteroid.  During the one year rendezvous, the
+    NEAR spacecraft will execute a variety of orbits at Eros to optimize
+    the imaging, composition and ranging measurements.  The planned orbit
+    radii will range from 400 km down to 35 km, as low as 15 km from the
+    asteroid surface.  For NEAR to directly sample Eros&apos; magnetic field,
+    the field would have to stand off the solar wind dynamic pressure
+    which will average ~2.5 nPa at perihelion (1.13 AU) and ~1 nPa at
+    aphelion (1.78 AU), corresponding to magnetic field strengths of 80 nT
+    and 50 nT at perihelion and aphelion, respectively.  The goal for MAG
+    is to achieve 10% accuracy in a direct detection of Eros&apos; magnetic
+    field which is therefore provided by an accuracy of 5 nT.  This is a
+    factor of more than 50 less demanding than for space probes designed
+    for solar wind studies.
+ 
+    Achieving better than 5 nT accuracy is important for several reasons.
+    Signatures of the solar wind interaction due to whistler waves should
+    be present near the asteroid [WANGETAL1995] but are expected to be
+    only a few nT in magnitude.  Such indirect observations were used to
+    infer the magnetic character of Gaspra [KIVELSONETAL1993] and Ida
+    [KIVELSONETAL1995].  In addition, if Eros presents a small obstacle, &lt;
+    100 km in size, to the solar wind, one expects kinetic plasma
+    interactions to play a prominent role in the interaction because solar
+    wind protons have gyroradii of ~50 km.  Thus, the solar wind-Eros
+    interaction may not be well described by magnetohydrodynamics (MHD)
+    and detecting magnetic signatures of a kinetic interaction is highly
+    desirable to evaluate the nature of the interaction.  Signatures of a
+    kinetic effects are likely to be a few nT or smaller.
+ 
+    Reasonable efforts within cost and schedule constraints were therefore
+    made to achieve noise levels below 5 nT.  It turned out that the net
+    dynamic magnetic field of the spacecraft field is roughly 10 times
+    larger than this (the static field is roughly 190 nT) so that a
+    thorough characterization of spacecraft magnetic fields was required.
+    A detailed model of the spacecraft magnetic contamination was
+    developed that makes extensive use of spacecraft engineering data and
+    describes dynamic as well as static field sources.  The spacecraft
+    contamination field is subtracted from the measurements in ground
+    processing.  Because a detailed magnetic survey of the NEAR spacecraft
+    was not performed on the ground, the analysis was performed using data
+    obtained during cruise.  This paper documents the methods and results
+    of this analysis showing that the ultimate accuracy of the magnetic
+    field data returned from NEAR is 1-2 nT in each axis.  The NEAR
+    magnetic fields experiment will therefore return direct measurements
+    Eros&apos; magnetic field, if its magnetic moment is sufficiently large, as
+    well as signatures of the solar wind interaction.
+ 
+ 
+  Instrument Description
+  ========================
+    The NEAR magnetometer is described in detail by [LOHRETAL1997] and
+    essential instrument characteristics are summarized in Table 1.  The
+    instrument consists of a triaxial fluxgate sensor, drive and sense
+    electronics with separate 20-bit A/D converters for each axis.  The
+    instrument includes eight ranges covering full scale sensitivities
+    from +-4 nT to +-65,000 nT.  Pre-flight sensor calibration provided
+    absolute gain and cross talk calibration to 0.5% of full scale in each
+    range.  Range control can be selected to be either manual or
+    automatic.  Automatic range control provides transition to less
+    sensitive ranges when any one axis exceeds 87.5% of full scale for
+    0.25 seconds and shifts to a higher sensitivity when the field on all
+    three axes falls below 17% of full scale continuously for 1 minute.
+    This ensures that the instrument will follow rapid increases in field
+    strength without toggling between ranges.
+ 
+    The internal instrument sampling is fixed and variable output rates
+    are accomplished by a combination of digital filtering and
+    subsampling.  The analog voltage outputs are anti-alias filtered with
+    a combination of a single pole analog Butterworth low pass filter, 3dB
+    attenuation at 10.7 Hz, at the input of each A/D and an IIR filter
+    built into the A/D, 3 dB attenuation at 16.7 Hz.  The analog signals
+    are sampled continuously by the A/D converters at 20 samples/sec and
+    output to the instrument data processing unit (DPU) via gate arrays.
+    The same DPU serves both MAG and the Near Infrared Spectrometer (NIS)
+    instruments.  Subsequent digital filtering, range control, noise
+    rejection, time tagging, formatting and other pre-processing and logic
+    control are performed in the DPU.  Intrinsic instrument sensor noise
+    is about 1pT.  Time tagging is provided to 0.05 second accuracy and
+    the internal timing latency of the instrument including both analog
+    delays and digital processing is 0.64 seconds.  Additional known
+    latencies are introduced by the on-board digital filters.
+ 
+    To accommodate the data collection strategies of NEAR, the instrument
+    sample rate is commandable from 0.01 to 20 samples/sec.  Digital
+    filtering commensurate with the output rate is applied for rates down
+    to 1 sample/sec.  The filtering calculations are performed on the
+    internal 20 bit resolution data.  To avoid integer roundoff
+    calculations in the filtering, the data are padded with 5 zeroes and
+    the resulting 25 bit integers are carried forward in the 32-bit
+    processor.  The output is rounded to 16-bit resolution providing
+    digitization step sizes from 0.2pT to 2nT.  To avoid undesirably long
+    averaging and to ensure that data are not smeared significantly in
+    position relative to Eros, sample rates from 0.5 samples/sec to 0.01
+    samples/sec are sub-samples of the 0.5 Hz filtered time series.
+    During cruise the instrument is operated in range 3 at the 0.01
+    samples/second rate and checkouts (Section 3.1 below) consisting of a
+    calibration with the internal bias current, 20 sample/second data
+    collection (5 minutes) and anti-alias filter turn-off are performed
+    approximately weekly as spacecraft operations allow.  The sampling
+    rate at rendezvous will be 1 sample/second and checkouts performed
+    weekly as during cruise.
+ 
+    Table 1. NEAR magnetometer characteristics.
+    Tri-axial Fluxgate:
+            15 kHz drive/30 kHz sense
+            1 pT intrinsic rms noise
+            Linearity: &lt;1 part in 104
+            Selectable electronics calibration bias current
+            Survival heater -15-C set point.
+            Sensor body mounted on antenna x cm above top deck.
+    Sampling:
+            20/second internal
+            Separate 20 bit A/D for each axis
+            Output: 16 bit resolution
+            10 Hz anti-alias filter, 3-pole Butterworth
+    Ranges: eight selectable
+            Range    Full scale (nT)    Resolution, LSB (nT)
+            0             +-4                    (a)
+            1            +-16                    (a)
+            2            +-64                  0.002
+            3           +-256                  0.008
+            4          +-1,024                 0.031
+            5          +-4,096                 0.125
+            6         +-16,384                 0.500
+            7         +-65,536                 2.000
+    Software:
+            RTX-2010RH, 32 bit, FORTH language
+            Output sample rates:
+               Sub-sampled 1/2 Hz filter: 0.01,0.02,0.05,0.1,0.2,0.5/s
+               Filtered (fNyquist=1/2 rate):  1, 2, 5, 10/s
+               No digital filtering:  20/s
+            Filtering:
+               Butterworth IIR, 25 bit resolution
+               0.5, 1.0, 2.5, 5.0 Hz fNyquist
+            Ranging:
+               Automatic:  max/min F.S.:  87.5%/17%
+               Manual
+            Other:
+               Noise rejection, range offsets, sample synch. pulse.
+    Resources:
+            Mass, power:   1.5 Kg, 1.7 W (not including DPU)
+            Data rate:  65 bits/sample, 5.6 Mbits/day at 1/s
+ 
+    (a) Limited by intrinsic 1 pT instrument noise.
+
+        </description>
+    </Instrument>
+</Product_Context>

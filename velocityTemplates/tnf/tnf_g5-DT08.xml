@@ -1,0 +1,212 @@
+                        <Group_Field_Binary>
+                              <name>Angle CHDO (Data Type 8)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>16</fields>
+                              <groups>0</groups>
+                              <description>Angle CHDO (Data Type 8)</description>
+                              <group_location unit="byte">161</group_location>
+                              <group_length unit="byte">38</group_length>
+                              <Field_Binary>
+                                  <name>chdo_type</name>
+                                  <field_number>1</field_number>
+                                  <field_location unit="byte">1</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Type attribute of the angle data CHDO.
+                                      Set to 10 since this CHDO contains binary data.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chdo_length</name>
+                                  <field_number>2</field_number>
+                                  <field_location unit="byte">3</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Length attribute of the angle data CHDO value field. 
+                                      Number of bytes after this item.  Set to 34.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>source_type</name>
+                                  <field_number>3</field_number>
+                                  <field_location unit="byte">5</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Source type.
+                                         0 =Unknown; 
+                                         1 = APC, (34m BWG); 
+                                         2 = Metric Pointing Assembly (MPA) (26m), or Metric Tracking Assembly (MTA)
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ang_type</name>
+                                  <field_number>4</field_number>
+                                  <field_location unit="byte">6</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Angles Type.
+                                         0 = Unknown; 
+                                         1 = Azimuth/Elevation; 
+                                         2 = Hour Angle/Declination; 
+                                         3 = X/Y (where +X is East); 
+                                         4 = X/Y (where +X is South)
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ang_vld_flag</name>
+                                  <field_number>5</field_number>
+                                  <field_location unit="byte">7</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Angles validity flag.
+                                         0 = Invalid; 
+                                         1 = Valid
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ang_mode</name>
+                                  <field_number>6</field_number>
+                                  <field_location unit="byte">8</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Angle Mode.
+                                         0 = Auto Track; 
+                                         1 = Manual Aided; 
+                                         2 = Computer; 
+                                         3 = Sidereal; 
+                                         4 = Brake
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>conscan_mode</name>
+                                  <field_number>7</field_number>
+                                  <field_location unit="byte">9</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Conscan Mode.
+                                         0 = Conscan off; 
+                                         1 = Closed loop; 
+                                         2 = Open loop
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>acq_aid_mode</name>
+                                  <field_number>8</field_number>
+                                  <field_location unit="byte">10</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Acquisition Aid Mode.
+                                         0 = 34m-mounted Acquisition Aid is off; 
+                                         1 = 34m-mounted Acquisition Aid driving antenna pointing; 
+                                         2 = 34m-mounted Acquisition Aid not driving antenna pointing
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ang1</name>
+                                  <field_number>9</field_number>
+                                  <field_location unit="byte">11</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>degree</unit>
+                                  <description>
+                                      Angle 1 (azimuth, hour angle, or X).
+                                      Valiues -90.0 to 360.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ang2</name>
+                                  <field_number>10</field_number>
+                                  <field_location unit="byte">15</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>degree</unit>
+                                  <description>
+                                      Angle 2 (elevation, declination, or Y).
+                                      Values -90.0 to 360.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ang1_pseudo _resid</name>
+                                  <field_number>11</field_number>
+                                  <field_location unit="byte">19</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>degree</unit>
+                                  <description>
+                                      For source_type=1 (field 3), the Angle 1 Acquisition Aid Processor Correction.
+                                      Values -90.0 to 90.0 are allowed.
+                                      For source_type=2 (field 3), the Angle 1 Pseudo-residual (actual minus predicted).
+                                      Values -90000.0 to 360000.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ang2_pseudo _resid</name>
+                                  <field_number>12</field_number>
+                                  <field_location unit="byte">23</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>degree</unit>
+                                  <description>
+                                      For source_type=1 (field 3), the Angle 2 Acquisition Aid Processor Correction.
+                                      Values -90.0 to 90.0 are allowed.
+                                      For source_type=2 (field 3), the Angle 2 Pseudo-residual (actual minus predicted).
+                                      Values -90000.0 to 360000.0 are allowed.                        
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>time_tag_corr_flag</name>
+                                  <field_number>13</field_number>
+                                  <field_location unit="byte">27</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Time tag correction flag -- idicates the results of validation of the block time tag.
+                                         0 = No validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>type_time_corr_flag</name>
+                                  <field_number>14</field_number>
+                                  <field_location unit="byte">28</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Type of time tag correction flag -- indicates what type of time tag correction was made.
+                                         0 = No correction; 
+                                         1 = Year correction; 
+                                         2 = DOY correction; 
+                                         3 = Both Year and DOY correction
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve2</name>
+                                  <field_number>15</field_number>
+                                  <field_location unit="byte">29</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Reserved.  Two bytes.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve8</name>
+                                  <field_number>16</field_number>
+                                  <field_location unit="byte">31</field_location>
+                                  <data_type>UnsignedMSB8</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <description>
+                                      Reserved.  Eight bytes.
+                                  </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

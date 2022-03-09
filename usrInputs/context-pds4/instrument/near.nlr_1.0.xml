@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:nlr.near</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>NEAR LASER RANGEFINDER for NEAR</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.near::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Cheng, A.F., A. Santo, K. Heeres, J. Landshof, R. Farquhar, et al., Near-Earth
+                   Asteroid Rendezvous: Mission Overview, Journal of Geophysical Research, Vol.
+                   102, pp. 23695-23708, 1997.
+            </reference_text>
+            <description>reference.CHENGETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Cole, T., M. Boies, A. El-Dinary, A.F. Cheng, M. Zuber, and D.E. Smith, The
+                   Near Earth Asteroid Rendezvous Laser Altimeter, Space Science Reviews, Vol. 82,
+                   pp. 217-253, 1997.
+            </reference_text>
+            <description>reference.COLEETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gardner, C.S., Ranging performance of satellite laser altimeters, IEEE Trans
+                   Geoscience and Remote Sensing, Vol. 30, pp. 1061-1072, 1992.
+            </reference_text>
+            <description>reference.GARDNER1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Smith, D.E., M.T. Zuber, S.C. Solomon, R.J. Phillips, J.W. Head, J.B. Garvin,
+                   W.B. Banerdt, D.O. Muhleman, G.H. Pettengill, G.A. Neumann, F.G. Lemoine, J.B.
+                   Abshire, O. Aharonson, C.D. Brown, S.A. Hauck, A.B. Ivanov, P.J. Mcgovern, H.J.
+                   Zwally, and T.C. Duxbury, The Global Topography of Mars and Implications for
+                   Surface Evolution, Science, Vol. 284, pp. 1495-1503, 1999.
+            </reference_text>
+            <description>reference.SMITHETAL1999B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Zuber, M.T., D.E. Smith, S.C. Solomon, D.O. Muhleman, J.W. Head, J.B. Garvin,
+                   J.B. Abshire, and J.L. Bufton, The Mars Observer Laser Altimeter Investigation,
+                   J. Geophys. Res., 97, 7781-7797, 1992.
+            </reference_text>
+            <description>reference.ZUBERETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Zuber, M., D.E. Smith, F.G. Lemoine, and G. Neumann, The Shape and Internal
+                   Structure of the Moon from the Clementine Mission, Science, Vol. 266, pp.
+                   1839-1843, 1994.
+            </reference_text>
+            <description>reference.ZUBERETAL1994</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Zuber, M., D.E. Smith, A.F. Cheng, and T.D. Cole, The NEAR Laser Ranging
+                   Investigation, Journal of Geophysical Research, Vol. 102, pp. 23761-23773, 1997.
+            </reference_text>
+            <description>reference.ZUBERETAL1997</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>NEAR LASER RANGEFINDER</name>
+        <type>Altimeter</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  NEAR Laser Rangefinder Instrument Overview
+  ==========================================
+    NLR is a direct-detection, time-of-flight laser altimeter that
+    determines the range from the NEAR spacecraft to the surface of Eros
+    by measuring the round-trip travel time of laser pulses with 0.312 m
+    range resolution (single count). It employs direct, incoherent
+    detection using an all solid-state, diode-pumped laser transmitter,
+    a Cassegrain receiver telescope, and a receiver electronics package
+    that incorporates an IR-enhanced, silicon Avalanche Photo Diode
+    (APD) with thresholding and timing electronics. Figure 1 shows the
+    NLR flight hardware and its principal subsystems.
+ 
+    NLR is the first laser altimeter to employ continuous, in-flight
+    calibration using a fiber-optic delay assembly (FODA), which is a
+    spooled, 109.5-m fused silica fiber-optic cable. Part of each
+    optical pulse formed within the laser resonator is injected into the
+    FODA, which is connected to the baffle system in front of the
+    receiver telescope. Using a 45 deg elliptical mirror, the delayed
+    optical signal is directly introduced into the receiver. This allows
+    end-to-end calibration for each emitted pulse even when no target
+    surface is available.
+ 
+    The laser transmitter (Fig. 1) is a diode-pumped, solid-state (DPSS)
+    Cr:Nd:YAG using an active, lithium niobate (LiNbO3) Q-switch to
+    control the formation of the laser pulse. Such Q-switched Nd:YAG
+    DPSS lasers provide high reliability and were used in the Clementine
+    [ZUBERETAL1994] and Mars Global Surveyor [ZUBERETAL1992];
+    [SMITHETAL1999B] laser altimeters. The laser transmitter thermal
+    design minimizes thermal excursions of the optical resonator
+    assembly, using thermostatically controlled heaters and thermal
+    isolation from the spacecraft. The laser pulse repetition rate (PRF)
+    can be selected from among 1/8 Hz, 1 Hz, 2 Hz, and 8 Hz, but firing
+    at 1 Hz PRF will be the nominal mode of operation at Eros.
+ 
+    NLR is a bistatic system, with the transmitter separate from the
+    receiver.  The transmission of the laser optical pulse is
+    accomplished using a 62 mm Galilean refractive telescope (Fig. 1).
+    The large output aperture significantly reduces the transmitter beam
+    divergence. The receiver (Fig. 1) uses an 8.89 cm diameter, gold-
+    coated aluminum Dall-Kirkham telescope to focus back-scattered laser
+    energy onto the APD detector.  The APD is implemented in a trans-
+    impedance circuit that automatically compensates for thermal
+    variations. Detected signals from the APD are amplified, passed
+    through a 30 MHz Bessel filter and sent to a commandable comparator
+    to generate the digital stop pulse that is used to determine the
+    time-of-flight (TOF).
+ 
+    The TOF system measures the time from laser firing, as indicated by
+    the laser transmitter start pulse, to the first receiver stop pulse
+    (from the FODA calibration signal) and to the second stop pulse
+    produced from the backscattered laser light returning from the
+    target. The Bessel filter integrates the analog pulses to maximize
+    the probability of detection for returned pulses that have been
+    stretched in time (&apos;dilated&apos;) by scattering from the rough, tilted
+    target surface. The filter also attenuates high frequency electronic
+    noise. The comparator tests whether the filtered analog signal
+    exceeds a commandable threshold voltage; when this occurs, the
+    digital stop pulse is generated. The threshold level used by the
+    comparator is set by ground command or autonomously through an auto-
+    acquisition sequence. After the two TOF counters are stopped, a
+    digital processing unit (DPU) reads the count values and formats
+    them into science data packets together with instrument status and
+    housekeeping information.
+ 
+    Table. 1 NLR Characteristics
+    PARAMETER                       MEASUREMENT
+    max. range (altitude)              327 km
+    range accuracy                     &lt; 6 m
+    range resolution                   0.312 m
+    pulse energy                       15.3 mJ @ 1.064 um
+    energy jitter                      &lt; 1 % rms knowledge
+    pulse-width                        15 ns
+    pulse-width jitter                 0.82 ns rms knowledge
+    wavelength spread                  +- 1 nm
+    pulse frequency                    1/8, 1, 2, 8 Hz
+    T-0 mask                           0 to 511.5 usec, delta = 500 ns
+    range gate                         81ns to 42.7us, delta = 41.7 ns
+    TEM00 (% Gaussian fit)             91 %  (TEM00 mode-like)
+    divergence (1/e2 -points)          235 urad
+    calibration power jitter           +- 5 %
+    calibration timing jitter          &lt; 31.2 cm
+    thermal control                    &lt; +- 2 degC
+    shots (lifetime)                   ~10^9
+    effective RX aperture, f/#         7.62 cm, f/3.4
+    spectral receiver bandwidth        &lt; 7 nm
+    temporal receiver bandwidth        30 MHz
+    APD dark noise voltage             150 uVrms
+    APD hybrid responsivity            770 kV/W
+    optical receiver FOV               2900 urad
+    threshold levels                   16mV*2^n, for n = 0,1,.,7
+    data rates                         51 and 6.4 bps
+    boresight shift, TX-to-RX          345 urad
+ 
+ 
+  Operation
+  =========
+    The measured laser pulse characteristics are summarized in Table 1
+    (data from [COLEETAL1997]). The temporal, spatial (near- and far-
+    field), and pulse energy characteristics were measured during NLR
+    flight system development.  Pulse energy measurements of the
+    transmitter beam and FODA port output were measured using NIST-
+    traceable equipment accurate to +5%. Measured near-field spatial
+    beam distributions included beam diameter (1/e2), modal structure,
+    and energy distribution characteristics. Far-field measurements
+    included beam divergence, jitter, and wander.  The receiver sees two
+    optical pulses per transmitted pulse. The first arrives ~558 ns
+    after laser firing and is the calibration pulse routed through the
+    FODA. Detection of this pulse stops the calibration counter, and the
+    calibration counts value (&apos;Calibration&apos; in Table A1, see Appendix)
+    is reported for each shot when operating at 1/8 Hz, 1 Hz or 8 Hz,
+    but not when operating at 2 Hz. The next detected return is the
+    surface backscattered pulse, whose detection stops the range
+    counter. The range count value (&apos;Range&apos; in Table A1) is always
+    reported for each laser shot.
+ 
+    NLR&apos;s receiver is a leading-edge detector, meaning that a stop pulse
+    is generated as soon as the optically produced signal (the filtered,
+    analog voltage from the calibration pulse or the target return)
+    exceeds a threshold level (&apos;Threshold Voltage&apos; in Table A1). The
+    time at which this signal crosses the threshold determines the
+    measured TOF, which therefore depends on the threshold value
+    (threshold-driven &apos;range walk&apos;). This threshold can be commanded to
+    any of eight values (Table 1), although no calibration signal is
+    detected at the highest value.  Figure 2 shows the sequence of
+    events that occur with each laser shot. After the fire command, the
+    laser pulse is generated after a time delay that varies from 170 ?s
+    to 190 ?s. The firing time delay varies slowly on ten-minute time
+    scales. The emitted optical pulse generates the start pulse for the
+    two TOF counters.
+ 
+    The calibration pulse is received about 0.558 ?s after firing, and
+    the laser return from the target is received much later, at a time
+    determined by the range (the range counter overflows after 2.18 ms).
+    The NLR receiver is `blanked&apos;, or prevented from detecting a pulse,
+    for a time interval T0 after the fire command. This T-0 mask (see
+    Table 1) is set by ground command with a default value of 180.498
+    ?s. In-flight tests have shown that this default value, as well as
+    values half as large, are sufficient to suppress any electronic
+    noise from firing.  The value of T0 is adjusted by two parameters
+    returned in the NLR data; the first is called &apos;T-0 COUNT&apos; and is
+    represented here by the symbol ?, while the second is called &apos;Range
+    gate&apos; and is represented by the symbol rg. This &apos;Range gate&apos;
+    parameter does not define a range gate in the usual sense of a brief
+    time interval, during which the receiver is active, encompassing the
+    time of the expected range return. Rather, the NLR receiver becomes
+    active once the time T0 has elapsed, and it remains active until two
+    stop pulses are generated, one from the calibration return and one
+    from the target.
+ 
+    The relation between T0 and the commandable parameters ? and rg is
+    where T0 is in units of ?s, and where ? and rg are both integers in
+    the range [0, 1023].  The NLR timing shown in Fig 2 applies to
+    normal operation at any of the four PRF values.  NLR also includes
+    two special failure modes of operation, that can be used in the
+    event of failures involving either the start pulse or the
+    calibration pulse. In the former case, the FAILSAFE mode starts the
+    TOF counters at the final value of the &apos;T-0 COUNT&apos; countdown. In the
+    latter case, the ONESTOP mode causes NLR to use the first received
+    stop pulse as the range pulse from the target. As of September,
+    1999, the start and calibration pulses are functioning nominally,
+    and there is no plan to use either FAILSAFE or ONESTOP.  NLR has two
+    additional special operating modes designed to enable autonomous
+    operation without excessive ground commanding. The first is called
+    &apos;AUTO ACQUIRE&apos;, in which NLR uses the calibration pulse to find a
+    threshold voltage above the noise level in the receiver. NLR fires
+    16-shot bursts at each of the eight possible values for the voltage
+    threshold (listed in Table 1), which are labeled TH = 0 through TH =
+    7. The results of all pre-launch and in-flight tests through
+    September, 1999 have shown that AUTO ACQUIRE sets the threshold at
+    TH = 3. The second special operating mode is called &apos;CALIBRATE&apos;, in
+    which NLR autonomously sets the value of ?. During &apos;CALIBRATE&apos;, NLR
+    increments ? until it finds as large a value as possible that still
+    assures detection of a valid calibration pulse.
+ 
+    Fig 2 shows that if ? becomes too large, the time T0 that the
+    receiver is blanked will include the arrival time of the calibration
+    pulse, which cannot then be detected. As of September, 1999 there is
+    no plan to use CALIBRATE during asteroid operations because the
+    default values of ? and rg are completely satisfactory.  The timing
+    of NLR events relative to other NEAR spacecraft events is shown in
+    Figure 3. All spacecraft events are coordinated by synchronization
+    pulses sent over the Mil-Std-1553 data bus at each one second
+    interval of mission elapsed time (MET) under control of the command
+    and telemetry processor (CTP). These one second intervals are
+    referred to as &apos;major frames&apos;. Every major frame is divided into 8
+    minor frames (Fig 3) numbered 0 through 7, each lasting 125 ms. The
+    NLR DPU controls instrument timing which is locked to the receipt of
+    the MET synchronization pulses once per second from the CTP. NLR
+    fires the laser in specific minor frames, depending on the PRF mode
+    as shown in Table 2. In all cases, laser firing occurs within ~3 ms
+    of the start of the minor frame(s) shown in Table 2.
+ 
+    Table 2. NLR firing times
+ 
+    PRF Mode  MinorFrame(s)
+ 
+    1/8Hz          0
+    1  Hz          0
+    2  Hz          0,4
+    8  Hz          all
+ 
+    NLR can sustain continuous firing at 1/8 Hz, 1 Hz, or 2 Hz PRF for
+    indefinite periods. However, because of thermal limitation NLR
+    cannot fire indefinitely at 8 Hz. In the 8 Hz mode, NLR fires 16
+    shots in two seconds, after which NLR is quiescent for 14 s. Hence,
+    in this mode NLR fires an average of one pulse per second.  An
+    important NLR science objective is to correlate the laser altimetry
+    data with imaging data from the NEAR Multispectral Imager (MSI), as
+    discussed by [ZUBERETAL1997]. To accomplish this objective, it is
+    necessary to determine the boresight offset between the NLR and the
+    MSI.
+ 
+    Both instruments have been designed to enable a direct measurement
+    of the boresight offset, by using MSI to image the laser spot over
+    the darkside of Eros. To obtain sufficient signal in the image, NLR
+    is operated at 8 Hz to produce 8 shots during the maximum imager
+    exposure time of 999 ms. The relative timing of NLR operation and
+    MSI image exposures is shown in Fig 3. The MET synchronization
+    pulses at NLR and at MSI are time-aligned within a few ms. During
+    the maximum MSI exposure, the first NLR shot occurs ~80 ms after the
+    start of the exposure, and the last occurs ~44 ms before the end.
+    NLR Data collection The current plan is to leave NLR powered on
+    throughout the prime mission phase in Eros orbit, firing laser
+    pulses whenever the instruments are pointed at Eros for data
+    acquisition (all NEAR instruments can observe Eros simultaneously).
+    NEAR will point its instruments at Eros for approximately 16 hours
+    per day, and it will point its high gain antenna at Earth for
+    approximately 8 hours per day to downlink data. During downlink
+    periods, NLR will not be pointed at the asteroid but will remain
+    powered on. If NLR is operated at its 1 Hz nominal PRF mode, it will
+    obtain a total of ~2x107 range measurements during the year-long
+    prime mission and generate up to ~1.7 Gbit of data. The NLR
+    investigation will begin ranging to Eros once the spacecraft
+    descends to within 300 km range from the asteroid in early March,
+    2000.
+ 
+    The NLR investigation will control spacecraft pointing for the first
+    two weeks in May, 2000, while the spacecraft is in an approximately
+    circular, 50 km polar orbit. Most of the NLR data will be acquired
+    while nadir pointing, i.e., with NLR pointed to the Eros center of
+    mass. Figure 4 shows the ground coverage for 1 week of nadir-pointed
+    observations in this orbit. The footprints of successive laser shots
+    at 1 Hz PRF will be significantly overlapping while NLR is nadir-
+    pointed during most of the 50 km orbit, except when NEAR is directly
+    over an elongated end of Eros ([ZUBERETAL1997]; [COLEETAL1997]). The
+    footprint diameter is 7 m at an altitude of 30 km and normal
+    incidence. The sub-spacecraft point on Eros moves at 3-5 m/s. Even
+    one week of nadir-pointed observations will yield a data set well
+    suited for determining global shape, size, and rotation state
+    [ZUBERETAL1997].  Although each NLR track is densely sampled in the
+    50 km orbit, Figure 4 shows that the successive tracks are spaced
+    more than a kilometer apart at the equator of Eros.
+ 
+    The NLR investigation plans to allocate a portion of the 50 km orbit
+    time to cross-track scanning of NLR, using spacecraft maneuvers, to
+    obtain a more uniform areal coverage of Eros.  Since the laser
+    footprints are overlapping or nearly so at 1 Hz PRF while nadir
+    pointed in the 50 km orbit, NLR operations through the first half of
+    the rendezvous year will use the 1 Hz mode. Due to a spacecraft
+    interface error, the spacecraft overcurrent protection for NLR must
+    be switched off when NLR fires at 2 Hz. Nevertheless, NLR may be
+    operated in the 2 Hz mode late in the rendezvous year, from the 35
+    km circular orbit.
+ 
+    Note
+ 
+    All NLR data after 6/22/00 (2000 204) will appear in the version 7
+    NLR format, which is the same as the version 6 normal format (ID =
+    4) EXCEPT for the field labeled &apos;CALIBRATION_WORD_1&apos; which has been
+    changed.
+ 
+    &apos;CALIBRATION_WORD_1&apos; will take the following values:
+    in AutoAcq, &apos;first cal&apos; = 30
+    in 1 Hz, &apos;first cal&apos; = 584 (first shot in minor frame 4, at packet
+             MET plus 0.5 second)
+    in 2 Hz, &apos;first cal&apos; = 364 (usually) but 804 is possible. If 364,
+             the first shot was in minor frame 2 (at packet MET plus
+             0.25 second). Otherwise, the first shot was in minor frame
+             6.
+
+        </description>
+    </Instrument>
+</Product_Context>

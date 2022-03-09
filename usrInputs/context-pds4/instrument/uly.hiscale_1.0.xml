@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:instrument:uly.hiscale</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>HELIOSPHERIC INST-SPECTRA,COMPOSITION,ANISOTROPY AT LOW ENER for ULY</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:hiscale.uly</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.uly</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Armstrong, T.P., and R. Sahi, Ulysses HISCALE Data Analysis Handbook, Dept.
+                   of Physics and Astronomy, Univ. of Kansas, Lawrence, KS, 66045, April
+                   1996.
+            </reference_text>
+            <description>reference.ARMSTRONG-SAHI1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Armstrong, T.P., Passbands &amp; Efficiencies for LEMS, LEFS and WART Channels,
+                   University of Kansas, May 1992.
+            </reference_text>
+            <description>reference.ARMSTRONG1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lanzerotti, L.J., R.E. Gold, K.A. Anderson, T.P. Armstrong, R.P. Lin, S.M.
+                   Krimigis, M. Pick, E.C. Roelof, E.T. Sarris, G.M. Simnett, and W.E. Frain,
+                   Heliosphere instrument for spectra, composition and anisotropy at low
+                   energies, Astron. Astrophys. Suppl. Ser. 92, 349-363, 1992.
+            </reference_text>
+            <description>reference.LANZEROTTIETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Maclennan C.G., and Armstrong T.P., LAN Cover-Close Calibrations, AT&amp;T Bell
+                   Laboratories, May 1995.
+            </reference_text>
+            <description>reference.MACLENNAN-ARMSTR1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Maclennan, C.G., User&apos;s Guide to LAN 360, AT&amp;T Bell Laboratories, Aug.
+                   1992.
+            </reference_text>
+            <description>reference.MACLENNAN1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tappin, S.J., HISCALE IDL display System (IDL-HS), University of
+                   Birmingham, June 1992.
+            </reference_text>
+            <description>reference.TAPPIN1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Townsend, J.P. Jr., Ulysses Pulse Height Analysis documentation, JHU,
+                   Applied Physics Laboratory, July 1990.
+            </reference_text>
+            <description>reference.TOWNSEND1990</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>HELIOSPHERIC INST-SPECTRA,COMPOSITION,ANISOTROPY AT LOW ENER</name>
+        <type>Particle Detector</type> <!--RChen/EN was Energetic Particle Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    (excerpted from: [LANZEROTTIETAL1992])
+ 
+    Abstract.  -- The Heliosphere Instrument for Spectra,
+    Composition, and Anisotropy at Low Energies (HI-SCALE) is
+    designed to make measurements of interplanetary ions and
+    electrons throughout the entire Ulysses mission.  The ions (Ei
+    &gt;50 keV) and electrons (Ee &gt;30 keV) are identified uniquely and
+    detected by five separate solid-state detector telescopes that
+    are oriented to give nearly complete pitch-angle coverage
+    (i.e., coverage of essentially 4 [pi] ster) from the spinning
+    spacecraft.  Ion elemental abundances are determined by a delta
+    E vs E telescope using a thin (5 [micrometer]) front solid
+    state detector element in a three-element telescope.
+    Experiment operation is controlled by a microprocessor-based
+    data system.  Inflight calibration is provided by radioactive
+    sources mounted on telescope covers which can be closed for
+    calibration purposes and for radiation protection during the
+    course of the mission.  Ion and electron spectral information
+    is determined using both broad-energy-range rate channels and a
+    32 channel pulse-height analyser (channels spaced
+    logarithmically) for more detailed spectra.  The instrument
+    weighs 5.775 kg and uses 4.0 W of power.  Some initial
+    in-ecliptic measurements are presented which demonstrate the
+    features of the instrument.
+ 
+ 
+    References
+    ----------
+      HISCALE References (cited in [ARMSTRONG&amp;SAHI1996])
+ 
+      Curtis, D.W., ISPM/Ulysses LAN Data Processing Software
+      Status, Dec. 1986.
+ 
+      Gold R.E., LAN Accelerator Calibration Test Plan, August
+      1991.
+ 
+      Guynn D.R.  Jr., LAN Experiment Data System Performance and
+      Interface Specification, June 1992.
+ 
+      Kohl, J.W., J.H.  Crawford, Calibration of Solar Polar Energy
+      Model LAN-2B Detector Head at GSFC Low Energy Accelerator,
+      July 1986.
+ 
+      Simnett, G.M., R.E.  Gold, The RTG Background in the LAN
+      Experiment and the Shielding Required to Control It, April
+      1980.
+ 
+      Tappin, S.J., HSIO-HiScale I/O Library, June 1991.
+ 
+      Ximenez de Ferran S., Ulysses Spin Reference Pulse, May
+      1985.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

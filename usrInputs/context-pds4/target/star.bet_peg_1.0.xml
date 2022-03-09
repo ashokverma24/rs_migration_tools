@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet_peg</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Scheat</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Beta Pegasi</alternate_title></Alias>
+      <Alias><alternate_title>Beta Peg</alternate_title></Alias>
+      <Alias><alternate_title>bet Peg</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>53 Peg</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 16483 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+27 2710</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 736306</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+27 4480</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J23038+2804A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+27 4480 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CTI 230310.5+280045</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 870</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 32135</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 14468</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00217906</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 217906</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 113881</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 113881</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 8775</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 22589+2732 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 23013+2748</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +30504</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 3574</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J2303+2804</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 16769</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J23034644+2804580</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 5071</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 55708</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5583</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5583.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 613</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 115095</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 3017</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 90981</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 43781</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30870</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 29573</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 2243-1831-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 21419</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 26800</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 1180-00701793</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J23038+2805A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 20229</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 27 13858</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Scheat</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 23 hours 03 minutes 46.45746 seconds
+Declination, ICRS coord, ep=J2000: +28 degrees 04 minutes 58.0336 seconds
+    </description>
+  </Target>
+</Product_Context>

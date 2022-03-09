@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" 
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:individual.greeley_35mm_slides</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>The Ronald Greeley 35mm Slide Collection</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-05-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:asurgcps_slides_jovian_system:document_users_guide:asurgcps_slides_jovian_system_users_guide</lid_reference>
+            <reference_type>investigation_to_document</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Investigation>
+        <name>The Ronald Greeley 35mm Slide Collection</name>
+        <type>Individual Investigation</type>        
+        <start_date>1968</start_date>
+        <stop_date>2005</stop_date>
+        <description>
+            The Ronald Greeley 35mm Slide Collection consists of 14,435 color and grayscale slides that include images of planetary bodies (Moon, 
+            planets, asteroids, and comets), planetary missions (e.g., Voyager, Galileo, Viking), planetary analog sites on Earth, and presentation 
+            materials for research results presented at national conferences. The slides were produced by Dr. Ronald Greeley during his tenure as 
+            a research scientist in the late 1960s while at working at NASA Ames, through to the early 2000s when he was a Regents Professor at 
+            Arizona State University. The slides were digitized to preserve the research materials of Dr. Ronald Greeley, who played a critical 
+            role in the planetary missions to the planets of the inner and outer Solar System. 
+            
+            The slides were professionally scanned at high resolution (4000 dpi) and organized into document bundles by subject: aeolian and 
+            volcanic Earth analog sites, wind tunnel laboratory experiments, general space science, and by individual planetary bodies (e.g., Moon, 
+            Mars) and planetary systems (e.g., Jovian System). In addition to the digital products, metadata for each slide (where information is 
+            available) is included in the Collection.  The entire slide collection is hosted by the Planetary Data System and the Ronald Greeley 
+            Center for Planetary Studies at Arizona State University in order to make this historic slide collection to the greater planetary 
+            science community.
+        </description>
+    </Investigation>
+</Product_Context>

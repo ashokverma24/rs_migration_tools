@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.investigation.pds.type_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>type</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>type</name>
+        <version_id>1.10</version_id>
+        <class_name>Investigation</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.investigation.pds.type_1a00</local_identifier>
+        <steward_id>pds</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The type attribute classifies the investigation according to its scope.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <attribute_concept>Type</attribute_concept>
+        <Terminological_Entry>
+            <name>type</name>
+            <definition>The type attribute classifies the investigation according to its scope.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <conceptual_domain>Short_String</conceptual_domain>
+            <specified_unit_id>none</specified_unit_id>
+            <DD_Permissible_Value_Full>
+                <value>Individual Investigation</value>
+                <value_meaning>A set of experiments and/or observations with a clearly defined purpose that uses existing facilities and is under the direction of a single individual. For example, a series of related laboratory experiments/observations conducted by a small university team and funded through a single proposal could be an Individual Investigation. Library research by one person on previously published results to distill common conclusions could also be an Individual Investigation.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Mission</value>
+                <value_meaning>A set of experiments and/or observations with a clearly defined purpose that occupies the designated resources for all (or at least a significant fraction) of the available time. A mission is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose. For example: (1) the NASA Voyager mission launched two spacecraft to Jupiter and Saturn; (2) the Deep Impact (DI) mission launched a spacecraft, part of which impacted the comet Tempel 2; and (3) the EPOXI mission redefined the objectives of the surviving DI hardware for further exploration of the solar system.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Observing Campaign</value>
+                <value_meaning>A set of experiments and/or observations with a clearly defined purpose that uses (primarily) existing facilities, but not exclusively. After (and possibly during) the campaign other investigations are carried out using the same facilities. For example, the International Halley Watch mobilized observatories around the world for collection of data during the most recent apparition of Comet Halley. The Shoemaker-Levy-9 (SL9) campaign used both Earth-based and spacecraft instruments to monitor the SL9 impact on Jupiter.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Other Investigation</value>
+                <value_meaning>Any other set of experiments and/or observations with a unifying theme.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

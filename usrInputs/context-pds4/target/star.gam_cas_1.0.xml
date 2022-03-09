@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.gam_cas</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Gamma Cassiopeiae</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Tsih</alternate_title></Alias>
+      <Alias><alternate_title>27 Cassiopeiae</alternate_title></Alias>
+      <Alias><alternate_title>Gamma Cas</alternate_title></Alias>
+      <Alias><alternate_title>gam Cas</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>27 Cas</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BU 1028A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BU 499A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>3A 0053+604</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 782 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+60 106</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 6407</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AT 0037+611</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+59 144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BSD 8-901</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J00567+6043A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+59 144 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EM* MWC 9</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1ES 0053+60.4</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J0056+60.7</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 32</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 1117</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 526</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00005394</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1H 0053+604</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 5394</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 4427</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 4427</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 264</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>INTREF 57</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 00536+6026</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +60031</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 439</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LS I +60 133</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1M 0050+592</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1M 0050+60</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J00564251+6043002</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MCW 46</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 187</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PBC J0056.5+6043</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 185</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 185.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 23</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMSC 00507+6010A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 12597</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 133</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J005642.0+604300</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2S 0053+604</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 11482</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 1444</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SWIFT J0056.7+6043</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SWIFT J0056.5+6042</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 521</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 4017-2319-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>4U 0054+60</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 833</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100005394 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>VDB 5</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J00567+6043A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 791</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1XRS 00537+604</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 0050+60</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 426558460877467776</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Gamma Cassiopeiae</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 00 hours 56 minutes 42.5317 seconds
+Declination, ICRS coord, ep=J2000: +60 degrees 43 minutes 00.265 seconds
+    </description>
+  </Target>
+</Product_Context>

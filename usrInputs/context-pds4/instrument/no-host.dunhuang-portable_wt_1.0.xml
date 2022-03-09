@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:no-host.dunhuang-portable_wt</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Dunhuang Portable Wind Tunnel</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-02-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                 Initial creation of the context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <External_Reference>
+            <reference_text>http://english.ucas.ac.cn/index.php/academics/cas-institutes/583-lanzhou-branch/2815-lanzhoubranch001</reference_text>
+            <description>Dunhuang Gobi Desert Ecology and Environment Research Station of the Cold and Arid Regions, Environmental and 
+            Engineering Research Institute of the Chinese Academy of Sciences.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1111/sed.12171</doi>
+            <reference_text>Han, Q., J.Qu, Z. Dong, K. Zhang, and R. Zu, (2015), Air density effects on aeolian sand movement: Implications
+            for sediment transport and sand control in regions with extreme altitudes or temperatures, Sedimentology, 62(4), 1024-1038.</reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Dunhuang Portable Wind Tunnel</name>
+        <type>Atmospheric Sciences</type>
+        <description>
+            Portable, blower-style, open circulation wind tunnel powered by gasoline. Overall length is ~12.9 m with a working section of 8.4 m
+            length by 0.6 m width by 0.6 m height.
+       </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mischa.vega2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>FLUXGATE MAGNETOMETER for VEGA2</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vega2::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reinhard, R and B. Battrick (eds), &apos;Space Missions to Halley&apos;s Comet&apos;, European
+                   Space Agency ESA SP-1066, ESA Pub Div, Moordwijk, Netherlands, 1986.
+            </reference_text>
+            <description>reference.ESA-SP1066</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>FLUXGATE MAGNETOMETER</name>
+        <type>Magnetometer</type> <!--RChen/EN was Fluxgate Sensor-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Scientific Overview
+  ===================
+    The magnetometer (MISCHA) The prime objective of the magnetometer
+    experiment is to determine the role of the magnetic field in the
+    interaction between the solar wind and the comet and to identify
+    the characteristic boundaries of the cometary environment (bow
+    shock, contact surface, etc.).
+ 
+  Instrument Overview
+  ===================
+    The sensors of the MISCHA magnetometer are mounted on a boom. A
+    single-axis sensor and a triaxial sensor are mounted 1 and 2 m,
+    respectively, from the edge of the solar panel. The advantage of
+    this dual-sensor fluxgate system is the possibility to determine
+    the spacecraft&apos;s stray magnetic field.
+ 
+    Magnetometer characteristics
+    ----------------------------
+      Dynamic range                 +/- 100 nT
+      Resolution                    0.05 nT (12 bit)
+      Noise level                   0.01 nT Hz**-1/2
+      Zero drift                    +/- nT/month
+      Bandwidth                     10 Hz
+      Time resolution               10 vector/s
+      (high-speed telemetry)        1 spectrum/25 s
+      Number of frequency points    128/spectrum
+ 
+    Detectors
+    ---------
+      MASS:
+        triaxial sensor ... 500 g
+        one-axis sensor ... 200 g
+        electronic box ... 2200 g
+ 
+    Operational Consdierations
+    --------------------------
+      MODE TRASSA 1
+        TRASSA 1 (memory mode)
+        this is the cruise phase mode;
+        1 vector/2.5 min and 1 averaged spectrum/80 min
+ 
+      MODE TRASSA 2
+        TRASSA 2 (memory mode)
+        2 days until 2 hours before Halley encounter and during
+        selected cruise phase intervals (e.g. Venus tail crossing and
+        ICE Giacobini-Zinner encounter);
+        1 vector/min and 1 averaged spectrum/5 min
+ 
+      MODE HIGH SPEED
+        HIGH SPEED (memory mode)
+        10 vector/min and 1 averaged spectrum/30 sec
+ 
+      MODE Direct Transmission
+        DT-65 (direct transmission)
+        2 hours before until 2 hours after Halley encounter 10
+        vectors/sec and 1 spectrum/25 sec
+
+        </description>
+    </Instrument>
+</Product_Context>

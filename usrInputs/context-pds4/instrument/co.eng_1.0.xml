@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"         schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.sch"  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds ="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=
+    "http://pds.nasa.gov/pds4/pds/v1    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd
+     http://pds.nasa.gov/pds4/ctli/v1   https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:eng.co</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Cassini Orbiter Spacecraft Sensors</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-15</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    The initial version of this context product, which describes the aggregation of 
+                    spacecraft sensors on the Cassini Orbiter.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.co</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                Cassini/Huygens: Heavily Instrumented Flight Systems Approaching Saturn and Titan by Dave Doody.
+                https://web.archive.org/web/20110807131142/http://trs-new.jpl.nasa.gov/dspace/bitstream/2014/10563/1/02-2613.pdf
+            </reference_text>
+            <description>
+                A description of the Cassini and Huygens flight systems including capabilities, launch, flight path, 
+                mission science objectives, and instruments. The document does not describe individual engineering
+                telemetry channels, but it provides a readable overview of the subsystems and their operation.
+                Authored by Dave Doody when he was flight operations lead with Cassini’s Mission Support and Service 
+                Office at NASA's Jet Propulsion Laboratory.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                Cassini Mission Plan, Revision P, JPL Document D-5564, Jet Propulsion Laboratory, Pasadena, CA, 2008.
+            </reference_text>
+            <description>
+                The Cassini Prime Mission Plan As Flown.
+            </description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>Cassini Engineering</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Spacecraft Sensor</ctli:type>
+                <ctli:subtype>The aggregation of all spacecraft sensors on the Cassini Orbiter</ctli:subtype>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>
+            The aggregation of spacecraft sensors on the Cassini Orbiter.
+        </description>
+    </Instrument>
+    
+</Product_Context>

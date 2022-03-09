@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:laboratory.kuleuven-leg</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Laboratory of Experimental Geomorphology, Catholic University of Leuven, Belgium</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-02-15</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                 Initial creation of the context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:kuleuven-leg.logie_wt</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>Logie, M., (1981), Wind tunnel experiments on dune sands, Earth Surface Processes and Landforms, Vol.6, 365-374. </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Facility>
+        <name>Laboratory of Experimental Geomorphology, Catholic University of Leuven, Belgium</name>
+        <type>Laboratory</type>
+        <description>
+            Laboratory of Experimental Geomorpholgy located (before 1981-2003) at Catholic University of Leuven (Katholieke Universiteit - KU Leuven), 
+            Belgium. Most likely subsumed by the Department of Earth and Environmental Sciences, Geography and Tourism Division. 
+        </description>
+    </Facility>
+</Product_Context>

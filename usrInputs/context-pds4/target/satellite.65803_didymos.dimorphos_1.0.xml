@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:target:satellite.65803_didymos.dimorphos</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>(65803) Didymos I (Dimorphos)</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_title>Dimorphos</alternate_title>
+            </Alias>
+            <Alias>
+                <alternate_title>Didymos I</alternate_title>
+            </Alias>
+        </Alias_List>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-13</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Creation by A.C.Raugh using information downloaded from the 
+                    Minor Planet Center Annex Asteroid Name/Citation search, 2021-08-13.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:asteroid.65803_didymos</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                (65803) Didymos is the primary of Dimorphos.
+            </comment>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Target>
+        <name>(65803) Didymos I (Dimorphos)</name>
+        <type>Asteroid</type>
+        <description>
+            Dimorphos is the natural satellite of (65803) Didymos, designated (65803) Didymos I.
+            Didymos is a rapidly rotating Amor asteroid. The orbital period of Dimorphos is, as
+            of this writing, 11.9 hours. The Didymos system is the target of the Double Asteroid
+            Redirection Test (DART) mission.
+        </description>
+    </Target>
+</Product_Context>

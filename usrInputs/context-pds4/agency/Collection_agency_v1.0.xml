@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:agency</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>urn:nasa:pds:context:agency:* context products</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Collection</product_class> 
+        <Citation_Information>
+            <author_list>PDS Data Design Working Group (DDWG)</author_list>
+            <editor_list>PDS Change Control Board (CCB)</editor_list>
+            <publication_year>2021</publication_year>
+            <keyword>PDS; PDS4; Context products</keyword>
+            <description>The PDS4 Context Products for Agencies, e.g. NASA, ESA</description>
+        </Citation_Information>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-01-13</modification_date>
+                <version_id>1.0</version_id>
+                <description>This is the initial version of the Collection product.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context</lid_reference>
+            <reference_type>collection_to_bundle</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+       
+    <Collection>
+        <collection_type>Context</collection_type>
+    </Collection>
+      
+    <File_Area_Inventory>
+        <File>
+            <file_name>Collection_agency_inventory_v1.0.tab</file_name>
+            <local_identifier>inventory_collection.agency</local_identifier>
+            <creation_date_time>2021-01-13T15:57:02.4067Z</creation_date_time>
+            <file_size unit="byte">95</file_size>
+            <records>2</records>
+            <md5_checksum>6d6f6c19baf1da349a5458d576ed526f</md5_checksum>
+        </File>
+        <Inventory>
+            <local_identifier>collection_inventory.agency</local_identifier>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>2</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            
+            <Record_Delimited>
+                <fields>2</fields>
+                <groups>0</groups>
+                <maximum_record_length unit="byte">259</maximum_record_length>
+                
+                <Field_Delimited>
+                    <name>Member Status</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <maximum_field_length unit="byte">1</maximum_field_length>
+                    <description>
+                        This columns specifies the Member Status of the files that 
+                        comprise the collection.  
+                    </description>
+                </Field_Delimited>                
+                <Field_Delimited>
+                    <name>LIDVID_LID</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_LIDVID_LID</data_type>
+                    <maximum_field_length unit="byte">255</maximum_field_length>
+                    <description>
+                        This columns specifies the LIDVID of the files that 
+                        comprise the collection.  
+                    </description>
+                </Field_Delimited>
+            </Record_Delimited>
+            
+            <reference_type>inventory_has_member_product</reference_type>
+            
+        </Inventory>
+    </File_Area_Inventory>
+</Product_Collection>

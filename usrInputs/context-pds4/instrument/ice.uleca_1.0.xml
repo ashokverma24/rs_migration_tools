@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ice.uleca</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ULTRA LOW ENERGY CHARGE ANALYZER for ICE</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:uleca.ice</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ice</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Hovestadt, D., G. Gloeckler, C.Y. Fan, L.A. Fisk, F.M. Ipavich, B.
+                   Klecker, J.J. O&apos;Gallagher, M. Scholer, H. Arbinger, J. Cain, H. Hofner, E.
+                   Kunneth, P. Laeverenz, and E. Tums, The Nuclear and Ionic Charge
+                   Distribution Particle Experiment on the ISEE-1 and ISEE-C Spacecraft, IEEE
+                   Trans. Geosci. Electron., GE-16, 166-175, 1987.
+            </reference_text>
+            <description>reference.HOVESTADTETAL1978</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ULTRA LOW ENERGY CHARGE ANALYZER</name>
+        <type>Particle Detector</type> <!--RChen/EN was Electrostatic Analyzer. No obvious choice. TBD in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+Instrument Overview
+===================
+ The ISEE-1 and ISEE-C instruments have been designed to measure the
+ elemental abundances, charge state composition, energy spectra, and
+ angular distributions of energetic ions in the energy range 2
+ keV/charge to 80 MeV/nucleon and of electrons between 75 and 1300 keV.
+ By covering the energy range between solar wind and low-energy cosmic
+ rays the instrument will fill a gap in the knowledge especially of the
+ nuclear and ionic composition of solar, interplanetary, and magneto-
+ spheric accelerated and trapped particles.  The instrument consists of
+ three different sensor systems: ULECA is an electrostatic deflection
+ analyzer system with rectangular solid-state detectors as energy deter-
+ mining devices, its energy range is -3 to 560 keV/charge; the ULEWAT is
+ a double dE/dX versus E thin-window flow-through proportional
+ counter/solid-state detector telescope covering the energy range from
+ 0.2 to 80 MeV/nucleon (Fe); the ULEZEQ sensor consists of a com-
+ bination of an electrostatic deflection analyzer and a thin-window
+ dE/dX versus E system with a thin-window proportional counter and a
+ position-sensitive solid-state detector.  The energy range is 0.4
+ MeV/nucleon to 6 MeV/nucleon.    While the ULECA and the ULEWAT sensors
+ are designed mainly for interplanetary and outer magnetospheric
+ studies, the ULEZEQ sensor will also obtain composition data in the
+ trapped radiation zone. 65 rates and pulse-height data can be
+ obtained with sectoring in up to 16 sectors.
+ 
+ 
+ Scientific Objectives
+ =====================
+ The low-energy portion of interplanetary and magnetospheric particles
+ (energies 1 keV/nucleon to several hundred keV/nucleon) has been
+ virtually unexplored to date.  Measure. ments in this region, however,
+ are expected to provide sensitive probes of solar, interplanetary, and
+ magnetospheric phenomena.
+ 
+ A. SolarandlnterplanetaryPhenomena
+ 
+ 1) Solar Flare Acceleration Mechanism: The mechanism by which ions are
+ accelerated in flares is not presently known. Important information on
+ this mechanism, however, is avafl. able from studies of the energy
+ spectra of the particles which the mechanism produces.  This is
+ particularly true in the case of heavier ions at low energies.  These
+ particles are not expected to be fully stripped of their electrons.
+ Thus in the same energy range different ions cover different rigidity
+ in ter-vals.  By examining, then, the energy spectra of many ions at
+ low energies, and also electrons, we will place stringent constraints
+ on the rigidity dependence of the flare acceleration process.
+ 
+ 2) The Location of the Flare Acceleration Region: Low-energy ions also
+ provide in their charge states infon-nation on the region in the corona
+ where they are accelerated.  The charge of solar particles is frozen-in
+ as the particles leave the corona; the plasma density in interplanetary
+ space is too low to cause additional ionization or recombination.  Thus
+ the charge composition, particularly of very low energy ions, can
+ reflect the temperature of coronal electrons in the region where the
+ particles are accelerated, propagate, or are stored, For example, if
+ the ions are accelerated in the flare site itself, we should expect a
+ high degree of ionization, appropriate to the high temperature in the
+ flare.  In contrast, if the particles are accelerated in the
+ surrounding corona by, e.g., plasma disturbances emitted from the
+ flare, we should expect a charge composition more similar to that of
+ the solar wind.
+ 
+ 3) Coronal Propagation and Storage: Low-energy ions also provide some
+ of the most detailed information on coronal propagation mechanisms, and
+ coronal storage.  Measurements in the broad rigidity range covered by
+ partially stripped ions at low energies, and also by low-energy
+ electrons, will provide stringent tests of the current idea that
+ coronal propagation is rigidity-independent.  Further, ionization
+ loss which is a consequence of extended coronal storage is most evident
+ at low energies, where it should produce in the differential energy
+ spectra a systematic flattening which depends on the charge squared to
+ mass ratio.  From the flattening observed in the spectra of different
+ ions, it should be possible to determine the time during which the
+ particles are stored and/or the coronal density and thus the location
+ of the region where the storage occurs.
+ 
+ 4) Compositional Variations in Solar Flares: The composition of
+ energetic flare particles is known to vary widely from flare to flare,
+ particularly at low energies.  The cause of this variability is not
+ presently known.  It may result from the fact that heavier ions, which
+ may not be fully stripped of their electrons, can exhibit different
+ rigidities in different flares, and thus will respond differently to
+ the flare acceleration process.  It may be also that the variations
+ reflect compositional anomalies in the coronal material from which
+ the particles are accelerated.  Our investigation, which can deter-
+ mine the charge states of low-energy ions, will probe the former
+ explanation in detail.  From these charge-state measurements, which
+ can indicate the coronal conditions where the particles are
+ accelerated, and from our general ability to observe flares in
+ considerable detail, we will also provide information on the latter
+ possibility.
+ 
+ Of particular interest in the study of compositional variations in
+ solar events are the so-called  3He-rich event, in which the 3He/4He
+ ratio can exceed unity. These flares are one of the more dramatic
+ examples of compositional anomalies since the coronal abundance is
+ 3He/4He &lt;  10**-3 . These flares also have the peculiarity that there
+ is no accompanying increase in deuterium and tritium, which are equal
+ byproducts of 3He in spallation reactions, and there is a general
+ enhancement in heavier elements, particularly in iron.  Our
+ investigation will extend the measurements of 3 He and heavier ions in
+ these flares to much lower energies than has been possible to date.
+ 
+ 5) Interplanetary Propagation: The current theory for energetic
+ particle interactions with the magnetic field in the solar wind is
+ inadequate in that it predicts more pitch-angle scattering than is
+ observed.  These differences are most pronounced, and thus most easily
+ studied at low energies (&lt; 1 MeV/nucleon). We will make a detailed
+ study of propagation at low energies by observing the anisotropies of
+ protons and helium throughout our energy range, as well as the time
+ profiles of different ion species and electrons.  The former
+ measurement is a sensitive indicator of the extent of the scattering;
+ both measurements provide information on its rigidity dependence.
+ 
+ 6) Interplanetary Acceleration: It appears from studies in recent years
+ that the majority of co-rotating particle streams are the result of
+ interplanetary acceleration, as opposed to of direct solar origin.  The
+ origin of the particles, however, is not presently known.  It may be
+ that the particles are accelerated out of the solar wind.  It is
+ possible also that the particles enter the solar wind as energetic
+ solar particles and receive here an additional acceleration.  Our
+ measurements of the spectra, anisotropies, and charge states of ions,
+ over an essentially continuous energy range from the solar wind to
+ high-energy particles, should provide stringent tests of these pos-
+ sible origins.   If these particles are accelerated out of the solar
+ wind, their charge states should be those of solar wind ions, and their
+ spectra a continuous extension of the solar wind distribution.
+ Particles which originate as more energetic solar particles, in
+ contrast, may be more highly ionized and may exhibit a behavior at
+ higher energies which is uncorrelated with that closer to solar wind
+ energies.
+ 
+ 7) The Anomalous Cosmic-Ray Component: From 1972 on, a component with
+ the anomalous composition of only helium, nitrogen, oxygen, and neon
+ has been observed in the cosmic-ray flux at energies 1-30 MeV/nucleon.
+ The origin of this component is presently being debated, although there
+ is mounting evidence that it results from interstellar neutral
+ particles which are swept into the heliosphere and ionized and
+ accelerated in the solar wind.  This component appears to be a feature
+ of solar minimum conditions.  Our observations over the next few years
+ will record the behavior of this component as solar activity increases
+ with the onset of the new solar cycle.
+ 
+ 8) Correlated Studies with Deep-Space Missions: Our investigation
+ will also provide measurements at earth for correlated studies of
+ galactic cosmic-ray modulation and solar flare propagation with deep-
+ space missions such as Pioneer and Voyager.
+ 
+ 
+Detectors
+=========
+ The ULECA (Utra Low Energy Charge Analyzer) sensor incorporates
+ techniques of electrostatic deflection and a total energy measurement
+ to provide the charge composition of ions in the energy range 2 to
+ 560 keV/charge.  ULECA is a design of the University of Maryland ECA
+ (Energy Charge Analyzer) instrument flown on IMP 7 and 8 satellites .
+ Low-energy ions pass through a multisht focusing collimator and enter
+ one of three deflection regions designed by L, M, and MP.  Seven
+ rectangular surface-barrier (Au-Si) solid-state detectors are placed at
+ fixed positions at the exit of the deflection regions, each defining
+ a given energy per charge window.  The output of each of these
+ detectors is pulse-height analyzed provided the solid-state
+ anticoincidence detectors are not triggered.  A residual background
+ (due to cosmic-ray produced secondaries) and the geometrical factor of
+ the collimator determine the minimum flux which can be measured by each
+ detector (see table below).  The majority of penetrating particles is
+ eliminated from analysis by the solid-state anticoincidence detectors.
+ 
+                               TABLE
+               RATE CHANNEL CHARACTERISTICS ULECA SENSOR
+ 
+   Rate                            Readout
+Designation Particle Energy Range  Period Conversion Factor Minimum Flux
+   (N/S) 1   Type 2  (keV/charge)  (S) 3    CM**2-sr-keV   CM**2-sr-s-keV
+                                            ------------   --------------
+                                             charge**-l       charge**-l
+ 
+   Ll  (S)   &gt; 3       2.88-3.084     16         581              290
+                        8.68-9.29                191               95
+   L2  (S)  Q &gt; 1      8.14-9.384     16          94               47
+                        26.4-30.5                 28               14
+   Mll (N)  Q = 1       27.4-32.7      8          18.5           1520
+       (S)                            32                            5
+   M12 (N)  Q = 2       27.4-32.7      8          18.5              8
+       (S)                            32                            3
+ 
+   M13 (N)  Q &gt; 2       27.4-32.7     32          18.5             61
+       (S)                            64                           15
+   M21 (N)  Q = 1        53-69         8           5.35            17
+       (S)                            64                            1.3
+   M22 (N)  Q = 2        53-69         8           5.35             6
+                                      32                            0.7
+   M23 (N)  Q &gt; 2        53-69        64           5.35             2.2
+   M31 (N)    = 1       103-140        8           2.52           298
+                                      32                            0.7
+   M32 (N)  Q = 2       103-140        8           2.52             0.3
+   M33 (N)  Q &gt; 2       103-140       32           2.52             0.2
+   MP12(N)        1,2   105-560       64           0.33             3.5
+   MP3L           3     105-560       64           0.33             0.2
+ 
+   MPI L      = 1       105-560       32           0.33             3.3
+ 
+   MP2L     Q = 2       105-560       32           0.33             0.1
+ 
+       1 N = nonsectored; S sectored into 8-45 deg sectors in ecliptic
+             plane.
+       2 Q = charge state of ion.
+       3 At high bit rate divide period by 4.
+       4 L1, L2 energy range assumes medium voltage mode.
+ 
+ The major effect not included is the secondary electron background in
+ the solid-state detector.  This effect is caused by the interaction of
+ high-energy particles in the spacecraft. Our experience with similar
+ detector systems on IMP&apos;s 7 and 8 indicate that this will not be an
+ important effect for magnetospheric events.
+ 
+ In the L deflection region, a variable power supply steps the
+ deflection voltage in 32 logarithmic increments from 600 to 1550 V,
+ stepping once every 5 spin periods (16 s).  The voltage range may be
+ changed up or down by 50 percent via ground con-unand.  Two low-noise
+ (1 5-keV energy threshold) rectangular solid-state detectors Ll and L2
+ measure the energy and record the counting rate of deflected ions for
+ each voltage step.  The relative energy per charge windows delta E/E
+ are 0.07 and 0.15 (FWHM), and the energy ranges over which measurements
+ are made are 1.8 to 9.5 and 5.1 to 30.5 keV/charge for L1 and L2,
+ respectively.
+ 
+ In the M and MP deflection region, two high-voltage supplies are used
+ to provide deflection fields of 1.5 and 6.7 kV/cm, respectively.  At
+ the exit of the M section 3 rectangular solid-state detectors, Ml, M2,
+ and M3 measure the fluxes and anisotropies of protons, alpha&apos;s and Q &gt;
+ 4 ions in the energy range 25 to 140 keV/charge.  These detectors are
+ also pulse-height-analyzed for more detailed charge spectra. In
+ the MP section, a single position-sensitive rectangular Si detector is
+ used to determine the charge spectrum of ions (H to Fe) from 105 to 560
+ keV/charge.
+ 
+ 
+Measured Parameters
+===================
+ Each detector is monitored by one or more threshold discriminators
+ whose outputs are passed through a system of coincidence-
+ anticoincidence logic which generates 65 different counting rates
+ corresponding to a variety of detector combinations, particle energy
+ windows, etc.  The number of accumulated counts for any particular rate
+ is stored in one 24-bit register in a 256 register memory. (There are
+ two such memories, identical in all respects, for redundancy. For the
+ most part only one memory is used with the second remaining as a
+ backup, with data storage able to be switched between the memories by
+ command.) Individual rates are read out at predetermined intervals and
+ logarithmically compressed to either 10 or 12 bits and inserted into
+ the telemetry stream.  Some rates are accumulated continuously over all
+ directions during the spacecraft spin (omnidirectional rates), others
+ are sorted into 8 directional angular sectors so as to measure flux
+ anisotropies (sectored rates).  Of these rates, the BASIC rates are of
+ special importance.  Their logic requirements are identical to the
+ ones required to trigger individual pulse-height analyzed (PHA) events.
+ Absolute fluxes can therefore, be computed from PHA events.  Due to the
+ large number of rate channels generated, the telemetry of individual
+ rates involves a rather complicated submultiplexing scheme, which
+ cannot be described here.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

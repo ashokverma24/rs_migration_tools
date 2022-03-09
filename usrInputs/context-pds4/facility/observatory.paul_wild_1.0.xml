@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" 
+        schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+        
+      <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.paul_wild</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Paul Wild Observatory</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-06-10</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    An original file written for use with Cassini radio science archive bundles
+                    during migration from PDS version 3 (PDS3) to PDS4.  
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:paul_wild.dss47_2008</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                A description of the Australia Telescope Compact Array, an array of six 22-m 
+                antennas used for collection of Cassini radio science data in 2008. 
+            </comment>
+        </Internal_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                https://www.narrabri.atnf.csiro.au
+            </reference_text>
+            <description>
+                The ATCA web site.
+            </description>
+        </External_Reference>
+        
+    </Reference_List>
+    
+    <Facility>
+        <name>Paul Wild Observatory</name>
+        <type>Observatory</type>
+        <address>
+            1828 Yarrie Lake Rd
+            Narrabri NSW 2390
+            Australia
+        </address>
+        <country>Australia</country>
+        <description>
+            The Paul Wild Observatory is located about 25 km west of Narrabri, New South Wales,
+            and about 550 km northwest of Sydney, Australia. It is the site of the Australia 
+            Telescope Compact Array (ATCA).  The observatory also hosts the Culgoora Solar 
+            Observatry, a node of the Birmingham Solar Oscillations Network, and an element 
+            of the Magnetic Data Acquisition System global magnetometer array.  The site is
+            named for the Australian radio astronomer, Paul Wild.
+        </description>
+    </Facility>
+    
+</Product_Context>

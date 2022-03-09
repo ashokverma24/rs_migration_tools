@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:target:calibrator.ppr_rct</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PPR RCT</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Target>
+        <name>PPR RCT</name>
+        <type>Calibrator</type> <!--RChen/EN was Calibration-->
+
+        <description>
+ 
+    Description
+    ===========
+      The PPR Radiometric Calibration Target (RCT) is mounted on the
+      spacecraft so that it is viewed by the PPR when the Galileo Orbiter
+      scan platform is pointed near the zero cone angle direction.
+      Intended primarily for calibration of the PPR thermal radiometry
+      bands, the RCT has a truncated conical interior with a center
+      cylindrical section.  The interior of the target is a smooth,
+      specularly reflecting, black-painted surface that with the truncated
+      conical geometry achieves a thermal emittance of 0.998 when viewed
+      on axis by the PPR.  Note that the end of the central cylindrical
+      portion of the target is not viewed by the PPR since that area is
+      within the central obscuration from the secondary mirror of the PPR
+      telescope.
+ 
+      The RCT is designed and mounted such that simply through passive
+      thermal equilibrium, it will have a temperature in the range, 125 K
+      to 140 K, during the Jupiter Phase of the Galileo Mission.  Actual
+      temperature of the RCT is monitored by two platinum resistance
+      thermometers (PRTs) that are calibrated to an accuracy of 0.2 K.
+      These PRTs are connected to the PPR so that their readouts can be
+      included in the PPR science data stream.
+ 
+      Although the RCT is designed primarily to provide a target that
+      closely approximates a blackbody source at its monitored temperature
+      in order to perform inflight calibration of the PPR thermal
+      radiometry bands, it includes a small tungsten-filament lamp mounted
+      in the RCT interior so that it can be used as a radiometric and
+      polarimetric reference standard for the shortwave PPR bands as
+      well.  When this lamp is commanded on for non-radiometry band
+      calibration, its output passes through two elliptically shaped,
+      plane-parallel sapphire plates mounted such that the outer surface
+      of the stack approximately conforms to the inner conical surface of
+      the RCT.  This configuration provides shortwave band calibration
+      while having negligible effect on the thermal emittance of the RCT.
+        </description>
+    </Target>
+</Product_Context>

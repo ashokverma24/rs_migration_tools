@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:had.gp</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>HELIUM ABUNDANCE DETECTOR for GP</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gp::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Von Zahn, U. and D.M. Hunten, The Jupiter Helium Interferometer Experiment on
+                   the Galileo Entry Probe, Space Sci. Rev. 60, pp. 263-281, 1992.
+            </reference_text>
+            <description>reference.VONZAHN-HUNTEN1992</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>HELIUM ABUNDANCE DETECTOR</name>
+        <type>Spectrometer</type> <!--RChen/EN was Mass Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The NASA Galileo mission to the planet Jupiter provides us with
+    the first opportunity to measure the He/H2 abundance ratio inside
+    a heavenly body and with high accuracy.  To this end, the Galileo
+    entry probe carries a miniaturized interferometer which is to
+    perform an accurate measurement of the refractive index of the
+    Jovian atmosphere, after removal of NH3, H2O, and CH4, in the
+    pressure range from 2.5 to 10 bar.  From these data the helium
+    mole fraction (about 0.10) can be calculated with an estimated
+    accuracy of +- 0.0015.  The instrument is called the Helium
+    Abundance Detector, or HAD for short.  It has a mass of 1.4 kg
+    and an electrical power consumption of less than 1 W.  Before it
+    can perform its measurements within the Jovian atmosphere, the
+    HAD instrument has to survive an in-space-storage period of more
+    than 6 years, a radiation dose of 75 krad and a deceleration
+    during entry into the Jovian atmosphere of approximately 300 g.
+ 
+    The Galileo Helium Abundance Detector uses a two-arm,
+    double-pathlength interferometer or Jamin-Mascart interferometer.
+    This type of interferometer allows for a particularly compact and
+    simple design.  The light source is a light emitting diode (LED)
+    operating at a wavelength of 900 nm.  An interference filter with
+    a 15 nm passband aids in producing near-monochromatic light.  A
+    Jamin plate produces two parallel and coherent light beams.  Four
+    cells, each of length l = 100 mm, house the Jovian gas and the
+    reference gas.  Additional optical elements are the collimator,
+    the inversion prism, and the objective.  The inversion prim is
+    very slightly tilted about an axis parallel to the incoming light
+    beams.  This feature, in combination with the objective produces
+    a well-defined interference pattern of consecutive equidistant
+    bright and dark fringes at a linear array of nine photodetectors.
+    This pattern does not change if both cells are filled with gas
+    mixtures having the same refractive index.  However, any
+    differences between the refractive indices of the Jovian and the
+    reference gas causes a continuous shifting of the pattern with
+    increasing pressure (that is, as the entry probe penetrates
+    deeper into the Jovian atmosphere).  The detector allows
+    measurement of the position and motion of the interference
+    fringes in multiples of 1/8 of the fringe separation.
+ 
+    The instrument carries a simple optical test device which allows
+    a measurement of the contrast of the interference fringes and a
+    verification of the operation of the fringe counter during
+    Earth-based tests and the interplanetary cruise of the Galileo
+    spacecraft.  It consists of a plane-parallel glass plate mounted
+    between the objective and the detector array.  By telemetry
+    command this plate can be slowly tilted up to about 30 degrees
+    about an axis parallel to the interference fringes at the
+    detector.  This causes a lateral shift of the interference
+    pattern across the detector array.
+ 
+    After entering the Instrument, the Jovian gas is passed through a
+    two-stage chemical absorber to be scrubbed first of traces of NH3
+    and H2O and then of CH4.  In addition, immediately before
+    entering the gas cells the Jovian and the reference gases are
+    each passed through heat exchangers made of stainless steel wool
+    to fully accommodate the gas temperatures to that of the
+    surrounding metal structure.
+ 
+    The reference gas consists of a mixture of argon and neon having
+    the same refractive index as a mixture of 11.1 percent He and
+    88.9 percent H2.  The reference gas is carried within the
+    instrument in a storage volume of about 20 cm^3 at a pressure of
+    25 bar.  During the descent into the Jovian atmosphere the
+    reference gas is released into its interferometer cells by means
+    of a membrane valve.  It keeps the differential pressure between
+    the Jovian gas cell and the reference gas cell near 75 mbar.  The
+    latter value is nearly independent of the total pressure because
+    opening of the valve is largely determined by the pressure
+    difference across the membrane (and the elastic constant of the
+    membrane).  This pressure difference is measured by a pressure
+    sensor within a few millibar to fully account for the influence
+    of this pressure differential on the observed fringe motion.
+ 
+    During launch and cruise of the Galileo spacecraft towards
+    Jupiter the entrance orifice of the instrument for Jovian gas is
+    closed by a thin metal diaphragm.  This diaphragm is designed to
+    burst upon reaching an outside pressure of 2.5 bar.
+    Subsequently, the ambient pressure actuates a needle device which
+    pinches a hole in a second diaphragm which previously had closed
+    off the reference gas in its storage volume.  Both gases are then
+    passed into the interferometer through capillaries which limit
+    the initial rate of pressure increase inside the interferometer
+    cells to 50 mbar s^-1.  Measurements are to continue until the
+    reference gas is expanded to the local ambient pressure which
+    should occur near 12 bar ambient pressure.  Recent calculations
+    of the descent profile of the entry probe predict that it will
+    take the entry probe about 28 min to descend from 2.5 to 12 bar
+    ambient pressure.  The fringe counter measures the motion of the
+    interference pattern starting from vacuum conditions through the
+    &apos;in-rush&apos; period near 2.5 bar ambient pressure and up to 12 bar.
+ 
+    The structure carrying the optical elements of the
+    interferometer, the gas flow elements, the storage volume for the
+    reference gas, 3 pressure sensors, and 4 temperature sensors is
+    machined from beryllium.  This material was chosen for its high
+    mechanical rigidity, low specific mass, and good thermal
+    conductivity.
+ 
+    To save energy, the LED is powered only for 0.5 ms at 64 Hz.
+    Also, the fringe position is measured 64 times per second which
+    allows the fringe counter to follow the fringe motions for
+    pressure surges of up to 750 mbar s^-1.  The average power
+    consumption of the HAD instrument is 0.9 W.
+ 
+    One telemetry data frame of the HAD instrument consists of 256
+    bits and is transmitted every 64 s.  It contains the content of
+    the fringe counter, the readings from 3 precision pressure
+    sensors, 4 precision temperature sensors, a number of
+    housekeeping channels and the analog signal of one of the
+    photodetectors.  The latter should enable us to obtain a
+    reasonable result from the HAD experiment even if the logic of
+    the fringe counter fails.
+ 
+                       Parameters of the helium interferometer
+ 
+----------------------------------------------------------------------
+Length l of individual gas cell               100 mm
+ 
+Pathlength L of light beams in gas cells      200 mm
+ 
+Wavelength lambda                             900 nm
+ 
+Range of Jovian pressure p_j                  up to 12 bar
+ 
+Reference gas                                 27.64 percent Ar, rest Ne
+ 
+Interferometer structure                      beryllium
+ 
+Mass of instrument                            1.4 kg
+ 
+Internal measuring speed                      64 fringe positions per s
+ 
+Telemetry data rate                           1 sample per 64 s
+                                              (= 4 bit per s)
+ 
+Power consumption                             0.9 W
+ 
+Sensitivity Delta m = 1/8 corresponds to      Delta q_He = 0.0006
+ 
+Accuracy                                      delta q_He = +- 0.0015
+----------------------------------------------------------------------
+ 
+ 
+  Principal Investigator
+  ======================
+    The Principal Investigators for the HAD instrument were Ulf Von
+    Zahn and Donald Hunten.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The foremost scientific aim of the HAD experiment is to obtain an
+    accurate measurement of the He abundance in the Jovian
+    atmosphere.  This datum will more accurately define the small
+    difference between the helium mass fractions of Jupiter and the
+    Sun and the large differences in the He mass fractions among the
+    atmospheres of the giant planets.  Beyond that, the helium mass
+    fraction in the Jovian atmosphere represents an important lower
+    boundary for the helium abundance in the pre-solar nebula.  As
+    such, it also impacts on theories about the origin of the solar
+    system as a whole.
+ 
+ 
+  Calibration
+  ===========
+    The HAD instrument carries 4 precision thermistors TS, TR, TC,
+    and TF for temperature measurements in the range from -25 degrees
+    C to +40 degrees C.  With the help of the following electronics
+    the read-out from the sensors is made nearly linear between -10
+    degrees C and +15 degrees C, the range in which the telemetry
+    resolution is 0.2 degrees C (except for TF which measures the IR
+    filter temperature with a resolution of 0.8 degrees C).  The
+    absolute calibration of all four sensors is performed jointly to
+    an accuracy of +-0.5 degrees C.  During the first checkout of the
+    HAD instrument on its cruise towards Jupiter each of the TS, TR,
+    and TC sensors read a temperature within the range of +7.20
+    degrees C +-0.12 degrees C.  The spread of values is fully
+    accounted for by the telemetry resolution.
+ 
+    The sensors PS and PR measure the pressures in the gas cells in
+    the range from 0 to 20 bar, while the sensor PD has 400 mbar full
+    range.  The absolute sensitivity of each sensor was calibrated
+    against a rotating piston gage to within 0.1 percent of its
+    reading, as was the temperature dependence of these
+    sensitivities.  It turned out that the temperature dependencies
+    of the PS and PR sensors are negligible for our experiment.  The
+    temperature dependence of the PD sensor, however, needs to be
+    taken into account in deriving the helium mole fraction.  At an
+    indicated pressure of 100 mbar it amounts to change of about 3
+    mbar in the temperature range from -30 degrees C to +35 degrees
+    C.  Accounting for this temperature dependence, the
+    reproducibility of the pressure readings are within 1 mbar
+    throughout the expected operating range of the instrument.
+ 
+    The spectral intensity distribution of the LED/filter combination
+    was measured and the temperature shift of its centroid wavelength
+    determined.  The latter is
+ 
+         lambda (T) = (900.5 + 0.041 T) nm ,
+ 
+    with T in degrees C.  The temperature of the IR filter is
+    measured by the sensor TF, but its value is obviously not
+    critical.
+ 
+    A large number of absorber materials were tested but unexpectedly
+    could not find one which absorbed methane efficiently, but did
+    not absorb hydrogen.  The effect of hydrogen absorption is not
+    large, but measurable with the accuracy of our instrument.  This
+    effect was measured for many types of absorbers in a large number
+    of descent simulation tests.  These were performed with the HAD
+    instrument and covered the temperature range from -15 degrees C
+    to +25 degrees C.  1.3 g of silica gel was finally selected as
+    absorber for water and ammonia (absorber No.  1) and 1.15 g of
+    activated carbon as absorber for methane (absorber No. 2).
+    Additional tests using this absorber combination quantified the
+    required correction Delta aq_He of the measured helium mole
+    fraction for gas mixtures having q_He in the range between 0.008
+    and 0.014.  For a true He mole fraction q_He = 0.11 the
+    correction is
+ 
+         Delta aq_He = 4.0 x 10^-3 - 7.9 x 10^-5 T_a +- 5 x 10^-4  ,
+ 
+    with T_a being the absorber temperature, again measured in
+    degrees C.  The quoted uncertainty of this correction term is to
+    be taken independent of temperature and helium mole fraction in
+    the tested ranges of those parameters.
+ 
+    Verification of the value of 1q_He, the ratio of refractive index
+    differences, has been discussed in [VONZAHN&amp;HUNTEN1992].  To this
+    end a great number of laboratory simulations of the descent of
+    the instrument into the Jovian atmosphere have been performed.
+    These consisted of mounting the HAD instrument in a high-pressure
+    chamber in which the chamber pressure, the temperature of the
+    mounting platform, and the temperature of the chamber gas could
+    be programmed to follow the values expected during the actual
+    Jovian descent.  Many of these tests were performed with all of
+    the burst diaphragms in place inside the HAD instrument, but in
+    the majority of the tests no burst diaphragms were installed.
+    For the development and calibration of HAD instruments, more than
+    500 such descent simulations were performed and evaluated.
+ 
+ 
+  Operational Considerations
+  ==========================
+ 
+                         HAD parameters and uncertainties
+ 
+----------------------------------------------------------------------
+Parameter                 Value             Uncertainty     Unit
+----------------------------------------------------------------------
+ 
+Center wavelength             900.5         +- 3            nm
+ 
+Length of gas cells       2 x 100.0         +- 0.05         mm
+ 
+(n_H2,0 - 1)  x 10^6          137.026       +- 0.04
+ 
+(n_He,0 - 1)  x 10^6           34.7196      +- 0.04
+ 
+(n_ref,0 - 1) x 10^6          125.682       +- 0.05
+ 
+Delta m                       &lt;= 6          +- 0.0625
+ 
+T_j,e                        ~280           +- 0.5          K
+ 
+Delta T_e                       0           +- 0.1          K
+ 
+P_j,e                         ~10000        +- 100          mbar
+ 
+Delta P_e                     ~75           +- 3            mbar
+----------------------------------------------------------------------
+ 
+ 
+Measured Parameters
+===================
+ 
+                        Definitions for abundance measures
+----------------------------------------------------------------------
+ 
+&apos;Mass fraction&apos;                                    N_Hm_H + 2N_H2m_H
+Hydrogen mass fraction  X is equivalent to  ---------------------------
+                                            SUM of (N_jm_j) for all j&apos;s
+ 
+                                                        N_Hem_He
+Helium mass fraction    Y is equivalent to  ---------------------------
+                                            SUM of (N_jm_j) for all j&apos;s
+ 
+Mass fraction of all other elements   Z is equivalent to 1 - X - Y
+ 
+with N_i the number density of particles of type i;
+m_i mass of a particle of type i
+ 
+&apos;Mole fraction&apos;                                         N_i
+(mixing ratio)          q_i is equivalent to   ------------------------
+                                               SUM of (N_j) for all j&apos;s
+ 
+with    SUM of (q_j) for all j&apos;s = 1
+ 
+                                                            N_He
+In particular at Jupiter  q_He is approximately   --------------------
+                                                        N_H2 + N_He
+ 
+&apos;Abundance ratio&apos; of                                        N_He
+ helium/hydrogen          R_He is equivalent to   --------------------
+                                                            N_H2
+ 
+----------------------------------------------------------------------
+
+        </description>
+    </Instrument>
+</Product_Context>

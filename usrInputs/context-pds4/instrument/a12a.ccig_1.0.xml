@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ccig.a12a</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Apollo 12 Cold Cathode Ion Gage (CCIG) Experiment</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>Apollo 12 CCIG</alternate_id>
+                <alternate_title>Apollo 12 Cold Cathode Ion Gage</alternate_title>
+            </Alias>
+            <Alias>
+                <alternate_id>Apollo 12 CCGE</alternate_id>
+                <alternate_title>Apollo 12 Cold Cathode Gage Experiment</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-10-04</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created by the NASA Space Science Data Coordinated Archive; cloned from
+                    urn:nasa:pds:context:instrument:ccig.a15a.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a12a::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:apollodoc:a12doc:a12a_ccig_overview</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 12 Preliminary Science Report, NASA SP-235, 227 pages, published by
+                   NASA, Washington D.C., 1970.
+            </reference_text>
+            <description>reference.APOLLO12A1970</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo Scientific Experiments Data Handbook, JSC-09166, NASA TMX-58131, August
+                   1974 (revised April 1976), in Johnson Space Center History Office.
+            </reference_text>
+            <description>reference.NASATMX581311976</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Johnson, F.S., D.E. Evans, and J.M Carroll, Cold Cathode Gage (Lunar Atmosphere
+                   Detector), Apollo 12 Preliminary Science Report, NASA SP-235, pages 93 to 97,
+                   Washington D.C., 1970.
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bates, J.R., W.W. Lauderdale, and H. Kernaghan, ALSEP termination report, NASA
+                   Reference Publication Series, NASA-RP-1036, 162 pages, published by NASA,
+                   Washington, D.C., 1979.
+            </reference_text>
+            <description>reference.BATESETAL1979</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>Apollo 12 Cold Cathode Ion Gage Experiment</name>
+        <type>Particle Detector</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+               Apollo 12 Cold Cathode Ion Gage (CCIG) experiment measured the density of neutral
+               particles to determine the amount of gas present at the lunar surface and to help
+               help constrain the source and loss mechanisms of the tenuous lunar atmosphere.
+        </description>
+    </Instrument>
+</Product_Context>

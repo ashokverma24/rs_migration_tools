@@ -1,0 +1,45 @@
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" 
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:investigation:other_investigation.astromat_data</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Astro Material Geochemical Data</title>
+    <information_model_version>1.16.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2021-10-04</modification_date>
+        <version_id>1.0</version_id>
+        <description>
+          Geochemical data acquired by laboratory studies of extraterrestrial materials either recovered on Earth (i.e., meteorites)
+          or brought to Earth via sample return missions. Initial creation conducted in conjunction with the archiving of initial data
+          provided by Kerstin Lehnert et al. via two PDART awards.
+          
+        </description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:astromat:data</lid_reference>
+      <reference_type>context_to_associate</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <doi>10.17189/1523010</doi>
+      <reference_text>Lehnert, Kerstin; Ji, Peng, An archive of laboratory data acquired on astromaterials samples.</reference_text>
+    </External_Reference>
+  </Reference_List>
+  <Investigation>
+    <type>Individual Investigation</type>
+    <start_date>2004-08-13</start_date>
+    <stop_date nilReason="unknown" xsi:nil="true"></stop_date>
+    <description>
+      Initially created in support of PDART efforts by Kerstin Lehnert et al., this investigation is designed to accumulate
+      geochemical data of astromaterials acquired via terrestrial laboratory analyses. Geochemical and geochronology analyses
+      of samples returned by space missions (e.g., HAYABUSA, Stardust, Apollo) are included, as are studies of materials recovered
+      through terrestrial exploration (e.g., observed falls, Antarctic Search for Meteorites expeditions). Future missions with a
+      sample return focus may also be included herein.
+    </description>
+  </Investigation>
+</Product_Context>

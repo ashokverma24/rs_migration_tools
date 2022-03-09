@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:esa:psa:context:instrument:rl.cosac</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Cometary Sampling and Composition Experiment for RL</title>
+    <information_model_version>1.16.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2021-06-15</modification_date>
+        <version_id>1.0</version_id>
+        <description>Migrated from PDS3 catalog file.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.rl</lid_reference>
+      <reference_type>instrument_to_instrument_host</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <doi>10.1007/s11214-006-9000-6</doi>
+      <reference_text>Goesmann F., et al., COSAC, The Cometary Sampling        
+        and Composition Experiment on Philae, Space Sci. Rev., 128(1-4),         
+        257-280, Feb. 2007.</reference_text>
+      <description>Reference to the instrument paper.</description>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>Cometary Sampling and Composition Experiment</name>
+    <Type_List_Area>
+      <ctli:Type_List>
+        <ctli:type>Mass Spectrometer</ctli:type>
+        <ctli:type>Gas Analyzer</ctli:type>
+      </ctli:Type_List>
+    </Type_List_Area>
+    <naif_instrument_id>not applicable</naif_instrument_id>
+    <serial_number>not applicable</serial_number>
+    <description>                                               
+                                                                      
+        Instrument Overview                                             
+        ===================                                             
+        The Cometary Sampling and Composition Experiment (COSAC) is part
+        of the Rosetta instrument payload.  It is one of the evolved gas
+        analysers of the Lander space-craft Philae. It provides data on 
+        the volatile fraction and its nature of the nucleus of comet    
+        67P/Churyumov-Gerasimenko.                                      
+                                                                        
+                                                                        
+        Scientific Objectives                                           
+        =====================                                           
+        The goal of COSAC is the identification of volatile molecular   
+        species in the cometary nucleus.                                
+                                                                        
+                                                                        
+        Calibration                                                     
+        ===========                                                     
+        The calibration of the instrument is an ongoing process and the 
+        results are incorporated in the EGSE software.                  
+                                                                        
+                                                                        
+        Operational Considerations                                      
+        ==========================                                      
+                                                                        
+                                                                        
+        Detectors                                                       
+        =========                                                       
+        COSAC comprises two instruments: a gas-chromatograph (GC) with  
+        eight different columns each equipped with a thermal            
+        conductivity detector and a time-of-flight mass-spectrometer    
+        (MS) with a multi-sphere-plate as detector. More details are    
+        found in Goesmann et.al, 2005                                   
+                                                                        
+                                                                        
+        Electronics                                                     
+        ===========                                                     
+        Details on the electronics of the instrument are described in   
+        Goesmann, et.al, 2005.                                          
+                                                                        
+        Location                                                        
+        ========                                                        
+        COSAC is mounted on the large Pi-plate in the warm compartment  
+        of Philae.  Samples are delivered by the Sample Drilling and    
+        Distribution unit (SD2) to ovens located on the balcony of      
+        Philae.                                                         
+                                                                        
+        Operational Modes                                               
+        =================                                               
+        COSAC can be operated in basically three different modes: GC    
+        mode; only the GC is used, MS mode; only the MS is used, or     
+        coupled mode where the GC exhaust is fed into the MS.  All three
+        modes may be run with samples from different sources like       
+        atmosphere, oven, enrichment capsule, or calibration gas.       
+                                                                        
+        Subsystems                                                      
+        ==========                                                      
+        The sub-systems are described in Goesmann et al, 2005.          
+                                                                        
+                                                                        
+        Measured Parameters                                             
+        ===================                                             
+        The COSAC GC measures the retention times of molecular species  
+        in separation columns, the COSAC MS measures the time-of-flight 
+        of ionised fragments of molecular species.                      
+      </description>
+  </Instrument>
+</Product_Context>

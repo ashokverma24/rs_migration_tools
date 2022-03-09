@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/datastandards/schema/develop/pds/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/datastandards/schema/develop/pds/PDS4_PDS_1D00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:target:astrophysical.gravitational_waves</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Gravitational Waves Target</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-07-30</modification_date>
+                <version_id>1.0</version_id>
+                <description>Original</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:document:armstrong.2006</lid_reference>
+            <reference_type>target_to_document</reference_type>
+            <comment>
+                A review paper by John Armstrong titled "Low-Frequency Gravitational Wave Searches Using 
+                Spacecraft Doppler Tracking"; originally published in 2006, revised in 2016.
+            </comment>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                Barisch, B. C. (2000).
+                The Science and Detection of Gravitational Waves, 
+                https://labcit.ligo.caltech.edu/~BCBAct/talks00/Alberta/LakeLouisepaper.PDF
+            </reference_text>
+            <description>Overview of gravitational waves before they were observed.</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                The LIGO Scientific Collaboration; the Virgo Collaboration (2019). 
+                "GWTC-1: A Gravitational-Wave Transient Catalog of Compact Binary Mergers Observed 
+                by LIGO and Virgo during the First and Second Observing Runs". 
+                Physical Review X. 9 (3): 031040. arXiv:1811.12907.
+                https://doi.org/10.1103/PhysRevX.9.031040
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    
+    <Target>
+        <name>Gravitational Waves</name>
+        <type>Astrophysical</type>
+        <description>
+              Gravitational waves are perturbations of space-time caused by the creation or 
+              destruction of mass.  Although detected using the Laser Interferometer Gravitational-wave 
+              Observatory (LIGO), they had not been observed using radiometric techniques as of 2019.
+        </description>
+    </Target>
+    
+</Product_Context>

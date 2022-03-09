@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:valle_d'aosta.oavda.pl3041</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>FLI--FL-PL3041-1-BB</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-02-18</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:valle_d'aosta.oavda</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>FLI--FL-PL3041-1-BB</name>
+    <type>Imager</type>
+    <description>Finger Lakes Instrumentation Pro-Line
+Fairchild Imaging CCD 3041B1
+back-illuminated, 2048x2048, pixel size 15 micron</description>
+  </Instrument>
+</Product_Context>
+

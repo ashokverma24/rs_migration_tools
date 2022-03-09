@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.pre-magellan</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>PRE-MAGELLAN</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+<!-- RChen/EN: SBN should give the telescope and facility LIDs that replace *:instrument_host:earth-based.*
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:earth-based.arcb</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:earth-based.gssr</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:earth-based.hstk</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:earth-based.ndc8</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+-->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.p12</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vo2</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.earth</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mercury</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.venus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Arvidson, R.E., E.A. Guinness, S. Slavney, D. Acevedo,
+                   J. Hyon, and M. Martin, Pre-Magellan radar and gravity
+                   data, Jet Propulsion Laboratory, 1990.
+            </reference_text>
+            <description>reference.ARVIDSONETAL1990A</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>PRE-MAGELLAN</name>
+        <type>Mission</type>
+        <start_date>1968-11-09</start_date>
+        <stop_date>1988-07-27</stop_date>
+
+        <description>
+ 
+ 
+    Mission Overview
+    ============================
+ 
+      This entity is a collection of selected Earth-based radar data
+      of Venus, the Moon, Mercury, and Mars, Pioneer Venus radar data,
+      airborne radar images of Earth, and line of sight acceleration
+      data derived from tracking the Pioneer Venus Orbiter and Viking
+      Orbiter 2.  Included are 12.6 centimeter wavelength Arecibo
+      Venus radar images, 12.6 to 12.9 cm Goldstone Venus radar images
+      and altimetry data, together with altimetry, brightness
+      temperature, Fresnel reflectivity and rms slopes derived from
+      the Pioneer Venus Radar Mapper.
+ 
+      For the Moon, Haystack 3.8 centimeter radar images and Arecibo
+      12.6 and 70 centimeter radar images are included.  Mars data
+      include Goldstone altimetry data acquired between 1971 and 1982
+      and a raster data set containing radar units that model
+      Goldstone and Arecibo backscatter observations.  Mercury data
+      consist of Goldstone altimetry files.  The terrestrial data were
+      acquired over the Pisgah lava flows and the Kelso dune field in
+      the Mojave Desert, California, and consist of multiple
+      frequency, multiple incidence angle views of the same regions.
+ 
+      Data set documentation is provided, with references that allow
+      the reader to reconstruct processing histories.  The entire data
+      set collection and documentation are available on a CD-ROM
+      entitled Pre-Magellan Radar and Gravity Data.
+ 
+ 
+PDS4 note: awaiting LID references to facilities and telescopes
+- ARECIBO OBSERVATORY
+- GOLDSTONE SOLAR SYSTEM RADAR
+- HAYSTACK OBSERVATORY
+- NASA DC-8 AIRCRAFT
+        </description>
+    </Investigation>
+</Product_Context>

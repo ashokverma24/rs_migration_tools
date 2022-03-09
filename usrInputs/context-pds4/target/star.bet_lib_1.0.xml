@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet_lib</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Zubeneschamali</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Lanx Borealis</alternate_title></Alias>
+      <Alias><alternate_title>Beta Librae</alternate_title></Alias>
+      <Alias><alternate_title>Beta Lib</alternate_title></Alias>
+      <Alias><alternate_title>27 Lib</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>bet Lib</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J1517003-092258</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-08 3935</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 564</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 20539</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 8838</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00135742</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05585-01014</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 135742</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 74785</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 74785</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 5685</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 15142-0911</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS F15143-0912</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10315</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2586</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J15170043-0922584</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3439</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 7009</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3450</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3450.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 399</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 198424</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2165</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 140430</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 27682</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 18099</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5585-1014-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 13171</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 20667</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100135742</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 12758</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WISE J151700.43-092258.9</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Zubeneschamali</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 15 hours 17 minutes 00.41382 seconds
+Declination, ICRS coord, ep=J2000: -09 degrees 22 minutes 58.4919 seconds
+    </description>
+  </Target>
+</Product_Context>

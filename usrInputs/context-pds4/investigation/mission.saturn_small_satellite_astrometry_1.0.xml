@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.saturn_small_satellite_astrometry</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SATURN SMALL SATELLITE ASTROMETRY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.hst::1.0</lidvid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.calypso::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.dione::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.enceladus::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.epimetheus::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.helene::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.hyperion::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.janus::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.mimas::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.pandora::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.prometheus::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.rhea::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.telesto::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.tethys::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:target:satellite.titan::1.0</lidvid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bosh, A.S. and A.S. Rivkin, Observations of Saturn&apos;s inner satellites during
+                   the May 1995 ring-plane crossing, Science, 272, 518-521, 1996.
+            </reference_text>
+            <description>reference.BOSH-RIVKIN1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   French, R.G., C.A. McGhee, L. Dones, and J.J. Lissauer, Saturn&apos;s wayward
+                   shepherds: the peregrinations of Prometheus and Pandora, Icarus 162, 143-170,
+                   2003.
+            </reference_text>
+            <description>reference.FRENCHETAL2003</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   French, R.G., C.A. McGhee, M. Frey, R. Hock, S. Rounds, R. Jacobson, and A.
+                   Verbiscer, Astrometry of Saturn&apos;s Satellites from the Hubble Space Telescope
+                   WFPC2, PASP 118, 246-259, 2006.
+            </reference_text>
+            <description>reference.FRENCHETAL2006</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   McGhee, C.A., P.D. Nicholson, R.G. French, and K.J. Hall, HST Observations of
+                   Saturnian Satellites during the 1995 Ring Plane Crossing, Icarus, 152, 282-315,
+                   2001
+            </reference_text>
+            <description>reference.MCGHEEETAL2001</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Nicholson, P.D., M.R. Showalter, L. Dones, R.G. French, S.M. Larson, J.J.
+                   Lissauer, C.A. McGhee, B. Sicardy, P. Seitzer, and G.E. Danielson, Observations
+                   of Saturn&apos;s ring-plane crossing in August and November 1995, Science, 272, 509-
+                   516, 1996
+            </reference_text>
+            <description>reference.NICHOLSONETAL1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Synnott, S.P., R.J. Terrile, R.A. Jacobson, and B.A. Smith, Orbits of Saturn&apos;s
+                   F ring and its shepherding satellites, Icarus, 53, 156-158, 1983
+            </reference_text>
+            <description>reference.SYNNOTTETAL1983</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>SATURN SMALL SATELLITE ASTROMETRY</name>
+        <type>Mission</type>
+        <start_date>1994-12-01</start_date>
+        <stop_date>2005-01-14</stop_date>
+
+        <description>
+ 
+    Mission Overview
+    ================
+ 
+    Observations made during the 1995-1996 Saturn Ring Plane Crossing
+    (RPX) led to the unexpected finding that the positions of both
+    Prometheus and Pandora varied significantly from the predictions
+    based on the Voyager observations (BOSH&amp;RIVKIN1996,
+    NICHOLSONETAL1996, MCGHEEETAL2001, SYNNOTTETAL1983). A long term
+    observing campaign was undertaken in order to extend the time line
+    of astrometric observations.
+ 
+    The campaign used archival HST data from 1994, previously
+    unexamined RPX images, and a large series of targeted WFPC2
+    observations between 1996 and 2005. The ultimate goals were to
+    refine the ephemerides of both satellites and if possible
+    determine the cause or causes of the discrepancies.
+ 
+    Sufficient observations to produce astrometrically meaningful data
+    for nine other satellites were obtained incidentally in the
+    Prometheus-Pandora observing campaign.
+ 
+    Details of the project can be found in FRENCHETAL2006.
+        </description>
+    </Investigation>
+</Product_Context>

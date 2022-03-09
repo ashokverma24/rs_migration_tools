@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:laboratory.pal</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Planetary Aeolian Laboratory</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>pal</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-08-27</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                 Initial creation of the context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:pal.cwt</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:pal.vwt</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:pal.marswit</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:pal.twt</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Facility>
+        <name>Planetary Aeolian Laboratory</name>
+        <type>Laboratory</type>
+        <description>
+          The Planetary Aeolian Laboratory is located at NASA Ames Research Center, Moffett Field, CA,
+          and is managed by Dr. David A. Williams of the School of Earth and Space Exploration at 
+          Arizona State University. The facility consists of the tower test facility (Bldg. N242) and 
+          associated wind tunnels and other devices that can be used under Earth ambient pressures as
+          well as various lower pressure environments (including Mars analog) making use of the Ames 
+          vacuum facility for atmospheric pump downs of the test chamber. 
+        </description>
+    </Facility>
+</Product_Context>

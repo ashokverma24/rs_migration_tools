@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:steward-kittpeak.bok2m3.90prime</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>90Prime Mosaic camera</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-11-09</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:steward-kittpeak.bok2m3</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>90Prime Mosaic camera</name>
+    <type>Imager</type>
+    <description>There are four CCDs each with 4032 columns x 4096 rows physical pixels and 20 pixels
+of overscan for each amp.
+Each CCD is read out from 4 amplifiers located in each corner
+Each single amplifier image extension contains data from one amplifier, so it has
+2016+20=2032 columns and 2048 rows
+Current system gain is defined in the image header, and is about 1.5 electrons/DN
+(Data Numbers)
+Dark current is ~7 electrons/pixel/hour.
+Full well is ~90,000 electrons or about the 65k DN ADC 16-bit ADC limit.
+The CCDs are linear to 65k DN, but stay below about 60,000 DN to be safe.
+Noise is about 7-8 electrons in the active imaging area in most channels. A few less
+well behaved channels sometimes measure around 11 electrons.
+Readout time plus file creating time is 35 seconds.
+The operating temperature is about -135 C.</description>
+  </Instrument>
+</Product_Context>
+

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:crs.vg1</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>COSMIC RAY SUBSYSTEM for VG1</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vg1::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gehrels, N., E.C. Stone, and J.H. Trainor, Energetic oxygen and sulfur in the
+                   Jovian magnetosphere, J. Geophys. Res., 86, 8906, 1981.
+            </reference_text>
+            <description>reference.GEHRELSETAL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lupton, J.E., and E.C. Stone, Measurement of Electron Detection
+                   Efficiencies in Solid-state Detectors, Nucl. Instr. and Meth. 98, 189,
+                   1972.
+            </reference_text>
+            <description>reference.LUPTON-STONE1972</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   McDonald, F.B., A.W. Schardt, and J.H. Trainor, Energetic Protons in the
+                   Jovian Magnetosphere, J. Geophys. Res. 84, 2579, 1979.
+            </reference_text>
+            <description>reference.MCDONALDETAL1979</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Data and instrument description document provided by the NSSDC for data
+                   set 77-048A-08A, Voyager 1 and 2 Cosmic Ray Subsystem Description of
+                   Jupiter Encounter Data. 1979.
+            </reference_text>
+            <description>reference.NSSDCCRS1979</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Schardt, A.W., F.B. McDonald, and J.H. Trainor, Energetic Particles in the
+                   Pre-dawn Magnetotail of Jupiter, J. Geophys. Res., special Voyager issue,
+                   1981.
+            </reference_text>
+            <description>reference.SCHARDTETAL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Stilwell, D.E., W.D. Davis, R.M. Joyce, F.B. McDonald, J.H. Trainor, W.E.
+                   Althouse, A.C. Cummings, T.L. Garrard, E.C. Stone, and R.E. Vogt, The Voyager
+                   Cosmic Ray Experiment, IEEE Trans. on Nuclear Science, Vol. 26, p. 513, 1979.
+            </reference_text>
+            <description>reference.STILWELLETAL1979B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Stone, E.C., R.E. Vogt, F.B. McDonald, B.J. Teegarden, J.H. Trainor, J.R.
+                   Jokipii, and W.R. Webber, Cosmic ray investigation for the Voyager missions;
+                   energetic particle studies in the outer heliosphere--and beyond, Space Sci.
+                   Rev., 12, No. 3, 355-376, Dec. 1977.
+            </reference_text>
+            <description>reference.STONEETAL1977B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Vogt, R.E., W.R. Cook, A.C. Cummings, T.L. Garrard, N. Gehrels, E.C. Stone,
+                   J.H. Trainor, A.W. Schardt, T. Conlon, N. Lal, and F.B. McDonald, Voyager 1:
+                   Energetic Ions and Electrons in the Jovian Magnetosphere, Science, 204, 1003,
+                   1979.
+            </reference_text>
+            <description>reference.VOGTETAL1979A</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>COSMIC RAY SUBSYSTEM</name>
+        <type>Particle Detector</type> <!--RChen/EN was Cosmic Ray Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    As its name implies, the Cosmic Ray Subsystem (CRS) was
+    designed for cosmic ray studies [STONEETAL1977B].  It consists
+    of two high Energy Telescopes (HET), four Low Energy Telescopes
+    (LET) and The Electron Telescope (TET).  The detectors have
+    large geometric factors (~ 0.48 to 8 cm^2 ster) and long
+    electronic time constants (~ 24 [micro]sec) for low power
+    consumption and good stability.  Normally, the data are
+    primarily derived from comprehensive ([Delta]E[1], [Delta]E[2]
+    and E) pulse- height information about individual events.
+    Because of the high particle fluxes encountered at Jupiter and
+    Saturn, greater reliance had to be placed on counting rates in
+    single detectors and various coincidence rates.  In
+    interplanetary space, guard counters are placed in
+    anticoincidence with the primary detectors to reduce the
+    background from high-energy particles penetrating through the
+    sides of the telescopes.  These guard counters were turned off
+    in the Jovian magnetosphere when the accidental anticoincidence
+    rate became high enough to block a substantial fraction of the
+    desired counts.  Fortunately, under these conditions the
+    spectra were sufficiently soft that the background, due to
+    penetrating particles, was small.
+ 
+    The data on proton and ion fluxes at Jupiter were obtained with
+    the LET.  The thicknesses of individual solid-state detectors
+    in the LET and their trigger thresholds were chosen such that,
+    even in the Jovian magnetosphere, electrons made, at most, a
+    very minor contribution to the proton counting rates
+    [LUPTON&amp;STONE1972].  Dead time corrections and accidental
+    coincidences were small (&lt; 20%) throughout most of the
+    magnetotail, but were substantial (&gt; 50%) at flux maxima within
+    40 R[J] Of Jupiter.  Data have been included in this package
+    for those periods when the corrections are less than ~ 50% and
+    can be corrected by the user with the dead time appropriate to
+    the detector (2 to 25 [micro]sec).  The high counting rates,
+    however, caused some baseline shift which may have raised
+    proton thresholds significantly.  In the inner magnetosphere,
+    the L[2] counting rate was still useful because it never rolled
+    over.  This rate is due to 1.8- to 13-MeV protons penetrating
+    L[1] (0.43 cm^2 ster) and &gt; 9-MeV protons penetrating the
+    shield (8.4 cm^2 ster).  For an E^-2 spectrum, the two groups
+    would make comparable contributions; but in the magnetosphere,
+    for the E^-3 to E^-4 spectrum above 2.5 MeV [MCDONALDETAL1979],
+    the contribution from protons penetrating the shield would be
+    only 3 to 14%.
+ 
+    The LET L[1]L[2]L[4] and L[1]L[2]L[3] coincidence-
+    anticoincidence rates give the proton flux between 1.8 and 8
+    MeV and 3 to 8 MeV with a small alpha particle contribution (~
+    10^-3).  Corrections are required for dead time losses in L[1],
+    accidental L[1]L[2] coincidences and anticoincidence losses
+    from L[4].  Data are given only for periods when these
+    corrections are relatively small.  The energy lost in detectors
+    L[1], L[2] and L[3] was measured for individual particles.  For
+    protons, this covered the energy range from 0.42 to 8.3 MeV.
+    Protons can be identified positively by the [Delta]E vs.  E
+    technique, their spectra obtained and accidental coincidences
+    greatly reduced.  Because of telemetry limitations, however,
+    only a small fraction of the events could be transmitted, and
+    statistics become poor unless pulse-height data are averaged
+    over a period of one hour.
+ 
+    HET and LET detectors share the same data lines and pulse-
+    height analyzers; thus, the telescopes can interfere with one
+    another during periods of high counting rates.  To prevent such
+    an interference and explore different coincidence conditions,
+    the experiment was cycled through four operating modes, each
+    192 seconds long.  Either the HETs or the LETs were turned on
+    at a time.  LET-D was cycled through L[1] only and L[1]L[2]
+    coincidence requirements.  The TET was cycled through various
+    coincidence conditions, including singles from the front
+    detectors.  At the expense of some time resolution, this
+    procedure permitted us to obtain significant data in the outer
+    magnetosphere and excellent data during the long passage
+    through the magnetotail region.  Some of the published results
+    from this experiment required extensive corrections for dead
+    time, accidental coincidences and anticoincidences
+    ([VOGTETAL1979A], [VOGTETAL1979B]; [SCHARDTETAL1981];
+    [GEHRELSETAL1981]).  These corrections can be applied only on a
+    case-by-case basis after a careful study of the environment and
+    many self-consistency checks.  They cannot be applied on a
+    systematic basis and we have no computer programs to do so;
+    therefore, data from such periods are not included in the Data
+    Center submission.  The scientists on the CRS team will,
+    however, be glad to consider special requests if the desired
+    information can be extracted from the data.
+ 
+ 
+  Note
+  ====
+    Principal Investigator: R.E.  Vogt
+ 
+    The preceding section on instrumentation has been extracted
+    from the NSSDC documentation for the Voyager Cosmic Ray
+    Subsystem (Reference_ID = NSSDCCRS1979).
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:instrument:uly.cospin-ket</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>COSPIN-KIEL ELECTRON TELESCOPE for ULY</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:cospin-ket.uly</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.uly</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kunow, H., R. Mueller-Mellin, H. Sierks, G. Wibberenz, A. Raviart, R.
+                   Ducros, P. Ferrando, and L. Treguer, The Kiel Electron Telescope On Board
+                   Ulysses, Proc. 22nd Int. Cosmic Ray Conf. (Dublin), 2, 503, 1991.
+            </reference_text>
+            <description>reference.KUNOWETAL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Marsden, R.G., T.R. Sanderson, A.M. Heras, and K.-P. Wenzel, Ulysses SEP
+                   Composition Measurements: First Results from the COSPIN LET Experiment,
+                   Proc. 22nd Int. Cosmic Ray Conf. (Dublin), 3, 335, 1991.
+            </reference_text>
+            <description>reference.MARSDENETAL1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Simpson, J.A., J.D. Anglin, A. Balogh, M. Bercovitch, J.M. Bouman, E.E.
+                   Budzinski, J.R. Burrows, R. Carvell, J.J. Connell, R. Ducros, P. Ferrando,
+                   J. Firth, M. Garcia-Munoz, J. Henrion, R.J. Hynds, B. Iwers, R. Jacquet, H.
+                   Kunow, G. Lentz, R.G. Marsden, R.B. McKibben, R. Mueller-Mellin, D.E. Page,
+                   M. Perkins, A. Raviart, T.R. Sanderson, H. Sierks, L. Treguer, A.J.
+                   Tuzzolino, K.-P. Wenzel, and G. Wibberenz, The Ulysses cosmic ray and solar
+                   particle investigation, Astron. Astrophys. Suppl. Set: 92, 365-399, 1992.
+            </reference_text>
+            <description>reference.SIMPSONETAL1992A</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>COSPIN-KIEL ELECTRON TELESCOPE</name>
+        <type>Particle Detector</type> <!--RChen/EN was Energetic Particle Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  (descriptions excerpted from [SIMPSONETAL1992A])
+ 
+  Instrument Overview
+  ===================
+    The KET consists of two separate boxes, SIM3A and SIM3B,
+    mounted on the other side of the spacecraft platform with
+    respect to the SIM1 and SIM2 units.  SIM3B is the telescope
+    portion of the KET, and SIM3A contains the analogue and digital
+    electronics for the KET.
+ 
+    The KET is designed to measure electron fluxes between 2.5 and
+    6000 MeV, and to determine energy spectra in the range 7 - 170
+    MeV.  The telescope also provides measurements of the proton
+    and alpha-particle fluxes in several energy windows between 3
+    and &gt; 2100 MeV/nucleon.  In addition, two low-energy electron
+    and proton channels provide anisotropy information in 8
+    sectors.
+ 
+    The determination of electron spectra and their variation with
+    distance from the sun and solar latitude provides vital
+    information on the solar modulation of interstellar electrons
+    as well as on acceleration and propagation of interplanetary
+    and solar electrons.  The measurement of protons and helium
+    nuclei with the same telescope enhances confidence in the
+    calibration and response of the telescope, and permits
+    investigation of the dependence on particle species of the
+    effects of solar distance and latitude.
+ 
+ 
+  Detectors
+  =========
+    To reduce mass and complexity of the instrument, the KET
+    consists of two separate parts: the sensor (SIM3B) and the
+    electronics box (SIM3A), both mounted beneath the spacecraft
+    platform.  The telescope is mounted to view perpendicular to
+    the spin axis and has an acceptance angle of 44.6 degrees full
+    cone with an auxiliary field of view of 106 degrees.
+    Accordingly, for nuclei the geometric factor varies between
+    0.72 cm^2 sr for particles reaching D[2] and 6.5 cm^2 sr for
+    particles stopping in D[1].  A more sophisticated evaluation of
+    the geometric factor taking into account energy dependence and
+    effects of scattering and shower production for electrons is
+    shown in Table 10.  The instrument incorporates several
+    techniques in order to identify the particles and their
+    energies: electron- photon cascades, Cherenkov thresholds,
+    dE/dx versus E method, and discriminator settings.
+    Functionally, the detector system divides naturally into two
+    parts, consisting of an entrance telescope and a calorimeter
+    surrounded by a guard counter.
+ 
+    The entrance telescope is composed of a silica aerogel
+    Cherenkov detector C[1] inserted between two surface-barrier
+    semiconductor detectors D[1] and D[2].  Together with the guard
+    counter A, it defines the geometry and selects singly-charged
+    particles of high velocity ([beta] &gt; 0.938) to discriminate
+    between electrons and protons.  In conventional designs the
+    velocity discrimination is performed using a high-pressure-gas
+    Cherenkov detector.  The availability of a low- density solid
+    material like silica aerogel, which can have a refractive index
+    as low as 1.02 to 1.2, which is translucent and which shows a
+    negligible scintillation contribution to the signal, allows us
+    to circumvent the disadvantages of a gas Cherenkov detector,
+    which include a significant weight penalty and additional
+    material in the acceptance cone.  For use in the KET, we have
+    chosen an aerogel with a refractive index of n = 1.066.  Since
+    no use is made of the directionality of the Cherenkov light,
+    the block of aerogel is placed in a diffusion box with
+    millipore walls.  The light signal of C[1] is viewed by the
+    phototube PM1 through a hole in the guard counter, A.  To
+    prevent particles from hitting the photocathode of PM1
+    directly, and thus simulating an aerogel detector response, a
+    scintillator disc S[1] has been introduced in front of PM1 as a
+    veto counter.  S[1] gives a signal for minimum ionizing
+    particles 6 sigma above the signature of relativistic alpha
+    particles in aerogel.
+ 
+    The calorimeter consists of a lead-fluoride crystal C[1] in
+    which the electron shower develops, and a scintillator cup S[2]
+    to detect particles not absorbed in C[2].  C[2] has a thickness
+    of 2.2 cm, corresponding to 2.5 radiation lengths.
+ 
+    Lead-fluoride was chosen for its short radiation length (X[0] =
+    6.6 g/cm^2), its high density ([rho] = 7.7 g/cm^3), and its
+    convenient refractive index (n = 1.885).  Furthermore, it does
+    not scintillate and is thus relatively insensitive to the RTG
+    background.  The Cherenkov light of C[2] is viewed through a
+    hole in S[2] using a diffusion-box design.  To prevent
+    particles from escaping undetected through the hole in S[2],
+    the planar part of the cup has been extended.
+ 
+    The scintillator A not only helps to define the sensor
+    geometry, but also protects from background caused by nuclear
+    interactions produced in the telescope by cosmic rays and by
+    neutrons from the RTG.  If experience in flight shows that
+    shower development in the calorimeter reduces the effective
+    geometry factor to an unacceptably low value, the discriminator
+    threshold of A can be raised by telecommand for penetrating
+    electrons only (channel E[300]).
+ 
+    To compensate for a possible phototube gain loss during the
+    long mission lifetime, the high voltages can be stepped up by
+    telecommand in eight steps.  In the case of complete failure of
+    a detector, it can logically be switched off by telecommand
+    using the onboard failure reconfiguration logic.  Stimulation
+    of the onboard electronics for checkout purposes is also
+    provided.
+ 
+    The data produced by KET consist of pulse height analysis data
+    and coincidence counting rates corresponding to broad energy
+    ranges for incident particles.  The ranges and time resolutions
+    for the counting rates are shown in Table 10.  Pulse height
+    analysis is performed on a sample of the incident particle
+    events to provide good energy resolution (between 60 and 100 %
+    for electrons) and clear identification of particle species.
+    Single-detector counting rates and housekeeping data are also
+    telemetered to monitor instrument performance.
+ 
+ 
+  Calibration
+  ===========
+    The KET instrument measures cosmic ray electrons with energies
+    from a few MeV to several GeV, which have a flux in the
+    ecliptic plane 3 to 4 orders of magnitude lower than the proton
+    flux.  The instrument response was therefore extensively
+    calibrated with both electrons and protons.  The most important
+    goals of these calibrations were:
+ 
+        - to determine the response of the individual detectors as a
+          function of particle species and energy
+        - to determine the detection thresholds for the individual
+          detectors, especially the Cherenkov thresholds of C[1] and
+          C[2]
+        - to determine the energy thresholds for the coincidence
+          counting rate channels
+        - to provide correction tables for the counting rate data
+          (response matrix)
+        - to determine the electron detection efficiency of
+          individual counting rate channels and of the complete
+          instrument as a function of energy
+        - to determine the proton rejection rate for electron
+          channels
+        - to use the calibration data to verify and adjust the
+          mathematical model of the instrument
+        - to determine the background in the various counting rate
+          channels due to the RTG
+ 
+ 
+    Results of proton calibrations
+    ------------------------------
+      The main goals of the proton calibrations were to determine
+      proper settings for i) the Cherenkov thresholds of C[1] and
+      C[2], and ii) the discriminator threshold values C[10],
+      C[20], and S[20], this last one being actually determined by
+      the range of the particles in the telescope.  In addition,
+      these calibrations provided measurements of key parameters
+      such as angular response and sensitivity of the
+      anticoincidence which define the effective geometry factor of
+      the instrument.
+ 
+ 
+    Results of electron calibrations
+    --------------------------------
+      These calibrations resulted in the measurements of: i) the
+      response of the calorimeter C[2] as a function of energy, the
+      monoenergetic response of C[2] being of fundamental
+      importance to determine the electron spectrum from the flight
+      data, and ii) the variation of the efficiency and response of
+      the telescope as a function of energy and incidence angle.
+ 
+      It was possible to determine relative variations of the
+      response of the detector with energy and incidence angle of
+      the beam.  However, it proved to be extremely difficult to
+      measure the absolute efficiency for electrons, particularly
+      at low energies, where the use of external counters to
+      monitor the beam is impossible because of the large
+      scattering they induce.  Therefore, only the relative
+      efficiency could be reliably measured.
+ 
+ 
+    Results of the RTG calibration tests
+    ------------------------------------
+      The RTG calibration of the KET was performed in 1985 at Mound
+      Laboratories using the Galileo Flight RTG (F[3]) and in 1986
+      and 1990 at KSC during the RTG compatibility tests as part of
+      the two launch campaigns.  The main results can be summarized
+      as follows:
+ 
+      - RTG induced background in the instrument leads to a
+        deadtime increase from 0.003 % to 0.5 %, which is a
+        tolerable value. The main contribution to the dead time
+        stems from the scintillation guard counter with its large
+        field of view.
+      - From a scientific point of view, only the channels P[1] and
+        E[4] are adversely affected, as the RTG background is of
+        the order of the cosmic ray quiet flux in these KET
+        particle channels, e.g. 1 x 10^-3 counts/s in E[4]. They
+        will only produce meaningful data during solar flares and
+        near Jupiter. Use of Cherenkov detectors and multifold
+        coincidences guarantees the low susceptibility of all the
+        other KET scientific channels.
+      - Between the RTG tests in 1986 and 1990 the KET observed an
+        increase of the RTG background by about a factor of 2. This
+        is attributed to time variations in the plutonium decay
+        chain.
+      - Flight data measured during quiet times confirm the same
+        background level in the RTG-sensitive channels P[1] and
+        E[4] as observed during the 1990 RTG-test on ground.
+ 
+ 
+    Simulation of the telescope
+    ---------------------------
+      In order to determine the absolute efficiency of KET for
+      electrons, it was necessary to use a Monte-Carlo simulation
+      of the instrument.  The GEANT program, developed and widely
+      used by particle physicists, was adapted for this purpose.
+ 
+      In a first step, the different parameters of the telescope,
+      namely thresholds and detector resolutions, were adjusted in
+      order to reproduce the calibration data obtained at the
+      different accelerators, with a parallel beam in the axis of
+      the instrument.  An excellent agreement between the
+      simulation and calibration results was achieved.  This
+      agreement ensures that we can reliably determine the
+      efficient geometry factor of KET for an isotropic flux, which
+      was done according to the method given by Sullivan (Sullivan
+      J.D., Nucl. Inst.  and Meth.  95, 5, 1971).
+ 
+ 
+    In-flight calibration
+    ---------------------
+      On COSPIN switch-on the currents and high voltage values were
+      checked and found to be nominal.  The in-flight test
+      generator was used to check the amplifier gains and the
+      functioning of the coincidence logic and of the failure mode
+      reconfiguration.  All of these were found to be nominal.
+ 
+      To measure the performance of the detectors, the linearity of
+      the analogue chains, and the discriminator thresholds, it is
+      necessary to use the cosmic ray data themselves.  Protons and
+      helium nuclei with an energy above 2.1 GeV/n can be used for
+      this purpose since they are minimum ionizing particles that
+      penetrate the telescope while producing almost no nuclear
+      interactions in the detectors, and are above the Cherenkov
+      threshold C[10].  Their large flux allows collection in a few
+      days of a sample with sufficient statistical accuracy to
+      monitor all the detector responses and amplifier gains except
+      for C[1] (for which no PHA value is registered).  For P[4000]
+      the in-flight responses are identical within a few percent to
+      the responses derived from calibrations with a beam of 5
+      GeV/c protons.  The position and width of the helium response
+      for these detectors are also compatible with the expected
+      values derived from the proton response.
+ 
+      The C[1] PHA are registered only in the E[4] and E[12]
+      channels, and therefore can be monitored only in these
+      channels.  The C[1] response for E[12] particles is
+      compatible with the calibration results for electrons of 7.5
+      and 10 MeV.
+ 
+ 
+  Measured Parameters
+  ===================
+    Table 10.  Electron telescope data channels.
+ 
+    Name        Primary   Energy    Geometric Avg. Time  Sectors  PHA
+    Particle  Range     Factor    Resolution
+    Type     (MeV(/n))  (cm^2sr)     (s)
+ 
+    K1(P1)      proton    2.7-5.4    6.5         128       --      --
+    K21-28(P4)  proton    5.4-23.1   6.5         128        8      --
+    K3(P32)     proton    34.1-125   0.72        128       --      P1
+    K34(P116)   proton    125-320    1.2         128       --      P1
+    K12(P190)   proton    320-2100   1.7         128       --      P0
+    K10(P4000)  proton    &gt;2100      1.7         128       --      P0
+ 
+    K2(A4)      He        6.0-20.4   6.5         128       --      --
+    K33(A32)    He        34.2-125   0.72        128       --      P1
+    K29(A116)   He        125-320    1.0         128       --      P1
+    K31(A190)   He        320-2100   1.4         128       --      P0
+    K30(A4000)  He        &gt;2100      1.4         128       --      P1
+ 
+    K13-20(E4)  electron  2.5-7      0.26        128        8      P1
+    K11(E12)    electron  7-170      0.40        128       --      P3
+    K32(E300)   electron  &gt;170       0.38        128       --      P2
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

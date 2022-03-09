@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.tet_hya</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Theta Hydrae</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>22 Hydrae</alternate_title></Alias>
+      <Alias><alternate_title>Theta Hya</alternate_title></Alias>
+      <Alias><alternate_title>tet Hya</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>22 Hya</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 7253 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+02 1244</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J0914219+021849</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 1130574</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+02 2167</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J09144+0219A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+02 2167 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2EUVE J0914+02.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J0914+02.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 347</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 12743</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 6036</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00079469</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 00227-02544</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 79469</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 45336</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 45336</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 3665</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 09092+0244 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 09117+0231</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1787</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J0914+0218</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 12431</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J09142189+0218511</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 2190</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 21281</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2200</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2200.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 250</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 155592</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J091421+021825</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J0914+021</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Renson 22550</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J0914+021</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J091420+021830</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 1453</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RX J0914.3+0219</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J091422.0+021916</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 117527</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 17821</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 13698</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 227-2544-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 8842</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 15207</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 0923-00221992</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100079469</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J09144+0219A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WD 0911+023</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 8635</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 2 3711</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 3845263368043086080</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Theta Hydrae</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 09 hours 14 minutes 21.8663945301 seconds
+Declination, ICRS coord, ep=J2000: +02 degrees 18 minutes 51.638194950 seconds
+    </description>
+  </Target>
+</Product_Context>

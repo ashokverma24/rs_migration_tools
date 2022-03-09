@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1000.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd
+    http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1000.xsd">
+  
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:goldstone.dss14_70m.recv_x</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>DSS-14 X-band Goldstone Solar System Radar Receiver</title>
+    <information_model_version>1.14.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-07-29</modification_date>
+        <version_id>1.0</version_id>
+        <description>
+          Originally imported from OLAF; then given a new LID and updated to use 
+          IM 1.14.0.0 and the CTLI instrument type LDD.  Improved format for readability.
+        </description>
+      </Modification_Detail>
+    </Modification_History>
+   
+  </Identification_Area>
+  
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss14_70m</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  
+  <Instrument>
+    <name>DSS-14 X-band Goldstone Solar System Radar Receiver</name>
+    <Type_List_Area>
+      <ctli:Type_List>
+        <ctli:type>Radar</ctli:type>
+      </ctli:Type_List>
+    </Type_List_Area>
+    <description>
+      The Goldstone Solar System Radar receiver is a cryogenically-cooled dual-channel HEMT
+      low noise amplifier for receiving X-band radio signals at 8560 MHz or 3.5 cm
+      wavelength.
+    </description>
+  </Instrument>
+</Product_Context>
+

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rss.p12</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>RADIO SCIENCE SUBSYSTEM for P12</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.p12::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sjogren, W.L., R.J. Phillips, P.W. Birkeland, and R.N. Wimberly, Gravity
+                   Anomalies On Venus, J. Geophys. Res., 85, 8295-8302, 1980.
+            </reference_text>
+            <description>reference.SJOGRENETAL1980</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>RADIO SCIENCE SUBSYSTEM</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Radio Science-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    INSTRUMENT: RADIO SCIENCE SUBSYSTEM
+    SPACECRAFT: PIONEER VENUS ORBITER
+ 
+ 
+    Instrument Information
+    ======================
+      Instrument Id                  : RSS
+      Instrument Host Id             : P12
+      Instrument Name                : RADIO SCIENCE SUBSYSTEM
+      Instrument Type                : RADIO SCIENCE
+ 
+ 
+    Instrument Description
+    ======================
+      The radio system is composed primarily of an ultrastable
+      oscillator (1 part in 10**12), a ground-based transmitter and
+      receiver, a spacecraft transmitter and receiver, and antennae.
+      The radio signal (approximately 2200 MHz) is transmitted from
+      one of the three Deep Space Station antennae (Goldstone,
+      California; Madrid, Spain; or Canberra, Australia) and then
+      received at the spacecraft.  The signal is immediately
+      retransmitted (there is a multiplication by 240/221 to prevent
+      feedback into the spacecraft receiver loop) and then received
+      at earth, where it is differenced with the originally
+      transmitted signal.
+ 
+      A detailed description is given by the Deep Space
+      Network/Flight Project Design Handbook, Jet Propulsion
+      Laboratory, TRK/20, Doc.  180-5, Rev D, Pasadena, Calif., 1979.
+ 
+      The difference in frequency (the Doppler shift) can be measured
+      to less than 0.01 Hz S band (about 0.65 mm/s) for a 5-second
+      averaging time.  However, there are error sources which
+      frequently degrade this accuracy.  Such things as the earth&apos;s
+      troposphere and ionosphere, the Venus atmosphere, and space
+      plasma cause the data noise level to increase by several
+      factors.  The noise levels were very dynamic and changed
+      significantly from day to day.  In some cases where solar
+      conjunction was approaching, the noise increased by a factor of
+      10 or more and made the data unusable.  The data are displayed
+      as residuals which were obtained by differencing the raw
+      observation with the theoretical calculation.
+ 
+ 
+    Science Objectives
+    ==================
+      UNKNOWN
+ 
+ 
+    Operational Considerations
+    ==========================
+      NOT APPLICABLE
+ 
+ 
+    Calibration Description
+    =======================
+      NOT APPLICABLE
+ 
+ 
+    Section &apos;RSS&apos;
+    =============
+      Total Fovs                     : UNK
+      Data Rate                      : UNK
+      Scan Mode Id                   : UNK
+      Sample Bits                    : UNK
+ 
+ 
+      &apos;RSS&apos; Detectors
+      ---------------
+        RSSDETEB
+        RSSDETSC
+ 
+ 
+      &apos;RSS&apos; Electronics
+      -----------------
+        RSSELECEB
+        RSSELECSC
+ 
+ 
+      In modes
+      --------
+        OPERATING
+ 
+ 
+      &apos;RSS&apos; Section FOV Shape &apos;UNK&apos;
+      -----------------------------
+        Section Id                     : RSS
+        Fovs                           : UNK
+        Horizontal Pixel Fov           : UNK
+        Vertical Pixel Fov             : UNK
+        Horizontal Fov                 : UNK
+        Vertical Fov                   : UNK
+ 
+ 
+      &apos;RSS&apos; Section Parameter &apos;RSSDETEB POWER&apos;
+      ----------------------------------------
+        RSSDETEB Power is the power measured by the Deep Space
+        Network antenna from the spacecraft antenna for tracking
+        purposes.
+ 
+        Instrument Parameter Name      : RSSDETEB POWER
+        Sampling Parameter Name        : TIME
+        Instrument Parameter Unit      : WATTS
+        Minimum Instrument Parameter   : UNK
+        Maximum Instrument Parameter   : UNK
+        Minimum Sampling Parameter     : UNK
+        Maximum Sampling Parameter     : UNK
+        Noise Level                    : UNK
+        Sampling Parameter Interval    : UNK
+        Sampling Parameter Resolution  : UNK
+        Sampling Parameter Unit        : SECOND
+ 
+ 
+    Instrument Detector &apos;RSSDETEB&apos;
+    ==============================
+      Detector Type                  : ANTENNA
+      Detector Aspect Ratio          : UNK
+      Minimum Wavelength             : UNK
+      Maximum Wavelength             : UNK
+      Nominal Operating Temperature  : UNK
+ 
+ 
+      Description
+      -----------
+        See the instrument description for details on the earth-based
+        antennas.
+ 
+ 
+      Sensitivity
+      -----------
+        UNKNOWN
+ 
+ 
+    Instrument Detector &apos;RSSDETSC&apos;
+    ==============================
+      Detector Type                  : ANTENNA
+      Detector Aspect Ratio          : UNK
+      Minimum Wavelength             : UNK
+      Maximum Wavelength             : UNK
+      Nominal Operating Temperature  : UNK
+ 
+ 
+      Description
+      -----------
+        See the instrument description for details on the spacecraft
+        antenna.
+ 
+ 
+      Sensitivity
+      -----------
+        UNKNOWN
+ 
+ 
+    Instrument Electronics &apos;RSSELECEB&apos;
+    ==================================
+ 
+      Description
+      -----------
+        See the instrument description for details on the earth-based
+        electronics.
+ 
+ 
+    Instrument Electronics &apos;RSSELECSC&apos;
+    ==================================
+ 
+      Description
+      -----------
+        See the instrument description for details on the spacecraft
+        electronics.
+ 
+ 
+    Instrument Mode &apos;OPERATING&apos;
+    ===========================
+      Data Path Type                 : UNK
+      Gain Mode Id                   : UNK
+      Instrument Power Consumption   : UNK
+ 
+ 
+      In sections
+      -----------
+        RSS
+ 
+ 
+      Description
+      -----------
+        UNKNOWN
+ 
+ 
+    Mounted On Platform &apos;PIONEER VENUS ORBITER&apos;
+    ===========================================
+ 
+      Description
+      -----------
+        Please see Spacecraft Description.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

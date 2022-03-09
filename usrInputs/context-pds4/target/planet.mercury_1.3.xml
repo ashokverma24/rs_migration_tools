@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+  <Identification_Area>
+      <logical_identifier>urn:nasa:pds:context:target:planet.mercury</logical_identifier>
+      <version_id>1.3</version_id>
+      <title>Mercury</title>
+      <information_model_version>1.13.0.0</information_model_version>
+      <product_class>Product_Context</product_class>
+    
+      <Alias_List>
+          <Alias>
+              <alternate_title>NAIF ID 199</alternate_title>
+          </Alias>
+      </Alias_List>
+    
+      <Modification_History>
+          <Modification_Detail>
+              <modification_date>2019-12-06</modification_date>
+              <version_id>1.3</version_id>
+              <description>
+                  Upgrade for MESSENGER migration by PDS Radio Science Advisor.
+                  Format improvements for easier reading.
+              </description>
+          </Modification_Detail>
+        
+          <Modification_Detail>
+              <modification_date>2018-11-18</modification_date>
+              <version_id>1.2</version_id>
+              <description>
+                  From PDS Rings node.
+              </description>
+          </Modification_Detail>
+        
+          <Modification_Detail>
+              <modification_date>2018-06-23</modification_date>
+              <version_id>1.1</version_id>
+              <description>
+                  From PDS RINGS node. Added NAIF ID alias. Shortened description.
+              </description>
+          </Modification_Detail>
+        
+          <Modification_Detail>
+              <modification_date>2016-10-01</modification_date>
+              <version_id>1.0</version_id>
+              <description>
+                  Extracted metadata from PDS3 catalog, then modified to meet PDS4 requirements.
+              </description>
+          </Modification_Detail>
+        
+      </Modification_History>
+  </Identification_Area>
+  
+  <Reference_List>
+
+      <External_Reference>
+          <reference_text>
+              https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html
+          </reference_text>
+          <description>
+              Fact sheet maintained by NASA Space Science Data Coordinated Archive.
+          </description>
+      </External_Reference>
+      
+      <External_Reference>
+          <reference_text>
+              https://en.wikipedia.org/wiki/Mercury_(planet)
+          </reference_text>
+          <description>
+              Overview and summary list of orbital parameters and physical characteristics.
+          </description>
+      </External_Reference>
+      
+    <External_Reference>
+          <reference_text>
+              Solomon, Sean C., Larry R. Nittler, and Brian J. Anderson (editors). 
+              Mercury: The View After MESSENGER. United Kingdom: Cambridge University Press,
+              583 pp., 2018.
+          </reference_text>
+          <description>
+              A review of knowledge about Mercury after conclusion of observations from the
+              first spacecraft to orbit the planet, edited by the MESSENGER mission Principal
+              Investigator, his deputy, and the Deputy Project Scientist. Topics include 
+              Mercury's chemical composition; the structure of its crust, lithosphere, mantle, 
+              and core; Mercury's modern and ancient magnetic field; Mercury's geology, 
+              including the planet's major geological units and their surface chemistry and 
+              mineralogy, its spectral reflectance characteristics, its craters and cratering 
+              history, its tectonic features and deformational history, its volcanic features 
+              and magmatic history, its distinctive hollows, and the frozen ices in its polar 
+              deposits; Mercury's exosphere and magnetosphere and the processes that govern 
+              their dynamics and their interaction with the solar wind and interplanetary 
+              magnetic field; the formation and large-scale evolution of the planet; and 
+              current plans and needed capabilities to explore Mercury in the future.
+          </description>
+      </External_Reference>
+    
+      <External_Reference>
+          <reference_text>
+              Vilas, Faith, Clark R. Chapman, and Mildred Shapley Matthews (editors). Mercury,
+              Tucson: The University of Arizona Press, 794 pp., 1988.
+          </reference_text>
+          <description>
+              A compendium of knowledge about Mercury as of the mid-1980s, ten years after the
+              Mariner 10 flybys and more than 20 years before MESSENGER entered Mercury orbit.
+              Forty-seven collaborating authors contributed chapters on surface composition, 
+              stratigraphy, and geology; tectonics; history; dynamics; magnetic field; atmosphere; 
+              the puzzling icy polar deposits; and prospects for future exploration.
+          </description>
+      </External_Reference>
+      
+  </Reference_List>
+  
+  <Target>
+      <name>Mercury</name>
+      <type>Planet</type>
+      <description>
+          The innermost planet in the Solar System.
+          One of the terrestrial (rocky) planets.
+      </description>
+  </Target>
+  
+</Product_Context>

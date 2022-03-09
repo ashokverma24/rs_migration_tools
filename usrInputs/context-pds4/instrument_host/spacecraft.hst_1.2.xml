@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.hst</logical_identifier>
+        <version_id>1.2</version_id>
+        <title>HUBBLE SPACE TELESCOPE</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.2</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.comet_sl9-jupiter_collision</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.hst</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.saturn_ring_plane_crossing_1995</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.saturn_small_satellite_astrometry</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+<!--removed in 1.1        <Internal_Reference> -->
+<!--removed in 1.1            <lid_reference>urn:nasa:pds:context:investigation:mission.support_archives</lid_reference> -->
+<!--removed in 1.1            <reference_type>instrument_host_to_investigation</reference_type> -->
+<!--removed in 1.1        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:hst.hstacs</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:hst.wfpc2</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:asteroid.asteroid</lid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:comet.sl9</lid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.jupiter</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mercury</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.neptune</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:dwarf_planet.134340_pluto</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.saturn</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.uranus</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.venus</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+<!--notyet        <Internal_Reference> -->
+<!--notyet            <lid_reference>urn:nasa:pds:context:target:ring.j_rings</lid_reference> -->
+<!--notyet            <reference_type>instrument_host_to_target</reference_type> -->
+<!--notyet        </Internal_Reference> -->
+<!--notyet        <Internal_Reference> -->
+<!--notyet            <lid_reference>urn:nasa:pds:context:target:ring.n_rings</lid_reference> -->
+<!--notyet            <reference_type>instrument_host_to_target</reference_type> -->
+<!--notyet        </Internal_Reference> -->
+<!--notyet        <Internal_Reference> -->
+<!--notyet            <lid_reference>urn:nasa:pds:context:target:ring.s_rings</lid_reference> -->
+<!--notyet            <reference_type>instrument_host_to_target</reference_type> -->
+<!--notyet        </Internal_Reference> -->
+<!--notyet        <Internal_Reference> -->
+<!--notyet            <lid_reference>urn:nasa:pds:context:target:ring.u_rings</lid_reference> -->
+<!--notyet            <reference_type>instrument_host_to_target</reference_type> -->
+<!--notyet        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.atlas</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.calypso</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.dione</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.enceladus</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.epimetheus</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.helene</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.hyperion</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.iapetus</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.janus</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.mimas</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.pan</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.pandora</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.prometheus</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.rhea</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.telesto</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.tethys</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.titan</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Burrows, C.J., J.A. Holtzman, S.M. Faber, P.Y. Bely, H. Hasan, C.R. Lynds, and
+                   D. Schroeder, &apos;The imaging Performance of the Hubble Space Telescope&apos;, Ap. J.
+                   Lett., 369, L21- L25, 1991.
+            </reference_text>
+            <description>reference.BURROWSETAL1991</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>HUBBLE SPACE TELESCOPE</name>
+        <type>Spacecraft</type>
+        <naif_host_id>HST</naif_host_id>
+
+        <description>
+ 
+ 
+  Instrument Host Overview
+  ========================
+    The Hubble Space Telescope (HST) was the first and flagship
+    mission of NASA&apos;s Great Observatories program.  Designed to
+    complement the wavelength capabilities of the other spacecraft
+    in the program (CGRO, AXAF, and SIRTF), HST was a 2.4 m, f/24
+    Ritchey-Chretien telescope capable of performing observations
+    in the visible, near-ultraviolet, and near-infrared (1150 A to
+    1 mm).
+ 
+    Placed into a low-earth orbit by the space shuttle, HST was
+    designed to be modular so that on subsequent shuttle missions
+    it could be recovered, have faulty or obsolete parts replaced
+    with new and/or improved instruments, and be re-released.  HST
+    was roughly cylindrical in shape, 13.1 m end-to-end and 4.3 m
+    in diameter at its widest point.
+ 
+    HST used an elaborate scheme for attitude control to improve
+    the stability of the spacecraft during observations.
+    Maneuvering was performed by four of six gyros, or reaction
+    wheels.  Pointing could be maintained in this mode (coarse
+    track) or the Fine Guidance Sensors (FGSs) could be used to
+    lock onto guide stars (fine lock) to reduce the spacecraft
+    drift and increase the pointing accuracy.
+ 
+    Power to the two on-board computers and the scientific
+    instruments was provided by two 2.4 x 12.1 m solar panels.  The
+    power generated by the arrays was also used to charge six
+    nickel-hydrogen batteries which provided power to the
+    spacecraft during the roughly 25 minutes per orbit in which HST
+    was within the Earth&apos;s shadow.
+ 
+    Communications with the satellite were maintained with the TDRS
+    satellites.  Observations taken during the time when neither
+    TDRS was visible from the spacecraft were recorded on tape
+    recorder and dumped during periods of visibility.  The
+    spacecraft also supported real-time interactions with the
+    ground system during times of TDRS visibility, enabling
+    observers to make small offsets in the spacecraft pointing to
+    perform their observations.  HST was the first scientific
+    spacecraft designed to utilize the full capabilities of TDRS,
+    communicating over either multiple-access or single-access
+    channels at any of the supported transmission rates.
+ 
+    HST was operated in three distinct phases.  During the first phase
+    of the mission (Orbital Verification or OV), responsibility for
+    the spacecraft was given to the Marshall Space Flight Center.  OV
+    consisted of an extended, eight-month checkout of the spacecraft,
+    including test of the on-board computers, pointing control system,
+    solar arrays, etc.  This phase was followed by the Science
+    Verification (SV) phase, lasting nearly another year, during which
+    each of the six science instruments was tested to verify their
+    capabilities and set limits on their safe operations during the
+    remainder of the mission. Responsibility for the spacecraft during
+    SV was given to Goddard Space Flight Center.  The last phase of
+    the mission, known as the General Observer (GO) phase, was planned
+    to last from the end of SV through the end of the mission and was
+    the responsibility of the Space Telescope Science Institute.
+    General observations were phased in gradually, however, during the
+    SV phase because the OV and SV portions of the mission were
+    considerably longer than expected prior to deployment.
+ 
+    The mission was troubled soon after launch by the discovery that
+    the primary mirror was spherically aberrated [sic].  In addition,
+    problems with the solar panels flexing as the spacecraft passed
+    from the Earth&apos;s shadow into sunlight caused problems with the
+    pointing stability.  Steps were taken to correct these problems,
+    including replacement of the solar panels, replacement of the Wide
+    Field and Planetary Camera with a second-generation version with
+    built-in corrective optics, and replacement of the High-Speed
+    Photometer with COSTAR (Corrective Optics Space Telescope Axial
+    Replacement) to correct the aberration for the remaining
+    instruments. Subsequent servicing missions (1997, 1999 2002)
+    updated or repaired onboard systems and replaced some of the
+    orignal instruments with new instruments.
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

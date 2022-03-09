@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.msx</logical_identifier>
+        <version_id>1.2</version_id>
+        <title>MIDCOURSE SPACE EXPERIMENT</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.2</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.midcourse_space_experiment</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:msx.spirit3</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:asteroid.asteroid</lid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:comet.comet</lid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:dust.dust</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mill, J.D., R.R. O&apos;Neil, S. Price, G.J. Romick, O.M. Uy, E.M. Gaposchkin,
+                   G.C. Light, W.W. Moore, Jr., T.L. Murdock, and A.T. Stair, Jr., Midcourse
+                   Space Experiment: Introduction to the spacecraft, instruments, and
+                   scientific objectives, Journal of Spacecraft and Rockets, 31, 900-907,
+                   1994.
+            </reference_text>
+            <description>reference.MILLETAL1994</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>MIDCOURSE SPACE EXPERIMENT</name>
+        <type>Spacecraft</type>
+        <naif_host_id>MSX</naif_host_id>
+
+        <description>
+ 
+ 
+  Instrument Host Overview
+  ========================
+    The Midcourse Space Experiment (MSX) was a long-duration
+    observatory-style measurement platform that collected of
+    high-quality data on Earth, Earth-limb, celestial background
+    targets, ICBM targets, and resident space objects.  MSX was
+    launched in April 1996 into polar orbit, and included a cryogenic
+    infrared scanning radiometer and Fourier-transform spectrometer,
+    several visible and ultraviolet imagers and spectrographic
+    imagers,
+    and set of contamination instruments.
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

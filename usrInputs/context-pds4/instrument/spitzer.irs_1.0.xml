@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+  
+<?xml-model href="http://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1000.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd http://pds.nasa.gov/pds4/ctli/v1 http://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1000.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:spitzer.irs</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Infrared Spectrograph (IRS)</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-02-06</modification_date>
+        <version_id>1.0</version_id>
+        <description>Creation</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.spitzer</lid_reference>
+      <reference_type>instrument_to_instrument_host</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <doi>10.1086/423134</doi>
+      <reference_text>The Infrared Spectrograph (IRS) on the Spitzer Space
+        Telescope, Houck, J. R.; Roellig, T. L.; van Cleve, J.; Forrest,
+        W. J.; Herter, T.; Lawrence, C. R.; Matthews, K.; Reitsema,
+        H. J.; Soifer, B. T.; Watson, D. M.; Weedman, D.; Huisjen, M.;
+        Troeltzsch, J.; Barry, D. J.; Bernard-Salas, J.; Blacken, C. E.;
+        Brandl, B. R.; Charmandaris, V.; Devost, D.; Gull, G. E. Hall,
+        P.; Henderson, C. P.; Higdon, S. J. U.; Pirger, B. E.; Schoenwald,
+        J.; Sloan, G. C.; Uchida, K. I.; Appleton, P. N.; Armus, L.;
+        Burgdorf, M. J.; Fajardo-Acosta, S. B.; Grillmair, C. J.;
+        Ingalls, J. G.; Morris, P. W.; Teplitz, H. I., 2004, ApJS, 154,
+        18-24.</reference_text>
+      <description>Paper describing the IRS instrument on Spitzer.</description>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>Infrared Spectrograph (IRS)</name>
+    <Type_List_Area>
+      <ctli:Type_List>
+        <ctli:type>Spectrometer</ctli:type>
+      </ctli:Type_List>
+    </Type_List_Area>
+    <description>The InfraRed Spectrograph (IRS) was an instrument
+      onboard the Spitzer Space Telescope. It could obtain low-resolution,
+      long slit spectra (R~60-130) from 5.2-38.0 microns and high-
+      resolution spectra (R~600) in Echelle mode from 9.9-37.2 microns.
+      The spectrograph consisted of four modules, each of which was built
+      around a 128x128 pixel array.</description>
+  </Instrument>
+</Product_Context>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.nu._cen</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Nu Centauri</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Nu Cen</alternate_title></Alias>
+      <Alias><alternate_title>nu. Cen</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14982</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-41 8171</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 0 11719</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-41 6479</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 101405</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 18665</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 8151</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00120307</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 07797-02744</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 120307</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 2016</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 67464</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 67464</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 5190</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 13465-4126</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2430</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J13493028-4141156</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3143</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 6454</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 318895</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 1998</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 224469</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC7 497</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC9 782</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 25358</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* ZI 1024</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 17066</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7797-2744-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 12315</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 19727</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100120307</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 11863</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 6112195451031438464</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Nu Centauri</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 13 hours 49 minutes 30.2764388 seconds
+Declination, ICRS coord, ep=J2000: -41 degrees 41 minutes 15.752069 seconds
+    </description>
+  </Target>
+</Product_Context>

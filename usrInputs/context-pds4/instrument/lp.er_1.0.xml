@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:lp.er</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ELECTRON REFLECTOMETER for LP</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.lp</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Acuna, M.H., J.E.P. Connerney, P. Wasilewski, R.P. Lin, K.A. Anderson, C.W.
+                   Carlson, J. McFadden, D.W. Curtis, H. Reme, A. Cros, J.L. Medale, J.A. Sauvaud,
+                   C. d&apos;Uston, S.J. Bauer, P. Cloutier, M. Mayhew, and N.F. Ness, Mars Observer
+                   Magnetic Fields Investigation, J. Geophys. Res., 97, 7799-7814, 1992.
+            </reference_text>
+            <description>reference.ACUNAETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Binder, A.B., W.C. Feldman, G.S. Hubbard, A.S. Konopliv, R.P. Lin, M.H. Acuna,
+                   and L.L. Hood, Lunar Prospector searches for polar ice, a metallic core, gas
+                   release events, and the moon&apos;s origin, Eos, Trans. AGU, 79, 97, 1998.
+            </reference_text>
+            <description>reference.BINDERETAL1998</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Carlson, C., D. Curtis, G. Paschmann, and W. Michael, An instrument for rapidly
+                   measuring plasma distribution functions with high resolution, Adv. Space Res.,
+                   2, 67, 1983.
+            </reference_text>
+            <description>reference.CARLSONETAL1983</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ELECTRON REFLECTOMETER</name>
+        <type>Magnetometer</type> <!--RChen/EN was Electron Reflectometer. Measures magnetic fields-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    The Lunar Prospector Electron Reflectometer (ER) instrument is based
+    on the instrument flown on the Mars Global Surveyor spacecraft
+    [ACUNAETAL1992].  Some changes were made to the Lunar Prospector
+    version to account for the spinning spacecraft.  The ER
+    instrumentation consists of a symmetric hemispherical electrostatic
+    analyzer and an electronics box.  The electronics box is common to
+    the ER and its companion instrument, the Magnetometer (MAG).  The ER
+    has a 360 degree disk-shaped field-of-view.  The electrostatic
+    optics select energy and focus the particles onto an imaging
+    detector. The ER sensor is a 12 cm diameter cylinder, 9 cm high.
+ 
+    The combined mass of the Magnetometer and Electron Reflectometer is
+    about 5 kg, and the two instruments together use about 4.5 w of
+    power.
+ 
+ 
+  Scientific Objectives
+  ====================
+    The Magnetometer/Electron Reflectometer (MAG/ER) experiment will
+    investigate the origin and nature of lunar crustal magnetic fields
+    and constrain the size of a metallic core.  The experiment also will
+    provide global maps of the lunar crustal magnetic fields and provide
+    estimates of the lunar induced magnetic dipole moment
+    [BINDERETAL1998].
+ 
+ 
+  Operational Considerations
+  ==========================
+    The ER unit maintains its temperature using thermal blanketing,
+    surface finishes, and its internal power dissipation.
+ 
+    The magnetic fields measured by the ER will be a combination of the
+    Earth&apos;s magnetic field, the field carried from the Sun by the solar
+    wind, and the Moon&apos;s field, which is extremely weak.  The magnetic
+    field at the lunar surface also is affected by local deposits of
+    magnetic material.
+ 
+ 
+  Detector Mounting Descriptions
+  ==============================
+    The ER and electronics box are mounted at the ends of a small cross
+    bar on the MAG/ER boom, about 1 m inboard from the MAG.  (The MAG is
+    on the end of the same boom, about 2.6 m away from the spacecraft
+    bus.)  The ER unit is mounted so that its field-of-view includes the
+    spin axis and is perpendicular to the boom.  The only blockage of
+    the ER field-of-view is the boom itself.
+ 
+    The ER can measure magnetic fields as weak as one-millionth of the
+    strength of the Earth&apos;s magnetic field.
+ 
+ 
+  Principal Investigator
+  ======================
+    The Co-I and magnetics group leader for the Lunar Prospector
+    Magnetometer and Electron Reflector experiment is Dr. Robert Lin of
+    the University of California, Berkeley.
+
+        </description>
+    </Instrument>
+</Product_Context>

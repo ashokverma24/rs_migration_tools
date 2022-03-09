@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.gravity_recovery_and_interior_laboratory</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>GRAVITY RECOVERY AND INTERIOR LABORATORY</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>GRAIL</alternate_id>
+                <alternate_title>GRAIL</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.grail-a</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.grail-b</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Roncoli, R.B., and K.K. Fujii, Mission Design Overview for the Gravity Recovery
+                   and Interior Laboratory (GRAIL) Mission, AIAA/AAS Astrodynamics Specialist
+                   Conference, Toronto, Ontario, Canada, 2010.
+                   http://arc.aiaa.org/doi/pdf/10.2514/6.2010-8383
+            </reference_text>
+            <description>reference.RONCOLI-FUJII2010</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>GRAVITY RECOVERY AND INTERIOR LABORATORY</name>
+        <type>Mission</type>
+        <start_date>2011-09-10</start_date>
+        <stop_date>2012-12-18</stop_date>
+
+        <description>
+ 
+  Mission Overview
+  ================
+    The GRAIL mission placed two spacecraft (GRAIL-A and GRAIL-B),
+    flying in formation, into orbit around the Moon to study its
+    internal structure. By very precisely measuring the distance of
+    one orbiter relative to the other, the orbital perturbations
+    caused by the Moon could be observed. Combining this with the
+    orbiter position as determined from Earth-based observations, the
+    mass distribution on the Moon could be determined.
+ 
+    The GRAIL spacecraft were launched side-by-side on a single Delta
+    II vehicle during a 26-day launch window that opened on September
+    8, 2011. The actual launch was two days later.  The mission
+    timeline was constructed to ensure continuity in operations by
+    avoiding lunar eclipses on December 10, 2011, and June 4, 2012,
+    when spacecraft power from the solar panels would be interrupted.
+    The Goldstone DSN complex acquired initial spacecraft signals and
+    confirmed solar array deployment.
+ 
+    The trans-lunar cruise phase consisted of a 3.5-month low-energy
+    transfer via the Sun-Earth Lagrange point 1 (EL1). Compared to a
+    direct trajectory, this low-energy transfer reduced spacecraft
+    fuel requirements (by approximately 130 m/s), allowed more time
+    for spacecraft check-out and out-gassing, and increased the number
+    of days available in the launch window each month.
+ 
+    Both spacecraft approached the Moon under the South Pole where they
+    each executed a 41-minute Lunar Orbit Insertion (LOI) maneuver to
+    put them into an elliptical orbit with a period of 11.5 hours. The
+    LOIs for the two spacecraft were separated by one day. Each LOI
+    was simultaneously visible from the Goldstone and Canberra DSN
+    complexes.
+ 
+    A series of four maneuvers were then performed to reduce the orbits
+    to nearly circular with a mean 55-km altitude and 113-minute
+    period. Further maneuvers positioned the spacecraft to the desired
+    initial separation distance, which then drifted between 65 km and
+    225 km.
+ 
+    The 90-day Science Phase was divided into three 27.3-day
+    nadir-pointed mapping cycles. Two daily 8-hour DSN tracking passes
+    acquired science and &apos;E/PO MoonKam&apos; data.
+ 
+    Following the Extended Mission Phase (August 29 - December 12,
+    2012), there was a 6-day decommissioning period, after which the
+    spacecraft impacted the lunar surface.
+ 
+    For more information on the GRAIL mission, see [RONCOLI&amp;FUJII2010].
+ 
+  Mission Phases
+  ==============
+    The GRAIL Mission was divided into eight phases: Launch, Cruise,
+    Orbit Insertion, Transition to Science, Science, Hiatus, Extended
+    Mission, and Decommissioning.
+ 
+    LAUNCH
+    ------
+    The Launch Phase extended from the start of the countdown to the
+    initial acquisition, by the DSN, of the orbiters in a safe and
+    stable configuration.
+ 
+    The twin orbiters were launched from Cape Canaveral Air Force
+    Station, Florida, on a Delta II Heavy shortly after the opening of
+    the launch window in September 2011. There were at least 21 launch
+    opportunities within this 26-day window. The Goldstone DSN complex
+    acquired the initial signal, as well as confirmation of solar
+    array deployment.
+ 
+      Mission Phase Start Time : 2011-09-10
+      Mission Phase Stop Time  : 2011-09-10
+ 
+    CRUISE
+    ------
+    The Cruise Phase extended from after DSN initial acquisition of
+    the orbiters in a safe and stable configuration until the first
+    Lunar Orbit Insertion (LOI) maneuver.
+ 
+    The orbiters followed a low-energy trajectory to the Moon, which
+    took them near the Sun-Earth Lagrange Point 1 (EL1). The low-energy
+    trajectory minimized the velocity change (dV) required for
+    insertion into lunar orbit. During the 112-day cruise, several
+    maneuvers were executed on each orbiter to adjust the trajectory.
+    One maneuver placed the orbiter on the low-energy trajectory and
+    another separated the Lunar Orbit Insertion (LOI) maneuvers for
+    each orbiter by about a day. The remaining maneuvers were used to
+    fine tune the trajectory.
+ 
+    The low-energy transfer was chosen to reduce the spacecraft fuel
+    requirements (by ~130 m/s), to allow more time for spacecraft
+    check-out and out-gassing, and to increase the number of days
+    available in the launch window each month.
+ 
+      Mission Phase Start Time : 2011-09-10
+      Mission Phase Stop Time  : 2011-12-31
+ 
+    ORBIT INSERTION
+    ---------------
+    This phase included the propulsive maneuvers to insert the two
+    spacecraft into lunar orbit. The maneuvers were separated by about
+    25 hours, with the GRAIL-A maneuver occurring on December 31, 2011,
+    and the GRAIL-B maneuver occurring on January 1, 2012.
+ 
+    Both spacecraft approached the Moon under the South Pole where
+    they each executed a 41-minute Lunar Orbit Insertion (LOI)
+    maneuver to put them into an elliptical orbit with a period of
+    about 11.5 hours. Each LOI was simultaneously visible from the
+    Goldstone and Canberra DSN complexes.
+ 
+      Mission Phase Start Time : 2011-12-31
+      Mission Phase Stop Time  : 2012-01-01
+ 
+    TRANSITION TO SCIENCE
+    ---------------------
+    Once in lunar orbit, and after checkout of the orbiter systems,
+    several maneuvers were performed on each orbiter to reduce the
+    orbit period and lower the altitude to the science orbit. These
+    maneuvers were grouped into two clusters, with each cluster
+    spanning about a week; clusters alternated between GRAIL-A and
+    GRAIL-B. Each maneuver cluster used the same maneuver design,
+    which reduced the workload on the operations teams. The orbit
+    period was reduced to 113 minutes.
+ 
+    A series of maneuvers was then performed to establish the proper
+    spacecraft formation at the start of the Science Phase. These
+    maneuvers positioned the spacecraft to the desired initial
+    separation distance, which would then drift between 65 km and 225
+    km.
+ 
+      Mission Phase Start Time : 2012-01-01
+      Mission Phase Stop Time  : 2012-03-01
+ 
+    SCIENCE
+    -------
+    The 90-day Science Phase was divided into three 27.3-day
+    nadir-pointed mapping cycles. Two daily 8-hour DSN tracking passes
+    acquired science and &apos;E/PO MoonKam&apos; data.
+ 
+    The Science Phase of the mission was conducted from a
+    near-circular, near-polar orbit with a mean altitude of 55 km.
+    There were three different mapping cycles during the Science
+    Phase, each covering a sidereal month (27.32 days). The first
+    mapping cycle started while the science orbit had low periapsis
+    altitudes with an orbiter separation distance of approximately 85
+    kilometers. Over the course of the first mapping cycle, and into
+    the second mapping cycle, the periapsis altitudes of the science
+    orbit increased, and the mean separation distance slowly drifted
+    to 225 kilometers. A small Orbit Trim Maneuver (OTM) was performed
+    during the second mapping cycle to decrease the separation drift
+    rate. Following this OTM to the end of the third mapping cycle,
+    the periapsis altitudes decreased, and the mean separation between
+    the orbiters slowly drifted from 225 km back to 65 km.
+ 
+    During the Science Phase, data were stored onboard and downlinked
+    as bandwidth became available. Each orbiter received an average of
+    twelve hours of tracking coverage per day.
+ 
+      Mission Phase Start Time : 2012-03-01
+      Mission Phase Stop Time  : 2012-05-29
+ 
+    HIATUS
+    ------
+    In the Hiatus Phase the beta-angle, which determines the amount of
+    sunlight on the solar panels and controls the amount of energy
+    available to the spacecraft, dropped below its threshold.  Science
+    operations were suspended and the two spacecraft executed a series
+    of maneuvers to re-position themselves for beta-angles above the
+    threshold prior to the start of the Extended Mission.
+ 
+      Mission Phase Start Time : 2012-05-29
+      Mission Phase Stop Time  : 2012-08-29
+ 
+    EXTENDED MISSION
+    ----------------
+    GRAIL proposed (and NASA approved) an Extended Mission, since
+    there was sufficient fuel in the two spacecraft to acquire
+    additional science data.  The mean spacecraft altitude was
+    lowered by about a factor of 2 to increase the sensitivity of the
+    gravity measurements, and GRAIL defined a new set of science
+    objectives.  As in the Science Phase, the spacecraft separation
+    distance was variable.  DSN coverage was comparable.
+ 
+      Mission Phase Start Time : 2012-08-29
+      Mission Phase Stop Time  : 2012-12-12
+ 
+    DECOMMISSIONING
+    ---------------
+    Science data were collected during the Decommissioning Phase as in
+    the Extended Mission phase. After final calibrations, the
+    Decommissioning Phase ended with impact of the spacecraft on the
+    lunar surface.
+ 
+      Mission Phase Start Time : 2012-12-12
+      Mission Phase Stop Time  : 2012-12-18
+        </description>
+    </Investigation>
+</Product_Context>

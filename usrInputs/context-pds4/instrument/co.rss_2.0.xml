@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+        xmlns:pds ="http://pds.nasa.gov/pds4/pds/v1" 
+        xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+        xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation=
+        "http://pds.nasa.gov/pds4/pds/v1    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd
+        http://pds.nasa.gov/pds4/ctli/v1   https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rss.co</logical_identifier>
+        <version_id>2.0</version_id>
+        <title>Radio Science Subsystem for Cassini Orbiter</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            
+            <Modification_Detail>
+                <modification_date>2021-02-15</modification_date>
+                <version_id>2.0</version_id>
+                <description>
+                    Updated for Cassini Orbiter raw radio science data migration to PDS4.
+                    Separated ground elements into a separate set of context products; this
+                    context product describes only the spacecraft instrumentation.  Corrected
+                    instrument type to be 'Radio Science'.  Reformatted for easier reading.
+                </description>
+            </Modification_Detail>
+            
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Extracted metadata from PDS3 catalog and modified to comply with PDS4 Information Model.
+                </description>
+            </Modification_Detail>
+            
+        </Modification_History>
+        
+    </Identification_Area>
+
+    <Reference_List>
+        
+       <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.co</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+       </Internal_Reference>
+        
+       <Internal_Reference>
+           <lid_reference>urn:nasa:pds:context:facility:observatory.dsn</lid_reference>
+           <reference_type>instrument_to_facility</reference_type>
+           <comment>
+               A description of the ground portion of the radio science instrument.
+           </comment>
+       </Internal_Reference>
+        
+       <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.810-005</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                DSN document 810-005 is the Telecommunication Link Design Handbook for the
+                NASA Deep Space Network.  It contains design data for flight projects using the
+                NASA DSN. The document is modular, and modules are updated as appropriate.  
+                This reference is to a PDS4 collection; products within the collection are 
+                versions of the Handbook, released at various times.  Modules include:
+                001 Handbook Introduction
+                  101 70-m Subnet Telecommunications Interfaces
+                  102 26-m Subnet Telecommunications Interfaces (omitted in 2009 and later versions)
+                  103 34-m HEF Subnet Telecommunications Interfaces
+                  104 34-m BWG Antennas Telecommunications Interfaces
+                  105 Atmospheric and Environmental Effects
+                  106 Solar Corona and Solar Wind Effects
+                  107 Radio Source Catalog
+                  201 Frequency and Channel Assignments
+                  202 34-m and 70-m Doppler
+                  203 Sequential Ranging
+                  205 Command Service
+                  206 Telemetry General Information
+                  207 34-m and 70-m Telemetry Reception
+                  208 Telemetry Data Decoding
+                  209 Open-Loop Radio Science
+                  210 Delta Differential One-way Ranging
+                  211 Wideband Very Long Baseline Interferometry
+                  214 Pseudonoise and Regenerative Ranging
+                  301 Coverage and Geometry (includes antenna coordinates)
+                  302 Antenna Positioning
+                  303 Media Calibration
+                  304 Frequency and Timing
+                  305 Test Support
+                  901 Handbook Glossary
+            </comment>
+       </Internal_Reference>
+        
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:radiosci.documentation:document:asmar.2014</lid_reference>
+        <reference_type>instrument_to_document</reference_type>
+        <comment>
+            User Guide for Cassini radio science data.
+        </comment>
+      </Internal_Reference>
+        
+      <External_Reference>
+            <reference_text>
+                   Asmar, S. W., N. A. Renzetti, The Deep Space Network as an Instrument for Radio
+                   Science Research, JPL Publication 80-93, Rev. 1, April 15, 1993.
+            </reference_text>
+            <description>
+                   An overview of the accomplishments of the NASA Deep Space Network in the field of radio
+                   science and a summary of current and planned capabilities as of the early 1990s.  The 
+                   radio science implementation for the Cassini mission to Saturn and Titan is used as an 
+                   example of planning.
+            </description>
+      </External_Reference>
+        
+      <External_Reference>
+            <reference_text>
+                   Deep Space Mission Systems, Tracking and Navigation Service, Requirements and
+                   Design, DSMS No. 821-104, Rev. B, JPL D-17235, Jet Propulsion Laboratory,
+                   Pasadena, CA, 2003.
+            </reference_text>
+            <description>
+                   A document providing requirements for the Tracking and Navigation Service
+                   within the Deep Space Mission System.
+            </description>
+      </External_Reference>
+        
+      <External_Reference>
+            <reference_text>
+                   Deep Space Mission Systems, Radio Science Service, Requirements and Design,
+                   DSMS No. 821-110, Rev. A, JPL D-17241, Jet Propulsion Laboratory, Pasadena, CA,
+                   2001.
+            </reference_text>
+            <description>
+                   A document establishing the functional requirements for the Deep Space
+                   Mission Systems Radio Science Service for the 1999 through 2008 time period. 
+                   The requirements focus at the service level, mainly in the areas of external 
+                   interface requirements (requirements to other services), Radio Science service 
+                   functional requirements, Radio Science service performance requirements, 
+                   reliability, maintainability requirements, and design and implementation 
+                   constraints.
+            </description>
+      </External_Reference>
+        
+      <External_Reference>
+            <reference_text>
+                   Deep Space Mission System/Cassini Project Network Operations Plan, 
+                   JPL Document DSN 871-011, March 2003.
+            </reference_text>
+            <description>
+                   A document containing guidelines for support of the Cassini-Huygens mission, 
+                   categorizes the Deep Space Network (DSN) operations functions, provides systems 
+                   configuration, and details the DSN operating procedures necessary to 
+                   prepare and train for committed support to the project.
+            </description>
+      </External_Reference>
+        
+      <External_Reference>
+            <reference_text>
+                   Kliore, A.J., J.D. Anderson, J.W. Armstrong, S.W. Asmar, C.L. Hamilton, 
+                   N.J. Rappaport, H.D. Wahlquist, R. Ambrosini, F.M. Flasar, R.G. French, 
+                   L. Iess, E.A. Marouf, and A.F. Nagy, Cassini Radio Science, Space Science 
+                   Reviews, 115, 1, 1-70, November 2004.
+            </reference_text>
+            <description>
+                   The Cassini Radio Science Team paper, published as the Cassini Orbiter began its
+                   science observations within the Saturn system. Radio science investigations began
+                   during the cruise phase of the mission and included searches for gravitational 
+                   waves and solar conjunction observations. During the Saturnian Tour, atmospheric, 
+                   ionospheric, ring, and satellite occultations were observed, and determinations
+                   of masses and gravity fields were extracted from radio tracking data. New 
+                   technologies in the construction of the instrument, which consisted of a portion 
+                   on-board the spacecraft and another portion on the ground, were described in the
+                   paper.  These included the use of a Ka-band signal, in addition to those 
+                   at S- and X-bands, opening new opportunities for important discoveries in each
+                   of the above scientific areas due to increased accuracy, resolution, sensitivity,
+                   and dynamic range.
+            </description>
+      </External_Reference>
+        
+    </Reference_List>
+    
+    <Instrument>
+        <name>Radio Science Subsystem</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Radio Science</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+        <serial_number>not applicable</serial_number>
+        <description>
+             The Cassini Radio Science instrument included elements on both the spacecraft
+             and the ground. The spacecraft element (covered by this context product) was 
+             further distributed among several subsystems on the Orbiter, while the ground 
+             element included NASA Deep Space Network (DSN) complexes in California, 
+             Australia, and Spain and occasional support from other ground stations such 
+             as antennas of the European Space Agency tracking network.
+ 
+             The Radio Science 'instrument' operated in two fundamental modes. For 'two-way' 
+             measurements, the 'uplink' signal from the ground could be a single carrier 
+             at either X-band (7.2 GHz) or Ka-band (34 GHz); or both carriers could be 
+             transmitted at the same time.  The spacecraft radio equipment then acted as a
+             repeater, collecting the carrier signal with the spacecraft High Gain Antenna 
+             (HGA) and transforming it to one or more 'downlink' frequencies (2.3 GHz, 8.4 GHz, 
+             or 32 GHz) by elements in the Radio Frequency Subsystem (RFS) and Radio Frequency
+             Instrument Subsystem (RFIS). For 'one-way' measurements, the signal source was 
+             on board the Cassini Orbiter; the output from an Ultrastable Oscillator (USO) was 
+             transformed to downlinks at 2.3, 8.4, or 32 GHz.   
+             
+             The downlink signals were amplified and radiated through the HGA toward Earth.
+             After passing through the medium of interest (e.g., plasma, rings, a neutral 
+             atmosphere or gravitationally curved space), the perturbed signal was collected  
+             by a ground antenna, amplified, down-converted, and recorded for later analysis.
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,119 @@
+             <Table_Binary>
+                   <name>ODF Data Summary Group Data</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                                The Data Summary Group
+                                is usually the 7th of several groups of records in an
+                                Orbit Data File (ODF).  It contains summary information
+                                on contents of the ODF.  The Data Summary Group Header
+                                is the first record in the Data Summary Group.  It is
+                                one 36-byte record and is followed by one or more 36-
+                                byte Data Summary Group data records ordered by
+                                station, band, and data type.  The Data Summary Group
+                                may be omitted from an ODF.
+                   </description>
+                   <Record_Binary>
+                         <fields>9</fields>
+                         <groups>0</groups>
+                         <record_length unit="byte">36</record_length> 
+                         <Field_Binary>
+                               <name>First Sample Time, integer part</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>Second</unit>
+                               <description>
+                                           Item 1:  The integer part of the first
+                                           sample time, measured from 0 hours UTC on 1 January 1950.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>First Sample Time, Fractional Part</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">5</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                              <unit>Nanosecond</unit>
+                               <description>
+                                           Item 2:  The fractional part of the first
+                                           sample time (see field 1).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Receiving Station ID</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">9</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 3:  The Station ID Number.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Doppler Channel Number</name>
+                               <field_number>4</field_number>
+                               <field_location unit="byte">13</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 4: If FORMAT ID = 2 (Item 5 or 6, Orbit Data Group Data):
+                                           The Doppler Channel Number (or set to 0 if VLBI,
+                                           range, or angles summary). Otherwise, the Network ID Number.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Downlink Band ID</name>
+                               <field_number>5</field_number>
+                               <field_location unit="byte">17</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 5:  The Band ID Number.      
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Data Type ID</name>
+                               <field_number>6</field_number>
+                               <field_location unit="byte">21</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 6:  The Data Type ID Number.   
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Number of Samples</name>
+                               <field_number>7</field_number>
+                               <field_location unit="byte">25</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 7:  Number of samples in ODF.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Last Sample Time, integer part</name>
+                               <field_number>8</field_number>
+                               <field_location unit="byte">29</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                              <unit>Second</unit>
+                               <description>
+                                           Item 8:  Last Sample Time, integer part
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Last Sample Time, fractional part</name>
+                               <field_number>9</field_number>
+                               <field_location unit="byte">33</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                              <unit>Nanosecond</unit>
+                               <description>
+                                           Item 9:  Last Sample Time, fractional part
+                               </description>
+                         </Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>

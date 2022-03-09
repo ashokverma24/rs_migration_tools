@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:mimic</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Mimic</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-08-15</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>Mimic</name>
+        <abstract_desc>A set of tools to create mirrors of file collections. Mimic can use either the HTTP, SSH or FTP protocol to copy files.</abstract_desc>
+        <url>http://release.igpp.ucla.edu/igpp/mimic/</url>
+        <service_type>Tool</service_type>
+        <interface_type>Command-Line</interface_type>
+        <interface_type>Service</interface_type>
+        <category>Dissemination</category>
+        <software_language>Java</software_language>
+        <supported_operating_system_note>Supports all platforms with a Java VM.</supported_operating_system_note>
+        <description> Mimic is a set of tools to create mirrors of file collections. It uses a combination of techniques to optimize the synchronization of the collections. Mimic can use either the HTTP, SSH or FTP protocol to copy files. It supports both pushing files to remote locations or pulling files from remote locations. This means that the Mimic tools only needs to be installed on one of the systems in the set of mirror hosts.
+
+        Mimic was written to address the performance issues that exist in tools like bbcp, rsync and rcp. While these tools are widely used they are not optimized for synchronizing large data collections. For example, bbcp achieves high speed copying of files, but the process is blind to the state of the destination file. While bbcp does support the use of check sums using this feature slows down the copy process as the check sum is calculated on demand. With rsync only those files (blocks) which are different are copied, but the process of building the block maps occurs with each invocation. For a collection with thousands or millions of files the building of the block list is very time consuming. With rcp copies are completely blind with every file copied everytime. Mimic takes the best of what bbcp, rsync and rcp offer and combines the features into a single tool designed specifically to deliver and synchronize mirrors of file collections at multiple distributed locations.</description>
+    </Service>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:node:node.ppi-ucla</lid_reference>
+            <reference_type>has_node</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <!--
+    Submitter Information
+    Submitter Name:        Todd King
+    Submitter Institution: PDS PPI Node (UCLA)
+    Submitter Email:       tking@igpp.ucla.edu
+    -->
+</Product_Service>

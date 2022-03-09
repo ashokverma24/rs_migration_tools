@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.nu._vir</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Nu Virginis</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>3 Virginis</alternate_title></Alias>
+      <Alias><alternate_title>Nu Vir</alternate_title></Alias>
+      <Alias><alternate_title>nu. Vir</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>3 Vir</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+06 1460</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 1042440</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+07 2479</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 102676</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DO 3143</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 1302</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 16135</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 7128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00102212</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 00278-00925</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 102212</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 57380</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 57380</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 4517</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 11432+0649</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 11432+0648</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +10245</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2086</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Karmn J11458+065</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J1145+0631</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J11455155+0631456</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 2741</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 28465</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 5318</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2720</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2720.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 899</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 158181</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1509</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 119035</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 22240</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 278-925-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 10599</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 17357</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 0965-00206336</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 10313</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 6 5910</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 3897724469417974016</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Nu Virginis</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 11 hours 45 minutes 51.5595736 seconds
+Declination, ICRS coord, ep=J2000: +06 degrees 31 minutes 45.741287 seconds
+    </description>
+  </Target>
+</Product_Context>

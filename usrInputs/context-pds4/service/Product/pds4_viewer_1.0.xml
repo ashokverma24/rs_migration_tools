@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:pds4_viewer</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PDS4 Viewer</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-07-05</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>PDS4 Viewer</name>
+        <abstract_desc>A general read-in and visualization GUI tool for PDS4 data, runs on multiple platforms.</abstract_desc>
+        <url>https://sbnwiki.astro.umd.edu/wiki/PDS4_Viewer</url>
+        <service_type>Tool</service_type>
+        <interface_type>GUI</interface_type>
+        <category>Reader</category>
+        <category>Visualization</category>
+        <supported_operating_system_note>New Supported Operating Systems: Tested with: Windows 7, 8 and 10 (64-bit), Mac OS X 10.6 - 11 (Big Sur) and Linux (numerous flavors).</supported_operating_system_note>
+        <description>A stand-alone, no-installation required GUI, that allows visualization of PDS4 data via: 1) Arrays (Image, Spectrum, etc) as images; 2) Tables as plots of columns; 3) Arrays and Tables as tables; 4) Labels and meta-data in an easily consumable way.</description>
+    </Service>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:node:node.sbn</lid_reference>
+            <reference_type>has_node</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <!--
+    Submitter Information
+    Submitter Name:        Lev Nagdimunov
+    Submitter Institution: PDS Small Bodies Node (UMD)
+    Submitter Email:       lnagdi1@astro.umd.edu
+    -->
+</Product_Service>

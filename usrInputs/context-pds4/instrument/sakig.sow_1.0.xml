@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:sakig.sow</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SOLAR-WIND INSTRUMENT for SAKIG</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:sow.sakig</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.sakig</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reinhard, R and B. Battrick (eds), &apos;Space Missions to Halley&apos;s Comet&apos;, European
+                   Space Agency ESA SP-1066, ESA Pub Div, Moordwijk, Netherlands, 1986.
+            </reference_text>
+            <description>reference.ESA-SP1066</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   &apos;Encounters with Comet Halley, The first results&apos;, Nature, Volume 321, No.
+                   6067, 15 May 1986.
+            </reference_text>
+            <description>reference.NATURE321</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>SOLAR-WIND INSTRUMENT</name>
+        <type>Particle Detector</type> <!--RChen/EN was Faraday Cup. No obvious choice. TBD in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    Instrument Overview
+    ===================
+      The Solar-Wind Instrument on MS-T5 employs a
+      Faraday cup to measure the bulk velocity, density
+      and temperature of solar-wind ions.  This
+      conventional cup, mounted flush with the outer skin
+      of the spacecraft, consists of four grids and\ an
+      ion collector.  The front grid G(1), is connected
+      to the satellite skin.  A square-wave voltage is
+      applied to the modulator grid G(2), alternating at
+      400 Hz between 0 and V volt.  This produces a
+      pulsating current by repelling and transmitting
+      those incoming particles whose energy is between 0
+      and a maximum voltage V of 1.5 kV, which can be
+      selected from the ground.  The voltage will be
+      fixed for most of the mission, although the
+      instrument has several operating modes, such as
+      automatic voltage change for every spin, automatic
+      fine voltage sweep between two voltages, etc.  The
+      third grid is grounded to block any leakage of
+      modulating voltage from G(2) to the collector.  The
+      fourth grid is negatively biased at - 100 V to
+      suppress photo-electrons from the collector.  The
+      sensor is not sensitive to the solar-wind stream
+      beyond an angle of attack of +/- 60deg.  The table
+      below summarizes the sensor&apos;s characteristics.
+      Both DC and AC collector currents are detected.
+      The former (ion current and secondary-electron
+      current), which vary during each satellite spin,
+      are used to check the angular characteristic of the
+      Faraday cup itself and to monitor the
+      photo-electron contribution to the collector
+      current.  The modulated ion current measured
+      between 2x10**-12 A and 10**-8 A is sampled at 128
+      points between - 90deg and +90deg with respect to
+      the solar-wind direction, i.e.  every
+      180deg/128=1.4deg the collector Current is sampled
+      as a function of the spin angle.  The bulk velocity
+      and ion density are calculated from the point where
+      the slope of the collector-current versus spin
+      angle function becomes a maximum.
+ 
+______________________________________________
+Table:  Characteristics of MS-T5 Solar-Wind Instrument
+ 
+Transmission of the grids   G(1) G(2), G(4) : 90%
+                            G(3)          : 77%
+                            Overall      : 70%
+ 
+Distance between grids      4 mm
+Collector diameter         90 mm
+Maximum voltage to be
+applied to G(2)             1.5 kV +/- 40 V
+Collector impedance        10 M Ohms (with 20 pF)
+                           collector-ground
+                           stray capacity
+______________________________________________
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

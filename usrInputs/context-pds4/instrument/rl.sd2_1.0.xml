@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:esa:psa:context:instrument:rl.sd2</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Sampling, Drilling and Distribution Subsystem for RL</title>
+    <information_model_version>1.16.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2021-06-15</modification_date>
+        <version_id>1.0</version_id>
+        <description>Migrated from PDS3 catalog file.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.rl</lid_reference>
+      <reference_type>instrument_to_instrument_host</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <doi>10.1007/s11214-006-9134-6</doi>
+      <reference_text>Ercoli-Finzi, A. et al., SD2 - How To Sample A           
+        Comet, Space Sci. Rev., 128(1-4), 281-299, Feb. 2007.</reference_text>
+      <description>Reference to the instrument paper.</description>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>Sampling, Drilling and Distribution Subsystem</name>
+    <Type_List_Area>
+      <ctli:Type_List>
+        <ctli:type>Sub-Surface Tool</ctli:type>
+      </ctli:Type_List>
+    </Type_List_Area>
+    <naif_instrument_id>not applicable</naif_instrument_id>
+    <serial_number>not applicable</serial_number>
+    <description>                                                   
+                                                                           
+        Instrument Overview                                                
+        ===================        
+        SD2 is a subsystem that aim to collect samples from the 
+        ground of comet, verify volume of sample by an item called
+        Volume Checker, and distribute the collected samples to the
+        others experiments  (CIVA and COSAC). SD2 is composed by a 
+        Drill, Carousel, Volume  Checker and electronic box. The 
+        Drill creates the hole and collects samples at different 
+        depths. The samples are placed in ovens mounted on the 
+        distribution subsystem, the Carousel, which is in charge of
+        distributing the samples to the designated experiment.
+        Before distribution, the volume of the collected sample is 
+        measured by the Volume Checker.
+
+        Scientific Objectives                                            
+        =====================        
+        The scientific goal of SD2 is to collect samples from the 
+        comet soil, measure the volume of the sample using the Volume 
+        Checker, and distribute the collected samples to the experiments
+        CIVA and COSAC. In conjunction with complementary data from 
+        lander subsystems and instruments, SD2 scientific data can also
+        be used to determine the depth at which the sample has been 
+        collected.
+
+        Calibration                                  
+        ===========        
+        No calibration is planned for the telemetry data. Only a 
+        translation in more comprehensible format is performed. Thus,
+        the calibrated data are obtained by the mere translation of the
+        raw data.
+                                                                         
+        Operational Considerations                                      
+        ==========================      
+        SD2 translation is commanded in offsets from SD2 reference (zero)
+        position. Thus, the operator cannot command the depth directly:
+        the depth reached can be deduced if the distance of the soil from
+        the lander baseplate in the drilling area is available.
+
+        Operational Modes
+        =================
+        Two main operational modes are foreseen for SD2 Nominal and Dead
+        mode. The first one is for the nominal operational mode; the second
+        one is associated to failure occurrence.
+                       
+        Measured Parameters    
+        ===================
+        Drill position; Drill rotation speed; Carousel position.
+    </description>
+  </Instrument>
+</Product_Context>

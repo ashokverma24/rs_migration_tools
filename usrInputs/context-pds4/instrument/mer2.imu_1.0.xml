@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:imu.mer2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>INERTIAL MEASUREMENT UNIT for MER2</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mer2::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Crisp, J.A., M. Adler, J.R. Matijevic, S.W. Squyres, R.E. Arvidson, and D.M.
+                   Kass, Mars Exploration Rover mission, J. Geophys. Res., 108(E12), 8061,
+                   doi:10.1029/2002JE002038, 2003.
+            </reference_text>
+            <description>reference.CRISPETAL2003</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>INERTIAL MEASUREMENT UNIT</name>
+        <type>Atmospheric Sciences</type> <!-- RChen/EN was Accelerometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    Each MER entry capsule contained two LITTON LN-200S Inertial
+    Measurement Units (IMU).  One IMU was located within the rover,
+    with the other IMU located on the backshell.  The IMU within the
+    rover was not located at the rover&apos;s center of mass, and the IMU
+    within the backshell was not located at the backshell&apos;s center of
+    mass.  Neither of the two IMU&apos;s within the entry capsule was
+    located near either the entry shell&apos;s center of mass nor the
+    entry shell&apos;s spin axis.  The entry shell consisted of the heat
+    shield and backshell inside of these two joined components.
+ 
+    The four LN-200S units employed in the mission were selected from
+    a larger population for improved stability.
+ 
+    These LN-200S IMU&apos;s provide three-axis rotation rate and
+    acceleration measurements.  The rotation rate is provided by a
+    Fiber Optic Gyro (FOG) sensor, while the accelerations are
+    provided by silicon accelerometers.  Each IMU contains three FOGs
+    and three accelerometers, oriented orthogonally to provide
+    measurements in three dimensions simultaneously.  The resultant
+    measurements from each of the accelerometers and each of the FOGs
+    is spatially transformed to the center of the IMU prior to being
+    output by the instrument.
+ 
+    Each IMU has a mass of 0.75 kg (1.65 pound weight), is ~9 cm by 9
+    cm in size, and is operated at 12 watts.  These LN-200S IMU&apos;s
+    have space flight heritage, having been successfully flown on the
+    Clementine mission.
+ 
+    The accelerometers within each IMU had a dynamic range of 80g
+    (where g here represents Earth&apos;s standard surface gravitational
+    acceleration of 9.80665 meters per second per second) and a
+    resolution of 2.4 milli g&apos;s, with a noise level of 1.6 milli g&apos;s
+    when sampled at 400 Hz (the nominal instrument sampling rate).
+    The spacecraft could not handle 400 Hz sampling, so the IMU data
+    were summed over 50 measurements, resulting in an 8 Hz sampling
+    by the spacecraft.  This summing has the effect of reducing the
+    the effective noise to 300 micro g&apos;s, with an effective
+    resolution of 50 micro g&apos;s.  These instrument attributes are
+    clearly discussed in [CRISPETAL2003].
+ 
+    Atmospheric entry occurred at a nominal height of 128 km above
+    the Mars surface at a nominal atmospheric relative velocity of
+    5400 m/s.  The frictional drag of the atmosphere upon the entry
+    vehicle results in a reduction in the speed of the entry vehicle.
+    This deceleration is measured by the accelerometers within the
+    IMU, while the orientation of the entry vehicle is provided by
+    the gyroscope measurements.
+ 
+    The FOGs also provided relative orientation information for both
+    the backshell and the lander after parachute deployment, which
+    occurred approximately 240 seconds after entry at an altitude
+    approximately 8.5 kilometers above the surface.  The lander
+    separated from the backshell and descended on a tether
+    approximately 30 seconds after parachute deployment.  Subsequent
+    simultaneous backshell and lander (rover) IMU measurements in
+    this tethered condition allow for the &apos;swing&apos; of the lander on
+    the tether to be determined.  This enabled removal of this motion
+    from the accelerometer measurements, permitting a determination
+    of the net motion of the lander toward the surface.  This allows
+    for atmospheric profile reconstruction while the lander is still
+    attached to the parachute.  These measurements (as well as the
+    descent imaging) also served as part of the guidance for the
+    horizontal motion reduction system which was included to minimize
+    lander horizontal motion upon initial impact with the surface.
+    The bridle connecting the lander to the backshell was severed
+    approximately three seconds prior to surface impact.  The
+    backshell IMU measurements ceased upon the severing of this
+    connection.
+ 
+ 
+  Platform Mounting Description
+  =============================
+    Each entry assemblage included two IMUs.  One IMU was included
+    within the rover while the other was included on the backshell.
+    Neither of these was located at either the center of mass of its
+    parent entry vehicle component nor the center of mass of the
+    entire entry vehicle.
+ 
+ 
+  Principal Investigator
+  ======================
+    No Science Team was selected for the IMU/EDL aspect of the MER
+    mission, thus there is no Principal Investigator.  The IMU system
+    was part of the engineering instrumentation and was selected,
+    configured, installed, and operated by members of the engineering
+    team.  They provided entry vehicle deceleration and position and
+    orientation information that was used for tracking EDL and
+    triggering EDL events on the entry vehicle (parachute deployment,
+    lander and backshell relative attitudes, retro- rocket firing,
+    etc.).
+ 
+ 
+  Scientific Objectives
+  =====================
+    The IMUs were not science instruments and thus nominally there
+    was no science objective for their inclusion on the spacecraft.
+    The measured deceleration values provided by the IMU, as a
+    function of time (which needs to be used to determine the height
+    above the surface).  the surface, can be employed to deduce the
+    vertical structure of density and pressure, and ultimately
+    temperature of the atmospheric column traversed by the lander as
+    it descended through the atmosphere.
+ 
+ 
+  Operational Considerations
+  ==========================
+    The nominal data rate provided by the IMUs was 400 Hz, a rate
+    faster than the on-board spacecraft processing could deal with.
+    The 400 Hz rate was reduced to 8 Hz via averaging of 50
+    consecutive measurements (measurements 1-50, 51-100, ...) and it
+    was these 8 Hz data that were ingested into the onboard software
+    and from which the accelerations and rotation rates were
+    calculated.  It is these on-board calculated values of
+    accelerations (or velocity change) and rotation rates (or
+    quaternion elements) that are included in this archive.  EDL is a
+    mission critical phase (if EDL fails, the mission is completely
+    lost) and thus the IMU data collection/processing needed to adapt
+    to the EDL and mission requirements.  Furthermore, since the IMUs
+    were a key component (as an active sensor) of the EDL process,
+    their operational characteristics were driven by EDL engineering
+    considerations.  This included the amount and type of in-flight
+    processing to the IMU data, the sampling frequency, and the data
+    collection rate.  These choices have, in some ways, limited the
+    scientific return of the instruments.
+ 
+ 
+  Calibration
+  ===========
+    The IMUs were delivered with a &apos;factory calibration&apos; based upon
+    individual unit testing after assembly.  Based upon later
+    testing, this is good, but not perfect.  Among other issues, it
+    does not account for unit aging and instrument drift.  It is only
+    intended to ensure the instrument remains within the formal
+    specifications as they (the IMUs) performed their critical tasks
+    during EDL.  The onboard calculated parameters (the TRANSFORMED
+    dataset) are based upon the IMU output and nominal (not measured)
+    entry-vehicle parameters (IMU position and orientation, etc.).
+    There was no laboratory testing of the IMU performance and
+    quality while in the entry configuration.  A more accurate
+    calibration based upon prelaunch measurements, cruise
+    observations, as well as EDL data themselves is in progress.  It
+    is anticipated that this calibration effort will result in an
+    improved IMU EDL dataset.
+ 
+ 
+  Operational Modes
+  =================
+    From the time of IMU turn on throughout the total EDL process
+    (atmospheric entry through the cessation of bouncing and
+    rolling), IMU data were provided at 400 Hz and integrated to 8 Hz
+    measurements used by the on-board software.  There were no gain
+    changes or offset changes throughout this time period.  The
+    interval between saved samples (and whether or not the HIGHRATE
+    data were collected) varied over the course of EDL.  This was
+    based partly upon absolute time and partly upon spacecraft
+    events.  One anomaly was a periodic resetting to a value of zero
+    of the accumulated velocity change (in each of the three axes) of
+    the Rover IMU.
+
+        </description>
+    </Instrument>
+</Product_Context>

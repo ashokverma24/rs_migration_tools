@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1800.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.dsn</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>The Deep Space Network</title>
+        <information_model_version>1.8.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-06-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version created for use with InSight mission</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.insight</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Facility>
+        <name>DSN</name>
+        <type>Observatory</type>
+        <description>
+        	The Deep Space Network (DSN) is NASA's international array of giant 
+        	radio antennas that supports interplanetary and Earth-orbiting missions. 
+        	The DSN also provides radar and radio astronomy observations.
+          The DSN is operated by NASA's Jet Propulsion Laboratory (JPL).
+          It consists of three facilities spaced equidistant from each other,
+          approximately 120 degrees apart in longitude, around the world. 
+          These sites are at Goldstone, near Barstow, California; near Madrid, 
+          Spain; and near Canberra, Australia. The strategic placement of these 
+          sites permits constant communication with spacecraft as Earth rotates. 
+        </description>
+    </Facility>
+</Product_Context>

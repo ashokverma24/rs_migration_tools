@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_cma</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Sirius</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Dog Star</alternate_title></Alias>
+      <Alias><alternate_title>Aschere</alternate_title></Alias>
+      <Alias><alternate_title>Canicula</alternate_title></Alias>
+      <Alias><alternate_title>9 Canis Majoris</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Canis Majoris</alternate_title></Alias>
+      <Alias><alternate_title>Alpha CMa</alternate_title></Alias>
+      <Alias><alternate_title>Al Shira</alternate_title></Alias>
+      <Alias><alternate_title>Sothis</alternate_title></Alias>
+      <Alias><alternate_title>Alhabor</alternate_title></Alias>
+      <Alias><alternate_title>Mrgavyadha</alternate_title></Alias>
+      <Alias><alternate_title>Lubdhaka</alternate_title></Alias>
+      <Alias><alternate_title>Tenrosei</alternate_title></Alias>
+      <Alias><alternate_title>Sirius A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>alf CMa A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>alf CMa</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>9 CMa</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AGC 1A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 5423 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-FIS-V1 J0645085-164258</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-16 1591A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-16 1591</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J06451-1643A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 1368</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Ci 20 396</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-16 1591 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 257</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GAT 474</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 8833</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 4392</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00048915A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 244 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 48915A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 48915</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 556</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 32349</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 32349</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 2491</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 06408-1635 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 06429-1639</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS S06429-1639</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS S06430-1639</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -20105</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1425</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LFT 486</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LHS 219</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LPM 243</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 2638</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J06450887-1642566</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 1470</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 16953</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 17173</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>8pc 379.21A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1577</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 186</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PM 06430-1639A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 217626</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1007</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Renson 13090</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 1088</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 151881</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC7 288</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC9 416</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 11855</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 8027</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5949-2777-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 12413</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 6709</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO 816</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100048915 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J06451-1643A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 6525</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Zkh 91</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-09-21</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Sirius</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 06 hours 45 minutes 08.91728 seconds
+Declination, ICRS coord, ep=J2000: -16 degrees 42 minutes 58.0171 seconds
+    </description>
+  </Target>
+</Product_Context>

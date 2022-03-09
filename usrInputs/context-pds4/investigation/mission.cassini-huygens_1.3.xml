@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.cassini-huygens</logical_identifier>
+        <version_id>1.3</version_id>
+        <title>Cassini-Huygens</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Alias_List>
+            <Alias>
+                <alternate_id>Cassini</alternate_id>
+                <alternate_title>Cassini</alternate_title>
+            </Alias>
+        </Alias_List>
+        
+        <Modification_History>
+            
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.3</version_id>
+                <description>
+                    Changed HP's LID from urn:nasa:pds: to urn:esa:psa:
+                </description>
+            </Modification_Detail>
+            
+            <Modification_Detail>
+                <modification_date>2021-02-15</modification_date>
+                <version_id>1.2</version_id>
+                <description>
+                    Updated for Cassini migration to PDS4 by PDS Radio Science Advisor.
+                    Corrected case and tense of several values. Reformatted for easier reading.
+                    Added radio science information.
+                </description>
+            </Modification_Detail>
+            
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide to PDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+            
+        </Modification_History>
+        
+    </Identification_Area>
+
+    <Reference_List>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.co</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.dsn</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.hp</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:asteroid.2685_masursky</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:astrophysical.gravitational_waves</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:dust.dust</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.earth</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.jupiter</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.saturn</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.venus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planetary_system.solar_system</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+<!--notyet        <Internal_Reference> -->
+<!--notyet            <lid_reference>urn:nasa:pds:context:target:plasma_cloud.io_plasma_torus</lid_reference> -->
+<!--notyet            <reference_type>investigation_to_target</reference_type> -->
+<!--notyet        </Internal_Reference> -->
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:plasma_stream.solar_wind</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+<!--notyet        <Internal_Reference> -->
+<!--notyet            <lid_reference>urn:nasa:pds:context:target:ring.s_rings</lid_reference> -->
+<!--notyet            <reference_type>investigation_to_target</reference_type> -->
+<!--notyet        </Internal_Reference> -->
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.aegaeon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.albiorix</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.anthe</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.atlas</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.bebhionn</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.bergelmir</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.bestla</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.callisto</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.calypso</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.daphnis</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.dione</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.enceladus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.epimetheus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.erriapus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.erriapus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.europa</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.fornjot</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.ganymede</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.greip</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.hati</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.helene</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.hyperion</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.hyrrokkin</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.iapetus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.ijiraq</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.io</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.janus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.kari</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.kiviuq</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.loge</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.methone</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.mimas</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.mundilfari</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.narvi</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.paaliaq</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.pallene</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.pan</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.pandora</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.phoebe</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.polydeuces</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.prometheus</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.rhea</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.siarnaq</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.skathi</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.skathi</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.skoll</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.surtur</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.suttungr</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.tarqeq</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.tarvos</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.telesto</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.tethys</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.thrymr</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.titan</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.saturn.ymir</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:star.wasp-3</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:star.alf_vir</lid_reference>  <!-- spica -->
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:star.star</lid_reference> -->
+<!--            <reference_type>investigation_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:star.sun</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                   Cassini Mission Plan, Revision N (PD 699-100), JPL Document D-5564, Jet
+                   Propulsion Laboratory, Pasadena, CA, 2002.
+            </reference_text>
+            <description>reference.JPL D-5564</description>
+        </External_Reference>
+        
+    </Reference_List>
+
+    <Investigation>
+        <name>Cassini-Huygens</name>
+        <type>Mission</type>
+        <start_date>1997-10-15</start_date>
+        <stop_date>2017-09-15</stop_date>
+        <description>
+
+            Cruise Objectives.
+            -----------------
+            
+            While en route to Saturn, Cassini performed three sets of Gravitational
+            Wave Experiments (GWEs), each scheduled near opposition and each lasting
+            approximately 40 days.  During these observations, Cassini acted as a point
+            mass which would be perturbed by propagating gravitational waves resulting
+            from sudden destruction (or creation) of large masses in the general
+            direction of the spacecraft-to-Earth line.
+            
+            While en route to Saturn, Cassini was also used in two Solar Conjunction
+            Experiments (SCEs), each lasting approximately 30 days.  The objectives of
+            these observations were to test general relativity and to improve our
+            understanding of the solar corona.
+            
+            The general scientific objectives of the Cassini mission at Saturn were to
+            investigate the physical, chemical, and temporal characteristics of Titan
+            and of Saturn, its atmosphere, rings, icy satellites, and magnetosphere.
+            These are listed more specifically below:
+            
+            Saturn (Planet) Objectives.
+            --------------------------
+            
+            a) Determine temperature field, cloud properties, and composition of the
+            atmosphere of Saturn.
+            
+            b) Measure the global wind field, including wave and eddy components;
+            observe synoptic cloud features and processes.
+            
+            c) Infer the internal structure and rotation of the deep atmosphere.
+            
+            d) Study the diurnal variations and magnetic control of the ionosphere of
+            Saturn.
+            
+            e) Provide observational constraints (gas composition, isotope ratios, and
+            heat flux, etc.) on scenarios for the formation and the evolution of Saturn.
+            
+            f) Investigate the sources and the morphology of Saturn lightning, Saturn
+            Electrostatic Discharges (SED), and whistlers.
+            
+            Titan Objectives.
+            ----------------
+            
+            a) Determine abundance of atmospheric constituents (including any noble
+            gases), establish isotope ratios for abundant elements, constrain scenarios
+            of formation and evolution of Titan and its atmosphere.
+            
+            b) Observe vertical and horizontal distributions of trace gases, search for
+            more complex organic molecules, investigate energy sources for atmospheric
+            chemistry, and model the photochemistry of the stratosphere, study
+            formation and composition of aerosols.
+            
+            c) Measure winds and global temperatures; investigate cloud physics,
+            general circulation, and seasonal effects in Titan's atmosphere; search for
+            lightning discharges.
+            
+            d) Determine the physical state, topography, and composition of the
+            surface; infer the internal structure of the satellite.
+            
+            e) Investigate the upper atmosphere, its ionization, and its role as a
+            source of neutral and ionized material for magnetosphere of Saturn.
+            
+            Ring Objectives.
+            ---------------
+            
+            a) Study configuration of the rings and dynamical processes (gravitational,
+            viscous, erosional, and electromagnetic) responsible for ring structure.
+            
+            b) Map composition and size distribution of ring material.
+            
+            c) Investigate interrelation of rings and satellites, including embedded
+            satellites.
+            
+            d) Determine dust and meteoroid distribution in the vicinity of the rings.
+            
+            e) Study interactions between the rings and Saturn's magnetosphere,
+            ionosphere, and atmosphere.
+            
+            Icy Satellite Objectives.
+            ------------------------
+            
+            a) Determine the general characteristics and geological histories of the
+            satellites.
+            
+            b) Define the mechanisms of crustal and surface modifications, both
+            external and internal.
+            
+            c) Investigate the compositions and distributions of surface materials,
+            particularly dark, organic rich materials and low melting point condensed
+            volatiles.
+            
+            d) Constrain models of the satellites' bulk compositions and internal
+            structures.
+            
+            e) Investigate interactions with the magnetosphere and ring systems and
+            possible gas injections into the magnetosphere.
+            
+            Magnetosphere Objectives
+            ------------------------
+            
+            a) Determine the configuration of the nearly axially symmetric magnetic
+            field and its relation to the modulation of Saturn Kilometric Radiation
+            (SKR).
+            
+            b) Determine current systems, composition, sources, and sinks of
+            magnetosphere charged particles.
+            
+            c) Investigate wave-particle interactions and dynamics of the dayside
+            magnetosphere and the magnetotail of Saturn and their interactions with the
+            solar wind, the satellites, and the rings.
+            
+            d) Study the effect of Titan's interaction with the solar wind and
+            magnetospheric plasma.
+            
+            e) Investigate interactions of Titan's atmosphere and exosphere with the
+            surrounding plasma.
+            
+        </description>
+    </Investigation>
+</Product_Context>

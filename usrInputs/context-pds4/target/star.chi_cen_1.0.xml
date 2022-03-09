@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.chi_cen</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Chi Centauri</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Chi Cen</alternate_title></Alias>
+      <Alias><alternate_title>AKARI-IRC-V1 J1406027-411046</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14993</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-40 8405</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 0 11994</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-40 6441</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 19017</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 8268</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00122980</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 07807-02674</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 122980</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 2023</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 68862</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 68862</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 5285</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 14029-4056</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2465</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J14060276-4110466</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 319170</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2028</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 224673</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 25798</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 17240</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7807-2674-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 12453</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 19957</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100122980</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 12037</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 6110115278109271808</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Chi Centauri</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 14 hours 06 minutes 02.7682446 seconds
+Declination, ICRS coord, ep=J2000: -41 degrees 10 minutes 46.678780 seconds
+    </description>
+  </Target>
+</Product_Context>

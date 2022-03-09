@@ -1,0 +1,181 @@
+                        <Group_Field_Binary>
+                              <name>Tone Range CHDO (Data Type 15)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>14</fields>
+                              <groups>0</groups>
+                              <description>Tone Range CHDO (Data Type 15)</description>
+                              <group_location unit="byte">161</group_location>
+                              <group_length unit="byte">54</group_length>
+                              <Field_Binary>
+                                  <name>chdo_type</name>
+                                  <field_number>1</field_number>
+                                  <field_location unit="byte">1</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Type attribute of the tone range data CHDO.
+                                      Set to 10 because the CHDO contains binary data.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chdo_length</name>
+                                  <field_number>2</field_number>
+                                  <field_location unit="byte">3</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Length attribute of the tone range data CHDO value field.
+                                      Number of bytes after this item.  Set to 50.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>source_type</name>
+                                  <field_number>3</field_number>
+                                  <field_location unit="byte">5</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Source type.
+                                         0 = Unknown; 
+                                         2 = MPA (26m), MTA
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>mjr_tone_freq</name>
+                                  <field_number>4</field_number>
+                                  <field_location unit="byte">6</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Major tone frequency.
+                                         0 = Not used; 
+                                         1 = 20 kHz; 
+                                         2 = 100 kHz; 
+                                         3 = 500 kHz
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>mnr_tone_freq</name>
+                                  <field_number>5</field_number>
+                                  <field_location unit="byte">7</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Minor tone frequency.
+                                         0 = not used; 
+                                         1 = 10 Hz
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_prefit_resid_vld_flag</name>
+                                  <field_number>6</field_number>
+                                  <field_location unit="byte">8</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Tone range pre-fit residual validity indicator.
+                                         0 = Invalid pre-fit residual data; 
+                                         1 = Valid pre-fit residual data
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>meas_rng</name>
+                                  <field_number>7</field_number>
+                                  <field_location unit="byte">9</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>nanosecond</unit>
+                                  <description>
+                                      Measured range value, modulo 2**32.
+                                      As reported by the station; includes corrections for Z-height and station calibration.
+                                      Values 0 to 2**32-1 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_obs</name>
+                                  <field_number>8</field_number>
+                                  <field_location unit="byte">17</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>nanosecond</unit>
+                                  <description>
+                                      Range observable modulo 2**32.
+                                      Includes measurement adjustments (station calibration, spacecraft delay, and Z-height).  
+                                      Values 0 to 2**32-1 are allowed; value -1.0 indicates invalid.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>stn_cal</name>
+                                  <field_number>9</field_number>
+                                  <field_location unit="byte">25</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>nanosecond</unit>
+                                  <description>
+                                      Station calibration (not currently reported by station; value set to 0.0).
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>carr_pwr</name>
+                                  <field_number>10</field_number>
+                                  <field_location unit="byte">33</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dBm</unit>
+                                  <description>
+                                      Received carrier power.  Values -185.0 to -85.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>rng_prefit_resid</name>
+                                  <field_number>11</field_number>
+                                  <field_location unit="byte">37</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>nanosecond</unit>
+                                  <description>
+                                      Tone Range pre-fit residual (oserved range minus predicted range).
+                                      Values -227 to 227 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ul_freq</name>
+                                  <field_number>12</field_number>
+                                  <field_location unit="byte">45</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Uplink frequency (also called Doppler Reference Frequency).
+                                      Values 2.0e9 to 34.7e9 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>time_tag_corr_flag</name>
+                                  <field_number>13</field_number>
+                                  <field_location unit="byte">53</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Time tag correction flag -- indicates the results of validation of the block time tag.
+                                         0 = No validation attempted; 
+                                         1 = Validated, no change; 
+                                         2 = Validated, changed
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>type_time_corr_flag</name>
+                                  <field_number>14</field_number>
+                                  <field_location unit="byte">54</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Type of time tag correction flag -- indicates what type of time tag correction was made.
+                                         0 = No correction; 
+                                         1 = Year correction; 
+                                         2 = DOY correction; 
+                                         3 = Both Year and DOY correction
+                                  </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

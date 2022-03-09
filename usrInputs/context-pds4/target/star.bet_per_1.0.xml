@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd">
+    
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bet_per</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Algol</title>
+    <information_model_version>1.14.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Gorgona</alternate_title></Alias>  <!-- from wikipedia-->
+      <Alias><alternate_title>Gorgonea Prima</alternate_title></Alias>  <!-- from wikipedia-->
+      <Alias><alternate_title>Demon Star</alternate_title></Alias>  <!-- from wikipedia-->
+      <Alias><alternate_title>El Ghoul</alternate_title></Alias>  <!-- from wikipedia-->
+      <Alias><alternate_title>Beta Persei</alternate_title></Alias>  <!-- from wikipedia-->
+      <Alias><alternate_title>Beta Per</alternate_title></Alias>  <!-- from wikipedia-->
+      <Alias><alternate_title>26 Persei</alternate_title></Alias>  <!-- from wikipedia-->
+      <Alias><alternate_title>bet Per</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>26 Per</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>bet Per B</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>bet Per C</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>bet Per A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LAB 2</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BU 526A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ADS 2362 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+40 360</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+40 673</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J03082+4057A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 301</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+40 673 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1E 0304.8+4045</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 724</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 0304.9+4045</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1ES 0304+40.7</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2EUVE J0308+40.9</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J0308+40.9</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 111</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GAT 1267</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 3733</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 1731</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00019356</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 9110</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 9110 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 19356</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>H 0307+40</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 14576</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 14576</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 936</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 03017+4034 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 03048+4045</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +40055</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 752</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J03081012+4057204</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MAXI J0308+410</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 636</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Algol</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Algol B</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Algol C</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Algol A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 646</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 80</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMSC 03017+4034A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 45864</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 443</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J0308+405</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J030809+405736</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J030810+405734</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J0308+405</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 417</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RX J0308.1+4057</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J030810.0+405727</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 38592</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC7 114</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC7 113</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC9 158</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC9 157</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 4684</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 1905</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 2851-2168-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 21464</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 9337</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J03082+4057A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J03082+4057Aa,Ab</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 2833</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 2834</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1XRS 03049+407</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>XSS J03089+4101</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 0301+40</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-05-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Algol</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 03 hours 08 minutes 10.1324535 seconds        from simbad
+Declination, ICRS coord, ep=J2000: +40 degrees 57 minutes 20.328013 seconds        from simbad
+    </description>
+  </Target>
+</Product_Context>
+

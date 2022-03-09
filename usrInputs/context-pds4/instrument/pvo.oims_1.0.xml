@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pvo.oims</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PVO ORBITER ION MASS SPECTROMETER for PVO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-08-26</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.pvo::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Brinton, H.C., L.R. Scott, M.W. Pharo, III, and J.T.C. Coulson, The
+                   Bennett ion-mass spectrometer on Atmosphere Explorer-C and -E, Radio Sci.,
+                   vol. 8, 323, 1973.
+            </reference_text>
+            <description>reference.BRINTONETAL1973</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Taylor, H.A., Jr., H.C. Brinton, S.J. Bauer, R.E. Hartle, T.M. Donahue,
+                   P.A. Cloutier, F.C. Michel, R.E. Daniell, Jr., B.H. Blackwell, Ionosphere
+                   of Venus: First observations of the dayside ion composition near dawn and
+                   dusk, Science, vol. 203, 752, 1979.
+            </reference_text>
+            <description>reference.TAYLORETAL1979C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Taylor, H.A., Jr., H.C. Brinton, S.J. Bauer, R.E. Hartle, P.A. Cloutier,
+                   F.C. Michel, R.E. Daniell, Jr., T.M. Donahue, R.C. Maehl, Ionosphere of
+                   Venus: First observations of the effects of dynamics on the dayside ion
+                   composition, Science, vol. 203, 755, 1979.
+            </reference_text>
+            <description>reference.TAYLORETAL1979D</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>PVO ORBITER ION MASS SPECTROMETER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Mass Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    Instrument Overview
+    ===================
+----------------------------------------------------------
+Copyright (c) 1980 IEEE, Reprinted, with permission, from IEEE
+Transactions on Geoscience and Remote Sensing, GE-18, Num 1, 36-38,
+1980.
+ 
+This material is posted here with permission of the IEEE. Such
+permission of  the IEEE does not in any way imply IEEE endorsement of
+any of PDS&apos;s products  or services. Internal or personal use of this
+material is permitted.  However, permission to reprint/republish this
+material for advertising or promotional purposes or for creating new
+collective works for resale or resdistribution must be obtained from the
+IEEE by sending a blank email message to info.pub.permission@ieee.org.
+ 
+By choosing to view this document, you agree to all provisions of the
+copyright laws protecting it.
+----------------------------------------------------------
+NOTE:  References to figures are included in the
+article even though the figures aren&apos;t. This enables
+you to look up the actual article in the IEEE
+transaction and find the figures.
+----------------------------------------------------------
+ 
+Bennett Ion Mass Spectrometers on the Pioneer Venus
+                Bus and Orbiter
+ 
+H.A. Taylor, Jr., H.C. Brinton, T.C.G. Wagner, B.H.
+Blackwell, and G.R. Cordier
+ 
+IEEE Transactions on Geoscience and Remote Sensing
+                January 1980
+---------------------------------------------------
+ 
+Abstract
+ 
+Identical Bennett radio frequency ion mass spectrometer instruments
+on the Pioneer Venus Bus and Orbiter have provided the first in-situ
+measurements of the detailed composition of the planet&apos;s ionosphere.
+The sensitivity, resolution, and dynamic range are sufficient to
+provide measurements of the solar-wind-induced bow-shock, the
+ionopause, and highly structured distributions of up to 16 thermal
+ion species within the ionosphere.  The use of adaptive scan and
+detection circuits and servo-controlled logic for ion mass and energy
+analysis permits detection of ion concentration as low as 5 ions/cm3
+and ion flow velocities as large as 9 km/s for 0+.  A variety of
+commandable modes provides ion sampling rates ranging from 0.1 to 1.6
+s between measurements of a single constituent.  A lightweight sensor
+and electronics housing are features of a compact instrument
+package.
+ 
+I. Introduction
+ 
+Owing to the weak intrinsic magnetic field of the planet, direct
+interaction between the solar wind and the Venusian ionosphere
+creates a more complex and variable structure than encountered in the
+Earth ionosphere.  As a result, theoretical predictions advanced
+prior to the Pioneer Venus (PV) mission set the requirement for
+instrument capabilities exceeding those previously demonstrated in
+extensive flight experience with the Bennett spectrometer in the
+Earth ionosphere on the Orbiting Geophysical Observatory and
+Atmosphere Explorer missions.
+ 
+The primary objective of the PV Ion Mass Spectrometer (IMS)
+investigations has been to make global measurements of the
+composition of the ionosphere and, to the extent possible, measure
+ion drift with sufficient accuracy to contribute to the understanding
+of the solar-wind-induced dynamics of the ionosphere.  Development of
+three unique measurement functions, 1)  the step-dwell peak sampling
+technique, 2) the charge/velocity servo system, and 3)  the
+explore/adapt ion mass sequencing system have proven to be essential
+for providing accurate ion concentration measurements compatible with
+both the data rate available from the spacecraft, and the high degree
+of variability encountered in the Venusian ionosphere.
+ 
+II. Instrument Description
+ 
+The Bus IMS (BIMS) and Orbiter IMS (OIMS) instruments are identical
+both electrically and mechanically, with the physical characteristics
+shown in Fig. 1.  the instrument design and operational
+characteristics are similar to those of ion spectrometers flown on
+numerous rocket and satellite missions, including those on the
+Atmosphere Explorer-C and - E spacecraft [1].  The instrument
+consists of an analyzer tube and an electronics package.  Ambient
+atmospheric ions sampled by the spectrometer enter the instrument
+through the analyzer orifice which is oriented as closely as possible
+in the direction of spacecraft motion, to enhance the collection of
+ions &apos;scooped up&apos; by the relatively rapid motion of the spacecraft
+through the thermal plasma.  Both the BIMS and OIMS instruments were
+mounted with the analyzer axis parallel to the spacecraft spin axis;
+this ensures a relatively small angle of attack throughout the
+periapsis pass and eliminates spin modulation of the ion currents.
+ 
+A. Mechanical Configuration
+ 
+The mass analyzer, shown schematically in Fig. 2, consists of a
+lightweight aluminum tube enclosing a series of grids, spacers, and
+long drift spaces.  The grids are 0.001-in diameter knitted tungsten
+mesh with approximately 90-percent transparency.  The intergrid
+spacers are machined from polyimide which has been baked to drive out
+volatiles.  The drift spaces, which must be conducting, are made of
+gold- plated aluminum.  Vacuum sealing of the tube, which is required
+only for the prelaunch calibration, is achieved by means of an O-ring
+in the collector area and by use of a low outgassing RTV sealant
+where the grid tabs protrude through the aluminum shell.
+ 
+The electronics housing is machined from magnesium.  Component
+mounting in the printed-circuit boards utilizes both stitch-weld and
+solder techniques.  All boards are conformally coated.
+ 
+The total mass of the instrument is 3.0 kg.
+ 
+B. Instrument Techniques
+ 
+The system block diagram for the ion spectrometer is presented in
+Fig. 3.  The instrument is powered by the +28 V spacecraft Bus and
+requires approximately 1.5 W of power in all modes of operation.  The
+electronics system performs five major functions: 1) supplies
+required RF and dc potentials to the ion analyzer tube, 2) detects
+and amplifies ion current flowing to the collectors, 3) digitizes,
+processes, and formats data for telemetry, 4) automatically
+configures the sensor for subsequent measurements during a prescribed
+measurement cycle, and 5) decodes and implements instrument
+commands.
+ 
+1) Ion Analyzer:  Mass analysis of the spectrum of ambient thermal
+positive ions entering the Bennett RF spectrometer sensor (Fig. 2) is
+performed by 1) imparting incremental energy to those ions which are
+&apos;resonant&apos; as they traverse the analyzer, and subsequently 2)
+applying a retarding potential barrier which inhibits detection of
+ions except those which have gained the maximum energy with the
+analyzer.  The instrument is identified as an RF spectrometer since
+the incremental ion energy is imparted by an RF potential (VRF)
+applied to each of four RF stages within the sensor.  The sequencing
+of mass analysis within the chosen range of ion masses is
+accomplished by stepping the negative voltage (Va) which accelerates
+the positive ions down the longitudinal axis of the analyzer, through
+the four RF stages, and toward the retarding potential barrier
+established by the positive potential (Vs).  For a particular value
+of the accelerating voltage (Va), the &apos;resonant&apos; velocity is imparted
+to ions of a given amu, such that these particles pass through each
+RF stage in synchronism with the phase of VRF.  These ions receive
+maximum energy as they traverse the sensor, and are thus able to
+penetrate the retarding potential barrier and reach the collectors.
+ 
+The barrier field established by the positive dc voltage Vs restricts
+the passage of all but the resonant ions, and thus acts as both an
+efficiency and resolution control for the analyzer.  The gridded
+collector intercepts a small percentage of the total detectable ion
+flux and presents this current as input to a low-gain preamplifier.
+Ion flow to the solid collector surfaces serves as input to the high-
+gain preamplifier.  Two additional grid structures within the tube
+suppress secondary electron emission from the collector surfaces and
+also induce (upon command) simulated ion currents into the detectors
+for end-to-end calibration of the electronic system.
+ 
+2) Charge/Velocity Servo:  The potentials Va and Vs work together to
+regulate the ion detection process with respect to the effects of 1)
+spacecraft velocity, 2) spacecraft skin charge, and 3) ion flow
+velocity generated by electric fields and/or solar-wind viscous
+interaction.  For a sensor at rest relative to the plasma, equation
+(1) of Fig. 2 applies, and the value of VA required to produce
+resonance for an ion of mass M is simply determined by the fixed
+coefficients K, S, and F.  The potential Vs is set to provide nominal
+analyzer efficiency and resolution.  Under flight conditions
+(equation (2) and Fig. 2) the sum of the axial components of
+spacecraft and ion drift velocities (v) results in a ram energy term
+for each ion mass, varying as 1/2 mv2.  The servo system
+automatically compensates for this energy shift by appropriate
+adjustment of the Va and Vs voltages to maintain constant instrument
+efficiency and mass resolution.  The effect of spacecraft skin charge
+is to add an energy offset proportional to phi sc, independent of ion
+mass.  This additional term in the mass analysis equation is also
+automatically accommodated by the instrument servo.
+ 
+The axial component of ion drift velocity and the value of spacecraft
+potential are determined by analysis of the servo coefficients
+included in the BIMS and OIMS data stream.
+ 
+3) Adaptive Mass Scan:  A second unique feature incorporated in the
+BIMS and OIMS instruments is the explore/adapt logic sequence for
+regulating the consecutive measurements of individual ion species.
+This accomplished in two steps: 1) periodic exploration of all 16
+preselected ion species, and 2) adaptive sequencing of repetitive ion
+measurements according to the relative significance of ion currents
+detected during the exploratory cycle.
+ 
+Because of the significant variations in the distribution of the ions
+within the Venusian ionosphere, and the data rate limitations
+afforded by the PV mission, the explore/adapt measurement sequence
+was employed to insure the maximum possible repetition rate for
+sampling of species found to be prominent in a given altitude and/or
+local time range.  Prompted by theoretical considerations, a total of
+16 probable ion species to be identified in the Venusian ionosphere
+were selected and are identified in Table I.  The sequence of ions
+listed in the table is sampled by stepping the accelerating potential
+Va to the appropriate value for each amu.  The explore/adapt concept
+is shown in Fig. 4.  The basic explore/adapt cycle is repeated every
+6.3 s, and consists of an explore interval during which a sequential
+search is made for each of the 16 species, followed by a series of
+shorter adapt intervals during which repeated measurements of as many
+as eight prominent ions detected during the explore interval are
+performed.  If eight or more ions are detected during the explore
+interval, adapt measurements of the eight most prominent of these
+will be repeated to fill out the remainder of the 6.3 s cycle as
+shown in the upper part of Fog. 4, thereby providing a total of six
+measurements of the eight prominent ions and one measurement of up to
+eight less prominent ions during the 6.3-s cycle.  If less than eight
+ions are detected during the initial explore interval, the adapt
+intervals will contain repeated measurements of the most prominent
+ions detected up to the maximum number of eight.  Thus, as shown in
+the lower part of Fig. 4, if only one ion is detected during the
+explore interval, forty repeat measurements of the same ion are made
+during the adapt interval, providing maximum temporal and spatial
+resolution for that single specie.  The explore/adapt sequence
+thereby provides a spatial resolution of measurements inversely
+proportional to the number of ions encountered and thus automatically
+adjusts the measurement sequence so that information returned is
+optimized relative to the conditions encountered during the mission.
+ 
+ 
+                        TABLE 1
+---------------------------------------------------------
+           BIMS/OIMS Dedicated Ions Masses
+---------------------------------------------------------
+Measurement Sequence    Ion Mass      Ion
+    Position              (AMU)       Species
+=========================================================
+      0                     1         H+
+      1                    18         H20, 18^0+
+      2                    12         C+
+      3                    32         02+
+      4                     4         He+
+      5                    28         N2+, CO+
+      6                    16         O+
+      7                    44         C02+
+      8                     2         H2+
+      9                    24         Mg+
+     10                    14         N+
+     11                    40         Ar+
+     12                     8         O++
+     13                    30         NO+
+     14                    17         OH+
+     15                    56         Fe+
+=========================================================
+ 
+ 
+Several commandable options extend the flexibility and reliability of
+the explore/adapt system.  As appropriate to conditions encountered,
+the instrument may be commanded to 1) explore only, and 2) adapt to
+less than eight prominent ions.
+ 
+4) Step-Dwell Ion Current Detection:  As an improvement over previous
+designs, the BIMS/OIMS ion spectrum scan is accomplished by a
+step-dwell sequence of ion detection, rather than the less efficient
+continuous sweep used in earlier instruments.  The step-dwell
+sequence consists of a series of dwell intervals of approximately
+0.1-s duration during which ion currents at each of the 16 mass
+positions are detected sequentially during the explore interval.
+ 
+At the onset of each of the 16 dwell intervals, the accelerating
+potential Va is stepped to the approximate value required for the
+resonant measurement of the specific ion.  As the measurement dwell
+cycle proceeds, the values of Vs and Va are servoed to compensate for
+changes encountered in spacecraft charge and velocity, thereby
+ensuring mass resonance and constancy of sensor efficiency and
+resolution for the ion current measurement.
+ 
+During the dwell cycle VRF is switched an and off at a 30-Hz rate so
+that intervals of ion current measurements are alternated with
+intervals of background (zero-level) collector current.  These
+alternating cycles of signal and noise are integrated in a manner
+which cancels the zero level current.  At the end of the dwell cycle,
+the accumulated ion current value is sampled and held for A/D
+conversion and subsequent transfer to telemetry storage registers.
+ 
+In addition to providing for the servoing Vs, Va interval, the
+step-dwell feature of the mass scanning circuitry provides benefits
+for both the bandwidth requirements of the instrument and the system
+noise figure.
+ 
+In order to cover the 120-dB (106/1) dynamic range of output current
+from the ion analyzer, along with the desired current sensitivity,
+two preamplifiers are employed, each receiving its input from the
+appropriate collector surface within the sensor.  Each preamplifier
+employs a low noise N- Channel field-effect transistor at its input
+and a high megohm feedback resistor to establish the gain.  The
+current sensitivity provided by this system permits the measurement
+of ion concentrations as low as 5 ions/cm3.
+ 
+5) Instrument Modes and Commandable Functions:  The OIMS instrument
+has provision for sixteen commandable states, any one of which is
+selected by a serial 5-bit code, 4 bits containing the command
+information and one bit for initiating command.  The instrument can
+be commanded to adapt to either the 8, 4, or 2 most prominent of the
+16 ion masses.  In each case, it will adapt to no more than the
+number commanded, but will adapt to a lesser number if there are
+fewer masses present than the commanded number.  In addition, an
+EXPLORE ONLY mode overrides the adapt interval and causes the
+instrument to continue scanning all 16 mass positions repeatedly;
+(the BIMS adapt command is fixed at 8 of 16).  The sensitivity of the
+instrument may be modified by a GUARD RING command, which applies a
+dc potential of either 0 or -6 V to the circular guard ring
+surrounding the sensor orifice.  This command may be used to increase
+the collection efficiency for ambient positive ions, thus increasing
+the sensitivity.
+ 
+The operation of the charge/velocity servo system may be checked by
+use of the SERVO NORMAL/OVERRIDE command.  In the OVERRIDE mode, the
+servo is disabled, and the Vs and Va parameters are set at nominal
+values predicted to be appropriate for periapsis.  In this mode, the
+instrument is nonresponsive to changes in ion flow velocity and
+spacecraft charge.
+ 
+In addition to the foregoing, the BIMS/OIMS instruments have a POWER
+ON/OFF command and an internal CALIBRATION command.  The CALIBRATION
+command couples known currents into the two preamplifiers equivalent
+to ion currents detectable within the dynamic range of the
+instrument.  These simulated ion currents provide an end-to-end
+calibration of the electronics.
+ 
+III. Initial Flight Results
+ 
+Both the BIMS and OIMS instruments have performed accurately and
+reliably in flight.  With repeated orbits, the OIMS has answered
+several basic questions which motivated the PV mission.  In
+particular, the identity of the dominant ions O+ in the upper
+ionosphere and O2+ in the lower ionosphere was established
+immediately.
+ 
+In addition to the determination of the dominant ion, the OIMS also
+identified H+, H2+, He+, O++, C+, N+, 18O+, and/or H2O+, CO+, and/or
+N2+, NO+, O2+, and CO2+ in the Venusian ionosphere.  Data analysis
+currently in progress shows positive indications that the ion energy
+servo system will contribute to understanding the complex dynamic
+nature of the ionosphere, as well as the detailed composition.
+ 
+In addition to the early results from OIMS and BIMS already reported
+[2] - [4], several examples of in-flight results are included here to
+illustrate the fulfillment of the instrument design goals.  First,
+the sensitivity and temporal resolution of the ion measurements have
+permitted detection of numerous plasma signatures, including the
+bowshock region, complex ionopause structure, and pronounced
+irregularity in the ionosphere, as shown in Fig. 5.  In Fig.  6, the
+capability is shown for simultaneous detection of axial ion drift
+velocities of the order of km/sec along with associated extreme
+structural variations in the ion concentration.  Together these
+measurement tools provide a mean for detailed exploration of both the
+composition of the Venusian ionosphere and the complexities of its
+dynamic interaction with the solar wind.
+ 
+Acknowledgement
+ 
+The performance of the countless engineering tasks contributing to
+the successful operation of the Pioneer Venus Ion Spectrometers
+deserves special acknowledgement.  Particular among the many
+contributors are J.S. Burcham, B.D. Gagnon, and M.W. Pharo of GSFC,
+D.E. Simons, R.C.  Maehl, J.T.C. Coulson, D.E. Tallon, L.T. Fry, R.
+Madaris, P.  Lepanto, and W. Heflin of Norlin Communications, Inc.,
+and A.A. Stern of CSTA, Inc.
+ 
+References
+ 
+H.C. Brinton, L.R. Scott, M.W. Pharo, III, and J.T.C.  Coulson, &apos;The
+Bennett ion-mass spectrometer on Atmosphere Explorer-C and -E&apos;, Radio
+Sci., vol. 8, p. 323, 1973.
+ 
+H.A. Taylor, Jr., H.C. Brinton, S.J. Bauer, R.E. Hartle, T.M.
+Donahue, P.A. Cloutier, F.C. Michel, R.E. Daniell, Jr., B.H.
+Blackwell, &apos;Ionosphere of Venus:  First observations of the dayside
+ion composition near dawn and dusk&apos;, Science, vol. 203, p. 752,
+1979.
+ 
+H.A. Taylor, Jr., H.C. Brinton, S.J. Bauer, R.E. Hartle, P.A.
+Cloutier, F.C. Michel, R.E. Daniell, Jr., T.M. Donahue, R.C. Maehl,
+&apos;Ionosphere of Venus:  First observations of the effects of dynamics
+on the dayside ion composition&apos;, Science, vol. 203, p. 755, 1979.
+ 
+H.A. Taylor, Jr., H.C. Brinton, S.J. Bauer, R.E. Hartle, P.A.
+Cloutier, F.C. Michel, R.E. Daniell, Jr., T.M. Donahue, &apos;Ionosphere
+of Venus:  First observations of day-night variations of the ion
+composition&apos;, Science, vol. 205, p.  96, 1979.
+ 
+- End of IEEE copyrighted article -
+- Begin Appendix from JGR article by Grebowsky et al. -
+ 
+  Copyright (c) 1993 American Geophysical Union. Reprinted, with
+      permission, from Journal of Geophysical Research, Vol. 98
+      No. E5, 1993.
+ 
+This material is protected by copyright, and should not be republished,
+redistributed, or posted on the Internet.
+ 
+By choosing to view this document, you agree to all provisions of the
+copyright laws protecting it.
+ 
+***********************************************************************
+ 
+Appendix: Response of OIMS to Superthermal lons
+ 
+   The Pioneer Venus Orbiter Ion Mass Spectrometer (OIMS)
+[Taylor et al., 1981] was designed to measure cold
+ionospheric plasma at Venus. When ambient ions exist with
+energies comparable to or exceeding those of cold ions in
+the frame of reference of the spacecraft, which travels at
+~10 km/s, the spectrometer can often detect their presence.
+These &apos;&apos;superthermal&apos;&apos; ions are detected as ion currents at
+instrument mass settings for cold ion species that are
+clearly not present in the environment. The energies of the
+superthermal ions collected could be due to thermal plasma
+motions and/or high bulk flow speeds (perhaps just a segment
+of the tail of the ion velocity distribution).
+ 
+    The basic mode of operation of the instrument (a Bennett
+RF ion mass spectrometer) is well understood, leading from
+its original conception by Bennett [1950]. Figure A1 is a
+schematic diagram of the sensor tube. The spacing of the
+grids and the frequency of the RF voltage signal that is
+applied simultaneously across each grid set establishes a
+&apos;&apos;resonant velocity&apos;&apos; that an incoming ion must have to
+traverse the tube, from entrance to collector, and to
+acquire the maximum kinetic energy from the RF E field
+accelerations. An ion in traversing one RF grid set is
+accelerated to a velocity which sets its time of flight
+through the E-field free drift space region to the next grid
+set. Those ions with the resonant velocity in the drift
+space reach the entrance to the next RF grid set at
+precisely the right phase of the RF potential for further
+acceleration.  Nonresonant ions arrive at the RF grids at
+non optimal phases and do not receive the maximal
+acceleration. In front of the current collector plate a
+retarding potential VS is applied to allow only the
+resonantly accelerated ions to pass to the collector.
+ 
+    The RF frequency is the parameter which sets the precise
+speed which an incoming ion must have at the entrance to the
+first grid set to be in resonance with the subsequent RF
+field accelerations. This frequency and hence the resonant
+ion speed is held fixed in the OIMS. The acceleration
+voltage drop, VA, applied at the entrance to the
+spectrometer is varied to accelerate different incoming ion
+mass species to the resonance velocity; this provides the
+ion mass discrimination.  Ions which are accelerated by the
+potential drop VA to speeds near multiples of the RF
+resonant velocity will receive partial acceleration in the
+RF sections. This &apos;&apos;harmonic&apos;&apos; ion acceleration in the
+spectrometer can result in an anomalous collection current
+signal which could not be distinguished from that collected
+from the desired resonance mass. For typical ionospheric
+ions which have thermal energies less than l eV and enter
+the spectrometer at the PVO 10 km/s velocity, the OIMS
+nominal voltages were designed to prevent the harmonic ions
+from being collected. This was only effective, however, for
+relatively cold (&lt;1 eV) ion species and not superthermal
+ions.
+ 
+    To minimize the telemetry data rate, the OIMS was
+designed to sample 16 discrete amu&apos;s rather than to sweep
+continuously through all masses. The accelerating VA
+potential drop at the spectrometer entrance was stepped
+through 16 discrete values for the nominal collection of
+thermal ionospheric species that were likely to be present
+at Venus. The retarding potential VS on the grid before the
+collector plate was similarly stepped to maintain a set
+current collection efficiency for each amu. Since the
+instrument selects an ion species by using the VA to bring
+it to the resonant speed of the tube and because the
+transmission through the retarding potential grid depends on
+incoming particle energy, the instrument&apos;s amu response
+depends upon the net energy of the ions entering the
+spectrometer. That is, the analyzer section does not know
+whether the drift energy is from the VA acceleration or from
+ambient plasma flow.  Spacecraft electrical potential and
+ambient plasma drift energy have the same impact on the OIMS
+resonance response as do VA and VS changes.
+ 
+    To compensate for variations in the incoming ambient
+plasma energies, the VA and VS potentials were servoed in
+tandem [Taylor et al., 1980a] starting from their expected
+cold plasma values for each amu channel. The servo logic was
+to seek and lock the instrument potentials for each amu
+sample at those values for a prefixed collection efficiency
+(i.e., the percentage of incoming ion flux that reaches the
+collector).  The response time of the servo was designed to
+be rapid enough that it would fully adjust to anticipated
+variations in plasma ram energies along the spacecraft
+orbit. The rate of adjustment was engineered to vary
+proportionally to the magnitude of the collected ion
+current, so that in low plasma density regimes sudden
+changes in incoming ion energy would require a longer time
+for the instrument to adjust to its proper efficiency
+operating point than in high density regions.  This time
+scale was of the order of minutes for the lowest measurable
+ion concentration regions.
+ 
+    Within the main body of Venus&apos; ionosphere the servo
+compensation led to reliable ambient ion concentration
+measurements, but near the boundary of the ionosphere two
+features of the instrument&apos;s operation led to anomalous and
+yet useful responses to ambient plasma components that it
+wasn&apos;t
+ 
+                 (unable to reproduce figures.)
+Fig. A1. Schematic diagram of the OIMS analyzer structure.
+ 
+directly designed to study. First, in order to maximize the
+sensitivity of the instrument in low density plasma regimes,
+the instrument voltages were automatically set more than
+10 V away from the fixed servo point in regions when no, or
+just trace amounts of, detectable ions were present. This
+ensured the highest collection efficiency possible when ion
+concentrations increased to just measurable levels. As a
+result, at the inbound ionopause crossing the spectrometer
+was &apos;&apos;offtune.&apos;&apos; The servo voltages converged toward the
+desired values as the ionospheric density increased; but as
+the response time was of the order of minutes, they did not
+settle at the designed operating point until the spacecraft
+entered into the ionosphere. Once it attained its designed
+operating point it remained&apos;&apos; tuned&apos;&apos; to these voltages
+until the spacecraft left the ionosphere and encountered
+only trace ion concentrations.  Second, the servo response
+was not designed to compensate for coexistent ion species
+with differing flow velocities. In a region with one species
+of cold ambient ions and a minor ion population of
+superthermal ions with the same atomic mass, the instrument
+voltages lock onto the desired operating point for the cold
+species most rapidly. As the instrument voltages step for
+amu scans, the voltages for each mass species are
+automatically preset prior to servoing at values consistent
+with the energy of that amu flowing into the instrument with
+spacecraft speed and these settings do not change in the
+short time between the cyclic scanning of all masses. Ions
+with energies exceeding the spacecraft speed may be detected
+with misidentified masses since their incoming energies
+effectively add to the electrical potential energies set in
+the spectrometer with the internal voltages alone used to
+identify the resonant mass.
+ 
+    The response of the OIMS to offsets in the operating
+voltages and/or the presence of superthermal O+ ions in the
+midst of a cold thermal O+ component is demonstrated in
+Figure A2. The top shows the computed response to
+superthermal O+ ions when the spectrometer is completely
+outside the ionosphere. Superthermal oxygen ions could
+appear in the 24 and 40 amu windows even in the absence of
+thermal ambient ions with these masses. They would also
+contribute to the current collected at the 16 amu setting,
+but for most energies the efficiency of collection would be
+less than that for the collection of cold incoming O+ ions
+to which the plotted efficiencies are normalized. The bottom
+part of the figure shows a similar calculation for
+superthermal protons which also are detectable by the
+appearance of anomalous mass signatures. Superthermal O+
+ions with ambient energies exceeding 30 and 46 eV can, if
+their fluxes are large enough, produce current contributions
+in the 24 and 40 amu windows respectively. The protons are
+detectable in the same mass windows with higher energy
+thresholds. The upper limit of the instrument&apos;s capability
+to resolve any amu is 100 eV which includes the spacecraft
+ram energy. The responses plotted in Figure A2 were computed
+assuming the internal voltages were set for a measurement
+outside of the ionosphere, where instrument voltages were
+intentionally offset from their desired ionosphere operating
+values by the order of 10-20 v depending on the mass
+setting. Once the spacecraft enters into the ionosphere,
+this voltage offset is eliminated, although somewhat slowly,
+by the servo mechanism. The instrument thereafter remains
+tuned to such optimal voltages until it exits the ionosphere
+and encounters only trace concentrations. The difference in
+response in the bulk of the ionosphere transit and outside
+the ionosphere is depicted in figure A3, where the response
+of the 14 amu signal to superthermal O+ is shown. This
+calculation shows that even cold 16 amu ions collected at
+the spacecraft speed could produce a signal in the 14 amu
+window in the low density regime outside of the ionosphere.
+Inside the ionosphere the threshold for the detection of
+superthermals as 24 or 40 amu signals would be raised by ~20
+eV, a slightly higher change than is the case for the 14 amu
+signature.
+ 
+                (Unable to reproduce figures.)
+ 
+Fig. A2 Effects of superthermal O+ (top) and H+ (bottom)
+ions on the OIMS response. The figures reflect the
+efficiency of collection in the mass positions of 16, 24,
+and 40 amu, as was numerically modeled by calculating O+
+motions through the DC and RF grid voltage layout of the
+instrument.  Effectively, normalized efficiencies which drop
+below the 0.001 level are undetectable. The efficiencies are
+normalized to the instrument efficiency of collection for
+cold O+ ions flowing at PV&apos;s ionosphere speed, which is ~1%.
+ 
+Fig. A3. Response of the 14 amu signal computed as a
+function of O+ energy into the spectrometer. Inside the
+ionosphere and on the outbound transit through the ionopause
+16 amu ions require speeds exceeding the spacecraft speed
+entrance velocity to appear as 14 amu signals. Outside the
+ionosphere due to the intentional offset of the instrument
+voltages, and in the inbound crossing of the ionopause where
+the instrument slowly servos to optimum operating voltages,
+even cold ionospheric O+ ions would cause such a spurious
+signal.
+ 
+References cited in appendix.
+ 
+ Bennett, W.H., Radiofrequency mass spectrometer, J. Appl.
+         Phys., 21, 143, 1950.
+ 
+  Taylor, H.A., Jr., H.C. Brinton, T.C.G. Wagner, B.H.
+         Blackwell and G.R. Cordier, Bennett ion mass
+         spectrometers on the Pioneer Venus bus and orbiter, IEEE
+         Trans. Geosci. Remote Sensing, GE-18. 44, 1980a.
+ 
+  Taylor, H.A., Jr., R.E. Daniell, R.E. Hartle, H.C. Brinton
+         S.J. Bauer, and F.L. Scarf, Dynamic variations observed
+         in thermal and superthermal ion distributions in the
+         dayside ionosphere of Venus, Adv. Space Res., 1, 247,
+         1981.
+ 
+         (Received September 28,1992;
+         revised January 25, 1993;
+         accepted February 2, 1993.)
+- End of Grebowsky et al. appendix. -
+
+        </description>
+    </Instrument>
+</Product_Context>

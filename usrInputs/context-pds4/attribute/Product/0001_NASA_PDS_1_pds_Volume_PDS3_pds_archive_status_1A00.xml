@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.volume_pds3.pds.archive_status_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>archive_status</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>archive_status</name>
+        <version_id>1.10</version_id>
+        <class_name>Volume_PDS3</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.volume_pds3.pds.archive_status_1a00</local_identifier>
+        <steward_id>ops</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The ARCHIVE_STATUS attribute indicates the stage to which a data set has progressed in the archiving process, from IN QUEUE through ARCHIVED. It can also take on the values SUPERSEDED or SAFED, which indicate that the data set is not part of the active archive. ACCUMULATING can be appended to some values to indicate that the data set is incomplete and/or that not all components have reached the stage given by the root value; ACCUMULATING would be used, for example, when the archive is being delivered incrementally, as from a mission that lasts many months or years.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <attribute_concept>Status</attribute_concept>
+        <Terminological_Entry>
+            <name>archive_status</name>
+            <definition>The ARCHIVE_STATUS attribute indicates the stage to which a data set has progressed in the archiving process, from IN QUEUE through ARCHIVED. It can also take on the values SUPERSEDED or SAFED, which indicate that the data set is not part of the active archive. ACCUMULATING can be appended to some values to indicate that the data set is incomplete and/or that not all components have reached the stage given by the root value; ACCUMULATING would be used, for example, when the archive is being delivered incrementally, as from a mission that lasts many months or years.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <conceptual_domain>Short_String</conceptual_domain>
+            <specified_unit_id>none</specified_unit_id>
+            <DD_Permissible_Value_Full>
+                <value>ARCHIVED</value>
+                <value_meaning>Archive status of the PDS3 volume is ARCHIVED (passed peer review with all liens resolved. Available through the Data Set Catalog and at NSSDC).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>ARCHIVED_ACCUMULATING</value>
+                <value_meaning>Archive status of the PDS3 volume  is ARCHIVED_ACCUMULATING (some parts of the volume are ARCHIVED, but other parts are in earlier stages of the archiving process and/or have not yet been delivered to PDS; use with caution). </value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>IN_LIEN_RESOLUTION</value>
+                <value_meaning>Archive status of the PDS3 volume is IN_LIEN_RESOLUTION (peer review completed; liens are in the process of being resolved; use with caution).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>IN_LIEN_RESOLUTION_ACCUMULATING</value>
+                <value_meaning>Archive status of the PDS3 volume is IN_LIEN_RESOLUTION_ACCUMULATING (some parts of the volume are IN LIEN RESOLUTION, but other parts are in earlier stages of the archiving process and/or have not yet been delivered to PDS; use with caution).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>IN_PEER_REVIEW</value>
+                <value_meaning>Archive status of the PDS3 volume is IN_PEER_REVIEW (under peer review at the curation node but evaluation is not complete; use with caution).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>IN_PEER_REVIEW_ACCUMULATING</value>
+                <value_meaning>Archive status of the PDS3 volume is IN_PEER_REVIEW_ACCUMULATING (some parts of the volume are IN PEER REVIEW, but other parts are in earlier stages of the archiving process and/or have not yet been delivered to PDS; use with caution).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>IN_QUEUE</value>
+                <value_meaning>Archive status of the PDS3 volume is IN_QUEUE (received at the curation node but no action has been taken by the curation node; use with caution).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>IN_QUEUE_ACCUMULATING</value>
+                <value_meaning>Archive status of the PDS3 volume is IN_QUEUE_ACCUMULATING (some parts of the volume are IN QUEUE, but other parts have not yet been delivered to PDS; use with caution).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>LOCALLY_ARCHIVED</value>
+                <value_meaning>Archive status of the PDS3 volume is LOCALLY_ARCHIVED (passed peer review with all liens resolved; considered archived by the curation node but awaiting completion of the standard archiving process; possible TBD items include the arrival of the archive volume at NSSDC and ingestion of catalog information into the Data Set Catalog).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>LOCALLY_ARCHIVED_ACCUMULATING</value>
+                <value_meaning>Archive status of the PDS3 volume is LOCALLY_ARCHIVED_ACCUMULATING (some parts of the volume are LOCALLY ARCHIVED, but other parts are in earlier stages of the archiving process and/or have not yet been delivered to PDS; use with caution).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>PRE_PEER_REVIEW</value>
+                <value_meaning>Archive status of the PDS3 volume is PRE_PEER_REVIEW (being prepared for peer review under the direction of the curation node; use with caution).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>PRE_PEER_REVIEW_ACCUMULATING</value>
+                <value_meaning>Archive status of the PDS3 volume is PRE_PEER_REVIEW_ACCUMULATING (some parts of the volume are in PRE PEER REVIEW, but other parts are IN QUEUE and/or have not yet been delivered to PDS; use with caution).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>SAFED</value>
+                <value_meaning>Archive status of the PDS3 volume is SAFED (the volume has been received by the PDS with no evaluation; data will not be formally archived).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>SUPERSEDED</value>
+                <value_meaning>Archive status of the PDS3 volume is SUPERSEDED (this volume has been replaced by a newer version, implying that the volume is not to be used unless the requester has specific reasons; when a volume has been superseded the Engineering Node, will notify NSSDC that their databases need to be updated to advise users of the new status and the location of the replacement volume).</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:osinac.ro</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>OSIRIS - NARROW ANGLE CAMERA for RO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ro::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Keller, H.U., et al., OSIRIS - The Scientific Camera System Onboard Rosetta,
+                   Space Sci. Rev., 128(1-4), 403-506, Feb. 2007.
+            </reference_text>
+            <description>reference.KELLERETAL2006</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>OSIRIS - NARROW ANGLE CAMERA</name>
+        <type>Imager</type> <!--RChen/EN was Frame Ccd Reflecting Telescope-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    The instrument was provided by the OSIRIS consortium led by the
+    principal investigator Dr. Horst Uwe Keller.
+ 
+    The OSIRIS consortium have the following members:
+ 
+    MPS         Overall responsibility and project management, system
+                engineering, interfaces, Focal Plane Assemblies, CCDs
+                and Readout Boards, HK Boards, integration  and
+                qualification of  E-Boxes, harnesses, system
+                integration, high level software, NAC &amp; WAC system
+                calibration, QA, mission operations
+ 
+    LAM         NAC telescope, camera integration and qualification
+                WAC optical bench, camera
+ 
+    UPD         Integration and qualification, shutter mechanisms and
+                shutter electronics, Front Door Mechanisms (mechanisms
+                for NAC and WAC)
+ 
+    IAA         Mechanism Controller Board
+ 
+    INTA        Filter Wheel Mechanisms, E-Box Power Converter Module,
+                NAC &amp; WAC CRB Power Converter Modules
+ 
+    RSSD        Data Processing Unit
+ 
+    IDA         Mass memory, low level software and data compression
+ 
+    DASP        NAC &amp; WAC Filters
+ 
+    UPM         Thermal and structural analysis, NAC MLI, WAC FPA MLI
+ 
+    For detailed instrument description please see the Space Science
+    Review Paper (OSIRIS_SSR) included in the dataset.
+ 
+ 
+    Instrument Overview
+    ===================
+ 
+    The OSIRIS camera system consists of a narrow angle camera (NAC)
+    and a wide angle camera (WAC)
+ 
+ 
+    ==============================
+    The narrow angle camera (NAC):
+    ==============================
+ 
+    The NAC uses an off axis three mirror optical design. The off
+    axis design was selected in order to minimize the stray light
+    reaching the CCD (The NAC has a proven stray light attenuation
+    of better than 1.0e-9). The optical beam is reflected of the
+    three mirrors (M1 - M3) before passing through a double filter
+    wheel, a mechanical shutter mechanism and an anti radiation
+    plate (ARP) before reaching the CCD.
+ 
+    The NAC optical path:
+                                      (target object)
+                                            /
+    Focal Plane -----                      /
+     ARP          ---         M2      /   /   /  Aperture
+      Shutter      ---       ----        /
+       Filter2      ---       /\        /
+        Filter1      ---     /  \      /
+                       \    /    \    /
+                        \  /      \  /
+                         \/        \/
+                        ----      ----
+                         M3        M1
+ 
+    Basic NAC parameters:
+    ---------------------------------------------------------------
+    | Optical design                 |     3-mirror  off-axis     |
+    | Angular resolution             |     18.6 urad px-1         |
+    | Focal length                   |     717.4 mm               |
+    | Mass                           |     13.2 kg                |
+    | Field of view                  |     2.20 x 2.22deg         |
+    | F-number                       |     8                      |
+    | Spatial scale from 100 km      |     1.86 m px-1            |
+    | Typical filter bandpass        |     40 nm                  |
+    | Wavelength range               |     250nm - 1000nm         |
+    | Number of filters              |     12                     |
+    | Estimated detection threshold  |     18 mV                  |
+    ---------------------------------------------------------------
+ 
+ 
+    The double filter wheels allows the NAC to place a refocusing
+    plate together with an optical filter in the optical beam. The
+    NAC is equipped with two types of refocusing plates allowing
+    optimum focus at 4km and 1.2km
+    respectively.
+ 
+    The NAC is equipped with the following optical filters:
+ 
+ -------------------------------------------------------------------
+ |  Name   |  Wavelength  |  Bandwidth  |  Peak  |  Objective      |
+ |         |     [nm]     |    [nm]     |   [%]  |                 |
+ -------------------------------------------------------------------
+ |  FFP-UV       600          &gt; 600        &gt; 99   BBAR coated      |
+ |                                                plate to allow   |
+ |                                                use of wheel 2   |
+ |  FFP-IR       600          &gt; 600        &gt; 99   BBAR coated      |
+ |                                                plate to allow   |
+ |                                                use of wheel 1   |
+ |  Neutral      640           520         5.0    Neutral density  |
+ |                                                filter           |
+ |  NFP-Vis      600         &gt; 600        &gt; 98    Refocusing lens  |
+ |                                                for near-nucleus |
+ |                                                imaging,         |
+ |                                                BBAR coated      |
+ |  Far-UV       269.3        53.6        37.8    Surface spectral |
+ |                                                reflectance      |
+ |  Near-UV      360.0        51.1        78.2    Surface spectral |
+ |                                                reflectance      |
+ |  Blue         480.7        74.9        74.6    Surface spectral |
+ |                                                reflectance      |
+ |  Green        535.7        62.4        75.8    Surface spectral |
+ |                                                reflectance      |
+ |  FFP-Vis      600         600         &gt;90      Refocusing lens  |
+ |                                                for near-nucleus |
+ |                                                imaging,         |
+ |                                                BBAR coated      |
+ |  Orange       649.2        84.5        92.4    HMC orange       |
+ |                                                filter;          |
+ |                                                surface spectral |
+ |                                                reflectance      |
+ |  Hydra        701.2        22.1        87.4    Water of         |
+ |                                                hydration band   |
+ |  Red          743.7        64.1        96.0    Surface spectral |
+ |                                                reflectance      |
+ |  Ortho        805.3        40.5        69.8    Orthopyroxene    |
+ |  Near-IR      882.1        65.9        78.4    Surface spectral |
+ |                                                reflectance      |
+ |  Fe2O3        931.9        34.9        81.6    Iron-bearing     |
+ |                                                minerals         |
+ |  IR           989.3        38.2        78.1    IR Surface       |
+ |                                                reflectance      |
+ -------------------------------------------------------------------
+ 
+ -------------------------------------------------------------
+ |  Name    |  Thickness  |  Wheel  |  Position  |  Encoder  |
+ |          | centre [mm] |         |            |   [DN]    |
+ -------------------------------------------------------------
+ |  FFP-UV        4.41         1           1          14     |
+ |                                                           |
+ |                                                           |
+ |  FFP-IR        5.15         2           1          14     |
+ |                                                           |
+ |                                                           |
+ |  Neutral       4.64         1           8          11     |
+ |                                                           |
+ |  NFP-Vis       4.18         1           3           4     |
+ |                                                           |
+ |                                                           |
+ |                                                           |
+ |  Far-UV        4.50         2           5           2     |
+ |                                                           |
+ |  Near-UV       4.68         2           6           7     |
+ |                                                           |
+ |  Blue          4.67         2           4           1     |
+ |                                                           |
+ |  Green         4.64         2           3           8     |
+ |                                                           |
+ |  FFP-Vis       5.00         1           2          13     |
+ |                                                           |
+ |                                                           |
+ |                                                           |
+ |  Orange        4.73         2           2          11     |
+ |                                                           |
+ |                                                           |
+ |                                                           |
+ |  Hydra         4.72         2           7           4     |
+ |                                                           |
+ |  Red           4.68         2           8          13     |
+ |                                                           |
+ |  Ortho         4.69         1           5           2     |
+ |  Near-IR       4.75         1           4           7     |
+ |                                                           |
+ |  Fe2O3         4.73         1           6           1     |
+ |                                                           |
+ |  IR            4.74         1           7           8     |
+ |                                                           |
+ -------------------------------------------------------------
+ 
+    For details on the shutter mechanism see the Shutter section
+    below.
+ 
+    For details on the CCD please see the CCD section below.
+ 
+ 
+ 
+ 
+ 
+ 
+    ============================
+    The wide angle camera (WAC):
+    ============================
+ 
+    The WAC uses an off axis two mirror optical design. The off axis
+    design was selected in order to minimize the strayligh reaching
+    the CCD (The NAC has a proven strayligh attenuation of better
+    than 1.0e-8). The optical beam is reflected of the two mirrors
+    (M1 &amp; M2)before passing through a double filter wheel, a
+    mechanical shutter mechanism, an anti radiation plate (ARP)
+    before reaching the CCD.
+ 
+ 
+ 
+    The WAC optical path:
+    ---------------------
+ 
+                                      (target object)
+                                            /
+                                           /
+                              M2      /   /   /  Aperture
+                             ----        /
+                              /\        /
+                             /  \      /
+             Filter1       ---   \    /
+            Filter2       ---     \  /
+           Shutter       ---       \/
+          ARP           ---       ----
+         Focal Plan   -----        M1
+ 
+ 
+    Basic WAC parameters:
+    ---------------------
+ 
+      ---------------------------------------------------------------
+      | Optical design                 |     2-mirror  off-axis     |
+      | Angular resolution             |     101 urad px-1          |
+      | Focal length                   |     140(sag)/131(tan)      |
+      | Mass                           |     9.48 kg                |
+      | Field of view                  |     11.34 x 12.11deg       |
+      | F-number                       |     5.6                    |
+      | Spatial scale from 100 km      |     10.1 m px-1            |
+      | Typical filter bandpass        |     5 nm                   |
+      | Wavelength range               |     240nm - 720nm          |
+      | Number of filters              |     14                     |
+      | Estimated detection threshold  |     13 mV                  |
+      ---------------------------------------------------------------
+ 
+    The WAC camera does not have refocusing plates so the two WAC
+    filter wheels each have a filter position with no filter mounted.
+    So the typical WAC observation uses either the filter combination
+    (empty + filter) or filter + empty)
+ 
+    The WAC is equipped with the following optical filters:
+ 
+ --------------------------------------------------------------------
+ |  Name   |  Wavelength  |  Bandwidth  |  Peak  |  Objective       |
+ |         |     [nm]     |    [nm]     |   [%]  |                  |
+ --------------------------------------------------------------------
+ |  Empty                                           Empty position  |
+ |                                                  to allow        |
+ |                                                  the use of      |
+ |                                                  filter wheel 2  |
+ |  Empty                                           Empty position  |
+ |                                                  to allow        |
+ |                                                  the use of      |
+ |                                                  filter wheel 1  |
+ |  UV245        246.2         14.1        31.8     Continuum       |
+ |                                                  surface spectral|
+ |                                                  reflectance     |
+ |  CS           259.0          5.6        29.8     CS gas emission |
+ |  UV295        295.9         10.9        30.4     Continuum for OH|
+ |  OH-WAC       309.7          4.1        26.0     OH emission from|
+ |                                                  the vicinity of |
+ |                                                  the nucleus     |
+ |  UV325        325.8         10.7        31.6     Continuum for OH|
+ |                                                  surface spectral|
+ |                                                  reflectance     |
+ |  NH           335.9          4.1        23.6     NH gas emission |
+ |  UV375        375.6          9.8        57.3     Continuum for CN|
+ |                                                  surface spectral|
+ |                                                  reflectance     |
+ |  CN           388.4          5.2        37.4     CN gas emission |
+ |  Green        537.2         63.2        76.8     Dust continuum  |
+ |  NH2          572.1         11.5        60.9     NH2 gas emission|
+ |  Na           590.7          4.7        59.0     Sodium gas      |
+ |                                                  emission        |
+ |  VIS610       612.6          9.8        83.4     Continuum for OI|
+ |                                                  surface spectral|
+ |                                                  reflectance     |
+ |  OI           631.6          4.0        52.4     O (1D) gas      |
+ |                                                  emission        |
+ |                                                  for dissociation|
+ |                                                  of H2O          |
+ |  R            629.8        156.8        95.7     Broadband filter|
+ |                                                  for nucleus and |
+ |                                                  asteroid        |
+ |                                                  detection       |
+ |                                                  (NAC redundancy)|
+ --------------------------------------------------------------------
+ 
+ ------------------------------------------------------------
+ |  Name   |  Thickness  |  Wheel  |  Position  |  Encoder  |
+ |         | centre [mm] |         |            |   [DN]    |
+ ------------------------------------------------------------
+ |  Empty                     1           1          14     |
+ |                                                          |
+ |                                                          |
+ |                                                          |
+ |  Empty                     2           1          14     |
+ |                                                          |
+ |                                                          |
+ |                                                          |
+ |  UV245       4.51          1           3           4     |
+ |                                                          |
+ |                                                          |
+ |  CS          4.60          1           4           7     |
+ |  UV295       4.75          1           5           2     |
+ |  OH-WAC      4.82          1           6           1     |
+ |                                                          |
+ |                                                          |
+ |  UV325       4.85          1           7           8     |
+ |                                                          |
+ |                                                          |
+ |  NH          4.86          1           8          11     |
+ |  UV375       4.60          2           3           8     |
+ |                                                          |
+ |                                                          |
+ |  CN          4.61          2           4           1     |
+ |  Green       4.71          1           2          13     |
+ |  NH2         4.74          2           5           2     |
+ |  Na          4.75          2           6           7     |
+ |                                                          |
+ |  VIS610      4.65          2           8          13     |
+ |                                                          |
+ |                                                          |
+ |  OI          4.66          2           7           4     |
+ |                                                          |
+ |                                                          |
+ |                                                          |
+ |  R           4.67          2           2          11     |
+ ------------------------------------------------------------
+ 
+    =============================
+    The OSIRIS mechanical shutter
+    =============================
+ 
+    Both the NAC and the WAC cameras are equipped with a mechanical
+    shutter mechanism for controlling the exposure time. The
+    shutter mechanism uses two blades to control the exposure.
+    The first blade covers the CCD at the start of the exposure.
+    when the exposure is started the first blade is accelerated
+    to 1.3 m/s before the edge of the blade reaches the edge of
+    the CCD. the blade edge then passes over the CCD at constant
+    velocity before being decelerated to standstill after passing
+    the far edge of the CCD. The end of the exposure is controlled
+    by performing the same motion with a second blade that initially
+    is outside the CCD surface. The second blade motion starts after
+    the exposure time has passed from the start of the first blade
+    motion. The full blade travel lasts 53ms. For exposure times
+    shorter than 53 ms the blade motion of the two blades overlap.
+    In this case the exposure is controlled by a moving slit
+    (same principle as a SLR camera).
+ 
+    During the blade motions the position is measured using a
+    position encoder mounted on the drive shaft of the shutter
+    motors.
+ 
+    The minimum allowed exposure time is 10 ms and accuracy of the
+    exposure is better than 5us
+ 
+ 
+    ==============
+    The OSIRIS CCD
+    ==============
+ 
+    The OSIRIS camera system uses 2048x2048 pixel backside
+    illuminated CCD&apos;s. The CCD&apos;s are equipped with anti reflection
+    coatings optimized for the UV spectral range. The CCD&apos;s are
+    equipped with shielded anti-blooming control. The CCD&apos;s are
+    UV sensitive down to 240nm (50% QE) and IR sensitive up to
+    1000nm (6% QE). The system gain is set to ~3e- in normal
+    operational mode. The readout electronics is using a dual
+    14 bit ADC configuration giving an effective 16 bit system.
+    The CCD&apos;s uses two readout channels (channel A and B) which
+    can be used in parallel for fast readout. The CCD&apos;s can be
+    read out using hardware windowing and hardware binning (1x1,
+    2x2, 4x4 and 8x8). The fastest readout of a 1x1 binned fullframe
+    image is 3.4s. By using windowing and binning modes this time
+    can be reduced to less than 1s.
+ 
+    OSIRIS CCD specification:
+ 
+ --------------------------------------------------------------------
+ | Item                     | Specification                         |
+ --------------------------------------------------------------------
+ | Source detector type     | E2V CCD42-40, non-MPP, backside       |
+ |                          | illuminated,|Hafnium oxide AR         |
+ |                          | coated                                |
+ | Array size               | Full frame,  2048 x 2048 pixels       |
+ | Serial register size     | 50 + 2k + 50;  50 extra pixel         |
+ |                          |                at both ends           |
+ |                          | 48 + 2k + 48   transmitted            |
+ | Pixel size               | 13.5 um x 13.5 um                     |
+ | No. of outputs           | 2;  either 1 sufficient               |
+ | Overexposure             | Shielded anti-blooming control        |
+ | Operation modes          | Clock dithering for dark              |
+ |                          | current reduction for                 |
+ |                          | operations at &gt; 220 K                 |
+ |                          | (optional), windowing, binning        |
+ | Full well                | &gt; 100 000 e- px-1                     |
+ | System gain              | ~ 3 e- / DU                           |
+ | Readout noise (CCD)      | &lt; 7 e- rms                            |
+ | Dark charge generation   | ~0.6 e- s-1 px-1  @ 180 K             |
+ |                          | ~200 e- s-1 px-1  @ 293 K             |
+ |                          |                (with dithering)       |
+ | QE                       | 250 nm: 50 %,   400 nm: 60 %,         |
+ |                          | 600 nm: 80 %,                         |
+ |                          | 800 nm: 60 %, 1000 nm:   6 %          |
+ | Readout rate             | 1.3 Mpx s-1;  650 kpx s-1 per channel |
+ | Readout time (full frame)| 3.4 s (2 channels)                    |
+ | Vertical clock rate      | 25 us per line                        |
+ | Operating temperature    | 160 K &lt; T &lt; 300 K                     |
+ --------------------------------------------------------------------
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

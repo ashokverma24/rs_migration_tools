@@ -1,0 +1,173 @@
+                        <Group_Field_Binary>
+                              <name>DRVID CHDO (Data Type 11)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>14</fields>
+                              <groups>0</groups>
+                              <description>Differenced Range versus Integrated Doppler (DRVID) CHDO (Data Type 11)</description>
+                              <group_location unit="byte">161</group_location>
+                              <group_length unit="byte">42</group_length>
+                              <Field_Binary>
+                                  <name>chdo_type</name>
+                                  <field_number>1</field_number>
+                                  <field_location unit="byte">1</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Type attribute of the DRVID data CHDO.
+                                      Set to 10 because the CHDO contains binary data.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chdo_length</name>
+                                  <field_number>2</field_number>
+                                  <field_location unit="byte">3</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Length attribute of the DRVID data CHDO value field. 
+                                      Number of bytes after this item.  Set to 38.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>drvid_type</name>
+                                  <field_number>3</field_number>
+                                  <field_location unit="byte">5</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      DRVID type.
+                                         0 = Unknown; 
+                                         1 = Sequential; 
+                                         2 = PN
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>drvid_pts</name>
+                                  <field_number>4</field_number>
+                                  <field_location unit="byte">6</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      DRVID points.  Values 0 to 255 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>drvid</name>
+                                  <field_number>5</field_number>
+                                  <field_location unit="byte">7</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>range unit</unit>
+                                  <description>
+                                      DRVID measurement -- the difference between the group and phase delays of the media.
+                                      The difference between two consecutive measured range points minus the scaled 
+                                      difference in the uplink and downlink carrier phases over the same time period.
+                                      Values -230.0 to 230.0 are allowed.  For definition of range unit, see TRK-2-34 documentation.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>prn0</name>
+                                  <field_number>6</field_number>
+                                  <field_location unit="byte">15</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Ratio of ranging power (Pr) to noise power spectral density (N0).
+                                      Values -10.0 to 90.0 are allowed; value -300.0 indicates no signal.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>drvid_noise</name>
+                                  <field_number>7</field_number>
+                                  <field_location unit="byte">19</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>range unit</unit>
+                                  <description>
+                                      DRVID noise.  Values 0.0 to 230.0 are allowed; value -1.0 indicates invalid.
+                                      For definition of range unit, see TRK-2-34 documentation.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>drvid_tol_value</name>
+                                  <field_number>8</field_number>
+                                  <field_location unit="byte">23</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>range unit</unit>
+                                  <description>
+                                      DRVID tolerance value (used for setting DRVID tolerance flag, field 11).  
+                                      Provided by customer.  Values -230 to 230 are allowed.
+                                      For definition of range unit, see TRK-2-34 documentation.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>prn0_resid_tol_value</name>
+                                  <field_number>9</field_number>
+                                  <field_location unit="byte">27</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>dB*Hz</unit>
+                                  <description>
+                                      Pr/N0 residual tolerance value (used for setting Pr/N0 residual tolerance flag, field 12).  
+                                      Provided by customer.  Values -10.0 to 90.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve1</name>
+                                  <field_number>10</field_number>
+                                  <field_location unit="byte">31</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Reserved.  One byte.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>drvid_tol_flag</name>
+                                  <field_number>11</field_number>
+                                  <field_location unit="byte">32</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      DRVID tolerance flag.
+                                         0 = Out of tolerance;
+                                         1 = In tolerance
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>prn0_resid_tol_flag</name>
+                                  <field_number>12</field_number>
+                                  <field_location unit="byte">33</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Pr/N0 residual tolerance flag.
+                                      0 = Out of tolerance; 
+                                      1 = In tolerance
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>drvid_noise_pts</name>
+                                  <field_number>13</field_number>
+                                  <field_location unit="byte">34</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      DRVID noise points -- number of points used in DRVID noise computation.
+                                      Values 0 to 200 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve8</name>
+                                  <field_number>14</field_number>
+                                  <field_location unit="byte">35</field_location>
+                                  <data_type>UnsignedMSB8</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <description>
+                                      Reserved.  Eight bytes.
+                                  </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

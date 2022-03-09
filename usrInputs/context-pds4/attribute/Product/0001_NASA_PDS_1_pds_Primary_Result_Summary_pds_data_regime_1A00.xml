@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Attribute_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.primary_result_summary.pds.data_regime_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>data_regime</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Attribute_Definition</product_class>
+    </Identification_Area>
+    <DD_Attribute_Full>
+        <name>data_regime</name>
+        <version_id>1.10</version_id>
+        <class_name>Primary_Result_Summary</class_name>
+        <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1.pds.primary_result_summary.pds.data_regime_1a00</local_identifier>
+        <steward_id>pds</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Submitter_PDS</submitter_name>
+        <definition>The data_regime attribute provides the wavelength (or an analogous concept for things like particle detectors) of the observations, stated as a category.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <attribute_concept>ID</attribute_concept>
+        <Terminological_Entry>
+            <name>data_regime</name>
+            <definition>The data_regime attribute provides the wavelength (or an analogous concept for things like particle detectors) of the observations, stated as a category.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+        <DD_Value_Domain_Full>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <minimum_characters>1</minimum_characters>
+            <maximum_characters>255</maximum_characters>
+            <minimum_value>Unbounded</minimum_value>
+            <maximum_value>Unbounded</maximum_value>
+            <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+            <conceptual_domain>Short_String</conceptual_domain>
+            <specified_unit_id>none</specified_unit_id>
+            <DD_Permissible_Value_Full>
+                <value>Dust</value>
+                <value_meaning>Particles ranging in size from a few molecules to approximately 0.1 micrometer in diameter.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Electric Field</value>
+                <value_meaning>A vector force field controlled primarily by the presence of electrons and/or ions</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Electrons</value>
+                <value_meaning>Subatomic particles with negative elementary charge.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Far Infrared</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 1 THz - 10 THz (frequency), 30 micrometers - 300 micrometers (wavelength), or 4 meV - 40 meV (photon energy)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Gamma Ray</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: greater than 10 EHz (frequency), less than 0.01 nm (wavelength), or more than 100 keV (photon energy)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Infrared</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 300 GHz - 405 THz (frequency), 750 nm - 1 mm (wavelength), or 1.24 meV - 1.7 eV (photon energy)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Ions</value>
+                <value_meaning>Atoms or molecules in which the number of electrons and protons is unequal, giving them a net negative or positive electric charge.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Magnetic Field</value>
+                <value_meaning>A vector force field produced by moving electric charges (currents) and/or the intrinsic magnetic properties of materials</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Microwave</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 300 MHz - 300 GHz (frequency), 1 mm - 1 m (wavelength), or 12 micro eV - 1.2 meV (photon energy)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Millimeter</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 30 GHz - 300 GHz (frequency), 1 mm - 10 mm (wavelength), or 120 micro eV - 1.2 meV (photon energy)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Near Infrared</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 300 THz - 1.5 PHz (frequency), 1 micrometer - 5 micrometer (wavelength), or 1 eV - 6 eV (photon energy)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Particles</value>
+                <value_meaning>Discrete (but small) objects that can be characterized by a few simple physical properties such as volume and mass.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Pressure</value>
+                <value_meaning>Measurement of ambient atmospheric pressure.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Radio</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 3 Hz - 300 GHz (frequency), 1 mm - 100,000 km (wavelength), or 12 feV - 1.2 meV (photon energy)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Sub-Millimeter</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 0.3 THz - 3 THz (frequency), 0.1 mm - 1 mm (wavelength), or 1.2 meV - 12 meV (photon energy)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Temperature</value>
+                <value_meaning>Measurement of ambient temperature.</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Ultraviolet</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 790 THz - 30 PHz (frequency), 10 nm - 390 nm (wavelength), or 3 eV - 120 eV (photon energy)</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>Visible</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 405 THz - 790 THz (frequency), 390 nm - 750 nm (wavelength), or 1.7 eV - 3.3 eV (photon energy) </value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+            <DD_Permissible_Value_Full>
+                <value>X-Ray</value>
+                <value_meaning>Electromagnetic radiation in the approximate range: 30 PHz - 30 EHz (frequency), 0.01 nm - 10 nm (wavelength), or 120 eV - 120 keV (photon energy))</value_meaning>
+                <value_begin_date>2009-06-09T00:00:00Z</value_begin_date>
+                <value_end_date>2019-12-31T00:00:00Z</value_end_date>
+            </DD_Permissible_Value_Full>
+        </DD_Value_Domain_Full>
+    </DD_Attribute_Full>
+</Product_Attribute_Definition>
+

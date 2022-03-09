@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.kepler-1</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>GSC 03549-02811</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>TrES-2 A</alternate_title></Alias>
+      <Alias><alternate_title>TrES-2 Parent Star</alternate_title></Alias>
+      <Alias><alternate_title>DAE 12</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Kepler-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>KIC 11446443</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>KOI-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J19071403+4918590</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 3549-2811-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J19072+4919AB</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR1 2131314401800665344</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2131314401800665344</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>GSC 03549-02811</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 19 hours 07 minutes 14.0379171930 seconds
+Declination, ICRS coord, ep=J2000: +49 degrees 18 minutes 59.090895318 seconds
+    </description>
+  </Target>
+</Product_Context>
+

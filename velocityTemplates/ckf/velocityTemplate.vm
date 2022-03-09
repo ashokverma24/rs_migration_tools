@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="$opt.schematron"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_SPICE_Kernel
+   xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+      http://pds.nasa.gov/pds4/pds/v1
+      $opt.schema">
+
+#set ($Target=$Text.toTitleCase(${lbl.TARGET_NAME}))
+#set ($collection_id_pre=$opt.collection_id_pre)
+#set ($dataType="ckf")
+       <Identification_Area>
+             <logical_identifier>urn:nasa:pds:$opt.bundle_id:$collection_id_pre$dataType:FILEWITHNOEXE</logical_identifier>
+             <version_id>1.0</version_id>
+             <title>$opt.spacecraft Spacecraft Attitude Kerne Covering 
+                    STARTTIMEZ To STOPTIMEZ 
+             </title>
+             <information_model_version>$opt.model_version</information_model_version>
+             <product_class>Product_SPICE_Kernel</product_class>
+             <Citation_Information>
+                   <author_list>$opt.author_list</author_list>
+                   <publication_year>$opt.publication_year</publication_year>
+                   <description>
+                        $opt.spacecraft attitude kernel (CK) migrated from the original PDS3 archive to PDS4.
+                   </description>
+             </Citation_Information>
+             <Modification_History>
+                   <Modification_Detail>
+                         <modification_date>CREATIONDATE</modification_date>
+                         <version_id>1.0</version_id>
+                         <description>
+                           Initial version of the kernel migrated from the PDS3 archive to PDS4.
+                           The original PRODUCT_ID was $lbl.PRODUCT_ID in data set
+                           $lbl.DATA_SET_ID. The data file was checked to ensure Carriage-Return Line-Feed
+                           record delimiters; otherwise, it was not changed.  A new PDS4 label was 
+                           generated.
+                         </description>
+                   </Modification_Detail>
+             </Modification_History>
+       </Identification_Area>
+       <Context_Area>
+             <Time_Coordinates>
+                   <start_date_time>STARTTIMEZ</start_date_time>
+                   <stop_date_time>STOPTIMEZ</stop_date_time>
+             </Time_Coordinates>
+             <Primary_Result_Summary>
+                   <purpose>Calibration</purpose>
+                   <processing_level>Derived</processing_level>
+                   <description>
+                        $opt.spacecraft attitude kernel (CK) migrated from the original PDS3 archive to PDS4.
+                   </description>
+             </Primary_Result_Summary>
+             <Investigation_Area>
+                   <name>$opt.mission</name>
+                   <type>Mission</type>
+                   <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:investigation:$opt.investigation</lid_reference>
+                         <reference_type>data_to_investigation</reference_type>
+                   </Internal_Reference>
+             </Investigation_Area>
+             <Observing_System>
+                   <Observing_System_Component>
+                         <name>$opt.spacecraft</name>
+                         <type>Spacecraft</type>
+                         <Internal_Reference>
+                               <lid_reference>urn:nasa:pds:context:instrument_host:$opt.instrument_host</lid_reference>
+                               <reference_type>is_instrument_host</reference_type>
+                         </Internal_Reference>
+                   </Observing_System_Component>
+                   <Observing_System_Component>
+                         <name>$opt.spacecraft Spacecraft Sensors</name>
+                         <type>Instrument</type>
+                         <Internal_Reference>
+                               <lid_reference>urn:nasa:pds:context:instrument:$opt.instrumentEng</lid_reference>
+                               <reference_type>is_instrument</reference_type>
+                         </Internal_Reference>
+                   </Observing_System_Component>
+             </Observing_System>
+             <Target_Identification>
+                   <name>$opt.spacecraft</name>
+                   <type>Equipment</type>
+                   <description>
+                       The data file was generated from information provided by the spacecraft
+                       attitude control system in the downlink engineering data stream.
+                   </description>
+             </Target_Identification>
+       </Context_Area>
+       <Reference_List>
+            <Internal_Reference>
+                  <lid_reference>urn:nasa:pds:$opt.bundle_id:document:sis.ckf</lid_reference>
+                  <reference_type>data_to_document</reference_type>
+            </Internal_Reference>
+            <Source_Product_External>
+                  <external_source_product_identifier>
+                        $lbl.DATA_SET_ID:$lbl.PRODUCT_ID
+                  </external_source_product_identifier>
+                  <reference_type>data_to_derived_source_product</reference_type>
+                  <curating_facility>$opt.curating_facility</curating_facility>
+                  <description>
+                        The value of external_source_product_identifier is constructed from 
+                        the PDS3 DATA_SET_ID, an ASCII colon, and the PDS3 PRODUCT_ID.
+                  </description>
+            </Source_Product_External>
+       </Reference_List>
+       <File_Area_SPICE_Kernel>
+             <File>
+                   <file_name>FILENAME</file_name>
+                   <file_size unit="byte">FILESIZE</file_size>
+                   <md5_checksum>MD5</md5_checksum>
+             </File>
+             <SPICE_Kernel>
+                   <offset unit="byte">0</offset>
+                   <parsing_standard_id>SPICE</parsing_standard_id>
+                   <description>
+                     Record delimiters in this file are Carriage-Return Line-Feed pairs.
+                     Some users may need to convert the Carriage-Return Line-Feed pairs
+                     to Line-Feed only before using the file.
+                   </description>
+                   <kernel_type>CK</kernel_type>
+                   <encoding_type>Character</encoding_type>
+             </SPICE_Kernel>
+       </File_Area_SPICE_Kernel>
+</Product_SPICE_Kernel>

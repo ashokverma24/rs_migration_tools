@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rpcica.ro</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ROSETTA PLASMA CONSORTIUM - ION COMPOSITION ANALYSER for RO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ro::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Nilsson, H., et al., ICA - The ROSETTA Ion Composition Analyzer, Space Sci.
+                   Rev., 128(1-4), 671-695, Feb. 2007.
+            </reference_text>
+            <description>reference.NILSSONETAL2006</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ROSETTA PLASMA CONSORTIUM - ION COMPOSITION ANALYSER</name>
+        <type>Particle Detector</type> <!--RChen/EN was Plasma Instrument. No obvious choice. TBD in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+Instrument Overview
+===================
+The Ion Composition Analyzer (ICA) is part of the Rosetta Plasma
+Consortiumn(RPC). ICA is designed to measure the three-dimensional
+distribution function of positive ions in order to study the
+interaction between the solar wind and cometary particles. The
+instrument has a mass resolution high enough to resolve the major
+species such as protons, helium, oxygen, molecular ions, and heavy
+ions characteristic of dusty plasma regions. ICA consists of an
+electrostatic acceptance angle filter, an electrostatic energy filter,
+and a magnetic momentum filter. Particles are detected using large
+diameter (100 mm) microchannel plates and a two-dimensional anode
+system. ICA has its own processor for data reduction / compression and
+formatting. The energy range of the instrument is from 25 eV to 40 keV
+and an angular field-of-view of 360 deg times 90 deg is achieved
+through electrostatic deflection of incomingparticles.
+The ICA instrument is based on the design of three earlier versions
+of this type of instrument. Those are the TICS instrument flown on the
+Swedish-German research satellite Freja which was operated between
+1992-1996, the IMIS instrument which was part of the ASPERA-C
+experiment on the ill-fated Mars-96 mission, and the IMI instrument
+on the Japanese Nozomi mission to Mars. The instrument also has
+heritage from the ASPERA experiment flown on the Soviet spacecraft
+Phobos-2 to Mars. Furthermore an almost identical mass resolving
+ion spectrometer has been flown on the Mars Express mission, the IMA
+sensor of the ASPERA-3 instrument. One more copy, only slightly
+modified, is part of the ASPERA-4 instrument on Venus Express.
+ 
+RPC-ICA  Characteristics
+============================
+Quantity                Range
+Energy: Range           25 eV to 40 keV
+        Resolution      Delta E/E$=0.07
+Scan:   32 (solar wind) 96 (otherwise)
+Angle:  Range (FOV)     90 x 360 degrees
+        Resolution      5.0 x 22.5 degrees (16 elevation steps x 16
+                        sectors)
+ 
+Temporal
+resolution: 2D distribution 4 s (12 s full energy range)
+            3D distribution 64 s (192 s full energy range)
+Geometric factor
+per 22.5 degree sector  6 10^{-4} cm^2 sr
+per 360 degree sector   1 10^{-2} cm^2 sr
+ 
+ 
+RPC-ICA Electronics
+===================
+ 
+The ICA electronics can be divided into two main groups, high voltage
+power supplies for biasing of the various electrostatic filters and
+the MCP assembly, and digital electronics to handle the instrument
+operations. The high voltage supplies are laid out on two round boards
+in the cylindrical sensor part of the instrument. The high voltages
+are achieved by transforming an input voltage of 25 V to
+approximately 500 V, and subsequent chains of diode-capacitor voltage
+multipliers. ICA has two separate high
+voltage power supplies. One supply is dedicated to keeping the front
+side of the MCP biased to approximately -3 kV, while the other one
+supplies all other high voltages as fixed raw voltages. These raw
+voltages are then regulated by the use of high voltage opto-couplers.
+The electrostatic entrance filter can be stepped between +/-2.5 kV
+to an accuracy of 1.2 V using a 12-bit D/A-converter and the
+electrostatic energy filter is stepped between 0 and -4.5 kV also
+using a 12-bit D/A-converter and a high voltage opto-coupler. A high
+accuracy at low voltage settings is achieved by fixing the -4.5 kV
+supply at a voltage of about -100 V, and using a -11.25 V supply
+with a 12-bit D/A-converter connected to the outer ESA hemisphere
+to step the lower energy range. The post-acceleration voltage is
+also taken from the raw -4.5 kV voltage and set to the desired
+voltage using an opto-coupler. The digital electronics performs
+the following main functions:
+a) Reading data from the double-buffered sensor memory to the CPU and
+processing the data.
+b) Feeding the IEEE 1355 serial interface to the PIU with processed
+and formatted data.
+c) Receiving commands on the serial interface from the PIU.
+d) Controlling the high voltage power supply settings and monitoring
+voltages and temperatures.
+The digital electronics are built around an MA37150 processor. The
+on-board software runs from a 1 Mbit large bit-error corrected RAM.
+Flight software is stored both in 256 kbit PROM and in 4 Mbit EEPROM
+to enable patching of the software. An 8 Mbit memory is used both as
+working area for the CPU, and as a buffer for formatted data to be
+sent to the PIU. Data is transmitted to and from the PIU via a IEEE
+1355 serial interface.
+ 
+ICA On-board data reduction
+============================
+Every sample period (approx. 125 ms), the ICA sensor produces a
+mass-angle-count matrix of the size 32 x 16 x 16 bits, for a total of
+8192 bits per sample or 64 kbits per second. To reduce this large
+amount of data to the bit rates allocated to ICA (5, 100 and 1000
+bits/s), the on-board CPU performs both data reduction and data
+compression. The basic measurement cycle consists of performing 16
+energy sweeps at different settings of the acceptance angle filter,
+in order to step through the full field of view of the instrument.
+The energy sweep contains either 32 or 96 steps. A full 96 energy step
+measurement cycle is completed in 192s.
+The data is first reduced from a 16-bit representation to 8-bits
+using a logarithmic compression. Directions shadowed by the spacecraft
+are masked out to avoid sending invalid data. Options are available to
+mask out certain mass-channels which show large noise levels as well
+as certain acceptance angles which cannot be reached for certain
+energy levels due to finite resolution of the digital-to-analog
+converters controlling the energy-acceptance filter, see CALIB
+directory. Depending on the selected mode, the data is then reduced
+by different methods.
+ 
+Basically, the following two methods are used:
+a) The 32 mass channels are grouped together based on calibration
+data, and the sum of the grouped mass channels (representing a certain
+ion such as H+ or a certain ion mass range) is transmitted instead of
+individual mass channels.
+This will be referred to as mass-lookup tables and is used when the
+number of transmitted mass channels is less than 8. For 8 and 16 mass
+channels a simple integration of neighboring mass channels is used.
+b) Summation of angular bins, both the 16 stepped elevation angle and
+the 16 sector directions.
+ 
+The reduced data is finally compressed with a loss-less compression
+algorithm based on the Rice method. This compression reduces the data
+with approximately a factor of 5. Due to the data compression, the
+output data packets have variable length, and are buffered until
+enough compressed and time-stamped packets are available to fill a
+fixed length packet transmitted to the PIU.
+The buffer is also used to allow for higher than average production
+of data for some time. If data is coming in to the buffer faster than
+it is being removed by the TM stream an overflow will occur and data
+will be lost. The instrument can automatically adjust the reduction
+so that it fits the current efficiency of the compression. As an
+adjustable high and low &apos;&apos;watermark&apos;&apos; in the buffer is exceeded,
+the data reduction is changed accordingly.
+ 
+Mode description
+=================
+ICA has in principle only one scientific mode. It measures 32 mass
+channels from 16 different sectors for 96 different energy intervals.
+The different science modes differ only in how much they reduce the
+data in order to fit a certain telemetry rate. The science modes are:
+ID       Name
+MSPO     Minimum spectra only
+MSIS     Minimum, selected ion species
+MEXM     Minimum, energy mass matrix
+NRM      Normal mode, intermediate resolution
+HAR      High angular resolution
+EXM      High mass resolution
+For the end user, the used mode will be evident from the resolution
+of the data. Within each of the NRM, HAR and EXM modes there exist 8
+sub-modes with different degree of binning of the data. HAR and EXM
+are intended for burst mode and differ in their strategy for reduction
+of the data. EXM keeps high mass resolution as far as possible,
+whereas HAR reduces mass resolution and preserves spatial resolution
+if the available telemetry is not enough to keep the current
+resolution of the data. NRM is intended for Normal mode telemetry
+and the minimum modes are intended for minimum telemetry rate.
+ 
+ICA feld-of-view
+=================
+The field-of-view is described in the EAICD document found in the
+DOCUMENT directory of this data set. A figure can also be found in the
+GEOMETRY directory, named ICALOCATION.JPG. ICA is located on the
+spacecraft +Z side, looking out over the edge on the + Y side. Its
+primary field-of view is the spacecraft x-z plane. The elevation scan
+can bring in particles from approximately +/- 45 degrees from this
+plane. For some angles of arrival the spacecraft will obstruct the
+field-of-view. This happens for sectors 10-15 and sector 0, for
+elevation index values 0 to 7.
+ 
+Output data
+===========
+The output is energy spectrograms for certain mass channels and
+directions. The mass channels corresponds to physical locations on
+the detector plate, and calibration results must be used to determine
+which mass channels corresponds to a certain ion species or range of
+ion species. The data is obtained from 16 sectors looking in different
+directions and 16 different elevation angles out of the detector
+plane.
+ 
+The RPC ICA-CREW
+================
+PI:           Rickard Lundin
+Co-PI:        Hans Nilsson
+TM:           Kjell Lundin
+ 
+Instrument:   Olle Norberg, R. Lundin, S. Barabash, Kjell Lundin,
+Hans Borg
+Development:  P. Riihelae
+On-board S/W: Hans Borg
+EGSE S/W:     Hans Borg
+Archive S/W:  Jan Karlsson
+Co-Is:
+S. Barabash
+A. Fedorov
+J.-A. Sauvaud
+H. Koskinen
+E. Kallio
+J. L. Burch
+ 
+References
+H. Nilsson, R. Lundin, K. Lundin, S. Barabash, H. Borg, O. Norberg,
+A. Fedorov, J.-A. Sauvaud, H. Koskinen, E. Kallio, P. Riihelae and
+J. L. Burch RPC-ICA:  The  Ion Composition Analyzer of the Rosetta
+Plasma Consortium, Space Science Reviews,
+doi:10.1007/s11214-006-9031-z, 2006
+
+        </description>
+    </Instrument>
+</Product_Context>

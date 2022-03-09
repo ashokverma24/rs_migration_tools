@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.double_asteroid_redirection_test</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Double Asteroid Redirection Test (DART) Mission</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-11</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created by A.C.Raugh based on descriptions from the DART Data Management and Archive Plan.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.dart</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.liciacube</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.light_italian_cubesat_for_imaging_of_asteroids</lid_reference>
+            <reference_type>context_to_associate</reference_type>
+            <comment>
+                The LICIACube mission by the Agenzia Spaziale Italiana (ASI) is running concurrently with the DART mission.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.lowell</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:lowell.discovery_4m3</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.las_campanas</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_campanas.magellan_baade_6m5</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.magdalena_ridge</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:magdalena_ridge.mro2m4</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.las_cumbres</lid_reference>
+            <reference_type>investigation_to_facility</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_cumbres.2m0_telescopes</lid_reference>
+            <reference_type>investigation_to_telescope</reference_type>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:asteroid.65803_didymos</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+            <comment>Primary of the Didymos system</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.65803_didymos.dimorphos</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+            <comment>
+                Secondary of the Didymos system, and the impact target for this spacecraft.
+            </comment>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Investigation>
+        <type>Mission</type>
+        <start_date>1000-01-01</start_date>
+        <stop_date xsi:nil="true" nilReason="unknown"/>
+        <description>
+            The Double Asteroid Redirection Test (DART) mission is a technology demonstration mission
+            funded by NASA to send a kinetic impactor into the smaller component of a double asteroid
+            system and measuring the effect on the target's orbit about its primary. The target of the
+            mission is (65803) Didymos and its satellite, Dimorphos. The DART spacecraft is the impactor
+            and carries a single instrument, th Didymos Reconnaissance and Asteroid Camera for OpNav
+            (DRACO). The NASA-funded mission includes a groundbased component comprising several 
+            observatories that will be characterizing the Didymos system before and after the impact
+            to measure the effects on the period of Dimorphos to within 7.3 seconds. In addition, the
+            Light Italian Cubesat for Imaging of Asteroids (LICIACube) will ride along on the DART 
+            spacecraft and be released ten day prior to impact to observe the event in situ.
+        </description>
+    </Investigation>
+</Product_Context>

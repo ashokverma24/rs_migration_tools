@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+ 	
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ola.orex</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>The OSIRIS-REx Laser Altimeter (OLA) aboard the OSIRIS-REx spacecraft</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-03-14</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+           
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.orex</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-017-0375-3</doi>
+            <reference_text>
+                M.G. Daly, O.S. Barnouin, C. Dickinson, J. Seabrook, C.L. Johnson, G. Cunningham, T. Haltigin, D. Gaudreau, C. Burnet, I. Aslam, A. Taylor, E.B. Biehaus, W. Boynton, M. Nolan, and D.S. Lauretta, The OSIRIS-REX Laser Altimeter (OLA) Investigation and Instrument, Space Science Reviews, in press, 2018.
+            </reference_text>
+            <description>The OLA instrument paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>OLA</name>
+        <type>Altimeter</type>
+        <description>The OSIRIS-REx Laser Altimeter (OLA) is a two-axis scanning lidar (Light Detection and Ranging) instrument that will
+         provide high-resolution topographical information throughout the entire mission. OLA has a single common receiver and two 
+         complementary transmitter assemblies, which enhance the resolution of its data. OLA’s high-energy laser transmitter (HELT) 
+         is used for ranging and mapping from 1 to 7.5 km and collects returns at 100Hz. The low-energy laser transmitter (LELT) collects
+         returns at 10kHz and is used for ranging and imaging at smaller distances (~200 m to 1 km). The repetition rate of these
+          transmitters sets the data acquisition rate of OLA. Laser pulses from both the low and high energy transmitters are directed onto 
+          movable scanning mirror, which is co-aligned with the field of view of the receiver telescope limiting the effects of background 
+          solar radiation. Each pulse provides target range, azimuth, elevation, received intensity and a time-tag.
+        </description>
+    </Instrument>
+</Product_Context>

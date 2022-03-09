@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1
+            https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mwr.jno</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Microwave Radiometer for JNO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-07-10</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.jno::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                Janssen, M.A., Janssen, M.A., J.E. Oswald, S.T. Brown, 
+                S. Gulkis, S.M. Levin, S.J. Bolton, M.D. Allison, S.K. Atreya,
+                D.Gautier , A.P. Ingersoll, J.I. Lunine, G.S. Orton, T.C. Owen,
+                P.G. Steffes, A. Kitiyakara, J.C Chen, F.W. Maiwald, A.S. 
+                Larson, P.J. Pingree, K.A. Lee, R. Redick, R.C. Hughes, G. 
+                Bedrossian, D.E. Dawson, W.A. Hatch, D.S. Russel, N.F. 
+                Chamberlain, M.S. Zawadski, B. Khayatian, A. Mazer, B.R. 
+                Franklin, H.A. Conley, J.G. Kempenaar, M.S. Loo, E.T. Sunada,
+                C.C. Wang,  MWR: Microwave Radiometer for the Juno Mission to
+                Jupiter, Space Science Reviews, 2017 doi: 10.1007/
+                s11214-017-0349-5.
+            </reference_text>
+            <description>MWR instrument paper</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>Microwave Radiometer</name>
+        <type>Radiometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+Instrument Overview
+===================
+The Microwave Radiometer (MWR) is one of a suite of instruments on Juno.
+The Juno mission has the overall goal of answering the outstanding questions
+outstanding about Jupiter's structure and origin. Specifically, the MWR was 
+designed to characterize Jupiter's atmosphere as following:
+
+-  Determine the global O/H ratio (water abundance) in Jupiter's
+atmosphere
+-  Measure latitudinal variations in Jupiter's deep atmosphere
+(composition, temperature, cloud opacity, and dynamics) 
+-  Measure the microwave brightness temperatures of Jupiter over all
+latitudes at wavelengths that fully sample the atmospheric thermal
+emission at all altitude levels from the ammonia cloud-forming
+region to below the water cloud-forming region
+
+To achieve this the MWR experiment uses a microwave sounding approach 
+described in Janssen et al., 2005. The MWR instrument measures the 
+atmospheric thermal emission at six frequencies. Thermal emission from an 
+atmosphere arises because of the presence of absorbing constituents in the 
+atmosphere, and the measured emission contains information on both the 
+concentration and temperature of these constituents. The information content 
+changes with frequency, and the determination of the spectrum of atmospheric 
+thermal emission can be used to infer key parameters of both the temperature 
+and compositional structure of the atmosphere. Water and ammonia are the only 
+significant sources of microwave opacity in Jupiter's atmosphere, so their 
+concentrations are the unique target of any microwave sounding approach.  
+
+The MWR instrument comprises what are essentially six independent 
+radiometers, each of which measures the microwave emission viewed through its 
+own independent antenna. The six antennas are distributed around the 
+spacecraft body and view in a direction perpendicular to the spin axis of the 
+spacecraft.  Since the spin axis of the spacecraft is oriented approximately 
+perpendicular to the orbit plane, the beam of each antenna sweeps through a 
+great circle on the sky that passes along the sub-spacecraft track on Jupiter 
+and through the nadir direction.  Each point along this track is thus 
+observed numerous times, at different emission angles, as the spacecraft 
+spins and moves along its orbit.  The accumulated data at each such point and 
+its dependence on emission angle an frequency is then analyzed to obtain 
+vertical atmospheric composition and structure using a radiative transfer 
+model.
+
+Each receiver makes contiguous radiometric measurements, or integrations, of 
+fixed 100-ms duration. In a typical sequence of such integrations an internal 
+switch is cycled from the antenna input to periodically view an internal 
+load, and three independent internal reference noise sources are periodically 
+switched on and off for calibration. The cycle for such switching is 
+synchronous for all receivers and is set by selecting from a table contained 
+in the flight software. The table may be changed by an uplink command. The 
+choice of specific sequences depends on instrument performance and 
+optimization of the calibration algorithm.
+
+For the key observations to be made in the nine-hour window around Jupiter
+perijove, the MWR is desiged to downlink all contiguous 100-ms observations. 
+Outside this window, however, not all of this data is essential and in most 
+cases the resulting data would quickly fill the MWR's partition on the 
+spacecraft. To avoid this, a command is sent to downlink only a fraction of 
+the data obtained. The instrument organizes its data stream into time-
+contiguous units of ten 100-ms observations, each thus corresponding to one 
+second's worth of observation. Successive units may be contiguous in time 
+(full data rate) or separated by n seconds each (reduced data rate). A 
+different on-board switching sequence is typically commanded in order to 
+optimize the calibration for reduced sampling rates.
+
+Documents that describe the major components of the MWR instrument and its 
+operation will be found in the DOCUMENTS folder and include:
+1. The MWR volume SIS
+2. The MWR instrument paper (Janssen et al., 2017)
+3. The MWR Operations Guide (not yet available)
+4. The MWR Instrument Users Guide
+5. The MWR Flight Software Users Guide
+6. The MWR Algorithm and Theoretical Basis Document and Error Analysis
+
+The canonical paper that describes the design, operation, calibration, and 
+analysis of the MWR data to achieve the scientific objectives of the MWR 
+experiment is Janssen et al., 2017.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:gwe.uly</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GRAVITATIONAL WAVE EXPERIMENT for ULY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.uly::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bertotti, B., R. Ambrosini, S.W. Asmar, J.P. Brenkle, G. Comoretto, G.
+                   Giampieri, L. Iess, A. Messeri, and H.D. Wahlquist, The gravitational wave
+                   experiment, Astron. Astrophys. Suppl. Ser., 92, No. 2, 431-440, Jan. 1992.
+            </reference_text>
+            <description>reference.BERTOTTIETAL1992A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bertotti, B., R. Ambrosini, S. Asmar, G. Comeretto, G. Giampieri, L. Iess,
+                   Y. Koyama, A. Messeri, A. Vecchio, and H. Wahlquist. Preliminary Results of
+                   the Ulysses Gravitational Wave Experiment, GR13 Conference in Cordoba,
+                   Argentina, 1992.
+            </reference_text>
+            <description>reference.BERTOTTIETAL1992B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Iess, L., The Ulysses Gravitational Wave Experiment: Preliminary Results,
+                   Proc. X Italian Conf. on Gen. Rel. and Grav., World Sci. Pub. Co., 275,
+                   1993.
+            </reference_text>
+            <description>reference.IESS1993</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>GRAVITATIONAL WAVE EXPERIMENT</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Radio Science-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    (excepted from: [BERTOTTIETAL1992A])
+ 
+    Abstract.  -- Since the optimum size of a gravitational wave
+    detector is the wave length, interplanetary dimensions are
+    needed for the mHz band of interest.  Doppler tracking of
+    Ulysses will provide the most sensitive attempt to date at the
+    detection of gravitational waves in the low frequency band.
+    The driving noise source is the fluctuations in the refractive
+    index of interplanetary plasma.  This dictates the timing of
+    the experiment to be near solar opposition and sets the target
+    accuracy for the fractional frequency change at 3.0 x 10^-14
+    for integration times of the order of 1000 sec.  The
+    instrumentation utilized by the experiment is distributed
+    between the radio systems on the spacecraft and the seven
+    participating ground stations of the Deep Space Network and
+    Medicina.  Preliminary analysis is available of the
+    measurements taken during the Ulysses first opposition test.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

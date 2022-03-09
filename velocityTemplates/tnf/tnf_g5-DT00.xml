@@ -1,0 +1,241 @@
+                        <Group_Field_Binary>
+                              <name>Uplink Carrier Phase CHDO (Data Type 0)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>19</fields>
+                              <groups>0</groups>
+                              <description>Uplink Carrier Phase CHDO (Data Type 0)</description>
+                              <group_location unit="byte">103</group_location>
+                              <group_length unit="byte">80</group_length>
+                              <Field_Binary>
+                                    <name>chdo_type</name>
+                                    <field_number>1</field_number>
+                                    <field_location unit="byte">1</field_location>
+                                    <data_type>UnsignedMSB2</data_type>
+                                    <field_length unit="byte">2</field_length>
+                                    <description>
+                                          Type attribute of the uplink carrier phase data CHDO.
+                                          A value 10 is expected, indicating that the CHDO contains binary data.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>chdo_length</name>
+                                    <field_number>2</field_number>
+                                    <field_location unit="byte">3</field_location>
+                                    <data_type>UnsignedMSB2</data_type>
+                                    <field_length unit="byte">2</field_length>
+                                    <description>
+                                          Length attribute of the uplink carrier phase data CHDO value field.
+                                          Number of bytes after this item.  A value of 76 is expected.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>ul_hi_phs_cycles</name>
+                                    <field_number>3</field_number>
+                                    <field_location unit="byte">5</field_location>
+                                    <data_type>UnsignedMSB4</data_type>
+                                    <field_length unit="byte">4</field_length>
+                                    <field_format>%10d</field_format>
+                                    <description>
+                                          High part phase data: total integer phase cycles divided by 2**32.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>ul_lo_phs_cycles</name>
+                                    <field_number>4</field_number>
+                                    <field_location unit="byte">9</field_location>
+                                    <data_type>UnsignedMSB4</data_type>
+                                    <field_length unit="byte">4</field_length>
+                                    <description>
+                                          Low part phase data: total integer phase cycles modulo 2**32.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>ul_frac_phs_cycles</name>
+                                    <field_number>5</field_number>
+                                    <field_location unit="byte">13</field_location>
+                                    <data_type>UnsignedMSB4</data_type>
+                                    <field_length unit="byte">4</field_length>
+                                    <field_format>%10d</field_format>
+                                    <description>
+                                          Fractional phase data cycles: fractional phase cycles multiplied by 2**32
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>ramp_freq</name>
+                                    <field_number>6</field_number>
+                                    <field_location unit="byte">17</field_location>
+                                    <data_type>IEEE754MSBDouble</data_type>
+                                    <field_length unit="byte">8</field_length>
+                                    <unit>hertz</unit>
+                                    <description>
+                                          The base frequency of a ramped uplink transmission.
+                                          Values 2.0e9 to 34.7e9 are expected.  A value of 0. indicates an invalid or unknown value.
+                                          Precision varies with band (phase data give higher precision):   
+                                             S-band  = 0.5 microHz; 
+                                             X-band  = 1.6 microHz;
+                                             Ka-band = 7.7 microHz
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>ramp_rate</name>
+                                    <field_number>7</field_number>
+                                    <field_location unit="byte">25</field_location>
+                                    <data_type>IEEE754MSBDouble</data_type>
+                                    <field_length unit="byte">8</field_length>
+                                    <unit>Hz/s</unit>
+                                    <description>
+                                          Ramp rate of an uplink transmission.  
+                                          Allowed values are -3.2e5 to 3.2e5.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>transmit_switch_stat</name>
+                                    <field_number>8</field_number>
+                                    <field_location unit="byte">33</field_location>
+                                    <data_type>UnsignedByte</data_type>
+                                    <field_length unit="byte">1</field_length>
+                                    <field_format>%3d</field_format>
+                                    <description>
+                                          Transmitter switch status.
+                                             0 = Antenna; 
+                                             1 = Water load; 
+                                             2 = Invalid/unknown
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>ramp_type</name>
+                                    <field_number>9</field_number>
+                                    <field_location unit="byte">34</field_location>
+                                    <data_type>UnsignedByte</data_type>
+                                    <field_length unit="byte">1</field_length>
+                                    <field_format>%3d</field_format>
+                                    <description>
+                                          Ramp type.
+                                             0 = Snap; 
+                                             1 = Start of new ramp; 
+                                             2 = Medial report; 
+                                             3 = Periodic report; 
+                                             4 = End of ramps; 
+                                             5 = Ramping terminated by operator; 
+                                             6 = Invalid/unknown
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>transmit_op_pwr</name>
+                                    <field_number>10</field_number>
+                                    <field_location unit="byte">35</field_location>
+                                    <data_type>IEEE754MSBSingle</data_type>
+                                    <field_length unit="byte">4</field_length>
+                                    <unit>watt</unit>
+                                    <description>
+                                          Transmitter output power.
+                                          Values 0. to 500,000.0 are allowed.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>sup_data_id</name>
+                                    <field_number>11</field_number>
+                                    <field_location unit="byte">39</field_location>
+                                    <data_type>ASCII_String</data_type>
+                                    <field_length unit="byte">8</field_length>
+                                    <description>
+                                          Support data ID.  Name of the frequency predicts set used.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>sup_data_rev</name>
+                                    <field_number>12</field_number>
+                                    <field_location unit="byte">47</field_location>
+                                    <data_type>ASCII_String</data_type>
+                                    <field_length unit="byte">8</field_length>
+                                    <field_format>%8s</field_format>
+                                    <description>
+                                          Support data revision. Revision of the frequency predicts set used.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>prdx_time_offset</name>
+                                    <field_number>13</field_number>
+                                    <field_location unit="byte">55</field_location>
+                                    <data_type>IEEE754MSBDouble</data_type>
+                                    <field_length unit="byte">8</field_length>
+                                    <unit>second</unit>
+                                    <description>
+                                          Predicts time offset.  Seconds added to current time.
+                                          Values -31,536,000.0 to 31,536,000.0 are allowed.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>prdx_freq_offset</name>
+                                    <field_number>14</field_number>
+                                    <field_location unit="byte">63</field_location>
+                                    <data_type>IEEE754MSBDouble</data_type>
+                                    <field_length unit="byte">8</field_length>
+                                    <unit>hertz</unit>
+                                    <description>
+                                          Predicts frequency offset.  Hz added to predicted value.
+                                          Values -4.8e6 to 4.8e6 are allowed.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>time_tag_corr_flag</name>
+                                    <field_number>15</field_number>
+                                    <field_location unit="byte">71</field_location>
+                                    <data_type>UnsignedByte</data_type>
+                                    <field_length unit="byte">1</field_length>
+                                    <description>
+                                          Time tag correction flag. Indicates results of validation of the block time tag.
+                                             0 = No validation attempted; 
+                                             1 = Validated, no change; 
+                                             2 = Validated, changed
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>type_time_corr_flag</name>
+                                    <field_number>16</field_number>
+                                    <field_location unit="byte">72</field_location>
+                                    <data_type>UnsignedByte</data_type>
+                                    <field_length unit="byte">1</field_length>
+                                    <description>
+                                          Type of time tag correction flag. Indicates what type of time tag correction was made.
+                                             0 = No correction; 
+                                             1 = Year correction; 
+                                             2 = DOY correction; 
+                                             3 = Both Year and DOY correction
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>fabricated_sfdu_flag</name>
+                                    <field_number>17</field_number>
+                                    <field_location unit="byte">73</field_location>
+                                    <data_type>UnsignedByte</data_type>
+                                    <field_length unit="byte">1</field_length>
+                                    <description>
+                                          Fabricated SFDU Flag. Indicates whether this SFDU was artificially 
+                                          fabricated in support of 3-way ranging. 
+                                             0 = Originally generated by UPL and validated by TTC software; 
+                                             1 = Fabricated by TTC software
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>reserve1c</name>
+                                    <field_number>18</field_number>
+                                    <field_location unit="byte">74</field_location>
+                                    <data_type>UnsignedByte</data_type>
+                                    <field_length unit="byte">1</field_length>
+                                    <description>
+                                          Reserved. One byte.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>reserve6a</name>
+                                    <field_number>19</field_number>
+                                    <field_location unit="byte">75</field_location>
+                                    <data_type>ASCII_String</data_type>
+                                    <field_length unit="byte">6</field_length>
+                                    <description>
+                                          Reserved. Six bytes.
+                                    </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:epi.gp</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ENERGETIC PARTICLES INVESTIGATION for GP</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gp::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.FISCHERETAL1980</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.FISCHERETAL1992</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ENERGETIC PARTICLES INVESTIGATION</name>
+        <type>Particle Detector</type> <!--RChen/EN was Energetic Particle Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Energetic Particles Investigation (EPI) instrument onboard
+    the Galileo Probe was part of the Lightning and Radio Emission
+    Detector (LRD).  The complete instrument consisted of four
+    sensors (RF antenna, 2 optical sensors, particle sensor) and a
+    central electronic box.  The EPI instrument was a two-element
+    telescope using totally depleted silicon surface barrier
+    detectors.  The instrument operated during the pre-entry phase of
+    the mission, when the Probe was in the configuration with the
+    heat shield still protecting the descent module.  Thus, the
+    measured particles had to have high enough energies to penetrate
+    the heat shield prior to their measurement by one of the 8
+    instrument channels.  The instrument was designed to handle
+    countrates up to 3 billion counts per second.  The data coverage
+    of the investigation consisted of three data samples acquired
+    near the equatorial region at 5, 4.1, and 3.2 Rj, and a
+    continuous series of measurements (12 data samples) from 2.3 to
+    1.25 Rj, which corresponded to a spatial resolution of about 0.02
+    Rj in the innermost region prior to Probe entry into the
+    atmosphere.
+ 
+    The EPI was manufactured in cooperation between the
+    Max-Planck-Institut fuer Aeronomie Katlenburg-Lindau, Technische
+    Universitaet Braunschweig, Bell Laboratories, University of
+    Arizona, University of Florida, NASA-Ames Research Center and
+    University of Kiel.  The weight of the EPI part was 0.5 kg, the
+    power consumption was 1 watt for 1 hour and the amount of bits
+    for data transmission was 7680 bits.
+ 
+    The EPI instrument was mounted on the descent module with its
+    viewing direction towards the thinner rear heat shield and its
+    telescope axis fixed with an inclination of 41 degrees with
+    respect to the probe&apos;s figure axis.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The principal objective of this investigation was to study the
+    energetic particle populations in the innermost region of the
+    Jovian magnetosphere.  To achieve these scientific objectives the
+    EPI made omnidirectional measurements to get intensity profiles
+    with a spatial resolution of about 0.02 Rj.  In addition to the
+    omnidirectional measurement, sectored data were obtained for
+    certain channels.  For detailed description see Galileo Mission
+    Description.
+ 
+ 
+  Calibration
+  ===========
+    There has been a long series of detector calibration measurements
+    with radioactive sources over a period of 10 years to determine
+    the long-term stability of the detectors under normal and
+    thermal-vacuum conditions.  During the whole time from start to
+    end of the probe mission, the sensor box of the EPI flight spare
+    unit was kept under vacuum conditions to check the behavior of
+    the instrument.
+ 
+    For the higher energies, the instrument was calibrated with
+    protons at the Harvard Cyclotron (30-150 MeV), with electrons at
+    the Lawrence Livermore accelerator (20-30 MeV), and for heavier
+    particles (He, O, Si, Ar) at the Berkeley Bevatron (70-340
+    MeV/n).  The calibration measurements were performed in part with
+    a layer of the original heat shield material in front of the
+    aperture in order to determine the influence of the absorber on
+    the instrument&apos;s response functions.
+ 
+ 
+  Operational Considerations
+  ==========================
+    The EPI instrument was operated in the pre-entry phase of the
+    mission where it was difficult to get reliable information about
+    the magnetic field value from the LRD.  The data acquisition
+    scheme is based on the nominal probe spin frequency of 10.5 rpm,
+    which was achieved very precisely according to the Mission
+    Operations Final Report.
+ 
+ 
+  Detectors
+  =========
+    The EPI detectors were totally-depleted, circular silicon surface
+    barrier detectors with a thickness of 0.5 mm.  The detectors were
+    shielded by a tungsten aperture of 0.27 cm thickness forming an
+    opening angle of 73 degrees for detector A and of 44 degrees for
+    the coincidence of both detectors.  Having a sensitive area
+    diameter of 2.8 mm and a waver diameter of 7.2 mm, the edge
+    effect is of special interest for these detectors.  Evidence for
+    the influence of the edge effect was found in the energy loss
+    distributions recorded during calibration measurements
+    [FISCHERETAL1992].  Additional measurements with radioactive
+    sources were carried out to determine the detection efficiency of
+    the detector edges.  In parallel a mathematical model of the
+    detector assembly was developed for the investigation of the
+    physical details by means of a Monte Carlo method using the
+    computer code GEANT from CERN.  A model of the detection
+    efficiency was developed and validated by comparison with
+    calibration measurements [FISCHERETAL1992].  The investigation
+    revealed that the area of the detector edge was of the same order
+    of magnitude as the nominal sensitive area.  This is important to
+    know for a correct data evaluation.
+ 
+ 
+  Electronics
+  ===========
+    Detector telescope and analog electronics, for 2 separate
+    channels referring to detector A and B respectively, the detector
+    bias supply converter, and three housekeeping channels for
+    monitoring leakage currents in the two detectors and the ambient
+    temperature were contained in the sensor box.  The scaling, data
+    processing, and data formatting were executed together with the
+    Lightning and Radio Emission Detector (LRD) data in the central
+    electronics box.
+ 
+    The energy loss dE/dx in the detectors was used to set up the 8
+    channels as shown in the following table:
+ 
+         channel    dE/dx in detector A    dE/dx in detector B
+        ------------------------------------------------------
+           E1             &gt;0.1 MeV                 N/A
+           E2             &gt;0.1 MeV               &gt;0.1 MeV
+           E3                N/A                 &gt;0.1 MeV
+           P1             &gt;0.6 MeV                 N/A
+           P2             &gt;0.6 MeV               &gt;0.6 MeV
+           P3             &gt;0.6 MeV               &gt;1.1 MeV
+           HE             &gt;2.3 MeV               &gt;2.3 MeV
+           HVY            &gt;2.3 MeV               &gt;24.5 MeV
+ 
+    Channels E1, E3 and P1 were single counter channels, all others
+    were coincidence channels.
+ 
+    For more details see [FISCHERETAL1980].
+ 
+ 
+  Operational Modes
+  =================
+    A total amount of 7680 bits was available for the EPI.  The
+    general approach was on the one hand to achieve for comparison
+    some measurements in regions of the Jovian magnetosphere where
+    already particle observations exist but on the other hand to
+    concentrate the main investigation to the innermost edge below 2
+    Rj.  The amount of bits was divided into 15 samples each with 64
+    words containing 8 bits, i.  e., 60 words for scientific data and
+    an additional 4 words for status information.  Starting the first
+    data sample at 5 Rj the subsequent samples were positioned at
+    4.1, 3.2 and 2.3 Rj.  At 2.3 Rj the continuous sampling started.
+    In case the phase locked loop circuit of the LRD was not able to
+    detect the magnetic field zero crossing, the data acquisition was
+    based on the nominal probe spin frequency of 10.5 rpm.  One Major
+    Frame Period (MFP) was 64 seconds.  There were two different
+    acquisition schemes for the first four samples down to 2.3 Rj and
+    the one following.  The two schemes are shown in the next two
+    tables.
+ 
+    Data acquisition scheme for EPI samples at 5, 4.1, 3.2 and 2.3 Rj:
+ 
+        Chan     MFP-1              MFP-2
+        -----------------------------------
+        E1       E11S               E12
+        E2       E21S               E22
+        E3       E31S               E32
+        P1       P11S               P12
+        P2       P21S               P22S
+        P3       P31                P32
+        HE       HE1S               HE2
+        HVY      HVY
+ 
+    E11S, E21S, E31S, P11S, P21S, P22S: Sectorized measurements in 8
+    sectors accumulated over 3 spin periods in such a way that always
+    the contents of one sector are added to the equivalent sector of
+    the next rotation.
+ 
+    HE1S: For alpha particles the measurement is elongated over 8
+    spin periods but only divided into four sectors.
+ 
+    E12, E22, E32, P12, P31, P32: Omnidirectional measurements
+    accumulated over 3 spin periods.
+ 
+    HE2: Omnidirectional measurement accumulated over 8 spin periods.
+ 
+    HVY: Because of the uncertainty in finding heavy particles the
+    investigation period is elongated to two MFP&apos;s without
+    sectorization.
+ 
+    Data acquisition scheme for EPI samples between 2.1 Rj and the
+    innermost edge of the Jovian radiation belt:
+ 
+        Chan     MFP-1              MFP-2         MFP-3         MFP-4
+        -------------------------------------------------------------
+        E1       E11S                             E13
+        E2       E21S               E22           E23           E24
+        E3       E31S                             E33
+        P1       P11S                             P13
+        P2       P21S               P22           P23           P24
+        P3       P31                              P33
+        HE       HE1S                             HE3
+        HVY      HVY1               HVY2          HVY3          HVY4
+ 
+    E11S, E21S, E31S, P11S, P21S: Sectorized measurements in 8
+    sectors accumulated over 3 spin periods in such a way that always
+    the contents of one sector are added to the equivalent sector of
+    the next rotation.
+ 
+    HE1S: For alpha particles the measurement is elongated over 8
+    spin periods but only divided into four sectors.
+ 
+    P31, E22, P22, E13, E23, E33, P13, P23, P33: Omnidirectional
+    measurements accumulated over 3 spin periods.
+ 
+    HE3: Omnidirectional measurement accumulated over 8 spin periods.
+ 
+    HVY1-HVY4: Omnidirectional measurements accumulated over one MFP.
+ 
+ 
+  Measured Parameters
+  ===================
+    The instrument counted charged particles using their energy loss
+    in one or two silicon surface barrier detectors to attribute them
+    to different channels.
+
+        </description>
+    </Instrument>
+</Product_Context>

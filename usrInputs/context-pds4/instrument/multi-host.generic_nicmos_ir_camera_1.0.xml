@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context 
+	xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd
+	                    http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:multi-host.generic_nicmos_ir_camera</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Generic NICMOS IR Camera</title>
+    <information_model_version>1.14.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2021-02-03</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial submission</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Instrument>
+    <name>Generic NICMOS IR Camera</name>
+    <Type_List_Area>
+      <ctli:Type_List>
+          <ctli:type>Camera</ctli:type>
+      </ctli:Type_List>
+    </Type_List_Area>
+    <description>
+    	This is a generic Near Infrared Camera and Multi-Object Spectrometer (NICMOS) camera 
+    	used with some ground-based telescopes. 
+    	This specifically is NOT the NICMOS camera mounted on the Hubble Space Telescope.
+    	The detector specifications are not provided in the literature. The nominal wavelength range 
+    	of this instrument is centered on approximately 2200nm. 
+    </description>
+  </Instrument>
+</Product_Context>
+

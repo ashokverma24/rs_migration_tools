@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch"
+ schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+ xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+  https://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:tt.phx</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>TELLTALE for PHX</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-05-23</modification_date>
+                <version_id>1.0</version_id>
+                <description>Changed logical_identifier from tt__phx to tt.phx</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.phx</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gunnlaugsson, H. P., C. Holstein-Rathlou, J. P. Merrison, S. Knak Jensen, C. F.
+                   Lange, S. E. Larsen, M. B. Madsen, P. Nornberg, H. Bechtold, E. Hald, J. J.
+                   Iversen, P. Lange, F. Lykkegaard, F. Rander, M. Lemmon, N. Renno, P. Taylor, P.
+                   Smith, The Telltale Wind Experiment on Mars Phoenix Lander. J. Geophys. Res.,
+                   113, 2008, E00A04, doi:10.1029/2007JE003008.
+            </reference_text>
+            <description>reference.GUNNLAUGSSON2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Holstein-Rathlou, C. von, H. P. Gunnlaugsson, J. P. Merrison, Telltale
+                   Calibration Report, Version 7 (Aarhus University, Denmark, 2008).
+            </reference_text>
+            <description>reference.HOLSTEIN-RATHLOU2008</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Taylor, P.A., Catling, D.C., Daly, M., Dickinson, C.S., Gunnlaugsson, H.P.,
+                   Harri, A.-M., Lange, C.F., Temperature, pressure, and wind instrumentation in
+                   the Phoenix meteorological package. Journal of Geophysical Research, 113,
+                   E00A10, 2008, doi:10.1029/2007JE003015.
+            </reference_text>
+            <description>reference.TAYLORETAL2008</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>TELLTALE</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Anemometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    The Telltale wind indicator on PHX is a mechanical anemometer designed to
+    operate on the Martian surface as part of the meteorological package on
+    the NASA Phoenix lander. It consists of a lightweight cylinder suspended
+    by Kevlar fibers and is deflected under the action of wind. Imaging of the
+    Telltale deflection with the SSI allows the wind speed and direction to be
+    quantified [GUNNLAUGSSON2008, TAYLORETAL2008].
+ 
+    Wind measurements were made with a frequency detemined by how frequently
+    the SSI could take images (down to once every 50 seconds).
+ 
+ 
+  Platform Mounting Description
+  =============================
+    The Telltale is mounted on top of the meteorological mast at roughly 2
+    metres height above the surface.
+ 
+ 
+  Principal Investigator
+  ======================
+    The Telltale was designed at constructed at Aarhus University in Denmark.
+    Project leader is H. P. Gunnlaugsson. H. P. Gunnlaugsson and C.
+    Holstein-Rathlou of the Atmospheric Theme Group (ASTG) led the data
+    taking and data reduction efforts.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The Telltale was designed to be capable of measuring wind speed in two
+    horizontal components: perpendicularly to the SSI camera line-of-sight
+    over the range 1-10 m/s with accuracy of 1 m/s for winds of 1 to 5 m/s
+    and of 20% for winds of 5 to 10 m/s; and along the SSI camera
+    line-of-sight over the range of 2 - 10 m/s with accuracy of 2 m/s for
+    winds of 2 to 5 m/s and of 40% for winds of 5 to 10 m/s.
+ 
+ 
+  Operational Considerations
+  ==========================
+    To fully reduce and utilize the data, pressure and temperature data are
+    required, and the SSI would have to be able to take images of the
+    instrument.
+ 
+ 
+  Calibration
+  ===========
+    The Telltale was calibrated pre-flight at Aarhus University
+    [HOLSTEIN-RATHLOU2008]. Final parameters of the calibration may change
+    slightly upon complete analysis of the whole dataset. This effort is
+    expected to be known early 2009.
+
+        </description>
+    </Instrument>
+</Product_Context>

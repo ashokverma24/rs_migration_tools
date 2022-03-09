@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mb.mer2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MOESSBAUER SPECTROMETER for MER2</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mer2::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Klingelhoefer, G., et al., The Athena MIMOS II Moessbauer Spectrometer
+                   Investigation, Journal of Geophysical Research, 2003.
+            </reference_text>
+            <description>reference.KLINGELHOFERETAL2003</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MOESSBAUER SPECTROMETER</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    Moessbauer (MB) spectroscopy is a powerful tool for quantitative
+    mineralogical analysis of Fe-bearing materials. The miniature
+    MB spectrometer MIMOS II is a component of the Athena
+    science payload to be launched to Mars in 2003 on both Mars
+    Exploration Rover missions. The instrument has two major
+    components: (1) a rover-based electronics board which contains
+    power supplies, a dedicated central processing unit, memory,
+    and associated support electronics and (2) a sensor head that
+    is mounted at the end of the instrument deployment device (IDD)
+    for placement of the instrument in physical contact with soil
+    and rock. The velocity transducer operates at a nominal
+    frequency of ~25 Hz and is configured with two 57Co/Rh MB
+    sources. One source (~5 mCi landed intensity), together with a
+    reference target (alpha-Fe2O3 plus alpha-Fe0) and PIN diode
+    detector in transmission geometry, are internal to the sensor
+    head and is used for instrument calibration. The other source
+    (~150 mCi landed intensity), together with four PIN diodes in
+    backscatter measurement geometry, irradiates Martian surface
+    materials with a beam diameter of ~1.4 cm after passing through
+    a collimator. Physical contact with surface materials is sensed
+    with a switch-activated contact plate. The contact plate and
+    internal reference target are instrumented with temperature
+    sensors. Assuming ~18% Fe for Martian surface materials,
+    experiment time is 6-12 hours during the night for quality
+    spectra (i.e., good counting statistics); 1-2 hours is sufficient
+    to identify and quantify the most abundant Fe-bearing phases.
+    Data stored internal to the instrument for selectable return to
+    Earth include MB and pulse-height analysis spectra (256 channels
+    each) for each of the five detectors in up to 13 temperature
+    intervals (65 MB spectra), engineering data for the velocity
+    transducer, and temperature measurements. The total data volume
+    is ~150 kByte. The mass and power consumption are ~500 g (~400g
+    for the sensor head) and ~2 W, respectively.
+ 
+    The scientific measurement objectives of the MB investigation are
+    to obtain for rock, soil, and dust (1) the mineralogical
+    identification of iron-bearing phases (e.g., oxides, silicates,
+    sulfides, sulfates, and carbonates), (2) the quantitative
+    measurement of the distribution of iron among these iron-bearing
+    phases (e.g., the relative proportions of iron in olivine,
+    pyroxenes, ilmenite and magnetite in a basalt), and (3) the
+    quantitative measurement of the distribution of iron among its
+    oxidation states (e.g., Fe2+, Fe3+, and Fe6+). Special geologic
+    targets of the MB investigation are dust collected by the
+    Athena magnets and exterior and interior rock and soil surfaces
+    exposed by the Athena Rock Abrasion Tool and by trenching with rover
+    wheels, respectively.
+ 
+    Information in this instrument description is taken from The Athena
+    MIMOS II MB Spectrometer Investigation paper
+    [KLINGELHOEFERETAL2003]. See this paper for more details.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The chief scientific objectives of the MB are:
+ 
+    1) to identify iron-bearing mineral phases (e.g., oxides, silicates,
+       sulfides, sulfates, and carbonates), in rock, soil, and dust,
+ 
+    2) to quantitatively measure the distribution of iron among these
+       iron-bearing phases (e.g., the relative proportions of iron in
+       olivine, pyroxenes, ilmenite and magnetite in a basalt),
+ 
+    3) to quantitatively measure the distribution of iron among its
+       oxidation states (e.g., Fe2+, Fe3+, and Fe6+), and
+ 
+    4) to distinguish between magnetically ordered and paramagnetic
+       phases and provide, from measurements at different temperatures,
+       information on the size distribution of magnetic particles.
+ 
+ 
+  Calibration
+  ===========
+    It is necessary to calibrate both the drive velocity and the
+    detectors of the MB. The interpretation of acquired MB spectra is
+    impossible without knowing the drive velocity precisely at any given
+    time. MB drive velocity calibration for MIMOS II is rather
+    straightforward and done in three different ways, thus ensuring
+    redundancy. Prior to flight each individual drive system was
+    calibrated by measuring in backscattering mode an alpha-iron foil
+    standard. A maximum drive velocity was preset by firmware. Fitting
+    the acquired MB spectrum using the well known parameters of the
+    alpha-iron foil then yielded the real velocity. This procedure was
+    repeated at different temperatures.
+ 
+    During the mission, the magnetite CCT (Compositional Calibration
+    Target) will be measured in several runs to verify the functionality
+    of MIMOS II. The well known MB parameters of magnetite can be used
+    for velocity calibration again. These kind of measurements have been
+    done already in the lab with the flight units as a function of
+    temperature, to be used as reference for the measurements on Mars.
+ 
+    The primary method for velocity calibration is the internal
+    reference target and detector configured in transmission measurement
+    geometry. The reference target is a mixture of alpha-Fe0 (metallic
+    iron, 30% enriched 57Fe) and alpha-Fe2O3 (hematite, 95% enriched
+    57Fe), and its MB spectrum is measured automatically during each
+    backscattering measurement. Each component of the reference target
+    has well-known MB parameters, so that fitting of reference spectra
+    enables velocity calibration for each individual measurement done in
+    backscatter geometry, ensuring that the actual drive velocity is
+    always well-defined, regardless of prevailing environmental
+    conditions.
+ 
+    Careful energy calibration on each detector was done to achieve
+    optimal detection rate. Each sensor head was temperature cycled
+    (153K  293K). During cycling, energy spectra were measured. As a
+    result of analysis of these spectra, optimal firmware parameters
+    were calculated for each detector and each temperature window.
+    During operation, instrument firmware will adjust those parameter
+    depending on temperature, thus ensuring best detector performance.
+ 
+ 
+  Operational Considerations
+  ==========================
+    Targets for MB analysis for the mineralogical composition of
+    Fe-bearing phases, the relative distribution of Fe and its oxidation
+    states among those phases, are the exposed surfaces of soil and
+    rock, interior regions of rock exposed by the Rock Abrasion Tool,
+    subsurface soil exposed by trenching, and the two magnets mounted on
+    the rover deck. In the case of the magnets, it is know from Viking
+    and Mars Pathfinder that Martian aeolian dust is magnetic, but the
+    composition of the magnetic phase or phases is not known. When the
+    dust buildup on the magnets is sufficiently large, as determined
+    using Pancam, the IDD will be used to place MIMOS II directly
+    against the magnets, providing what should be a definitive
+    identification of the magnetic phases present. Fine-grained material
+    produced by the RAT, if present in sufficient lateral extent and
+    depth, provides a target that is representative of the volume
+    excavated and for which orientation effects are likely not present.
+    The relatively high penetration depth of the 14.4 keV MB radiation
+    means that it may be possible to obtain mineralogical information
+    about unaltered rock without removing exterior rinds or dust
+    coverings with the RAT.
+ 
+    The MB is a less contamination sensitive to dust than the APXS or
+    the Microscopic Imager, which are the other two instruments on the
+    IDD. Therefore, for soft and/or dirty targets the MIMOS II contact
+    sensor may sometimes be used as a &apos;blind man&apos;s cane&apos;, helping to
+    establish target location in IDD coordinates so that the other
+    instruments can be placed with less risk of contamination.
+ 
+    In some instances, it may be possible for MIMOS II to achieve a
+    signal-to-noise ratio that is adequate for answering key scientific
+    questions in a time much less than the nominal experiment time of
+    6-12 hr during the overnight period. This will be particularly true
+    early in the mission when radiation source strength is greatest, and
+    for targets with high Fe contents. Where appropriate, then, the MB
+    may be used in a &apos;touch and go&apos; mode, in which a short integration
+    is performed at the start of a sol, followed by other rover
+    activities that may include driving.
+ 
+ 
+  Detectors and Electronics
+  =========================
+    The main disadvantage of the backscatter measurement geometry
+    employed by MIMOS II is the secondary radiation caused by primary
+    122 keV radiation from the decay of 57Co. To reduce the background
+    at the energies of the 14.4 keV gamma-ray and the 6.4 keV X-ray
+    lines, a detector with good energy resolution is required. In
+    addition, an intense main 57Co source and a detector system covering
+    a large solid angle are needed to minimize data acquisition time.
+    Good resolution is even more important should it prove possible to
+    use these detectors for elemental analysis with the X-ray
+    fluorescence technique (i.e., using the pulse height analysis (PHA)
+    spectra that are also acquired as a part of our measurement
+    procedure). For this reason, four Si-PIN-diodes with a 10 x 10 mm2
+    active area were selected as detectors instead of gas-counters. A
+    detector thickness of about 400-500 um is a good choice according to
+    calculations and experience. The energy resolution is ~1.0-1.5 keV
+    at room temperture, and it improves at lower temperaures. The
+    efficiencies at 6.4 and 14.4 keV are nearly 100 % and about 70 %,
+    respectively.
+ 
+    The 100 V DC bias voltage for the detector diodes is generated by
+    high frequency cascade circuitry with a power consumption of less
+    than 5 mW. Noise contributions are minimized by incorporating a
+    preamplifier-amplifier-SCA system for each individual detector.
+ 
+    In addition to the four detectors used to detect backscattered
+    radiation from the sample, there is a fifth detector to measure the
+    transmission spectrum of the reference absorber (alpha-57Fe plus
+    alpha-57Fe2O3 Sample and reference spectra are recorded
+    simultaneously, and the known temperature dependence of the MB
+    parameters of the reference absorber can be used to give a
+    measurement of the average temperature inside the sensor head,
+    providing a redundancy to measurements made with the internal
+    temperature sensor.
+ 
+    MIMOS II has three temperature sensors: one on the electronics board
+    in the Rover warm electronics box and two on the sensor head
+    (Analogue Devices AD590). One temperature sensor in the sensor head
+    is mounted near the internal reference absorber, and the measured
+    temperature is associated with the reference absorber and the
+    internal volume of the sensor head. The other sensor is mounted
+    outside the sensor head at the contact ring assembly. It gives the
+    approximate analysis temperature for the sample on the Martian
+    surface. This temperature is used to route the MB data to the
+    different temperature intervals (maximum of 13, with the temperature
+    width software selectable) assigned in memory areas. In case of
+    contact-ring temperature sensor failure, the internal temperature
+    sensor would be used (software selectable).
+ 
+    During measurements, a temperature log is acquired for all
+    three sensors. Temperature measurements are done approximately every
+    5 min (software selectable: min ~10 sec, max ~40 min). MIMOS II can
+    accumulate up to 256 temperature records corresponding to a total
+    integration time of ~21 hours.
+ 
+    The electronics in the rover body include an internal
+    microcontroller, so that the instrument can collect data
+    independently of the rover computer. The analog signals of the five
+    detector channels are analyzed by discriminators for 14.4 keV and
+    6.4 keV peaks. MB spectra for the two different energies of 6.4 keV
+    and 14.41 keV are sampled separately.
+ 
+ 
+  Location
+  ========
+    The MB is mounted on the end of the IDD.
+ 
+ 
+  Measured Parameters
+  ===================
+    The Athena Mossbauer spectrometer uses a vibrationally-modulated
+    57Co source to illuminate target materials. Backscattered gamma
+    signals are binned according to the source velocity, revealing
+    hyperfine splitting of 57Fe nuclear levels that provides
+    mineralogical information about the target.
+
+        </description>
+    </Instrument>
+</Product_Context>

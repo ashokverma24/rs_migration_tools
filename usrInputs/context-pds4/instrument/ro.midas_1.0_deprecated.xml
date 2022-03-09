@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:midas.ro</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MICRO-IMAGING DUST ANALYSIS SYSTEM for RO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ro::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Riedler, W. et al., MIDAS - The Micro-Imaging Dust Analysis System for the
+                   Rosetta Mission, Space Sci. Rev., 128(1-4), 869-904, Feb. 2007.
+            </reference_text>
+            <description>reference.RIEDLERETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MICRO-IMAGING DUST ANALYSIS SYSTEM</name>
+        <type>Microscope</type> <!--RChen/EN was Scanning Probe Microscope-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+  This catalog file contains excerpts from Riedler et al, 2006.
+  Refer to this paper for an in depth description of the
+  instrument.
+ 
+  Scientific Objectives
+  =====================
+ 
+  The main objective of the instrument MIDAS (Micro-Imaging
+  Dust Analysis System) on board of the Rosetta Orbiter is the
+  analysis of particles collected in the coma of Comet
+  67P/Churyumov-Gerasimenko by means of atomic force microscopy.
+  The instrument will provide 3D images and statistical
+  parameters of the particles in the nm-um range. The main
+  anticipated results include
+  - 3D images of single particles,
+  - images of the textural complexity of particle aggregates,
+  - identification of crystalline material,
+  - identification of sub-features on clean surfaces which
+  provides insight into the growth conditions (e.g. twinning
+  defects) and/or storage environment (e.g. dissolution marks),
+  - statistical evaluation of the particles according to size,
+  volume and shape,
+  - variation of particle fluxes between individual exposures of
+  the collector unit on time scales of hours.
+ 
+  Measurement Principle
+  =====================
+ 
+  An Atomic Force Microscope forms the heart of MIDAS. A sharp
+  tip scanning the surface of a sample is used to derive
+  information from the tip-sample interaction, which depends on
+  the nature of the tip and is based on mechanical force and -
+  in connection with suitable sensors - magnetic force.
+  The surface features can be resolved with almost atomic
+  resolution. MIDAS adopts dynamic AFM as the main working mode
+  and employs piezo-resistive cantilevers that can detect their
+  own deflection electrically. In this mode, the cantilever is
+  excited at its natural mechanical resonance frequency (~100
+  kHz) at close distance to the sample. The amplitude of the
+  cantilever vibration is of the order 100 nm. Close to the
+  surface, the resonance frequency of the cantilever changes due
+  to the tip-surface interaction forces. The changes of
+  resonance frequency and amplitude are used to derive the
+  topography of the sample in a closed loop system. The basic
+  elements of an AFM are a piezoelectric scanner for cantilever
+  movement, a tip mounted near the edge of the cantilever, a
+  detection system for cantilever deflection, and a feedback
+  system to control the vertical tip position. In addition, a
+  coarse approach system is needed to bring the tip to within
+  the working distance of the piezoelectric scanner.
+ 
+  Instrument Overview
+  ===================
+ 
+  The MIDAS instrument is a single mechanical unit. The top part
+  houses the elements of the AFM and the system to collect and
+  transport the dust samples from the exposure position to the
+  head of the microscope. A funnel-shaped dust intake system,
+  which protrudes through the outer spacecraft wall, is attached
+  to the upper part of the box. An external cover protects the
+  internal elements against contamination during ground
+  operations and launch. A shutter at the outer end of the
+  funnel controls the exposure time of one facet at a time on
+  the dust collector wheel inside the box. This wheel can be
+  rotated and translated to transport the dust samples to one of
+  16 sensor elements (cantilevers) in the AFM after exposure.
+  The array of cantilevers is fixed to the Z microscope stage,
+  which is attached to the high-resolution XY positioning stage.
+  All stages are driven by piezoelectric systems, and the
+  displacements can be measured by a strain gauge and capacitive
+  sensors. In addition, the voltages applied to the
+  piezoelectric actuators provide the same displacement
+  information through the respective calibration curves. To
+  begin the imaging process, the XYZ-stage is brought into
+  contact with the sample on the dust collector wheel by the
+  approach mechanism. As soon as the selected cantilever senses
+  contact with the sample (indicated by a deflection of the
+  cantilever in contact mode, or a change of amplitude in
+  dynamic mode), the scanning operation can start. After the
+  measurement, the XYZ-stage has to be retracted, and another
+  approach procedure has to be performed before the measurement
+  on another area. The 16 available needles have slightly
+  different characteristics and shapes, and four out of them are
+  additionally sensitive to magnetic forces. As the measurements
+  by the AFM are sensitive to microvibrations induced by other
+  active mechanisms aboard Rosetta, the AFM element is fixed to
+  the base plate of the box by four studs of highly flexible
+  silicone material with a high damping capability. During
+  ground operations and launch, the AFM platform was locked in
+  its zero position by a clamping device, which is unlatched
+  after launch by a mechanism using paraffin actuators. The
+  lower part of the instrument serves as the electronics box,
+  which could be decoupled from the upper section to help the
+  assembly process. Most of the printed circuit boards are
+  located in the lower section, but a few sensitive amplifiers
+  reside in the AFM area close to the sensors. The electronics
+  box has a connector panel for redundant electrical interfaces
+  to data, power and checkout. Some additional connectors, e.g.
+  for pyrotechnic actuators, are mounted on the AFM box.
+ 
+  Operational Modes and On-Board Software
+  =======================================
+ 
+  MIDAS has to acquire and analyse samples of cometary dust at
+  regular intervals throughout all phases of the mission. At
+  first, the selected facet of the dust collector wheel has to
+  be exposed to the ambient dust flux until the required surface
+  coverage by dust is achieved. The best coverage value remains
+  to be determined experimentally and will also depend on the
+  type of analysis planned (imaging of individual particles or
+  statistics). Current estimates indicate a surface coverage of
+  0.1% should be sufficient for most purposes. The required
+  exposure times range from fractions of an hour during high
+  cometary activity at close distances to the nucleus (few
+  cometary radii) to several days during moderate activity
+  and/or larger distances. Apart from the facet selection and
+  shutter operations at the beginning and end, MIDAS may be left
+  unpowered. Alternatively, if it remains in standby mode, it is
+  able to listen to broadcast messages that may be used to
+  adjust the exposure time autonomously. If MIDAS is powered
+  during exposure, it may also simultaneously process previously
+  obtained images. After exposure, the shutter is closed and the
+  target wheel can be turned to another position for the
+  exposure of another facet, or a facet can be placed underneath
+  the scanner head. AFM images of the exposed target areas are
+  obtained by scanning. At the beginning of the scan mode, an
+  area on the collector wheel is selected by rotating the chosen
+  facet under the scanner head. In each scan, only a small part
+  of the exposed surface is imaged by the microscope. The
+  selection of scan areas within a facet is achieved by fine
+  control of the angle and lateral position of the wheel. A
+  single exposure period will be followed by several scanning
+  operations on the previously exposed facet at varying
+  resolutions. It is also possible to scan or rescan facets that
+  have been exposed much earlier. The time needed to scan a
+  single area on a facet depends on the operational settings and
+  is of the order of several hours. Processing and transmitting
+  the acquired data is typically performed after completion of a
+  scan (image acquisition). Typically, processing time is short
+  compared to the image acquisition time. The baseline MIDAS
+  operations involve alternating between exposure, scanning and
+  processing, but data collection simultaneously with the
+  processing and transmission of collected images is also
+  possible. Some images will be reduced to simple statistical
+  parameters for transmission (for example, the number and sizes
+  of dust grains), while others will be studied at full
+  resolution. The standard modes for exposure, scanning, and
+  image processing as well as the associated positioning of the
+  target surfaces are complemented by modes for checkout and
+  in-flight calibration.
+  The MIDAS software is structured into a low-level software
+  kernel and a high-level main program. Every time the
+  instrument is switched on, the kernel program is loaded into
+  the Random Access Memory (RAM) and executed. After a
+  successful check of the Electrically Erasable Programmable
+  Read-Only Memory (EEPROM), the main program is started and the
+  instrument enters standby mode. The software kernel handles
+  the interface between the hardware and the main program, basic
+  telecommand processing, generation of basic housekeeping
+  telemetry, software maintenance and uploads, timing and low-
+  level control of the hardware. Main program tasks include
+  high-level instrument control, scientific and extended
+  housekeeping data generation, and image processing. Control of
+  the instrument relies on sequences of low-level commands
+  combined into larger packets. Recognised packets are processed
+  with high or normal priority, depending on the telecommand
+  type. Commands with high priority are executed immediately.
+  They include time-critical commands, such as program abort,
+  error reporting, and all commands processed by the kernel such
+  as telecommand acknowledgements. Commands with normal priority
+  are stored in a command buffer and executed sequentially. The
+  low priority buffer is used for housekeeping and science data
+  transfer where the packets are grouped into larger blocks. Two
+  different subtypes of housekeeping data packets and six
+  subtypes of science data packets have been defined. Science
+  data packets are generated during or after acquisition of an
+  image and processing of the image data. In general, data from
+  one image will extend over many packets, depending on the
+  resolution. Among the routinely used modes, only the scan mode
+  produces raw science data that are stored temporarily in
+  instrument memory. The size of an image can be set to
+  multiples of 32 pixels in each direction, with a maximum of
+  512 pixels. A typical single image of 256x256 pixels requires
+  128 Kbyte of memory. As 1 Mbyte is available for raw data,
+  eight typical images can be held. Onboard image data
+  processing is foreseen for two main reasons: the reduction of
+  the data volume, and the identification and characterisation
+  of dust grains to determine the coordinates of following scans
+  (zoom-in).
+ 
+  Key Capabilities and Characteristics
+  ====================================
+  Maximum scan field    94 x 94 um
+  Minimum scan field    0.97 x 0.97 um
+  Image resolution      256 x 256 pixels (typ.),
+                        512 x 512 pixels (max.)
+  Lateral resolution    variable 3.8 nm ... 400 nm
+  Height resolution     0.16 nm
+  Number of AFM tips    16
+  Number of targets     61
+  Mass                  8.2 kg
+  Power consumption     8.3 to 13.4 W  (peak power &lt;17 W)
+  Telemetry rate        100 bit s-1
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:go.hic</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>HEAVY ION COUNTER for GO</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:hic.go</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.go</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Barbosa, D.D., A. Eviatar, and G.L. Siscoe, On the Acceleration of Energetic
+                   Ions in Jupiter&apos;s Magnetosphere, J. Geophys. Res., Vol. 89, p. 3789, 1984.
+            </reference_text>
+            <description>reference.BARBOSAETAL1984</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   MOS-GLL-3-310, Flight Software Requirements
+            </reference_text>
+            <description>reference.ECR35559</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Garrard, T.L., N. Gehrels, E.C. Stone, The Galileo Heavy Element Monitor, Space
+                   Sci. Rev., 60, 305, 1992.
+            </reference_text>
+            <description>reference.GARRARDETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gehrels, N., and E.C. Stone, Energetic oxygen and sulfur ions in the Jovian
+                   magnetosphere and their contribution to the auroral excitation, J. Geophys.
+                   Res., 88, 5537, 1983.
+            </reference_text>
+            <description>reference.GEHRELS-STONE1983</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gehrels, N., Energetic Oxygen and Sulfur Ions in the Jovian Magnetosphere,
+                   Ph.D. Thesis, California Inst. of Tech., Pasadena, 1982.
+            </reference_text>
+            <description>reference.GEHRELS1982</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gehrels, N., E.C. Stone, and J.H. Trainor, Energetic oxygen and sulfur in the
+                   Jovian magnetosphere, J. Geophys. Res., 86, 8906, 1981.
+            </reference_text>
+            <description>reference.GEHRELSETAL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krimigis, S.M., T.P. Armstrong, W.I. Axford, C.O. Bostrom, C.Y. Fan, G.
+                   Gloeckler, L.J. Lanzerotti, E.P. Keath, R.D. Zwickl, J.F. Carbary, and D.C.
+                   Hamilton, Low-Energy Charged Particle Environment at Jupiter - A First Look,
+                   Science, 204, 998, 1979.
+            </reference_text>
+            <description>reference.KRIMIGISETAL1979A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Krimigis, S.M., T.P. Armstrong, W.I. Axford, C.O. Bostrom, C.Y. Fan, G.
+                   Gloeckler, L.J. Lanzerotti, E.P. Keath, R.D. Zwickl, J.F. Carbary, and D.C.
+                   Hamilton, Hot Plasma Environment at Jupiter: Voyager 2 Results, Science, 206,
+                   977, 1979.
+            </reference_text>
+            <description>reference.KRIMIGISETAL1979B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   SIS 2244-05 P2, Instrument Packet File
+            </reference_text>
+            <description>reference.SIS2244-05</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Siscoe, G.L., A. Eviatar, R.M. Thorne, J.D. Richardson, F. Bagenal, and J.D.
+                   Sullivan, Ring Current Impoundment of the Io Plasma Torus, J. Geophys. Res.,
+                   86, 8480, 1981.
+            </reference_text>
+            <description>reference.SISCOEETAL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Stilwell, D.E., W.D. Davis, R.M. Joyce, F.B. McDonald, J.H. Trainor, W.E.
+                   Althouse, A.C. Cummings, T.L. Garrard, E.C. Stone, and R.E. Vogt, The Voyager
+                   Cosmic Ray Experiment, IEEE Trans. on Nuclear Science, Vol. 26, p. 513, 1979.
+            </reference_text>
+            <description>reference.STILWELLETAL1979B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Stone, E.C., R.E. Vogt, F.B. McDonald, B.J. Teegarden, J.H. Trainor, J.R.
+                   Jokipii, and W.R. Webber, Cosmic ray investigation for the Voyager missions;
+                   energetic particle studies in the outer heliosphere--and beyond, Space Sci.
+                   Rev., 12, No. 3, 355-376, Dec. 1977.
+            </reference_text>
+            <description>reference.STONEETAL1977B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Thorne, R.M., Injection and loss mechanisms for energetic ions in the inner
+                   Jovian magnetosphere, J. Geophys. Res., 87, 8105, 1982.
+            </reference_text>
+            <description>reference.THORNE1982</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Vogt, R.E., W.R. Cook, A.C. Cummings, T.L. Garrard, N. Gehrels, E.C. Stone,
+                   J.H. Trainor, A.W. Schardt, T. Conlon, N. Lal, and F.B. McDonald, Voyager 1:
+                   Energetic Ions and Electrons in the Jovian Magnetosphere, Science, 204, 1003,
+                   1979.
+            </reference_text>
+            <description>reference.VOGTETAL1979A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Vogt, R.E., A.C. Cummings, T.L. Garrard, N. Gehrels, E.C. Stone, J.H. Trainor,
+                   A.W. Schardt, T.F. Conlon, and F.B. McDonald, Voyager 2: Energetic Ions and
+                   Electrons in the Jovian Magnetosphere, Science, 206, 984, 1979.
+            </reference_text>
+            <description>reference.VOGTETAL1979B</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>HEAVY ION COUNTER</name>
+        <type>Particle Detector</type> <!--RChen/EN was Cosmic Ray Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+(The following paper has been modified in format from the original and
+was spell-checked after transfer to ASCII format.  The format for
+references has been changed to be consistent with PDS standards.)
+ 
+Reprinted by permission of Kluwer Academic Publishers,
+ 
+------------------------------------------------------------------------
+Space Science Reviews 60: 305-315, 1992.
+Copyright 1992 Kluwer Academic Publishers. Printed in Belgium.
+------------------------------------------------------------------------
+THE GALILEO HEAVY ELEMENT MONITOR
+ 
+T. L. GARRARD(1), N. GEHRELS(2), and E. C. STONE(1)
+ 
+1 California Institute of Technology, Pasadena, CA 91125, U.S.A
+2 NASA Goddard Space Flight Center, Greenbelt, MD 20771, U.S.A.
+ 
+ 
+Abstract. The Heavy Ion Counter on the Galileo spacecraft will monitor
+energetic heavy nuclei of the elements from C to Ni, with energies from
+~6 to ~200 MeV nucl^-1. The instrument will provide measurements of
+trapped heavy ions in the Jovian magnetosphere, including those
+high-energy heavy ions with the potential for affecting the operation of
+the spacecraft electronic circuitry. We describe the instrument, which
+is a modified version of the Voyager CRS instrument.
+ 
+ 
+                                1. Introduction
+ 
+ 
+The Heavy Ion Counter (HIC) is included on the Galileo spacecraft
+primarily for the purpose of monitoring the fluxes of energetic heavy
+ions in the inner Jovian magnetosphere and high-energy solar particles
+in the outer magnetosphere in order to characterize the ionizing
+radiation to which electronic circuitry is most sensitive. The
+measurements performed will also be of scientific interest, since the
+instrument&apos;s large geometry factors and extended energy range will
+provide spectral information for ions from 6C to 28Ni with energies of
+~6 to &gt; ~200 MeV nucl**-1. In this article we will concentrate on Jovian
+magnetospheric science. We review here previous scientific results
+concerning trapped high-energy heavy ions, describe anticipated new
+findings with Galileo, and provide a brief instrument description.
+ 
+ 
+                               2. Previous Results
+ 
+ 
+During the Voyager encounters with Jupiter, it was discovered
+[KRIMIGISETAL1979A], [KRIMIGISETAL1979B], [VOGTETAL1979A],
+[VOGTETAL1979B] that a major component of the trapped radiation in the
+inner Jovian magnetosphere is energetic heavy ions. The dominant heavy
+species inside ~ 10 R[J] in the MeV nucl**-1 energy range were found to
+be oxygen and sulfur, with sodium also present. The abundances in the
+inner magnetosphere indicate that the source of the ions is the surface
+or atmosphere of Io.
+ 
+The phase space density of the energetic oxygen and sulfur ions has
+positive radial gradient (i.e., increasing outward) in the inner
+magnetosphere [GEHRELSETAL1981], implying that the diffusive flow at
+these energies is inward. On the other hand, the density of the oxygen-
+and sulfur-rich plasma in the inner magnetosphere is highest at the Io
+plasma torus and decreases outward [SISCOEETAL1981]. Barbosa et al.
+[BARBOSAETAL1984] have proposed that charge exchange in the plasma torus
+produces fast neutrals which escape to the outer magnetosphere where ~
+0.2% are re-ionized by solar ultraviolet or electron impact and
+recaptured Some of the newly created ions are subsequently energized by
+stochastic acceleration caused by magneto- hydrodynamic waves, producing
+ions with large magnetic moments that adiabatically diffuse inward,
+some attaining energies in excess of 30 MeV nucl**-1 in the inner
+magnetosphere.
+ 
+As the energetic ions flow inward, they are lost from the
+magnetosphere, presumably by pitch-angle scattering of the
+mirroring particles into the loss cone (see, e.g., [THORNE1982]). The
+strength of this loss mechanism determines the rate at which the heavy
+ions precipitate into the Jovian atmosphere, exciting ultraviolet and
+X-ray auroral emissions.  At the time of the Voyager encounter in March
+1979, it appeared losses due to pitch-angle scattering were occurring at
+nearly the maximum rate, resulting in the precipitation of ~ 10**24 ions
+s**-1 above ~70 MeV nucl**-1 G**-1, with an extrapolation down to 10 MeV
+nucl**-1 G**-1 suggesting the possibility of a loss rate of ~10**26 ions
+s**-1 and an auroral power of ~10**13 W [GEHRELS&amp;STONE1983].  Major
+losses are occurring in the magnetic moment (energy) range appropriate
+to HIC where the total inward flow rate of oxygen ions with magnetic
+moments greater than several thresholds is given as a function of radial
+distance (L) from Jupiter.  The number of inflowing ions first decreases
+inside 15 R[J] and falls off sharply inside 10 R[J].  Only a small
+fraction of the trapped particles survive to produce the trapped
+radiation at 5 R[J]. As a result, changes in the rate of pitch-angle
+scattering can result in significant changes in the flux of particles
+reaching 5 R[J]. It is therefore important to better characterize not
+only the flux at 5 R[J], but also the nature and any long-term
+variability in the loss mechanism operative outside of 5 R[J].
+ 
+ 
+                            3. Anticipated New Results
+ 
+ 
+The HIC instrument should provide new information on the spectra of
+heavy ions at higher energies than previously possible.  Fluxes at these
+energies are based on extrapolations of spectra measured at lower
+energies and as a result are very uncertain.
+ 
+Measurements with the HIC instrument will significantly reduce the
+uncertainty in the high-energy fluxes. The energy of a 3070 MeV nucl**-1
+G oxygen ion is within the HIC energy range into 5 R[J]. The geometry
+factor for E &gt; 20 MeV nucl**-1 oxygen ions (inside 8.5 R[J] for 3070
+MeV nucl**-1 G**-1 ions) is ~4 cm**2 sr compared with 0.88 cm**2 sr for
+the Voyager CRS instrument. More importantly, the livetime for measuring
+ oxygen and sulfur ions with E &gt;= 50 MeV nucl**-1 will be essentially
+100% because a polling priority system (see instrument description
+section) will discriminate against the large fluxes of protons and
+electrons that dominate the CRS analysis rate. As a result, a flux of
+only 10**-5 cm**-2 s**-1 sr**-1 should produce 1 analyzed event in
+10 hours, the time that Galileo is inside 7 R[J].
+ 
+The oxygen ions which have &gt;= 100 MeV nucl**-1 at 5 R[J] have &gt;= 10
+MeV nucl**-1 at 10 R[J]. Thus, as Galileo makes repeated orbital
+passes in the vicinity of Europa, it will be possible to monitor the
+fluxes of particles with M &gt;= 3000 MeV nucl**-1 G**-1 throughout the
+mission. Such long term information is especially important, since there
+are a number of reasons why the fluxes might vary. For example, the flux
+of high-energy ions could be measurably affected by changes in the
+density of the Io plasma torus which is the source of the escaping
+neutral atoms and by changes in the solar ultraviolet which re-ionizes
+the neutrals in the outer magnetosphere. The HIC instrument will measure
+any time dependence of the energetic heavy ion fluxes and permit
+correlative studies of any associated changes in auroral emissions or
+diffusion processes.
+ 
+The fluxes at 5 R[J] depend strongly on the loss processes
+occurring inside of ~15 R[J]. It is postulated that the losses are due
+to pitch-angle scattering of the mirroring particles into the loss cone,
+and that the rate of scattering is close to the strong pitch-angle
+diffusion limit in the inner magnetosphere ([THORNE1982],
+[GEHRELS&amp;STONE1983]). At this limit there is sufficient pitch-angle
+scattering to refill the loss cone as rapidly as particle precipitation
+empties it, resulting in a nearly isotropic pitch-angle distribution.
+Since the HIC detectors will view nearly perpendicular to the spacecraft
+spin axis, essentially complete coverage of the pitch-angle distribution
+will be possible. Investigation of any time dependence of the loss
+process will also be possible as Galileo repeatedly passes through the
+radial range between 15 and 10 R[J] where the radial profiles indicate
+that significant losses occur.
+ 
+ 
+                        4. Instrument Description
+ 
+ 
+The Galileo Heavy Ion Counter (HIC) consists of two solid-state
+detector telescopes called Low Energy Telescopes or LETs. Use of
+these two telescopes over three energy intervals provides the geometry
+factor and energy range necessary to determine the fluxes of the heavy,
+penetrating radiation to which solid state memories are most sensitive.
+Heavy collimation and high discrimination thresholds on all detectors
+provide the necessary immunity to accidental coincidences from the large
+proton background. Three-parameter analysis provides additional
+rejection of background.
+ 
+Two separate telescopes are included in order to cover a wide
+energy range while minimizing pulse pile-up through the optimum
+selection of detector and window thicknesses. The LET E is optimized for
+the detection of nuclei with energies as high as 200 MeV nucl^-1,
+requiring thicker detectors. Thick windows protect this system from
+low-energy proton pile-up, but also exclude lower energy oxygen and
+sulfur nuclei. The second telescope, LET B, has a substantially thinner
+window so that it can detect lower energy nuclei (down to ~ 6 MeV
+nucl^-1), especially in the outer magnetosphere. The properties of the
+two telescopes are indicated in Table I and discussed below.
+ 
+ 
+ 
+                                 TABLE I
+                          Nominal LET parameters
+------------------------------------------------------------------------
+Detector   Radius      Thickness        Threshold
+           (cm)        (micro-meter)    (MeV)
+ 
+ 
+------------------------------------------------------------------------
+LB1        0.95           32.1            0.3
+LB2        0.95           29.6            0.4
+LB3        1.13          421              3.7
+LB4        1.13          440              2.0
+LE1        0.95           30.4            9.3(1.4)**a
+LE2        0.95           33.4            2.0(0.3)**a
+LE3        1.13          463             25(5.0)**a
+LE4,5      1.66        ~2000            117(23)**a
+------------------------------------------------------------------------
+**a High gain.
+ 
+ 
+In the LETB telescope ions which penetrate LB1 and LB2 and stop in
+the thicker LB3 detector are analyzed. Detector LB4 is used in
+anti-coincidence. (If desired, the command system can be used to allow
+analysis for ions which penetrate LB1 and stop in LB2, or for ions which
+stop in LB1 . Also detector LB4 can be turned off.) Lighter nuclei
+(especially hydrogen and helium) are rejected by &apos;slant&apos; discrimination
+with a weighted sum of the signals from the front three detectors,
+ 
+ 
+                 SLB = LB1 + 0.42 LB2 + 0.2 LB3
+ 
+ 
+required to be above about 9.6 MeV.
+ 
+The thin window (25 micro-meter Kapton) serves for thermal control
+and for protection from sunlight. All detectors are surface- barrier
+type. An important feature is the use of keyhole detectors for LB1 and
+LB2, which define the event geometry. The active area of these detectors
+ excludes the nonuniform edge of the silicon wafer through the use of
+keyhole- shaped masks during the deposition of the Au and Al contacts.
+ 
+This telescope is an improved version of the Voyager CRS LETs
+(Stone et al., 1977) which have demonstrated charge (Z) resolution
+of 0.1 charge units at oxygen under solar flare conditions (Cook et al.,
+1980) and 0.2 charge units at ~ 5 R[J], Voyager 1&apos;s deepest penetration
+of the Jovian magnetosphere [GEHRELS1982]. Additional collimation and
+the thicker window decrease the HIC LET&apos;s response to background protons
+in the Jovian magneto- sphere. The flux of protons in detector L1, for
+example, should be reduced by at least a factor of 10 from that observed
+on Voyager 1.
+ 
+In order to measure the flux of heavy nuclei at higher energies,
+LE4 and LE5 are each 2000-micro-meter lithium-drifted detectors. The
+front detectors, LE1, LE2, and LE3, are identical to their LET B
+counterparts, providing spectral continuity and overlap. The collimator
+housing is relatively thick to provide background immunity and has a
+large opening angle to provide a large geometrical factor. The windows
+are 76 micro-meter Kapton and 254 micro-meter Al.  As in LET B, low
+charge (low Z) events are recognized and rejected by a slant
+discriminator,
+ 
+            SB = LE1 + 0.5 LE2 + 0.1 LE3 + 0.04(LE4 + LE5),
+ 
+where SB must exceed 9.6 MeV to allow analysis.
+ 
+For intermediate energies, a narrow-angle geometry is defined by
+LE1 and LE2 for particles stopping in either LE2 or LE3. For the
+highest energies, where the fluxes are exceedingly small, measurements
+are made with the wide- angle geometry defined by LE2, LE3, LE4, and the
+collimator. LE1 is not required but its discriminator is recorded as a
+tag bit. LE5 distinguishes stopping and penetrating events. The maximum
+energy observed is determined by the LE2 discriminator threshold. This
+maximum is ~185 MeV nucl**-1 for oxygen as noted in Table II. To allow
+detection of penetrating galactic cosmic-ray nuclei at higher energies
+in the outer magnetosphere, the LET E pre-amplifier gains can be
+increased by a factor of 5 to 7 by command.
+ 
+With the exception of spacecraft interface circuitry, all of the
+electronics were originally part of the Proof Test Model of the Voyager
+Cosmic-Ray Science Instrument (CRS), and additional detail may be found
+in Stone et al. [STONEETAL1977B] and Stilwell et al. [STILWELLETAL1979B].
+With the adjustment of amplifier gains and discriminator thresholds and
+the incorporation of thicker detectors, collimators, and windows, it
+has been possible to develop an instrument which is optimized for the
+measurement of high-energy heavy ions trapped in the Jovian
+magnetosphere. Minor modifications to the logic allow the instrument
+to recognize events of the various types mentioned above, which are
+summarized in Table II.
+ 
+Event data are stored in buffers which are read according to a
+polling scheme which prevents domination of the telemetry by any one
+type of event. The buffer polling logic cycles through the five buffers
+listed in Table II, reading out one each minor frame (2/3 s) and
+stepping to the next non-zero buffer on the subsequent minor frame. If a
+particular type of event occurs less than 0.3 times per second (i.e., is
+rare) then all of that type will be transmitted regardless of activity
+in other event types. If a particular type of event occurs more often
+than 0.3 times per second, it will be readout at least 0.3 times per
+second and more of ten if the other event buffers are empty.
+ 
+Telemetry of counting rates and pulse height analyzed events is
+rapid compared to the nominal 3 rpm spin rate of the spacecraft; thus
+pitch-angle distributions of the trapped radiation can be measured.
+Both telescopes have their axes oriented near the spin plane for this
+purpose. The time resolution of the HIC is in the range from 2/3 to 2 s,
+implying an angular resolution in the range from 12 deg. to 36 deg.,
+which is to be compared to the telescope opening angles of 25 deg. in
+narrow geometry mode and 46 deg. in wide geometry mode.
+ 
+Many of the functions of the coincidence logic and the
+buffering/readout scheme can be modified by command to optimize the
+instrument for changing environments or partial failures. As noted
+above, commands can also be used to change gain on the LET E
+pre-amplifiers.
+ 
+ 
+                                  TABLE II
+                               Analysis modes
+------------------------------------------------------------
+Name           Requirement         Geometry    Z range
+                                   factor
+                                   (cm^2 sr)
+------------------------------------------------------------
+                         ___
+LETB         LB1.LB2.LB3.LB4       0.44        C to Ni
+                     ___
+DUBL         LE1.LE2.LE3           0.44        C to Fe
+                         ___
+TRPL         LE1.LE2.LE3.LE4       0.44        C to Ni
+                         ___
+WDSTP        LE2.LE3.LE4.LE5       4.0         C to Fe
+ 
+ 
+WDPEN        LE2.LE3.LE4.LE5       4.0         C to Fe
+ 
+ 
+WDPEN        LE2.LE3.LE4.LE5.HG    4.0         Li to O
+(High gain)
+------------------------------------------------------------
+ 
+ 
+                               TABLE II cont.
+-----------------------------------------------------------------
+Name         Oxygen          Sulfur Signals   Signals
+             energy range    energy range     telemetered
+             (MeV nucl^-1)   (MeV nucl^-1)
+-----------------------------------------------------------------
+ 
+ 
+LETB          6 to 18         9 to 22         LB1,LB2,LB3
+ 
+ 
+DUBL         16 to 17        24 to 25         LE1,LE2
+ 
+ 
+TRPL         17 to 27        25 to 38         LE1,LE2,LE3
+ 
+ 
+WDSTP        26 to 46        37 to 70         LE2,LE3,LE4
+ 
+ 
+WDPEN        49 to ~185      &gt;= 70            LE2,LE3,LE4+LE5
+ 
+ 
+WDPEN        49 to ~500      -                LE2,LE3,LE4+LE5
+(High gain)
+-----------------------------------------------------------------
+ 
+                             Acknowledgements
+ 
+A special acknowledgement is due A. W. Schardt, whose untimely death
+prevented his co-authorship of this paper. This project was made
+possible by the development of the CRS instrument under the leadership
+of R. E. Vogt. W. E. Althouse (Caltech) and D. E. Stilwell (GSFC) have
+provided invaluable engineering and programmatic support and advice. We
+also are pleased to acknowledge the contributions of A. C. Cummings at
+Caltech; M. Beasley, W. D. Davis, J. H. Trainor, and H. Trexel at GSFC:
+and D. R. Johnson at JPL. This work was supported by a number of NASA
+contracts and grants.
+ 
+                                References
+ 
+Barbosa, D. D., Eviatar, A., and Siscoe, G. L.: 1984, J. Geophys. Res.
+89, 3789.
+ 
+Cook, W. R., Stone, E. C., and Vogt, R. E.: 1980, Astrophys. J. 238,
+L97.
+ 
+Gehrels, N.: 1982, &apos;Energetic Oxygen and Sulfur Ions in the Jovian
+Magnetosphere&apos;, CIT Ph.D. Thesis.
+ 
+Gehrels, N. and Stone, E. C.: 1983, J. Geophys. Res. 88, 5537,
+ 
+Gehrels, N., Stone, E. C., and Trainor, J. H.: 1981, J. Geophys. Res.
+86, 8906.
+ 
+Krimigis, S. M., Armstrong, T. P., Axford, W. I., Bostrom, C. O., Fan,
+C. Y., Gloeckler, G., Lanzerotti, L. J., Keath, E. P., Zwickl, R. D.,
+Carbary, J. F., and Hamilton, D. C.: 1979a, Science 204, 998.
+ 
+Krimigis, S. M., Armstrong, T. P., Axford, W. I., Bostrom, C. O., Fan,
+C. Y., Gloeckler, G., Lanzerotti, L. J., Keath, E. P., Zwickl, R. D.,
+Carbary, J. F., and Hamilton, D. C.: 1979b, Science 206, 977.
+ 
+Siscoe, G. L., Eviatar, A., Thorne, R. M., Richardson, J. D., Bagenal,
+F., and Sullivan, J. D.: 1981, J. Geophys. Res. 86, 8480.
+ 
+Stilwell, D. E., Davis, W. D., Joyce, R. M., McDonald, F. B., Trainor,
+J. H., Althouse, W. E., Cummings, A. C., Garrard, T. L., Stone, E. C.,
+and Vogt, R. E.: 1979, IEEE Trans. Nuc. Sci. NS-26, 513.
+ 
+Stone, E.C., Vogt, R.E., McDonald, F.B., Teegarden, B.J., Trainor, J.H.,
+Jokipii, J.R., and Webber, W. R.: 1977, Space Sci. Rev. 21, 355.
+ 
+Thorne, R. M.: 1982, J. Geophys. Res. 87, 8105.
+ 
+Vogt, R. E., Cook, W. R., Cummings, A. C., Garrard, T. L., Gehrels, N.,
+Stone, E. C., Trainor, J. H., Schardt, A. W., Conlon, T., Lal, N., and
+McDonald, F. B.: 1979a, Science 204, 1003.
+ 
+Vogt, R. E., Cummings, A. C., Garrard, T. L., Gehrels, N., Stone, E. C.,
+Trainor, J. H., Schardt, A. W., Conlon, T. F., and McDonald, F. B.:
+1979b, Science 206, 984.
+---------------------------------------------
+End of Space Science Reviews Article
+ 
+ 
+Changes to the instrument in Phase 2A
+---------------------------------------------
+ 
+In Phase 2, HIC realtime data are collected by a CDS program for a
+period of time that depends on readout rate:  50 RIM (at 1 bps), 25 RIM
+(2 bps), or 10 RIM (5 bps), where 1 RIM = 91 minor frames and 1 mf = 2/3
+sec.  At the end of the collection period, another portion of the
+program compresses the data into their output format.
+ 
+The output (before packet headers are added) consists of up to 375 bytes
+of binary data in two blocks.  A dump of simulated data is attached as
+Appendix A. For details about packet headers, see MOS-GLL-3-310
+[ECR35559], Flight Software Requirements, Appendix, p. 5-47; and
+625-610: SIS 2244-05 P2, Instrument Packet File [SIS2244-05].  The
+present description is of the HIC data only.
+ 
+The first block, of 143 bytes, contains rate data arranged in a
+predetermined format.  There are 57 rate &apos;&apos;words&apos;&apos; of 2 1/2 bytes each,
+and 1/2 byte of filler (0x0) at block&apos;s end.  The first byte of each
+rate word is a counter of the number of times that rate was read out.
+The rest of the word (1 1/2 bytes) gives the sum of the rate counts from
+those readouts, in log-compressed form.  The compression scheme is the
+same as that in the SRD.
+ 
+Several types of rate are subdivided, i.e., have more than one rate word
+in the output block.  Each successive rate word within a type represents
+data taken in a later portion of the collection period.  The 57 rate
+words appear in the following order:
+ 
+10 words of DUBL  (&apos;&apos;A&apos;&apos; rates, for ten successive time divisions)
+ 6 words of TRPL  (&apos;&apos;B&apos;&apos; rates, for six successive time divisions)
+ 6 words of WDSTP (&apos;&apos;C&apos;&apos; rates, for six successive time divisions)
+ 6 words of WDPEN (&apos;&apos;D&apos;&apos; rates, for six successive time divisions)
+10 words of LETB  (&apos;&apos;E&apos;&apos; rates, for ten successive time divisions)
+ 6 words of LE1   (&apos;&apos;G&apos;&apos; rates, for six successive time divisions)
+ 1 word  of LE5   (&apos;&apos;F&apos;&apos; rates, MUXN=10)
+ 1 word  of LE3   (&apos;&apos;F&apos;&apos; rates, MUXN=11)
+ 1 word  of LE4   (&apos;&apos;F&apos;&apos; rates, MUXN=12)
+ 1 word  of LE2   (&apos;&apos;F&apos;&apos; rates, MUXN=13)
+ 6 words of LB1   (&apos;&apos;H&apos;&apos; rates, MUXN=10,
+                                for six successive time divisions)
+ 1 word  of LB2   (&apos;&apos;H&apos;&apos; rates, MUXN=11)
+ 1 word  of LB3   (&apos;&apos;H&apos;&apos; rates, MUXN=12)
+ 1 word  of LB4   (&apos;&apos;H&apos;&apos; rates, MUXN=13)
+ 
+(Slant data, from &apos;&apos;F&apos;&apos; and &apos;&apos;H&apos;&apos; rates with MUXN&lt;10 or MUXN&gt;13, are
+discarded.)
+ 
+Thus for the longest collection period (50 RIM), we can distinguish
+~5-min changes in the DUBL and LET B rates and ~9-min changes in the
+five rates that have six divisions each.  At higher data rates
+(collection periods of 25 RIM or 10 RIM), the time resolution is
+proportionally better.
+ 
+The second block, of up to 232 bytes, contains event data arranged in a
+flexible format.  The contents of this block can vary considerably
+depending on the number and kind of events that were observed.  Events
+have no time divisions.
+ 
+The events are divided into fourteen types and kept, during the
+collection period, in fourteen different arrays.  Each collection array
+can hold up to 20 or 32 events, depending on type.  The array numbers
+determine the order in which events are output.  Event types are
+distinguished in the output block not by absolute position (as are the
+rates) but by header words.
+ 
+Each string of event information begins with a one-byte header.  The
+first half- byte contains the event array number, i.e., the type.  The
+second half-byte is a counter that gives the number of events in the
+string for that type, less one; i.e., counter = counts - 1.  If no
+events were observed for a given type, no string is output.
+ 
+Each event type has a characteristic word length, so the header also
+gives the length of the event string.  Each type also has a
+characteristic meaning assigned to each bit in its word.  For details,
+see Appendix B.
+ 
+After all the output events comes an event counter array, which consists
+of a leading &apos;f&apos; followed by six numbers of 1 1/2 bytes each.  These
+show the total number of events counted in the collection period for
+each of six kinds of event:  DUBL, TRPL, WDSTP, WDPEN, LETB, and null
+(tag word = 0).
+ 
+The fourteen event types are distributed among the five non-null kinds
+as follows:  DUBL, type 9;  TRPL, types 5 and 12;  WDSTP, types 1, 6,
+13, and 14; WDPEN, types 7 and 8;  and LETB, types 2, 3, 4, 10, and 11.
+Counts in this array include &apos;&apos;caution&apos;&apos; events, those whose caution bit
+in the tag word is set.
+ 
+When rates are very low, all observed events are output and the event
+block is very short.  When rates are very high, details of some events
+will be lost because of the limited size of the output block:  232 bytes
+will hold only about 60 events plus the counters.
+ 
+If the event arrays are quite full, the program outputs sixteen events
+from each type, starting with number one, until it has no more room.
+For this situation, only events of types 1-5 will be output in detail;
+the rest will be lost, as in the Appendix A dump.  Since the program
+outputs the first sixteen events of each type, events from the beginning
+of the collection period are favored ever more heavily as rates climb.
+ 
+------------------------------------------------------------------------
+Appendix A:  hex dump of output block for sparse events (event block
+short)
+ 
+------------------------------------------------------------------------
+ 
+Bar = first rate counter of each series, or event type&apos;s header.
+ x = filler nybble (always 0x0)
+ 
+octal      data*
+address
+         __
+0000000  8880 8988 1897 8179 8818 9881 8978 1798 8189 8818
+                     __
+0000024  9781 7988 18ed 7edf d7fd fd7f dfd7 fdfd 7fdf c7fc
+         __                                   __
+0000050  ed73 1fd7 3dfd 73df d73d fd73 dfc7 3ded 76df d77d
+                                  __
+0000074  fd77 dfd7 7dfd 77df c77c 8872 a977 3c98 73e9 873e
+                                              __
+0000120  9773 c987 3e98 73e9 773c 9873 e987 3eed 6b1f d6bd
+                                  __    __    __    ___
+0000144  fd6b dfd6 bdfd 6bdf c6bd 5e76 b5e6 815d 68b5 d697
+         __                                   __    ___
+0000170  0f85 20f8 5210 8601 0860 1086 0108 605e 6b05 d6ba
+         __    x__                               __
+0000214  5d6c 5012 ab9b 9c65 ab9b 9c65 ab9b 9c65 525c 66d5
+                               __
+0000240  4e5c 66d5 4e5c 66d5 4e62 9cfc f652 9cfc f652 9cfc
+              __                   x__                   x
+0000264  f652 72fc a9af ca9a fca9 a082 bcab 5bca b5bc ab50
+         __                                             __
+0000310  924c 24c2 f0fb 794c 24c2 f0fb 794c 24c2 f0fb 79c2
+                                       __
+0000334  3185 a89d 3185 a89d 3185 a89d d217 2670 ca17 2670
+                     __                               _
+0000360  ca17 2670 cae2 19c3 d8a5 19c3 d8a5 19c3 d8a5 f003
+                           x
+0000404  0060 0c00 6001 17b0
+ 
+ 
+* From Octal Address 0000 to 0216 rate data are provided. Higher
+  addresses contain event data.
+ 
+-------------------------------------
+Appendix B:  event construction
+-------------------------------------
+ 
+The table below gives details of how each event type is compressed into
+its word.  The tag word is discarded for all types but #9 since the
+array number gives much of the relevant information.  The &apos;&apos;maximum
+number of events&apos;&apos; is the highest number that the program will put into
+that collection array.
+ 
+A &apos;&apos;small&apos;&apos; event has all zeroes in the first half-byte of each of its
+PHA words. Other events are &apos;&apos;big.&apos;&apos;  A &apos;&apos;caution&apos;&apos; event is one whose
+caution bit (last bit of tag word) is set.
+ 
+Consult the SRD, Table 6 (p.8), for detector correspondence to PHA words
+for the various event types.
+ 
+ 
+Array  Word   Max #   Event Type              Bit source
+No.    Len.   Evts.                      PHA3     PHA2     PHA1
+----------------------------------------------------------------
+ 1      32     32   big LE1 WDSTP       top 11   top 10   top 11
+ 2       8     32   LET B single        --       --       top 8
+ 3      20     20   big LETB double     --       top 10   top 10
+ 4      32     20   big LETB triple     top 10   top 11   top 11
+ 5      32     20   big TRPL            top 10   top 11   top 11
+ 6      32     20   big !LE1 WDSTP      top 11   top 10   top 11
+ 7      20     20   LE1 WDPEN           top 10   top 10   --
+ 8      20     20   !LE1 WDPEN          top 10   top 10   --
+ 9      48     32   DUBL and &apos;&apos;caution&apos;&apos; all     all      all
+                                                          plus tag word
+10 (a)  20     20   small LETB double   --       bot 10   bot 10
+11 (b)  32     20   small LETB triple   bot 10   bot 11   bot 11
+12 (c)  32     20   small TRPL          bot 10   bot 11   bot 11
+13 (d)  32     20   small LE1 WDSTP     bot 11   bot 10   bot 11
+14 (e)  32     20   small !LE1 WDSTP    bot 11   bot 10   bot 11
+ 
+Note that the following pairs of event types have the same construction
+(there are only 9 different schemes):  1 &amp; 6;  4 &amp; 5;  7 &amp; 8;  11 &amp; 12;
+13 &amp; 14.
+
+        </description>
+    </Instrument>
+</Product_Context>

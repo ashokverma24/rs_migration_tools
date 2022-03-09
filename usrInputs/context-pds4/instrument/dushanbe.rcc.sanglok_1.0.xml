@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:dushanbe.rcc.sanglok</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Sanglok Observatory Photometer-Polarimeter</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-02-18</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:dushanbe.rcc</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <reference_text>Kayumov V.V., N.N. Kiselev, P.A. Pushnin, V.Yu. Rakhimov, V.I. Siklitskij, K.V.
+Tarasov, G.P. Chernova, and V.N. Yakutovich, The investigation of the
+photometer-polarimeter of the 1-m RCC telescope. Bull. Inst. Astrophyz. Tadjik Acad.
+Sci. No. 78, p. 10-16 (in Russian), 1989.</reference_text>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>Sanglok Observatory Photometer-Polarimeter</name>
+    <type>Polarimeter</type>
+    <description>The single-channel photometer-polarimeter at Sanglok Observatory was built at the
+Institute of Astrophysics of Tadjik Academy of Sciences. It allowed
+quasi-simultaneous photometric and polarimetric observations. The useble wavelength
+range was 0.35-0.75 microns. The polarimeter worked on the modulation principle with
+a rapidly-rotating polarizer as the analyzer. The rotation frequency of the polarizer
+was about 33 revolutions per second. Four impulse counters were used to registrate
+impulses during each quarter of a polarizer revolution. The total number of impulses
+in four positions of the polarizer allow the derivation of the values of the Stokes Q
+and U parameters and hence the value of the degree of linear polarization and the
+position angle. The observing procedure included consecutive measurements of an
+object and a sky background near the object with the same diaphragm.  To control the
+stability of instrument operation the measurements of a built-in signal generator
+were used.
+
+For more information, see
+
+Kayumov V.V., Kiselev N.N., Pushnin P.A., Rakhimov V.Yu., Siklitskij V.I., Tarasov
+K.V., Chernova G.P., Yakutovich V.N. The investigation of the photometer-polarimeter
+of the 1-m RCC telescope. Bull. Inst. Astrophyz. Tadjik Acad. Sci No. 78, p. 10-16,
+1989 (in Russian).</description>
+  </Instrument>
+</Product_Context>
+

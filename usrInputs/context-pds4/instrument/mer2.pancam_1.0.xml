@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pancam.mer2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PANORAMIC CAMERA for MER2</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mer2::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bell, J.F. III, The Mars Exploration Rover Athena Panoramic Camera (Pancam)
+                   Investigation, Journal of Geophysical Research, June 23, 2003.
+            </reference_text>
+            <description>reference.BELLETAL2003</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>PANORAMIC CAMERA</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Panoramic Camera (Pancam) investigation is part of the Athena
+    science payload launched to Mars in 2003 on NASA&apos;s twin Mars
+    Exploration Rover (MER) missions. The scientific goals of the Pancam
+    investigation are to assess the high resolution morphology,
+    topography, and geologic context of each MER landing site; to obtain
+    color images to constrain the mineralogic, photometric, and physical
+    properties of surface materials; and to determine dust and aerosol
+    opacity and physical properties from direct imaging of the Sun and
+    sky. Pancam also provides mission support measurements for the
+    rovers, including Sun-finding for rover navigation; hazard
+    identification and digital terrain modeling to help guide long-term
+    rover traverse decisions; high resolution imaging to help guide the
+    selection of in situ sampling targets; and acquisition of education
+    and public outreach products. The Pancam optical, mechanical, and
+    electronics design were optimized to achieve these science and
+    mission support goals. Pancam is a multispectral, stereoscopic,
+    panoramic imaging system consisting of two digital cameras mounted
+    on a mast 1.5 m above the martian surface. The mast allows Pancam to
+    image the full 360 degrees in azimuth and +/-90 degrees in
+    elevation. Each Pancam camera utilizes a 1024 x 1024 pixel active
+    imaging area frame transfer charge-coupled device (CCD) detector
+    array. The Pancam optics have an effective focal length of 43 mm and
+    a focal ratio of f/20, yielding an IFOV of 0.27 mrad/pixel and a FOV
+    of 16 degrees x 16 degrees. Each rover&apos;s two Pancam &apos;eyes&apos; are
+    separated by 30 cm and have a 1 degree toe-in to provide adequate
+    stereo parallax. Each eye also includes a small 8-position filter
+    wheel to allow surface mineralogic studies, multispectral sky
+    imaging, and direct Sun imaging, in the 400-1100 nm wavelength
+    region. Pancam was designed and calibrated to operate within
+    specifications on Mars at temperatures from 218 K to 278 K. An
+    onboard calibration target and fiducial marks provide the capability
+    to validate the radiometric and geometric calibration on Mars.
+ 
+    Information in this instrument description is taken from the Mars
+    Exploration Rover Athena Panoramic Camera (Pancam) Investigation
+    paper[BELLETAL2003]. See this paper for more details.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The chief scientific objectives of the Pancam are:
+ 
+    1) to obtain monoscopic and stereoscopic image mosaics to asses the
+       morphology, topography, and geologic context of each MER landing
+       site,
+ 
+    2) to obtain multispectral visible to short-wave near-IR images of
+       selected regions to determine surface color and mineralogic
+       properties,
+ 
+    3) to obtain multispectral images over a range of viewing geometries
+       to constrain surface photometric and physical properties, and
+ 
+    4) to obtain images of the Sun and martian sky to constrain aerosol
+       physical and radiative properties.
+ 
+ 
+  Calibration
+  ===========
+    A rigorous test and calibration program has been conducted to derive
+    and monitor Pancam instrument performance and calibration parameters
+    and to validate the instrument calibration pipeline. These tests
+    were conducted at the individual component level (CCDs, filters), at
+    the assembled (standalone) camera level for each flight unit, at the
+    subsystem level when the cameras were integrated with the camera bar
+    and Pancam Mast Assembly (PMA), and finally at the system level
+    during fully assembled rover testing. Tests were performed at both
+    (Earth) ambient temperature and pressure conditions and under
+    thermal vacuum conditions simulating the range of expected
+    conditions on Mars. The most critical flatfield, throughput, and
+    responsivity, calibrations were performed under near-vacuum
+    (P &lt; 10-6 torr) and at three temperatures (218 K, 263 K, and 278 K)
+    chosen to bracket the expected nominal daytime range of surface
+    conditions expected during the mission.  Co-alignment tests among
+    Pancam, Navcam, Hazcam, and Mini-TES were conducted in ambient
+    conditions and in near-vacuum at temperatures of 178 K, 218 K,
+    243 K, and 273 K.
+ 
+    The Pancam will also be calibrated inflight. Monitoring of the
+    stability of the Pancam spatial response pattern (flatfield) will be
+    performed during flight by occasional imaging of the martian sky
+    (which, if the azimuth and elevation relative to the Sun are chosen
+    properly, should be acceptably flat over the field of view of
+    Pancam).  If variations are detected because of, for example, dust
+    particles on the Pancam external sapphire window, then these
+    flatfields may be used in place of the pre-flight ground flatfields
+    in the Pancam calibration pipeline.
+ 
+    Monitoring of the Pancam radiometric calibration stability will be
+    performed on Mars by frequent imaging of the Pancam calibration
+    target under repeatable illumination conditions, and by occasional
+    downlinking of reference pixel and dark current images. Imaging of
+    the Sun and potentially certain bright standard stars at night may
+    also provide additional information on calibration stability.
+ 
+    A baseline for Mars surface calibration performance of Pancam
+    (and other MER instruments) will be established during a
+    &apos;calibration campaign&apos; to be performed shortly after each rover&apos;s
+    landing. Observations planned for this campaign include baseline
+    calibration target imaging, dark current and reference pixel images,
+    sky flatfields, and reassessment of PMA pointing by imaging surveyed
+    fiducial marks on the rover deck and lander. In addition to
+    validating (or not) the pre-flight calibration coefficients and
+    overall camera and PMA performance, these baseline measurements will
+    be used to monitor the potential build-up of dust over time on
+    either the camera optics or the surfaces of the Pancam calibration
+    targets or magnetic properties experiment magnets.
+ 
+ 
+  Operational Considerations
+  ==========================
+    Pancam is a very versatile instrument, and it will be used in a
+    number of different ways during operations. One of the most
+    important operational roles will be to acquire full 360 degree
+    panoramas. One of these per rover, in RGB color (L2: 753 nm, L5:
+    535 nm, and L6: 483 nm) and stereo (R2: 754 nm), is called for by
+    the formal MER Level 1 Mission Success requirements. We plan to meet
+    this requirement while each rover is still on the lander preparing
+    for egress. The approach for such a panorama will be to acquire
+    red-filter images at full resolution in both eyes, along with
+    green- and blue-filter images at reduced resolution (using
+    compression and/or downsampling) in the left eye.  Such a panorama
+    provides morphologic and textural information at the highest
+    possible resolution, &apos;true color&apos; information at somewhat lower
+    resolution, and good stereo ranging of the full scene around the
+    rover.  After this early &apos;Mission Success&apos; panorama, we plan to
+    acquire full 360 degree Pancam panoramas rather infrequently because
+    they take considerable time and generate a large volume of data.
+ 
+    Partial panoramas (i.e., image mosaics less than 360 degree in size)
+    will be the most common use of Pancam. These can be monochromatic or
+    in many colors, and they typically will be targeted on the basis of
+    images from the lower-resolution Navcams. Some images will be
+    acquired with full multispectral coverage, using all of the
+    instrument&apos;s geology filters.  This will be done when testing of a
+    specific hypothesis requires determination of spectrophotometric
+    properties across the full spectral range of the camera. The spatial
+    coverage of full multispectral imaging will be restricted
+    significantly by time and data volume limitations, so such images
+    will need to be targeted carefully on the basis of previous
+    Navcam or other Pancam imaging.
+ 
+    Imaging of the martian sky will be conducted on a regular basis to
+    monitor atmospheric conditions. The Sun will be imaged directly
+    through both solar filters to determine wavelength dependent optical
+    depth, and the sky will be imaged through the geology filters over a
+    range of angular distance from the Sun to determine aerosol
+    scattering properties.
+ 
+    Pancam will be used to conduct several kinds of coordinated
+    observations with other instruments. For example, both full
+    multispectral Pancam imaging and Mini-TES rastering will commonly be
+    conducted on candidate targets for in situ investigation in order to
+    obtain morphologic, textural, and compositional information before
+    making the decision to drive the rover.
+ 
+    The Pancam will also be used in tandem with the Microscopic Imager
+    (MI), because engineering considerations made it impossible to
+    package a filter wheel with the MI. There are plans to acquire at
+    least three-color Pancam images of every MI target. Software
+    currently in development will allow us to register the
+    lower-resolution Pancam color information with the higher-resolution
+    textural information that the MI provides.
+ 
+    Pancam will also be important for supporting the magnetic properties
+    experiment. The Capture and Filter magnets at the base of the PMA
+    will be imaged in color on a regular basis to monitor the gradual
+    buildup of magnetic dust. These images will be used to assess when
+    the depth of dust is great enough to commit to making Mossbauer and
+    APXS measurements of the magnets. The Sweep magnet is mounted
+    directly adjacent to the Pancam calibration target, so it will be
+    imaged with no additional impact on time or data volume every time
+    the target is imaged. The RAT magnets are located within the RAT,
+    and after a RAT operation the Instrument Deployment Device will be
+    used to position the RAT so that the magnets can be imaged in color
+    by Pancam.
+ 
+    Some of the most important operational considerations associated
+    with Pancam are related to the large volume of data that the
+    instrument can generate. By practical necessity, most Pancam data
+    may end up being transmitted to Earth by UHF relay through the Mars
+    Odyssey or Mars Global Surveyor (MGS) spacecraft. The latency
+    associated with these links is substantial: up to 5 hours for
+    Odyssey, and up to 2 days for MGS. Therefore most Pancam images will
+    probably be used for strategic rather than tactical science
+    planning, though judicious management of direct-to-Earth X-band
+    downlink resources may allow an important subset of Pancam images
+    (including 64x64 pixel&apos;thumbnail&apos; versions of all Pancam images
+    acquired on each sol) to be downlinked more quickly. Very careful
+    selection of compression and downsampling parameters will also be
+    essential to maximizing the science return from Pancam.
+ 
+ 
+  Detectors
+  =========
+    All 9 cameras on each MER rover, plus the descent imaging system on
+    each lander, use a common and nearly-identical set of detectors and
+    electronics.  Each MER camera, including Pancam, utilizes a
+    1024 x 2048 frame transfer CCD detector designed by JPL and
+    fabricated by Mitel (now DALSA Semiconductor, Inc). The CCDs are
+    front-side illuminated, buried-channel devices configured to use one
+    half of the pixels (1024 x 1024) as the active imaging area, and the
+    other half as a storage/readout area masked from illumination by an
+    opaque black-painted aluminum light shield. The CCDs do not use
+    UV-enhancing or anti-reflection coatings. There are no antiblooming
+    structures built into the MER CCD pixels, but blooming is modestly
+    controlled using a &apos;clocked antblooming&apos; technique that consists of
+    transferring charge between two phases in the same pixel during the
+    integration time. There is also a drain structure that runs along
+    side the serial register that is used to rapidly remove charge from
+    the array during fast transfer or windowing. While these methods are
+    not as effective as having true antiblooming structures in each
+    12 um square pixel, they do not impact fill factor or collection
+    efficiency, both of which are important for meeting Pancam
+    measurement objectives.
+ 
+    When powered, the CCD is constantly running in a &apos;frame flush&apos; mode
+    where charge is drained from the array every 5.1 msec. An exposure
+    is initiated at the start of a new frame flush cycle. Photons are
+    then collected in the imaging area during the specified integration
+    time (from 0 to 65535 exposure counts, where each exposure count
+    equals 5.12 msec) and then once the exposure is complete the
+    accumulated charge is rapidly shifted (shift time = 5.12 msec) into
+    the storage area. This rapid charge transfer obviates the need
+    for a mechanical shutter on the camera, but also limits the minimum
+    exposure time (0 counts) to 5.12 msec and leads to the generation of
+    frame transfer smear signal that must be corrected in calibration
+    (see Section 4.2.4 below).
+    Once the collected photons are in the storage area, they are clocked
+    out, row by row, into a horizontal serial register for subsequent
+    amplification and digitization. The readout rate is 200 kHz
+    (200,000 pixels/sec), or 5 msec per row, leading to a total readout
+    time of approximately 5 seconds per full frame image. The horizontal
+    register also contains 16 extended or &apos;reference&apos; pixels at each end
+    that are also read out and digitized by the camera electronics.
+    These pixels provide information on the video offset (bias) level,
+    and can be optionally saved for downlink as a 32 x 1024&apos;reference
+    pixel&apos; Experiment Data Record (EDR) image file.
+ 
+ 
+  Electronics
+  ===========
+    The MER camera electronics consist of clock drivers that provide
+    3-phase timing pulses for transfer of charge through the CCD, as
+    well as a signal chain that amplifies the CCD output and converts it
+    from analog voltages to a 12-bit digitized signal. An Actel Field
+    Programmable Gate Array (FPGA) provides all of the timing, logic,
+    and control functions in the signal chain. The FPGA also inserts a
+    unique camera identification number into the telemetry for each
+    camera to simplify data management and post-processing. A correlated
+    doublesampling Analog-to-Digital Converter (ADC) compares the
+    amplified CCD output voltage against a (commandable) reference
+    voltage from the FPGA to achieve 12-bit (0-4095) digitization of the
+    signal. Gain, read noise, and other performance metrics of the
+    Pancam signal chain are reported below.
+ 
+    The rovers&apos; flight software provides a substantial amount of
+    capability for doing onboard image processing prior to downlink,
+    with the primary goal to increase the compressibility of images and
+    thus to maximize the amount of data that can be sent back to Earth
+    during each downlink session. The image processing services offered
+    by the rover CPU include bad pixel correction, flatfield correction,
+    frame transfer smear correction, image downsampling, image
+    subframing, pixel summing, 12 to 8 bit scaling via lookup tables,
+    and image compression.
+ 
+    However, frame transfer smear correction deserves special notice
+    because of its importance and implications for Pancam imaging. As
+    discussed above, there are analytic or empirical ways to remove
+    frame transfer smear signal from Pancam images. The main advantage
+    of the a posteriori analytic approach of modeling the effect is that
+    no additional image acquisition time or processing time are required
+    on Mars. However, the uncorrected images to be downlinked are likely
+    to be less compressible than corrected images, and substantial
+    additional post-processing time is required in the ground
+    calibration pipeline. The main advantage of the in situ empirical
+    approach of subtracting a zero-exposure image is that the removal of
+    the bias, storage region dark current, and frame transfer ramp
+    components should produce a much more compressible image for
+    downlink than images that have not been corrected. The price for
+    this increased downlink efficiency, though, is a doubling of the
+    time required to acquire images, plus additional overhead for
+    onboard CPU processing. It is anticipated that the tradeoffs will be
+    made so that sometimes onboard frame transfer smear removal is more
+    advantageous, while sometimes post-processing analytic removal may
+    be more advantageous. Each situation will need to be considered on
+    a case by case basis.
+ 
+    Rapid lossless onboard compression of MER camera images can be
+    performed using a routine called LOCO, which is based on the same
+    kind of segmented discrete cosine transform method as the JPEG
+    compressor. High quality lossy compression can be performed using a
+    routine called ICER, which is a wavelet-based progressive
+    compression routine that has been shown in tests by the MER science
+    team to retain excellent image quality even at relatively high
+    compression factors below 1 bit per pixel (compression ratios
+    exceeding 12:1 for MER images).
+ 
+ 
+  Filters
+  =======
+    Each Pancam camera is equipped with a small 8-position filter wheel.
+    Fifteen of the sixteen filter wheel slots contain filters; one slot
+    (L1) was left empty to maximize sensitivity during low-light and
+    ambient Earth temperature (pre-flight) imaging conditions. The
+    filters are glass interference filters, 11 mm in diameter (10 mm
+    clear aperture) and were fabricated by Omega Optical, Inc.  Thirteen
+    of the fifteen filters per camera pair are so-called &apos;geology&apos;
+    filters, designed for imaging of the surface or sky, and the
+    remaining two filters are &apos;solar&apos; filters, designed for direct
+    imaging of the Sun. The geology filters were designed and fabricated
+    to have peak transmission &gt;85%, transmission ripple within the
+    passband of &lt; 10%, central wavelength uniformity and central
+    wavelength shift resulting from angle of incidence variations across
+    the FOV of &lt; 1%, and a wavelength-integrated rejection band response
+    in the 400 to 1100 nm region of &lt; 1% of that filter&apos;s integrated
+    in-band response. The solar filters have the same requirements for
+    their bandpasses, but also are coated with metallic attenuation
+    films to provide an additional factor of 105 reduction in overall
+    transmission.  The shortest wavelength (440 nm) and longest
+    wavelength (1000 nm) filters are actually short-pass and long-pass
+    filters, respectively, to provide wider bandpasses to maximize the
+    SNR at these extreme ends of the CCD spectral response profile. The
+    filters are divided between the cameras so that, in general, the
+    shorter wavelength filters &lt; 750 nm are in the left camera and the
+    longer wavelength filters &gt; 750 nm are in the right camera. Two
+    filters, near 440 and 750 nm, are redundant in the left and right
+    Pancams. This provides stereo imaging capability in two colors, as
+    well as redundancy for generating pseudo-true color images in the
+    right Pancam, in the event of a left Pancam failure.
+ 
+ 
+  Optics
+  ======
+    The science and measurement requirements outlined above (spatial
+    resolution, depth of field, and field of view), the realities of
+    limited payload mass and volume resources, and the harsh martian
+    surface environmental conditions all dictate design constraints on
+    Pancam optics. The resulting design is small (short focal length),
+    lightweight, has a slow focal ratio (greater depth of field),
+    employs discrete spherical or flat elements rather than cemented or
+    aspherical surfaces, and does not allow vignetting of the field. An
+    anti-reflection coated sapphire window protects the filters and
+    filter wheel mechanisms from contamination by airborne dust
+    particles and helps cut down stray and scattered light effects. A
+    short sunshade and set of black internal baffles provide rejection
+    of stray and scattered light. The Pancam lens design is a Cooke
+    triplet. The lens was designed to have a focal length of 43 mm,
+    which yields a field of view (FOV) of 16 degrees x 16 degrees
+    (22.5 degrees on the diagonal) that is approximately equal to the
+    FOV of a 109 mm telephoto lens on a standard 35 mm camera. The
+    Instantaneous Field of View (IFOV) of each pixel was designed to be
+    approximately 280 x 280 urad, yielding 560 urad limiting resolution
+    on a pair of adjacent 12 um pixels, or a Nyquist limit for spatial
+    frequency detection of 41.67 cycles/mm. The lenses were designed to
+    operate at f/20 with a fixed (hyperfocal) distance of 3.0 m and to
+    view objects in focus whose distances range from infinity to 1.5m
+    (the depth of field). The Modulation Transfer Function (MTF)
+    performance of the optics was assessed at the component level at
+    three wavelengths: near the shortest Pancam bandpass around 430 nm,
+    near the peak of the planet&apos;s spectral reflectance function at
+    750 nm, and near the longest Pancam bandpass at 980 nm. At 430 nm,
+    the actual MTF values cluster just below the diffraction-limited
+    value of 55% at the Nyquist cutoff frequency. Similarly, for 750 nm,
+    the actual curves cluster just below the diffraction limit of 25% at
+    Nyquist. And for 980 nm, the curves drop to just below the
+    diffraction limit of 8% at Nyquist.
+ 
+ 
+  Location
+  ========
+    The Pancam is located atop the Pancam Mast Assembly (PMA)
+
+        </description>
+    </Instrument>
+</Product_Context>

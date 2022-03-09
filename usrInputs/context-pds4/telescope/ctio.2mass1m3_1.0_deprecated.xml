@@ -1,0 +1,41 @@
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.jpl.nasa.gov/pds4/schema/released/pds/v1/PDS4_PDS_1700.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:ctio.2mass1m3</logical_identifier>
+        <version_id>0.0</version_id>
+        <title>2MASS 1.3m Telescope</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-03-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version exported from OLAF</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.ctio</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>Cerro Tololo Inter-American Observatory (OLAF observatory code 55)</comment>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit='m'>1.3</aperture>
+        <telescope_longitude unit='deg'>289.194920</telescope_longitude>
+        <telescope_latitude unit='deg'>-30.167690</telescope_latitude>
+        <telescope_altitude unit='m'>2171</telescope_altitude>
+        <coordinate_source>Astronomical</coordinate_source>
+        <description>
+        The 2MASS 1.3m Telescope is a 1.3 m telescope located at -30.167690, 289.194920 at the Cerro Tololo Inter-American Observatory.
+        
+        The 2MASS project was carried out with two identical 1.3-meter aperture, open-tube, equatorial fork-mount telescopes. These telescopes have been provided with a Cassegrain focus mount for the infrared cameras and a secondary mirror, which is articulated in the declination direction.  The telescope described here is the one in the southern hemisphere, at Cerro Tololo Interamerican Observatory.
+
+Primary Mirror: 1300 mm diameter, radius 5200 mm, conic constant -1.000
+Secondary Mirror: 232 mm diameter, radius 965.7 mm, conic constant -1.847
+
+The telescopes were designed, manufactured, and installed by M3 Engineering and Technology Corp., Tucson, AZ. The optics were figured by Rayleigh Optical Corp., Baltimore, MD. The telescope control system software was provided by Comsoft, Tucson, AZ. After the completion of the 2MASS data-taking, the University of Massachusetts donated the telescopes to the host observatories.
+        </description>
+    </Telescope>
+</Product_Context>

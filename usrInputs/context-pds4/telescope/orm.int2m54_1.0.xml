@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:telescope:orm.int2m54</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>2.54-m Isaac Newton Grubb-Parsons Cass. equat. refl. (INT)</title>
+    <information_model_version>1.15.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2021-09-22</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:facility:observatory.orm</lid_reference>
+      <reference_type>telescope_to_facility</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <Telescope>
+    <aperture unit="m">2.54</aperture>
+    <telescope_longitude unit="deg">342.12236</telescope_longitude>
+    <telescope_latitude unit="deg">28.762056</telescope_latitude>
+    <telescope_altitude unit="m">2336</telescope_altitude>
+    <coordinate_source>Geodetic - WGS 84 datum</coordinate_source>
+    <description>The Isaac Newton Telescope or INT is a 2.54 m (100 in.) optical telescope run by the
+ING at Roque de los Muchachos Observatory on La Palma in the Canary Islands since
+1984.
+
+The La Palma INT is a Cassegrain telescope, with a 2.54 m diameter primary mirror and
+a focal length of 8.36 m. The f/3.29 Prime focus, used with the Wide Field Camera,
+allows an unvignetted field of view of 33 arcminutes (approximately 0.3 square
+degrees). There is also a secondary focal station, the f/15 Cassegrain focus, which
+possesses a 20 arcminute field of view and is the mount point for the Intermediate
+Dispersion Spectrograph.
+
+The pointing accuracy of the telescope is around 5 arcseconds, but a sophisticated
+autoguider, which tracks a given guide star and makes small corrections to the
+telescope tracking, allows a guiding accuracy of better than an arcsecond on better
+than 20th magnitude guide stars in support of the typical 0.8-1.5 arcsec seeing at
+the INT.</description>
+  </Telescope>
+</Product_Context>
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:fgm.p11</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>FLUXGATE MAGNETOMETER for P11</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.p11::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Acuna, M.H., and N.F. Ness, The Pioneer 11 high field fluxgate
+                   magnetometer, Space Sci. Instrum., 1, 171-188, 1975.
+            </reference_text>
+            <description>reference.ACUNA-NESS1975</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Fimmel, R.O., W. Swindell, E. Burgess, Pioneer Odyssey, NASA SP-396,
+                   Scientific and Technical Information Office, National Aeronautics and
+                   Space Administration, Washington, D.C., 1977.
+            </reference_text>
+            <description>reference.FIMMELETAL1977</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>FLUXGATE MAGNETOMETER</name>
+        <type>Magnetometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The High Field Fluxgate Magnetometer Experiment flown aboard the
+    Pioneer 11 spacecraft was an extremely simple instrument used to
+    extend the spacecraft&apos;s upper limit measurement capability by
+    approximately an order of magnitude (from 0.14 mT to 1.00 mT) with
+    minimum power and volume requirements. This magnetometer was
+    designed to complement the low field measurements provided by a
+    helium vector magnetometer and utilizes magnetic ring core sensors
+    with bi-axial orthogonal sense coils. The instrument was a single
+    range, triaxial fluxgate magnetometer capable of measuring fields of
+    up to 1 mT along each orthogonal axis, with a maximum resolution of
+    1 microTesla.
+ 
+  [&apos;Instrument Overview&apos; was adapted from ACUNA&amp;NESS1975 p. 177.]
+
+        </description>
+    </Instrument>
+</Product_Context>

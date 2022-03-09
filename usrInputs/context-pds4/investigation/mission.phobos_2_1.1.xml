@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.phobos_2</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>PHOBOS 2</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>PHOBOS</alternate_id>
+                <alternate_title>PHOBOS</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.phb2</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.jupiter</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.mars.phobos</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Planetary and Space Sciences, Special issues on Phobos, Volume 39, Issues 1-2,
+                   January-February 1991.
+            </reference_text>
+            <description>reference.PSS1991-01-02</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sagdeev, R. Z., and Zakharov, A. V., Brief History of the Phobos Mission.
+                   Nature, Vol. 341, October 19. 1989. p. 581-584
+            </reference_text>
+            <description>reference.SAGDEEV-ZAKHARO1989</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>PHOBOS 2</name>
+        <type>Mission</type>
+        <start_date>1988-07-07</start_date>
+        <stop_date>1989-03-27</stop_date>
+
+        <description>
+ 
+      Mission Overview
+      ================
+      The spacecraft Phobos 1 and 2 were launched on 7 and 12 July 1988.
+      The mission was to have three stages: investigations of Sun and
+      interplanetary space during the flight from Earth to Mars; studies
+      of both Mars and Phobos during the orbit of the spacecraft around
+      Mars; and studies of Phobos as the spacecraft approached to within
+      50 m of its surface.  Contact with Phobos 1 was lost on 1
+      September 1988 during the cruise phase; contact was lost with
+      Phobos 2 just before the third stage of the mission. However,
+      valuable data on Mars and Phobos were acquired prior to loss of
+      contact.
+ 
+      Mission Phase Information
+      =========================
+ 
+      Phase 1 - Cruise
+      ----------------
+        Start Time: 1988-07-07
+        Stop Time:  1989-01-29
+ 
+        Phobos 2 was launched on July 12, 1988.  The first correction of
+        the trajectory was made on July 21, 1988.  On January 29, 1989,
+        a retarding impulse was applied and Phobos 2 was transferred
+        from Earth-to-Mars trajectory to the elliptical equatorial orbit
+        of a martian artificial satellite.
+ 
+      Phase 2 - Mars Orbit
+      --------------------
+        Start Time: 1989-01-29
+        Stop Time:  1989-03-27
+ 
+        On January 29, 1989, a retarding impulse was applied and Phobos
+        2 was transferred from Earth-to-Mars trajectory to the
+        elliptical equatorial orbit of a martian artificial satellite.
+        The spacecraft&apos;s orbits were corrected several more times in
+        February, in order to achieve a circular orbit, almost the same
+        as that of Phobos, although somewhat higher.  In March, several
+        intermediate corrections transferred the spacecraft into a
+        quasi-synchronous orbit with Phobos.  Eventually, the craft was
+        transferred to an orbit closer to Phobos, and then guided closer
+        to Phobos itself.  On March 27, 1989, after television imaging
+        of Phobos during which Phobos 2 changed its orientation so that
+        its field of view pointed at Phobos, radio contact was lost.
+        </description>
+    </Investigation>
+</Product_Context>

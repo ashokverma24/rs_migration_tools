@@ -1,0 +1,68 @@
+             <Table_Binary>
+                   <name>ODF Data Summary Group Header</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                                The Data Summary Group
+                                is usually the 7th of several groups of records in an
+                                Orbit Data File (ODF).  It contains summary information
+                                on contents of the ODF.  The Data Summary Group Header
+                                is the first record in the Data Summary Group.  It is
+                                one 36-byte record and is followed by one or more 36-
+                                byte Data Summary Group data records.  The Data Summary
+                                Group may be omitted from an ODF.  The row suffix bytes
+                                in the Data Summary Group Header are set to 0.
+                   </description>
+                   <Record_Binary>
+                         <fields>4</fields>
+                         <groups>0</groups>
+                         <record_length unit="byte">36</record_length> 
+                         <Field_Binary>
+                               <name>Primary Key</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>SignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 1: The Primary Key indicates the type of data records to 
+                                           follow. In the Data Summary Group Header this field is set to 105.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Secondary Key</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">5</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 2: The Secondary Key is not used in the ODF. It is set to 0.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Logical Record Length (in packets)</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">9</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 3:  The Logical Record Length gives the
+                                           number of 36-byte physical records making up each logical
+                                           record in a Data Summary Group data record.  For the
+                                           Data Summary Group it is set to 1.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Group Start Packet Number</name>
+                               <field_number>4</field_number>
+                               <field_location unit="byte">13</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 4:  The Group Start Packet Number
+                                           gives the number of the ODF packet containing the
+                                           Data Summary Group Header; packet numbering starts
+                                           with 0 for the File Label Group Header.
+                               </description>
+                         </Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>

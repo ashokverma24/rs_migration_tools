@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.kap01_cet</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Kappa1 Ceti</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>96 Ceti</alternate_title></Alias>
+      <Alias><alternate_title>kap01 Cet</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>kap Cet</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>96 Cet</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>STT 557A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+03 376</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 1099825</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1AXG J031921+0322</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+02 518</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J03194+0321A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 6022</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 752</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 0316.7+0311</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1ES 0316+03.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2EUVE J0319+03.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J0319+03.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 1093</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 3969</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 1838</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00020630</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 137</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 00059-01947</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 20630</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 15457</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 15457</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 996</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 03141+0300 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 03167+0311</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 767</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J0319+0322</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 11094</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J03192169+0322126</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 679</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 10577</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 1100</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 691</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 691.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 724</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 146448</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RBS 411</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J031916+032256</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J0319+032</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J0319+032</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J031917+032158</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 453</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RX J0319.3+0322</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J031920.8+032217</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 111120</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 4985</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SPOCS 161</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 2084</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 59-1947-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 3208</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 9446</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 0933-00055428</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO 805</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100020630</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J03194+0322A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 2972</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WISEA J031921.89+032213.7</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 3 957</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Zkh 49</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 3269362645115584640</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Kappa1 Ceti</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 03 hours 19 minutes 21.6963205 seconds
+Declination, ICRS coord, ep=J2000: +03 degrees 22 minutes 12.715139 seconds
+    </description>
+  </Target>
+</Product_Context>

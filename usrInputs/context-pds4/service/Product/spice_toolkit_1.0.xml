@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Service
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:service:spice_toolkit</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SPICE Toolkit</title>
+        <information_model_version>1.6.0.0</information_model_version>
+        <product_class>Product_Service</product_class>
+        <Citation_Information>
+            <publication_year>2017-04-11</publication_year>
+            <description>Acton, C.H.; Ancillary Data Services of NASAs Navigation and Ancillary Information Facility; Planetary and Space Science, Vol. 44, No. 1, pp. 65-70, 1996.</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-04-21</modification_date>
+                <version_id>1.0</version_id>
+                <description>A new version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Service>
+        <name>SPICE Toolkit</name>
+        <abstract_desc>Library of APIs for computing solar system and instrument observation geometry. Also time conversions.</abstract_desc>
+        <version_id>N0066</version_id>
+        <url>https://naif.jpl.nasa.gov/naif/toolkit.html</url>
+        <release_date>2017-04-11</release_date>
+        <service_type>Tool</service_type>
+        <interface_type>API</interface_type>
+        <category>Analysis</category>
+        <software_language>Fortran 77</software_language>
+        <software_language>C</software_language>
+        <software_language>IDL</software_language>
+        <software_language>MATLAB</software_language>
+        <software_language>JNI. (Also Python wrappers built by others.)</software_language>
+        <supported_operating_system_note>Linux, OSX, Windows, Solaris</supported_operating_system_note>
+        <system_requirements_note>See website for supported environments.</system_requirements_note>
+        <description>Library of APIs used to compute many kinds of observation geometry parameters, such as position, altitude, LAT/LON, lighting angles, etc. This software is used by most major space agencies in support of planetary and some heliophysics and earth science missions.</description>
+    </Service>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context_pds3:node:node.naif</lid_reference>
+            <reference_type>has_node</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <!--
+        Submitter Information
+        Submitter Name:        Charles Acton
+        Submitter Institution: NASA/JPL
+        Submitter Email:       charles.acton@jpl.nasa.gov
+    -->
+</Product_Service>

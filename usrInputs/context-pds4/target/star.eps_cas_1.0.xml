@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.eps_cas</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Segin</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>45 Cassiopeiae</alternate_title></Alias>
+      <Alias><alternate_title>Epsilon Cassiopeiae</alternate_title></Alias>
+      <Alias><alternate_title>Epsilon Cas</alternate_title></Alias>
+      <Alias><alternate_title>eps Cas</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>45 Cas</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+63 167</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J0154237+634011</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 16380</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+62 320</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 178</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 100141</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 63</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 2289</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 1052</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00011415</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 04036-02834</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 11415</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 93</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 8886</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 8886</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 542</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 01508+6325</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRCO 3207</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 546</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J01542373+6340123</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 389</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 652</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 388</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 388.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 45</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 13322</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Renson 2870</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 263</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 12031</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 2793</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* ZI 95</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 1074</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 4036-2834-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 1872</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 8466</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100011415</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 1868</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 0147+63</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 511974502719733376</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Segin</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 01 hours 54 minutes 23.7261769782 seconds
+Declination, ICRS coord, ep=J2000: +63 degrees 40 minutes 12.372216932 seconds
+    </description>
+  </Target>
+</Product_Context>

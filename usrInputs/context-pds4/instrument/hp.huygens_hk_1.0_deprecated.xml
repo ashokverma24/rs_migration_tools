@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:huygens_hk.hp</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>HUYGENS PROBE HOUSEKEEPING for HP</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.hp::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.unk</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>HUYGENS PROBE HOUSEKEEPING</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Unknown. No obvious choice. TBD in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+Huygens probe design and subystems
+==================================
+ 
+The probe subsystems are carefully described in INSTRUMENT_HOST.CAT and
+are not repeated here. Useful information on the probe design can be
+found in JONES1997, KLAUSEN2002.
+ 
+Calibration
+===========
+ 
+There are four types of calibration of the engineering parameters:
+1: polynomial. Example: the accelerometers (parameters D7004, D7005,
+   D7006).
+2: value interpretation. Example: the parameter E2004R value can be 0 or 1.
+   0=NOT DEPLOYED,1=DEPLOYED
+3: interpolation. Example: the temperature sensors.
+4: No calibration. Example: the radar altitude is measured in meters.
+ 
+The calibration documents can be found in the CALIB directory.
+ 
+Radar calibration
+=================
+ 
+The digital data have been affected by a hardware bug, which caused the
+upper bits of the digital 15-bit altitude word to change their logical
+state in a seemingly random fashion. In addition, due to the 15-bit
+limitation of the digital altitude word, any radar data above 32767 m are
+affected by a register overflow. In addition to these digital data errors,
+the radar has been found to be sensitive to temperature changes and is
+affected by systematic errors that depend on the probe altitude. The raw
+digital altitude data have been processed in order to eliminate these known
+errors and to calibrate the measured altitude. This is documented in the
+file entitled HUYGENS_RADAR_ALTITUDE_CALIBRATION, located in the CALIB
+directory.
+ 
+Aerodynamical database
+======================
+ 
+In the DOCUMENT directory, and below /AEDB, a document entitled EADS-
+ST_HUYGENS_AEDB.PDF presents an update of the Huygens Entry Module (EM)
+AErodynamic DataBase (AEDB). This update results from the Delta-Flight
+Acceptance Review recommendations held on February 3rd and 4th, 2004. Due
+to the very limited set of computations, the updated AEDB (unlike the
+previous one) is preferably used for design issues, since real gas and
+rarefaction effects have been only poorly described.
+ 
+Two ASCII documents provide the relevant coefficient values:
+HUY_AERDB1_ALCATEL.TXT and HUY_AERDB2_ALCATEL.TXT .
+ 
+Huygens Mass ablation model
+===========================
+ 
+From  GABORIT2003 [15 December 2003, PhD thesis
+title: Modeles et methods experimentales qui supportent
+une mission spatiale: reconstruction de la trajectoire
+d&apos;une sonde dans une atmosphere planetaire.
+Universite de Paris VII Jussieu, page 39, section 2.4.2.]
+ 
+Variables:
+ms: mass
+ms,o: initial mass (319 kg)
+t: time
+eta_eff: factor that characterises the efficiency
+of the energy transfer between the incidence flux and
+the Huygens probe.
+ro: Density of the atmosphere
+So: Surface of the Probe.
+L_abl: ablation enthalpy
+v, V: Velocity
+Vo: Maximum Probe velocity
+Cx: Aerodynamical coefficient
+ 
+dms/dt = -eta_eff * ro * V^3 So /  ( 2 * L_abl)
+ 
+dv/dt = - ro V^2 So Cx / (2 * ms)
+ 
+ms(t) = ms,o * exp (2 * sigma * (V^2(t) - Vo^2(t) )
+ 
+ms,o = 319kg
+sigma = eta_eff / ( Cx * L_abl)
+ 
+Sigma has been calculated by matching the expected delta-mass
+(from Alcatel) to the previous formulas.
+The calculated value is ~4.18 * 10^-10 m^-2.s^2
+ 
+The mass ablation is estimated to be: 9.7 kg.
+ 
+Spin reconstruction
+===================
+ 
+ENGINEERING PARAMETERS USED
+ 
+The engineering parameters used as data inputs for the spin
+reconstruction are:
+ 
+1) RASU - Radial Accelerometer Sensor Unit is a set of two highly
+sensitive accelerometers that provides the radial acceleration.
+The raw values are used by the on-board processor to compute a
+near real time spin rate estimation for distribution to the
+instruments in the DDB (Data Descent Broadcast). RASU is
+telemetered at 4 Hz with a 0.47 mg accuracy. Due to the loss of
+chain A (LEBRETONETAL2005), only one of the raw RASU
+datasets is available on-ground. Nevertheless, analysis of the
+processed DDB for both chains (available from the instruments
+internal telemetry), indicates that both sensors were measuring
+similar values and functioning nominally.
+ 
+Usage: RASU raw telemetry is archived as HK_CDMS_RASU_D8005A.TAB.
+ 
+2) AGC (raw telemetry archived as HK_CDMS_RASU_D8005A.TAB) - Automatic
+Gain Control: this telemetry parameter is the control word of the
+second coherent AGC loop in the digital part of the receiver. Reported
+at 8Hz, it is proportional to the signal power received on board
+Cassini. The AGC has been flight-calibrated, being the conversion to
+signal-to-noise ratio Es/N0 based on the Probe Relay Test analysis.
+ 
+Usage: AGC raw telemetry is obtained from the archived parameters
+ 
+AGC_raw (digital number) = 256 * HK_PDRS_PSAB_R60047.TAB +
+HK_PDRS_PSAB_R60037.TAB.
+ 
+These raw data are calibrated based on the following interpolation
+(from PRT#4, day4 flight test data):
+ 
+AGC raw: 612.9438 607.1000 599.8319 590.6696 580.7143 568.5962 554.3304
+536.7500 517.0385 475.5833 448.0714 418.8846 388.2768 357.2596 325.9554
+295.4000 266.7857 240.8214 215.3393 193.3482 173.7589 155.5893 140.6538
+AGC calibrated: -4.6862 -3.6862 -2.6862 -1.6862 -0.6862 0.3138 1.3138
+2.3138 3.3138 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+ 
+THE SPIN RATE RECONSTRUCTION
+ 
+*The spin sign: the reversal anomaly
+ 
+As explained in detail in (Perez-Ayucar et al, 2005) the analysis of the
+radio link patterns confirmed an unexpected spin reversal in the mission:
+the AGC patterns before and after the inversion correlate well only if one
+is time-reversed. As a result, the Huygens in-flight spin direction has
+been estimated as counter-clockwise (CCW) (seen in the velocity direction;
+spin value &gt;0) for the early part of the descent (consistent with the spin
+imparted at separation from Cassini), and clockwise (CW) for the whole
+stabilizer chute phase (spin value &lt;0). This is non-compliant with the
+Probe specification.
+ 
+*The absolute azimuth reconstruction
+ 
+The AGC analysis remarkably provides absolute azimuth as a function of
+time, with respect to a known point in the sky, Cassini.
+ 
+The estimation of the azimuth can be performed by integrating the spin
+rate, in turn obtained from the radial acceleration (RASU). However,
+this method is not accurate enough as it relies on an integration and
+therefore it is subject to biases and to the assumption of an initial
+absolute reference. Another finer method, the AGC manual counting,
+remarkably provides absolute azimuth as a function of time, with
+respect to a known point in the sky, Cassini.
+ 
+The Probe Transmitting Antennas (PTA) are not ideal but present an
+azimuthal asymmetry (Clausen et al., 2002). As Huygens spun down to the
+surface, the received power at Cassini showed periodic variations every
+rotation. The PTA gain pattern was measured before launch in a
+representative mock-up, so by comparison one can estimate the absolute
+Orbiter azimuth in a Probe body-fixed frame. It is assumed that the
+Probe is vertical and spins ideally, so that the elevation is
+considered fixed (at least for several spin periods) and equal to the
+PAA. The elevation slowly evolves with time, and is also taken into
+account.
+ 
+After obtaining an absolute azimuth profile in the Probe fixed
+reference frame, a geometric conversion is applied to express it on
+Titan&apos;s local frame.
+ 
+Regarding the inherent error in the identification of the peaks, the
+main contributors are: 1) the tested Antenna Gain Pattern data is
+limited to a 2 deg step (for both azimuth &amp; elevation). This influences
+both the selection of the PAA and the matching of the peak in azimuth;
+2) the AGC sampling rate (8Hz) implies that as the period of the signal
+decreases, fewer points are available and therefore the angular
+resolution decreases; 3) the pixel size when visually identifying the
+peaks on a screen. All those contributions are independent; hence a
+root-of-squares estimator has been computed. Although dependent on
+time, its value never exceeds +/- 5 deg.
+ 
+Regarding the error in the frame conversion, an attitude disturbance in
+tip - tilt induces an azimuth error when converting from the PTA
+(Huygens body fixed) reference frame to the Titan&apos;s local surface
+frame. A complex estimation was carried out in (Sarlette, 2005b).
+ 
+ The error estimation is:
+ 
+-Max values up to ~30deg @ start of mission
+-Less than 3deg @ touchdown
+ 
+* The spin actual rate reconstruction
+ 
+The most accurate way of obtaining the spin rate is by the derivative
+of the absolute azimuth obtained as described from AGC. Nevertheless,
+the azimuth values from the manual counting method are not optimum at:
+ 
+- the spin peak, where the rotation (~10 rpm) is fast wrt the
+sampling rate of 8Hz. Fewer samples per period are hence available. In
+addition the rather strong attitude disturbances in this interval
+(rough early descent with the stabilizer parachute) are also reflected
+in the AGC.
+ 
+- the spin reversal: as the Probe stopped spinning, the repetition
+pattern was not present, and the peak identification uncertain.
+Spectrogram (AGC-FFT method) is a coarser but useful method to fill in
+these gaps. The dynamic FFT does not provide absolute azimuth, only a
+heavily-filtered spin rate, which in turn can be time-integrated to
+find azimuth values. Unfortunately, the frequency resolution achieved
+by an FFT analysis for an 8Hz signal is directly proportional to the
+duration of its periodic cycles. During a large part of the descent and
+close to the surface the rotation was slow (less than 3 rpm) and
+therefore the spin resolution is coarse. The method is only used around
+the spin peak.
+ 
+In the spin inversion, a more appropriate method relies on the
+occurrence of RASU values. RASU cannot be used directly to derive the
+spin rate since only positive values are transmitted in the telemetry
+(design feature). The high sensitivity of the sensor is such that
+attitude disturbances other than the centrifugal spin are clearly
+recorded, as wobbling, pendulum motion, etc... Assuming that the
+disturbance implies an offset in the measured acceleration, equally
+distributed around its mean value, the smoothed median is a good
+indicator of the instantaneous radial acceleration. Again, the method
+does not provide absolute azimuth, only a filtered spin rate, which in
+turn can be time-integrated to obtain azimuth values. The error in this
+method is large for low spin rates. The spin rate is computed as a
+square root of the raw acceleration, so the fixed quantization step
+(~0.47mg) in the RASU telemetries implies a variable step when
+expressed in rpm, increasing as the spin rate decreases. Many of the
+near surface measurements are therefore in the level of the
+quantization step, and the retrieval of the spin rate is not as
+reliable as in the AGC method. Note that RASU data are cut at 0g.
+ 
+Therefore, the consolidated spin rate of the Probe has been
+reconstructed using these combined methods:
+ 
+Time period on 14Jan2005           Values used (method)
+-------------------------         -----------------------
+09:11:14.67 - 09:15:53.45         AGC manual counting
+09:15:52.43 - 09:26:41.67         RASU median smoothed
+09:27:15.41 - 09:35:06.20         AGC FFT
+09:35:10.47 - 11:37:09.76         AGC manual counting
+11:38:11.00 - 12:47:29.755        RASU
+ 
+The reconstructed value of the spin rate can be found in:
+/DATA/SPIN_RATE
+ 
+Measurements uncertainties
+==========================
+ 
+Information on measurement uncertainties is given for
+the three sensors:
+ 
+- Radar altimeter: ~ 3.6 meters.
+- RASU: error (%) = 0.4817202 x ACC (m/s2)^(-0.9652554)
+- CASU: error (%) = 3.660834 + ACC (m/s2)^(-0.98493632) (without stiction)
+ 
+Discussion on the engineering parameters
+========================================
+ 
+Some of the Huygens Probe engineering parameters are discussed in the
+following documentation (in the /DOCUMENT folder):
+- INDUSTRY_DOCUMENTS/PERFORMANCES_ANALYSIS_2005.PDF
+- INDUSTRY_DOCUMENTS/POST_FLIGHT_ANALYSIS_2006.PDF
+- PUBLICATIONS/PEREZ_ATTITUDE_2005.PDF
+- PUBLICATIONS/PEREZ_LINK_2005.PDF
+- PUBLICATIONS/SARLETTE_ATTITUDE_2005.PDF
+- PUBLICATIONS/HUYGENS_OVERVIEW_NATURE2005.PDF
+ 
+Temperature sensors
+===================
+ 
+Temperature sensors location can be found in the document
+/DOCUMENT/TEMPERATURE_SENSORS/TEMPERATURE_SENSORS.PDF .
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

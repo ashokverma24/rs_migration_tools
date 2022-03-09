@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-model href="http://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:esa:psa:context:instrument:rl.consert</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Comet Nucleus Sounding Experiment by Radiowave Transmission for RL</title>
+    <information_model_version>1.16.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2021-06-15</modification_date>
+        <version_id>1.0</version_id>
+        <description>Migrated from PDS3 catalog file.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.rl</lid_reference>
+      <reference_type>instrument_to_instrument_host</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <doi>10.1007/s11214-006-9034-9</doi>
+      <reference_text>Kofman, W. et al., The Comet Nucleus Sounding            
+        Experiment by Radiowave Transmission (CONSERT): A Short                  
+        Description of the Instrument and of the Commissioning Stages,           
+        Space Science Reviews, 128(1-4), 431-432, Feb 2007.</reference_text>
+      <description>Reference to the instrument paper.</description>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>Comet Nucleus Sounding Experiment by Radiowave Transmission</name>
+    <Type_List_Area>
+      <ctli:Type_List>
+        <ctli:type>Radar</ctli:type>
+      </ctli:Type_List>
+    </Type_List_Area>
+    <naif_instrument_id>not applicable</naif_instrument_id>
+    <serial_number>not applicable</serial_number>
+    <description>                                 
+                                                                      
+        INSTRUMENT OVERVIEW                                                   
+        ===================                                                   
+                                                                              
+        THE COMPLETE CONSERT EXPERIMENT IS COMPOSED OF:                       
+                                                                              
+        - ONE ORBITER PART (ELECTRONICS, ANTENNA, HARNESS)                    
+        - ONE LANDER  PART (ELECTRONICS, ANTENNAS,HARNESS)                    
+                                                                              
+                                                                              
+                                                                              
+        SCIENTIFIC OBJECTIVES                                                 
+        =====================                                                 
+                                                                              
+        Our experiment concerns the rough tomography of the comet nucleus     
+        performed by the CONSERT instrument. It works as a time domain        
+        transponder between one module landed on the comet surface           
+        (Lander) and another flying around the comet (Orbiter).               
+        The CONSERT signal consists in a 90 MHz sinusoidal waveform 
+        which is phase modulated by a pseudorandom code or PSK (phase shift 
+        keying) coding. Such frequency, 
+        in the radio range, is expected to minimize the losses during the     
+        propagation inside the comet material and the generated pulse code    
+        maximizes the signal to noise ratio.                                  
+        In these experimental conditions CONSERT will perform a   
+        measurement of the mean dielectric properties and on the detection of 
+        large size embedded structures or small irregularities within the     
+        comet nucleus.                                                        
+                                                                              
+        CALIBRATION                                                           
+        ===========                                                           
+                                                                              
+        Due to the design of the instrument, there is no special calibration operation
+         mode. The science data are composed of the signal characterising the 
+         propagation channel of the comet nucleus as a function of time:      
+        - The propagation time is the main data to be inverted and its        
+          accuracy is waranted by the Consert clock absolute accuracy and      
+          stability.                                                          
+        - The signal amplitude can also provide information about the         
+          nucleus structure but there is no internal calibration channel      
+          to increase the link budget accuracy.                               
+                                                                              
+        OPERATIONAL CONSIDERATIONS                                            
+        ==========================                                            
+                                                                              
+        The Lander makes a coherent addition and a detection of the position (delay) 
+        of the correlation principal peak. A clean coded signal is finally back 
+        emitted to the Orbiter with the found delay. The orbiter accumulates the 
+        received signal and sends it to the Earth (via the satellite interface).
+                                                                              
+        OPERATIONAL MODES                                                     
+        =================                                                     
+                                                                              
+        Each scientific measurement sequence (called scanning sequence)       
+        involves the Orbiter part and the Lander. The duration of this scan   
+        sequence is related to the duration of the orbit of the Rosetta       
+        spacecraft relatively to the Lander on the rotating comet nucleus.    
+        This duration is typically of the order of 10 hours during one revolution 
+        around the nucleus. The individual duration of each sounding is less than one
+        second.                                                               
+                                                                              
+        This duration of scanning sequence  should                            
+        correspond to the time when the Lander and the Orbiter are separated  
+        by the comet. During the direct line of sight periods, where Philae and
+        Rosetta are in visibility of each others, the synchronization occurs. This
+        mandatory and preliminary phase is also called the CONSERT 'tuning'.
+        This means that the duration of the data      
+        recording does not correspond to the total time of one revolution, but
+        only for the part where Philae and Rosetta are in occultation by the comet
+        nucleus.    
+        The number of samples which theoretically should be taken is given by the 
+        following formula:              
+        2 * pi * radius of comet / ( lambda / 2 ) 
+        where lambda is wavelength.                                           
+        During the scanning sequence for a hypothetical circular comet with a 750 m 
+        radius, about 3000 individual measurements, called soundings should be      
+        taken.                                                                
+                                                                              
+        The general structure of the Consert operational scenario does not    
+        depend on the comet type that is explored during the Rosetta          
+        mission, however  a certain amount of the parameters depends on the      
+        shape and size of the comet nucleus and on the orbit of the           
+        spacecraft and nucleus rotation.                                      
+                                                                              
+                                                                              
+        MEASURED PARAMETERS                                                   
+        ===================                                                   
+                                                                              
+        While acquiring the signal which propagates through the comet
+        nucleus, the CONSERT intrument measures the following physical
+        parameters:
+           - Propagation time of one to three peaks (in case of 
+             multi-path propagation).
+           - Attenuation of these signal peaks along the propagation
+             channel.               
+        </description>
+  </Instrument>
+</Product_Context>

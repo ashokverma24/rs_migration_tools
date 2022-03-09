@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.lam_sco</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Shaula</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>35 Scorpii</alternate_title></Alias>
+      <Alias><alternate_title>Lambda Scorpii</alternate_title></Alias>
+      <Alias><alternate_title>Lambda Sco</alternate_title></Alias>
+      <Alias><alternate_title>35 Sco</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>lam Sco</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TNG 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SEE 334A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DUN 218A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 15082</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J17336-3706A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-37 11673</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 18 8791</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-37 7265</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-37 11673 21</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1E 1730.2-3704</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J1733-37.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 652</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 23769</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 10136</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00158926</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 07388-01093</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 158926</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 85927</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 85927</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 6527</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 17268-3702 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 17302-3704</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2862</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J17333652-3706135</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3905</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 462</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 296488</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2459</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J173336.7-370604</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SACS 383</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 208954</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 31695</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30652</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 20577</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 7388-1093-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 22240</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 14937</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100158926</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J17336-3706A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J17336-3706Aa,Ab</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WD 1730-370</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 14501</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Shaula</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 17 hours 33 minutes 36.52012 seconds
+Declination, ICRS coord, ep=J2000: -37 degrees 06 minutes 13.7648 seconds
+    </description>
+  </Target>
+</Product_Context>

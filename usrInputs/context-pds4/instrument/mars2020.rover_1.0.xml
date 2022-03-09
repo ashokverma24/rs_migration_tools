@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1H00.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1
+            https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1H00.xsd
+            http://pds.nasa.gov/pds4/ctli/v1 
+            https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mars2020.rover</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Mars 2020 Perseverance Rover</title>
+        <information_model_version>1.17.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2022-02-04</modification_date>
+                <version_id>1.0</version_id>
+                <description>First version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mars2020</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-020-00762-y</doi>
+            <reference_text>
+                Farley, K.A., Williford, K.H., Stack, K.M. et al. Mars 2020 Mission Overview. 
+                Space Sci Rev 216, 142 (2020)
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-020-00739-x</doi>
+            <reference_text>
+                Stack, K.M., Williams, N.R., Calef, F. et al. Photogeologic Map of 
+                the Perseverance Rover Field Site in Jezero Crater Constructed by the 
+                Mars 2020 Science Team. Space Sci Rev 216, 127 (2020).
+            </reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-020-00783-7</doi>
+            <reference_text>
+                Moeller, R.C., Jandura, L., Rosette, K. et al. The Sampling and 
+                Caching Subsystem (SCS) for the Scientific Exploration of Jezero 
+                Crater by the Mars 2020 Perseverance Rover. Space Sci Rev 217, 5 (2021).
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Perseverance</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Spacecraft Sensor</ctli:type>
+                <ctli:type>Surface Tool</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>
+            The Mars 2020 mission placed the rover Perseverance on the surface of Mars in Jezero Crater on
+            February 18, 2021. The rover's instruments search for signs of habitable conditions on Mars in 
+            the ancient past and signs of past microbial life. The rover uses a drill to collect samples 
+            for return to Earth by a future mission. This context product relates to the rover as a whole, 
+            rather than the individual instruments.
+        </description>
+    </Instrument>
+</Product_Context>

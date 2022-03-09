@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd
+    http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:las_cumbres.1m0_telescopes.nres</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Las Cumbres 1m Telescopes - Network of Robotic Echelle Spectrographs (NRES)</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-13</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Created by A.C.Raugh using information downloaded from the Las Cumbres
+                    observatory website on 2021-08-13
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_cumbres.1m0_telescopes</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Spectrometer</ctli:type>
+                <ctli:subtype>Spectrograph</ctli:subtype>
+                <ctli:subtype>Echelle</ctli:subtype>
+                <ctli:subtype>optical</ctli:subtype>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>
+            The Las Cumbres website describes the Network of Robotic Echelle Spectrographs (NRES) as
+            "four identical high-resolution (R~53,000), precise (≤ 3 m/s), optical (380-860 nm) echelle
+            spectrographs, each fiber-fed (2.58" per fiber width) simultaneously by two 1 meter telescopes
+            and a ThAr calibration source." As of this writing, NRES units are located at the Cerro Tololo
+            Inter-American Observatory (CTIO), South African Astronomical Observatory (SAAO), McDonal 
+            Observatory, and Wise Observatory only (that is, not all Las Cumbres 1m telescopes host an
+            NRES node).
+        </description>
+    </Instrument>
+</Product_Context>

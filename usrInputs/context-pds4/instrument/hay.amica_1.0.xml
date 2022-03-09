@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:amica.hay</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ASTEROID MULTI-BAND IMAGING CAMERA for HAY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.hay::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Ishiguro, M., R. Nakamura, D.J. Tholen, N. Hirata, H. Demura, E. Nemoto, A.M.
+                   Nakamura, Y. Higuchi, A. Sogame, A. Yamamoto, K. Kitazato, Y. Yokota, T.
+                   Kubota, T. Hashimoto, and J. Saito, The Hayabusa Spacecraft Asteroid Multi-Band
+                   Imaging Camera: AMICA, Icarus (2010), doi: 10.1016/j.icarus.2009.12.035, 2010.
+            </reference_text>
+            <description>reference.ISHIGUROETAL2010</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Nakamura, T., A.M. Nakamura, J. Saito, S. Sasaki, R. Nakamura, and three
+                   others, plus the AMICA team. Multi-band imaging camera and its sciences for the
+                   Japanese near-earth asteroid mission MUSES-C. Earth, Planets, Space 53,
+                   1047-1063, 2001.
+            </reference_text>
+            <description>reference.NAKAMURAETAL2001</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Saito, J., H. Miyamoto, R. Nakamura, M. Ishiguro, T. Michikami, and 29 others,
+                   Detailed images of asteroid 25143 Itokawa from Hayabusa, Science 312, pp.
+                   1341-1344, 2006.
+            </reference_text>
+            <description>reference.SAITOETAL2006</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tedesco, E.F., D.J. Tholen, and B. Zellner, The eight-color asteroid survey:
+                   Standard stars, The Astronomical Journal, 87, 11:1585-1592, 1982.
+            </reference_text>
+            <description>reference.TEDESCOETAL1982</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ASTEROID MULTI-BAND IMAGING CAMERA</name>
+        <type>Imager</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    Instrument Overview
+    ===================
+  The Asteroid Multi-Band Imaging Camera (AMICA) is one of the Optical
+  Navigation Cameras (ONCs) of the Hayabusa mission, a Japanese-led
+  sample-return mission to the asteroid 25143 Itokawa.  The three ONCs are
+  AMICA (also known as ONC-T), and two wide angle navigation cameras ONC-W1
+  and ONC-W2.  The AMICA system was used both for science and for optical
+  navigation.  Pre-flight information about the instrument is available in
+  Nakamura et al. (2001).  Preliminary results of AMICA are reported in Saito
+  et al. (2006).  Full information about the specifications, performance, and
+  calibration of AMICA may be found in Ishiguro et al. (2010).
+ 
+  The optical axis of AMICA is designed to be boresighted with the NIRS and
+  LIDAR instruments.  In-flight measurements of the star Alpha Scorpii
+  determined that the boresight of NIRS is centered on the (493, 510) pixel in
+  the AMICA frame.  Co-alignment of NIRS and LIDAR was adjusted as accurately
+  as possible pre-flight and was confirmed after arrival at Itokawa.
+ 
+  AMICA is a refracting telescope consisting of five lenses, each of which is
+  cosmic-radiation-resistant and anti-reflection coated.  A quartz optical
+  parallel window is placed in front of the first lens for radiation
+  protection.  The SITe CCD chip, developed and built by NEC TOSHIBA Space
+  Systems, Ltd., is of the back-illuminated MPP (Multi-Pinned Phase) type.
+  The CCD is kept below -10 degrees C in ordinary in-flight condition.  The
+  CCD dimensions are 1024 x 1000 pixels and the camera field of view is 5.83 x
+  5.69 degrees.  The 12 columns on either side of the 1024 x 1000 pixel array
+  are dark due to an obscuring mask.  DNs in these areas were found to be
+  dependent on both incident flux and wavelength, suggesting that the masks
+  are not perfectly impermeable to light.  Therefore, these pixels cannot be
+  used for dark current correction.  The remaining unobscured region has the
+  dimensions 1000 x 1000.
+ 
+  Due to cosmic-ray irradiation during flight, hot pixels have developed in
+  the AMICA CCD.  The known hot pixels and their dark rates are tabulated
+  here:
+ 
+  pixel (x,y)     dark rate (DN/sec)
+  (407,300)         540
+  (599,408)         330
+  (820,14)          310
+  (930,624)         305
+  (897,716)         290
+ 
+  Since the CCD is of the frame-transfer type, AMICA has no mechanical shutter
+  but the exposure is controlled electronically.  30 different exposure times
+  can be specified from 5.44 ms through 178 sec, plus a zero second exposure.
+  The exposure time accuracy (including for the zero second exposure) is 1
+  microsec.  The zero second exposure is necessary to correct readout smear
+  which is inevitable for shutterless and frame-transfer type CCDs.
+ 
+  AMICA has an eight position filter wheel, of which seven filters are nearly
+  eqivalent to the ECAS bands (Tedesco et al. 1982).
+ 
+  filter:   central wavelength (nm):   FWHM (nm):
+    ul         381                      45
+    b          429                     108
+    v          553                      72
+    w          700                      70
+    x          861                      81
+    p          960                      75
+    zs        1008                      66
+ 
+  The eighth position has a wide-bandpass filter.
+ 
+  filter:   central wavelength (nm):   FWHM (nm):
+  WIDE         650                     300
+ 
+  Each filter aperture is sector-shaped and the filters are placed closely
+  side by side at the edges to enable imaging in case the filter wheel stops
+  accidentally at an improper position.
+ 
+  AMICA has four position-angle glass polarizers placed immediately in front
+  of the CCD on one side and each covering 200 x 200 pixels.  The four
+  polarizers are placed with position angles of 0, 45, 90, and 135 degrees.
+ 
+  The characteristics of AMICA are summarized below.
+ 
+  Weight of camera:  1.74 kg
+  Weight of electronics:  4.0 kg
+  Power usage for camera:  6.8 W
+  Power usage for electronics:  9.5 W
+  Dimensions:  120mm x 135mm x 180 mm
+  Effective lens diameter:  15 mm (F/8.0)
+  Focal length:  120.80 mm (fixed)
+  Field of view:  5.83 x 5.69 deg
+  CCD dimensions:  1024 x 1000 pixels
+  Pixel size:  12 micron square
+  Pixel resolution:  20.490 arsec/pix
+  Quantum efficiency:  45% at 350nm, 20% at 1000nm, 8% at 1050nm
+  A/D conversion:  12 bits
+  System spectral response:  360nm - 1050nm
+  Stellar V limiting magnitude:  5 - 6
+  Electronic shutter exposure time:  5.44 ms - 178 s
+  Image memory storage:  16 frames
+  Filters:  7 bands nearly equivalent to ECAS
+  Polarizers:  4 position-angle glass polarizers
+ 
+ 
+  References
+  ==========
+ 
+  Ishiguro, M., R. Nakamura, D.J. Tholen, N. Hirata, H. Demura, E. Nemoto,
+  A.M. Nakamura, Y. Higuchi, A. Sogame, A. Yamamoto, K. Kitazato, Y. Yokota,
+  T. Kubota, T. Hashimoto, and J. Saito, The Hayabusa Spacecraft Asteroid
+  Multi-Band Imaging Camera: AMICA, Icarus (2010), doi:
+  10.1016/j.icarus.2009.12.035, 2010.
+ 
+  Nakamura, T., A.M. Nakamura, J. Saito, S. Sasaki, R. Nakamura, and three
+  others, plus the AMICA team.  Multi-band imaging camera and its sciences for
+  the Japanese near-earth asteroid mission MUSES-C.  Earth, Planets, Space 53,
+  1047-1063, 2001.
+ 
+  Saito, J., M. Miyamoto, R. Nakamura, M. Ishiguro, T. Michikami, and 29
+  others.  Detailed images of asteroid 25143 Itokawa from Hayabusa.  Science
+  312, 1341-1344, 2006.
+ 
+  Tedesco, E.F., D.J. Tholen, and B. Zellner.  The eight-color asteroid
+  survey:  Standard stars.  Astron. J. 87, 1587-1592, 1982.
+
+        </description>
+    </Instrument>
+</Product_Context>

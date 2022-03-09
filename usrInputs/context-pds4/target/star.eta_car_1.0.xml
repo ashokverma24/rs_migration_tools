@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.eta_car</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Eta Carinae</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Foramen</alternate_title></Alias>
+      <Alias><alternate_title>Tseen She</alternate_title></Alias>
+      <Alias><alternate_title>231 G Carinae</alternate_title></Alias>
+      <Alias><alternate_title>Eta Car</alternate_title></Alias>
+      <Alias><alternate_title>eta Car A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>eta Car B</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1A 1044-59</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>3A 1042-595</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1AGL J1043-5936</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1AGL J1044-5937</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1AGLR J1044-5944</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 1868</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-59 3306</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CEL 3689</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Cl Trumpler 16 183</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPC 20 3145</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-59 2620</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-59 2620 41</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI-59-10431</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CXOCyg J104503.58-594103.7</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1E 104306-5925.2</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 2318</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1043.1-5925</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EM* MWC 214</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1ES 1043-59.4</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>0FGL J1045.6-5937</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1FGL J1045.2-5942</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2FGL J1045.0-5941</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>3FGL J1045.1-5941</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1FHL J1045.0-5943</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2FHL J1045.2-5942</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>3FHL J1045.1-5941</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 14799</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 6693</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 6692</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GPS 1043-595</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1H 1045-597</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 93308</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 93308B</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Hen 3-481</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>H 1044-59</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 4210</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 10431-5925</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSE J104503.7-594102</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSF J104503.7-594102</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1994</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LS 1868</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J10450360-5941040</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MOST 1042-594</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NOVA Car 1843</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PBC J1044.8-5942</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 339408</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 4114</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 238429</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 20584</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SWIFT J1044.8-5941</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 8626-2809-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>4U 1053-58</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>4U 1037-60</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC4 152-053215</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J10451-5941</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 9578</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WRAY 15-640</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2XMM J104503.4-594103</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>XMMU J104503.8-594105</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 1041-59</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 5350358580171706624</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Eta Carinae</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 10 hours 45 minutes 03.5362075818 seconds
+Declination, ICRS coord, ep=J2000: -59 degrees 41 minutes 04.053436648 seconds
+    </description>
+  </Target>
+</Product_Context>

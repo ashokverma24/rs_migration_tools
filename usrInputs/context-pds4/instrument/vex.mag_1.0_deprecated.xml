@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:vex.mag</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Magnetometer</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-09-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Extracted metadata from ESA's PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vex::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+Zhang, T.L., W. Baumjohann, M. Delva, H.-U. Auster, A. Balogh, C.T. Russell, S.
+Barabash, M. Balikhin, G. Berghofer, H.K. Biernat, H. Lammer, H. Lichtenegger,
+W. Magnes, R. Nakamura, T. Penz, K. Schwingenschuh, Z. Voeroes, W. Zambelli,
+K.-H. Fornacon, K.-H. Glassmeier, I. Richter, C. Carr, K. Kudela, J.K. Shi, H.
+Zhao, U. Motschmann, and J.-P. Lebreton, Magnetic field investigation of the
+Venus plasma environment: Expected new results from Venus Express, Planet.
+Space Sci., 54, 1336-1343, doi:10.1016/j.pss.2006.04.018, 2006.
+            </reference_text>
+            <description>reference.ZHANGETAL2006</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Instrument>
+        <name>Magnetometer</name>
+        <type>Magnetometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+        <serial_number>not applicable</serial_number>
+        <description>
+  ABSTRACT
+  ========
+  The magnetometer instrument onboard the Venus Express orbiter
+  is described. This instrument consists of two tri-axial fluxgate
+  magnetometers. The nominal 500 earth days (2 Venus years) orbiting
+  Venus Express mission will lead to a detailed understanding of the
+  interaction between Venus' atmosphere and the solar wind. In
+  addition it will provide the magnetic field data for any combined
+  field, particle and  wave studies such as lightning and planetary
+  ion pickup processes, map with high time resolution the magnetic
+  properties in the magnetosheath, magnetic barrier, the ionosphere,
+  and the magnetotail and identify the plasma boundaries between the
+  various plasma regions.
+
+
+  INSTRUMENT DESCRIPTION
+  ======================
+  The VEX magnetometer MAG measures the 3D magnetic field in the
+  frequency bandwidth from DC to 128 Hz. It consists of two triaxial
+  fluxgate sensors (MAGOS and MAGIS). The dual sensor configuration
+  was chosen for a better monitoring of the stray magnetic fields
+  produced from other S/C units. The electronics box comprises two
+  sensor electronics boards, the DPU board and the DC/DC converter.
+  MAGOS will be mounted to the tip of a deployable boom whereas the
+  inboard sensor (MAGIS) will be directly attached to the +Z panel of
+  the spacecraft.
+
+  Well-known statistical methods, using time series of solar wind
+  measurements, are used to determine the offset field at the
+  magnetic field sensors (including instrument offset and S/C DC
+  field). Since major parts of the orbits around Venus are in the
+  solar wind, these data can be used for statistical offset
+  determination. If a too high offset (caused by DC field disturbance)
+  is detected, it is reduced by using the 12-bit compensation DACs.
+  The maximum possible compensation field is +/-10,000 nT along each
+  of the all together 6 sensor axes. A front to end health check is
+  possible by command which generates artificial fields using the
+  12-bit compensation DACs (Calibration Modes 2-4). Boom deployment
+  at the beginning of the cruise phase is essential for a proper MAG
+  in-flight calibration.
+
+
+    TABLE  I
+    Main Instrument Characteristics
+
+    MASS
+    Inboard Sensor, Harness and MLI                    0.357 kg
+    Outboard Sensor, Harness and MLI                   0.355 kg
+    Electronics Box and Harness                        1.060 kg
+    Boom, Hinge, Lock and MLI                          0.536 kg
+    Total                                              2.308 kg
+
+    SCIENCE MODES
+    Instrument Mode           Sensors                  Data Rate
+    Solar wind                Outboard and Inboard         1 Hz
+    Pericenter                Outboard and Inboard        32 Hz
+    Burst                     Outboard and Inboard       128 Hz
+
+    POWER
+    All modes                           4.25 W (+/-10%) maximum
+
+    NORMAL DOWNLINK DATA RATES
+    Solar Wind                              104 bits per second
+    Pericenter                             3328 bits per second
+
+    DYNAMIC RANGE, RESOLUTION
+    low                                      +/-32.8nT,   1.0pT
+    default                                 +/-262.1nT,   8.0pT
+    high                                   +/-8288.6nT, 128.0pt
+
+  DATA Sampling in-flight
+  -----------------------
+ CRUISE phase:
+MAG was the first instrument to be commissioned on Venus Express, 10
+days after launch, and its boom deployed. Afterwards, it remained ON
+during the commissioning of all the other instruments, to enable
+registration and characterisation of the magnetic disturbances
+generated during payload operation.
+During the CRUISE phase, only 'Solar wind mode' is default and 1 Hz
+data rate is transmitted.
+
+Instrument Mode Sensors active  Data Rate  Nominal operation in cruise
+ phase
+Solar wind 1     OS and IS      1 Hz    always active
+  (SW1)
+
+ Nominal science modes in nominal orbit around Venus
+(= after start of 'nominal mission' 14-05-2006):
+MAG is operating continuously in orbit around Venus (which is in
+principle 24 hr per 24 hr orbit around Venus) and mostly in an
+autonomous mode, requiring little or no commanding. Higher data-rates
+are started only after start of the nominal mission in orbit around
+Venus (14 May 2006).
+During a typical science orbit, MAG is switched to 'Pericenter mode'
+one hour before pericenter, and then back to 'Solar wind mode' one
+hour after pericenter.
+The instrument is commanded to the high resolution 'Burst mode' one
+minute before pericenter for duration of 2 min in order to detect
+lightning.
+
+   Inst. Mode    Sens. act. Data Rate    Nominal op. in nominal orbit
+   Solar wind 1  OS and IS      1 Hz     always active, i.e. full
+      (SW1)                              orbit sampling coverage,
+                                         except if mode with higher
+                                         data rate is active
+
+   Pericenter 1  OS and IS     32 Hz     1 hr before and after
+      (PC1)                              pericenter
+
+   Burst         OS and IS    128 Hz     1 min before and after
+      (CAL5)                             pericenter
+
+
+  THE Sensors
+  -----------
+
+  Both fluxgate sensors, featuring low mass and power consumption,
+  consist of two single ring-core sensors measuring the magnetic
+  field in X- and Y-direction. The magnetic field in Z-direction is
+  measured by a coil  surrounding both single sensors. The side length
+  of the cubic shaped sensor triad is approx. 5 cm. The sensor is
+  identical to the ones of Rosetta Lander and MIR instrument package
+  and similar to the ones flown on Equator-S (same soft-magnetic
+  ringcores made of an ultra-stable 6-81 Mo permalloy band: 2 mm
+  x 20 mum). The ringcores have been tested under extreme environmental
+  conditions aboard numerous space missions as well as in applied
+  geophysics. The excellent low noise and stability behaviour of the
+  sensor material has especially been proven aboard Equator-S.
+  Because of the wide operating temperature range of the fluxgate
+  sensor from -160 °C up to +120 °C, the sensor can be mounted outside
+  of the temperature controlled S/C only covered by a passive
+  multi-layer insulation blanket. No active heating or cooling is
+  needed for the sensors.
+
+  The sensor electronics generates an excitation AC current
+  (fundamental frequency of approx. 9.6 kHz), which drives the soft
+  magnetic core material deep into positive and negative saturation.
+  According to the fluxgate principle, the external magnetic field
+  distorts the symmetry of the magnetic flux and generates field
+  proportional even harmonics of the drive frequency in the sense
+  coils.
+
+  The induced voltage in the sense coil is digitised immediately after
+  the preamplifier at four times the excitation frequency. The
+  front end signal processing (synchronous detection and integration
+  and calculation of the feedback signals) is done by logic blocks
+  within an Actel FPGA (54SX32). A feedback field increases the
+  overall linearity and stability of the magnetometer. It is supplied
+  to all sensor elements via 12-bit DACs (feedback DACs) and a
+  separate pair of feedback coils per sensor axis. Sense and feedback
+  signals are continuously transmitted to the controller (128 Hz)
+  which calculates the magnetic field values (24 bits) by scaling and
+  adding up the received data (k1*ADC+k2*DAC). The appropriate dynamic
+  range is defined by selecting and transmitting of just 16 bit of the
+  calculated 24 bits mentioned above (also a kind of data compression)
+  Therefore, the range can be modified by T/C between +/- 32,8 nT and
+  +/- 8,388,6 nT with a corresponding digital resolution between 1 pT
+  and 128 pT. The default range/resolution will be +/- 262,1 nT/8 pT.
+  During the operational phase, an artificial magnetic field of
+  +/- 10,000 nT can independently be applied to each sensor via
+  additional 12-bit DACs for compensation of any disturbing DC stray
+  field. The digital magnetometer concept of MAG requires
+  analog-to-digital conversion at a higher data rate but it shows a
+  number of advantages over the more traditional analog fluxgate
+  magnetometer: Early digitisation makes the sensed signal robust to
+  changes of the environmental temperature and the supply voltages as
+  well as insensitive to EMC. Furthermore, no range  switching is
+  needed for getting the full range at full resolution, which reduces
+  design complexity and facilitates data analysis.
+
+
+  INSTRUMENT ELECTRONICS
+  ======================
+
+  The data processing unit (DPU) designated for the instrument controls
+  the two sensors and the spacecraft interface of the experiment and
+  performs internal data handling (sampling, data pre-processing,
+  compression, data frame generation). The DPU is based on an Intersil
+  HS-RTX2010RH rad-hard microcontroller, which was especially
+  developed for space systems embedded control.
+  The controlling logic for the DPU, the sensor interfaces, the address
+  decoder, the clock generator, the reset logic and the instrument
+  spacecraft interface (standard ESA OBDH interface) are implemented in
+  an Actel 1020RH FPGA. A watch-dog circuit, which is also implemented
+  in the FPGA, is supervising continuously the operation of the DPU and
+  can release a cold start in case of a system crash. The DPU integrates
+  128 kbytes of static RAM, 64 kbytes of program memory (PROM) and
+  64 kbytes of EEPROM. After power-on, the onboard software is copied
+  to RAM. After this the PROM is switched off and the instrument
+  software is executed in RAM. This procedure helps decreasing the
+  power consumption of the DPU. Software patches and various parameters
+  can be uploaded to the instrument and stored in the EEPROM.
+
+  The DC/DC Converter (MAGE-P) bears design heritage from the units
+  developed  by Imperial College for Cassini and Rosetta. For the Venus
+  Express MAG instrument, a single (non-redundant) converter is
+  provided. The +28V main and redundant primary power inputs are
+  therefore connected together after the on/off relays (see
+  Fig. 2.2 5 MAGE-P Block Diagram). The converter provides 4 secondary
+  supplies to the MAG instrument: +8 V (+8 V-D for excitation) and
+  +/-8 V (+/-8 V-A) to the analogue electronics, and a separate +5 V
+  (+5 V-D) digital supply. Over-current protection is implemented on
+  the primary input side; in the event of an over-current the supply
+  will automatically shut down. On the secondary side, the MAG
+  electronics is protected by an over-voltage circuit, which will shut
+  off the secondary side of the converter. The converter is stabilised
+  with respect to changes in the load and changes in the input Voltage,
+  and is capable of maintaining the secondary voltages within the tight
+  tolerances required by the MAG electronics.
+        </description>
+    </Instrument>
+</Product_Context>

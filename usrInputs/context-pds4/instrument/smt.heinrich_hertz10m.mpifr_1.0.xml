@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:smt.heinrich_hertz10m.mpifr</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>SMT MPIfR 19-channel Bolometer</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-02-18</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:smt.heinrich_hertz10m</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <reference_text>Chamberlain, M.A., A.J. Lovell, and M.V. Sykes, Submillimeter lightcurves of Vesta,
+Icarus 192, 448-459, 2007.</reference_text>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>SMT MPIfR 19-channel Bolometer</name>
+    <type>Radiometer</type>
+    <description>The Submillimeter Telescope (SMT) Max Planck Institute fur Radioastronomie (MPIfR)
+19-channel bolometer was developed at MPIfR Bonn by E. Kresya and collaborators.  It
+was in use at the Heinrich Hertz Submillimeter Telescope (SMT) until it was
+decommissioned sometime after mid-2004.  The 19 channels of the array are arranged in
+two concentric hexagons around the central channel.  The azimuth distance between two
+adjacent channels is about 50 arcsec and the maximum beam separation is about 200
+arcsec.
+
+The bandpass of the bolometer (delta nu over nu) is approximately 0.15.  The
+sensitivity extends from 310 to 380 GHz with peak sensitivity at 340-345 GHz.  The
+beam size at this frequency is 23 arcseconds.
+
+In the submillimeter range, most of the noise is due to the atmosphere.  With proper
+data reduction, the atmospheric noise can be eliminated to a certain degree.  The
+remaining noise level is about 600 mJy / sqrt(sec) per channel.
+
+This information has been taken from Chamberlain et al. (2007) and from the MPIfR
+website (http://www.mpifr-bonn.mpg.de).
+
+Chamberlain, M.A., A.J. Lovell, and M.V. Sykes, Submillimeter lightcurves of Vesta,
+Icarus 192, 448-459, 2007.</description>
+  </Instrument>
+</Product_Context>
+

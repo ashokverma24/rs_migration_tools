@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.bd+36_2593</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>HAT-P-4</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>BD+36 2593</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+36 1339</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 02569-01599</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 78511</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 64638</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 2569-1599-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 1291120362349158016</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>HAT-P-4</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 15 hours 19 minutes 57.9205371377 seconds
+Declination, ICRS coord, ep=J2000: +36 degrees 13 minutes 46.737977732 seconds
+    </description>
+  </Target>
+</Product_Context>
+

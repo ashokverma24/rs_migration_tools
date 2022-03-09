@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:grb.uly</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SOLAR X-RAY/COSMIC GAMMA-RAY BURST INSTRUMENT for ULY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.uly::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Dennis, B., Solar Phys. 100, 465, 1985.
+            </reference_text>
+            <description>reference.DENNIS1985</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Dennis, B., Solar Phys. 1180, 49, 1988.
+            </reference_text>
+            <description>reference.DENNIS1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Hurley, K., in Cosmic Gamma Rays, Neutrinos, and Related Astrophysics, NATO
+                   ASI Series C 270, M. Shapiro and J. Wefel Eds., Kluwer Academic Publishers,
+                   Dordrecht, p. 337, 1988.
+            </reference_text>
+            <description>reference.HURLEY1988</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Hurley, K., in Fourteenth Texas Symposium on Relativistic Astrophysics,
+                   Ann. N.Y. Acad. Sci. 571, E.J. Fenyves Ed., p. 444, 1989.
+            </reference_text>
+            <description>reference.HURLEY1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Hurley, K., The Ulysses Solar X-ray/Cosmic Gamma-ray Burst Experiment, in
+                   Gamma-Ray Bursts: Observations, Analyses and Theories, Edited by C. Ho et
+                   al, p. 273, Cambridge Univ. Press, Cambridge, England ,1992.
+            </reference_text>
+            <description>reference.HURLEY1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Hurley, K., M. Sommer, J.-L. Atteia, M. Boer, T. Cline, F. Cotin, J.-C. Henoux,
+                   S. Kane, P. Lowes, M. Niel, J. Van Rooijen, and G. Vedrenne, The solar
+                   X-Ray/cosmic gamma-ray burst experiment aboard Ulysses, Astron. Astrophys.
+                   Suppl. Ser: 92, 401-410, 1992.
+            </reference_text>
+            <description>reference.HURLEYETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Metzger, A., D. Gilman, J. Luthey, K. Hurley, H. Schnopper, F. Seward, and
+                   J. Sullivan, The Detection of X-Rays from Jupiter, J. Geophys. Res., 88,
+                   7731, 1983.
+            </reference_text>
+            <description>reference.METZGERETAL1983</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>SOLAR X-RAY/COSMIC GAMMA-RAY BURST INSTRUMENT</name>
+        <type>Radiometer</type> <!--RChen/EN was Gamma Ray Detector. No obvious choice. TBD in JSH's xl file-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    (excerpted from [HURLEYETAL1992])
+ 
+    The GRB experiment was proposed in 1977 with a twin experiment
+    aboard the NASA spacecraft.  This approach had numerous
+    advantages: a carefully intercalibrated pair of experiments at
+    opposite ecliptic latitudes would survey the solar equatorial
+    regions extensively, and stereoscopic observations would be
+    relatively easy to compare with matched detectors.
+    Triangulation baselines for cosmic gamma-ray bursts would be
+    long, and the fact that two detectors in the network would be
+    out of the ecliptic plane would provide a particularly
+    favorable geometry for localization (non-coplanar detectors are
+    required for arrival time analysis).
+ 
+    With the unique mission opportunities, however, came unique
+    design constraints.  A radiation-hardened microprocessor was
+    required to survive the passage through the Jovian radiation
+    belts; few were available during the design phase of the GRB
+    experiment.  The limited performance of the unit chosen
+    dictated simplified operating modes for the experiment.
+    Electrical power aboard Ulysses is provided by a radioisotope
+    thermoelectric generator (RTG) containing 10 kg of 238Pu (about
+    10^5 Ci).  The GRB instrument would be the first cosmic
+    gamma-ray burst detector to have to operate in this unfavorable
+    background environment.  To minimize the interference from the
+    RTG, the sensors had to be mounted on the magnetometer boom,
+    and were required to be essentially amagnetic.  (More
+    precisely, the remnant field could not exceed 2 x 10^-5 G at 25
+    cm.) Finally, the mass and power allocations for the GRB
+    experiment were small compared to inner planet missions-2 kg
+    and 2.6 W, respectively.
+ 
+ 
+    Scientific Objectives
+    ---------------------
+      The Ulysses solar X-ray/cosmic gamma-ray burst instrument
+      (acronym: GRB) has three main scientific objectives.  The
+      first is the study and monitoring of solar flare X-ray
+      emission.  The second is the detection and localization of
+      cosmic gamma-ray bursts.  The third is the in-situ detection
+      of Jovian auroral X-radiation. . . .  For a review of
+      experimental data on solar flare X-rays, see [DENNIS1985],
+      [DENNIS1988].  Reviews of cosmic gamma-ray burst observations
+      have appeared in [HURLEY1988], [HURLEY1989].
+ 
+      Jovian X-radiation was first detected by [METZGERETAL1983]
+      using the Einstein satellite.  X-rays in the 0.2-3 keV band
+      were imaged with 4&apos;&apos; resolution, and provided evidence that
+      the sources of X-radiation were the Jovian north and south
+      auroral zones.  The origin of the X-rays could have been
+      either electron bremsstrahlung in the Jovian upper
+      atmosphere, or characteristic line emission from atmospheric
+      atoms excited by heavy ions precipitating from the Io torus.
+      These two models make very different predictions about the
+      hard X-ray flux in the Ulysses GRB energy range.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:gp.gpms</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GALILEO PROBE MASS SPECTROMETER for GP</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:gpms.gp</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gp</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Niemann, H.B., D.N. Harpold, S.K. Atreya, G.R. Carignan, D.M. Hunten, and T.C.
+                   Owen, Galileo Probe Mass Spectrometer experiment, Space Science Reviews volume
+                   60, pp 111-142, 1992
+            </reference_text>
+            <description>reference.NIEMANNETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Niemann, H.B., S.K. Atreya, G.R. Carignan, T.M. Donahue, J.A. Haberman, D.N.
+                   Harpold, R.E. Hartle, D.M. Hunten, W.T. Kasprzak, P.R. Mahaffy, T.C. Owen, N.W.
+                   Spencer, and S.H. Way, The Galileo Probe Mass Spectrometer: Composition of
+                   Jupiter&apos;s Atmosphere, Science 272, pp 846-849, 1996
+            </reference_text>
+            <description>reference.NIEMANNETAL1996</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>GALILEO PROBE MASS SPECTROMETER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Mass Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    The Galileo Probe Mass spectrometer (GPMS) is an instrument
+    designed to measure the chemical and isotopic composition in the
+    atmosphere of Jupiter, including the vertical variations of the
+    constituents.  The measurements were performed by in-situ
+    sampling of the ambient atmosphere in the pressure range from
+    approximately 0.5 to 21 bars.  In addition, batch sampling was
+    performed for noble gas composition measurement and isotopic
+    ratio determination, and for sensitivity enhancement of
+    non-reactive trace gases.
+ 
+    The instrument consists of a gas sampling system that is
+    connected to a quadrupole mass analyzer for molecular weight
+    analysis.  In addition two sample enrichment cells and one noble
+    gas analysis cell are part of the sampling system.  The mass
+    range of the quadrupole analyzer is from 2 amu to 150 amu.  The
+    maximum dynamic range is 1.E8.  The detector threshold ranges
+    from 10 ppmv for H2O to 1 ppbv for Kr and Xe.  It is dependent on
+    the instrument background and ambient gas composition because of
+    spectral interference.  The threshold values are lowered through
+    sample enrichment by a factor of 100 to 500 for stable
+    hydrocarbons and by a factor of 10 for noble gases.  The gas
+    sampling system and mass analyzer were sealed and evacuated until
+    the measurement sequence was initiated when the Probe entered the
+    upper atmosphere of Jupiter.  The instrument weights 13.2 kg and
+    the average power consumption is 13 W.  Since the probe is not
+    pressurized the instrument is enclosed by a pressurized housing
+    made of titanium to save weight.  Pressurization (~1 atmosphere
+    of N2) prevents corona, condensation, and collapse of the
+    electronics package during the descent.
+ 
+    The instrument followed a pre-programmed sampling sequence of
+    8192 steps with a sampling rate of two steps per second.
+ 
+    Instrument Id                      : GPMS
+    Instrument Host Id                 : GP
+    Pi PDS User Id                     : HBNIEMANN
+    Instrument Name                    : GALILEO PROBE MASS SPECTROMETER
+    Instrument Type                    : MASS SPECTROMETER
+    Instrument Manufacturer Name       : GODDARD SPACE FLIGHT CENTER
+    Build Date                         : 01-JAN-1985
+ 
+    Mass                               : 13.2 kg (29.11 lbs)
+    Outline shape                      : cylinder
+    Length                             : 45.2 cm
+    Diameter                           : 18.5 cm
+    Instrument power                   : 13 W
+    Pumps and heater power             : 12 W
+    Housing                            : pressurized
+    Housing pressure                   : 1 atm. N2
+    Data rate                          : 32 bps
+    Ambient pressure range             : 0.1 to 20 bar nominal
+    Operating temperature range        : -20C to +50C
+    Sample inlet viewing               : stagnation point
+    Sample outlet viewing              : minimum pressure point
+    Sample inlet/outlet deployment     : metal ceramic breakoff cap
+    mechanism                            pyrotechnically activated
+    Inlet system direct leaks          : 2 glass capillary arrays
+    Inlet system noble gas analysis    : 1 scrubber
+    Inlet system enrichment cells      : 2
+    Inlet system valves                : solenoid operated
+    Sensor pumps                       : non-evaporable getter
+                                         sputter ion pump
+    Ionization type                    : electron impact
+    Electron ionization energy         : 75 eV, 25 eV, 15 eV
+    Number of filaments                : 2
+    Ion source pressure range          : 1.E-13 to 1.E-4 mb
+    Mass analyzer                      : quadrupole
+    Mass range                         : 1 to 150 amu
+    Mass analyzer resolution           : unit mass, flat topped peaks
+                                         1.E-8 nominal crosstalk for
+                                         adjacent masses 1-60 amu more
+                                         crosstalk for higher masses
+                                         and ions with non-thermal
+                                         energies
+    Ion detector                       : secondary electron multiplier
+                                         pulsecounter
+    Dynamic range                      : 1.E8
+    Sample scan format                 : 1, 0.5, 0.125 amu per 0.5 sec
+                                         step
+    Electronics                        : Read Only Memory (ROM)
+                                         controlled descent sequence
+                                         8192 steps (16 bits/step)
+                                         ground command override
+                                         capability during checkout
+                                         and cruise
+ 
+    For more information on the GPMS instrument see [NIEMANNETAL1992].
+ 
+ 
+  Principal Investigator
+  ======================
+    The Principal Investigator for the GPMS instrument was Hasso B.
+    Niemann, NASA Goddard Space Flight Center.
+ 
+ 
+  Scientific Objectives
+  =====================
+    The goal of the GPMS was the in-situ measurement of the chemical
+    composition of Jupiter&apos;s upper atmosphere down in altitude to
+    ambient pressures of 20 bar or more.  The instrument was designed
+    to detect gases but any solid or liquid that can be vaporized
+    will also be detected.  With in-situ measurements and sample
+    enrichment, the GPMS provides the measurements necessary to
+    address very fundamental questions of the origin and evolution of
+    the Jovian atmosphere.  It does this by measuring the abundance
+    and isotope ratios of &apos;major&apos; (i.e.  mole fractions &gt; 1.E-07)
+    constituents as a function of altitude with high accuracy.
+    Repeated species sampling during the descent permits the
+    determination of the altitude dependence of constituent abundance
+    and allows correlation with cloud layers, and the regions of
+    thermodynamic and photochemical activity.  The best precision is
+    achieved from the most abundant gases.  To search for trace
+    constituents at concentrations on the order of 1 ppbv, a sample
+    enrichment system has been added to the basic mass spectrometer,
+    and for noble gases a purification cell is included.
+ 
+    A mass spectrometer was chosen because of its impartiality.
+    Within its mass and sensitivity range it detects everything
+    admitted to it, and it is therefore ideal for an exploratory
+    mission like the Galileo Probe to Jupiter.
+ 
+ 
+  Calibration
+  ===========
+    The GPMS was calibrated before flight as described in
+    [NIEMANNETAL1992].  The procedure uses a high-pressure flow
+    system to provide gas mixtures to the inlet system entrance to
+    simulate flight conditions.  Temperature, pressure and gas
+    composition can be varied.
+ 
+ 
+  Operational Considerations
+  ==========================
+    In order for the electronics to provide the proper voltages for
+    successful operation the temperature must be within the operating
+    limits.
+ 
+ 
+  Electronics
+  ===========
+    Commands and timing events are accepted and processed by the
+    logic system.  The primary measurement is stored in an output
+    register for interrogation by the spacecraft telemetry system.
+ 
+    The instrument is under control of the programmer that is an
+    array of Read-Only-Memory (ROM) devices.  The programmer has an
+    8192-word, 16-bit look-up table and an output register to hold
+    the 16-bit word for the current data sample.  Each one half
+    second the ROM address is incremented and the instrument is
+    configured for the next measurement.  During each of the 8192 one
+    half second intervals, six instrument variables e.g.  mass
+    number, ionization energy, inlet system configuration, etc.  can
+    be configured to any allowable state.  The application of power
+    causes the instrument to begin executing a programmed 256 step
+    test sequence.  The instrument remains locked in this test mode
+    until the SEQUENCE START command is received from the probe.
+ 
+    Mass number selection in a quadrupole is a function of amplitude
+    and frequency of the RF (Radio Frequency) signal applied to the
+    rods.  Two frequencies are used to cover the mass range from 2 to
+    150 amu.  In each frequency range, the mass number is
+    proportional to RF amplitude.  The actual mass range is slightly
+    larger than this to allow scanning past the center of the peaks
+    in order to verify tuning and resolution.  A constant resolution
+    over the mass range from 2 to 150 amu is maintained by proper
+    choice of the DC and RF voltages.
+ 
+    The electron-beam ion source requires an electrode supply of
+    well-regulated voltages and a feedback controlled emission
+    regulator.  Three different ionization energies are programmer
+    selected and are accomplished by changing the appropriate ion
+    source potentials.  The ion source is provided with two redundant
+    filaments, powered by redundant emission regulators.  This
+    implementation simplifies the design and increases reliability.
+ 
+    A high voltage supply of nominal 3 KeV operates the
+    detector-multiplier.  Command capability to optimize the
+    secondary electron multiplier gain through the selection of one
+    of four values is provided.  The ion arrival rate of the detector
+    during each one half second of the descent constitutes the
+    primary measurement.  Pulse counting ranges from a rate of about
+    3E7 counts/sec down to rates as low as 0 or 1 count per half
+    second integration.  At ion arrival rates exceeding the upper
+    count limit the instrument will be desensitized automatically.  A
+    logarithmic (base 2) compressor is used with a 9-bit mantissa and
+    4-bit exponent.  This provides a full scale of 3.3E7 per range
+    and a resolution of one part in 512.
+ 
+    The electronics system was constructed of multi-layer printed
+    circuit board technology.  Weight and size constraints for the
+    Probe required that approximately 90% of the electronics
+    components be packaged in the form of multi-layer hybrid
+    circuits.  To meet structural requirements, the circuit boards
+    were mounted on a cross-web structure enclosing the quadrupole
+    analyzer and ion detector section.
+ 
+ 
+  Location
+  ========
+    The GPMS is centered in the Probe and the two gas inlets placed
+    near the apex of the Probe exterior shell.  The corresponding
+    exit ports are placed at a minimum pressure point inside the
+    Probe.
+ 
+ 
+  Operational Modes
+  =================
+    A detailed description of the GPMS pre-programmed data sampling
+    and processing has been described in [NIEMANNETAL1992].  Each
+    step is 0.5 seconds in length.  The full 8192 step sequence is
+    shown below.  Step 0 corresponds to GPMS internal time of 0
+    seconds.
+ 
+      Event     Step #    Beginning   Length     Comments
+    Sequence    Range     Time(sec)    (sec)
+    ========   ========   =========   ======  ========================
+       A            N/A         N/A      N/A  power on initiates 256
+                                              step test cycle
+       B              0         0.0      N/A  receive Start of Sequence
+                                              command from Probe
+       B           0-81         0.0     40.5  background &amp; tuning,
+                                              instrument sealed
+       B1           0-7         0.0      3.5  tuning check (high
+                                              resolution scan mass
+                                              16 amu)
+       C        90-1809        45.0    859.5  Direct Leak 1 open
+       C1      329-1330       164.5    500.5  fill Enrichment Cell 1
+       D      1814-2159       907.0    172.5  Direct Leak 1 closed,
+                                              measure gas background
+                                              while pumping down
+       D1     2128-2159      1064.0     15.5  tuning check (high
+                                              resolution scan mass
+                                              28,44,16,4 amu)
+       E      2164-2450      1082.0    143.0  analyze contents of rare
+                                              gas cell, reactive gases
+                                              removed by getter
+       F      2465-3095      1232.5    315.0  analyze contents of
+                                              Enrichment Cell 1; cell
+                                              heated to release
+                                              ad/absorbed contents
+       G      3100-3480      1550.0    190.0  close off Enrichment Cell
+                                              1, measure gas background
+                                              while pumping down
+       H      3492-8192      1746.0   2350.0  Direct Leak 2 open
+       H1     3565-3758      1782.5     96.5  fill Enrichment Cell 2
+       H2     4446-5329      2223.0    441.5  analyze contents of
+                                              Enrichment Cell 2; cell
+                                              heated to release
+                                              ad/absorbed contents;
+                                              contents ADDED to Direct
+                                              Leak 2 flow
+       H3     5640-6015      2820.0    187.5  tuning check (high
+                                              resolution scan mass
+                                              2-46 amu)
+       H4     6168-6535      3084.0    183.5  tuning check (high
+                                              resolution scan mass
+                                              47-90 amu)
+       H5     6688-6847      3344.0     79.5  tuning check (high
+                                              resolution scan mass
+                                              121-140 amu)
+       ***         6851      3425.5      N/A  last step of Probe descent
+                                              data
+       H6          8192      4096.0      N/A  last step in programmed
+                                              sequence
+       I              0      4096.5      N/A  go back to 256 step cycle
+ 
+    Most data were taken at 75 eV electron impact energy but data at
+    lower electron energy were also taken.
+ 
+    25 eV data      15 eV data
+    Step range      Step range
+    ==========      ==========
+    2346-2364       2294-2302
+    3794-3959       2615-2773
+    4161-4210       3960-3967
+    4977-5085       4104-4119
+                    4211-4119
+                    4608-4767
+ 
+    The detailed mass sequence is variable with selected mass groups,
+    unit mass scans from 2-50 and higher resolution (1/8 amu) scans.
+    The detailed final descent sequence is contained in the count
+    data file.
+ 
+ 
+  Subsystems
+  ==========
+    Several subsystems are part of the GPMS instrument:
+ 
+    A) Gas sample inlet and gas processing system
+    B) Pressure reduction system
+    C) Ion source
+    D) Quadrupole mass analyzer
+    E) Detector
+    F) Pumping System
+ 
+    A complete description can be found in [NIEMANNETAL1992].
+ 
+    A) Gas sample inlet and sample processing system
+ 
+    The inlet system consists of two fully self-contained units that
+    operate in time sequence as the probe descends through the
+    atmosphere.  Both units contain an ambient atmosphere flow system
+    whose gas inlet side is placed near the apex of the probe, and
+    whose exit ports are placed at the minimum pressure point inside
+    of the probe.  Ambient pressure at the exit port is assumed as a
+    worst case condition.  The pressure difference (approximately 6
+    millibar) between the stagnation point and the low pressure point
+    causes a flow past the pressure reducing leaks.  Inlet and outlet
+    ports are sealed by metal-ceramic tube and kept under vacuum
+    prior to entry.  They are opened in sequence after entry by
+    redundant pyrotechnic actuators.  The materials used for the
+    inlet system plumbing are primarily nickel and inconel.  A
+    silinizing process passivated the surfaces in contact with the
+    gas.  The solenoid-operated microvalves are manufactured by Aker
+    Industries of Oakland, California.  The inlet system also has
+    heaters to warm the gas and evaporate any condensates that might
+    clog the inlets.
+ 
+    The sample enrichment systems are an integral part of the ambient
+    atmosphere flow systems.  Atmospheric gas, after passing by the
+    direct flow capillary leaks, is also conducted to sample
+    enrichment cells.  The enrichment cells contain
+    zirconium-graphite getters for binding the reactive gases and a
+    porous carbon adsorbing material, Carbosieve (80-100 mesh,)
+    chosen to adsorb complex hydrocarbons.  The gas purification cell
+    is a small volume of gas, isolated by microvalves, and exposed to
+    a getter.  It removes the reactive gases, and allows a pure noble
+    gas analysis.  The hydrogen pressure in the volume is reduced by
+    approximately by five orders of magnitude and the remaining
+    partial pressure is determined by the equilibrium vapor pressure
+    of the hydrogen dissolved in the getter.  The gases absorbed by
+    Carbosieve Enrichment Cells are released by a programmed heating
+    cycle during the probe descent.  During these cycles the cells
+    are isolated from the flow system by the solenoid operated micro
+    valves and connected through separate capillary leaks to the
+    ionization region.  Two independent leak systems are employed for
+    sample enrichment.  The sample enrichment leaks for Direct Leak 1
+    can be isolated from the ion source by redundant ball closures to
+    prevent the ion source pressure from exceeding its optimum value,
+    and to permit repeated observation of system background pressure
+    after the initial sampling and enrichment sequences are
+    completed.  The second independent inlet system is opened to the
+    atmosphere after the first system has been isolated from the ion
+    source.  Prior to analysis the enrichment cells are heated to
+    approximately 200C for 5 minutes to desorb the gases.
+ 
+    B) Pressure reduction system
+ 
+    A small fraction of the gas flowing through the gas inlet system
+    is conducted through the pressure reducing leaks into the
+    ionization region.  The leaks, which are arrays of micron size
+    glass capillaries (typically seven capillaries per leak) with
+    inside diameters ranging from 1.5um to 6um, have a conductance
+    chosen so that the pressure in the ion source region does not
+    exceed 1.E-04 mb.  The Galileo Electro Optics Corp.  of
+    Sturbridge, Massachusetts fabricated the capillaries in a
+    proprietary process.  The gas flow path for Direct Leak 2 was
+    designed to minimize clogging of the capillary array by
+    condensable gases (e.g.  water droplets) through the use of a
+    droplet trap.  A similar feature was also designed for Direct
+    Leak 1.
+ 
+    C) Ion source
+ 
+    The importance of minimizing gas-surface interactions in the high
+    vacuum side of the sensor after the pressure reduction stage
+    requires that the ion source be very compact and an integral part
+    of the sample inlet system.  Electron impact ionization is used
+    in a miniature, dual filament ion source.  The second filament
+    provides redundancy and is turned on automatically should the
+    first filament break or burn out.  A collimated electron beam is
+    directed through the ionization region past the end of capillary
+    Direct Leak 2.  Sample distortion caused by gas-surface
+    interactions is minimized by directing the high-pressure flow
+    against the capillary leak and by locating the leaks in the ion
+    source so that the gas leaves the capillaries on the ion source
+    side directly through the ionizing electron beam.  The gas
+    emitted from the capillaries can now be ionized and analyzed
+    without experiencing previous surface collisions with the ion
+    source walls.  Direct Leak 1, the leak for the Enrichment Cell 1
+    and noble gas purification system are connected via short tubes
+    to the ionization region.  Chemical reactions on the surfaces of
+    the hot filament are minimized by isolation through narrow slits
+    and by separate pumping of the filament region.  The electron
+    beam energy is varied to permit species identification and
+    discrimination by observing spectra of fragmentation patterns at
+    several different electron energies.  Ions are focused into the
+    mass analyzer by a 3-element electrostatic ion lens system.
+ 
+    The pumping speeds in the flight system are limited by weight and
+    power restrictions that do not permit instant removal of the
+    gases from the ion source after they initially pass the
+    ionization region for Direct Leak 2.  A component of this
+    randomized gas contributes to the measurement.  The ratio of the
+    direct beaming to the randomized component strongly depends on
+    the system geometry.  A ratio of 5:1 was achieved with the ion
+    source design of the flight unit.  The most critical parameters
+    are the distance between the electron beam and the capillary
+    exit, and the cross section of the electron beam.  The
+    high-pressure operation of the mass spectrometer ion source is
+    limited by mean free path considerations leading to losses due to
+    ion molecule collisions.  A higher density in the ionization
+    section can be tolerated as a result of beaming because the
+    ionization volume in which this high density exists is extremely
+    small, having only a small effect on the ion path.
+ 
+    D) Quadrupole Mass Analyzer
+ 
+    The quadrupole analyzer filters the ion beam produced by the ion
+    source, transmitting ions of a chosen charge to mass ratio only.
+    The transmitted ions are focused onto a secondary electron
+    multiplier ion detector.  The radius of the quadrupole field is 5
+    mm and the field length is 150 mm.  Mass selection is
+    accomplished by application of radio frequency and static
+    potentials of varying magnitude to diagonal rod pairs.  The
+    selected mass value is determined by the relation m =
+    0.55xV/(fxf) where m is the mass in amu, V is the amplitude of
+    the applied radio-frequency voltage and f is the frequency in
+    MHz.  To allow voltage scanning over a sufficient amplitude
+    range, two separate radio frequencies were used, 2.83 MHz for 2
+    to 19 amu and 1.13 MHz for 20 to 150 amu.  The only dimensionally
+    critical element in the system is the precision rod assembly.
+    The rigid and compact design has been proven to be extremely
+    stable in previous flight experiments, and in vibration and
+    thermal testing.
+ 
+    E) Detector
+ 
+    A continuous dynode secondary electron multiplier detected ions
+    exiting the analyzer.  The multiplier was a rugged version of the
+    standard Model 4770 manufactured by Galileo Electro Optics of
+    Sturbridge, MA.  Charged pulses at the anode of the multiplier
+    were amplified and counted.  The background noise of the
+    multiplier was approximately one count per minute.  The upper
+    count rate of approximately 3E7 counts/sec was limited by the
+    multiplier anode pulse width.
+ 
+    F) Pumping system
+ 
+    The pumping system establishes a flow of sample gas though the
+    ion source at a particular pressure when a sampling device is
+    opened, and, after analysis and closure, removes the sample from
+    the ion source region.  Non-evaporable getter pumps and a sputter
+    ion pump are used.  The getter pumps are activated prior to
+    instrument delivery and required no further Probe power.  The
+    sputter ion pump requires only electrical power for operation and
+    has no moving parts.  Their use in the GPMS requires care,
+    because hydrogen and helium are the major gases in the atmosphere
+    of Jupiter.  Getter materials absorb hydrogen at a very high rate
+    but helium is absorbed very little, if any.  Sputter ion pumps
+    also pump hydrogen with high efficiency but hydrocarbons are
+    synthesized in the pump by reactions of hydrogen ions with carbon
+    trapped in the pump surfaces.  The effective pumping speed for
+    helium is usually small because of the low ionization cross
+    section of helium and the requirement that helium be buried
+    physically in the pump elements since it does not become
+    chemically bound or to go into solution like hydrogen.  This
+    requires sputtering of comparatively large amounts of cathode
+    material which tends to release larger quantities of gases
+    previously entrapped in the pump surfaces.  To eliminate the
+    synthesis of hydrocarbons in the sputter pump, a cascaded pump
+    system is used.  A high capacity baffled getter pump is operated
+    in cascade with a sputter ion pump.  The gas flow from the mass
+    spectrometer into the getter pump is conductance limited to
+    maintain a constant pumping speed during the measurement phase.
+    The getter pump absorbs hydrogen and other reactive gases before
+    they can reach the sputter pump.  Gases emitted by the pump must
+    pass back through the getter pump first before they can enter the
+    mass spectrometer.  Thus, their contribution to the gas in the
+    ion source gas is significantly reduced.  The preceding getter
+    chamber buffers small sputter pump instabilities.
+ 
+    The getter material used is sintered zirconium-graphite available
+    from SAES Getter of Milan, Italy (type ST171).  They are
+    activated by heating to approximately 900C for 45 minutes while
+    being connected to a laboratory pumping system.  The cathode
+    materials of the sputter ion pump are tantalum and titanium.  The
+    electrode geometry has been optimized to enhance the pumping
+    speed for helium.  Pumping speed is limited to about 2 liters/sec
+    at the flange.  The magnetic field of the sputter ion pump is 0.2
+    Tesla over an area of 35 square centimeters.  The yoke is
+    designed to minimize the stray field and magnetic shielding is
+    provided to the ion source housing to cancel the stray field of
+    the pump because of its location directly above the ion source.
+ 
+ 
+  Measured Parameters
+  ===================
+    The ion arrival rate from the mass analyzer into the detector
+    during each one half second of the descent constitutes the
+    primary measurement.  At ion arrival rates exceeding the upper
+    count limit of the discriminator/pulse-counter system the signal
+    is desensitized automatically.  The descent sequence also
+    contains steps where a desensitized mode has been pre-programmed.
+    The counting register value can be expressed either as
+    counts/sample-integration-period or counts/sec.
+
+        </description>
+    </Instrument>
+</Product_Context>

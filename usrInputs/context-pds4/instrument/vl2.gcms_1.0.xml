@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1
+            https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd
+            http://pds.nasa.gov/pds4/ctli/v1 
+            https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:gcms.vl2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Viking Lander 2 Gas Chromatograph Mass Spectrometer (GCMS)</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>GCMS</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-11-16</modification_date>
+                <version_id>1.0</version_id>
+                <description>First version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vl2</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1029/JS082i028p04641</doi>
+            <reference_text>
+                  Biemann, K., J. Oro, P. Toulmin III, L.E. Orgel, A.O. Nier,
+                  D.M. Anderson, P.G. Simmonds, D. Flory, A.V. Diaz, D.R.
+                  Rushneck, J.E. Biller, and A.L. Lafleur, The search for
+                  organic substances and inorganic volatile compounds in the
+                  surface of Mars, Journal of Geophysical Research, 82, No.
+                  28, 4641-4658, 1977.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Gas Chromatograph Mass Spectrometer (GCMS)</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Mass Spectrometer</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>
+            The Gas Chromatograph Mass Spectrometer (GCMS) was an instrument
+            carried on board the Viking Lander 2 spacecraft. It performed a
+            molecular analysis experiment by searching for chemical compounds
+            in the upper surface layer of Mars and measuring atmospheric
+            composition near the surface. GCMS had high sensitivity, high
+            structural specificity, and broad applicability to a wide range of
+            compounds. Substances were vaporized from the surface material by
+            a heating process while CO2 (labeled with C-13) swept through. The
+            material was then carried into a Tenax gas-chromatographic column
+            that was swept with hydrogen as a carrier gas. While passing
+            through the column, substances were separated by different degrees
+            of retention. The residual stream moved into the mass spectrometer
+            (after hydrogen was removed by hydrogen-only-permeable palladium),
+            and a mass spectrum (masses from 12 to 200 micron) was obtained
+            every 10 seconds for the 84 minutes of the gas chromatogram. In
+            some cases, the same sample was reheated at a higher temperature
+            and analyzed to detect less volatile materials. For atmospheric
+            measurements, gases were directly introduced into the mass
+            spectrometer, bypassing the gas chromatograph column.
+
+			This description was provided by the NASA Space Science Data 
+			Coordinated Archive (NSSDCA).
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:lp.aps</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ALPHA PARTICLE SPECTROMETER for LP</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.lp</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Binder, A.B., W.C. Feldman, G.S. Hubbard, A.S. Konopliv, R.P. Lin, M.H. Acuna,
+                   and L.L. Hood, Lunar Prospector searches for polar ice, a metallic core, gas
+                   release events, and the moon&apos;s origin, Eos, Trans. AGU, 79, 97, 1998.
+            </reference_text>
+            <description>reference.BINDERETAL1998</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ALPHA PARTICLE SPECTROMETER</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+ 
+  The Lunar Prospector Alpha Particle Spectrometer (APS) consists of
+  five pairs of 3 cm by 3 cm square ion-implant silicon detectors, each
+  pair placed on one face of a cube.  They are covered by thin,
+  Al-coated polypropylene foils to exclude sunlight. The sensors have a
+  spectral resolution of about 100 KeV at 5.5 MeV.  The combined
+  field-of-view for the 5 sensor pairs is nearly 3-pi steradians, with
+  the only blind spot being in the direction of the spacecraft bus. The
+  APS has a mass of 4 kg and uses about 7 w of power [BINDERETAL1998].
+ 
+ 
+  Science Objectives
+  ==================
+ 
+  A major science objective of the Alpha Particle Spectrometer is
+  measure the number and distribution of transient lunar outgassing
+  events and their role as sources of the tenuous lunar atmosphere. The
+  experiment will investigate possible correlations of outgassing
+  events with locations of young impact craters and tectonic features.
+ 
+  Platform Mounting Descriptions
+  ==============================
+ 
+  The APS is mounted on one of the three Lunar Prospector booms.  The
+  Alpha Particle Spectrometer is mounted on a chassis that is shared
+  with the Neutron Spectrometer.
+ 
+  Operational Considerations
+  ==========================
+ 
+  The APS searches for gas release events by detecting alpha particles
+  produced by the decay of gaseous Rn-222 and solid Po-210.
+ 
+  Operation and Sampling Modes
+  ============================
+ 
+  The Alpha Particle Spectrometer is designed to operate continuously
+  during the Lunar Prospector Primary Mission.
+ 
+  Principal Investigator
+  ======================
+ 
+  The Co-I and spectrometer group leader for the Lunar Prospector Alpha
+  Particle Spectrometer experiment is Dr. William Feldman of Los Alamos
+  National Laboratory.
+
+        </description>
+    </Instrument>
+</Product_Context>

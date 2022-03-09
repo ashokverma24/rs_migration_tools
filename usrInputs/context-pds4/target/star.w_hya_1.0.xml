@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.w_hya</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>W Hydrae</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>W Hya</alternate_title></Alias>
+      <Alias><alternate_title>Variable Star W Hya</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>W Hya</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASAS J134902-2822.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BDS 6635 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J13491-2822A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-27 9429</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-27 4792</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FAUST 3909</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 5220</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 18659</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 8148</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 06728-00019</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 120285</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 67419</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 67419</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 13434-2752 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 13462-2807</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -30207</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSE J134902.0-282202</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JCMTSF J134902.0-282202</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2429</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J13490199-2822034</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 262109</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1650</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 181981</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 25345</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 11878</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 6728-19-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J13490-2822A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 11855</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 118 8744</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 1343-27</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 6177092406867764352</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>W Hydrae</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 13 hours 49 minutes 02.0018313132 seconds
+Declination, ICRS coord, ep=J2000: -28 degrees 22 minutes 03.532006894 seconds
+    </description>
+  </Target>
+</Product_Context>

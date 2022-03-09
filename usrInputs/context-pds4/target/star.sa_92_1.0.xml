@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1900.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1900.xsd">
+    
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.sa_92</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>SA 92</title>
+    <information_model_version>1.9.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Landolt SA 92</alternate_title></Alias>
+    </Alias_List>
+    <Citation_Information>
+      <author_list>Arlo U. Landolt</author_list>
+      <publication_year>1992</publication_year>
+      <description>
+Title: UBVRI photometric standard stars in the magnitude range 11.5-16.0 around the celestial equator
+Journal: Astronomical Journal (ISSN 0004-6256), vol. 104, no. 1, July 1992, p. 340-371, 436-491. Research supported by Space Telescope Science Institute.
+DOI: 10.1086/116242
+      </description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2018-02-07</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>SA 92</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 00 hours 55 minutes 03.80 seconds
+Declination, ICRS coord, ep=J2000: +00 degrees 47 minutes 13.2 seconds
+    </description>
+  </Target>
+</Product_Context>
+

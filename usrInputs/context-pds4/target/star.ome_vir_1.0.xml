@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.ome_vir</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Omega Virginis</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>1 Virginis</alternate_title></Alias>
+      <Alias><alternate_title>Omega Vir</alternate_title></Alias>
+      <Alias><alternate_title>ome Vir</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1 Vir</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ome Vir</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+08 1499</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+08 2532</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 1760</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DO 3130</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EIC 290</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 2932</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 15971</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 7072</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00101153</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 00857-00983</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 101153</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 56779</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 56779</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 4483</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 11358+0824</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +10243</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J11382758+0808034</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2693</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2693.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 158057</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1502</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 118965</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 22045</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* P 753</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 857-983-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 10500</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 17246</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 10219</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 8 5867</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 3910931906170808704</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Omega Virginis</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 11 hours 38 minutes 27.6072679 seconds
+Declination, ICRS coord, ep=J2000: +08 degrees 08 minutes 03.466343 seconds
+    </description>
+  </Target>
+</Product_Context>

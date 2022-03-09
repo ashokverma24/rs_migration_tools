@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Class_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:class:0001_nasa_pds_1.pds.bundle_member_entry_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>Bundle_Member_Entry</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Class_Definition</product_class>
+    </Identification_Area>
+    <DD_Class_Full>
+        <name>Bundle_Member_Entry</name>
+        <version_id>1.10</version_id>
+        <local_identifier>urn:nasa:pds:context:class:0001_nasa_pds_1.pds.bundle_member_entry_1a00</local_identifier>
+        <steward_id>pds</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <submitter_name>pds</submitter_name>
+        <definition>The Bundle Member Entry class provides a member reference to a collection.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <abstract_flag>false</abstract_flag>
+        <DD_Association>
+           <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1:pds:bundle_member_entry:pds:lid_reference</local_identifier>
+           <reference_type>attribute_of</reference_type>
+           <minimum_occurrences>1</minimum_occurrences>
+           <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+           <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1:pds:bundle_member_entry:pds:lidvid_reference</local_identifier>
+           <reference_type>attribute_of</reference_type>
+           <minimum_occurrences>1</minimum_occurrences>
+           <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+           <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1:pds:bundle_member_entry:pds:member_status</local_identifier>
+           <reference_type>attribute_of</reference_type>
+           <minimum_occurrences>1</minimum_occurrences>
+           <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+           <local_identifier>urn:nasa:pds:context:attribute:0001_nasa_pds_1:pds:bundle_member_entry:pds:reference_type</local_identifier>
+           <reference_type>attribute_of</reference_type>
+           <minimum_occurrences>1</minimum_occurrences>
+           <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <Terminological_Entry>
+            <name>Bundle_Member_Entry</name>
+            <definition>The Bundle Member Entry class provides a member reference to a collection.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+    </DD_Class_Full>
+</Product_Class_Definition>
+

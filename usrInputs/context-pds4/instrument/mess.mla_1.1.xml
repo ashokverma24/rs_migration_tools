@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mla.mess</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>Mercury Laser Altimeter for MESSENGER</title>
+        <information_model_version>1.10.1.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2018-06-05</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Minor updates to support PDS3 to PDS4 migrations.
+                    Added DOI for reference, removed optional attributes with N/A as 
+                    values, added intstrument subtype, and did edits to the
+                    description field.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mess</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>https://doi.org/10.1007/s11214-007-9273-4</doi>
+            <reference_text>
+                   Cavanaugh, J.F., J.C. Smith, X. Sun, A.E. Bartels, L. Ramos- Izquierdo, D.J.
+                   Krebs, A.M. Novo-Gradac, J.F. McGarry, R. Trunzo, J.L. Britt, J. Karsh, R.B.
+                   Katz, A. Lukemire, R. Szymkiewicz, D.L. Berry, J.P. Swinski, G.A. Neumann, M.T.
+                   Zuber, and D.E. Smith, The Mercury Laser Altimeter instrument for the MESSENGER
+                   mission, Space Science Reviews, 131, 451-479, 2007.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>Mercury Laser Altimeter</name>
+        <type>Altimeter</type>
+        <subtype>Laser Altimeter</subtype>
+        <description>
+          The Mercury Laser Altimeter (MLA) was one of the primary instruments
+          on NASA's MErcury Surface, Space ENvironment, GEochemistry and
+          Ranging (MESSENGER) mission, under NASA's Discovery Program. MLA
+          ranged to the surface only during the periapsis of the 12-hour
+          orbit, limited by its 1800-km maximum range. During the final
+          months of the mission, the spacecraft altitude was reduced and MLA
+          took measurements at altitudes as low as 25 km. 
+          
+          The MLA was a bi-static system, meaning that it consisted of separate
+          transmitter and receiver systems. The transmitter used a diode-
+          pumped, Nd:YAG slab laser. The laser output was 20 mJ per pulse at
+          1064-nm wavelength. The instrument measured the time required for
+          the light to reach the surface and return. 
+          
+          MLA performed active and passive radiometric measurements in a
+          narrow spectral band centered at 1064 nm. The active measurement
+          employed a dual-threshold measurement of pulse width to infer the
+          area and width of the return pulse. The pulse area, together with a
+          transmit energy monitor, provided the reflectivity of the target
+          within a 0.08-mrad-diameter laser spot. The passive measurement
+          employed the noise counters and threshold settings on the detector
+          subsystem to infer radiance from a 0.4-mrad-diameter field of view. 
+        </description>
+    </Instrument>
+</Product_Context>

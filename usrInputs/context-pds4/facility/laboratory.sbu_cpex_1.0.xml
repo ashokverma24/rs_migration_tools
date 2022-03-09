@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:laboratory.sbu_cpex</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Center for Planetary Exploration at Stony Brook University</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>sbu_cpex</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-04-22</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial creation of the context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:sbu_cpex.raman</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:sbu_cpex.ftir</lid_reference>
+            <reference_type>facility_to_instrument</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>Glotch, T. D., Rogers, A. D., and Hurowitz, J. A., Spectroscopy and Geochemistry 
+                at the Stony Brook University Center for Planetary Exploration, 47th LPSC, #1922, 2016. 
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Facility>
+        <name>Center for Planetary Exploration at Stony Brook University</name>
+        <type>Laboratory</type>
+        <description>
+            The  Center for Planetary Exploration at Stony Brook University and its constituent labs offer a 
+            range of geochemical and spectroscopic characterization capabilities and data analysis facilities 
+            of interest to the planetary science community. These include sample preparation for multiple 
+            types of mineral and rock spectroscopy, a planetary geochemistry lab including X-ray fluorescence 
+            and Inductively-Coupled Plasma Optical Emission Spectrometer; a Vibrational Spectroscopy Laboratory 
+            with mid-infrared emissivity, reflectance, and microscopy capability, visible to near infrared 
+            reflectance capability, and confocal Raman microscopy; and an Earth and Planetary Remote Sensing 
+            Lab with field equipment and computing resources. Contact information as of this document time of 
+            publication: Joel Hurowitz (joel.hurowitz@stonybrook.edu) for information regarding geochemical 
+            characterization of samples, Timothy Glotch (timothy.glotch@stonybrook.edu) or Deanne Rogers 
+            (Deanne.rogers@stonybrook.edu) for information regarding infrared or Raman spectroscopic 
+            characterization.   
+        </description>
+    </Facility>
+</Product_Context>

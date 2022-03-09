@@ -1,0 +1,201 @@
+<?xml version="1.0" ?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1         https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:target</logical_identifier>
+        <version_id>6.0</version_id>
+        <title>urn:nasa:pds:context:target:* context products</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Collection</product_class>
+        <Citation_Information>
+            <author_list>PDS Data Design Working Group (DDWG)</author_list>
+            <editor_list>PDS Change Control Board (CCB)</editor_list>
+            <publication_year>2021</publication_year>
+            <description>The PDS4 Context Products for Targets, e.g. planet Mars, asteroid 101955 Bennu</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-12-08</modification_date>
+                <version_id>6.0</version_id>
+                <description>
+added:
+  P,urn:nasa:pds:context:target:asteroid.65803_didymos::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.alpha_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.beta_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.delta_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.epsilon_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.eta_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.five_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.four_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.gamma_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.lambda_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.rings::1.1
+  P,urn:nasa:pds:context:target:ring.uranus.six_ring::1.0
+  P,urn:nasa:pds:context:target:ring.uranus.zeta_ring::1.0
+  P,urn:nasa:pds:context:target:satellite.65803_didymos.dimorphos::1.0</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-09-16</modification_date>
+                <version_id>5.0</version_id>
+                <description>
+added:
+  P,urn:nasa:pds:context:target:comet.101p_chernykh::1.0
+  P,urn:nasa:pds:context:target:comet.102p_shoemaker_1::1.0
+  P,urn:nasa:pds:context:target:comet.109p_swift-tuttle::1.0
+  P,urn:nasa:pds:context:target:comet.116p_wild_4::1.0
+  P,urn:nasa:pds:context:target:comet.126p_iras::1.0
+  P,urn:nasa:pds:context:target:comet.161p_hartley-iras::1.0
+  P,urn:nasa:pds:context:target:comet.16p_brooks_2::1.0
+  P,urn:nasa:pds:context:target:comet.23p_brorsen-metcalf::1.0
+  P,urn:nasa:pds:context:target:comet.27p_crommelin::1.0
+  P,urn:nasa:pds:context:target:comet.28p_neujmin_1::1.0
+  P,urn:nasa:pds:context:target:comet.31p_schwassmann-wachmann_2::1.0
+  P,urn:nasa:pds:context:target:comet.38p_stephan-oterma::1.0
+  P,urn:nasa:pds:context:target:comet.43p_wolf-harrington::1.0
+  P,urn:nasa:pds:context:target:comet.49p_arend-rigaux::1.0
+  P,urn:nasa:pds:context:target:comet.68p_klemola::1.0
+  P,urn:nasa:pds:context:target:comet.69p_taylor::1.0
+  P,urn:nasa:pds:context:target:comet.85p_boethin::1.0
+  P,urn:nasa:pds:context:target:comet.94p_russell_4::1.0
+  P,urn:nasa:pds:context:target:comet.97p_metcalf-brewington::1.0
+  P,urn:nasa:pds:context:target:comet.98p_takamizawa::1.0
+  P,urn:nasa:pds:context:target:comet.c1973_e1_kohoutek::1.0
+  P,urn:nasa:pds:context:target:comet.c1975_v1_west::1.0
+  P,urn:nasa:pds:context:target:comet.c1977_r1_kohler::1.0
+  P,urn:nasa:pds:context:target:comet.c1978_h1_meier::1.0
+  P,urn:nasa:pds:context:target:comet.c1979_m1_bradfield::1.0
+  P,urn:nasa:pds:context:target:comet.c1979_s1_meier::1.0
+  P,urn:nasa:pds:context:target:comet.c1979_y1_bradfield::1.0
+  P,urn:nasa:pds:context:target:comet.c1980_e1_bowell::1.0
+  P,urn:nasa:pds:context:target:comet.c1980_o1_cernis-petrauskas::1.0
+  P,urn:nasa:pds:context:target:comet.c1980_v1_meier::1.0
+  P,urn:nasa:pds:context:target:comet.c1980_y1_bradfield::1.0
+  P,urn:nasa:pds:context:target:comet.c1980_y2_panther::1.0
+  P,urn:nasa:pds:context:target:comet.c1981_g1_elias::1.0
+  P,urn:nasa:pds:context:target:comet.c1981_h1_bus::1.0
+  P,urn:nasa:pds:context:target:comet.c1982_m1_austin::1.0
+  P,urn:nasa:pds:context:target:comet.c1983_h1_iras-araki-alcock::1.0
+  P,urn:nasa:pds:context:target:comet.c1983_j1_sugano-saigusa-fujikawa::1.0
+  P,urn:nasa:pds:context:target:comet.c1983_o2_iras::1.0
+  P,urn:nasa:pds:context:target:comet.c1983_r1_shoemaker::1.0
+  P,urn:nasa:pds:context:target:comet.c1984_n1_austin::1.0
+  P,urn:nasa:pds:context:target:comet.c1984_u1_shoemaker::1.0
+  P,urn:nasa:pds:context:target:comet.c1984_u2_shoemaker::1.0
+  P,urn:nasa:pds:context:target:comet.c1984_v1_levy-rudenko::1.0
+  P,urn:nasa:pds:context:target:comet.c1985_k1_machholz::1.0
+  P,urn:nasa:pds:context:target:comet.c1985_r1_hartley-good::1.0
+  P,urn:nasa:pds:context:target:comet.c1985_t1_thiele::1.0
+  P,urn:nasa:pds:context:target:comet.c1986_p1_wilson::1.0
+  P,urn:nasa:pds:context:target:comet.c1986_v1_sorrells::1.0
+  P,urn:nasa:pds:context:target:comet.c1987_b1_nishikawa-takamizawa-tago::1.0
+  P,urn:nasa:pds:context:target:comet.c1987_p1_bradfield::1.0
+  P,urn:nasa:pds:context:target:comet.c1987_w2_furuyama::1.0
+  P,urn:nasa:pds:context:target:comet.c1988_a1_liller::1.0
+  P,urn:nasa:pds:context:target:comet.c1989_q1_okazaki-levy-rudenko::1.0
+  P,urn:nasa:pds:context:target:comet.c1989_x1_austin::1.0
+  P,urn:nasa:pds:context:target:comet.c1989_y1_skorichenko-george::1.0
+  P,urn:nasa:pds:context:target:comet.c1990_n1_tsuchiya-kiuchi::1.0
+  P,urn:nasa:pds:context:target:comet.c1991_b1_shoemaker-levy::1.0
+  P,urn:nasa:pds:context:target:comet.c1991_t2_shoemaker-levy::1.0
+  P,urn:nasa:pds:context:target:comet.d1978_r1_haneda-campos::1.0</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-08-11</modification_date>
+                <version_id>4.0</version_id>
+                <description>
+added:
+  P,urn:nasa:pds:context:target:comet.105p_singer_brewster::1.0
+  P,urn:nasa:pds:context:target:comet.121p_shoemaker-holt_2::1.0
+  P,urn:nasa:pds:context:target:comet.123p_west-hartley::1.0
+  P,urn:nasa:pds:context:target:comet.132p_helin-roman-alu_2::1.0
+  P,urn:nasa:pds:context:target:comet.41p_tuttle-giacobini-kresak::1.0
+  P,urn:nasa:pds:context:target:comet.48p_johnson::1.0
+  P,urn:nasa:pds:context:target:comet.62p_tsuchinshan_1::1.0
+  P,urn:nasa:pds:context:target:comet.65p_gunn::1.0
+  P,urn:nasa:pds:context:target:comet.6p_d_arrest::1.0
+  P,urn:nasa:pds:context:target:comet.73p_schwassmann-wachmann_3-b::1.0
+  P,urn:nasa:pds:context:target:comet.73p_schwassmann-wachmann_3-c::1.0
+  P,urn:nasa:pds:context:target:comet.78p_gehrels_2::1.0
+  P,urn:nasa:pds:context:target:comet.88p_howell::1.0
+  P,urn:nasa:pds:context:target:comet.c2003_k4_linear::1.0
+  P,urn:nasa:pds:context:target:comet.c2003_t3_tabur::1.0
+  P,urn:nasa:pds:context:target:comet.c2003_t4_linear::1.0
+  P,urn:nasa:pds:context:target:comet.c2004_b1_linear::1.0
+  P,urn:nasa:pds:context:target:comet.c2004_q2_machholz::1.0
+  P,urn:nasa:pds:context:target:comet.c2006_p1_mcnaught::1.0
+  P,urn:nasa:pds:context:target:comet.c2006_q1_mcnaught::1.0
+  P,urn:nasa:pds:context:target:comet.c2007_n3_lulin::1.0
+  P,urn:nasa:pds:context:target:comet.c2008_t2_cardinal::1.0</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-06-21</modification_date>
+                <version_id>3.0</version_id>
+                <description>
+added:
+  P,urn:nasa:pds:context:target:asteroid.16_psyche::1.0
+  P,urn:nasa:pds:context:target:plasma_cloud.jupiter.io_torus::1.0</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-05-13</modification_date>
+                <version_id>2.0</version_id>
+                <description>
+added:
+  P,urn:nasa:pds:context:target:asteroid.162173_ryugu::1.0
+  P,urn:nasa:pds:context:target:astrophysical.general_relativity::1.0</description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2021-01-13</modification_date>
+                <version_id>1.0</version_id>
+                <description>This is the initial version of the Collection product.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context</lid_reference>
+            <reference_type>collection_to_bundle</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Collection>
+        <collection_type>Context</collection_type>
+    </Collection>
+    <File_Area_Inventory>
+        <File>
+            <file_name>Collection_target_v6.0.csv</file_name>
+            <creation_date_time>2021-12-08T23:26:29Z</creation_date_time>
+            <file_size unit="byte">112482</file_size>
+            <records>1796</records>
+            <md5_checksum>4c407f9e6a936cb83ac10f8b8664a58d</md5_checksum>
+        </File>
+        <Inventory>
+            <offset unit="byte">0</offset>
+            <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+            <records>1796</records>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <field_delimiter>Comma</field_delimiter>
+            <Record_Delimited>
+                <fields>2</fields>
+                <groups>0</groups>
+                <maximum_record_length unit="byte">81</maximum_record_length>
+                <Field_Delimited>
+                    <name>Member Status</name>
+                    <field_number>1</field_number>
+                    <data_type>ASCII_String</data_type>
+                    <maximum_field_length unit="byte">1</maximum_field_length>
+                    <field_format>%1s</field_format>
+                    <description>Member Status of the files in the collection.</description>
+                </Field_Delimited>
+                <Field_Delimited>
+                    <name>LIDVID_LID</name>
+                    <field_number>2</field_number>
+                    <data_type>ASCII_LIDVID_LID</data_type>
+                    <maximum_field_length unit="byte">255</maximum_field_length>
+                    <field_format>%-255s</field_format>
+                    <description>LIDVIDs of the files.</description>
+                </Field_Delimited>
+            </Record_Delimited>
+            <reference_type>inventory_has_member_product</reference_type>
+        </Inventory>
+    </File_Area_Inventory>
+</Product_Collection>

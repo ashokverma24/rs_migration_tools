@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"         schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.sch"  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds ="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=
+    "http://pds.nasa.gov/pds4/pds/v1    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd
+     http://pds.nasa.gov/pds4/ctli/v1   https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:dsn.media</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Deep Space Station Media Calibration Subsystem</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-05-10</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial version of the DSN Median Calibration Subsystem context product.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.810-005</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+                This is the DSN Telecommunications Link Design Handbook. The reference is 
+                to a PDS Collection. Each member product in the Collection comprises several 
+                modules -- sometimes separate files, sometimes wrapped together into a single
+                file, depending on the Handbook version included in the Collection.  Modules 
+                are added, removed, and/or updated as needed. Each version of the Handbook
+                (each member product of the Collection) contains all modules that were
+                current as of the publication date.  Module 303 describes equipment used by 
+                the DSN to obtain data from which correction factors can be determined for 
+                media effects that limit accuracy in radio tracking of spacecraft.  The data 
+                are forwarded from each Deep Space Communications Complex to the Network 
+                Operations Control Center at JPL for processing, distribution, and archive.
+            </comment>
+        </Internal_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                Mannucci, A. J., B. D. Wilson, D. N. Yuan, C. H. Ho, U. J. Lindqwister, and
+                T.F. Runge, A global mapping technique for GPS-derived ionospheric total 
+                electron content measurements, Radio Science, 33, 3, 565-582, 1982.
+            </reference_text>
+            <description>
+                This paper describes a technique for retrieving global distribution of 
+                vertical total electron content (TEC) from GPS-based measurements. TEC is
+                interpolated within triangular tiles that tessellate the ionosphere, modeled
+                as a thin spherical shell.  High spatial resolution can be achieved using
+                gradient values and polynomial fitting.
+            </description>
+        </External_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                Keihm, S. J., Water vapor radiometer measurements of the tropospheric delay
+                fluctuations at Goldstone over a full year, TDA Progress Report, 42-122, 1-11,
+                Pasadena: Jet Propulsion Laboratory, 1995.
+            </reference_text>
+            <description>
+                The report describes the performance of the DSN Water Vapor Radiometers (WVR),
+                used to estimate radio path delay in the troposphere.
+            </description>
+        </External_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                Keihm, S. J., A. Tanner, and H. Rosenberger, Measurements and calibration 
+                of tropospheric delay at Goldstone from the Cassini media calibration system, 
+                IPN Progress Report 42-158, Pasadena: Jet Propulsion Laboratory, 2004.
+            </reference_text>
+            <description>
+                The report describes the performance of the Advanced Media Calibration 
+                (AMC) system developed to support Cassini radio science.
+            </description>
+        </External_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                Asmar, S. W., J. W. Armstrong, L. Iess, and P. Tortora, Spacecraft 
+                Doppler Tracking: Noise Budget and Accuracy Achievable in Precision Radio 
+                Science Observations, Radio Science, 40, RS2001, doi:10.1029/2004RS003101,
+                2005.
+            </reference_text>
+            <description>
+                The paper discusses noise in Doppler tracking of deep space probes and 
+                provides a detailed noise model for Doppler radio science experiments. 
+                Current technology allows velocity measurements to better than 1 micron 
+                per second when data are averaged over 1000 seconds.  Examples from 
+                Cassini are included.  Applications of the noise model to experiment 
+                planning are considered, and the authors discuss the prospects for 
+                significant sensitivity improvements.
+            </description>
+        </External_Reference>
+    </Reference_List>
+
+    <Instrument>
+        <name>Deep Space Station Media Calibration Subsystem</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Radio Science</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>
+             The Media Calibration Subsystem (DMD) provides three types of data:
+             (1) Global Positioning System (GPS) data consisting of L-band carrier
+                 phase and group delay of GPS satellite signals, ephemeris, and almanac
+                 data for the GPS satellites;
+             (2) Weather data, including temperature, barometric pressure, relative
+                 humidity, precipitation rate, total precipitation, wind speed, and
+                 wind direction.
+             (3) Data from fixed Water Vapor Radiometers (WVR), which measure emission 
+                 by water vapor in the atmosphere.  The WVR is part of normal DSN 
+                 operations. At selected DSN stations, an advanced version (AWVR) 
+                 measures emissions at 20.7 and 31.4 GHz along the line of sight to a
+                 spacecraft being tracked. The AWVR is remotely operated for the DSN 
+                 by the JPL Radar and Radio Science Systems Group (RRSSG) in Pasadena;
+                 it is an element of a larger Advanced Media Calibration (AMC) system.
+                 The AMC also includes a microwave temperature profiler and a sensitive
+                 digital barometer. The AMC is capable of measuring the tropospheric 
+                 relative frequency shift under summer conditions with a precision of 
+                 better than 1e-14.
+        </description>
+    </Instrument>
+ </Product_Context>

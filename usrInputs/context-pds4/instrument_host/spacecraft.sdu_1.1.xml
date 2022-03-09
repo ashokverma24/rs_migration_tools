@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.sdu</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>STARDUST</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.next</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.stardust</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:cida.sdu</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:dfmi.sdu</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:dynsci.sdu</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:navcam.sdu</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--noSpice        <Internal_Reference> -->
+<!--noSpice            <lid_reference>urn:nasa:pds:context:instrument:spice.sdu</lid_reference> -->
+<!--noSpice            <reference_type>instrument_host_to_instrument</reference_type> -->
+<!--noSpice        <Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:src.sdu</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:asteroid.5535_annefrank</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:calibrator.calibration</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:calibrator.non_science</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:comet.81p_wild_2</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:comet.9p_tempel_1</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> RChen/EN hope this isn't really needed -->
+<!--            <lid_reference>urn:nasa:pds:context:target:unk.unk</lid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <External_Reference>
+            <reference_text>
+                   Brownlee, D.E., P. Tsou, J.D. Anderson, M.S. Hanner, R.L. Newburn, Z. Sekanina,
+                   B.C. Clark, F. Horz, M.E. Zolensky, J. Kissel, J.A.M. McDonnell, S.A. Sandford,
+                   and A.J. Tuzzolino, Stardust: Comet and interstellar dust sample return
+                   mission, J. Geophys. Res., 108, (E10), 8111, 2003, doi:10.1029/2003JE002087.
+            </reference_text>
+            <description>reference.BROWNLEEETAL2003</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Tsou, P., D.E. Brownlee, S.A. Sandford, F. Horz, and M.E. Zolensky, Wild 2 and
+                   interstellar sample collection and Earth return, J. Geophys. Res., 108, (E10),
+                   8113, 2003.
+            </reference_text>
+            <description>reference.TSOUETAL2003</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Veverka, J., K. Klaasen, M. A&apos;Hearn, M. Belton, D. Brownlee, S. Chesley, B.
+                   Clark, T. Economou, R. Farquhar, S. Green, A. Harris, O. Groussin, J. Kissel,
+                   J.-Y. Li, K. Meech, J. Melosh, J. Richardson, P. Schultz, J. Silen, J.
+                   Sunshine, P. Thomas, S., Bhaskaran, D. Bodewits, B. Carcich, A. Cheuvront, T.
+                   Farnham, S. Sackett, D. Wellnitz, and A. Wolf, Return to Comet Tempel 1:
+                   Results from Stardust-NExT, Icarus (tentative), 2011, in press, preprint
+                   included in all Stardust-NExT PDS data sets.
+            </reference_text>
+            <description>reference.VEVERKAETAL2011</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>STARDUST</name>
+        <type>Spacecraft</type>
+        <naif_host_id>SDU</naif_host_id>
+
+        <description>
+ 
+      This description was copied from the &apos;Stardust Mission Plan&apos;
+      document with permission from the Stardust project.  It has been
+      updated to reflect the completion of the primary mission.
+ 
+      SDN:  This description has been updated for the Stardust-NExT
+      extended mission.  The original description was left largely
+      intact and a short section added at the end for SDN.  The prefix
+      &apos;SDN&apos; occurs before that section.
+ 
+ 
+      STARDUST was a 3-axis stabilized spacecraft designed to perform
+      its prime mission (Wild 2 encounter) at 1.9 AU from the sun and
+      2.6 AU from the earth. During the cruise periods to and from
+      this encounter, it was able to function adequately at a
+      maximum distance of 2.7 AU from the sun and 3.6 AU from the
+      earth.
+ 
+      The spacecraft was equipped with a power subsystem, fixed solar
+      panels and one rechargeable battery, capable of delivering a
+      minimum of 170 watts (W) during standard cruise operations at
+      aphelion and a minimum of 300 W at comet encounter. The solar
+      panels had a maximum off-sun pointing constraint of 60 degrees
+      to avoid problems caused by refraction of light.
+ 
+      Communications were achieved via either a high-gain, medium-gain
+      or one of three low gain antennas. During the mission, Deep Space
+      Network (DSN) support was provided with primarily 34-m
+      antennas with 70-m support being used during the close comet
+      encounter, trajectory correction maneuvers, and other special
+      activities. These antennas provided the capability for a minimum
+      of 4000 bits per second (bps), 7900 bps expected, at encounter
+      via the high-gain antenna and a 70-m DSN station. This data rate
+      could be increased to 22120 bps with additional tight attitude
+      control. At maximum Earth range, 40 bps could be achieved via the
+      medium gain antenna and a 34-m DSN station. The low-gain
+      antennae, in conjunction with a 34-m DSN antenna, were ideal for
+      near-Earth phases (Launch, Earth flyby and Earth return) when
+      Sun-Earth-spacecraft angles were near 90 degrees, especially since
+      they could support communications within 0.05 AU (+3 dB margin) of
+      the earth at a minimum data rate of 40 bps.
+ 
+      Attitude control and propulsive maneuvers were performed using a
+      redundant helium-fed mono-propellant (hydrazine) propulsion
+      subsystem. The subsystem was comprised of one titanium propellant
+      tank and a total of 16 thrusters (two strings of 8), all mounted
+      on the lower deck of the spacecraft (opposite the high-gain
+      antenna and solar panels - pointing toward the -z-axis of the
+      spacecraft). Eight of these were 0.2 lb-f (0.89 N) thrusters and
+      were used primarily for attitude control. The other eight are 1.0
+      lb-f (4.45 N) thrusters and were used for propulsive maneuvers. To
+      avoid potential contamination of the aerogel collector, placement
+      of thrusters on the upper deck (+z) was avoided. This
+      configuration, however, generated uncoupled thrusts during
+      attitude control burns and added complexity to trajectory
+      simulations.
+ 
+      The normal spacecraft attitude during the mission pointed the
+      +z-axis of the spacecraft to the sun. Deviations from the normal
+      attitude were performed during communication periods and
+      delta-velocity burns. Off-sun pointing was also permitted
+      during non-primary science experiments, comet and interstellar
+      dust particle collection, as long as the power generated by
+      the solar arrays was adequate at the desired off-sun angle. During
+      the comet encounter period, the +x-axis was pointed to the dust
+      stream.
+ 
+      Whipple shields were placed on the spacecraft to protect it from
+      high velocity dust impacts during the comet encounter. The barriers
+      were designed to stop a 1 cm size particle traveling at 6 km/s
+      (which was essentially equal to the comet encounter relative
+      velocity).
+ 
+      Science objectives were met using three science subsystems:
+      Aerogel Dust Collector and Sample Return Capsule (SRC), Cometary
+      and Interstellar Dust Analyzer (CIDA) and the Dust Flux Monitor
+      Instrument (DFMI). The imaging camera was also used for science
+      purposes but its main function was to perform optical navigation
+      prior to encounter with comet Wild 2.
+ 
+      The current best estimate of the mass breakdown of the flight
+      system is summarized in this table:
+ 
+         STARDUST Mass Element List (Rev. Z)
+ 
+         Component      Mass (kg)   Component             Mass (kg)
+         S/C Power       33.378     Navigation Camera     12.686
+         S/C Harness     20.971     DFMI                   1.530
+         S/C Telecom     19.222     CIDA                  10.966
+         S/C ACS          9.951     SRC Avionics           1.992
+         S/C C&amp;DH        10.394     SRC Harness            0.869
+         S/C Thermal     10.060     SRC Thermal           13.683
+         S/C Structures 104.412     SRC Structures         9.271
+         S/C Mechanisms   6.131     SRC Mechanisms        17.184
+         S/C Propulsion   19.538    SRC Parachute          4.194
+         Pressurant (He)   0.202    Total Dry            305.397
+         Propellant       85.000    Total Wet            390.599
+ 
+ 
+      SDN:  Stardust-NExT update
+      ==========================
+ 
+        Extended mission
+        ----------------
+ 
+          The Stardust spacecraft flew by Earth in January, 2006 to
+          successfully return the SRC.  The Stardust-NExT extended
+          mission was developed soon after and used SDU, without the SRC
+          and with an estimated 14kg+ of fuel, to fly the remaining
+          instruments (CIDA, DFMI, and NAVCAM) as a scientific
+          investigation past the comet 9P/Tempel 1 in February, 2011.
+ 
+          The limited fuel made flying the extended mission quite
+          challenging, but maneuvers and operations were optimized to
+          minimize fuel usage, and the spacecraft successfully encountered
+          Tempel 1 on 15 February, 2011 with all instruments in working
+          order.
+ 
+ 
+        Postscript
+        ----------
+ 
+          In March, 2011 the project commanded SDU to perform a final
+          propulsive maneuver designed to burn the remaining fuel to
+          exhaustion to calibrate and/or validate the fuel estimation
+          techniques which had been used.
+ 
+          The final telemetry from the Stardust spacecraft activity
+          indicated that the fuel consumed during this activity was no more
+          than could be accounted for by the volume of the fuel system
+          lines.  So at the end of two scientific missions, the Stardust
+          fuel tank was literally empty.
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

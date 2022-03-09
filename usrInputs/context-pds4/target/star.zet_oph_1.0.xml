@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.zet_oph</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Zeta Ophiuchi</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Zeta Oph</alternate_title></Alias>
+      <Alias><alternate_title>zet Oph</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>13 Oph</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-IRC-V1 J1637095-103401</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14820</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1AXG J163709-1033</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-10 4350</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CGO 384</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1E 1634.4-1028</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 3732</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1634.4-1028</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1ES 1634-10.4</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J1637-10.5</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 622</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 22332</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 9547</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00149757</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GOS G006.28+23.59 01</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05632-01042</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GUM 73</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 149757</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 81377</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 81377</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 6175</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 16343-1028</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10343</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2780</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J16370954-1034014</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MCW 562</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3717</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3775</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3775.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 444</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 231915</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 5060S</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2364</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J163709.4-103406</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SACS 361</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 160006</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 29938</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 19349</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5632-1042-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 21552</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 14047</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100149757</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 13754</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 1631-10</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 4337352305315545088</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Zeta Ophiuchi</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 16 hours 37 minutes 09.5390545 seconds
+Declination, ICRS coord, ep=J2000: -10 degrees 34 minutes 01.529471 seconds
+    </description>
+  </Target>
+</Product_Context>

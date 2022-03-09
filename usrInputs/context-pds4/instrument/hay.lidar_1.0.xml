@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:lidar.hay</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>LIGHT DETECTION AND RANGING INSTRUMENT for HAY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.hay::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Abe, S., T. Mukai, N. Hirata, O.S. Barnouin-Jha, A.F. Cheng, H. Demura, R.W.
+                   Gaskell, T. Hashimoto, K. Hiraoka, T. Honda, T. Kubota, M. Matsuoka, T. Mizuno,
+                   R. Nakamura, D.J. Scheeres, and M. Yoshikawa, Mass and Local Topography
+                   Measurements of Itokawa by Hayabusa, Science, 312, 1344-1347, 2006.
+            </reference_text>
+            <description>reference.ABEETAL2006B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mukai, T., H. Araki, T. Mizuno, N. Hatanaka, A.M. Nakamura, A. Kamei, H.
+                   Nakayama and A. Cheng, Detection of mass, shape and surface roughness of target
+                   asteroid of MUSES-C by LIDAR, Adv. Space Res., 29, 1231-1235, 2002.
+            </reference_text>
+            <description>reference.MUKAIETAL2002</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mukai, T., A.M. Nakamura and T. Sakai, Asteroidal surface studies by laboratory
+                   light scattering and LIDAR on HAYABUSA, Adv. Space Res., 38, 138-141, 2006.
+            </reference_text>
+            <description>reference.MUKAIETAL2006</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mukai, T., S. Abe, N. Hirata, R. Nakamura, O.S. Barnouin-Jha, and 11 others, An
+                   overview of the LIDAR observations of asteroid 25143 Itokawa. Advances in Space
+                   Research 40, 187-192, 2007.
+            </reference_text>
+            <description>reference.MUKAIETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>LIGHT DETECTION AND RANGING INSTRUMENT</name>
+        <type>Altimeter</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+ 
+  The principal components of LIDAR are a diode-pumped, Nd:YAG laser
+  transmitter that emits 1.064 micrometer wavelength laser pulses, a 0.126 m
+  diameter telescope, a silicon avalanche photodiode detector, and a time
+  interval unit with 14 nsec resolution. During the long Home Position phase
+  (~7km from Itokawa) of the misson, LIDAR provides measurements of the
+  topography of Itokawa within approximately 12x4.9 m footprints. The
+  center-to-center along-track footprint spacing is highly
+  variable throughout the mission. Range measurements, with an effective
+  resolution of 50 cm, are converted to profiles of asteroid radius and
+  topographic height after correction for orbit and pointing errors.  Shot
+  locations are determined to within 10 m in the along-track and across-track
+  directions. The current radial inaccuracies of the LIDAR data do not permit
+  the generation of global grids of the surface of Itokawa.  Additional
+  refinements are still required.
+ 
+  LIDAR was designed, built and tested at the Institute of Space and
+  Astronautical Science (ISAS) in Sagamihara, Japan part of the Japan
+  Aerospace Exploration Agency.
+ 
+ 
+  LIDAR Science Objectives
+  =======================
+ 
+  The primary LIDAR objective was to determine the distance between the
+  HAYABUSA spacecraft and Itokawa to ensure a safe touch and go sampling of
+  the asteroid. The LIDAR was key for obtain a reliable shape model of the
+  surface of the asteroid, required for establishing its volume and mass.  In
+  addition, it was found suitable for addressing problems in geology and
+  geophysics [see  ABEETAL2006,MUKAIETAL2007].
+ 
+ 
+  Instrument Specifications
+  =========================
+ 
+  The following table summarizes LIDAR characteristics.
+ 
+  Parameter                          Value            Unit
+  ----------------------------------------------------------------
+  Physical Characteristics
+   Volume                            0.0137          m^3
+   Mass                              3.56            kg
+   Power (TOTAL)                    22.00            W
+ 
+  Laser Transmitter
+   Laser type                 Q-switched, diode-pumped Nd:YAG*
+   Wavelength                        1.064            micrometer
+   Laser energy                      10               mJ pulse^-1
+   Laser power consumption           17               W
+   Pulse width                       14               ns (FWHM**)
+   Pulse repetition rate             1                sec^-1
+   Beam divergence                   1.7x0.7          mrad
+ 
+  Altimeter Receiver
+   Telescope type                     Cassegrain
+   Mirror composition                 SiC
+   Telescope diameter                 0.126            m
+   Detector type          Silicon avalanche photodiode (Si APD)
+ 
+  Receiver Electronics
+   Receiver type            Filtered peak trigger
+   Time resolution                    3.0              nsec
+   Range resolution                   0.5              m
+   Range accuracy (@50km)            10.0              m
+ 
+  Measurements
+   Footprint size (@ 7 km)          12.0x4.9           m
+ 
+  * Nd:YAG is neodymium-doped yttrium aluminum garnet.
+  ** FWHM is full width at half maximum.
+  ----------------------------------------------------------------
+ 
+ 
+  Operational Considerations
+  ==========================
+ 
+  The LIDAR instrument measures the round-trip time of flight of infrared
+  laser pulses transmitted from the HAYABUSA spacecraft to the surface of
+  Itokawa. The instrument operates in a single autonomous mode, in which it
+  produces ranging measurements.  Surface topography estimates can be derived
+  from these data, given appropriate corrections for the position and attitude
+  of the spacecraft.
+ 
+  LIDAR&apos;s transmitter is a Q-switched, Nd:YAG laser oscillator.  The Q-switch
+  controls the emission of the laser, and Nd:YAG refers to the composition of
+  the material that is optically excited to produce laser
+  action: Neodymium-doped Yttrium Aluminum Garnet. The laser emits a
+  14-ns-wide (full width at half the maximum pulse amplitude, FWHM) pulses at
+  1.064 micrometers. The pulse repetition rate is 1 Hz, and the pulse energy
+  was 10 mJ durign the entire peroid of operation. The laser consumed 17 W
+  when operating, and it functioned without flaws for the entire 3 month
+  period of the encounter with Itokawa.
+ 
+  For additional information on the HAYABUSA LIDAR and its usage see
+  MUKAIETAL2002 and MUKAIETAL2006. For a summary of some of the results
+  obtained with the LIDAR see ABEETAL2006.
+ 
+  References
+  ==========
+ 
+  Abe, S., T. Mukai, N. Hirata, O.S. Barnouin-Jha, A.F. Cheng, H. Demura, R.W.
+  Gaskell, T. Hashimoto, K. Hiraoka, T. Honda, T. Kubota, M. Matsuoka, T.
+  Mizuno, R. Nakamura, D.J. Scheeres, and M. Yoshikawa, Mass and Local
+  Topography Measurements of Itokawa by Hayabusa,  Science, 312, 1344-1347,
+  2006. [ABEETAL2006B]
+ 
+  Mukai, T., H. Araki, T. Mizuno, N. Hatanaka, A.M. Nakamura, A. Kamei, H.
+  Nakayama and A. Cheng, Detection of mass, shape and surface roughness of
+  target asteroid of MUSES-C by LIDAR, Adv. Space Res., 29,1231-1235,
+  2002.[MUKAIETAL2002]
+ 
+  Mukai, T., A.M. Nakamura and T. Sakai, Asteroidal surface studies by
+  laboratory light scattering and LIDAR on Hayabusa, Adv. Space Res., 38,
+  138-141, 2006.  [MUKAIETAL2006]
+ 
+  Mukai, T., S. Abe, N. Hirata, R. Nakamura, O.S. Barnouin-Jha, and 11 others,
+  An overview of the LIDAR observations of asteroid 25143 Itokawa. Advances in
+  Space Research 40, 187-192, 2007.  [MUKAIETAL2007]
+
+        </description>
+    </Instrument>
+</Product_Context>

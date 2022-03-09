@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.sch"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.jpl.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.xsd">
+
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:resource:resource.phoenix_archive_information</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Phoenix Archive Information</title>
+        <information_model_version>1.4.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-11-13</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial revision.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.phoenix</lid_reference>
+            <reference_type>resource_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.phx</lid_reference>
+            <reference_type>resource_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:ase__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:lidar__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:meca_afm__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:meca_elec__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:meca_tecp__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:meca_wcl__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:met__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:om__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:ra__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:rac__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:ssi__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:tega__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:tt__phx::1.0</lidvid_reference>
+            <reference_type>resource_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>resource_to_target</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+
+    <Resource>
+        <name>Phoenix Archive Information</name>
+        <type>Information.Investigation</type>
+        <url>https://atmos.nmsu.edu/data_and_services/atmospheres_data/phoenix/phoenix.html</url>
+        <description>
+            The Phoenix Archive Information page provides details on the investigation, instruments and targets associated with the archive as well as additional resources for discovering Phoenix data.
+        </description>
+    </Resource>
+</Product_Context>

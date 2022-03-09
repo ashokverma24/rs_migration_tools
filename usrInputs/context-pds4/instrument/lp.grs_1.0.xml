@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:lp.grs</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>GAMMA RAY SPECTROMETER for LP</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.lp</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Binder, A.B., W.C. Feldman, G.S. Hubbard, A.S. Konopliv, R.P. Lin, M.H. Acuna,
+                   and L.L. Hood, Lunar Prospector searches for polar ice, a metallic core, gas
+                   release events, and the moon&apos;s origin, Eos, Trans. AGU, 79, 97, 1998.
+            </reference_text>
+            <description>reference.BINDERETAL1998</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Feldman, W.C., B.L. Barraclough, K.R. Fuller, D.J. Lawrence, S. Maurice,
+                   M.C. Miller, T.H. Prettyman, and A.B. Binder, The Lunar Prospector
+                   gamma-ray and neutron spectrometers, Nuc. Inst. and Meth. A, 422, 562,
+                   1999a.
+            </reference_text>
+            <description>reference.FELDMANETAL1999A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Feldman, W.C., D.J. Lawrence, S. Maurice, B.L. Barraclough, K.R. Fuller,
+                   and R.D. Belian, Instrument Description Document (IDD) for the Lunar
+                   Prospector Spectrometers, Los Alamos National Laboratory Report
+                   LAUR-99-2752, 1999b.
+            </reference_text>
+            <description>reference.FELDMANETAL1999B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Feldman, W.C., et al., Gamma-ray, neutron, and alpha-particle
+                   spectrometers for the Lunar Prospector mission, J. Geophys. Res., 109,
+                   E07S06, doi:10.1029/2003JE002207, 2004.
+            </reference_text>
+            <description>reference.FELDMANETAL2004</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Genetay, I., S. Maurice, W.C. Feldman, O. Gasnault, D.J. Lawrence, R.C.
+                   Elphic, C. d&apos;Uston, and A.B. Binder, Lunar neutrons at energies less than
+                   500 keV, Planet. Space Sci., 51(3), 271-280, 2003.
+            </reference_text>
+            <description>reference.GENETAYETAL2003</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Maurice, S., W.C. Feldman, D.J. Lawrence, O. Gasnault, C. d&apos;Uston, I.
+                   Genetay, and P.G. Lucey, High-energy neutrons from the Moon, J. Geophys.
+                   Res., 105, 20365-20375, 2000.
+            </reference_text>
+            <description>reference.MAURICEETAL2000</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>GAMMA RAY SPECTROMETER</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+Instrument Overview
+===================
+ 
+A preliminary description of the LP-GRS sensor is given by FELDMANETAL199A
+and FELDMANETAL1999B, and a more detailed description is given by
+FELDMANETAL2004. For details not found herein, the reader is referred to
+the above mentioned manuscripts.
+ 
+The Lunar Prospector Gamma Ray Spectrometer (GRS) sensor consists of a
+7.1 cm diameter by 7.6 cm long bismuth germanate (BGO) crystal, placed
+within a 12 cm diameter by 20 cm long, borated-plastic anticoincidence
+shield (ACS).  Both scintillators are viewed by separate
+photomultiplier tubes, and enclosed in a cylindrical, graphite-epoxy
+housing.  The GRS has a mass of 8.6 kg and uses about 3 w of power
+[BINDERETAL1998].
+ 
+Science Objectives
+==================
+ 
+The GRS will estimate the global surface abundances of key elements
+(U, Th, K, O, Si, Mg, Fe, Ti, Ca, Al, and H).  The GRS will provide
+new constraints on the bulk composition of the crust, on compositional
+variations over the lunar surface, and on the existence of lunar
+resources.  The GRS will investigate how large-scale impacts and
+volcanism have modified the structure and surface composition of the
+lunar crust.
+ 
+Platform Mounting Descriptions
+==============================
+ 
+The Gamma Ray Spectrometer is mounted on one of the three Lunar
+Prospector booms.
+ 
+Operational Considerations
+==========================
+ 
+The sensor housing is wrapped with a thermostat controlled heater
+within a thermal blanket that will provide a stable operational
+environment of -28 deg C for at least 1.5 years.  The ACS functions to
+tag penetrating charged-particle events from the gamma ray spectrum
+and to tag gamma rays that escape from the BGO.  The ACS also detects
+neutrons using the boron content of the shield.
+ 
+Operation and Sampling Modes
+============================
+ 
+The Gamma Ray Spectrometer is designed to operate continuously during
+the Lunar Prospector Primary Mission.  It acquires a spectrum every 32
+seconds.  The gamma ray energy range of the instrument covers 0.3 to 9
+MeV with a sampling resolution of 17.6 keV.  The Lunar Prospector GRS,
+as a function of energy, is 2 to 8 times more sensitive than the
+Apollo gamma ray spectrometer.
+ 
+Principal Investigator
+======================
+ 
+The Co-I and spectrometer group leader for the Lunar Prospector Gamma
+Ray Spectrometer experiment is Dr. William Feldman of Los Alamos
+National Laboratory.
+
+        </description>
+    </Instrument>
+</Product_Context>

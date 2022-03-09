@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:swics.uly</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SOLAR WIND ION COMPOSITION SPECTROMETER for ULY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.uly::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gloeckler, G., J. Geiss, H. Balsiger, P. Bedini, J.C. Cain, J. Fischer,
+                   L.A. Fisk, A.B. Galvin, F. Gliem, D.C. Hamilton, J.V. Hollweg, F.M.
+                   Ipavich, R. Joos, S. Livi, R. Lundgren, U. Mall, J.F. McKenzie, K.W.
+                   Ogilvie, F. Ottens, W. Rieck, E.O. Tums, R. von Steiger, W. Weiss, and B.
+                   Wilken, The Solar Wind Ion Composition Spectrometer, Astron. Astrophys.
+                   Suppl. Ser., 92, 2, 267-289, 1992.
+            </reference_text>
+            <description>reference.GLOECKLERETAL1992</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>SOLAR WIND ION COMPOSITION SPECTROMETER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Mass Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+  Instrument Overview
+  ===================
+    (excerpted from [GLOECKLERETAL1992])
+ 
+    Abstract.  -- The Solar Wind Ion Composition Spectrometer
+    (SWICS) on Ulysses is designed to determine uniquely the
+    elemental and ionic-charge composition, and the temperatures
+    and mean speeds of all major solar-wind ions, from H through
+    Fe, at solar wind speeds ranging from 175 km/s (protons) to
+    1280 km/s (Fe^8+).  The instrument, which covers an energy per
+    charge range from 0.16 to 59.6 keV/e in ~ 13 min, combines an
+    electrostatic analyzer with post-acceleration, followed by a
+    time-of-flight and energy measurement.  The measurements made
+    by SWICS will have an impact on many areas of solar and
+    heliospheric physics, in particular providing essential and
+    unique information on: (i) conditions and processes in the
+    region of the corona where the solar wind is accelerated, (ii)
+    the location of the source regions of the solar wind in the
+    corona; (iii) coronal heating processes; (iv) the extent and
+    causes of variations in the composition of the solar
+    atmosphere; (v)plasma processes in the solar wind; (vi) the
+    acceleration of energetic particles in the solar wind; (vii)
+    the thermalization and acceleration of interstellar ions in the
+    solar wind, and their composition; and (viii) the composition,
+    charge states and behavior of the plasma in various regions of
+    the Jovian magnetosphere.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

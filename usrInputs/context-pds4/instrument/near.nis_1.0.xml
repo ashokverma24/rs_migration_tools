@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:nis.near</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>NEAR INFRARED SPECTROMETER for NEAR</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.near::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Acuna, M., C.T. Russell, L.J. Zanetti, and B.J. Anderson, The NEAR Magnetic
+                   Field Investigation: Science Objectives at Asteroid Eros 433 and Experimental
+                   Approach, Journal of Geophysical Research, Vol. 102(E10), pp. 23751-23760, 1997.
+            </reference_text>
+            <description>reference.ACUNAETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.CHENG1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Farquhar, R.W., D. Dunham, and J. McAdams, NEAR Mission Overview and Trajectory
+                   Design, Journal of Astronautical Science, Vol. 43, pp. 353-371, 1995.
+            </reference_text>
+            <description>reference.FARQUHARETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Izenberg, N.R., K. Peacock, J. Warren, S.L. Murchie, and J.F. Bell III,
+                   In-flight calibration of NEAR&apos;s near infrared spectrometer, Proceedings of the
+                   1998 SDL/USU Symposium on Infrared Radiometric Sensor Calibration, Space
+                   Dynamics Laboratory, Utah State University, Logan, UT, USA, 1998.
+            </reference_text>
+            <description>reference.IZENBERGETAL1998</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   JHU/APL, NEAR Near Infrared Spectrograph/Magnetometer DPU Software Requirement
+                   Specification, JHU/APL pub. 7357-9001 Rev. A, JHU/APL Space Department, Laurel,
+                   MD, 1995.
+            </reference_text>
+            <description>reference.NISAPLSRS1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Peacock, K., Calibration of the Near Infrared Spectrograph, Proceedings of the
+                   1997 SDL/USU Symposium on Infrared Radiometric Sensor Calibration, Space
+                   Dynamics Laboratory, Utah State University, Logan, UT, USA, 1997.
+            </reference_text>
+            <description>reference.PEACOCK1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Trombka, J.I., W.V. Boynton, J. Bruckner, S.W. Squyres, P.E. Clark, R.
+                   Starr, L.G. Evans, S.R. Floyd, E. Fiore, R.E. Gold, J.O. Goldsten, R.L.
+                   McNutt, Jr., and S.H. Bailey, Journal of Geophysical Research 102, 23729,
+                   1997.
+            </reference_text>
+            <description>reference.TROMBKAETAL1997B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Veverka, J., J.F. Bell III, P. Thomas, A. Harch, S.L. Murchie, S.E. Hawkins
+                   III, J. Warren, E.H. Darlington, K. Peacock, C. Chapman, L. McFadden, M. Malin,
+                   and M. Robinson, An Overview Of The Near Multispectral Imager - Near-infrared
+                   Spectrometer Investigation, J. Geophys. Res., Vol. 102, pp. 23709-23727, 1997.
+            </reference_text>
+            <description>reference.VEVERKAETAL1997A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Veverka, J., P. Thomas, A. Harch, B. Clark, J.F. Bell III, B. Carcich, J.
+                   Joseph, C. Chapman, W. Merline, M. Robinson, M. Malin, L. McFadden, S.L.
+                   Murchie, S.E. Hawkins III, R. Farquhar, N.R. Izenberg, and A. Cheng, Near&apos;s
+                   Flyby Of 253 Mathilde: Images of a C Asteroid, Science, Vol. 278, pp.
+                   2109-2114, 1997.
+            </reference_text>
+            <description>reference.VEVERKAETAL1997B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.VEVERKAETAL1999</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Veverka, J., P.C. Thomas, J.F. Bell III, M. Bell, B. Carcich, B. Clark, A.
+                   Harch, J. Joseph, P. Martin, M. Robinson, S. Murchie, N. Izenberg, E. Hawkins,
+                   J. Warren, R. Farquhar, A. Cheng, D. Dunham, C. Chapman, W.J. Merline, L.
+                   McFadden, D. Wellnitz, M. Malin, W.M. Owen Jr., J.K. Miller, B.G. Williams, and
+                   D.K. Yeomans, Imaging Of Asteroid 433 Eros During Near&apos;s Flyby Reconnaissance,
+                   Science, Vol. 285, pp. 562-564, 1999.
+            </reference_text>
+            <description>reference.VEVERKAETAL1999A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Warren, J., K. Peacock, E.H. Darlington, S.L. Murchie, S. Oden, J. Hayes, J.F.
+                   Bell III, S. Krein, and A. Mastandrea, Near-infrared spectrometer for the Near
+                   Earth Asteroid Rendezvous mission, Space Science Review, Vol. 82, pp. 101-167,
+                   1997.
+            </reference_text>
+            <description>reference.WARRENETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Yeomans, D., A.S. Konopliv, and J.-P. Barriot, The NEAR Radio Science
+                   Investigations, Journal of Geophysical Research, 102(E10), 23775, 1997.
+            </reference_text>
+            <description>reference.YEOMANSETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Yeomans, D.K., P.G. Antreasian, A. Cheng, D.W. Dunham, R.W. Farquhar, R.W.
+                   Gaskell, J.D. Giorgini, C.E. Helfrich, A.S. Konopliv, J.V. McAdams, J.K.
+                   Miller, W.M. Owen, Jr., P.C. Thomas, J. Veverka, and B.G. Williams, Estimating
+                   the mass of asteroid 433 Eros during the NEAR spacecraft flyby, Science, 285,
+                   pp. 560-561, 1999.
+            </reference_text>
+            <description>reference.YEOMANSETAL1999</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Zuber, M., D.E. Smith, A.F. Cheng, and T.D. Cole, The NEAR Laser Ranging
+                   Investigation, Journal of Geophysical Research, Vol. 102, pp. 23761-23773, 1997.
+            </reference_text>
+            <description>reference.ZUBERETAL1997</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>NEAR INFRARED SPECTROMETER</name>
+        <type>Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+ 
+    Launched on February 17, 1996, the Near Earth Asteroid Rendezvous
+    (NEAR) spacecraft will go into orbit around the asteroid 433 Eros on
+    February 14, 2000. The first launch of the Discovery class missions,
+    NEAR will study this S-class asteroid up close, determining its
+    geological characteristics, physical properties and composition
+    [CHENG1997]. The reflected-light spectral data gathered by the Near
+    Infrared Spectrometer (NIS) is a key component of an integrated
+    strategy for the study of Eros. This strategy also includes high
+    resolution imaging from the multispectral imager (MSI)
+    [VEVERKAETAL1997A], elemental abundance measurements from the
+    X-ray/gamma-ray spectrometer (XGRS) [TROMBKAETAL1997B], magnetic
+    field data from the magnetometer (MAG) [ACUNAETAL1997], topographic
+    data from the NEAR laser rangefinder (NLR) [ZUBERETAL1997], and mass
+    and gravity data from the on-board radio science experiment
+    [YEOMANSETAL1997]. NIS will conduct spectral mapping of Eros by
+    measuring reflected sunlight in the wavelength range from 800 to
+    2600 nm. Reflectance spectra of Eros will be used to identify the
+    surface mineral assemblages, to constrain the origin and evolution
+    of the surface, and, in combination with other NEAR data, to explore
+    the links between asteroids and meteorites.
+ 
+    NEAR has traveled a circuitous path on its way to its orbital
+    encounter with Eros [FARQUHARETAL1995], including a swing through
+    the inner main asteroid belt that allowed a flyby of the C-type
+    asteroid 253 Mathilde, a gravity-assist swingby of Earth, and an
+    unplanned initial flyby of Eros itself following an aborted
+    orbit-insertion burn [YEOMANSETAL1999], [VEVERKAETAL1999]. Due to
+    inadequate power margins at the relatively large heliocentric
+    distance during the target-of-opportunity encounter with Mathilde on
+    June 27, 1997, NIS was not turned on at that time
+    [VEVERKAETAL1997B]. The NIS instrument&apos;s protective cover was not
+    opened until later in 1997, allowing observations of the on-board
+    calibration target (caltarget) and of the Earth and Moon during the
+    January 23, 1998 swingby maneuver. NIS first observed Eros in late
+    December 1998 [VEVERKAETAL1999A]. Data from the Eros flyby provided
+    a valuable opportunity to evaluate instrument performance.
+    Observations of Eros will resume on final approach in early 2000 and
+    continue throughout the mission as the orbit is changed in steps
+    from 500 to 35 km radius.
+ 
+    NIS was designed to fulfill four key NEAR measurement requirements
+    [VEVERKAETAL1997A]:  1) Map the mineralogical composition of Eros
+    using reflected sunlight 1) Map the distribution and abundance of
+    minerals at scales as small as 300 meters 1) Complement high
+    resolution MSI images and low resolution XGRS elemental distribution
+    maps for definitive identification of rock types composing Eros&apos;
+    surface 1)  Provide information on the physical and textural
+    properties of these surface materials
+ 
+    In order to fulfill these requirements, the instrument&apos;s behavior
+    must be characterized both from rigorous preflight calibration and
+    testing and from in-flight observations over the mission lifetime.
+    This paper reviews the data and techniques used to calibrate the
+    NIS, and discusses initial in-flight results for observations by NIS
+    during the cruise, Earth swingby, and Eros flyby phases of the NEAR
+    mission. The calibration of the instrument will be refined
+    throughout the mission. Table two in the NIS calibration paper contains
+    the science rationale for the phases and can be found in the
+    NIS/DOCUMENT/INSTRUMENT/CALPAPER directory.
+ 
+ 
+  Instrument Description
+  ========================
+    NIS is composed of a grating infrared spectrometer, a scan mirror,
+    two passively cooled detector modules, a mounting bracket,
+    spectrometer electronics, and a data processing unit (DPU) that
+    controls both the NIS and the NEAR magnetometer. NIS has a one-time
+    deployable opaque cover, which was opened on September 24, 1997,
+    three months after the Mathilde flyby [VEVERKAETAL1997B].
+ 
+  Hardware
+  --------
+    The NIS design (Fig. 1) is copied from an earlier Applied Physics
+    Laboratory (APL) spectrometer - the Defense Meteorological Satellite
+    Special Sensor Ultraviolet Spectrographic Imager (SSUSI) - and
+    modified for an infrared wavelength range. [WARRENETAL1997] detail
+    the design characteristics, engineering, and construction of the
+    instrument. A gold-coated scan mirror controls the direction of
+    viewing over a range of 140 degrees. Light reflected from the scan
+    mirror passes through a 20 x 25-mm aperture stop and is imaged by a
+    telescope mirror at a slit. The field of view is selectable at the
+    slit to &apos;narrow&apos; (0.38 degrees x 0.76 degrees) or &apos;wide&apos; (0.76
+    degrees x 0.76 degrees) settings. A shutter actuates the narrow
+    slit, with the smaller slit opening coming down over the fixed wide
+    slit. The two slits provide field-of-view sizes of 0.65 x 1.3 km or
+    1.3 x 1.3 km from 100 km distance. A second shutter can be actuated
+    to completely block the slit for dark current measurements. After
+    passing through the slit, light is dispersed and re- imaged off a
+    gold toroidal diffraction grating (a Rowland circle configuration
+    spectrometer) and hits a dichroic beamsplitter mounted at 45 degrees
+    to the beam which transmits or reflects the energy to fall on two
+    32- element linear detector arrays. Reflected 2nd order wavelengths
+    (804-1506 nm) fall on a germanium (Ge) array. Each Ge channel has a
+    bandwidth of 21.6 nm.  The germanium detector has a selectable gain
+    of 1x or 10x. Transmitted 1st order wavelengths (1348-2732 nm) go to
+    an indium-gallium-arsenide (InGaAs) array with 43.1 nm channel
+    bandwidth. [WARRENETAL1997] calibrated the central wavelengths of
+    all NIS channels at three operational temperatures (-7 degrees C,
+    -17 degrees C, and -23 degrees C) and found best-fit Ge spectral
+    calibration given by:
+ 
+    lambda (nm) = 794.6 + 21.61*n        (Equation 1)
+ 
+    where n is Ge element number 1-32. The uncertainty of the wavelength
+    calibration over the range of temperatures examined is +/-0.5 nm.
+    InGaAs element center wavelengths are given by:
+ 
+    lambda (nm) = 43.11*n - 50.8        (Equation 2)
+ 
+    where n is InGaAs element number 33-64. The temperature-dependent
+    wavelength uncertainty is approximately +/-3.5 nm.
+ 
+    The lower two channels of the InGaAs detector (channels 33 and 34,
+    at 1372 and 1315 nm respectively) are below the transition
+    wavelength of the dichroic beamsplitter, and therefore always
+    register very low signal. The upper 3 channels (channels 62-64 at
+    2622, 2665, and 2708 nm) are near or in detector cutoff, making the
+    effective upper bound for good signal-to-noise ratio (SNR) around
+    2500 nm for the signal level expected at Eros. Additionally, two
+    InGaAs channels (47 and 57, at 1975 nm and 2406 nm) have been
+    extremely noisy since manufacture and do not produce easily usable
+    data. Default operations for NIS utilize the narrow slit, providing
+    a critically sampled spectral resolution of 22 nm in the Ge
+    detector, and 44 nm in the InGaAs detector. The wide slit
+    configuration provides half the spectral resolution (44 nm and 88 nm
+    respectively), but passes twice the light and therefore has a higher
+    SNR.
+ 
+    The NIS scan mirror can rotate the line of sight over 350 steps in
+    0.4-degree increments in the spacecraft Z-X&apos; plane. The +Z axis is
+    perpendicular to the plane of NEAR&apos;s solar panels, and +X&apos; is the
+    boresight of the instruments.  Mirror position 0 (nominal caltarget
+    observation geometry) is 30 degrees towards the Z-axis from the
+    boresight. The boresight is aligned with mirror position 75.
+    Position 300 points in the -Z (anti-Sun) direction.
+ 
+    For optimum performance the detectors are operated near -35 degrees
+    C, maintained by passive cooling or active heaters, depending on the
+    thermal environment. A solar-illuminated gold calibration plaque
+    (caltarget) is mounted to the instrument for radiometric stability
+    calibration.  Table I summarizes the NIS specifications. More
+    detailed descriptions of the NIS instrument design are presented in
+    [PEACOCK1997] and [WARRENETAL1997].
+ 
+  Flight Software
+  ---------------
+    In-flight NIS data are acquired through the use of command sequences
+    to the instrument that specify ten instrument parameters
+    [NISAPLSRS1995], [IZENBERGETAL1998] as follows:  1. Spectrometer
+    sequence ID (0-15). Sixteen sequences can be uploaded and stored
+    while the instrument is powered. Sequences 0, 1, and 2 are
+    hard-coded, but can be redefined.  2. Repeats: the number of times
+    the commanded observations will repeat.  3. Seconds between
+    repeats.  4. Number of observations. This is the number taken during
+    a single repeat of the sequence.  5. Calibration interval
+    (1-65535).  Number of observations before acquisition of dark
+    spectra. This is used to interleave shutter-closed dark observations
+    with data observations.  6. Number of seconds to co-add spectral
+    data in each observation (0-63).  7. Number of rest spectra (0-63).
+    Used when interleaved darks are taken, between spectra acquisition
+    and dark acquisition.  8. Number of co-added seconds of dark signal
+    for interleaved dark spectrum.  9. Number of scan mirror steps
+    between observations (sign indicates direction).  10. Seconds
+    between observations.
+ 
+    For the purposes of the software discussion, a &apos;spectrum&apos; is the
+    result of a one-second integration of the instrument as it gathers
+    data.  An &apos;observation&apos; is 0-63 consecutive one-second spectra
+    summed together. The example sequence ( 15  3  5  10  5  16  2  4 2
+    2 ) is interpreted as follows: Sequence ID is 15. The sequence will
+    repeat three times, each iteration to contain 10 observations
+    consisting of 16 co-added spectra of accumulated data. The
+    calibration interval of five means that every 5th observation
+    (numbers 5 and 10 in each repeat) will instead co-add 10 spectra of
+    the target, then rest 2 seconds while the shutter closes, then take
+    four co-added spectra of dark signal. After each accumulated
+    observation, the scan mirror will move +2 steps and the instrument
+    will rest two seconds. During each repeat, the mirror will move 20
+    steps. Each repeat is separated by five seconds to allow the mirror
+    to return to the start position. This example sequence would
+    generate 30 NIS observations of the target, and 6 dark
+    observations.  Choice of the wide or narrow NIS slit, the high or
+    low Ge detector gain, and the starting NIS scan mirror position are
+    specified through separate commands to the instrument.
+
+        </description>
+    </Instrument>
+</Product_Context>

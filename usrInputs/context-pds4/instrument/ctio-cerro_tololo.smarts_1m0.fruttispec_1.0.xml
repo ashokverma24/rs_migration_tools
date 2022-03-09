@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd
+        http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ctio-cerro_tololo.smarts_1m0.fruttispec</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>CTIO 1.0m 2DFrutti Spectrograph</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:ctio.smarts1m0.fruttispec</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-12-07</modification_date>
+                <version_id>1.0</version_id>
+                <description>per RMS, deprecated ctio in favor of ctio-cerro_tololo</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:ctio-cerro_tololo.smarts_1m0</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>CTIO 1.0m 2DFrutti Spectrograph</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Spectrometer</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>The Boller &amp; Chivens fast uv-transmitting image tube spectrograph was
+used at the f/10 focus of the 1.0m telescope.
+
+Plate Scale (at f/10 focal plane)      19.5 arcsec/mm
+Slit Length     19mm mm, 370 arcsec
+Collimator Focal Length         900 mm
+Point source collimated beam diameter   90 mm
+Collimator-to-Camera Angle      49 degrees
+Grating size    128[INVALID_PDS_CHARACTER]102 mm
+Camera Focal Length     140 mm
+Demagnification         6.455
+Plate Scale (at detector)     125 arcsec/mm
+
+The 2D-Frutti was a two-dimensional photon counting detector, originally developed by
+Steve Shectman then of the Mt Wilson and Las Campanas Observatories. The sensitivity
+of this detector is determined by the S-20 photocathode of the Carnegie image tube
+which provides the first intensification stage.  This peaks at ~ 4200A, declining
+slowly toward the red, so that 7300A can be taken as its red limit.  In the UV, the
+2D-Frutti was sensitive down to the atmospheric cutoff (3200A).  The 2D-Frutti
+offered a format up to 1.5-M pixels, zero readout noise, and low dark current ( &lt; 1
+count/pixel/hour for 1x1 binning). Conversely the 2D-Frutti could be irreversibly
+damaged by over illumination and count rates must be further limited to typically &lt; 1
+cts/pixel/second, because of coincidence losses. Even with these precautions, the
+2D-Frutti was not really all that linear.
+        </description>
+    </Instrument>
+</Product_Context>
+

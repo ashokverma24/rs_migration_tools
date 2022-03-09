@@ -1,0 +1,154 @@
+             <Table_Binary>
+                   <name>ODF Ramp Group Data (Station STNID)</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                                Ramp Groups usually begin as 
+                                the fourth of several groups of records in an
+                                Orbit Data File (ODF). They contain information on
+                                tuning of receivers or transmitters. There is usually
+                                one Ramp Group for each DSN station. The Ramp Group
+                                Header is the first record in each Ramp Group.  It is
+                                one 36-byte record and is followed by one or more 36-
+                                byte Ramp Group data records. Data records are time
+                                ordered within each Ramp Group. The Ramp Group may be
+                                omitted from an ODF.
+                   </description>
+                   <Record_Binary>
+                         <fields>9</fields>
+                         <groups>0</groups>
+                         <record_length unit="byte">36</record_length> 
+                         <Field_Binary>
+                               <name>Ramp Start Time, integer part</name>
+                               <field_number>1</field_number>
+                               <field_location unit="byte">1</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>second</unit>
+                               <description>
+                                           Item 1:  The integer part of the ramp
+                                           start time, measured in seconds from the
+                                           Reference Time (usually 0 hours UTC on 
+                                           1 January 1950).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Ramp Start Time, fractional part</name>
+                               <field_number>2</field_number>
+                               <field_location unit="byte">5</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>nanosecond</unit>
+                               <description>
+                                           Item 2:  The fractional part of the ramp
+                                           start time - see field 1 (Item 1).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Ramp Rate, integer part</name>
+                               <field_number>3</field_number>
+                               <field_location unit="byte">9</field_location>
+                               <data_type>SignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>Hz/second</unit>
+                               <description>
+                                           Item 3:  The integer part of the ramp rate.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Ramp Rate, fractional part</name>
+                               <field_number>4</field_number>
+                               <field_location unit="byte">13</field_location>
+                               <data_type>SignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>nanohertz/second</unit>
+                               <description>
+                                           Item 4:  The fractional part of the ramp
+                                           rate, in units of 10^-9 of field 3i (Item 3).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Items 5-6</name>
+                               <field_number>5</field_number>
+                               <field_location unit="byte">17</field_location>
+                               <data_type>UnsignedBitString</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Items 5-6 of the ODF.
+                               </description>
+                               <Packed_Data_Fields>
+                                      <bit_fields>2</bit_fields>
+                                      <Field_Bit>
+                                            <name>Ramp Start Frequency, integer GHz</name>
+                                            <field_number>1</field_number>
+                                            <start_bit_location>1</start_bit_location>
+                                            <stop_bit_location>22</stop_bit_location>
+                                            <data_type>UnsignedBitString</data_type>
+                                            <unit>GHz</unit>
+                                            <description>
+                                                        Item 5: Ramp Start Frequency, integer GHz.
+                                            </description>
+                                      </Field_Bit>
+                                      <Field_Bit>
+                                            <name>Transmitting Station ID</name>
+                                            <field_number>2</field_number>
+                                            <start_bit_location>23</start_bit_location>
+                                            <stop_bit_location>32</stop_bit_location>
+                                            <data_type>UnsignedBitString</data_type>
+                                            <description>
+                                                        Item 6:Transmitting Station ID number.
+                                                        Numbers can be found in DSN document 810-047.
+                                            </description>
+                                      </Field_Bit>
+                               </Packed_Data_Fields>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Ramp Start Frequency, integer part modulo 10^9</name>
+                               <field_number>6</field_number>
+                               <field_location unit="byte">21</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>Hertz</unit>
+                               <description>
+                                           Item 7:  The integer part of the
+                                           Ramp Start Frequency, modulo 10^9.
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Ramp Start Frequency, fractional part</name>
+                               <field_number>7</field_number>
+                               <field_location unit="byte">25</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <description>
+                                           Item 8:  The fractional part of the
+                                           Ramp Start Frequency, in units of 10^-9 of field 6 (Item 7).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Ramp End Time, integer part</name>
+                               <field_number>8</field_number>
+                               <field_location unit="byte">29</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>second</unit>
+                               <description>
+                                           Item 9:  The integer part of the ramp
+                                           end time, measured from the Reference Time
+                                           (usually 0 hours UTC on 1 January 1950).
+                               </description>
+                         </Field_Binary>
+                         <Field_Binary>
+                               <name>Ramp End Time, fractional part</name>
+                               <field_number>9</field_number>
+                               <field_location unit="byte">33</field_location>
+                               <data_type>UnsignedMSB4</data_type>
+                               <field_length unit="byte">4</field_length>
+                               <unit>nanosecond</unit>
+                               <description>
+                                           Item 10:  The fractional part of the ramp
+                                           end time (see field 8, Item 9).
+                               </description>
+                         </Field_Binary>
+                   </Record_Binary>
+             </Table_Binary>

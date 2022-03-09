@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:other_investigation.hot_ion_atmos_escape</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Hot Ion Atmospheric Escape Cross Section Data</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-07-25</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                Initial set up of the investigation product. 
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Investigation>
+        <name>hot_ion_atmos_escape</name>
+        <type>Other Investigation</type>
+        <start_date>2015-03-17</start_date>
+        <stop_date xsi:nil="true" nilReason="unknown"></stop_date>
+        <description>
+        Initially started as part of the PDART 2014 efforts of Robert Johnson, this investigation is designed to collate results of 
+        modeling and laboratory work in atmospheric escape studies. Data associated with this project include cross section tables
+        for different atmospheric species representing different chemical reactions occuring in the upper atmosphere of planets.
+        </description>
+    </Investigation>
+</Product_Context>

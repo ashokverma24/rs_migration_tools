@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.rho_per</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Gorgonea Tertia</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Rho Persei</alternate_title></Alias>
+      <Alias><alternate_title>Rho Per</alternate_title></Alias>
+      <Alias><alternate_title>rho Per</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>25 Per</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+38 344</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 465769</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+38 630</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DO 9714</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 109</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 3682</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 1707</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00019058</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 02847-01572</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 19058</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 14354</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 14354</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 921</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 03019+3838</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +40054</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 746</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J0305+3850</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J03051057+3850243</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 631</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 635</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 635.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 79</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 68074</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 428</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 56138</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 4606</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30109</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 1877</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 2847-1572-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 21458</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 1288-00052877</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 2804</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Gorgonea Tertia</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 03 hours 05 minutes 10.59385 seconds
+Declination, ICRS coord, ep=J2000: +38 degrees 50 minutes 24.9943 seconds
+    </description>
+  </Target>
+</Product_Context>

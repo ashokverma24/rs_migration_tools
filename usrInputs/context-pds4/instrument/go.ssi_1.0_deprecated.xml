@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:ssi.go</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>SOLID STATE IMAGING SYSTEM for GO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.go::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Klaasen, K.P., M.C. Clary, James R. Janesick, Charge-Coupled Device Television
+                   Camera for Nasa&apos;s Galileo Mission To Jupiter, 23(3). p. 334- 342, Optical
+                   Engineering, May 1984.
+            </reference_text>
+            <description>reference.BELTONETAL1984</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Belton, Michael J.S., K.P. Klaasen, M.C. Clary, J.L. Anderson, C.D. Anger, M.H.
+                   Carr, C.R. Chapman, M.E. Davies, R. Greeley, D. Anderson, L.K. Bolef, T.E.
+                   Townsend, R. Greenberg, J.W. Head III, G. Neukum, C.B. Pilcher, J. Veverka,
+                   P.J. Gierasch, F.P. Fanale, A.P. Ingersoll, H. Masursky, D. Morrison, J.B.
+                   Pollack, The Galileo Solid-State Imaging Experiment, Vol. 60, pp. 413-455,
+                   Space Science Reviews, 1992.
+            </reference_text>
+            <description>reference.BELTONETAL1992</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>SOLID STATE IMAGING SYSTEM</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+      Instrument Overview
+      ===================
+        The SSI is a single-camera system based on an 800-line-by-800-
+        element solid-state silicon image sensor array called a charge-
+        coupled device (CCD).  The camera head, composed of a radiation-
+        shielded, radiatively cooled CCD, and supporting electronics, is
+        coupled to a 1500 mm optical system.  The optics subassembly,
+        inherited from the Voyager project and recoated to complement the
+        CCD&apos;s spectral characteristics, consists of an all-spherical,
+        catadioptric Cassegrain telescope operating at a fixed relative
+        aperture of f/8.5.
+ 
+ 
+      Scientific Objectives
+      =====================
+        The primary scientific objectives of the imaging experiment are to
+        investigate the chemical composition and physical state of the
+        Jovian satellites and the structure and dynamics of the Jovian
+        atmosphere.
+ 
+ 
+      Instrument Calibration
+      ======================
+        In-flight/radiometric calibration is implemented by imaging a flat,
+        solar-illuminated calibration target carried aboard the orbiter.
+        Stars or other celestial objects may also be imaged in support of
+        SSI in-flight calibration. To establish CCD dark-current correction
+        values, it is possible to read out SSI frames without prior
+        shuttering.
+ 
+ 
+      Operational Considerations
+      ==========================
+        Several practical constraints limit the degree to which the science
+        objectives can be met. The capacity of the telemetry link between
+        the spacecraft and Earth limits the acceptable data rate from the
+        camera, thereby placing constraints on the format size, encoding
+        level, and frame rate. These constraints are alleviated somewhat by
+        including 9 x 10**8 bits of tape recorder storage for onboard
+        buffering and by the capability for data compression in a ratio of
+        about 2.5:1. SSI pointing is accomplished by using an articulating
+        scan platform attached to the orbiter. This platform, while
+        extremely stable, does have some residual motions associated with
+        it. Smear considerations then influence requirements regarding
+        camera sensitivity, short shutter times, and filter transmission
+        and passband width. The harsh Jovian radiation environment
+        necessitates extensive shielding, particularly of the SSI sensor.
+        Rapid image readout onto the tape recorder is used to minimize the
+        buildup of radiation-induced noise. Power constraints limit the
+        rate of filter stepping permitted. Mass limitations partially
+        define the telescope aperture and the amount of radiation shielding
+        that can be used.
+ 
+      Detectors
+      =========
+ 
+        SSI
+        ---
+    DETECTOR_TYPE                 = Si CCD
+    DETECTOR_ASPECT_RATIO         = 1.0
+    MINIMUM_WAVELENGTH            = 0.404
+    MAXIMUM_WAVELENGTH            = 0.986
+    NOMINAL_OPERATING_TEMPERATURE = 163
+ 
+          The image sensor is a virtual-phase, buried-channel, frontside-
+          illuminated,  800-line-by-800-column charge-coupled device
+          developed by Texas Instruments, Inc.  The CCD employs a
+          polysilicon gate structure with 15.2 micrometer center-to-center
+          spacing between photoelements.  During image readout, all 800
+          lines are simultaneously shifted one line in the column (also
+          called parallel) direction, causing the first image line to be
+          shifted into the line transport (also called serial) register.
+ 
+          One of the most important parameters of an imaging sensor is the
+          thermally generated dark current. For any CCD there are basically
+          three sources of dark current (aside from local dark-current
+          blemishes, e.g., dark-current spikes): the surface component due
+          to the silicon/silicon dioxide interface states, the depletion
+          region component, and the diffusion component from the undepleted
+          bulk of the silicon.  Of these sources, the contribution from the
+          surface states has been shown to be the dominant contributor to
+          the dark current. For the virtual phase CCD, however, the surface
+          component can be significantly lower than that measured for other
+          CCD technologies. This is because, if the gate bias is held at a
+          sufficiently negative gate potential during integration and
+          readout, holes from the channel-stop regions will flow over the
+          surface of the imager area, suppressing surface state generation
+          in the clocked-phase regions as well. For such a gate potential,
+          channel inversion occurs.  The dark current measured under these
+          conditions for the 800 X 800 VP imager is 0.4 nA/cm**2 (at 25 deg
+          C), which is an order of magnitude better than other buried-
+          channel CCD technologies. At the SSI CCD temperature of -110 deg
+          C, the typical 0.4 nA/cm**2 level of dark current produces charge
+          at a rate of about 10**-5 electrons/pixel/s. With a noninverted
+          channel, dark current is typically around 10**-3
+          electrons/pixel/s for the SSI at -110 deg C.  The
+          signal-generation rate of dark spikes is not affected by channel
+          inversion and ranges from about 0.01 to 10 electrons/pixel/s at
+          -110 deg C.
+ 
+ 
+      Electronics
+      ===========
+        To maintain a wide dynamic range for this slow-scan camera system,
+        it is necessary, in addition to using a low-noise signal chain, to
+        suppress thermally induced CCD dark current.  To reduce the normal
+        dark current to an acceptable level for the longest SSI frame
+        readout interval, 60-2/3 s, CCD cooling to at least -70 deg C is
+        required. To keep the dark current small at localized sites of
+        dark-current blemishes, an operating temperature of -110 deg C has
+        been selected. This cooling is implemented through use of a
+        closed-loop, heater-modulated, radiatively cooled
+        temperature-control system.  The temperature controller maintains
+        CCD temperature to within 0.5 deg C of the design value over the
+        full range of view factors &apos;seen&apos; by the thermal-control radiators
+        as SSI pointing is articulated.
+ 
+        The SSI has four operating modes for Phase 1 and five for Phase 2.
+        These modes are characterized by frame repetition rates of 2-1/3 s
+        with 2 x 2 pixel summation, 8-2/3 s, 30-1/3 s, and 60-2/3 s and an
+        additional 15-1/6 s for  Phase 2.  Each frame sequence is composed
+        of a prepare and a readout cycle. During the prepare cycle the
+        shutter is reset, the filter wheel is stepped if commanded, the
+        sensor is read out to reduce dark current, and the shutter is
+        activated to expose the image. The image readout cycle follows, and
+        the data are read out either into the onboard tape recorder for
+        later transmission to Earth or put directly on the downlink for
+        real-time transmission.
+ 
+        The video analog-to-digital converter (ADC) converts the analog
+        video data to eight bits. The SSI has four gain states commandable
+        on an individual frame basis by SSI control parameter words. The
+        lowest gain state is scaled to provide full-scale data for the full
+        well of the CCD during summation mode readout. The highest gain
+        state is scaled to provide full-scale data for a CCD signal of
+        10,000 electrons.
+ 
+        SSI image parameter control (including commandable selection of
+        spectral filters, exposure duration, gain state, and image readout
+        rate/mode), timing signal generation, pixel shifting and analog-to-
+        digital conversion, internal sequencing, and engineering and status
+        data acquisition are performed under programmed microcomputer
+        (~muC) control. The SSI ~muC is composed of an RCA 1802
+        microprocessor (~muP), a bus adapter to interface with the
+        spacecraft command and data subsystem (CDS), 3 kwords of read-only
+        memory (ROM), 3 kwords of random access memory (RAM), two 256-word
+        scratchpad memories, two input ports, and three output ports.
+ 
+        To enhance image data return over the available spacecraft-to-Earth
+        telecommunication channel, the SSI includes a block adaptive rate
+        controlled (BARC) data compressor and added an additional Integer
+        Cosine Transform data compressor for the Phase 2 mission.  By using
+        the BARC data compressor, 8-bit pixel data are compressed to an
+        average of 3.24 bits/pixel.  Because of the error sensitivity of
+        compressed imaging data, the SSI includes a Reed-Solomon coder that
+        is active whenever the SSI is outputting compressed data. Use of
+        Reed- Solomon coding provides virtually error-free data at a
+        telemetry rate for which an uncoded data link results in a
+        bit-error-rate of one in fifty.
+ 
+ 
+      Filters
+      =======
+ 
+        CLEAR
+        -----
+    FILTER_TYPE                   = QUARTZ
+    MINIMUM_WAVELENGTH            = 0.38
+    CENTER_FILTER_WAVELENGTH      = 0.611
+    MAXIMUM_WAVELENGTH            = 0.82
+ 
+        VIOLET
+        ------
+    FILTER_TYPE                   = INTERFERENCE
+    MINIMUM_WAVELENGTH            = 0.38
+    CENTER_FILTER_WAVELENGTH      = 0.404
+    MAXIMUM_WAVELENGTH            = 0.43
+ 
+        GREEN
+        -----
+    FILTER_TYPE                   = INTERFERENCE
+    MINIMUM_WAVELENGTH            = 0.53
+    CENTER_FILTER_WAVELENGTH      = 0.559
+    MAXIMUM_WAVELENGTH            = 0.59
+ 
+        RED
+        ---
+    FILTER_TYPE                   = INTERFERENCE
+    MINIMUM_WAVELENGTH            = 0.64
+    CENTER_FILTER_WAVELENGTH      = 0.671
+    MAXIMUM_WAVELENGTH            = 0.70
+ 
+        ETHANE7270
+        ----------
+    FILTER_TYPE                   = INTERFERENCE
+    MINIMUM_WAVELENGTH            = 0.729
+    CENTER_FILTER_WAVELENGTH      = 0.734
+    MAXIMUM_WAVELENGTH            = 0.739
+ 
+        CONTINUUM
+        ---------
+    FILTER_TYPE                   = INTERFERENCE
+    MINIMUM_WAVELENGTH            = 0.747
+    CENTER_FILTER_WAVELENGTH      = 0.756
+    MAXIMUM_WAVELENGTH            = 0.765
+ 
+        METHANE8890
+        -----------
+    FILTER_TYPE                   = INTERFERENCE
+    MINIMUM_WAVELENGTH            = 0.779
+    CENTER_FILTER_WAVELENGTH      = 0.887
+    MAXIMUM_WAVELENGTH            = 0.895
+ 
+        INFRARED
+        --------
+    FILTER_TYPE                   = INTERFERENCE
+    MINIMUM_WAVELENGTH            = 0.96
+    CENTER_FILTER_WAVELENGTH      = 0.986
+    MAXIMUM_WAVELENGTH            = 1.0
+ 
+ 
+      Optics
+      ======
+    TELESCOPE_ID                  = SSI
+    TELESCOPE_FOCAL_LENGTH        = 1.5
+    TELESCOPE_DIAMETER            = 0.176
+    TELESCOPE_F_NUMBER            = 8.5
+    TELESCOPE_TRANSMITTANCE       = 0.50
+    TELESCOPE_T_NUMBER            = 10.8
+ 
+ 
+        The optics subassembly, inherited from the Voyager project and
+        recoated to complement the CCD&apos;s spectral characteristics, consists
+        of an all-spherical, catadioptric Cassegrain telescope with a 1500
+        mm focal-length lens operating at a fixed relative aperture of
+        f/8.5. Based on the CCD density of 65.6 elements per mm, the
+        angular resolution is 10. 16 ~murad per pixel.  Transmittance is
+        about 50% over the range of 400 to 1 nm.
+ 
+ 
+      Mounting Offset
+      ===============
+        The SSI is mounted on a two-axis scan platform, coaligned with
+        three other instruments: the Near IR Mapping Spectrometer, UV
+        Spectrometer, and Photopolarimeter Radiometer.
+ 
+ 
+      Field of View
+      =============
+    FOV_SHAPE_NAME                = SQUARE
+    HORIZONTAL_PIXEL_FOV          = 5.7E-04
+    VERTICAL_PIXEL_FOV            = 5.7E-04
+    HORIZONTAL_FOV                = 0.458
+    VERTICAL_FOV                  = 0.458
+    FOVS                          = 1
+ 
+ 
+      Operation Modes
+      ===============
+    INSTRUMENT_MODE_ID            = NORMAL
+    DATA_PATH_TYPE                = BOTH
+    INSTRUMENT_POWER_CONSUMPTION  = 23
+    INSTRUMENT_MODE_DESC          =
+ 
+        The SSI has four operating modes for the Phase 1 cruise mission and
+        five operating modes for the Phase2 Orbital mission.  The Phase 1
+        operating modes are characterized by frame repetition rates of
+        2-1/3 s with 2 x 2 pixel summation, 8-2/3 s, 30-1/3 s, and 60-2/3
+        s. The Phase 2 includes an addition operating mode of 15-1/6 s with
+        2x2 pixel summation.  Normal mode refers to frame rates of once per
+        8.666 sec or slower. Normal mode data can either be recorded or
+        channelled directly for real-time transmission.  In the normal
+        modes the data can, if necessary, be compressed by a factor of
+        about 2.5 in either an information preserving fashion (lines may be
+        truncated), or in a non-information preserving (lines are complete
+        but pixel values may lose accuracy). Normal mode is distinct from
+        &apos;summation mode&apos;.
+ 
+    INSTRUMENT_MODE_ID            = SUMMATION
+    DATA_PATH_TYPE                = RECORD
+    INSTRUMENT_POWER_CONSUMPTION  = 23
+    INSTRUMENT_MODE_DESC          =
+ 
+        Summation mode was designed to minimize the effect of radiation-
+        induced noise in the vicinity of Io. The frame time in summation
+        mode is 2.333 s or 15.1667 s (Phase 2 only), and in order to match
+        the read-out rate of the camera to the on-board tape recorder, it
+        was necessary to reduce the image format by the same factor.  The
+        SSI team chose an option in which adjacent pixels in the image are
+        summed (one &apos;summed&apos; pixel equals four mutually adjacent pixels;
+        the resulting image is then in a 400 x 400 pixel format) during the
+        read-out of the chip.  The summation mode data must be recorded.
+
+        </description>
+    </Instrument>
+</Product_Context>

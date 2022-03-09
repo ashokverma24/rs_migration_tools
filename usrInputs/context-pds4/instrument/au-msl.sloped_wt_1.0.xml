@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:au-msl.sloped_wt</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Aarhus Sloped Wind Tunnel</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-02-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial creation of the context product. 
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:laboratory.au-msl</lid_reference>
+            <reference_type>instrument_to_facility</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>http://marslab.au.dk/windtunnel-facilities/wind-tunnel/</reference_text>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1016/0169-555X(95)00090-R</doi>
+            <reference_text>Rasmussen, K., J.D. Iversen, and P. Rautahemio, (1996), Saltation and wind-flow interaction in a variable slope
+            wind tunnel, Geomorphology, 17(1), 19-28.</reference_text>
+        </External_Reference>
+    </Reference_List>
+  
+    <Instrument>
+        <name>Aarhus Sloped Wind Tunnel</name>
+        <type>Atmospheric Sciences</type>
+        <subtype>Wind Tunnel</subtype>
+        <description>
+            Open circulation, suction-type wind tunnel. Working section is 6.5 m length, with cross-section of 0.5 m by 0.35 m. Significant
+            flow conditioning is achieved through the use of spires. This tunnel can pivot to angles off the horizontal, up to at least 25 deg.
+        </description>
+    </Instrument>
+</Product_Context>

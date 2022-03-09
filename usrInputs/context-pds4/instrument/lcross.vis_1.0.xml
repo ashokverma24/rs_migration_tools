@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:vis.lcross</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>VISIBLE CAMERA for LCROSS</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.lcross::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.TBD</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>VISIBLE CAMERA</name>
+        <type>Imager</type> <!--RChen/EN was Camera-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+ 
+  The LCROSS visible camera (VIS) is a ruggedized NTSC color video
+  camera from the RocketCam(TM) camera family developed by Ecliptic
+  Enterprises, Inc.  The unit consists of a camera module and a
+  lens.  The camera&apos;s focal plane CCD sensor is 752 [H] x 582 [V]
+  pixel format, operating at 30 Hz (60 Fields/Sec).
+ 
+  The flight unit&apos;s lens is a 12 mm (focal length), f/1.2 lens
+  providing a 30.1 deg [H] x 22.8 deg [V] (37.6 deg [Diagonal])
+  field-of-view.
+ 
+  Interlaced NTSC fields are sampled by the Data Handling Unit (DHU)
+  at 720 x 243 resolution resulting in a final image resolution of
+  720 x 486 pixels.
+ 
+  Each pixel is 24-bit RGB with 8 bits per color channel.  These
+  images are compressed using a lossy compression algorithm
+  performed by the Analog Devices 611 Video Codec set on 80% quality
+  and decompressed on the ground.
+ 
+  The visible camera&apos;s peak power during operation is 2.9 W.  The
+  VIS camera has been fixed to an auto-gain/white balance setting.
+ 
+  Scientific Objectives
+  =====================
+ 
+  The VIS camera provides context imagery to support interpretation
+  of data collected by the other LCROSS instruments.
+ 
+  Calibration
+  ===========
+ 
+  There are no calibration files associated with this instrument.
+ 
+  Operational Modes
+  =================
+ 
+  The VIS camera has one operational mode: auto-gain and white
+  balance enabled.  The DHU can vary the rate at which images are
+  downlinked by discarding images from the 30 images/sec input
+  stream, and several different frame rates are used at different
+  points in the mission.
+
+        </description>
+    </Instrument>
+</Product_Context>

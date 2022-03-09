@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:kpno.corning2m13.cfim_t2ka</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>CFIM+T2KA</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-09-14</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:kpno.corning2m13</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>CFIM+T2KA</name>
+    <type>Imager</type>
+    <description>CCD imager with a Tektronik 2kx2k chip with 24micron pixels.              
+                                                                           
+ Characteristics are:                                                      
+ DIGITAL LIMITATION                       : 65,534                         
+ BIAS LEVEL                               : ~1000                          
+ NOISE,  e-/RMS                           : 4.0                            
+ DEFAULT GAIN, e/A                        :  3.6                           
+ LINEARITY,0.1%, e-                       : ~180,000                       
+ LINEARITY,1.0%, e-                       : ~190,000                       
+ INTERNAL RADIATION EVENT RATE, EVENTS/HR : ~2700                          
+ DARK CURRENT, e-/hr/pix                  : 4-5                            
+                                                                           
+ At the 2.1m with f/7.5, this give a FOV of 10.4' x 10.4'                  
+ with a pixel scale of 0.305'/pix.</description>
+  </Instrument>
+</Product_Context>
+

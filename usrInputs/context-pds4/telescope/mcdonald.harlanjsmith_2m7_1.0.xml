@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context 
+    xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:mcdonald.harlanjsmith_2m7</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Harlan J. Smith 2.7m Telescope</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:telescope:mcdonald.smith2m7</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-11-06</modification_date>
+                <version_id>1.0</version_id>
+                <description>Revised version produced by RMS Node, including LID, Title, and Reference List</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.mcdonald</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>McDonald Observatory (OLAF observatory code 445)</comment>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:mcdonald.harlanjsmith_2m7.p45a_phot</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:multi-host.generic_insp_hsp</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Telescope>
+        <aperture unit="m">2.72</aperture>
+        <telescope_longitude unit='deg'>255.978439</telescope_longitude>
+        <telescope_latitude unit='deg'>30.671583</telescope_latitude>
+        <telescope_altitude unit='m'>2075</telescope_altitude>
+        <coordinate_source>Geodetic - North American (1927) Datum</coordinate_source>
+        <description>
+            The 2.7m Telescope is a 2.72 m telescope located at 30.671583, 255.978439 at the McDonald Observatory.
+            
+            Instrument Host Overview
+            ========================
+            McDonald Observatory Harlan J. Smith 2.7m (107in) Telescope
+            
+            The information included here was extracted from the McDonald
+            Observatory web site at:
+            
+            http://mcdonaldobservatory.org/
+            
+            on 24 April 2002 by A.C.Raugh.
+            
+            
+            Observatory Information
+            =======================
+            McDonald Observatory is administered by the University of Texas
+            at Austin.  Telescopes are located on Mt. Locke in the Davis
+            Mountains of West Texas.
+            
+            East longitude:  -104 01.3
+            Latitude:   +30 40.3
+            Elevation:  2075 meters above sea level
+            
+            
+            Telescope Information
+            =====================
+            Harlan J. Smith optical telescope
+            
+            Primary Mirror
+            Diameter:  2.72m  (107 in)
+            Focal Length: 10.68m  ( 35 ft)
+            f-ratio:  3.93
+            
+            The telescope has three focal points:
+            
+            Cassegrain f/8.8       Cassegrain          Coude
+            Ritchey-Chretien         f/17.7           f/32.5
+            
+            Focal Length    23.91m/78.4ft      47.98m/157.4ft    88.43m/290.1ft
+            f-ratio          8.8               17.65             32.54
+            Field Angle     61.5 arcmin        31 arcmin          3 arcmin
+            Plate Scale      8.62 arcsec/mm     4.29 arcsec/mm    2.32 arcsec/mm
+        </description>
+    </Telescope>
+</Product_Context>

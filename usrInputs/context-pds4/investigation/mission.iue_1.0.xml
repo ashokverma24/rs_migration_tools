@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1F00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:investigation:mission.iue</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>IUE</title>
+        <information_model_version>1.15.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:investigation:mission.iue</alternate_title></Alias>  <!-- deprecated LID -->
+            <Alias><alternate_title>urn:nasa:pds:context:investigation:mission.international_ultraviolet_explorer</alternate_title></Alias>  <!-- deprecated LID -->
+            <Alias>
+                <alternate_id>INTERNATIONAL_UV_EXPLORER</alternate_id>
+                <alternate_title>INTERNATIONAL UV EXPLORER</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-25</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.iue</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:comet.sl9</lid_reference> -->
+<!--            <reference_type>investigation_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.jupiter</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Boggess, A., Bohlin, R.C., Evans, D.C., Freeman, H.R., Gull, T.R., Heap,
+                   S.R., Klinglesmith, D.A., Longanecker, G.R., Sparks, W., West, D.K., Holm,
+                   A.V., Perry, P.M., Schiffer III, F.H., Turnrose, B.E., Wu, C.C., Lane,
+                   A.L., Linsky, J.L., Savage, B.D., Benvenuti, P., Cassatella, A.,Clavel,
+                   J., Heck, A., Macchetto,F., Penston, M.V., Selvelli, C.I., Dunford, E.,
+                   Gondhaleker, P., Oliver, M.B., Sandford, M.C.W., Stickland, D.,
+                   Boksenberg, A., Coleman, C.I., Snijders, M.A.J., Wilson, R., In-Flight
+                   Performance of the IUE, Nature, 275, 377, 1978.
+            </reference_text>
+            <description>reference.BOGGESSETAL1978A</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>IUE</name>
+        <type>Mission</type>
+        <start_date>1978-01-26</start_date>
+        <stop_date>1996-09-30</stop_date>
+
+        <description>
+ 
+ 
+    Mission Overview
+    ================
+      The International Ultraviolet Explorer (IUE) was launched
+      successfully on 26 January 1978, from Cape Canaveral, Florida. The
+      satellite was developed to provide a general facility for observing
+      ultraviolet (UV) spectra of astronomical sources over the wavelength
+      range from about 1150 A to 3200 A.  The project has been a joint
+      undertaking in which the US National Aeronautics and Space
+      Administration (NASA) provided the spacecraft, the optical and
+      mechanical components of the scientific instrument, the US ground
+      observatory and spacecraft control software; the UK Science Research
+      Council (SRC) in collaboration with University College London (UCL)
+      provided the television cameras used to record the spectroscopic
+      data; and the European Space Agency (ESA) provided the solar arrays
+      and European ground observatory. The image processing software was
+      developed jointly by NASA and the SRC&apos;s Appleton Laboratory. The
+      satellite has been placed in geosynchronous orbit over the Atlantic
+      Ocean and is operated for 16h each day, for NASA sponsored
+      observers, from the US ground observatory located at the Goddard
+      Space Flight Center (GSFC) near Washington, D.C., and for the
+      remaining 8h by ESA, for ESA and UK sponsored observers, from the
+      European ground observatory located near Madrid.
+ 
+      A synchronous orbit has other advantages. Because the Earth subtends
+      an angle of only 17 degrees the unconstrained area of sky is much
+      greater than for low orbits and, as its movement along the ecliptic
+      is at the diurnal rate, the occurrence of occultations is
+      infrequent. Consequently, over large portions of the sky, neither
+      long exposures nor the observation of variable phenomena need be
+      periodically interrupted. A penalty is that in synchronous orbit
+      observations are normally made in full sunlight so the telescope
+      must be baffled to ensure adequate rejection of stray sunlight and
+      earthlight.  The offset guiding system can be influenced, however,
+      and relatively bright guide stars are needed near the Earth&apos;s limb.
+ 
+      The IUE mission was terminated on Sept 30, 1996 at 18:42 UT after a
+      life span of 18 years, 8 months, 4 days, 1 hour and 6 min.
+ 
+        </description>
+    </Investigation>
+</Product_Context>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pvo.oefd</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PLASMA WAVE ANALYZER for PVO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-08-26</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.pvo::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Scarf, F.L., G.M. Crook, I.M. Green, and P.F. Virobik,
+                   &apos;Initial results of the Pioneer 8 VLF electric field
+                   experiment&apos;, J. Geophys. Res., vol. 73, p. 6665, 1968.
+            </reference_text>
+            <description>reference.SCARFETAL1968</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Scarf, F.L., I.M. Green and G.M. Crook, &apos;the Pioneer 9
+                   electric field experiment : Part 1&apos;, Cosmic
+                   Electrodynamics, vol. 1, p. 496, 1971.
+            </reference_text>
+            <description>reference.SCARFETAL1971</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Scarf, F.L., W.W.L. Taylor, and I.M. Green, &apos;Plasma waves
+                   near Venus: Initial observations&apos;, Science, vol. 203,
+                   p. 748, 1979.
+            </reference_text>
+            <description>reference.SCARFETAL1979B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Scarf, F.L., W.W.L. Taylor, and P.F. Virobik, &apos;The Pioneer
+                   Venus Orbiter Plasma Investigation&apos;, IEEE Trans. Geoscience
+                   and Remote Sensing, Jan. 1980, Vol. GE-18, No. 1, p. 36,
+                   1980.
+            </reference_text>
+            <description>reference.SCARFETAL1980</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Taylor, W.W.L., F.L. Scarf, C.T. Russell, and L.H. Brace,
+                   &apos;Evidence for lightning on Venus&apos;, Nature, vol. 279,
+                   p. 614, 1979.
+            </reference_text>
+            <description>reference.TAYLORETAL1979A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Taylor, W.W.L, F.L. Scarf, C.T. Russell, and L.H. Brace,
+                   &apos;Absorption of whistler mode waves in the ionosphere of
+                   Venus&apos;, Science, vol. 205, p. 112, 1979.
+            </reference_text>
+            <description>reference.TAYLORETAL1979B</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>PLASMA WAVE ANALYZER</name>
+        <type>Plasma Wave Spectrometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    PI PDS USER ID                : RSTRANGEWAY
+    BUILD DATE                    : 1976
+    INSTRUMENT MASS               : 0.55
+    INSTRUMENT HEIGHT             : 0.075
+    INSTRUMENT LENGTH             : 0.190
+    INSTRUMENT WIDTH              : 0.066
+    INSTRUMENT MANUFACTURER NAME  : TRW
+    INSTRUMENT SERIAL NUMBER      : &apos;5971-02&apos;
+ 
+    ------------------------------------------------------
+    The Pioneer Venus Orbiter Plasma Wave Investigation
+ 
+        F.L. Scarf, W.W.L. Taylor, and P.F. Virobik
+ 
+     IEEE Transaction on Geoscience and Remote Sensing,
+ 
+                        January 1980
+    ----------------------------------------------------
+ 
+ 
+    Abstract
+    ========
+ 
+      The Pioneer Venus plasma wave instrument has a self-contained
+      balanced electric dipole (effective length = 0.75 m) and a
+      4-channel spectrum analyzer (30-percent band width filters with
+      center frequencies at 100 Hz, 5.4 kHz, and 30 kHz).  The
+      channels are continuously active and the highest Orbiter
+      telemetry rate (2048 bps) yields 4 spectral scans/s.  The total
+      mass of 0.55 kg includes the electronics, the antenna, and the
+      antenna deployment mechanism.  This report contains a brief
+      description of the instrument design and a discussion of the
+      in-flight performance.
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

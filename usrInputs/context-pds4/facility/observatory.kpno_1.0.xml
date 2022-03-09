@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.kpno</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Kitt Peak National Observatory (KPNO)</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2017-02-27</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    A. Raugh: Re-created from old draft submission
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Facility>
+        <name>Kitt Peak National Observatory</name>
+        <type>Observatory</type>
+        <description>
+            Kitt Peak National Observatory (KPNO) is one of the facilities of the National Optical Astronomy Observatory (NOAO). 
+            It is located 56 miles southwest of Tucson, Arizona, in the Schuk Toak District of the Tohono O'odham Nation, on 
+            Kitt Peak Mountain. Kitt Peak is known as "Ioligam" in O'odham. The telescopes on Kitt Peak are the Mayall 4-m,
+            the WIYN 3.5-m , and the WIYN 0.9-m telescopes. 
+            
+            The coordinates for this site are: 
+
+                 Latitude: 31 57 53.2 N 
+                 Longitude: 111 35 58.2 W 
+                 Elevation: 2062m above geoid
+        </description>
+    </Facility>
+</Product_Context>

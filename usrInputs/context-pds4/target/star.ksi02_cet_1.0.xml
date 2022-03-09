@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1900.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1900.xsd">
+    
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.ksi02_cet</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Xi2 Ceti</title>
+    <information_model_version>1.9.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>ksi02 Cet</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>73 Cet</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J02280955+0827362</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+08 265</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 15972</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+07 388</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 85</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 2960 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 1396 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00015318 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 00632-01491</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 15318</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 11484</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 11484</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 718</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 655 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 501 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 501</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 501.00 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 61 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 145611</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 334 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 110543</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 3657 </alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 1440</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 632-1491-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 2508</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 8963</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100015318</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 2401</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 8 914</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>73 Ceti</alternate_title></Alias>
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2018-02-07</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Xi2 Ceti</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 02 hours 28 minutes 09.54266 seconds
+Declination, ICRS coord, ep=J2000: +08 degrees 27 minutes 36.2007 seconds
+    </description>
+  </Target>
+</Product_Context>
+

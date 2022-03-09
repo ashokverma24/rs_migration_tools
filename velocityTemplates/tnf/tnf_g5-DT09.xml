@@ -1,0 +1,139 @@
+                        <Group_Field_Binary>
+                              <name>Ramp CHDO (Data Type 9)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>10</fields>
+                              <groups>0</groups>
+                              <description>Ramp CHDO (Data Type 9)</description>
+                              <group_location unit="byte">103</group_location>
+                              <group_length unit="byte">42</group_length>
+                              <Field_Binary>
+                                  <name>chdo_type</name>
+                                  <field_number>1</field_number>
+                                  <field_location unit="byte">1</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Type attribute of the ramp data CHDO.
+                                      Set to 10 because CHDO contains binary data.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chdo_length</name>
+                                  <field_number>2</field_number>
+                                  <field_location unit="byte">3</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Length attribute of the ramp data CHDO value field. 
+                                      Number of bytes after this item.  Set to 38.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ul_hi_phs_cycles</name>
+                                  <field_number>3</field_number>
+                                  <field_location unit="byte">5</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Uplink phase at time tag -- high part.
+                                      Total integer phase cycles divided by 2**32.
+                                      Values from 0 to 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ul_lo_phs_cycles</name>
+                                  <field_number>4</field_number>
+                                  <field_location unit="byte">9</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Uplink phase at time tag -- low part.
+                                      Total integer phase cycles modulo 2**32.
+                                      Values from 0 to 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ul_frac_phs_cycles</name>
+                                  <field_number>5</field_number>
+                                  <field_location unit="byte">13</field_location>
+                                  <data_type>UnsignedMSB4</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <description>
+                                      Uplink phase at time tag -- fractional part.
+                                      Fractional phase cycles multiplied by 2**32.
+                                      Values from 0 to 2**32-1 are allowed.
+                                      Total phase is HI*2**32 + LO + FRAC/2**32.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ramp_freq</name>
+                                  <field_number>6</field_number>
+                                  <field_location unit="byte">17</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Uplink frequency at the time tag.
+                                      Values between 2.0e9 and 34.7e9 are allowed; value 0.0 indicates unknown or invalid.
+                                      Precision varies with band (phase data give higher precision): 
+                                         S-band = 0.5 microhertz; 
+                                         X-band = 1.6 microhertz; 
+                                         Ka-band = 7.7 microhertz
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ramp_rate</name>
+                                  <field_number>7</field_number>
+                                  <field_location unit="byte">25</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz/second</unit>
+                                  <description>
+                                      Rate of change of uplink frequency.
+                                      Values -3.2e5 to 3.2e5 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ramp_type</name>
+                                  <field_number>8</field_number>
+                                  <field_location unit="byte">33</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Ramp type.
+                                         0 = Snap; 
+                                         1 = Start of new ramp; 
+                                         2 = Medial report; 
+                                         3 = Periodic report; 
+                                         4 = End of ramps; 
+                                         5 = Ramping terminated by operator; 
+                                         6 = Invalid/unknown; 
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>fabricated_sfdu_flag</name>
+                                  <field_number>9</field_number>
+                                  <field_location unit="byte">34</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Fabricated SFDU Flag -- indicates whether this SFDU was artificially 
+                                      fabricated in support of 3-way ranging.
+                                         0 = Originally generated by UPL and validated by TTC software; 
+                                         1 = Fabricated by TTC software
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>reserve8</name>
+                                  <field_number>10</field_number>
+                                  <field_location unit="byte">35</field_location>
+                                  <data_type>UnsignedMSB8</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <description>
+                                      Reserved. Eight bytes.
+                                  </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

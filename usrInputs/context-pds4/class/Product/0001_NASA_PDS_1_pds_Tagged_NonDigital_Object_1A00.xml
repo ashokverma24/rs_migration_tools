@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Product_Class_Definition xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:class:0001_nasa_pds_1.pds.tagged_nondigital_object_1a00</logical_identifier>
+        <version_id>1.10</version_id>
+        <title>Tagged_NonDigital_Object</title>
+        <information_model_version>1.10.0.0</information_model_version>
+        <product_class>Product_Class_Definition</product_class>
+    </Identification_Area>
+    <DD_Class_Full>
+        <name>Tagged_NonDigital_Object</name>
+        <version_id>1.10</version_id>
+        <local_identifier>urn:nasa:pds:context:class:0001_nasa_pds_1.pds.tagged_nondigital_object_1a00</local_identifier>
+        <steward_id>ops</steward_id>
+        <type>PDS4</type>
+        <namespace_id>pds</namespace_id>
+        <submitter_name>ops</submitter_name>
+        <definition>The Tagged NonDigital Object class is an abstract class for the physical and conceptual class hierarchy. A tagged object is an information object.</definition>
+        <registered_by>RA_0001_NASA_PDS_1</registered_by>
+        <registration_authority_id>0001_NASA_PDS_1</registration_authority_id>
+        <abstract_flag>true</abstract_flag>
+        <Terminological_Entry>
+            <name>Tagged_NonDigital_Object</name>
+            <definition>The Tagged NonDigital Object class is an abstract class for the physical and conceptual class hierarchy. A tagged object is an information object.</definition>
+            <language>English</language>
+            <preferred_flag>true</preferred_flag>
+        </Terminological_Entry>
+    </DD_Class_Full>
+</Product_Class_Definition>
+

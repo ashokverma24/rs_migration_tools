@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.vo2</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>VIKING ORBITER 2</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.pre-magellan</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+<!--removed in 1.1        <Internal_Reference> -->
+<!--removed in 1.1            <lid_reference>urn:nasa:pds:context:investigation:mission.support_archives</lid_reference> -->
+<!--removed in 1.1            <reference_type>instrument_host_to_investigation</reference_type> -->
+<!--removed in 1.1        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.viking</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:irtm.vo2</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:mawd.vo2</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:rss.vo2</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--noSpice        <Internal_Reference> -->
+<!--noSpice            <lid_reference>urn:nasa:pds:context:instrument:spice.vo2</lid_reference> -->
+<!--noSpice            <reference_type>instrument_host_to_instrument</reference_type> -->
+<!--noSpice        <Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:visa.vo2</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:visb.vo2</lid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:asteroid.asteroid</lid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.mars.deimos</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.mars.phobos</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:star.star</lid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:sun.sun</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Snyder, C.W., &apos;The Missions of the Viking Orbiters&apos;, Journal of Geophysical
+                   Research, vol. 82, p. 3971, 1977.
+            </reference_text>
+            <description>reference.SNYDER1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Soffen, G.A., &apos;The Viking Project&apos;, Journal of Geophysical Research, vol. 82,
+                   p. 3959, 1977.
+            </reference_text>
+            <description>reference.SOFFEN1977</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>VIKING ORBITER 2</name>
+        <type>Spacecraft</type>
+        <naif_host_id>VO2</naif_host_id>
+
+        <description>
+              Online Reference: http://www-pdsimage.wr.usgs.gov/PDS/public/mapmaker/mapmkr.htm
+
+ 
+ 
+    The Viking spacecraft consisted of two orbiters, each with
+    a heat-sterilized lander within a capsule. Together with
+    fuel they each weighed 3530 kg just after launch. After
+    landing, their masses were about 900 kg for the orbiters
+    and 600 kg for each lander.
+ 
+    The orbiters, derived from earlier Mariner designs, were
+    powered by solar panels and were stabilized in three axes
+    by use of solar and star sensors in conjunction with
+    attitude control jets. Three remote sensing science
+    investigations resided on the two-axis scan platform: a
+    pair of high resolution slow scan televison framing cameras
+    (the Visual Imaging Subsystem, or VIS); a near-infrared
+    spectrometer for atmospheric water detection (the Mars
+    Atmosphere Water Detector, MAWD); and a visual and thermal
+    infrared radiometer system (Infrared Thermal Mapper, IRTM).
+ 
+    The landers each carried two facsimile cameras providing
+    stereo views of the surface; a boom-mounted set of
+    meteorology instruments; an X-ray fluorescence experiment
+    for inorganic chemical analysis of soil; a gas
+    chromatograph mass spectrometer to measure the soil and
+    atmosphere; three biology experiments: the pyrolytic
+    release, labeled release, and gas exchange systems; a
+    seismometer; a magnetic properties experiment. Soil
+    physical properties experiments were carried out using
+    several of the abovementioned systems. Upper atmosphere
+    measurements were performed using detectors on the landers
+    during entry through the atmosphere. Finally, radio science
+    was done using transmitters and receivers on both the
+    orbiters and landers. An extensible arm and scoop system on
+    each lander was programmable to acquire samples of soil and
+    rock for analysis on board the landers and to affect the
+    local environment for visual inspection.
+ 
+  Platform Descriptions
+  =====================
+    Platform SCAN PLATFORM
+    ----------------------
+      The three Viking orbiter science instruments are mounted on
+      a scan platform that provides temperature control for them
+      and pointing in two axes: cone and clock. The platform can
+      be rotated in cone and/or clock at rates of 0.25 or 1.0
+      degree/sec. Subroutines stored in the memory of the
+      on-board computer can be called upon to move the platform
+      in specified patterns. The nominal range of motion possible
+      for the scan platform is from 45 to 175 degrees cone and 80
+      to 310 clock; however, there are mechanical constraints
+      that reduce this range. See reference.
+ 
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

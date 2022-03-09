@@ -1,0 +1,219 @@
+             <Table_Binary>
+                   <name>DATA_TYPE (Data Type TABLENO)</name>
+                   <offset unit="byte">OFFSET</offset>
+                   <records>RECORDS</records>
+                   <description>
+                       Raw radio tracking data.
+                   </description>
+                   <Record_Binary>
+                         <fields>0</fields>
+                         <groups>5</groups>
+                         <record_length unit="byte">RECORDLENGTH</record_length>
+                       <Group_Field_Binary>
+                              <name>SFDU Label</name>
+                              <group_number>1</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>6</fields>
+                              <groups>0</groups>
+                              <description>The SFDU label</description>
+                              <group_location unit="byte">1</group_location>
+                              <group_length unit="byte">20</group_length>
+                              <Field_Binary>
+                                    <name>SFDU Control Authority</name>
+                                    <field_number>1</field_number>
+                                    <field_location unit="byte">1</field_location>
+                                    <data_type>ASCII_String</data_type>
+                                    <field_length unit="byte">4</field_length>
+                                    <description>
+                                          An ASCII string giving the SFDU Control Authority for this data
+                                          type.  Set to "NJPL", meaning the data description information for
+                                          this type of SFDU is maintained by the NASA/JPL Control Authority.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>SFDU Label Version ID</name>
+                                    <field_number>2</field_number>
+                                    <field_location unit="byte">5</field_location>
+                                    <data_type>ASCII_String</data_type>
+                                    <field_length unit="byte">1</field_length>
+                                    <description>
+                                          An ASCII character giving the SFDU Label Version Identifier.
+                                          Set to "2", meaning the length given in field 6 is formatted
+                                          as a binary unsigned integer.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>SFDU Class ID</name>
+                                    <field_number>3</field_number>
+                                    <field_location unit="byte">6</field_location>
+                                    <data_type>ASCII_String</data_type>
+                                    <field_length unit="byte">1</field_length>
+                                    <description>
+                                          An ASCII character giving the SFDU Class Identifier.  Set to "I",
+                                          meaning this is a Compressed Header Data Object (CHDO) structured SFDU.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>SFDU Reserved</name>
+                                    <field_number>4</field_number>
+                                    <field_location unit="byte">7</field_location>
+                                    <data_type>UnsignedMSB2</data_type>
+                                    <field_length unit="byte">2</field_length>
+                                    <description>
+                                          These two bytes are not defined.
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>SFDU Data Description ID</name>
+                                    <field_number>5</field_number>
+                                    <field_location unit="byte">9</field_location>
+                                    <data_type>ASCII_String</data_type>
+                                    <field_length unit="byte">4</field_length>
+                                    <description>
+                                          An ASCII string giving the SFDU Data Description Identifier.
+                                          Possible values are:
+                                             C123 = Uplink data types
+                                             C124 = Downlink data types
+                                             C125 = Derived data types
+                                             C126 = Interferometric data types
+                                             C127 = Filtered data types
+                                    </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                    <name>SFDU Length</name>
+                                    <field_number>6</field_number>
+                                    <field_location unit="byte">13</field_location>
+                                    <data_type>UnsignedMSB8</data_type>
+                                    <field_length unit="byte">8</field_length>
+                                    <unit>byte</unit>
+                                    <description>
+                                          The number of remaining bytes in the SFDU after the 20-byte SFDU label.
+                                    </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>
+                        <Group_Field_Binary>
+                              <name>Aggregation CHDO Label</name>
+                              <group_number>2</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>2</fields>
+                              <groups>0</groups>
+                              <description>The Aggregation CHDO Label</description>
+                              <group_location unit="byte">21</group_location>
+                              <group_length unit="byte">4</group_length>
+                              <Field_Binary>
+                                   <name>Header Aggregation CHDO Type</name>
+                                   <field_number>1</field_number>
+                                   <field_location unit="byte">1</field_location>
+                                   <data_type>UnsignedMSB2</data_type>
+                                   <field_length unit="byte">2</field_length>
+                                   <description>
+                                        Header Aggregation CHDO Type.  Set to "1", meaning this CHDO is an
+                                        aggregation of header CHDOs.  The NJPL Control Authority maintains a
+                                        registry of CHDO types.
+                                   </description>
+                              </Field_Binary>
+                             <Field_Binary>
+                                   <name>Header Aggregation CHDO Length</name>
+                                   <field_number>2</field_number>
+                                   <field_location unit="byte">3</field_location>
+                                   <data_type>UnsignedMSB2</data_type>
+                                   <field_length unit="byte">2</field_length>
+                                   <unit>byte</unit>
+                                   <description>
+                                        Header Aggregation CHDO Length.
+                                    </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>
+                        <Group_Field_Binary>
+                              <name>Primary CHDO</name>
+                              <group_number>3</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>6</fields>
+                              <groups>0</groups>
+                              <description>The Primary CHDO</description>
+                              <group_location unit="byte">25</group_location>
+                              <group_length unit="byte">8</group_length>
+                              <Field_Binary>
+                                    <name>Primary Header CHDO Type</name>
+                                    <field_number>1</field_number>
+                                    <field_location unit="byte">1</field_location>
+                                    <data_type>UnsignedMSB2</data_type>
+                                    <field_length unit="byte">2</field_length>
+                                    <description>
+                                         Primary Header CHDO Type.  Set to to 2, meaning this CHDO is a
+                                         primary header CHDO.  The NJPL Control Authority maintains a
+                                         registry of CHDO types.
+                                   </description>
+                             </Field_Binary>
+                             <Field_Binary>
+                                   <name>Primary Header CHDO Length</name>
+                                   <field_number>2</field_number>
+                                   <field_location unit="byte">3</field_location>
+                                   <data_type>UnsignedMSB2</data_type>
+                                   <field_length unit="byte">2</field_length>
+                                   <unit>byte</unit>
+                                   <description>
+                                      Primary Header CHDO Length. Set to 4, meaning length of the value
+                                      field of the Primary Header CHDO is 4 bytes.
+                                   </description>
+                             </Field_Binary>
+                             <Field_Binary>
+                                   <name>Major Data Class</name>
+                                   <field_number>3</field_number>
+                                   <field_location unit="byte">5</field_location>
+                                   <data_type>UnsignedByte</data_type>
+                                   <field_length unit="byte">1</field_length>
+                                   <description>
+                                         Major Data Class.  Set to 6, meaning these are ground station monitor data.
+                                   </description>
+                             </Field_Binary>
+                             <Field_Binary>
+                                   <name>Minor Data Class</name>
+                                   <field_number>4</field_number>
+                                   <field_location unit="byte">6</field_location>
+                                   <data_type>UnsignedByte</data_type>
+                                   <field_length unit="byte">1</field_length>
+                                   <description>
+                                         Minor Data Class.  Set to 14 meaning these are processed tracking data.
+                                   </description>
+                             </Field_Binary>
+                             <Field_Binary>
+                                   <name>Mission Identifier</name>
+                                   <field_number>5</field_number>
+                                   <field_location unit="byte">7</field_location>
+                                   <data_type>UnsignedByte</data_type>
+                                   <field_length unit="byte">1</field_length>
+                                   <description>
+                                         Mission Identifier.  Set to a number between 0 and 255.
+                                   </description>
+                             </Field_Binary>
+                             <Field_Binary>
+                                   <name>Format Code</name>
+                                   <field_number>6</field_number>
+                                   <field_location unit="byte">8</field_location>
+                                   <data_type>UnsignedByte</data_type>
+                                   <field_length unit="byte">1</field_length>
+                                   <description>
+                                         Format Code; also known as the data type.
+                                         The following data types (DT) are possible:
+                                            0 = Uplink Carrier Phase;
+                                            1 = Downlink Carrier Phase; 
+                                            2 = Uplink Sequential Ranging Phase; 
+                                            3 = Downlink Sequential Ranging Phase; 
+                                            4 = Uplink PN Ranging Phase;   
+                                            5 = Downlink PN Ranging Phase;   
+                                            6 = Doppler;   
+                                            7 = Sequential Ranging;   
+                                            8 = Angles;   
+                                            9 = Ramps;
+                                            10 = VLBI; 
+                                            11 = DRVID; 
+                                            12 = Smoothed Noise; 
+                                            13 = Allan Deviation; 
+                                            14 = PN Ranging; 
+                                            15 = Tone Ranging; 
+                                            16 = Carrier Observable; 
+                                            17 = Total Phase Observable
+                                   </description>
+                             </Field_Binary>
+                        </Group_Field_Binary>

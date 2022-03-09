@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.rx_lep</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>RX Leporis</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>RX Lep</alternate_title></Alias>
+      <Alias><alternate_title>Variable Star RX Lep</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RX Lep</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-12 1092</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 100456</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DIRBE D05112286M1150566</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 6358</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 3079</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00033664</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05338-00890</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 33664</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 24169</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 24169</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 1693</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 05090-1154</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10084</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J05112286-1150566</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 215397</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 702</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 150206</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 8162</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* ZI 357</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5338-890-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 21636</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 4694</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZC 11 1348</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 0506-11</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2989528414633002624</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>RX Leporis</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 05 hours 11 minutes 22.8715425 seconds
+Declination, ICRS coord, ep=J2000: -11 degrees 50 minutes 56.722211 seconds
+    </description>
+  </Target>
+</Product_Context>

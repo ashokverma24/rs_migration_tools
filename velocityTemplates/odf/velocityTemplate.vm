@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="$opt.schematron"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational
+   xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+      http://pds.nasa.gov/pds4/pds/v1
+      $opt.schema">
+
+#set ($Target=$Text.toTitleCase(${lbl.TARGET_NAME}))
+#set ($collection_id_pre=$opt.collection_id_pre)
+#set ($dataType="odf")
+       <Identification_Area>
+             <logical_identifier>urn:nasa:pds:$opt.bundle_id:$collection_id_pre$dataType:FILEWITHNOEXE</logical_identifier>
+             <version_id>1.0</version_id>
+             <title>$opt.spacecraft Radio Science Orbit Data File (ODF)
+                    From: START_TIMEZ to STOP_TIMEZ
+                    DSN: DSSUSED
+             </title>
+             <information_model_version>$opt.model_version</information_model_version>
+             <product_class>Product_Observational</product_class>
+             <Citation_Information>
+                   <author_list>$opt.author_list</author_list>
+                   <publication_year>$opt.publication_year</publication_year>
+                   <description>$opt.spacecraft Radio Science Orbit Data File</description>
+             </Citation_Information>
+             <Modification_History>
+                   <Modification_Detail>
+                         <modification_date>CREATION_DAY</modification_date>
+                         <version_id>1.0</version_id>
+                         <description>
+                                This data file has been migrated from PDS3 PRODUCT_ID $lbl.PRODUCT_ID
+                                in data set $lbl.DATA_SET_ID to PDS4. The data file has not
+                                been changed; a new PDS4 label was created as part of the migration process.
+                         </description>
+                  </Modification_Detail>
+             </Modification_History>
+       </Identification_Area>
+       <Observation_Area>
+             <Time_Coordinates>
+                   <start_date_time>START_TIMEZ</start_date_time>
+                   <stop_date_time>STOP_TIMEZ</stop_date_time>
+             </Time_Coordinates>
+             <Primary_Result_Summary>
+                   <purpose>Science</purpose>
+                   <processing_level>Raw</processing_level>
+                   <description>$opt.spacecraft raw radio tracking data</description>
+                   <Science_Facets>
+                           <discipline_name>Radio Science</discipline_name>
+                   </Science_Facets>
+             </Primary_Result_Summary>
+             <Investigation_Area>
+                   <name>$opt.mission</name>
+                   <type>Mission</type>
+                   <Internal_Reference>
+                         <lid_reference>urn:nasa:pds:context:investigation:$opt.investigation</lid_reference>
+                         <reference_type>data_to_investigation</reference_type>
+                   </Internal_Reference>
+             </Investigation_Area>
+             <Observing_System>
+                   <Observing_System_Component>
+                         <name>$opt.spacecraft</name>
+                         <type>Spacecraft</type>
+                         <Internal_Reference>
+                               <lid_reference>urn:nasa:pds:context:instrument_host:$opt.instrument_host</lid_reference>
+                               <reference_type>is_instrument_host</reference_type>
+                         </Internal_Reference>
+                   </Observing_System_Component>
+                   <Observing_System_Component>
+                         <name>$opt.instrument_name</name>
+                         <type>Instrument</type>
+                         <Internal_Reference>
+                               <lid_reference>urn:nasa:pds:context:instrument:$opt.instrument</lid_reference>
+                               <reference_type>is_instrument</reference_type>
+                         </Internal_Reference>
+                   </Observing_System_Component>
+                   DSNOBSSYS
+             </Observing_System>
+             <Target_Identification>
+                   <name>$Target</name>
+                   <type>$targ_type.get($Target)</type>
+                   <Internal_Reference>
+                         <lid_reference>$targ_lid.get($Target)</lid_reference>
+                         <reference_type>data_to_target</reference_type>
+                   </Internal_Reference>
+             </Target_Identification>
+       </Observation_Area>
+       <Reference_List>
+            <Internal_Reference>
+                  <lid_reference>DOCLID</lid_reference>
+                  <reference_type>data_to_document</reference_type>
+                  <comment>
+                       Reference document for the Orbit Data File (ODF) data.
+                       For data collected earlier or later than this document, consult other 
+                       document products in the same collection.
+
+                       ODFs were produced by the NASA/JPL Multi-Mission Navigation Radio
+                       Metric Data Conditioning Team for use in determining
+                       spacecraft trajectories, gravity fields affecting them,
+                       and radio propagation conditions.  Each ODF consists of
+                       many 36-byte logical records, which fall into 7 primary
+                       groups plus an End-of-File Group.  An ODF usually
+                       contains most groups, but may not have all.  The first
+                       record in each of the 7 primary groups is a header
+                       record; depending on the group, there may be from zero
+                       to many data records following each header.
+                  </comment>
+            </Internal_Reference>
+            <Source_Product_External>
+                  <external_source_product_identifier>$lbl.DATA_SET_ID:$lbl.PRODUCT_ID</external_source_product_identifier>
+                  <reference_type>data_to_raw_source_product</reference_type>
+                  <curating_facility>$opt.curating_facility</curating_facility>
+                  <description>
+                      The value for external_source_product_identifier is constructed from the
+                      PDS3 DATA_SET_ID, an ASCII colon character, and the PDS3 PRODUCT_ID.
+                  </description>
+            </Source_Product_External>
+       </Reference_List>
+       <File_Area_Observational>
+             <File>
+                   <file_name>FILE_NAME</file_name>
+                   <creation_date_time>CREATION_TIME</creation_date_time>
+                   <file_size unit="byte">FILE_SIZE</file_size>
+                   <md5_checksum>MD5</md5_checksum>
+             </File>

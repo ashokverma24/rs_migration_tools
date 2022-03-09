@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" 
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 
+ https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rss.mess</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>Radio Science Subsystem for Gravity Science on MESSENGER</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Extracted metadata from PDS3 catalog and modified to comply with PDS4 Information Model.
+                </description>
+            </Modification_Detail>
+          <Modification_Detail>
+            <modification_date>2018-12-04</modification_date>
+            <version_id>1.1</version_id>
+            <description>
+              Revised and streamlined during migration of PDS3 data set to PDS4.
+            </description>
+          </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mess</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:messenger:document-rs:instrument_rs</lid_reference>
+          <reference_type>instrument_to_document</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Asmar, S. W., N. A. Renzetti, The Deep Space Network as an instrument for radio
+                   science research, Jet Propulsion Laboratory Publication 80-93, Rev. 1, 15 April 1993.
+            </reference_text>
+            <description>
+              Description of the NASA Deep Space Network as it was used for radio science in the mid-1990s.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Asmar, S.W., R.G. Herrera, and T. Priest, Radio Science Handbook, JPL D-7938,
+                   Volume 6, Jet Propulsion Laboratory, Pasadena, CA, 1995.
+            </reference_text>
+            <description>
+              A handbook prepared by the JPL Radio Science Support Team. Volume 6 focused on
+              radio science operations supporting redshift observations, USO tests, solar wind
+              scintillations, and Jupiter occultations in NASA's Galileo mission.  No subsequent 
+              volumes were released for missions after Galileo.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Chang, Christine, DSN Telecommunications Link Design Handbook, DSN Document 810-5, 
+                   JPL D-19379, Jet Propulsion Laboratory, Pasadena, CA.
+            </reference_text>
+            <description>
+              A modularized source of technical information for flight projects using the DSN. The Handbook
+              provides information useful to flight projects contemplating the design of hardware and 
+              software, with reasonable assurance that the resulting project telecommunications interfaces 
+              will be compatible with established or planned DSN configurations.  The modules are revised 
+              from time to time to reflect new capabilities when these new capabilities have been planned 
+              and budgeted by the DSN Project Office.  The handbook was first released in 1970; its 48th 
+              revision was released in 2018.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Sniffin, R. W., DSN Coverage and Geometry, DSN/Flight Project Interface Design
+                   document GEO-10, Rev. E, Jet Propulsion Laboratory, Pasadena, CA, 1997.
+            </reference_text>
+            <description>
+              A module of a larger document (810-5) that describes the geometry and visibility
+              provided by the DSN in supporting spacecraft telecommunications. The module provides
+              DSN station coordinates and locates the stations with respect to other points on the
+              Earth's surface.  Coverage charts illustrate areas of coverage and non-coverage
+              from selected combinations of stations for spacraft at selected altitudes.  Horizon
+              masks are included so that the effects of terrain masking can be anticipated.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Deep Space Mission System (DSMS) External Interface Specification 0159-Science
+                   Radio Science Receiver Standard Formatted Data Unit (SFDU), part of DSN
+                   document 820-013 (JPL D-16765), Jet Propulsion Laboratory, Pasadena, CA, 2001.
+            </reference_text>
+            <description>
+              The specification of the Radio Science Receiver (RSR) Standard Format Data Unit (SFDU).
+              It documents the format and contents of the RSR SFDU and briefly describes the RSR
+              itself and the various mechanisms by which RSR SFDUs are stored and transported.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Solomon, S.C., R.L. McNutt, Jr., R.E. Gold, and D.L. Domingue, MESSENGER
+                   mission overview, Space Science Reviews, 131, 3-39, 2007.
+            </reference_text>
+            <description>
+              A description of the MESSENGER mission and its planned science, written before the
+              spacecraft arrived at Mercury.
+            </description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Srinivasan, D.K., M.E. Perry, K.B. Fielhauer, D.E. Smith, and M.T. Zuber, The
+                   radio frequency subsystem and radio science on the MESSENGER mission, Space
+                   Science Reviews, 131, 557-571, 2007.
+            </reference_text>
+            <description>
+              A description of the MESSENGER radio science subsystem and the planned radio science
+              investigations, written before the spacecraft arrived at Mercury.
+            </description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>Radio Science Subsystem</name>
+        <type>Radio Science</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+        <serial_number>not applicable</serial_number>
+        <description>
+          The telecommunications system uses an X-band transponder on the spacecraft and
+          transmitters and receivers at stations of the NASA Deep Space Network on Earth.
+          Range and Doppler measurements made during communcations sessions can be used to
+          determine the spacecraft trajectory; from the trajectory, Mercury's gravity field
+          can be inferred.  Measurements of occultation times can be used to obtain the
+          planet's radius at the occultation points, refining the planet's shape model.
+        </description>
+    </Instrument>
+  
+</Product_Context>

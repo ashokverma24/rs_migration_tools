@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.near_earth_asteroid_rendezvous</logical_identifier>
+        <version_id>1.1</version_id>
+        <title>NEAR EARTH ASTEROID RENDEZVOUS</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>NEAR</alternate_id>
+                <alternate_title>NEAR</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-01-03</modification_date>
+                <version_id>1.1</version_id>
+                <description>
+                    Per "Guide toPDS4 Context Products" v1.3,
+                    - changed all lidvid_reference to lid_reference
+                    - changed target LIDs to new formation rule
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.near</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:asteroid.253_mathilde</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:asteroid.433_eros</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lid_reference>urn:nasa:pds:context:target:asteroid.asteroid</lid_reference> -->
+<!--            <reference_type>investigation_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planetary_system.solar_system</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Acuna, M., C.T. Russell, L.J. Zanetti, and B.J. Anderson, The NEAR Magnetic
+                   Field Investigation: Science Objectives at Asteroid Eros 433 and Experimental
+                   Approach, Journal of Geophysical Research, Vol. 102(E10), pp. 23751-23760, 1997.
+            </reference_text>
+            <description>reference.ACUNAETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Bell, J., D. Davis, W. Hartmann, M. Gaffey, Asteroids: The Big Picture, in
+                   Asteroids II, R. Binzel, T. Gehrels, and M. Matthews (eds.), University of
+                   Arizona Press, Tucson, pp. 921-945, 1989.
+            </reference_text>
+            <description>reference.BELLETAL1989</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Belton, Michael J.S., K.P. Klaasen, M.C. Clary, J.L. Anderson, C.D. Anger, M.H.
+                   Carr, C.R. Chapman, M.E. Davies, R. Greeley, D. Anderson, L.K. Bolef, T.E.
+                   Townsend, R. Greenberg, J.W. Head III, G. Neukum, C.B. Pilcher, J. Veverka,
+                   P.J. Gierasch, F.P. Fanale, A.P. Ingersoll, H. Masursky, D. Morrison, J.B.
+                   Pollack, The Galileo Solid-State Imaging Experiment, Vol. 60, pp. 413-455,
+                   Space Science Reviews, 1992.
+            </reference_text>
+            <description>reference.BELTONETAL1992</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Belton, M., C. Chapman, J. Veverka, K. Klaasen, A. Harch, et al., First Images
+                   of Asteroid 243 Ida, Science, Vol. 265, pp. 1543-1547, 1994.
+            </reference_text>
+            <description>reference.BELTONETAL1994</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Binzel, R., and S. Xu, Chips off of Asteroid 4 Vesta: Evidence for the Parent
+                   Body of Basaltic Achondrite Meteorites, Science, Vol. 260, pp. 186-191, 1993.
+            </reference_text>
+            <description>reference.BINZEL-XU1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Binzel, R.P., T. Burbine, and S. Bus, Ground-Based Reconnaissance of 253
+                   Mathilde: Visible Wavelength Spectrum and Meteorite Comparison, Icarus, Vol.
+                   119, pp. 447-449, 1996.
+            </reference_text>
+            <description>reference.BINZELETAL1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Chapman, C., S-Type Asteroids, Ordinary Chondrites, and Space Weathering: The
+                   Evidence from Galileo&apos;s Flybys of Gaspra and Ida, Meteoritics and Planetary
+                   Science, Vol. 31, pp. 699-725, 1996.
+            </reference_text>
+            <description>reference.CHAPMAN1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Cheng, A.F., J. Veverka, C. Pilcher, and R. Farquhar, Missions to Near-Earth
+                   Objects, Hazards Due to Comets &amp; Asteroids, T. Gehrels (ed.), University of
+                   Arizona Press, Tucson, AZ, USA, pp. 651-670, 1994.
+            </reference_text>
+            <description>reference.CHENGETAL1994</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Cheng, A.F., A. Santo, K. Heeres, J. Landshof, R. Farquhar, et al., Near-Earth
+                   Asteroid Rendezvous: Mission Overview, Journal of Geophysical Research, Vol.
+                   102, pp. 23695-23708, 1997.
+            </reference_text>
+            <description>reference.CHENGETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Cheng, A.F., R.W. Farquhar, and A.G. Santo, NEAR Overview, Johns Hopkins APL
+                   Technical Digest, Vol. 19, pp. 95-106, 1998.
+            </reference_text>
+            <description>reference.CHENGETAL1998</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Farquhar, R.W., D. Dunham, and J. McAdams, NEAR Mission Overview and Trajectory
+                   Design, Journal of Astronautical Science, Vol. 43, pp. 353-371, 1995.
+            </reference_text>
+            <description>reference.FARQUHARETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gaffey, M., T.H. Burbine, and R. Binzel, Asteroid Spectroscopy: Progress and
+                   Perspectives, Meteoritics and Planetary Science, Vol. 28, pp. 161-187, 1993.
+            </reference_text>
+            <description>reference.GAFFEYETAL1993A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gaffey, M., J. Bell, R. Brown, T. Burbine, J. Piatek, et al., Mineralogic
+                   Variations Within the S-Type Asteroid Class, Icarus, Vol. 106, pp. 573-602,
+                   1993.
+            </reference_text>
+            <description>reference.GAFFEYETAL1993B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Kivelson, M., L. Bargatze, K. Khurana, D. Southwood, R. Walker, and P. Coleman,
+                   Magnetic Field Signatures Near Galileo&apos;s Closest Approach to Gaspra, Science,
+                   Vol. 261, pp. 331-334, 1993.
+            </reference_text>
+            <description>reference.KIVELSONETAL1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Landshof, J.A., and A.F. Cheng, NEAR Mission and Science Operations at Eros,
+                   Journal of Astronautical Science, Vol. 43, p. 477, 1995.
+            </reference_text>
+            <description>reference.LANDSHOF-CHENG1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   McCord, T., J.B. Adams, and T.V. Johnson, Asteroid Vesta: Spectral Reflectivity
+                   and Compositional Implications, Science, Vol. 168, pp. 1445-1447, 1970.
+            </reference_text>
+            <description>reference.MCCORDETAL1970</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Michel, P., P. Farinella, and C. Froeschle, The Orbital Evolution of the
+                   Asteroid Eros and Implications for Collision with the Earth, Nature, Vol. 380,
+                   pp. 689-691, 1996.
+            </reference_text>
+            <description>reference.MICHELETAL1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Mottola, S., W. Sears, A. Erikson, A. Harris, J. Young, et al., The Slow
+                   Rotation of 253 Mathilde, Planetary Space Science, Vol. 43, pp. 1609-1613, 1995.
+            </reference_text>
+            <description>reference.MOTTOLAETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Murchie, S.L., and C. Pieters, Spectral Properties and Rotational Spectral
+                   Heterogeneity of 433 Eros, Journal of Geophysical Research, Vol. 101, pp.
+                   2201-2214, 1996.
+            </reference_text>
+            <description>reference.MURCHIE-PIETERS1996</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Ostro, S., K. Rosema, and R. Jurgens, The Shape of Eros, Icarus, Vol. 84, pp.
+                   334-351, 1990.
+            </reference_text>
+            <description>reference.OSTROETAL1990</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Santo, A.G., S.C. Lee, and R.E. Gold, NEAR Spacecraft and Instrumentation, The
+                   Journal of the Astronautical Sciences, Vol. 43, No. 4, pp. 373-397,
+                   October-December 1995.
+            </reference_text>
+            <description>reference.SANTOETAL1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Trombka, J., S. Floyd, W. Boynton, S. Bailey, J. Bruckner, S. Squyres, L.
+                   Evans, P. Clear, R. Starr, E. Fiore, R. Gold, J. Goldsten, and R. McNutt,
+                   Compositional Mapping With The Near X-ray/Gamma-ray Spectrometer, J. Geophys.
+                   Res., Vol. 102, pp. 23729-23750, 1997.
+            </reference_text>
+            <description>reference.TROMBKAETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Veverka, J., J.F. Bell III, P. Thomas, A. Harch, S.L. Murchie, S.E. Hawkins
+                   III, J. Warren, E.H. Darlington, K. Peacock, C. Chapman, L. McFadden, M. Malin,
+                   and M. Robinson, An Overview Of The Near Multispectral Imager - Near-infrared
+                   Spectrometer Investigation, J. Geophys. Res., Vol. 102, pp. 23709-23727, 1997.
+            </reference_text>
+            <description>reference.VEVERKAETAL1997A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Yeomans, D.K., Asteroid 433 Eros: The Target Body of the NEAR Mission, Journal
+                   of Astronautical Sciences, Vol. 43, p. 417, 1995.
+            </reference_text>
+            <description>reference.YEOMANS1995</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Yeomans, D., A.S. Konopliv, and J.-P. Barriot, The NEAR Radio Science
+                   Investigations, Journal of Geophysical Research, 102(E10), 23775, 1997.
+            </reference_text>
+            <description>reference.YEOMANSETAL1997</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Zellner, B., Physical Properties of Asteroid 433 Eros, Icarus, Vol. 28, pp.
+                   149-153, 1976.
+            </reference_text>
+            <description>reference.ZELLNER1976</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Zuber, M., D.E. Smith, A.F. Cheng, and T.D. Cole, The NEAR Laser Ranging
+                   Investigation, Journal of Geophysical Research, Vol. 102, pp. 23761-23773, 1997.
+            </reference_text>
+            <description>reference.ZUBERETAL1997</description>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>NEAR EARTH ASTEROID RENDEZVOUS</name>
+        <type>Mission</type>
+        <start_date>1996-02-17</start_date>
+        <stop_date>2001-02-28</stop_date>
+
+        <description>
+ 
+    Mission Overview
+    ================
+ 
+      The Near Earth Asteroid Rendezvous (NEAR) mission inaugurated
+      NASA&apos;s Discovery Program. It was the first mission to orbit an
+      asteroid and made the first comprehensive scientific
+      measurements of an asteroid&apos;s surface composition, geology,
+      physical properties, and internal structure. NEAR was launched
+      successfully on 17 February 1996 aboard a Delta II-7925. It made
+      the first reconnaissance of a C-type asteroid during its flyby
+      of the main-belt asteroid 253 Mathilde in June 1997. It became
+      the first spacecraft to enter orbit around an asteroid, doing so
+      at the large near-Earth asteroid 433 Eros in February 2000. The
+      spacecraft, renamed NEAR Shoemaker, landed on Eros at 37.2 South
+      by 278.4 West, ending its mission on February 12, 2001 with
+      another spacecraft first. NEAR obtained new information on the
+      nature and evolution of asteroids, improved our understanding of
+      planetary formation processes in the early solar system, and
+      clarified the relationships between asteroids and meteorites.
+      The NEAR Mission Operations Center and Science Data Center were
+      both located at APL. The latter maintained the entire NEAR data
+      set on-line and made data from all instruments accessible over
+      the Internet to every member of the NEAR science team.  For a
+      detailed description of the mission see [CHENGETAL1998].
+ 
+   Introduction
+   ============
+      Of the more than 7000 asteroids that have been named, most are
+      found in the main asteroid belt between the orbits of Mars and
+      Jupiter, but those that come within 1.3 AU of the Sun are known
+      as near-Earth asteroids. The orbits of these dynamically young
+      bodies have evolved on 100-million-year timescales because of
+      collisions and gravitational interactions with planets. The
+      present-day orbits of such asteroids do not necessarily indicate
+      where they formed. Some are already in Earth-crossing orbits,
+      and those that are not are highly likely to evolve into one.
+      More than 250 near-Earth asteroids are known, and they appear to
+      typify a broad sample of the main-belt population. Before NEAR,
+      knowledge of the nature of asteroids came from three sources:
+      Earth-based remote sensing, data from the Galileo spacecraft
+      flybys of the two main-belt asteroids 951 Gaspra and 243 Ida,
+      and laboratory analyses of meteorites. Most meteorites are
+      believed to be collisional fragments of asteroids, but they may
+      represent a biased and incomplete sampling of the materials
+      actually found in near-Earth asteroids. Firm links between
+      meteorite types and asteroid types have been difficult to
+      establish [GAFFEYETAL1993A].  The uncommon eucrite (a basaltic
+      achondrite) meteorites have been linked by visible and
+      near-infrared reflectance measurements to the relatively rare
+      V-type asteroids [MCCORDETAL1970], [BINZEL&amp;XU1993].
+ 
+      However, a major controversy has been whether and how the most
+      common meteorite types (the ordinary chondrites) may be linked
+      to the most common asteroid types (the S-type or stony
+      asteroids) in the inner part of the asteroid belt
+      [BELLETAL1989], [GAFFEYETAL1993B]. Galileo and NEAR targets 951
+      Gaspra, 243 Ida, and the 433 Eros are all S-type asteroids.)
+ 
+      The S-type asteroids are a diverse class of objects known to
+      contain the silicate minerals olivine and pyroxene plus an
+      admixture of iron/nickel metal. Some appear to be fragments of
+      bodies that underwent substantial melting and differentiation.
+      Others may consist of primitive materials like ordinary
+      chondrites that never underwent melting and that may preserve
+      characteristics of the solid material from which the inner
+      planets accreted.  The Galileo flybys provided the very first
+      high-resolution images of S asteroids, revealing complex
+      surfaces covered by craters, fractures, grooves, and subtle
+      color variations [BELTONETAL1992], [OSTROETAL1990].  Galileo
+      also discovered a satellite at Ida, which is a member of the
+      Koronis family (Eros is not an asteroid family member). The
+      near-infrared spectrum of Gaspra indicates a high olivine
+      abundance such that it is inferred to be a fragment of a
+      differentiated body.  Conversely, Ida and Eros display infrared
+      spectra that may be consistent with a silicate mineralogy like
+      that in ordinary chondrites [CHAPMAN1996],
+      [MURCHIE&amp;PIETERS1996]. The Galileo instrument complement did not
+      include any capability to measure elemental composition, and
+      debate continues about whether ordinary chondrites are related
+      to S-type asteroids.
+ 
+      The NEAR mission spent about a year in orbit around Eros,
+      entering 14 February 2000 and landing at the asteroid surface 12
+      February 2001 from when spacecraft operations were continued
+      until 28 February 2001.  It acquired the first comprehensive,
+      spatially resolved measurements of the geomorphology,
+      reflectance spectral properties, and shape of an asteroid, and
+      X-ray and gamma-ray spectral measurements of elemental
+      abundances from orbit and the surface. The ambient magnetic
+      field in the vicinity of the asteroid was also measured.  NEAR
+      orbited Eros at low altitude, as close as about 1 body radius
+      above the surface, for several months so as to allow NEAR&apos;s
+      instruments to to acquire their highest spatial resolution
+      measurements. The NEAR data, especially when combined with those
+      from the Galileo flybys, greatly advanced our understanding of
+      S-type asteroids and their possible relationships to meteorites
+      and other small bodies of the solar system.  NEAR also conducted
+      a thorough search for satellites.
+ 
+    Spacecraft Design
+    =================
+      NEAR was a solar-powered, three-axis-stabilized spacecraft
+      [SANTOETAL1995] with a launch mass, including propellant, of 805
+      kg and a dry mass of 468 kg. The spacecraft was simple and
+      highly redundant. It used X-band telemetry to the NASA deep
+      space network; data rates at Eros were selectable in the range
+      of 2.9 to 8.8 kbps using a 34-m high-efficiency antenna. With a
+      70-m antenna, the data rates from Eros ranged from 17.6 to 26.5
+      kbps.  The command and telemetry systems were fully redundant.
+      Two solid-state recorders were accommodated with a combined
+      memory capacity of 1.6 Gbit.
+ 
+      Spacecraft attitude was determined using a star camera, a fully
+      redundant inertial measurement unit, and redundant digital Sun
+      sensors. The propulsion sub-system was dual mode (hydrazine was
+      used as fuel for both the monopropellant and bipropellant
+      systems) and included one 450-N bipropellant thruster for large
+      maneuvers, four 21-N thrusters, and seven 3.5-N thrusters for
+      fine velocity control and momentum dumping. Attitude was
+      controlled by a redundant set of four reaction wheels or by the
+      thruster complement to within 1.7 mrad. NEAR&apos;s line-of-sight
+      pointing stability was within 20 microrad 1 s, and
+      postprocessing attitude knowledge was within 130 microrad.
+ 
+      Forward and aft aluminum honeycomb decks were connected with
+      eight aluminum honeycomb side panels. Mounted on the outside of
+      the forward deck were a fixed, 1.5-m-dia. X-band high-gain
+      antenna (HGA), four fixed solar panels, and the X-ray solar
+      monitor system.  When the solar panels were fully illuminated,
+      the Sun was in the center of the solar monitor field of view
+      (FOV). No booms were accommodated on the spacecraft. The
+      electronics were mounted on the inside of the forward and aft
+      decks.
+ 
+      NEAR contained six scientific instruments, which are detailed in
+      the next section.
+ 
+      1. Multispectral Imager (MSI)
+      2. Near-Infrared Spectrograph (NIS)
+      3. X-Ray Spectrometer (XRS)
+      4. Gamma-Ray Spectrometer (GRS)
+      5. NEAR Laser Rangefinder (NLR)
+      6. Magnetometer (MAG)
+ 
+      The MAG was mounted on top of the HGA feed, where it was exposed
+      to the minimum level of spacecraft-generated magnetic fields.
+      The remaining instruments (MSI, NIS, XRS, GRS, and NLR) were all
+      mounted on the outside of the aft deck.  They were on fixed
+      mounts and were co-aligned to view a common boresight direction.
+      The NIS had a scan mirror that allowed it to look 30 degrees
+      forward and 110 degrees aft from the common boresight. Key
+      properties of the mission design permitted the use of this fixed
+      spacecraft geometry. Throughout most of the orbital rendezvous
+      with Eros, the angle between the Sun and the Earth, as seen from
+      the spacecraft, remained less than about 30 degrees. In
+      addition, the mission aphelion was reached during cruise. Hence,
+      if the solar panels were sufficiently large to sustain NEAR at
+      aphelion, there was sufficient power margin at Eros for the
+      spacecraft to pull its solar panels over 30 deg off full
+      illumination to point the HGA at Earth. Moreover, the rendezvous
+      orbit plane was maintained so that the orbit normal pointed
+      approximately at the Sun.  In this case, as NEAR orbited Eros,
+      it was usually able to roll around the HGA axis so as to keep
+      the instruments pointed at the asteroid while maintaining adequate
+      solar panel illumination. The instruments were usually pointed
+      away from the asteroid when the HGA was used to downlink to
+      Earth. This mode of operation motivated the requirement for
+      on-board data storage. With on-board image compression, NEAR
+      could store more than 1000 images and downlink them within 10
+      hrs at its maximum data rate of 26.5 kbps.
+ 
+      The spacecraft was designed using a distributed architecture,
+      partitioned so that subsystems generally did not share common
+      hardware or software. One major benefit of this approach was
+      that careful design of interfaces allowed development, test, and
+      integration of sub-systems in parallel. In addition, this
+      architecture had a natural advantage of built-in contingencies
+      and design margins.  Truly parallel subsystem development
+      required independence at the subsystem interface, through
+      careful partitioning of functional requirements and ample design
+      margins at subsystem inter-faces. On NEAR, subsystems were
+      interfaced through a MIL-STD-1553 data bus, chosen because it
+      was compatible with many off-the-shelf industry components. The
+      data bus had additional attractive features: fewer
+      interconnecting cables; built-in redundancy and cross-strapping;
+      simplification of interface definition; a fault-tolerant,
+      transformer-coupled interface; a common data architecture for
+      sharing information among subsystems; and a flexible
+      software-defined interface instead of a rigid hardware-defined
+      interface.
+ 
+      When it was launched, NEAR was the lowest-cost U.S. planetary
+      mission ever. The spacecraft&apos;s 27-month development schedule was
+      unusually rapid. The distributed architecture and the selection
+      of the 1553 data bus were key to developing NEAR on time and
+      under budget. Previous planetary missions have not used a
+      distributed architecture because they have been optimized for
+      performance, i.e., to return maximum science within available
+      technology. The distributed architecture approach comes with a
+      mass penalty, and therefore a performance penalty: some hardware
+      that can be combined at the system level is duplicated at the
+      subsystem level. The distributed architecture approach for NEAR
+      features interface margin and testability, optimizing the
+      spacecraft for low cost and rapid schedule. Nevertheless, the
+      performance penalty is minuscule, and the mass penalty for using
+      the distributed architecture approach is only about 10 kg.
+ 
+ 
+    Instrument Tasks
+    ================
+      Details on the many science objectives of the NEAR instruments
+      can be found elsewhere [VEVERKAETAL1997A], [TROMBKAETAL1997],
+      [ACUNAETAL1997], [ZUBERETAL1997], [YEOMANSETAL1997] and
+      [CHENGETAL1997]. A brief summary of instrument characteristics
+      is given in this section. (Full descriptions of each science
+      investigation and instrument appeared in a special issue of
+      Space Science Reviews, vol. 82, 1997.) Detailed instrument
+      descriptions and results of ground and in-flight calibrations
+      appear in the companion articles of this issue of the Technical
+      Digest.
+ 
+      Multispectral Imager
+      --------------------
+        The main goals of the MSI were to determine the shape of Eros
+        and to map the mineralogy and morphology of features on its
+        surface at high spatial resolution. MSI was a 537 x 244 pixel
+        charge-coupled device camera with five-element
+        radiation-hardened refractive optics. It covered the spectral
+        range from 0.4 to 1.1 microns, and it had an eight-position
+        filter wheel. Seven narrow-band filters were chosen to
+        discriminate the major iron-bearing silicates present (olivine
+        and pyroxene); the eight, broad-band filter was for fast
+        exposures and high sensitivity, including optical navigation.
+        occur on Eros. The camera had an FOV of 2.93 x 2.26 degrees
+        and a pixel resolution of 96 x 162 microrad. It had a maximum
+        framing rate of 1 per second with images digitized to 12 bits
+        and a dedicated digital processing unit with an image buffer
+        in addition to both lossless and lossy on-board image
+        compression.
+ 
+      Near-Infrared Spectrograph
+      --------------------------
+        NIS measured the spectrum of sunlight reflected from Eros in
+        the near-infrared range from 0.8 to 2.5 microns to determine
+        the distribution and abundance of surface minerals like
+        olivine and pyroxene.  This grating spectrometer dispersed the
+        light from the slit FOV (0.38 x 0.76 degrees in its narrow
+        position and 0.76 x 0.76 degrees in the wide position) across
+        a pair of passively cooled one-dimensional array detectors. A
+        32-channel germanium array covering the lower wavelengths,
+        with channel centers at 0.82 to 1.49 microns with a 0.022
+        micron spacing between channels. A 32-channel indium/gallium-
+        arsenide array covering longer wavelengths, with channel
+        centers at 1.37 to 2.71 microns with a 0.043 micron spacing
+        between channels. Due to configuration of the optics and the
+        sensitivity of this array, useful measurements were acquired
+        by it over the wavelength range 1.5 to 2.5 microns.  The slit
+        could be closed for dark current measurements, which were
+        routinely interleaved with measurements of the asteroid. NIS
+        had a scan mirror that enabled it to step across the range
+        from 30 degrees forward of the common boresight to 110 degrees
+        aft, in 0.4 degree steps. Spectral images were built up by a
+        combination of scan mirror and spacecraft motions. In
+        addition, the NIS had a gold calibration target that viewed at
+        the forward limit of the mirror&apos;s scan ranges. It scattered
+        sunlight into the instrument and provided a quantitative,
+        in-flight calibration of instrument stability.
+ 
+      X-Ray Spectrometer
+      ------------------
+        The XRS was an X-ray resonance fluorescence spectrometer that
+        detected the characteristic X-ray line emissions excited by
+        solar X-rays from major elements in the asteroid&apos;s surface. It
+        covered X-rays in the energy range from 1 to 10 keV using
+        three gas proportional counters.  The balanced, differential
+        filter technique was used to separate the closely spaced Mg,
+        Al, and Si lines lying below 2 keV. The gas proportional
+        counters directly resolved higher energy line emissions from
+        Ca and Fe.
+ 
+        A mechanical collimator gave the XRS a 5 degree FOV, with
+        which it mapped the chemical composition of the asteroid at
+        spatial resolutions as fine as 2 km in the low orbits. It also
+        included a separate solar monitor system to measure
+        continuously the incident spectrum of solar X-rays, using both
+        a gas proportional counter and a high-spectral-resolution
+        silicon X-ray detector. The XRS performed in-flight
+        calibration using a calibration rod with Fe-55 sources that
+        could be rotated into or out of the detector FOV.
+ 
+      Gamma-Ray Spectrometer
+      ----------------------
+        The GRS detected characteristic gamma rays in the 0.3- to
+        10-MeV range emitted from specific elements in the asteroid
+        surface. Some of these emissions were excited by cosmic rays
+        and some arose from natural radioactivity in the asteroid. The
+        GRS used a body-mounted, passively cooled NaI scintillator
+        detector with a bismuth germanate anticoincidence shield that
+        defined a 45 degree FOV.  Abundances of several important
+        elements such as K, Si, and Fe were measured.
+ 
+      NEAR Laser Rangefinder
+      ----------------------
+        The NLR was a laser altimeter that measured the distance from
+        the spacecraft to the asteroid surface by sending out a short
+        burst of laser light and then recording the time required for
+        the signal to return from the asteroid. It used a
+        chromium-doped neodymium/yttrium-aluminum-garnet (Cr-Nd-YAG)
+        solid-state laser and a compact reflecting telescope. It sent
+        a small portion of each emitted laser pulse through an optical
+        fiber of known length and into the receiver, providing a
+        continuous in-flight calibration of the timing circuit.  The
+        ranging data were used to construct a global shape model and a
+        global topographic map of Eros with horizontal resolution of
+        about 300 m. The NLR also measured detailed topographic
+        profiles of surface features on Eros with a best spatial
+        resolution of under 5 m. These topographic profiles enhanced
+        and complemented the study of surface morphology from imaging.
+ 
+      Magnetometer
+      ------------
+        The fluxgate magnetometer used ring core sensors made of
+        highly magnetically permeable material. MAG searched for any
+        intrinsic magnetic fields of Eros. The recent Galileo flybys
+        of the S-type asteroids Gaspra and Ida yielded evidence that
+        both of these bodies are magnetic, although this evidence is
+        ambiguous [KIVELSONETAL1993]. Discovery of an intrinsic
+        magnetic field at Eros would have been the first definitive
+        detection of magnetism at an asteroid and would have yielded
+        important insights about its thermal and geological history.
+ 
+      Radio Science
+      -------------
+        In addition to the six major instruments, a coherent X-band
+        transponder was used to conduct a radio science investigation
+        by measuring the Doppler shift from the spacecraft&apos;s radial
+        velocity component relative to the Earth.  Accurate
+        measurements of the Doppler shift and the range to Earth as
+        the spacecraft orbited Eros allowed mapping of the asteroid&apos;s
+        gravity field. In conjunction with MSI/NIS and NLR data,
+        gravity determinations were combined with global shape and
+        rotation data to constrain the internal density structure of
+        Eros and search for heterogeneity.
+ 
+      Mission Profile
+      ===============
+        The NEAR spacecraft was successfully launched in February
+        1996, taking advantage of the unique alignment of Earth and
+        Eros that occurs only once every 7 years [FARQUHARETAL1995].
+        A Delta-II 7925 rocket placed NEAR into a 2-year DV
+        (trajectory correction maneuver)/Earth gravity-assist
+        trajectory (DVEGA). This trajectory represents a new
+        application of the DVEGA technique: Instead of using an Earth
+        swingby maneuver to increase the aphelion of the spacecraft
+        trajectory, the maneuver actually decreased the aphelion
+        distance while increasing the inclination from 0 to about 10
+        deg.  The circuitous 3-year flight path to Eros was the result
+        of a Discovery Program requirement to use an inexpensive, but
+        less capable, launch vehicle. With a larger launch vehicle
+        such as an Atlas or Titan, a 1-year direct trajectory could
+        have been used, but the total mission cost would have
+        increased by at least $50 million.
+ 
+        The Mathilde encounter occurred 1 week before the deep space
+        maneuver on 3 July 1997. The Earth swingby occurred on 23
+        January 1998. Rendezvous operations at Eros were scheduled to
+        begin on 20 December 1998, but a main rocket engine abort
+        occurred. A flyby of Eros was accomplished on 23 December
+        1998, and the rendezvous was rescheduled for 14 February 2000,
+        when orbit insertion occurred.  On 12 February 2001, NEAR
+        accomplished a soft landing on Eros.
+ 
+      Mathilde Flyby
+      --------------
+        Asteroid 253 Mathilde was discovered on 12 November 1885 by
+        Johann Palisa in Vienna, Austria. The name was suggested by V.
+        A. Lebeuf (1859-1929), a staff member of the Paris
+        Observatory, who first computed an orbit for the new asteroid.
+        The name is thought to honor the wife of astronomer Moritz
+        Loewy (1833-1907), then the vice director of the Paris
+        Observatory. Although Mathilde&apos;s existence has been known
+        since 1885, it was only following the announcement of NEAR&apos;s
+        possible flyby that extensive physical observations were
+        carried out using telescopes on Earth. These showed that
+        Mathilde was an unusual object, especially because of its
+        rotation, which is at least an order of magnitude slower than
+        typical main-belt asteroids.
+ 
+        Using a series of observations of this asteroid made in the
+        first half of 1995, Stefano Mottola and his colleagues
+        [MOTTOLAETAL1995] determined that Mathilde&apos;s rotation period
+        is an extremely long 17.4 days.  Only two asteroids, 288
+        Glauke and 1220 Clocus, have longer periods (48 and 31 days,
+        respectively), and there is no obvious mechanism that can
+        account for these extremely long asteroid &apos;days.&apos;
+ 
+        The only previous spacecraft encounters with asteroids, as
+        noted earlier, had been the Galileo flybys of 951 Gaspra in
+        October 1991 and 243 Ida in August 1993. Both of these
+        objects, as well as Eros, are S-type asteroids. However, the
+        most common type of asteroid in the outer asteroid belt, the
+        dark and primitive C-type objects, had not yet been
+        investigated.
+ 
+        Spectral observations of Mathilde showed that its spectrum was
+        consistent with those of C-type asteroids and that it was
+        similar to those of the large carbonaceous asteroids 1 Ceres
+        and 2 Pallas (the two largest asteroids).  (Mathilde is about
+        twice the size of Ida and four times the size of Gaspra.)
+        Before the NEAR spacecraft executed its flyby of Mathilde on
+        27 June 1997, these additional facts were known about the
+        asteroid: estimated diameter, 61 km; H magnitude (a measure of
+        absolute visual brightness), 10.30; perihelion, 1.94 AU;
+        aphelion, 3.35 AU; and orbital inclination, 6.71 degrees.
+ 
+        Prior to the NEAR spacecraft encounter with Mathilde, on
+        27 June 1997 Mission Operations sent a command to the NEAR
+        spacecraft that had the effect of advancing the Mission
+        Elapsed Time (MET) clock by 10 seconds. This command was
+        issued in order to correct for a timing error in the Mathilde
+        fly-by observing sequence due to ephemeris uncertainties which
+        existed at the time the sequence was generated and loaded to
+        the spacecraft. After analysis of the final optical navigation
+        data, the navigation team determined an additional shift
+        decrementing the MET clock by 1 second was necessary. Mission
+        Operations sent the additional command to the spacecraft; thus
+        collectively these commands had the effect of incrementing the
+        MET clock on board the NEAR spacecraft by 9 seconds. The NEAR
+        spacecraft fly-by of Mathilde was then successfully executed.
+        Following the Mathilde fly-by Mission Operations commanded the
+        spacecraft to restore the MET clock.
+ 
+        NEAR&apos;s encounter with Mathilde occurred at about 2 AU from the
+        Sun, where available power from the solar panels was reduced
+        to about 25% of its maximum mission level. Furthermore, a
+        requirement to point the solar panels about 50 deg away from
+        the optimal solar direction during the encounter reduced the
+        available power by another 36%. Because of this power
+        constraint, the only science instrument operated during the
+        encounter period was MSI [LANDSHOF&amp;CHENG1995]. However,
+        spacecraft tracking data for the radio science experiment were
+        obtained for an asteroid mass determination [CHENGETAL1994].
+ 
+        The imaging experiment during the flyby had three major
+        objectives:
+ 
+        1. Most importantly, to obtain at least one image of Mathilde
+        near closest approach to provide the
+        highest-spatial-resolution view of the surface
+ 
+        2. To obtain an image of the complete illuminated portion of
+        the asteroid visible during the flyby
+ 
+        3. To acquire images of the sky around the asteroid to search
+        for possible satellites
+ 
+        The entire imaging sequence was accomplished in about 25 min
+        around closest approach (1200 km) at a speed of 9.93 km/s (Sun
+        distance, 1.99 AU; Earth distance, 2.19 AU). A total of 534
+        images (24 high phase angle, 144 high-resolution, 188 global
+        color imaging, 178 satellite search) were obtained during this
+        interval. The whole illuminated portion of the asteroid was
+        imaged in color at about a 500 m/pixel at a phase angle near
+        40 degrees. The best partial views were at 200 to 350 m/pixel.
+ 
+        Mathilde&apos;s mass was determined by accurately tracking NEAR
+        before and after the encounter. Apart from an interval of 1 to
+        2 h during the closest approach period, when imaging
+        experiments were conducted, continuous tracking of the
+        spacecraft was conducted for 3 days on either side of closest
+        approach.  During the flyby, Mathilde exerted a slight
+        gravitational tug on NEAR. The corresponding gravitational
+        tugs on the Galileo spacecraft at Gaspra and Ida were too
+        small to allow mass determinations.  However, because
+        Mathilde&apos;s mass is so much larger than either Gaspra&apos;s or
+        Ida&apos;s, its effects on NEAR&apos;s path were detectable in the
+        spacecraft&apos;s radio tracking data.
+ 
+      Earth Swingby
+      -------------
+      The next critical phase of NEAR&apos;s
+      flight profile was scheduled for 23 January 1998, when the
+      spacecraft would pass by the Earth at an altitude of only 532
+      km. This maneuver was expected to drastically alter NEAR&apos;s
+      heliocentric trajectory, changing the inclination from 0.52 to
+      10.04 deg, and reducing the aphelion distance from 2.18 to 1.77
+      AU and perihelion distance from 0.95 to 0.98 AU.  An interesting
+      consequence of the Earth flyby was that the post-swingby
+      trajectory remained over the Earth&apos;s south polar region for a
+      considerable time.
+ 
+        During the encounter MSI and NIS observations of both Earth
+        and the Moon were acquired from 23 January through 26 January,
+        to test instrument performance during extended operations like
+        at Eros, and to perform inflight radiance and alignment
+        calibrations.
+ 
+      Eros Encounter
+      --------------
+      The NEAR mission target, 433 Eros,
+      is the second largest asteroid and is intermediate in size
+      between Gaspra and Ida. Eros is one of only three near-Earth
+      asteroids with maximum diameter above 10 km, and it is the only
+      large one whose heliocentric orbit is accessible enough to
+      permit a rendezvous mission using the Delta II launch vehicle.
+      The mean diameter of Eros, about 17 km, is an order of magnitude
+      larger than that of typical known near-Earth asteroids.  Eros
+      was discovered in 1898. It was the subject of a worldwide
+      ground-based observing campaign in 1975 when it passed within
+      0.15 AU of Earth.  Visible, infrared, and radar observations
+      determined the approximate size, shape, rotation rate, and pole
+      position of Eros (Table 1) and showed that a regolith
+      (fragmentary material produced by impacts) was present on its
+      surface. 433 Eros is presently in a Mars-crossing (but not
+      Earth-crossing) orbit; however, numerical simulations suggest
+      that it may evolve into an Earth crosser within 2 million years.
+      [MICHELETAL1996]
+ 
+        Spectroscopic analyses have found the visible and
+        near-infrared spectra of Eros to be consistent with a silicate
+        mineralogy like that found in ordinary chondrite meteorites.
+        These measurements were extended to higher spatial resolution
+        by NEAR.
+ 
+        Rendezvous operations at Eros were scheduled to begin on 20
+        December 1998, culminating in orbit insertion on 10 January.
+        During the first of four main rocket engine firings to match
+        velocity with Eros, on 20 December, an abort occurred and NEAR
+        flew by Eros on 23 December at a relative velocity of 1 km/s.
+        At this time a contingency sequence was executed during which
+        data were collected by MSI, NIS, and MAG. The whole
+        illuminated portion of the asteroid was imaged in color at
+        about 500 m/pixel before and after closest approach at phase
+        angles of 80 to 110 degrees. The best partial views were at
+        about 400 m/pixel.
+ 
+    Eros Operations
+    ===============
+ 
+        Beginning in January 2000, a sequence of small maneuvers
+        decreased the relative velocity between NEAR and Eros to only
+        5 m/s. On 13 Feb 2000, NEAR performed a flyby of Eros on its
+        sunward side at a distance as of 200 km. In addition to
+        gathering NIS spectra at an optimal illumination geometry,
+        this first pass provided improved estimates of the asteroid&apos;s
+        physical parameters, such as a mass determination to 1%
+        accuracy, identification of surface landmarks, and an improved
+        estimate of Eros&apos;s spin vector. Orbit insertion occurred 14
+        Feb. As the spacecraft orbiter altitude was subsequently
+        lowered, the mass, moments of inertia, gravity harmonics, spin
+        state, and landmark locations were determined with increasing
+        precision.
+ 
+        NEAR operated in a series of orbits that came as close as 3 km
+        to the asteroid&apos;s surface, culminating with a soft landing on
+        12 February 2001. The evolution of low-altitude orbits around
+        Eros was strongly influenced by its irregular gravity field.
+        In unstable orbits, the spacecraft could crash into Eros in a
+        matter of days. Safe operation of NEAR during its 11-month
+        prime science phase required close coordination between the
+        science, mission design, navigation, and mission operations
+        teams.  [LANDSHOF&amp;CHENG1995]
+ 
+        To simplify science operations, the rendezvous was divided
+        into distinct phases [CHENGETAL1994]. During each mission
+        phase, particular aspects of the science were emphasized for
+        science planning, so the highest priority investigation
+        controlled instrument pointing for the majority of the
+        observing time. The highest-priority science varied by mission
+        phase, because of the changing orbital geometry.  While in
+        orbits at 100 km or more from the center of Eros, the highest
+        priority science was global mapping by MSI. In orbits at 50 km
+        or lower, the highest priority science was compositional
+        measurement by XRS/GRS. A two-week period was allocated to
+        altimetry by NLR at the start of the 50 km polar orbits. NEAR
+        spent more than 150 days in orbits at 50 km or less from the
+        center of Eros, plus two additional  weeks on the surface
+        acquiring GRS data.
+ 
+      Data Flow
+      ---------
+ 
+        All data from the NEAR mission were down-linked to the NASA
+        Deep Space Network and then forwarded to the Mission
+        Operations Center (MOC) at APL.  Doppler and ranging data from
+        the spacecraft were analyzed primarily by the NEAR navigation
+        team at the Jet Propulsion Laboratory (JPL) and processed to
+        determine the spacecraft ephemeris as well as to perform radio
+        science investigations. The entire spacecraft telemetry
+        stream, including spacecraft and instrument housekeeping data
+        and all science data, was forwarded to the APL MOC together
+        with the radiometric Doppler and range data. Navigation data
+        including spacecraft Ephemeris were forwarded to MOC in the
+        form of SPICE kernels.  (SPICE is an information system
+        developed by the Navigation Ancillary Information Facility at
+        JPL.  It consists of data files and software for managing
+        navigation-related data including spacecraft and planetary
+        ephemerides, spacecraft pointing, timekeeping, gravity data,
+        etc.)
+ 
+        From the APL MOC the spacecraft telemetry stream were passed
+        to the Science Data Center (SDC), the project facility
+        responsible for low-level processing of spacecraft telemetry,
+        data distribution, and data archiving. As such, the SDC
+        supported the activities of the science team in data analysis
+        and mission planning. The SDC created and maintained an
+        archive, which was the central project repository for science
+        data products such as images, asteroid models, and asteroid
+        maps. The SDC enabled easy access to mission data sets by
+        members of the science team and by others, and it collected
+        observing requests and science priorities from the science
+        team. It maintained a telemetry archive, a record of
+        instrument and spacecraft commands as executed, and records of
+        science sequences as requested and as executed.  It provided
+        ancillary data (spacecraft and planetary ephemerides,
+        spacecraft and planetary attitudes, shape and gravity files,
+        and spacecraft clock files) in the form of SPICE kernels to
+        the science team.
+ 
+    Conclusion
+    ==========
+ 
+    NEAR substantially increased our knowledge
+    of primitive bodies in the solar system by providing a long,
+    up-close look at the S-type asteroid 433 Eros and the first
+    resolved images of the C-type asteroid 253 Mathilde. NEAR was the
+    first mission to a near-Earth asteroid and a C-type asteroid, and
+    it was the first spacecraft to flyby, orbit, and land on a small
+    body.
+        </description>
+    </Investigation>
+</Product_Context>

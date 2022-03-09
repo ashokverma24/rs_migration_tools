@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:multi-host.dbp</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Dual Beam Photometer</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-06-12</modification_date>
+        <version_id>1.0</version_id>
+        <description>Creation</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <External_Reference>
+      <reference_text>McCord, T.B., A Double Beam Astronomical Photometer, Applied Optics, vol. 7, pp.
+475-478, 1968.</reference_text>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>Dual Beam Photometer</name>
+    <type>Photometer</type>
+    <description>Instrument Overview
+===================
+The dual beam photometer is designed to provide object and sky
+photoelectric photometry through a series of 24 filters.  The light
+passes through a field lens and then through a 24-position filter
+wheel the positions of which are selectable by means of a stepper
+motor.  The next element in the optical path is a chopping mirror
+which alternates at a rate of 24 Hz between the object and a nearby
+patch of sky.  The resulting beam then enters the detector.  A
+choice among three different available detectors was made on the
+basis of the required sensitivity and wavelength range for the given
+object.  The three available detectors include a high quantum
+efficiency GaInAs photomultiplier, an S-20 photomultiplier, and an
+S-1 photomultiplier.</description>
+  </Instrument>
+</Product_Context>
+

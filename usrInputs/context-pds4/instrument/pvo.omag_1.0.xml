@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pvo.omag</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>FLUXGATE MAGNETOMETER for PVO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-08-26</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.pvo::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Busse, F., &apos;Generation of planetary field by convection&apos;,
+                   Phys. Earth Planet. Int., vol. 12, p. 350, 1976.
+            </reference_text>
+            <description>reference.BUSSE1976</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Dolginov, S.S., Y.G. Yeroshenko and L. Davis, &apos;On the
+                   nature of the magnetic field near Venus&apos;, Kosmich. Issled.,
+                   vol. 7, p. 747, 1969.
+            </reference_text>
+            <description>reference.DOLGINOVETAL1969</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   [see ELPHICETAL1980A]
+            </reference_text>
+            <description>reference.ELPHICETAL1979</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Gordon, D.I., and R.E. Brown, Recent Advances in Fluxgate Magnetometry, IEEE
+                   Trans. on Magnetics, Vol. MAG-8, 76, 1972.
+            </reference_text>
+            <description>reference.GORDONETAL1972</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell, C.T., &apos;The magnetic moment of Venus: Venera-4
+                   measurements reinterpreted,&apos; Geophys. Res. Lett., vol. 3,
+                   p. 125, 1976.
+            </reference_text>
+            <description>reference.RUSSELL1976</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell, C.T., The ISEE 1 and 2 fluxgate magnetometers, IEEE Trans. Geosci.
+                   Electro., GE-16, P. 239, 1978.
+            </reference_text>
+            <description>reference.RUSSELL1978</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell, C.T., R.C. Elphic, and J.A. Slavin, &apos;On the
+                   strength of the Venus bow shock&apos;, Nature, 1979.
+            </reference_text>
+            <description>reference.RUSSELLETAL1979A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell, C.T., R.C. Elphic, and J.A. Slavin, &apos;Initial
+                   Pioneer Venus magnetic field results: Dayside
+                   observations&apos;, Science, vol. 203, p. 745, 1979.
+            </reference_text>
+            <description>reference.RUSSELLETAL1979B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell, C.T., and R.C. Elphic, &apos;Observation of magnetic
+                   flux ropes in Venus ionosphere&apos;, Nature, vol. 279,
+                   p. 616, 1979.
+            </reference_text>
+            <description>reference.RUSSELLETAL1979C</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell, C.T., R.C. Elphic, and J.A. Slavin, &apos;Initial
+                   Pioneer Venus magnetic field results: Nightside
+                   observations&apos;, Science, vol 205, p. 114, 1979.
+            </reference_text>
+            <description>reference.RUSSELLETAL1979D</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Russell, C.T., R.C. Snare, J.D. Means, and R.C. Elphic,
+                   &apos;Pioneer Venus Orbiter Fluxgate Magnetometer&apos;, Ieee Trans.
+                   Geo. Elec., Vol. GE 18, No. 1 p. 32, 1980.
+            </reference_text>
+            <description>reference.RUSSELLETAL1980</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Slavin, J.A., R.C. Elphic, and C.T. Russell, &apos;A comparison
+                   of Pioneer Venus and Venera bow shock observations:
+                   Evidence for a solar cycle variation&apos;, Geophys. Res. Lett.,
+                   1979.
+            </reference_text>
+            <description>reference.SLAVINETAL1979A</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Slavin, J.A., R.C. Elphic, C.T. Russell, J.H. Wolfe, and
+                   D.S. Intriligator, &apos;Position and shape of the Venus bow
+                   shock: Pioneer Venus orbiter magnetometer observations&apos;,
+                   Geophys. Res. Lett., 1979.
+            </reference_text>
+            <description>reference.SLAVINETAL1979B</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Smith, E.J., L. Davis, Jr., P.J. Coleman, Jr., and C.P.
+                   Sonett, Science, vol. 139, p. 909, 1963.
+            </reference_text>
+            <description>reference.SMITHETAL1963</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Snare, R.C. and J.D. Means, A Magnetometer for the Pioneer Venus Orbiter, IEEE
+                   Trans. Magnetics, vol. MAG-13(5), 1107, (REPLACED BY SNARE&amp;MEANS1977), 1977.
+            </reference_text>
+            <description>reference.SNAREETAL1977</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>FLUXGATE MAGNETOMETER</name>
+        <type>Magnetometer</type>
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+ 
+    PI PDS User Id                : CTRUSSELL
+    Build Date                    : 1976
+    Instrument Mass               : 1.98
+    Instrument Height             : .15
+    Instrument Length             : .22
+    Instrument Width              : .15
+    Instrument Manufacturer Name  : Westinghouse Electric
+    Instrument Serial Number      : 59-6803 (5968a03, 5968b03)
+ 
+    ----------------------------------------------------------
+           Pioneer Venus Orbiter Fluxgate Magnetometer
+ 
+      C.T. Russell, R.C. Snare, J.D. Means, and R.C. Elphic
+ 
+       IEEE Transactions on Geoscience and Remote Sensing,
+                        January 1980.
+    ----------------------------------------------------------
+ 
+ 
+    Abstract
+    ========
+      The Earth&apos;s atmosphere is shielded from the solar wind, the
+      rapidly expanding ionized gas of the sun&apos;s outer corona, by a
+      moderately strong magnetic field generated by a dynamo inside
+      the liquid core of the earth.  That Venus is not thus shielded
+      was evident from the measurements of the earliest probes to
+      Venus [1], [2].  It was not certain that these measurements
+      indicated that Venus had no intrinsic field.  Rather, the
+      existence of a small intrinsic field was still possible [3],
+      and in fact expected from dynamo models [4].  A measure of the
+      size of any Venus moment would be a check on our understanding
+      of planetary dynamos.  Furthermore, the solar wind was thought
+      to interact directly with the upper atmosphere of Venus, a
+      situation quite unlike that probed on other planetary missions.
+      (Mars may have a similar interaction with the solar wind, but
+      Martian studies have concentrated on the surface and lower
+      atmosphere rather than the upper atmosphere.) Such an
+      interaction is only poorly understood.  It is possible that the
+      weak magnetic field of the solar wind could act to shield the
+      upper atmosphere by inhibiting the solar wind penetration into
+      the atmosphere.  Thus it was important for both aeronomical and
+      planetological reasons to measure the magnetic field in the
+      near vicinity of Venus.  Only from an orbiter with a
+      controllable periapsis altitude could the requisite series of
+      low-altitude measurements be made.
+ 
+      The intent of the Pioneer Venus mission was to be both
+      comprehensive and low cost.  The former requirement led to the
+      inclusion of a large number of instruments and the need for a
+      moderately high data rate and hence a despun antenna.  The
+      latter requirement led to a spinning spacecraft, a minimum
+      magnetic cleanliness program and no allowance for redundancy.
+      Even with a despun antenna the Pioneer Venus spacecraft would
+      sometimes have to transmit data at rates as low as 8 bits/s
+      when Venus was on the far side of the sun and the deep space
+      net telemetry stations were being used for outer planet
+      missions.  These constraints made for some exacting design
+      challenges both for the spacecraft design team and the
+      magnetometer team.
+ 
+      References
+ 
+      [1] E.J. Smith, L. Davis, Jr., P.J. Coleman, Jr., and C.P.
+          Sonett, Science, vol. 139, p. 909, 1963.
+ 
+      [2] Sh. Sh. Dolginov, Ye. G. Yeroshenko and L. Davis, &apos;On the
+          nature of the magnetic field near Venus,&apos; Kosmich. Issle
+          vol. 7, p. 747, 1969.
+ 
+      [3] C.T. Russell, &apos;The magnetic moment of Venus:  Venera-4
+          measurements reinterpreted,&apos; Geophys. Res. Lett., vol. 3
+          125, 1976.
+ 
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

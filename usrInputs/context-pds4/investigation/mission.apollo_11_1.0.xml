@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:investigation:mission.apollo_11</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>APOLLO 11</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>A11</alternate_id>
+                <alternate_title>A11</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-10-14</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial version.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.a11e</lid_reference>
+            <reference_type>investigation_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>investigation_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Apollo 11 Preliminary Science Report, NASA SP-214, 204 pages, published by
+                   NASA, Washington D.C., 1969.
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+
+    <Investigation>
+        <name>APOLLO 11</name>
+        <type>Mission</type>
+        <start_date>1969-07-16</start_date>
+        <stop_date>1969-07-24</stop_date>
+
+        <description>
+ 
+    Apollo 11 was launched on July 16, 1969, from Cape Kennedy, FL. 
+    Commander Neil Armstrong, Command Module Pilot Michael Collins, 
+    and Lunar Module Pilot Edwin "Buzz" Aldrin entered lunar orbit
+    on July 19. Armstrong and Aldrin's descent to the surface 
+    followed the next day, while Collins remained in the command
+    module, Columbia. The lunar module, Eagle, landed in the 
+    southwestern part of Mare Tranquillitatis. After completion of
+    surface operations, including the first ever moonwalk, the crew 
+    safely returned to Earth on July 24. The goal of performing the 
+    first crewed lunar landing and return to Earth was complete.
+
+    While on the surface, Armstrong and Aldrin deployed a seismometer 
+    to measure moonquakes, a device to collect a sample of solar wind, 
+    and a laser retroreflector to enable precise measurements of the 
+    distance between Earth and the Moon. They collected 21.6 kilograms 
+    of samples to return to Earth. In addition, they performed 
+    ceremonial duties, including unveiling a commemorative plaque on 
+    the lunar module, setting up a United States flag, and having a 
+    short conversation with then-President Richard Nixon.
+    
+        </description>
+    </Investigation>
+</Product_Context>

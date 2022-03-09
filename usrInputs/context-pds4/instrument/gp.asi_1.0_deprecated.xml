@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:asi.gp</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ATMOSPHERIC STRUCTURE INSTRUMENT for GP</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.gp::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.SEIFF-KNIGHT1992</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ATMOSPHERIC STRUCTURE INSTRUMENT</name>
+        <type>Atmospheric Sciences</type> <!--RChen/EN was Meteorology-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Instrument Overview
+  ===================
+    From [SEIFF&amp;KNIGHT1992]:
+ 
+    The ASI experiment will operate over an altitude range of about
+    870 km in two measurement modes, one to accommodate conditions of
+    high-speed entry at low ambient density; the other, the very
+    different conditions of parachute descent.  The entry mode begins
+    at a nominal ambient density threshold of 10^-11 kg m^-3
+    (presently believed to be about 750 km altitude above the 1 bar
+    level) where the Probe deceleration is expected to be about 15
+    micro g.  From measurements of Probe deceleration under the
+    action of atmospheric drag, atmospheric densities will be
+    derived.  The density profile is integrated above a given
+    altitude to define the pressure at that level, and the
+    temperature profile is then obtained through the equation of
+    state, given the variation of atmospheric mean molecular weight
+    with altitude.  This mode of operation is continued until the
+    Probe deploys its parachute, nominally at the 100 mb level (47 km
+    above the 1 bar level).
+ 
+    Then, during the subsequent parachute descent of the Probe to the
+    nominal end-of-mission depth at 16 bars, the thermal structure of
+    the atmosphere is defined by measurements of temperature,
+    pressure, and acceleration in descent mode.  Current estimates
+    are that the mission could extend to below 20 bars, perhaps as
+    deep as 25 bars.
+ 
+    At entry, the Probe is effectively a 48 km s^-1 meteor, enveloped
+    by a bow-shock wave and a thin shock layer of ionized,
+    luminescent gases at extreme temperature (~15000 K at peak).
+    Under these conditions, measurements of the ambient atmosphere by
+    means of conventional low-density sensors are clearly infeasible;
+    it is futile to extend sensors into the shock layer or through
+    the bow-shock wave, because they quickly burn away and, outside
+    the probe bow wave, develop shock layers of their own.
+    Measurements of atmospheric density by way of Probe
+    decelerations, however, provides a direct means of sensing the
+    atmosphere.
+ 
+    After the parachute is deployed, the heat shield is jettisoned
+    and temperature and pressure sensors are exposed to the ambient
+    atmosphere.  Acceleration measurements are continued, but at much
+    less frequent intervals, and in the absence of large vertical
+    winds, continue to define atmospheric density.  From the three
+    measured state variables, temperature, pressure, and density, the
+    atmospheric mean molecular weight may be determined.  Other
+    instruments on the Probe, including the mass spectrometer and the
+    helium abundance detector, will probably determine the molecular
+    weight more accurately, however.  In these circumstances, the
+    accelerometer data may be used to define the magnitude of large
+    vertical winds in waves or gusts.
+ 
+    Altitudes relative to any convenient reference level (e.g., the 1
+    bar level) are defined by the temperature and pressure data
+    integrated in the equation of hydrostatic equilibrium.  These
+    data will be used to establish the altitudes of measurement for
+    use by all Probe experiments.  They also define the rate of
+    descent, which is necessary to the analysis of Doppler wind
+    experiment.  In addition, atmospheric turbulence, radius to the
+    center of the planet, and Probe angle of attack are sensed or
+    derived.
+ 
+    The nominal end of mission, at 16 bars, is at an altitude of
+    about -120 km below the 1 bar level.  The vertical measurement
+    range of about 870 km will be covered in a little over one hour -
+    the initial 700 km in less than 4 min.  The time in descent on
+    the parachute at velocities from the order of 100 to 30 m s^-1
+    could be up to 75 min.
+ 
+    The instrument electronics perform a number of essential
+    functions.  They receive and execute commands from the Probe
+    systems and thereby set the experiment mode (calibrate, entry, or
+    descent), control the measurement sequences, select sensor
+    ranges, collect data from the three sensor sets, amplify signals,
+    perform A/D conversions, do some onboard data processing, and
+    condition instrument power.  The microprocessor controlled
+    electronics were designed and built by Martin Marietta Aerospace,
+    in Denver, Colorado.
+ 
+    This is a fourth generation entry probe atmosphere structure
+    instrument.  Its predecessors were used on the four probes of the
+    Pioneer Venus Mission, on the Viking Mission to Mars, and on the
+    Planetary Atmosphere Experiments Test (PAET) entry probe into the
+    Earth&apos;s atmosphere.  Best features of earlier instruments were
+    retained and some new capabilities have been added.
+ 
+ 
+  Scientific Objectives
+  =====================
+    (1)  To accurately define the state properties as a function of
+         altitude below the 100 mb level to ~20 bars. (They have never
+         been measured below the 1 bar level.)
+ 
+    (2)  To define the currently highly uncertain state properties of
+         the upper atmosphere.
+ 
+    (3)  To measure the stability of the atmosphere, and identify
+         convective layers and stable layers, where they exist.
+ 
+    (4)  To detect cloud levels from changes in lapse rate at their
+         boundaries.
+ 
+    (5)  To define state properties within the clouds, and thus provide
+         supplementary information on cloud composition.
+ 
+    (6)  To search for and characterize wave structures in the
+         atmosphere.
+ 
+    (7)  To search for and measure intensity and scale of turbulence in
+         the atmosphere.
+ 
+    (8)  To measure vertical flow velocities above a threshold of about
+         0.3 m s^-1.
+ 
+    (9)  To establish an altitude scale for use in correlating all
+         Probe experiment data.
+ 
+    (10) To define the probe vertical velocity, necessary to the
+         analysis of the Doppler wind experiment.
+
+        </description>
+    </Instrument>
+</Product_Context>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.r_leo</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>R Leonis</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>R Leo</alternate_title></Alias>
+      <Alias><alternate_title>Variable Star R Leo</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+11 1144</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASAS J094733+1125.8</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+12 2096</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>DO 2825</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 13489</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 6288</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00084748</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 84748</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 48036</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 48036</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 3882</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 09448+1139</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +10215</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1865</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J09473348+1125436</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2317</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 2317.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 4642</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 126795</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1380</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 98769</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 18923</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 831-521-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 831-521-2</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 8985</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 0942+11</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 612958873284128128</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>R Leonis</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 09 hours 47 minutes 33.4839808805 seconds
+Declination, ICRS coord, ep=J2000: +11 degrees 25 minutes 43.823283729 seconds
+    </description>
+  </Target>
+</Product_Context>

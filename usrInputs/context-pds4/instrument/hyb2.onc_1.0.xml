@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd
+                                     http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1E00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument:hyb2.onc</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Optical Navigation Camera for Hayabusa2</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>onc</alternate_id>
+                <alternate_title>ONC</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-16</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:instrument_host:spacecraft.hyb2</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1016/j.asr.2015.06.037</doi>
+            <reference_text>
+                S. Kameda, H. Suzuki, Y. Cho, S. Koga, M. Yamada, T. Nakamura, T. Hiroi, H. Sawada, R. Honda, T. Morota,
+                C. Honda, A. Takei, T. Takamatsu, Y. Okumura, M. Sato, T. Yasuda, K. Shibasaki, S. Ikezawa, S. Sugita,
+                Detectability of hydrous minerals using ONC-T camera onboard the Hayabusa2 spacecraft,
+                Advances in Space Research, 57, 1519-1524, 2015.
+            </reference_text>
+            <description>The ONC-T instrument paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1007/s11214-015-0227-y</doi>
+            <reference_text>
+                S. Kameda, H. Suzuki, T. Takamatsu, Y. Cho, T. Yasuda, M. Yamada, H. Sawada, R. Honda, T. Morota,
+                C. Honda, M. Sato, Y. Okumura, K. Shibasaki, S. Ikezawa, S. Sugita,
+                Preflight Calibration Test Results for Optical Navigation Camera Telescope (ONC-T) Onboard the Hayabusa2 Spacecraft,
+                Space Sci. Rev., 208, 17-31, 2017.
+            </reference_text>
+            <description>The ONC-T calibration paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1016/j.icarus.2017.09.011</doi>
+            <reference_text>
+                H. Suzuki, M. Yamada, T. Kouyama, E. Tatsumi, S. Kameda, R. Honda, H. Sawada, N. Ogawa, T. Morota,
+                C. Honda, N. Sakatani, M. Hayakawa, Y. Yokota, Y. Yamamoto, S. Sugita,
+                Initial inflight calibration for Hayabusa2 optical navigation camera (ONC) for science observations of asteroid Ryugu,
+                Icarus, 300, 341-359, 2018.
+            </reference_text>
+            <description>The ONC calibration paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1016/j.icarus.2019.01.015</doi>
+            <reference_text>
+                E. Tatsumi, T. Kouyama, H. Suzuki, M. Yamada, N. Sakatani, S. Kameda, Y. Yokota, R. Honda,
+                T. Morota, K. Moroi, N. Tanabe, H. Kamiyoshihara, M. Ishida, K. Yoshioka, H. Sato, C. Honda,
+                M. Hayakawa, K. Kitazato, H. Sawada, S. Sugita,
+                Updated inflight calibration of Hayabusa2's optical navigation camera (ONC) for scientific observations during the cruise phase,
+                Icarus, 325, 153-195, 2019.
+            </reference_text>
+            <description>The ONC calibration paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1051/0004-6361/201937096</doi>
+            <reference_text>
+                <![CDATA[
+                E. Tatsumi, D. L. Domingue, S. E. Schröder, Y. Yokota, D. Kuroda, M. Ishiguro, S. Hasegawa,
+                T. Hiroi, R. Honda, R. Hemmi, L. Le Corre, N. Sakatani, T. Morota, M. Yamada, S. Kameda,
+                T. Kouyama, H. Suzuki, Y. Cho, K. Yoshioka, M. Matsuoka, C. Honda, M. Hayakawa, N. Hirata,
+                N. Hirata, Y. Yamamoto, F. Vilas, N. Takato, M. Yoshikawa, M. Abe, S. Sugita,
+                Global photometric properties of (162173) Ryugu,
+                A&A, 639, A83, 2020.
+                ]]>
+            </reference_text>
+            <description>The ONC calibration paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1016/j.icarus.2021.114353</doi>
+            <reference_text>
+                T. Kouyama, E. Tatsumi, Y. Yokota, K. Yumoto, M. Yamada, R. Honda, S. Kameda, H. Suzuki, N. Sakatani,
+                M. Hayakawa, T. Morota, M. Matsuoka, Y. Cho, C. Honda, H. Sawada, K. Yoshioka, S. Sugita,
+                Post-arrival calibration of Hayabusa2's optical navigation cameras (ONCs): Severe effects from touchdown events,
+                Icarus, 360, 114353, 2021.
+            </reference_text>
+            <description>The ONC calibration paper.</description>
+        </External_Reference>
+        <External_Reference>
+            <doi>10.1016/j.icarus.2021.114348</doi>
+            <reference_text>
+                S. Kameda, Y. Yokota, T. Kouyama, E. Tatsumi, M. Ishida, T. Morota, R. Honda, N. Sakatani, M. Yamada,
+                M. Matsuoka, H. Suzuki, Y. Cho, M. Hayakawa, C. Honda, H. Sawada, K. Yoshioka, K. Ogawa, S. Sugita,
+                Improved method of hydrous mineral detection by latitudinal distribution of 0.7-μm surface reflectance absorption on the asteroid Ryugu
+                Icarus, 360, 114348, 2021.
+            </reference_text>
+            <description>The ONC calibration paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Optical Navigation Camera</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Camera</ctli:type>
+                <ctli:type>Imager</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <naif_instrument_id>-37100</naif_instrument_id>
+        <description>The Optical Navigation Camera (ONC) system onboard the Hayabusa2 spacecraft consists of one telescopic camera (ONC-T) and two wide-angle cameras (ONC-W1 and ONC-W2). The ONC-T is a telescopic camera with seven band-pass filters in the visible and near-infrared range. These filters are placed on a wheel, which rotates to put a selected filter for different observations, enabling multi-band imaging.</description>
+    </Instrument>
+</Product_Context>

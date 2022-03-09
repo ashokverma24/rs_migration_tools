@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:instrument:mcdonald.struve2m1.molp</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>McDonald Observatory Linear Polarimeter</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-02-18</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial export from OLAF</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:context:telescope:mcdonald.struve2m1</lid_reference>
+      <reference_type>instrument_to_telescope</reference_type>
+    </Internal_Reference>
+    <External_Reference>
+      <reference_text>Breger, M., Interstellar grain size: A look at the deviant four, Astrophysical
+Journal 233, 97-101, 1979.</reference_text>
+    </External_Reference>
+  </Reference_List>
+  <Instrument>
+    <name>McDonald Observatory Linear Polarimeter</name>
+    <type>Polarimeter</type>
+    <description>The Linear Polarimeter was put into service at McDonald Observatory in 1978.  The
+main element is a Glan-Air prism, rapidly rotating to counteract atmospheric
+transparency fluctuations.  The Glan prism was chosen as an analyzer due to its very
+high throughput, achromatic nature, optical precision, and low cost.  A slight
+disadvantage
+results from the presence of an air gap inside the prism and the resultant lateral
+image displacement (less than 0.1mm).  A slight image rotation causes an instrumental
+polarization of 0.05% which varies slightly with wavelength, is constant in time, and
+can easily be subtracted out.  Other sources of instrumental polarization, including
+the aluminized telescope mirrors, have turned out to be less than 10^-4.
+
+Tests have shown that under ideal observing conditions, the polarimeter can measure
+accurately to a precision on the order 10^-4.  In practice, therefore, the precision
+of the polarimeter is limited by photon statistics.
+
+For more information about the instrument, including a schematic diagram, see Breger
+(1979).
+
+Breger, M., Interstellar grain size:  A look at the deviant four, Astrophysical
+Journal 233, 97-101, 1979.</description>
+  </Instrument>
+</Product_Context>
+

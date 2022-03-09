@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:leisa.nh</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>LINEAR ETALON IMAGING SPECTRAL ARRAY for NH</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.nh::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reuter, D., A. Stern, J. Baer, L. Hardaway, D. Jennings, S. McMuldroch, J.
+                   Moore, C. Olkin, R. Parizek, J. Scherrer, J. Stone, J. VanCleeve, and L. Young,
+                   Ralph: a visible/infrared imager for the New Horizons Pluto/Kuiper Belt
+                   Mission, SPIE Int. Soc. Opt. Eng., vol. 5906, 2005.
+            </reference_text>
+            <description>reference.REUTERETAL2005</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Reuter, D.C., S.A. Stern, J. Scherrer, D.E. Jennings, J. Baer, J. Hanley, L.
+                   Hardaway, A. Lunsford, S. McMuldroch, J. Moore, C. Olkin, R. Parizek, H.
+                   Reitsma, D. Sabatke, J. Spencer, J. Stone, H. Throop, J. Van Cleve, G.E.
+                   Weigle, and L.A. Young, Ralph: A Visible/Infrared Imager for the New Horizons
+                   Pluto/Kuiper Belt Mission, Space Sci. Rev., Volume 140, Numbers 1-4, pp.
+                   129-154, 2008.
+            </reference_text>
+            <description>reference.REUTERETAL2007</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>LINEAR ETALON IMAGING SPECTRAL ARRAY</name>
+        <type>Spectrometer</type> <type>Imager</type> <!--RChen/EN was Infrared Imaging Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+########################################################################
+########################################################################
+REQUIRED READING:
+- Reuter et al. (2007) [REUTERETAL2007]
+########################################################################
+########################################################################
+ 
+ 
+      The LEISA description was was adapted from Reuter et al. (2007)
+      [REUTERETAL2007], Reuter et al. (2005) [REUTERETAL2005] and the
+      New Horizons website.
+ 
+ 
+INSTRUMENT OVERVIEW
+========
+ 
+LEISA is a wedged filter infra-red spectral imager that operates in a
+push-broom mode.
+ 
+ 
+SPECIFICATIONS
+--------
+ 
+NAME:                    LEISA (Note 1)
+DESCRIPTION:             Infrared Imager
+PRINCIPAL INVESTIGATOR:  Alan Stern, SwRI
+WAVELENGTH RANGE:        1250 - 2500 nm
+FIELD OF VIEW:           15.9 x 15.9 mRad
+ANGULAR RESOLUTION:      0.062 mRad
+WAVELENGTH RESOLUTION:   6.5 nm/pixel (Note 2); 3.7 nm/pixel (Note 3)
+ 
+Note 1:  Linear Etalon Imaging Spectral Array
+Note 2:  Full spectral range
+Note 3:  2100 - 2250 nm
+ 
+ 
+DESCRIPTION
+--------
+ 
+LEISA operates at infrared wavelengths (it uses heat radiation), and its
+etalon acts like a prism to bend different wavelengths of light by different
+amounts so that each wavelength can be analyzed separately. Since different
+molecules emit and absorb light at different wavelengths, analysis of the
+different components of the light by LEISA can be used to identify the unique
+&apos;fingerprints&apos; of these molecules. LEISA will be used to map the distribution
+of frosts of methane (CH4), molecular nitrogen (N2), carbon monoxide (CO),
+and water (H2O) over the surface of Pluto and the water frost distribution
+over the surface of Charon. LEISA data may also reveal new constituents on
+the surfaces that have not yet been detected.
+ 
+ 
+Scientific Objectives
+========
+ 
+Hemispheric near-infrared spectral maps of Pluto and Charon at best
+resolution exceeding 10 km/pixel
+ 
+Hemispheric distributions of N2, CO, CH4 on Pluto at a best resolution
+exceeding 10 km/pixel.
+ 
+Surface temperature mapping of Pluto and Charon
+ 
+hase-angle-dependent spectral maps of Pluto and Charon
+ 
+ 
+ 
+Calibration
+========
+ 
+See Reuter et al. (2007) sections 5 &amp;
+ 
+ 
+Operational Considerations
+========
+ 
+LEISA images a scene through a wedged filter (linear variable filter,
+Rosenberg et al., 1994) placed about 100 micrometers above a 256x256 pixel
+Mercury Cadmium Telluride (HgCdTe) detector array (a PICNIC array). An image
+is formed on both the wedged filter and the array simultaneously (there is
+less than 5% spectral broadening by the f/8.7 beam). LEISA forms a spectral
+map by scanning the FOV across the surface in a push broom fashion, similar
+to that of the MVIC TDI channels. The frame rate is synchronized to the rate
+of the scan, so that a frame is read out each time the image moves by the
+single pixel IFOV. The LVF is fabricated such that the wavelength varies
+along one dimension, the scan direction.
+ 
+ 
+Detectors
+========
+ 
+The LEISA detector is a 1.2 to 2.5 micrometer HgCdTe PICNIC array, supplied
+by Rockwell Scientific Corporation of Camarillo CA. The array is a 256x256
+pixel array and each pixel is 40x40 micrometers^2 in area. However, several
+modifications were made to the standard PICNIC array. The HgCdTe was grown on
+a CdTe substrate using Molecular Beam Epitaxy (MBE) to provide good lattice
+matching and low dark currents. The detector was bump bonded to a standard
+PICNIC multiplexer and the resulting hybrid was mounted to molybdenum pad.
+This process reduces mechanical stress induced during cooling to operational
+temperature. It is estimated that the assembly can safely undergo at least
+1000 thermal cycles.
+ 
+See Reuter et al. (2007) for more detector details.
+ 
+ 
+Electronics
+========
+ 
+See Reuter et al. (2007) section 4.0.
+ 
+ 
+Filters
+========
+ 
+The filter, supplied by JDSU Uniphase/ Optical Coating Laboratories Inc. of
+Santa Rosa CA, was made in two segments. The first, covering from 1.25 to 2.5
+micrometers at a constant resolving power (constant delta-lambda/lambda) of
+about 240, provides information primarily for surface composition mapping.
+The second, covering from 2.1 to 2.25 micrometers at a constant resolving
+power of about 560, uses temperature dependent changes in the spectral
+structure of solid N2 near the alpha to beta transition at 35 K to provide
+surface temperature maps. In both segments, a constant resolving power is
+achieved by making the transmitted wavelength depend logarithmically on
+position. The two segments were bonded together to form a single filter
+element. This filter was, in turn, bonded into a holder and mounted such that
+the filter surface is about 100 micrometers above the surface of the array.
+The refractive index of the array is approximately 2.7 so that the total
+optical path between the filter and photo-active area of the array is less
+than 200 micrometers.  In this distance, the f/8.7 beam spreads about 0.5
+pixel, so when the focus position is optimized between the array and filter
+surface, the convolved image smear is about 0.04 pixel.
+ 
+ 
+Optics
+========
+ 
+See Reuter et al. (2007) section 3.
+ 
+ 
+Operational Modes
+========
+ 
+The array readout is performed in Read/Reset pairs. The accumulated charge is
+read, then the CCD is reset and read immeadiately. After the integration time
+has expired, the readout cycle is repeated. The difference between the Read
+value and the previous Reset value is the charge accumulated durring the
+integration time.  LEISA has two recording modes. In the Subtracted mode the
+Reset value is subtracted from the Read value and the result is recorded. In
+the Raw mode the Read and Reset values are both recorded.
+ 
+[***N.B. We do not see the fourth axis appear in the single lrw_ image taken
+so          far - Archive team]
+ 
+              Prefix
+              for FITS    Dimensions of
+Mode          file        data FITS file
+ 
+Subtracted    lsb_        (256 x 256 x N)
+Raw           lrw_        (256 x 256 x N x 2)
+ 
+N: number of image frames in the observation
+ 
+ 
+Measured Parameters
+========
+ 
+Radiance.
+ 
+
+        </description>
+    </Instrument>
+</Product_Context>

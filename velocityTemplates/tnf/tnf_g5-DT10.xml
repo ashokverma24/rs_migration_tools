@@ -1,0 +1,257 @@
+                        <Group_Field_Binary>
+                              <name>VLBI CHDO (Data Type 10)</name>
+                              <group_number>5</group_number>
+                              <repetitions>1</repetitions>
+                              <fields>21</fields>
+                              <groups>0</groups>
+                              <description>VLBI CHDO (Data Type 10)</description>
+                              <group_location unit="byte">125</group_location>
+                              <group_length unit="byte">100</group_length>
+                              <Field_Binary>
+                                  <name>chdo_type</name>
+                                  <field_number>1</field_number>
+                                  <field_location unit="byte">1</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Type attribute of the VLBI data CHDO.
+                                      Set to 10 because the CHDO contains binary data.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chdo_length</name>
+                                  <field_number>2</field_number>
+                                  <field_location unit="byte">3</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Length attribute of the VLBI data CHDO value field. 
+                                      Number of bytes after this item.  Set to 96.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>clk_off_epoch_year</name>
+                                  <field_number>3</field_number>
+                                  <field_location unit="byte">5</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <unit>year</unit>
+                                  <description>
+                                      Clock offset epoch -- year.
+                                      Values 1958 to 3000 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>clk_off_epoch_doy</name>
+                                  <field_number>4</field_number>
+                                  <field_location unit="byte">7</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <unit>day</unit>
+                                  <description>
+                                      Clock offset epoch -- day of year.
+                                      Values 1 to 366 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>clk_off_epoch_sec</name>
+                                  <field_number>5</field_number>
+                                  <field_location unit="byte">9</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Clock offset epoch -- seconds.
+                                      Values 0.0 to 86400.9999 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>clk_off_1</name>
+                                  <field_number>6</field_number>
+                                  <field_location unit="byte">17</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Clock offset at first receiving antenna for scan (UTC-station time). 
+                                      Values -1.0e11 to 1.0e11 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>clk_off_2</name>
+                                  <field_number>7</field_number>
+                                  <field_location unit="byte">21</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Clock offset at second receiving antenna for scan (UTC-station time).
+                                      Values -1.0e11 to 1.0e11 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>phs_cal_flag</name>
+                                  <field_number>8</field_number>
+                                  <field_location unit="byte">25</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Phase calibration flag.
+                                         0 = Unknown; 
+                                         1 = No calibration; 
+                                         2 = Default calibration; 
+                                         3 = Quasar calibration only; 
+                                         4 = Spacecraft calibration only; 
+                                         5 = Spacecraft and quasar calibration
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>chan_sampl_flag</name>
+                                  <field_number>9</field_number>
+                                  <field_location unit="byte">26</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Channel sampling flag.
+                                         1 = Multiplexed; 
+                                         2 = Dual-frequency combined; 
+                                         3 = 4 parallel channels
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>quasar_id</name>
+                                  <field_number>10</field_number>
+                                  <field_location unit="byte">27</field_location>
+                                  <data_type>ASCII_String</data_type>
+                                  <field_length unit="byte">12</field_length>
+                                  <description>
+                                      Quasar ID (name of quasar used).
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>quasar_id_num</name>
+                                  <field_number>11</field_number>
+                                  <field_location unit="byte">39</field_location>
+                                  <data_type>UnsignedMSB2</data_type>
+                                  <field_length unit="byte">2</field_length>
+                                  <description>
+                                      Quasar ID numeric (number assigned to the quasar used).
+                                      Values 0 to 2**16-1 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>data_qual_flag</name>
+                                  <field_number>12</field_number>
+                                  <field_location unit="byte">41</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Data quality flag.
+                                         0 = Good; 
+                                         1 = Poor
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>freq_chan_num</name>
+                                  <field_number>13</field_number>
+                                  <field_location unit="byte">42</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Frequency channel number. Values 0 to 255 are allowed. 
+                                      Valid only if rec_type (Secondary CHDO, field 19) is 71 or 72.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>mode_id</name>
+                                  <field_number>14</field_number>
+                                  <field_location unit="byte">43</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Mode identifier. 
+                                         0 = One-way; 
+                                         1 = Two-way
+                                      Valid only if rec_type (Secondary CHDO, field 19) is 73; equals 0 otherwise.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>modulo_flag</name>
+                                  <field_number>15</field_number>
+                                  <field_location unit="byte">44</field_location>
+                                  <data_type>UnsignedByte</data_type>
+                                  <field_length unit="byte">1</field_length>
+                                  <description>
+                                      Modulo flag.  
+                                         0 = Modded; 
+                                         1 = Unmodded
+                                      Valid only if rec_type (Secondary CHDO, field 19) is 73 or 74.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>ref_freq</name>
+                                  <field_number>16</field_number>
+                                  <field_location unit="byte">45</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      Reference frequency.  Values 1.0e9 to 4.0e9 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>modulus</name>
+                                  <field_number>17</field_number>
+                                  <field_location unit="byte">53</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>nanosecond</unit>
+                                  <description>
+                                      Modulus.  Values 0.0 to 100000.0 are allowed.
+                                      Valid only if rec_type (Secondary CHDO, field 19) is 73 or 74.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dod_cnt_time</name>
+                                  <field_number>18</field_number>
+                                  <field_location unit="byte">61</field_location>
+                                  <data_type>IEEE754MSBSingle</data_type>
+                                  <field_length unit="byte">4</field_length>
+                                  <unit>second</unit>
+                                  <description>
+                                      Count time for VLBI delay rate observable.  Values 0.0 to 100000.0 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dod_obs</name>
+                                  <field_number>19</field_number>
+                                  <field_location unit="byte">65</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>hertz</unit>
+                                  <description>
+                                      VLBI delay rate observable.  Values -1.0e6 to 1.0e6 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>dor_obs</name>
+                                  <field_number>20</field_number>
+                                  <field_location unit="byte">73</field_location>
+                                  <data_type>IEEE754MSBDouble</data_type>
+                                  <field_length unit="byte">8</field_length>
+                                  <unit>nanosecond</unit>
+                                  <description>
+                                      VLBI delay observable.  Values -1.0e9 to 1.0e9 are allowed.
+                                  </description>
+                              </Field_Binary>
+                              <Field_Binary>
+                                  <name>Reserve20</name>
+                                  <field_number>21</field_number>
+                                  <field_location unit="byte">81</field_location>
+                                  <data_type>ASCII_String</data_type>
+                                  <field_length unit="byte">20</field_length>
+                                  <description>
+                                      Reserved. Twenty bytes.
+                                  </description>
+                              </Field_Binary>
+                        </Group_Field_Binary>

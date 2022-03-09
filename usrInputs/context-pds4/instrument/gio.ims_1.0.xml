@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:esa:psa:context:instrument:gio.ims</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>ION MASS SPECTROMETER for GIO</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:ims.gio</alternate_title></Alias>  <!-- deprecated LID -->
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-02-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Changed inst LIDs from
+                      u:n:p:c:i:instID.scID to
+                      u:n:p:c:i:scID.instID
+                    Changed LIDs from urn:nasa:pds: to urn:esa:psa:
+                    And per "Guide toPDS4 Context Products" v1.7,
+                    changed all lidvid_reference to lid_reference
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.gio</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Balsiger, H., K. Altwegg, F. Buehler, J. Fischer, J. Geiss, A. Meier, U.
+                   Rettenmund, H. Rosenbauer, R. Schwenn, J. Benson, P. Hemmerich, K. Saeger, G.
+                   Kulzer, M. Neugebauer, B. E. Goldstein, R. Goldstein, E. G. Shelley, T.
+                   Sanders, D. Simpson, A. J. Lazarus, and D. T. Young (1986). &apos;The Giotto Ion
+                   Mass Spectrometer&apos;. In &apos;The Giotto Mission - Its Scientific Investigations&apos; (R.
+                   Reinhard and B. Battrick, Eds.) ESA SP-1077, pp. 129-148. ESA Publications
+                   Division, ESTEC, Noordwijk.
+            </reference_text>
+            <description>reference.BALSIGERETAL1986</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   &apos;Encounters with Comet Halley, The first results&apos;, Nature, Volume 321, No.
+                   6067, 15 May 1986.
+            </reference_text>
+            <description>reference.NATURE321</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>ION MASS SPECTROMETER</name>
+        <type>Spectrometer</type> <!--RChen/EN was Ion Mass Spectrometer-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+      Instrument Overview
+      ===================
+      The ion mass spectrometer consists of two major subsystems.  One
+      section, the High Energy Range Spectrometer (HERS) was designed to
+      measure the ion abundances and the 3-dimensional velocity distribution
+      outside the contact surface, where the ions are hot and there is
+      considerable turbulence.  The other section, the High Intensity
+      Spectrometer (HIS) was designed to measure the abundances of the
+      low-energy ions inside the contact surface, where the ions were
+      expected to have higher abundances and lower temperatures.  This
+      section contained separate Mass and Angle Analyzers.  Both sections
+      of the instrument were powered and controlled from a common power
+      supply and control unit.
+ 
+      HERS:
+ 
+      HERS utilized a cylindrical, electrostatic mirror to redirect the ions
+      from the direction of incidence to the entrance slit of the instrument
+      and also to demagnify the range of accepted directions from 60 degrees
+      in true elevation (angle with respect to the spacecraft spin vector) to
+      30 degrees at the entrance slit of the spectrometer.  The 60-degree
+      field of view in azimuth extends from 15 degrees to 75 degrees relative
+      to the spin axis of the spacecraft and thus does not include the ram
+      direction.  The field of view in azimuth (scanned by the rotation of
+      the spacecraft) is 2 degrees. Cylindrical accelerating/decelerating
+      grids are located immediately in front of the entrance slit which is
+      3.60 mm by 1.26 mm.  Behind the slit is a 120-degree sector magnet
+      followed by a second slit identical to the entrance slit.  The magnet
+      is of samarium-cobalt with a pole gap of 5 mm and a field strength of
+      0.335 Tesla (uniform to 0.5%).  The combination of the slits and the
+      sector magnet provides a filter which selects a constant value of the
+      normal component of momentum per unit charge of 7560/(M/Q) eV/e.  The
+      output slit from the sector magnet is followed by an electrostatic
+      deflector (ESD) which deflects ions out of the optical plane of the
+      magnet towards the detectors.  Since the ions have already been
+      selected for momentum per charge by the sector magnet, the sorting
+      by energy done by the electrostatic deflector is equivalent to sorting
+      by mass.  The ESD field is non-uniform in such a way that all ions of
+      a given M/Q are focussed in the detector plane.  The focal line for
+      ions of different elevation is nearly straight and position along this
+      line maps out the angle that ion trajectories make at the entrance
+      slit. The ESD field is generated by applying voltages, via a resistive
+      divider between two adjustable voltages, to a series of vane-like
+      electrodes arranged appropriately inside the ESD.  The vane-shaped
+      electrodes are also arranged so as to trap ions outside the range of
+      M/Q which is being deflected onto the detector.
+ 
+      The main detector for HERS is a micro-channel plate (MCP) with 50-mm
+      diameter and curved channels.  The range of energies incident on the
+      MCP is varied by varying the two voltages applied to the resistive
+      divider.  As examples, voltages of +4667 and -667 put light ions
+      (M = 2 - 4) on the MCP.  Voltages of 770 v and -110 v put medium ions
+      (M = 12 - 26) on the MCP and voltages of 576 v and -82 v put heavy
+      ions (m = 16 - 35) on the MCP.  A set of 4 discrete Channel Electron
+      Multipliers (CEMs), each with a 5 x 12.8 mm entrance funnel, is used
+      to detect protons.  They are placed such that the protons can be
+      deflected with a weaker field than would be required to image the
+      protons onto the MCP.  These also allow much higher counting rates
+      than are allowed by the MCP.
+ 
+      The output of the MCP is analyzed two-dimensionally with two orthogonal
+      arrays of strip anodes.  An array of 8 strip anodes deposited on the
+      back surface of the MCP senses the elevation angle of the ion events in
+      the MCP while an array of 40 strip anodes deposited on a high-purity
+      alumina plate located 0.1 mm from the output face of the MCP, senses
+      the mass of the incident ion events.  The mass-anode plate is held at
+      +50 volts relative to the output of the MCP.  Thus an ion entering the
+      front of the MCP produces a positive pulse on one of the 8 angle anodes
+      and a negative pulse on one of the 40 mass anodes.
+ 
+      An event is recorded by the electronics whenever a pulse is produced
+      at the mass anode which exceeds the threshold, which is selected from a
+      set of 8 logarithmically spaced values.  An event is classed as good if
+      there are coincident (within 1 microsecond) pulses at the angle and
+      mass electrodes.  Events are recorded by the anode numbers on which the
+      event was detected.  Multiple events within a single time window are
+      flagged as multiple.  Since the incoming ions are filtered first for
+      momentum by the sector magnet, the range of energies of ions of a given
+      mass transiting the instrument is small (roughly +/-3% of the actual
+      energy).  The instrument is scanned in energy using the accelerator/
+      decelerator grids in front of the sector magnet.  The remainder of the
+      instrument optics are floated at the accelerator potential.  The
+      accelerating potential is swept at 8 Hz through a 4.35 kV triangular
+      waveform, relative to a selectable central voltage chosen for the range
+      of masses being measured.  This gives 32 complete energy scans per
+      4-second rotation of the spacecraft.  Since the sweep is phase-locked
+      to the spacecraft spin, two sweep phases (separated by 5.6 degrees of
+      spacecraft rotation) are used alternately to avoid always measuring
+      the same energy at the same rotational phase.  The mirror voltage is
+      swept synchronously with the accelerator voltage.
+ 
+      HIS:
+ 
+      This sensor is intended to measure the ions in the inner coma, where
+      they were expected to be at high densities, low temperatures, and low
+      bulk velocities with respect to the nucleus.  The mass-range of this
+      sensor was limited to 12 to 57 amu per charge and the velocities were
+      to be measured in only a small range around the spacecraft encounter
+      velocity of 69 km/s, both with respect to speed and with respect to
+      direction of incidence.
+ 
+      HIS contains both a mass analyzer (MA) and an Angle Analyzer (AA).  The
+      MA uses both electrostatic and magnetic separation to give good mass
+      resolution in the vicinity of M/Q = 16 - 20.  The intrinsic field of
+      view is 2 degrees by 15 degrees, including the direction of the
+      spacecraft spin axis.  Due to the rotation of the spacecraft, the FOV
+      sweeps out a cone of half-angle 12 degrees with overlap near the center
+      of the cone.  The AA is an electrostatic quadrispherical analyzer with
+      5 miniature CEM detectors at the exit giving a resolution of 5 to 7.5
+      degrees within a FOV of 2 by 25 degrees.  The cone swept out by this
+      FOV has a half-angle of 22 degrees. The 2 by 25-degree fan contains
+      five elevation-angle ranges and the azimuths swept out by the spin of
+      the spacecraft are sorted into 16 bins. For five major ionic species,
+      the velocity distribution around the ram direction can be inferred,
+      thus providing the data necessary to interpret the data from the MA.
+ 
+      The mass analyzer is an excellent analog to a prism spectrograph.
+      After passing through an entrance slit, the divergent beam of ions is
+      collimated by a quadrispherical analyzer while filtering out ions of
+      all values of energy per charge other than the one selected by the
+      voltages applied to the analyzer.  A permanent magnet (0.19T) disperses
+      the beam according to the momentum per charge of the particles.  The
+      entrance slit is then reimaged onto a detector by a second
+      quadrispherical analyzer, providing a momentum-per-charge spectrum in
+      the final focal plane.  The instrument is scanned in energy-per-charge
+      by biasing the entire instrument beyond the first quadrisphere by a
+      voltage Ub = U1 - Uc where U1 is the central energy per charge
+      transmitted by the first quadrisphere and Uc is the required energy per
+      charge for an ion of a given M/Q to hit the desired detector in the
+      focal plane.  Ub is in the range -1400 to +1050 V.
+ 
+      Discrete, dedicated detectors are mounted in the focal plane at the
+      correct positions for ion species at 16-21 amu and also at the
+      positions for the virtual ions at 17.5, 18.5, and 19.5 amu to monitor
+      interference between channels.  In order to provide sufficient physical
+      space to fit discrete detectors, the focal plane is imaged onto the
+      surface of a prism-shaped, activated, lead-glass block.  There are 9
+      rectangular holes, roughly 0.6 by 2.0 mm, the bottoms of which are
+      connected to the rear of the block by straight 0.4mm-diameter channels.
+      The channels are drilled at various angles so that they are well
+      separated where they emerge from the block.  The funnels of specially
+      fabricated CEMs are attached to the block at each hole using conductive
+      epoxy.  The front and back surfaces of the block are gold-plated to
+      provide conductivity and a voltage of 700 V between the two surfaces
+      allows the channels in the block to act as preamplifiers for the
+      discrete CEMs.  This assembly is known as der Igel&apos; after the German
+      word for the hedgehog which its shape suggests.  The high voltage to
+      the CEMs can be set to any of four levels between 2.5 and 3.4 kV.
+ 
+      The angle analyzer (AA) bridges the gap between HERS and HIS, providing
+      a wider field of view than the MA and providing resolution in elevation
+      so that, in the event that the ions in the inner coma have a
+      significant temperature or a significant bulk velocity with respect to
+      the nucleus, the data from the MA can be usefully interpreted.  The
+      quadrispherical AA plates are similar to those of the first
+      quadrisphere of the MA and are connected to the same voltage supply.
+      The collimated beam is incident on aluminum dynodes and the secondary
+      electrons are collected by a set of 5 CEMs with high voltages
+      selectable in the range 2.5 to 3.1 kV.  The amplifiers on these CEMs
+      can handle count rates to 2x10**6 counts per second.
+ 
+      Science Objectives
+      ==================
+      The primary scientific objectives of the IMS team were:
+        1. To measure accurately the relative abundances of both solar and
+           cometary ions in the cometary coma, and
+        2. To determine ion velocity distributions as a function of position
+           within the coma.
+ 
+      Calibration Description
+      =======================
+      The entire IMS was calibrated in the ion-beam calibration system at the
+      University of Bern, using H+, H2+, He+, CH3+, CH4+, Ne+, N2+, Ar+, and
+      CO2+. Dynamic calibration was performed under the control of the IMS
+      control unit (IMS-3), with fast, linear sweeps of deflection and
+      acceleration potentials with the usual encoding of data.  A static
+      calibration was also performed, under control of a special ground-test
+      system, which allowed stepping the potentials at discrete values.
+ 
+      The dynamic calibration, which yielded low duty cycles because of the
+      wide range of energies swept compared to the energy of the incoming
+      ions, was used primarily to assign the various bins of the sweep
+      voltage to values of Q/M.
+ 
+      The static calibration was used to investigate the optics and to
+      optimize voltages.  The static calibration was also used to measure the
+      response as a function of direction and energy of the incoming ions.
+      In the static calibration, the energy of the beam was linearly wobbled
+      over the energy range of the detectors.  The wider of the two angular
+      dimensions of the field of view was scanned by rotating the turntable
+      on which IMS was mounted while the narrower dimension was measured by
+      calibration runs at several discrete settings.
+ 
+      Results of the calibration are described by Balsiger et al. (1986 in
+      The Giotto Mission, Its Scientific Investigations, ESA SP-1077, p129)
+      and by Balsiger et al. (1987 J. Phys. E: Sci. Instrum. 20, p753).
+      Further details of the calibration facility are described by Ghielmetti
+      et al. (1983 Rev. Sci. Instr. 54, 425).
+ 
+      Operational Considerations
+      ==========================
+      IMS functioned as planned during the Giotto encounter with P/Halley.
+      However, after the encounter, HERS was no longer functional and only
+      HIS was operational for the encounter with P/Grigg-Skjellerup.  Because
+      the axis of spacecraft spin was not coincident with the ram direction
+      during the encounter with P/Grigg-Skjellerup, the range of angles which
+      were sampled was not symmetric about the ram direction and this must be
+      taken into account when interpreting those data.
+ 
+        Instrument Mass		: 9.2 kg
+        Instrument Manufacturer	: UNIVERSITY OF BERN
+        Platform or Mounting Name   : Spacecraft Body
+ 
+      Electronics
+      ===========
+      Electronics ID               : IMS-3
+ 
+      This electronics box contains all the low-voltage electronics,
+      including an isolating power converter.  It supplies all voltages
+      needed to drive the various detector amplifiers, the logic, and the
+      high-voltage power circuitry.  The high-voltage stepping in both
+      detectors is accomplished with control voltages generated by PROMs
+      which feed digital-to-analog converters. Two microprocessors, one
+      each for HIS and HERS, receive and compress digitized data from the
+      two sensor boxes and also control the modes of the instrument.  The
+      microprocessor for HERS also controls all general IMS command and
+      telemetry operations as well as all interactions of IMS with the
+      spacecraft.
+ 
+      Instrument Section/Operating Mode Descriptions
+      ==============================================
+ 
+        HERS
+        ----
+        This mode is intended for use during cruise and in the outer coma
+        when the data from HERS are given priority over those from HIS for
+        telemetry. During each 4-second spin of the spacecraft, 64 complete
+        energy scans are made for a single range of masses (light, medium,
+        or heavy), corresponding to 64 separate azimuthal bins, each 5.6
+        degrees wide.  In successive sweeps, the energy range alternates
+        between increasing and decreasing such that a given energy can be
+        sampled at two different relative positions within an azimuthal bin.
+        A complete cycle consists of 4 spins which are used in one of four
+        different sub-modes, selected by varying the voltage applied to the
+        resistive divider for the ESD: 1. protons only for 4 spins.  2.
+        alternating spins of protons and light ions, 3. no protons - light,
+        medium, heavy, and medium ions, and 4. all masses - protons, light,
+        medium, heavy.  Sub-mode 2 is intended for cruise phase to measure
+        the solar wind and sub-mode 4 is intended for encounter.  Sub-modes
+        1 and 3 were intended for use if a detector deteriorated.
+ 
+        During cruise phase, and whenever during the encounter phase HERS
+        is given priority for telemetry, data are transmitted for each spin.
+        Each ion event is recorded as a 24-bit word containing the anode
+        numbers for mass and elevation angle, the energy and azimuth bin
+        numbers, and the direction of the sweep.  For protons, instead of
+        recording anode numbers, the total counts in each CEM are recorded
+        for each azimuth and energy bin.  At high count rates, data
+        compression is used to fit the data into the available telemetry
+        rate.  In the inner coma, when HIS has priority, each of the mass
+        ranges is held for two spin periods instead of one and the telemetry
+        is adjusted accordingly.
+ 
+        FOV Shape Name                 : RECTANGULAR
+        Horizontal FOV                 : 2.
+        Vertical FOV                   : 60.
+ 
+ 
+        HIS
+        ---
+        In the inner coma, when HIS is given priority for telemetry, the
+        complete cycle is 4 spins of the spacecraft.  The basic program
+        consists of a 64-step energy scan, repeated 16 times per spin period.
+        The sets of voltages for deflection, acceleration/deceleration, and
+        for the quadrispherical lenses, are stored in a PROM in IMS-3.  Per
+        spin, the total set of 14 CEMs yields 14366 individual count rates.
+        These are reduced by compression to an array of 1004 8-bit words.
+        Compression is achieved by i. summing related count rates, ii.
+        omitting insignificant channels, and iii. quasi-logarithmic
+        compression of the remaining count rates.  A full cycle can last 1,
+        2 or 4 spins depending on IMS mode (HIS or HERS priority) and
+        depending on the actual telemetry rate.
+ 
+        For the AA, only those E/Q channels containing the most abundant ions
+        (M/Q = 17, 18, 19, 28, 44) are transmitted separately for each of the
+        16 azimuthal bins in a spin.  The other 59 E/Q channels are
+        integrated over a full spin and then only CEM 1 (which looks in the
+        direction of the spin axis) is recorded directly in the telemetry
+        while the other 4 CEMs are themselves summed before transmission.
+ 
+        The MA has two distinct modes of operation since one can choose the
+        appropriate acceleration/deceleration voltage and the corresponding
+        voltage on the quadrisphere to direct any given mass to any given
+        position on the Igel.  In the N-program, any given mass is always
+        directed to the same dedicated detector over the appropriate range
+        of E/Q.  This mode thus allows one to measure velocity distributions
+        with a single detector and minimize calibration uncertainties.  For
+        example, in the water-group ions, mass 18 will always be directed at
+        CEM 4.  The layout of the holes on the faceplate of the Igel was
+        designed to optimize the detection of species in the water group.
+        When other mass ranges are directed at the Igel, some masses are not
+        centered on the detectors.  In the H-program, individual channels in
+        the Igel are dedicated to specific velocities, centered at the
+        nominal encounter velocity of 69 km/s.  In this program, all species
+        at velocity 69 km/s always appear at CEM 6 (and other velocities at
+        other CEMs).  This program is better suited to determination of
+        relative abundances.  The choice between N- and H-programs is made
+        via telemetry, choosing either all N, all H, or alternating N- and
+        H-programs with a 3:1 or 1:1 ratio over groups of 4 spins.  There is
+        also the option to wobble the voltage on the external deflector to
+        move the field of view by 2 degrees for mass 12 (0.5 degrees for mass
+        57) away from the spacecraft.
+ 
+        FOV Shape Name                 : RECTANGULAR
+        Horizontal FOV                 : 2.
+        Vertical FOV                   : 15.
+
+        </description>
+    </Instrument>
+</Product_Context>

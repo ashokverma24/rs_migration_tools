@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"         schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.sch"  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds ="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=
+    "http://pds.nasa.gov/pds4/pds/v1    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd
+     http://pds.nasa.gov/pds4/ctli/v1   https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1D00_1101.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:dsn.rss</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>NASA Deep Space Network Radio Science</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-07-30</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial version of the context product describing NASA Deep Space Network (DSN)
+                    commanding, radio tracking, and radio science instrumentation.  With a few 
+                    exceptions, this instrumentation is available for connection to any DSN antenna.
+                    Performance then depends on antenna size, wavelength, transmitter and 
+                    low-noise amplifier selected, and local observing conditions. The instrumentation
+                    has evolved over time since the DSN was established in the 1960s.  This file
+                    will be updated as new information becomes available about both future and
+                    past capabilities.
+                    Updated during migration of Cassini radio science data from PDS3 to PDS4.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.810-005</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+                This reference is to a PDS collection containing several versions of the NASA Deep 
+                Space Network (DSN) Telecommunications Link Design Handbook (Document 810-005).
+                The Handbook is maintained in a modular format to provide interface 
+                design data to flight projects using the DSN.  Modules are updated as appropriate.
+                Each member product in the PDS collection is the set of modules as they applied
+                at that point in time.  Modules include:
+                  001 Handbook Introduction
+                  101 70-m Subnet Telecommunications Interfaces
+                  102 26-m Subnet Telecommunications Interfaces (omitted in 2009 and later versions)
+                  103 34-m HEF Subnet Telecommunications Interfaces
+                  104 34-m BWG Antennas Telecommunications Interfaces
+                  105 Atmospheric and Environmental Effects
+                  106 Solar Corona and Solar Wind Effects
+                  107 Radio Source Catalog
+                  201 Frequency and Channel Assignments
+                  202 34-m and 70-m Doppler
+                  203 Sequential Ranging
+                  205 Command Service
+                  206 Telemetry General Information
+                  207 34-m and 70-m Telemetry Reception
+                  208 Telemetry Data Decoding
+                  209 Open-Loop Radio Science
+                  210 Delta Differrential One-way Ranging
+                  211 Wideband Very Long Baseline Interferometry
+                  214 Pseudonoise and Regenerative Ranging
+                  301 Coverage and Geometry
+                  302 Antenna Positioning
+                  303 Media Calibration
+                  304 Frequency and Timing
+                  305 Test Support
+                  901 Handbook Glossary
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.dsn</lid_reference>
+            <reference_type>instrument_to_facility</reference_type>
+            <comment>
+                This context product provides more information on the NASA Deep Space Network as a whole.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss11_26m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-11 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss12_26m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-12 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss12_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-12 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss13_26m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-13 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss13_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-13 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss14_64m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 64-m DSS-14 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss14_70m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 70-m DSS-14 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss15_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-15 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss16_26m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-16 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss23_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-23 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss24_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-24 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss25_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-25 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss26_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-26 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss27_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-27 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:goldstone.dss28_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-28 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss33_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-33 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss34_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-34 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss35_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-35 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss36_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-36 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss42_26m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-42 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss42_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-42 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss43_64m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 64-m DSS-43 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss43_70m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 70-m DSS-43 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss45_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-45 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:canberra.dss46_26m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-46 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss53_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-53 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss54_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-54 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss55_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-55 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss56_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-56 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss61_26m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-61 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss61_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-61 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss63_64m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 64-m DSS-63 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss63_70m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 70-m DSS-63 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss65_34m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-65 antenna before it was relocated in 2005.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss65_34m-post2005</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 34-m DSS-65 antenna after it was relocated in 2005.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:madrid.dss66_26m</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+            <comment>
+                This context product provides more information on the 26-m DSS-66 antenna.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.0159-science</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+                This reference is to a PDS collection containing several versions of the NASA Deep 
+                Space Network (DSN) Radio Science Receiver SFDU Software Interface Specification.
+                The Radio Science Receiver (RSR) was a computer controlled open loop receiver that digitally 
+                recorded a spacecraft signal through the use of an analog to digital converter (ADC) and up
+                to four digital filter sub-channels.  The RSR was the primary open loop receiver for radio
+                science observations between 2001 and 2019.  The RSR was superseded by the Open Loop Receiver
+                (OLR) in 2019.  The OLR could be configured to deliver data in RSR formats; hence, this 
+                document remains applicable beyond the decommissioning of the RSR.  
+                
+                The document specifies the format and content of the RSR SFDU, which was a self-identifying,
+                self-delimiting data structure that was used to encapsulate a portion of the radio science data
+                acquired by the RSR. The document also briefly describes the RSR itself, its principles of
+                operation, and the various mechanisms by which RSR SFDUs were stored and transported.  Over
+                the life of the RSR, changes in format and content of the RSR SFDU were relatively minor.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.trk-2-34</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+                This reference is to a PDS collection containing several versions of the NASA Deep 
+                Space Network (DSN) TRK-2-34 Tracking System Data Archival Format.  Closed loop receivers 
+                and associated electronics at ground stations of the NASA Deep Space Network (DSN) captured
+                signals transmitted by distant spacecraft and extracted information such as round-trip 
+                propagation time and Doppler offset from a predicted reference.  The TRK-2-34 format was
+                introduced in 2001 and was used with little change until at least 2020.
+                
+                The document specifies the format and content of radio metric tracking data delivered to 
+                navigation and radio science custmoers from DSN Telecommunications services.  
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:document:moyer.2000</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+                This document describes the formulation of program REGRES of the Orbit Determination Program
+                (ODP) of the Jet Propulsion Laboratory (JPL). Program REGRES calculates the computed values of 
+                observed quantities (e.g., doppler and range observables) obtained at tracking stations of the
+                Deep Space Network (DSN). It also calculates media corrections.
+            </comment>
+        </Internal_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                Asmar, S. W., J. W. Armstrong, L. Iess, and P. Tortora, Spacecraft 
+                Doppler Tracking: Noise Budget and Accuracy Achievable in Precision Radio 
+                Science Observations, Radio Science, 40, RS2001, doi:10.1029/2004RS003101,
+                2005.
+            </reference_text>
+            <description>
+                This paper discusses noise in Doppler tracking of deep space probes and 
+                provides a detailed noise model for Doppler radio science experiments. 
+                Current technology allows velocity measurements to better than 1 micron 
+                per second when data are averaged over 1000 seconds.  Examples from 
+                Cassini are included.  Applications of the noise model to experiment 
+                planning are considered, and the authors discuss the prospects for 
+                significant sensitivity improvements.
+            </description>
+        </External_Reference>
+        
+        <External_Reference>
+            <reference_text>
+                Asmar, S. W., J. Lazio, D. H. Atkinson, D. J. Bell, J. S. Border, I. S. Grudinin,
+                A. J. Mannucci, M. Paik, and R. A. Preston (2019).  Future of Planetary Atmospheric, 
+                Surface, and Interior Science Using Radio and Laser Links, Radio Science, 54, 
+                365-377. https://doi.org/10.1029/2018RS006663.
+            </reference_text>
+            <description>
+                An brief overview of concepts and results achieved from radio science investigations
+                of planetary targets, followed by a longer discussion of possible future advances
+                (as of about 2018).
+            </description>
+        </External_Reference>
+ 
+        <External_Reference>
+            <reference_text>
+                Asmar, S.W., and N.A. Renzetti, The Deep Space Network as an Instrument for Radio
+                Science Research, Jet Propulsion Laboratory Publication 80-93, Rev. 1, 15 April 1993.
+            </reference_text>
+            <description>
+                A summary of possible radio science applications using the NASA Deep Space Network
+                as of the early 1990s.
+            </description>
+        </External_Reference>
+
+    </Reference_List>
+    
+    <Instrument>
+        <name>NASA Deep Space Network Radio Science</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Interferometer</ctli:type>      
+                <ctli:type>Radio Receiver</ctli:type>
+                <ctli:type>Radio Science</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <description>
+            Radio science and radio tracking instrumentation at the NASA Deep Space Network (DSN) 
+            utilize capabilities of the DSN in combination with telecommunications equipment
+            on board spacecraft to make measurements that can be used to study gravity fields, 
+            relativistic effects, and the properties of plasmas, and planetary surfaces, atmospheres, 
+            ionospheres, and rings throughout the solar system.  The DSN also sends commands to
+            spacecraft and receives telemetry from them.  This equipment may also be used for
+            reception only, such as for radio astronomy observations of natural sources and 
+            for very long baseline interferometry.  With few exceptions, this instrumentation
+            is available for connection to any DSN antenna. Performance then depends on antenna size,
+            wavelength, transmitter and low-noise amplifier selected, and local observing conditions.
+            The instrumentation has evolved over time since the DSN was established in the 1960s.
+        </description>
+    </Instrument>
+
+</Product_Context>

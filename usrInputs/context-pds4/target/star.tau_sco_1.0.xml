@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://pds.nasa.gov/pds4/pds/v1
+      https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.tau_sco</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Tau Scorpii</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Paikauhale</alternate_title></Alias>
+      <Alias><alternate_title>tau Sco</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>23 Sco</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 14819</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1AXG J163553-2813</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CD-27 11015</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CPD-27 5427</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 3724</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1632.7-2806</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J1635-28.2</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 620</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 22303</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 9538</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00149438</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 06807-01012</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 149438</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 657</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 81266</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 81266</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 6165</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 16327-2806</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 2775</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J16355295-2812576</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>MCW 561</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 3713</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3767.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 3767.10</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 442</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 265701</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 2361</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J163553.7-281252</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 184481</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 29892</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30620</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 19318</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 6807-1012-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 14025</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 21531</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100149438</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 13733</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 6044420729653939840</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-01-01</modification_date>
+        <version_id>1.0</version_id>
+        <description>RChen/EN initial</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Target>
+    <name>Tau Scorpii</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 16 hours 35 minutes 52.9528530 seconds
+Declination, ICRS coord, ep=J2000: -28 degrees 12 minutes 57.661515 seconds
+    </description>
+  </Target>
+</Product_Context>
+

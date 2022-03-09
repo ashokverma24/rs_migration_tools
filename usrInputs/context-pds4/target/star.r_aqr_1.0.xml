@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.r_aqr</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>R Aquarii</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>R Aqr</alternate_title></Alias>
+      <Alias><alternate_title>Variable Star R Aqr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASAS J234349-1517.1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-16 6352</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EM* MWC 400</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 32948</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 14862</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00222800</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 06404-00077</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 222800</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 117054</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 117054</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 8992</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 23412-1533</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -20642</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J23434939-1517043</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5744.01</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 242022</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 3136</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J234351.0-151655</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 165849</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC9 1454</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 44830</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 6404-77-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC2 26363725</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UCAC4 374-180350</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 20637</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2XMM J234349.7-151700</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 105 8733</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 2338-15</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2419576358847019136</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>R Aquarii</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 23 hours 43 minutes 49.4629939776 seconds
+Declination, ICRS coord, ep=J2000: -15 degrees 17 minutes 04.184232557 seconds
+    </description>
+  </Target>
+</Product_Context>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.sch" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+   http://pds.nasa.gov/pds4/pds/v1 
+   http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.xsd 
+   ">
+   <Identification_Area>
+      <logical_identifier>urn:nasa:pds:context:instrument:swia.maven</logical_identifier>
+      <version_id>1.0</version_id>
+      <title>SWIA</title>
+      <information_model_version>1.4.0.0</information_model_version>
+      <product_class>Product_Context</product_class>
+      <Alias_List>
+         <Alias>
+            <alternate_title>Solar Wind Ion Analyzer</alternate_title>
+         </Alias>
+      </Alias_List>
+      <Modification_History>
+         <Modification_Detail>
+            <modification_date>2015-03-24</modification_date>
+            <version_id>1.0</version_id>
+            <description>
+               Initial version.
+            </description>
+         </Modification_Detail>
+      </Modification_History>
+   </Identification_Area>
+   <Reference_List>
+      <Internal_Reference>
+         <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.maven</lid_reference>
+         <reference_type>instrument_to_instrument_host</reference_type>
+      </Internal_Reference>
+   </Reference_List>
+   <Instrument>
+      <name>Solar Wind Ion Analyzer</name>
+      <type>Energetic Particle Detector</type>
+      <description>
+         The Solar Wind Ion Analyzer (SWIA) is an electrostatic analyzer designed to measure solar 
+         wind and magnetospheric ions in the Martian system over an energy/charge range of ~5-25000 
+         eV/q, and an angular range of 360 x 90 degrees [minus spacecraft obstructions]. The SWIA 
+         sensor is based on heritage from the Mars Global Surveyor Electron Reflectometer, Lunar 
+         Prospector Electron Reflectometer, Wind 3dp, FAST ESA, and THEMIS ESA instruments. The 
+         SWIA electronics are most directly based on those of THEMIS ESA, and the analyzer includes 
+         new deflection optics in order to provide a large field of view on the 3-axis stabilized 
+         MAVEN spacecraft. The SWIA sensor is mounted on the corner of the top deck of the spacecraft, 
+         positioned to ensure a clear field of view over both sides of the solar panel. For the nominal 
+         sun-pointed spacecraft orientation, the sensor is aligned such that the sun is centered in the 
+         sensor field of view, with an unobstructed field of view around the nominal solar wind flow 
+         direction. 
+      </description>
+   </Instrument>
+</Product_Context>

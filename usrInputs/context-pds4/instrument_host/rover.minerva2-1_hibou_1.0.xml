@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:jaxa:darts:context:instrument_host:rover.minerva2-1_hibou</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MINERVA-II1 Rover-1a HIBOU</title>
+        <information_model_version>1.14.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_title>MINERVA-II-1a</alternate_title>
+            </Alias>
+            <Alias>
+                <alternate_title>MINERVA-II1 Rover-1a</alternate_title>
+            </Alias>
+            <Alias>
+                <alternate_title>HIBOU</alternate_title>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-06-15</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version.</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:jaxa:darts:context:investigation:mission.hyb2</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <Instrument_Host>
+        <name>MINERVA-II1 Rover-1a HIBOU</name>
+        <type>Rover</type>
+        <naif_host_id>-37810</naif_host_id>
+        <description>MINERVA-II (MIcro Nano Experimental Robot Vehicle for Asteroid the Second Generation) is the successor of MINERVA installed on the Hayabusa spacecraft. There are two containers, one is MINERVA-II1, and the other is MINERVA-II2. MINERVA-II1 consists of Rover-1a, Rover-1b, OME-B1 (basic structure; OME is the abbreviation of Onboard Mounted Equipment), and OME-C1 (cover). Two rovers, Rover-1a and Rover-1b, were named as HIBOU (Highly Intelligent Bouncing Observation Unit) and OWL (Observation unit with intelligent Wheel Locomotion) after landing to Ryugu, respectively. One of the purpose of HIBOU and OWL is to verify efficient moving by hopping on the surface with very weak gravity. This hopping is implemented by using a motor to rotate a swing-arm within the rover. HIBOU and OWL are designed to hop autonomously. HIBOU has solar cells, antenna for communicating with the Hayabusa2 spacecraft, two wide-angle cameras, two cameras for stereo view, temperature sensors, optical sensors, an accelerometer, and a gyroscope. Almost all HIBOU's surfaces are covered by solar cells different with OWL's surfaces, therefore HIBOU is thermally more sensitive to sunlight incidence than OWL.</description>
+    </Instrument_Host>
+</Product_Context>

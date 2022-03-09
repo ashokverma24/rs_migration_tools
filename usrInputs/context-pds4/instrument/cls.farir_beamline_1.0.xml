@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:cls.farir_beamline</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Far-Infrared Beamline at the Canadian Light Source Facility</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-08-27</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Initial creation of the context product. 
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:laboratory.cls</lid_reference>
+            <reference_type>instrument_to_facility</reference_type>
+        </Internal_Reference>
+    </Reference_List>    
+    <Instrument>
+        <name>Far-Infrared Beamline at the Canadian Light Source Facility</name>
+        <type>Spectrometer</type>
+        <subtype>Far-Infrared Spectroscopy; Synchrotron Beamline</subtype>
+        <description>
+           Information about the Canadian Light Source (CLS) Facility Far-Infrared Beamline
+           Spot Size: Diffraction limited;
+           Flux (V/s/0.1%BW) @100 mA: 1E13 @100µm;
+           Resolution ∆E: >= 0.001 cm^-1;
+           Energy Range: 0.00062 - 0.124 eV (0.62 - 124 meV = 5 - 1000 cm^-1);
+           Extraction Port (H X V): (55 x 37) mrad^2;
+           Source: Bending Magnet;
+           Facility Website: http://www.lightsource.ca/beamlines/details/far_infrared_spectroscopy__farir.html
+        </description>
+    </Instrument>
+</Product_Context>

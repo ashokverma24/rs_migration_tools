@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:pds ="http://pds.nasa.gov/pds4/pds/v1" 
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation=
+    "http://pds.nasa.gov/pds4/pds/v1  https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:telescope:canberra.dss33_34m</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>DSS-33 34-m Radio Telescope</title>
+        <information_model_version>1.13.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-07-19</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    Original context file for the 34-m DSS-33 antenna near Canberra, Australia.
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:radiosci.documentation:dsn.810-005</lid_reference>
+            <reference_type>instrument_to_document</reference_type>
+            <comment>
+                This reference is to a PDS collection containing several versions of the NASA Deep 
+                Space Network (DSN) Telecommunications Link Design Handbook (Document 810-005).
+                The Handbook is maintained in a modular format to provide interface 
+                design data to flight projects using the DSN.  Modules are updated as appropriate.
+                Each member product in the PDS collection is the set of modules as they applied
+                at that point in time.  Modules include:
+                001 Handbook Introduction
+                   101 70-m Subnet Telecommunications Interfaces
+                   102 26-m Subnet Telecommunications Interfaces (omitted in 2009 and later versions)
+                   103 34-m HEF Subnet Telecommunications Interfaces
+                   104 34-m BWG Antennas Telecommunications Interfaces
+                   105 Atmospheric and Environmental Effects
+                   106 Solar Corona and Solar Wind Effects
+                   107 Radio Source Catalog
+                   201 Frequency and Channel Assignments
+                   202 34-m and 70-m Doppler
+                   203 Sequential Ranging
+                   205 Command Service
+                   206 Telemetry General Information
+                   207 34-m and 70-m Telemetry Reception
+                   208 Telemetry Data Decoding
+                   209 Open-Loop Radio Science
+                   210 Delta Differrential One-way Ranging
+                   211 Wideband Very Long Baseline Interferometry
+                   214 Pseudonoise and Regenerative Ranging
+                   301 Coverage and Geometry
+                   302 Antenna Positioning
+                   303 Media Calibration
+                   304 Frequency and Timing
+                   305 Test Support
+                   901 Handbook Glossary
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.dsn</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>
+                This context product provides more information on the NASA Deep Space Network as a whole.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:facility:observatory.canberra</lid_reference>
+            <reference_type>telescope_to_facility</reference_type>
+            <comment>
+                This context product provides more information on the Canberra Deep Space Communications Complex.
+            </comment>
+        </Internal_Reference>
+        
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument:dsn.rss</lid_reference>
+            <reference_type>telescope_to_instrument</reference_type>
+            <comment>
+                This context product provides more information on the commanding, radio tracking, and
+                radio science instrumentation at the telescope.
+            </comment>
+        </Internal_Reference>
+        
+        <External_Reference>
+            <reference_text>https://www.cdscc.nasa.gov/Pages/welcome.html</reference_text>
+            <description>
+                An overview of the Canberra Deep Space Communications Complex with photographs.
+                The Antennas menu for DSS-33 shows an earlier incarnation of this antenna.
+                The new DSS-33 is expected to become operational in 2026.
+            </description>
+        </External_Reference>
+        
+    </Reference_List>
+    
+    <Telescope>
+        <aperture unit='m'>34</aperture>
+
+        <description>
+            Deep Space Station 33 (DSS-33) is expected to become operational in 2026. The antenna will
+            used the beam waveguide (BWG) design in which transmission and reception equipment is 
+            located underground rather than in a cone at the focal point of the dish. The radio signal 
+            is guided from the subreflector through a hole in the surface of the dish to the receiving 
+            equipment via a system of reflecting mirrors inside a large tube. The reverse path allows 
+            transmission.  This design reduces weight on the reflecting surface, insulates electronics 
+            from environmental factors including dish movement, and simplifies maintenance. DSS-33 will 
+            be able to transmit at 20 kW 7.1.  It will receive right- and left-circular polarization 
+            at 8.4, and 32 GHz. Antenna coordinates are not yet available.
+            
+            The Canberra Deep Space Communications Complex (CDSCC) is managed by the Commonwealth 
+            Scientific and Industrial Research Organisation (CSIRO), Australia's national science 
+            research agency. The CDSCC is at Tidbinbilla, about 35 km southwest of Canberra, ACT.
+        </description>
+    </Telescope>
+    
+</Product_Context>

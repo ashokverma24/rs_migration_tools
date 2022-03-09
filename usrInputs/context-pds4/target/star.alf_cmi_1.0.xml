@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.alf_cmi</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Procyon</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Procyon</alternate_title></Alias>
+      <Alias><alternate_title>Alpha Canis Minoris</alternate_title></Alias>
+      <Alias><alternate_title>10 Canis Minoris</alternate_title></Alias>
+      <Alias><alternate_title>Alpha CMi</alternate_title></Alias>
+      <Alias><alternate_title>alf CMi A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>10 CMi</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>alf CMi</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SHB 1A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+05 1072</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AKARI-FIS-V1 J0739178+051322</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ASCC 1030621</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1AXG J073918+0514</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1C 12.01</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J07393+0514A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Ci 20 432</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+05 1739 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+05 1739 5</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 100884</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 1849</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2E 0736.6+0520</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1ES 0736+05.3</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2EUVE J0739+05.2</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EUVE J0739+05.2</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FAUST 1387</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 291</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 10277</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 5099</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00061421</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 280 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 280.0</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GJ 280</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 61421</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 37279</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 37279</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 2943</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 07341+0529 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 07366+0520</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC +10170</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 1576</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LFT 541</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LHS 233</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LSPM J0739+0513</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>LTT 12053</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J07391805+0513298</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 1726</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NLTT 18229</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>NSV 3672</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>8pc 285.93A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 1805</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 212</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PM 07367+0521</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 153068</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 1161</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J0739+051</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2RE J073918+051351</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J0739+051</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RE J073917+051339</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 1234</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RX J0739.3+0513</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>1RXS J073918.3+051332</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 115756</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC7 317</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SBC9 467</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 14100</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SPOCS 352</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SV* ZI 646</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 10647</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 187-2184-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 7352</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO-B1.0 0952-00146563</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>USNO 825</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100061421</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J07393+0514A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 7381</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Zkh 106</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Procyon</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 07 hours 39 minutes 18.11950 seconds
+Declination, ICRS coord, ep=J2000: +05 degrees 13 minutes 29.9552 seconds
+    </description>
+  </Target>
+</Product_Context>

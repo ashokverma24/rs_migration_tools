@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+    href="https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:ctli="http://pds.nasa.gov/pds4/ctli/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd
+        http://pds.nasa.gov/pds4/ctli/v1 https://pds.nasa.gov/pds4/ctli/v1/PDS4_CTLI_1G00_1200.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:irtf-maunakea.3m2.mirac2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Mid-Infrared Array Camera 2</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_title>urn:nasa:pds:context:instrument:irtf.3m0.mirac2</alternate_title></Alias>  <!-- deprecated LID -->
+            <Alias><alternate_title>MIRAC2</alternate_title></Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-12-07</modification_date>
+                <version_id>1.0</version_id>
+                <description>per RMS, deprecated irtf in favor of irtf-maunakea</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:irtf-maunakea.3m2</lid_reference>
+            <reference_type>instrument_to_telescope</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <doi>10.1117/12.317327</doi>
+            <reference_text>Hoffmann, W.F., et al., (1998), MIRAC2: a mid-infrared array camera for astronomy, Proc.
+            SPIE 3354, Infrared Astronomical Instrumentation (21 August 1998).
+            </reference_text>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>Mid-Infrared Array Camera</name>
+        <Type_List_Area>
+            <ctli:Type_List>
+                <ctli:type>Imager</ctli:type>
+            </ctli:Type_List>
+        </Type_List_Area>
+        <!-- deprecated after 1B00 <subtype>Mid-Infrared</subtype> -->
+        <description>
+            MIRAC2 (Mid-Infrared Array Camera) was built by Steward Observatory at the University of Arizona, Harvard
+            Smithsonian Center for Astrophysics, and the Center for Advanced Space Sensing at the Naval Research 
+            Laboratory.  It uses a Rockwell HF-16 128 X 128 arsenic-doped silicon blocked-impurity-band (BIB) hybrid 
+            array operating at 5 K in a liquid-helium-cooled cryostat.
+            
+            The operating wavelength of MIRAC2 is 2 to 28 µm. Using 20 parallel readout lines and frame rate of 10 KHz,
+            the array exhibits low noise and good linearity at high background flux, which is essential for 10 and 20 µm
+            ground-based observing conditions. Peak efficiency of 0.42 at 22 µm, and a well size of 120,000 electrons.
+            
+            MIRAC2 operated on United Kingdom Infrared Telescope (UKIRT) 3.8-meter and the IRTF 3.0-meter telescopes for 
+            observing a variety of objects including infrared-luminous galaxies, planetary nebulae, star forming regions, 
+            young stellar objects, and Solar System objects. Nominal settings at UKIRT and IRTF give diffraction-limited 
+            imaging with 0.34 and 0.27 arcsec/pixel (respectively). The sensitivity on the IRTF at 11.7 µm, 10% bandwidth
+            filter, chop-nod, source in one beam, 1 sigma, one minute total time is 25 mJy/arcsec surface brightness and
+            43 mJy point source.
+        </description>
+    </Instrument>
+</Product_Context>

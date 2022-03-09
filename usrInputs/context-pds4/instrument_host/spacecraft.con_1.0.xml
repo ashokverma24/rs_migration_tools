@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.con</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>COMET NUCLEUS TOUR</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:investigation:mission.contour_mission::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:cfi.con::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:cida.con::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:crispimag.con::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:crispspec.con::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument:ngims.con::1.0</lidvid_reference>
+            <reference_type>instrument_host_to_instrument</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:instrument:tlm.con::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_instrument</reference_type> -->
+<!--        </Internal_Reference> -->
+<!--        <Internal_Reference> -->
+<!--            <lidvid_reference>urn:nasa:pds:context:target:comet.comet::1.0</lidvid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <External_Reference>
+            <reference_text>
+                   unk
+            </reference_text>
+            <description>reference.unk</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>COMET NUCLEUS TOUR</name>
+        <type>Spacecraft</type>
+        <naif_host_id>CON</naif_host_id>
+
+        <description>
+ 
+The spacecraft design is simple. CONTOUR has few articulated mechanisms; the
+solar array is body mounted and does not require drive motors. The mission
+geometry allows CONTOUR to use fixed, passive, existing antenna designs. With
+the exception of along-track pointing of CRISP,all instrument pointing and
+antenna pointing is controlled by moving the spacecraft. A dust shield made
+of Nextel and Kelvar protects against impacts for the dust sizes and
+densities expected at the three encounters.
+ 
+From http://www.contour2002.org/overview2.html
+ 
+The core of the CONTOUR imaging and spectral mapping experiments is the
+CRISP. It will have a target tracking capability to ensure that the key
+high-resolution frames are obtained. The instrument payload also includes
+CFI, a simple wide-angle camera to serve as backup and provide global views
+of the nucleus and coma.
+ 
+The mass spectrometer, NGIMS, and dust analyzer, CIDA, will be mounted to
+look in the direction of flight at closest approach. NGIMS will be provided
+by NASA Goddard Space Flight Center. It will be placed on the spacecraft
+within the dust shield as far forward as possible to minimize contamination
+from spacecraft impact debris. The CIDA will be a significantly improved
+version of instruments that were flown successfully on Vega and Giotto during
+the Halley encounters.
+ 
+From http://www.contour2002.org/overview3.html
+ 
+Copyright 2002 NASA Discovery Program
+Used by Permission
+ 
+The reference is listed as N/A (not applicable) below because the mission
+ended before any significant publications.
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

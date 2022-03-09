@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:pps.vg2</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PHOTOPOLARIMETER SUBSYSTEM for VG2</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vg2::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Lillie, C.F., C.W. Hord, K. Pang, D.L. Coffeen, and J.E. Hansen, The
+                   Voyager mission photopolarimeter experiment, Space Sci. Rev., 21, 159-181,
+                   1977.
+            </reference_text>
+            <description>reference.LILLIEETAL1977</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Pryor, W.R., and C.W. Hord, A study of photopolarimeter system UV
+                   absorption data on Jupiter, Saturn, Uranus, and Neptune: implications for
+                   auroral haze formation, Icarus, 91, 161-172, 1991.
+            </reference_text>
+            <description>reference.PRYOR-HORD1991</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   West, R.A., C.W. Hord, K.E. Simmons, D.L. Coffeen, M. Sato, and A.L. Lane,
+                   Near-ultraviolet scattering properties of Jupiter, J. Geophys. Res., 86,
+                   8783-8792, 1981.
+            </reference_text>
+            <description>reference.WESTETAL1981</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   West, R.A., M. Sato, H. Hart, A.L. Lane, C.W. Hord, K.E. Simmons, L.W.
+                   Esposito, D.L. Coffeen, and R.B. Pomphrey, Photometry and polarimetry of
+                   Saturn at 2640 and 7500 Angstroms, J. Geophys. Res., 88, 8679-8697, 1983.
+            </reference_text>
+            <description>reference.WESTETAL1983</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>PHOTOPOLARIMETER SUBSYSTEM</name>
+        <type>Photometer</type> <type>Polarimeter</type> <!--RChen/EN was Photopolarimeter-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+    INSTRUMENT: PHOTOPOLARIMETER SUBSYSTEM
+    SPACECRAFT: VOYAGER 2
+ 
+ 
+  Instrument Overview
+  ===================
+    The Voyager Photopolarimeter Experiment (PPS) utilizes a general
+    purpose filter photometer/polarimeter optimized for the encounter
+    phase of the mission.
+ 
+      Instrument Id                  : PPS
+      Instrument Host Id             : VG2
+      Pi Pds User Id                 : ALLANE
+      Instrument Name                : PHOTOPOLARIMETER SUBSYSTEM
+      Instrument Type                : PHOTOPOLARIMETER
+      Build Date                     : NULL
+      Instrument Mass                : 2.55
+      Instrument Length              : NULL
+      Instrument Width               : NULL
+      Instrument Height              : NULL
+      Instrument Serial Number       : NULL
+      Instrument Manufacturer Name   : NULL
+ 
+ 
+  Scientific Objectives
+  =====================
+    From [LILLIEETAL1977], pp. 159-160.
+ 
+    The primary scientific objectives of the photopolarimeter
+    investigation on the Voyager mission were divided into three
+    categories---studies of atmospheres, satellite surfaces, and
+    rings.
+ 
+ 
+    Atmospheric Objectives
+    ----------------------
+      Specific objectives associated with the atmospheres were:
+ 
+      (1) to use intensity and polarization measurements as a
+      function of viewing angle and wavelength to determine the
+      macrostructure (vertical distribution of atmospheric aerosols)
+      and microstructure (particle size, shape, and probable
+      composition) of atmospheres;
+ 
+      (2) to use polarization measurements at large phase angles to
+      constrain the particle shapes and compositions within clouds;
+ 
+      (3) to search for dark side auroral emissions.
+ 
+ 
+    Satellite Surface Objectives
+    ----------------------------
+      Specific scientific objectives associated with the surfaces of
+      satellites were:
+ 
+      (1) to measure or set upper limits on the density of their
+      atmospheres;
+ 
+      (2) to determine the texture and probable composition of their
+      surfaces;
+ 
+      (3) to determine the bond albedo.
+ 
+      (4) to map the distribution of sodium vapor in the vicinity of
+      Io and in Jupiter&apos;s magnetosphere.
+ 
+ 
+    Planetary Ring Objectives
+    -------------------------
+      Specific scientific objectives for the study of planetary rings
+      were:
+ 
+      (1) to use intensity and polarization measurements of scattered
+      light as a function of wavelength and viewing angle to provide
+      information on the size, shape, and probable composition of the
+      ring particles, as well as their density and radial
+      distribution;
+ 
+      (2) to use observations of the extinction and scattering of
+      starlight to give additional information on particle size and
+      ring optical depth.
+ 
+ 
+  Optics and Detectors
+  ====================
+    From [LILLIEETAL1977], pp. 160-161.
+ 
+    The instrument consists of the following components:
+ 
+    (1) a 6-inch f/1.4 Dahl-Kirkham type Cassegrain telescope;
+ 
+    (2) a four-position aperture wheel providing circular fields of
+    view (FOVs) with diameters of 1/16, 1/4, 1, and 3.5 degrees;
+ 
+    (3) an eight-position analyzer wheel with open, dark and
+    calibration positions, plus with five polacoat analyzers with
+    transmitting axes oriented at 0, 60, 120, 45, and 135 degrees
+    rotation;
+ 
+    (4) an eight-position filter wheel holding thin interference
+    filters (see below);
+ 
+    (5) an EMR 510-E-06 photomultiplier tube (PMT) with a tri-alkali
+    (S-20) photocathode.
+ 
+    Individual photon events in the PMT are detected with pulse
+    counting electronics.
+ 
+    The wide dynamical range required by the mission (4 to 6.e11
+    photons /cm^2/s/Angstrom/ster) could be accommodated by FOV
+    changes and an electronic gain change in the PMT capable of
+    reducing the instrumental sensitivity by a factor of ~50.
+ 
+    A shadow caster prevents direct sunlight from entering the
+    aperture for phase angles &lt; 160 degrees.  A solar sensor turns
+    off the high voltage if the PPS is pointed within 20 degrees of
+    the Sun.
+ 
+ 
+  Filters
+  =======
+    The effective wavelength of each filter, its nominal band width,
+    typical instrumental sensitivities, and the particular atomic and
+    molecular species to which it is sensitive are listed below (From
+    [LILLIEETAL1977], Table I, p. 164).
+ 
+        Position  Effective   Half-power   Nominal    Spectral
+         number   wavelength  bandwidth  sensitivity* features
+                  (Angstrom)  (Angstrom)
+        ------------------------------------------------------------
+           0         5900        100         30       Sodium D
+           1         4900        100         50       H beta
+           2         3900        100         45       He I, Ca II
+           3         3100        300         40       OH Emission
+           4         2630        300         25       O3, Mg II,
+                                                      Chromophore
+           5         2350        300         20       Si I, Rayleigh
+                                                      scattering
+           6         7500        300          8       K I, Aerosol
+                                                      scattering
+           7         7270        100          4       CH4 absorption
+                                                      band
+ 
+    *For a point source in counts accumulated during an 0.4 second
+    integration per incident photon /cm^2/s/Angstrom.
+ 
+ 
+  Operational Modes
+  =================
+    From [LILLIEETAL1977], pp. 161-162.
+ 
+    The planned normal operational (encounter) mode of the PPS was to
+    step through a programmed sequence of 40 filter/analyzer wheel
+    combinations once every 24 sec.  Each measurement was to consist
+    of a 400 millisecond integration period followed by a 200 ms
+    period during which the next filter or analyzer would be stepped
+    into place.  A full measurement set would thus consist of
+    readings in the open, 0 degrees, 60 degrees, 120 degrees, and
+    dark positions of the analyzer wheel for each of the eight
+    filters.
+ 
+    NOTE: Equipment failures and improved understanding of instrument
+    usage considerations, however, caused substantial changes in this
+    plan.  See the section on operational considerations below for
+    further details.
+ 
+    For stellar occultation and satellite eclipse measurements, the
+    experiment was operated with filters and analyzers fixed in
+    position and a 10-ms integration period.  This provided rapid
+    measurements in order to resolve spikes in the light curves due
+    to turbulence in the occulting planet&apos;s atmosphere, as seen in
+    Earth-based observations.
+ 
+    For ring observations, stellar occultations were observed using
+    filter #4 (2650 Angstroms) and polarizer #7 (45 degrees).  A
+    10-ms integration time was used to obtain maximum time resolution
+    and the FOV set to 1 degree.
+ 
+ 
+  Measured Parameters
+  ===================
+    From [LILLIEETAL1977], pp. 164-165.
+ 
+    PPS raw values represent the number of photons events in the PMT
+    counted by the detector during the given integration time.  Based
+    on FOV, filter, and gain settings, this count could then be
+    converted to an intensity.
+ 
+    Four Stokes&apos; parameters, I, Q, U, and V, completely specify the
+    state of polarization of a quasi-monochromatic wave.  The
+    advantages of measuring and using Stokes&apos; parameters are:
+ 
+      (1) They all have the same dimension of intensity;
+      (2) They are additive;
+      (3) From the Stokes&apos; parameters it is possible to generate the
+          degree and plane of polarization and ellipticity.
+ 
+    Since the value of V is generally small and its measurement
+    requires a much more complex instrument, only I, Q, and U are
+    determined.
+ 
+    Total intensity I can be measured either with no polarizer in the
+    optical train, or by summing polarizers with transmission axes at
+    0, 60 and 120 degrees:
+ 
+          I = 2[I(0) + I(60) + I(120)] / 3 .
+ 
+    The Stokes&apos; parameter Q is given by
+ 
+          Q = 2[2I(0) - I(60) - I(120)] / 3 .
+ 
+    Similarly, U can be determined from
+ 
+          U = 2[I(60) - I(120)] / sqrt(3) .
+ 
+    The PPS data readout consists of a 30-bit digital word, of which
+    20 bits provided the data count accumulated during the
+    integration period, and 10 bits indicated instrument status.  In
+    order to reduce the telemetry rate, data count bits were log
+    compressed in the spacecraft FDS to 14 bits (a 10 bit mantissa
+    and 4 bit exponent).  Log compression was removed from the FDS
+    for the PPS occultation modes.  The nominal data rate was thus 40
+    bps, with a maximum of 1023 1/2 bps and a minimum of 0.6 bps.
+ 
+    NOTE: Data obtained during stellar occultation observations were
+    not subjected to compression.
+ 
+ 
+  Calibration
+  ===========
+    From [LILLIEETAL1977], p. 161.
+ 
+    In-flight calibration was accomplished by observing a set of
+    standard stars of known brightness and polarization, the sunlight
+    scattered by an on-board calibration target (unpolarized light),
+    and the light from stars and the planets reflected into the PPS
+    from a mirror tilted to the Brewster angle (yielding 100%
+    polarized light).  An internal Cerenkov radiation source mounted
+    on the analyzer wheel provided a short term measure of the
+    instrument&apos;s stability but was not used because comparison
+    pre-flight calibration data was lost.
+ 
+    The instrument is capable of measuring the polarization of
+    reflected light from the planets and their satellites with a
+    precision of +/- 0.5%, and their relative brightness with an
+    accuracy of +/- 0.5 to 1%.  Absolute calibration is known to +/-
+    3% in the visible and infrared, and to +/- 10% in the UV.  For
+    measurements of low surface brightnesses the instrument&apos;s
+    sensitivity ranged from ~140 counts/Rayleigh in the visible and
+    UV to ~20 counts/Rayleigh in the infrared.
+ 
+    Further discussions of intensity and polarization measurements
+    can be found in, for example, [WESTETAL1981], [WESTETAL1983], and
+    [PRYOR&amp;HORD1991].
+ 
+ 
+  Operational Considerations
+  ==========================
+    The PPS aboard Voyager 1 suffered extreme sensitivity loss before
+    and during Jupiter encounter.  This was deemed to be irreparable
+    and the instrument was turned off before Saturn encounter.
+    Voyager 1 data were never analyzed or archived.
+ 
+    The PPS instrument on board Voyager 2 suffered two hardware
+    failures that affected the ability to access wheel positions.  A
+    spacecraft decoder failure affected the analyzer and a PPS
+    internal chip failure affected the available filter positions.
+    At Jupiter, filter positions 0, 2, 4, and 6 were used.
+    Afterwards, only three positions, 2, 4, and 6, were used.  Four
+    of the eight analyzer wheel positions were available.  Of these,
+    135 and 45 degree orientations at wheel positions 6 and 7 were
+    used to acquire polarization information.  Before closest
+    approach at Jupiter, data taken are unreliable due to scattered
+    light.
+ 
+    Measurement sequences could be modified by changing the PPS
+    look-up-table (LUT) in the spacecraft&apos;s Flight Data System (FDS).
+    This controlled the filter and analyzer wheel positioning.  The
+    changes were predominantly a result of instrument electronic
+    failures and PMT usage issues more fully understood as the
+    mission progressed.  Knowledge of which FDS load was in effect
+    during each data observation is therefore necessary for proper
+    analysis.
+
+        </description>
+    </Instrument>
+</Product_Context>

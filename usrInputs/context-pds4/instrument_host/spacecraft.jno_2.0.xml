@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument_host:spacecraft.jno</logical_identifier>
+        <version_id>2.0</version_id>
+        <title>JUNO</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-07-10</modification_date>
+                <version_id>2.0</version_id>
+                <description>
+                    added instrument LIDs
+                </description>
+            </Modification_Detail>            
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:investigation:mission.juno</lid_reference>
+            <reference_type>instrument_host_to_investigation</reference_type>
+        </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:mwr.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:uvs.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:grav.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:waves.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:jade.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:jedi.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:junocam.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:jiram.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:fgm.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:instrument:rmi.jno</lid_reference>
+                <reference_type>instrument_host_to_instrument</reference_type>
+            </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:dust.dust</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.earth</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planet.jupiter</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:planetary_system.solar_system</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:plasma_cloud.jupiter.io_torus</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:plasma_stream.solar_wind</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+<!--        <Internal_Reference> wait for Rings -->
+<!--            <lid_reference>urn:nasa:pds:context:target:ring.jupiter.rings</lid_reference> -->
+<!--            <reference_type>instrument_host_to_target</reference_type> -->
+<!--        </Internal_Reference> -->
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.callisto</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.europa</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.ganymede</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.io</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+            <reference_type>instrument_host_to_target</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   Asmar, S. W., N. A. Renzetti, The Deep Space Network as an instrument for radio
+                   science research, NASA Technical Reports Server, 1993STIN...9521456A, 1993.
+            </reference_text>
+            <description>reference.ASMAR-RENZETTI1993</description>
+        </External_Reference>
+        <External_Reference>
+            <reference_text>
+                   Stephens, S. K., Juno Project Mission Plan, Rev. D, JPL D-35556, 15 August 2013.
+            </reference_text>
+            <description>reference.JPLD-35556</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument_Host>
+        <name>Juno</name>
+        <type>Spacecraft</type>
+        <naif_host_id>JNO</naif_host_id>
+
+        <description>
+ 
+ 
+The majority of the text in this file was extracted from the Juno
+Mission Plan Document, S. Stephens, 2012. [JPL D-35556]
+ 
+ 
+  Instrument Host Overview
+  =========================
+ 
+For most Juno experiments, data were collected by instruments on
+the spacecraft then relayed via the orbiter telemetry system to stations of
+the NASA Deep Space Network (DSN).  Radio Science required the DSN for its
+data acquisition on the ground.  The following sections provide an
+overview, first of the orbiter, then the science instruments, and
+finally the DSN ground system.
+ 
+ 
+  Instrument Host Overview - Spacecraft
+  =======================================
+ 
+Juno launched on 5 August 2011.  The spacecraft uses a deltaV-EGA trajectory
+consisting of a two part deep space maneuver on 30 August and 3 September 2012
+followed by an Earth gravity assist on 9 October 2013 at an altitude of 500
+km.  Jupiter arrival is on 5 July 2016 using a 107-day capture orbit prior to
+commencing operations for a 1-(Earth) year long prime mission comprising 32
+high inclination, high eccentricity orbits of Jupiter.  The orbit is polar
+(90 degree inclination) with a periapsis altitude of 4500 km  and a semi-major
+axis of 19.91 RJ (Jovian radius) giving an orbital period of 10.9725 days.  At
+the beginning of the prime mission, the line of apsides is nearly in the
+equatorial plane, but precesses throughout the mission such that the apojove
+moves to southern latitudes.  The primary science is acquired for
+approximately 6 hours centered on each periapsis although fields and
+particles data are acquired at low rates for the remaining apoapsis portion
+of each orbit.
+ 
+Juno is a spin-stabilized spacecraft equipped for 8 diverse science
+investigations plus a camera included for education and public outreach.
+The spacecraft includes one high gain (HGA) used as the prime communications
+antenna and radio science at Jupiter, two low gain antennas (LGAs) and
+a toroidal medium gain antenna used for some intervals in cruise and during
+critical activities when the HGA cannot be Earth-pointed, a large set of
+solar arrays in three &apos;wings&apos;, a main engine, and attitude thrusters.  In
+this description Juno will frequently be called &apos;the spacecraft.&apos;
+ 
+ 
+   Spacecraft Description
+   ===================
+ 
+Juno is a spin-stabilized spacecraft with a large spin-to-transverse moment
+of inertia ratio.  It is solar powered with 3 large, deployable rigid-panel
+wings that can be moved to adjust the spin axis to the HGA boresight.
+The solar panels are spaced at 120 deg. intervals around a basic
+6-sided structure. Juno utilizes high energy density Li ion
+batteries for battery-regulated bus voltage.  Basic radiation
+protection for sensitive electronics is afforded by a titanium-
+walled vault.  Juno has a dual-mode propulsion system with a
+deployable micrometeoroid shield for the main engine.  Attitude
+control thrusters are used for re-orienting the spin axis and for
+smaller trajectory/orbit corrections, and spin-up/down manuevers.  The
+thermal design uses a cold-biased passive design with software-
+controlled heaters.  Attitude control is provided using Inertial
+Measurement Units, Stellar Reference Units, Spinning Sun Sensors, and
+active (thrusters) and passive (fluid-filled loop) nutation damping.
+Telecom is achieved with X-band uplink and downlink coupled with five
+antennas for complete coverage in various attitudes and tones capability
+is included for critical low-link margin telemetry.  Ka-band telecom is
+included for improved Doppler measurement performance.  Essential systems
+are redundant and cross-strapped.  The z-axis of the spacecraft coordinate
+system is co-aligned with the HGA axis, hence, nominally points toward
+Earth.  The spacecraft x-axis is in the direction of the solar panel which
+includes the MAG boom at the end.  The y-axis completes a right-hand
+orthogonal system.
+ 
+ 
+SPACECRAFT SUBSYSTEMS
+---------------------
+ 
+The spacecraft comprises several subsystems, which are described briefly
+below. For more detailed information, see JPLD-5564.
+ 
+Structures and Mechanisms Subsystem
+-------------------
+ 
+The spacecraft structure uses heritage composite panel and clip
+construction for decks, central cylinder, and gusset panels.
+Polar mounted off-center spherical tanks are consistent with a spinning
+spacecraft design with a high, stable inertia ratio.  The central
+cylinder has high torsional stiffness.  Six gussets provide stiffness
+for the solar arrays.  Components are located such that they meet all
+mechanical requirements, including mass, field of view, magnetics, and
+alignments.  The radiation vault uses titanium panels that provide
+structure as well as shielding.  The Telecom subassembly is contained on
+one panel.  Louvers on the outside reject heat during Inner Cruise.  The
+vault also serves as a Faraday cage.  Spacecraft mechanisms include solar
+array articulation, providing up to 4.5 deg. of wing tilt, and allowing
+approximately 1.9 deg. of principal axis adjustment.  A main engine
+cover must open and close for each of 4 main engine burns as well as
+main engine flushing burns, and also provides micrometeoroid protection.
+Solar array wings consist of 11 solar panels and 1 MAG boom.  They use
+heritage designs for (a) spring driven and viscously damped deployment,
+and (b) a multi-panel retention and release.
+ 
+ 
+ 
+Telecom Subsystem
+-------------------------
+ 
+The Gravity Science and Telecom Subsystem provides X-band command uplink
+and engineering telemetry and science data downlink for the entire post-
+launch, cruise, and Jupiter orbital operations at Earth ranges up to 6.5
+AU.  The subsystem also provides for dual-band (X- and Ka-band) Doppler
+tracking for Gravity Science at Jupiter (concurrent X-band telemetry
+during Gravity Science passes also contributes to data return
+requirements).  The subsystem is designed, built, and tested at JPL
+prior to delivery to Lockheed Martin.
+ 
+The non-science part of the subsystem is fully redundant.  The Ka-band
+uplink for Gravity Science is single-string as is the Ka-band power
+amplifier.  The subsystem is designed to provide a minimum 2-sigma
+margin on all links.  Juno will normally use NASA&apos;s Deep Space Network
+(DSN) 34-m subnet for communications.  The 70-m subnet will be used
+for critical event coverage post launch, reception of tones during
+main engine maneuvers (DSMs, JOI, and PRM), enhanced data return
+during selected orbits at Jupiter, and for safe mode telecom.
+ 
+The telecom design is sized to provide a minimum science downlink rate
+of 18 kbps into a 34-m DSN station at max range (6.46 AU) during
+orbital operations, and 12 kbps during Gravity Science perijove passes.
+Higher data rates will be used at shorter ranges or with a 70-m DSN
+station.  The design also supports sending tone modulation during DSMs,
+JOI, and PRM burns when the spacecraft spin axis is nearly normal to
+the Earth line.
+ 
+Telecom equipment includes two Small Deep Space Transponders (SDSTs),
+both with X/X and one with additional X/Ka capability.  The X/X/Ka
+capability serves as a partial backup for Gravity Science.  There are
+two 25-W X-band Traveling Wave Tube Amplifiers (TWTAs), 5 Waveguide
+Transfer Switches (WTSes), 2 X-band diplexers, filters, microwave
+components, waveguide, and cabling.  These are all used to feed 5
+separate antennas.  The high-gain antenna (HGA) is a 2.5-m, shaped,
+axially symmetric, Gregorian, dual-reflector antenna fed by a
+dual-band, coaxial, corrugated feed.  The HGA supports uplink and
+downlink at both X and (carrier-only) Ka-band.  There is an X-band
+medium-gain antenna (MGA or F-MGA), forward and aft low-gain
+antennas (LGAs, specifically F-LGA and A-LGA), and toroidal
+antenna (T-LGA) that provides coverage during the DSMs, JOI, and PRM
+burns.  The toroidal antenna is also used briefly during cruise when
+the Sun-Probe-Earth (SPE) angle is near 90 deg.
+ 
+All antennas except the toroidal antenna are aligned with the
+spacecraft Z axis, which will be aligned with the spin axis shortly
+after launch using the adjustable solar array wing actuators. The HGA,
+MGA, and forward LGA are nearly co-boresighted (the MGA and LGAs are
+slightly offset from the spin vector).  The aft LGA is used when
+the spacecraft&apos;s trajectory goes inside of the Earth&apos;s orbit and the
+SPE angle is greater than 110 deg.
+ 
+The Ka-band Translator Subsystem (KaTS) receives a Ka-band uplink
+through the HGA from the DSN (DSS-25) and coherently generates a
+Ka-band downlink carrier signal and then amplifies the signal.  The
+signal is then guided to the Ka-band feed of the HGA for the Gravity
+Science two-way Ka-band Doppler signal.  The KaTS is provided by the
+Italian Space Agency.
+ 
+ 
+ 
+Propulsion Subsystem
+---------------------------
+ 
+Juno uses a dual-mode Propulsion Subsystem, with a biprop main engine
+(ME) and monoprop Reaction Control System (RCS) thrusters.  The 12
+thrusters are mounted on 4 Rocket Engine Modules (REMs), allow
+translation and rotation about 3 axes, and provide some redundancy.
+There are 8 lateral thrusters, canted away from X by 5 deg. along Y
+and by 12.5 deg. along Z, and 4 axial thrusters, canted away from Z
+by 10 deg. along Y.  6 equal-sized spherical propellant tanks contain
+fuel (4 tanks) and oxidizer (2).  Biprop mode (N2O4/hydrazine) is
+used for major maneuvers and flushing burns, and monoprop mode
+(blowdown hydrazine) is used for spin-up and -down, precession,
+active nutation damping, and most TCMs and OTMs.  The Leros-1b main
+engine is well-characterized, and is fixed on the Z axis, pointing
+aft.  Isolation valve ladders included in the pressurization system
+eliminate propellant mixing concerns.  RCS thrusters are located to
+minimize plume interactions.  The propellant tanks are sized
+consistent with the planned delta-V budget, for the maximum
+spacecraft mass that can be lifted by an Atlas V 551 with the required
+characteristic energy for the mission.
+ 
+ 
+ 
+Electrical Power Subsystem (EPS)
+--------------------------------
+ 
+ 
+Juno&apos;s redundant, single fault tolerant Electrical Power Subsystem
+manages the spacecraft power bus and distribution of power to payloads,
+propulsion, heaters, mechanism motor actuators, NASA Standard Initiators
+(NSIs), and avionics.  The Power Distribution and Drive Unit (PDDU)
+monitors and manages the spacecraft power bus, manages the available
+solar array power to meet the spacecraft load and battery state of
+charge (SOC), and provides controlled power distribution.  The Pyro
+Initiator Unit (PIU) includes a redundant, dual fault tolerant
+Pyrotechnic Initiator Module (PIM).  Power generation is provided
+by 3 solar arrays using current generation Ultra Triple Junction (UTJ)
+solar cells.  Two 55 A-hr Li ion batteries provide power when Juno is
+off-Sun or in eclipse, and are tolerant of the Jupiter radiation
+environment.  The power modes during Science Orbits are sized for
+either an MWR or a GRAV orbit, and provide sufficient margin given the
+expected loads during perijove science passes as well as DSN telecom
+passes.  Sufficient power and energy margins have also been
+demonstrated for the Launch, DSMs, JOI, PRM, and deorbit burn mission
+events, as well as safe mode near EOM.
+ 
+ 
+Command and Data Handling Subsystem (C&amp;DH)
+--------------------------
+ 
+The C&amp;DH is based on two redundant, single fault tolerant boxes
+developed for MRO.  Each C&amp;DH box includes a cPCI bus interconnected
+to 3U cards (except the DTCI card which uses 6U format) and a
+RAD750 flight processor with 256 MBytes of NVM flash memory and 128
+MBytes of SFC DRAM local memory.  It provides 100 Mbps total
+instrument throughput, more than enough for payload requirements.
+32 Gbits (base 2, EOL) of science data storage (plus 8 Gbits for
+EDAC) are available on the DTCI card, which has been demonstrated
+to be sufficient for minimum and maximum science orbit downlink data
+requirements, and representative stress cases that account for data
+retransmission and prioritization.
+ 
+ 
+Guidance, Navigation, and Control Subsystem (GN&amp;C)
+-------------------------------------------
+ 
+The Juno GN&amp;C Subsystem uses spin-stabilized control.  The launch
+spin rate of 1.4 RPM is initiated by the launch vehicle upper stage
+(and adjusted by the spacecraft after solar array deployment).  The
+planned spin rate varies during the mission: 1 RPM for cruise, 2 RPM
+for science operations, and 5 RPM for main engine maneuvers.  MWR and
+GRAV orbits at Jupiter use 2 different spacecraft attitudes: spin
+axis normal to the orbit plane for MWR orbits, and HGA Earth-pointed
+for GRAV orbits.  Precession and spin control use balanced mode for
+minimum delta-V, and are capable of unbalanced mode for lower fuel
+use (although not planned to be used).  Active nutation damping
+requires the Inertial Measurement Units (IMUs).  Delta-V maneuvers
+using the RCS thrusters can be either turn-burn-turn (TBT), which
+requires precession to turn to the desired attitude, or vector-mode
+(Vect), in which thrust is provided in both axial and lateral
+directions.  Main engine maneuvers require precession to point the
+engine in the desired direction.  One of two Stellar Reference
+Units (SRUs) and one of two Spinning Sun Sensors (SSSes) are
+continuously powered (the SRU is turned off for ME burns, and both
+SSSes are powered on during safe mode).  One of two IMUs is powered
+for delta-V maneuvers, large precessions (larger than ~2.5 deg.),
+active nutation damping, and spin control.
+ 
+ 
+ 
+Temperature Control Subsystem (TCS)
+-----------------------------
+ 
+Juno&apos;s Thermal Control Subsystem uses a passive cold biased design
+with heaters and louvers.  The core TCS consists of an insulated,
+louvered electronics vault atop an insulated, heated propulsion module.
+This design accommodates all mission thermal environments from
+perihelion to orbital operations.  During cruise, while the spacecraft
+is close to the Sun, the HGA is used as a heat shield to protect the
+vault avionics.  Outside ~1.4 AU, the spacecraft pointing is
+unrestricted, while inside ~1.4 AU Sun-pointing is generally required
+and required off-Sun-pointing for maneuvers is controlled for thermal
+reasons.  Most instrument electronics are contained within the
+radiation vault and are thermally managed as part of the vault TCS.
+Science sensors are externally mounted to the deck and are individually
+blanketed and heated to maintain individual temperature limits.
+ 
+ 
+ 
+JUNO SCIENCE INSTRUMENTS
+---------------------------
+ 
+Juno&apos;s instrument complement includes Gravity Science using the X and Ka bands
+to determine the structure of Jupiter&apos;s interior; magnetometer investigation
+(MAG)  to study the magnetic dynamo and interior of Jupiter as well as to
+explore the polar magnetosphere; and a microwave radiometer (MWR) experiment
+covering 6 wavelengths between 1.3 and 50 cm to perform deep atmospheric
+sounding and composition measurements.  The instrument complement also
+includes a suite of fields and particle instruments to study the polar
+magnetosphere and Jupiter&apos;s aurora.  This suite includes an energetic particle
+detector (JEDI), a Jovian auroral (plasma) distributions experiment (JADE), a
+radio and plasma wave instrument (Waves),  an ultraviolet spectrometer (UVS),
+and an Jupiter infrared auroral mapping instrument (JIRAM).  The JunoCam is a
+camera included for education and public outreach.  While this is not a
+science instrument, we plan to capture the data and archive them in the PDS
+along with the other mission data.  The MAG investigation consists of
+redundant flux gate magnetometers (FGM) and co-located advanced stellar
+compasses (ASC).  The ASCs are provided by the Danish Technical University
+under an effort led by John Jorgenson.
+ 
+Scott Bolton is the Juno Principal Investigator.  The Science Team members
+responsible for the delivery and operation of the instruments are listed
+below:
+ 
+ 
+Instrument                                      Acronym   Lead Co-I
+----------------------------------------------  --------  ---------
+Gravity Science                                 GRAV      Folkner
+Magnetometer                                    MAG       Connerney
+Microwave Radiometer                            MWR       Janssen
+Jupiter Energetic Particle Detector Instrument  JEDI      Mauk
+Jovian Auroral Distributions Experiment         JADE      McComas
+Radio and plasma wave instrument                WAVES     Kurth
+Ultraviolet Imaging Spectrograph                UVS       Gladstone
+Jovian Infrared Auroral Mapper                  JIRAM     Coradini*
+Juno color, visible-light camera                JUNOCAM   Hansen
+*deceased
+ 
+ 
+Gravity Science (GRAV):  The Gravity Science investigation was designed to
+map Jupiter&apos;s gravitational field.
+ 
+   -  Determine normalized gravity coefficients J4, J6, and J8 - J14
+ 
+ 
+Magnetometer (MAG):  The Magnetometer investigation was designed to map
+Jupiter&apos;s magnetic field.
+ 
+   -  Derive a spherical harmonic model of Jupiter&apos;s main magnetic
+      field through degree and order 14
+ 
+Microwave Radiometer (MWR):  The Microwave Radiometer was designed to
+characterize Jupiter&apos;s atmosphere.
+ 
+   -  Determine the global O/H ratio (water abundance) in Jupiter&apos;s
+      atmosphere
+   -  Measure latitudinal variations in Jupiter&apos;s deep atmosphere
+      (composition, temperature, cloud opacity, and dynamics)
+   -  Measure the microwave brightness temperatures of Jupiter over all
+      latitudes at wavelengths that fully sample the atmospheric thermal
+      emission at all altitude levels from the ammonia cloud-forming
+      region to below the water cloud-forming region
+ 
+Jupiter Energetic Particle Detector Instrument (JEDI):  The Jupiter
+Energetic Particle Detector Instrument was designed to characterize
+Jupiter&apos;s polar magnetosphere.
+ 
+   -  Measure the pitch angle and energy distribution of electrons
+      across auroral features
+ 
+Jovian Auroral Distributions Experiment (JADE):  The Jovian Auroral
+Distributions Experiment was designed to characterize Jupiter&apos;s
+polar magnetosphere.
+ 
+   -  Measure three dimensional time variable, pitch angle, energy and
+      composition distribution of ions
+   -  Measure ion composition to differentiate between H+, H2+, H3+,
+      O+, and S+.
+ 
+Radio and Plasma Wave Instrument (Waves):  The Waves instrument was
+designed to characterize Jupiter&apos;s polar magnetosphere.
+ 
+   -  Measure radio and plasma wave emissions associated with
+      auroral phenomena in the polar magnetosphere
+ 
+Ultraviolet Imaging Spectrograph (UVS):  The Ultraviolet Imaging
+Spectrograph was designed to characterize Jupiter&apos;s polar
+magnetosphere.
+ 
+   -  Characterize the UV auroral emissions
+ 
+Jovian Infrared Auroral Mapper (JIRAM):  The Jovian Infrared Auroral
+Mapper was designed to characterize Jupiter&apos;s atmosphere.
+ 
+Juno color, visible-light camera (JUNOCAM):  The Juno color, visible-
+light camera was designed to engage the public and educate students.
+ 
+ 
+  Instrument Host Overview - DSN
+  ================================
+Radio Science investigations utilize instrumentation with
+elements both on the spacecraft and at the NASA Deep Space Network
+(DSN).  Much of this was shared equipment, being used for routine
+telecommunications as well as for Radio Science.
+ 
+The Deep Space Network is a telecommunications facility managed by
+the Jet Propulsion Laboratory of the California Institute of
+Technology for the U.S.  National Aeronautics and Space
+Administration.
+ 
+The primary function of the DSN is to provide two-way communications
+between the Earth and spacecraft exploring the solar system.  To carry
+out this function the DSN is equipped with high-power transmitters,
+low-noise amplifiers and receivers, and appropriate monitoring and
+control systems.
+ 
+The DSN consists of three complexes situated at approximately equally
+spaced longitudinal intervals around the globe at Goldstone (near
+Barstow, California), Robledo (near Madrid, Spain), and Tidbinbilla
+(near Canberra, Australia).  Two of the complexes are located in the
+northern hemisphere while the third is in the southern hemisphere.
+ 
+The network comprises four subnets, each of which includes one antenna
+at each complex.  The four subnets are defined according to the
+properties of their respective antennas: 70-m diameter, standard 34-m
+diameter, high-efficiency 34-m diameter, and 26-m diameter.
+ 
+These DSN complexes, in conjunction with telecommunications subsystems
+onboard planetary spacecraft, constitutes the major elements of
+instrumentation for radio science investigations.
+ 
+    For more information see [ASMAR&amp;RENZETTI1993].
+
+        </description>
+    </Instrument_Host>
+</Product_Context>

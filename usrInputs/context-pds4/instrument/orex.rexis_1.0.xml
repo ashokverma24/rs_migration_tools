@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+	xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:rexis.orex</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>The Regolith X-Ray Imaging Spectrometer (REXIS) onboard the OSIRIS-REx spacecraft</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2018-03-14</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.orex</lid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                R.A. Masterson, M. Chodas, L. Bayley, B. Allen, J. Hong, P. Biswas, C. McMenamin, K. Stout, 
+                E. Bokhour, H. Bralower, D. Carte, S. Chen, M. Jones, S.Kissel, H. Schmidt, M. Smith, G. Sondecker, 
+                L.F. Lim, D.S. Lauretta, J. Grindlay, and R.P. Binzel, Regolith X-Ray Imaging Spectrometer 
+                (REXIS) Aboard the OSIRIS-REx Asteroid Sample Return Mission, Space Science Reviews, 2018, submitted
+            </reference_text>
+            <description>The OVIRS instrument paper.</description>
+        </External_Reference>
+    </Reference_List>
+    <Instrument>
+        <name>REXIS</name>
+        <type>Spectrometer</type>
+        <description>The Regolith X-ray Imaging Spectrometer (REXIS) will provide an X-ray map of Bennu, complementing
+        core OSIRIS-REx mission science. REXIS has been selected as an education and public outreach element
+        of the OSIRIS-REx mission investigation after a competitive selection process. As a Student Collaboration
+        Experiment (SCE), REXIS will be incorporated into the OSIRIS-REx spacecraft on a non-impact basis and
+        will remain clearly separable from the rest of the OSIRIS-REx investigation. Data analysis will be handled
+        as a student project, available to both Harvard and MIT students, for credit or non-credit within the MIT
+        curriculum, and within the MIT Undergraduate Research Opportunities Program (UROP). 
+        </description>
+    </Instrument>
+</Product_Context>

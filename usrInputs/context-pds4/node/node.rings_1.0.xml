@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:node:node.rings</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>PDS Ring-Moon Systems Node</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias>
+                <alternate_id>rings</alternate_id>
+            </Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.mark_showalter::1.0</lidvid_reference>
+            <reference_type>node_to_manager</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.mark_showalter::1.0</lidvid_reference>
+            <reference_type>node_to_operator</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.mark_showalter::1.0</lidvid_reference>
+            <reference_type>node_to_data_archivist</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:agency:agency.nasa::1.0</lidvid_reference>
+            <reference_type>node_to_agency</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.joseph_burns::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.joshua_colwell::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.jeffrey_cuzzi::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.matt_tiscareno::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.richard_french::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.michell_gordon::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.douglas_hamilton::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.essam_marouf::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.mark_showalter::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:personnel:personnel.linda_spilker::1.0</lidvid_reference>
+            <reference_type>node_to_personnel</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Node>
+        <name>Ring-Moon Systems</name>
+        <institution_name>SETI Institute</institution_name>
+        <description>
+          The PDS Planetary Rings discipline node provides access to
+          spacecraft and groundbased data sets, including images and
+          stellar and radio occultations, in both raw and partially
+          reduced form. It also provides specialized analysis
+          software and on-line bibliographic information.
+          
+          The Rings Node is a cooperative project of Ames Research
+          Center and the Center for Radar Astronomy at Stanford Univer
+        </description>
+    </Node>
+</Product_Context>

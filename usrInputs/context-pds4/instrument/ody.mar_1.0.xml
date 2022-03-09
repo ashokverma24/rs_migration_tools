@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd">
+    
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:mar.ody</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>MARS RADIATION ENVIRONMENT EXPERIMENT for ODY</title>
+        <information_model_version>1.7.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2016-10-01</modification_date>
+                <version_id>1.0</version_id>
+                <description>
+                    extracted metadata from PDS3 catalog and
+                    modified to comply with PDS4 Information Model
+                </description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+
+    <Reference_List>
+        <Internal_Reference>
+            <lidvid_reference>urn:nasa:pds:context:instrument_host:spacecraft.ody::1.0</lidvid_reference>
+            <reference_type>instrument_to_instrument_host</reference_type>
+        </Internal_Reference>
+        <External_Reference>
+            <reference_text>
+                   MARIE ICD, JPL Document MSP01-98-0016, June 23, 1999, Jet Propulsion
+                   Laboratory, Pasadena, CA, 1999.
+            </reference_text>
+            <description>reference.MSP01-98-0016</description>
+        </External_Reference>
+    </Reference_List>
+    
+    <Instrument>
+        <name>MARS RADIATION ENVIRONMENT EXPERIMENT</name>
+        <type>Particle Detector</type> <!--RChen/EN was Cosmic Ray Detector-->
+        <naif_instrument_id>not applicable</naif_instrument_id>
+
+        <serial_number>not applicable</serial_number>
+
+        <description>
+ 
+  Scientific Objectives and Overview
+  ==================================
+    Mars is substantially exposed to the harshest elements of space
+    weather. Unlike Earth, which sits inside a protective magnetic field
+    called the magnetosphere, Mars does not have a global magnetic field
+    to shield it from solar flares and cosmic rays. Another factor is
+    the lack of atmosphere. Mars&apos; atmosphere is less than 1% as thick as
+    Earth. These two factors make Mars vulnerable to space radiation.
+    The Marie instrument was designed to measure the amount of harmful
+    radiation in the Mars environment.
+ 
+    The particles which are thought to be most harmful to humans fall
+    mostly in the energy range of 30 MeV to thousands of MeV per
+    nucleon.  These are the particles with enough energy to damage human
+    DNA. The MARIE instrument is designed to measure particles in the
+    range of 15 MeV to 500 MeV/n. The data gathered in several detector
+    elements is combined to identify the species of the incident
+    particles and their energies in this range. The MARIE Instrument was
+    developed by NASA Johnson Space Center. The development process was
+    a coordinated effort of NASA/JSC, Lockheed-Martin and Battelle.
+    Battelle developed the CPU, power boards, A detector, B detector and
+    C detector boards.  Lockheed was tasked with development of the
+    position sensor devices (PSD), the instrument packaging, system
+    integration, software development and certifying the instrument for
+    flight. NASA/JSC provided the project management and coordination of
+    the contractors.
+ 
+    If a particle enters the MARIE detector telescope within the 60
+    degree cone defined by the A1 and A2 detectors, and has enough
+    energy to reach the A2 detector, it is considered a coincident
+    event. On coincident events, all detector boards are polled by the
+    CPU and the data for this event is recorded. The readout for each
+    detector records a pulse height that is proportional to the amount
+    of energy deposited in the detector. The PSD&apos;s also record the
+    position of the strike within the detector.
+ 
+    The minimum proton energy required to form an A1A2 coincidence
+    corresponds to a proton with range greater than the sum of the
+    thickness of A1, PSD1, PSD2, and a minuscule part of the A2
+    thickness. This adds up to 0.374 g/cm2 of Si and corresponds to a
+    proton energy of 19.8 MeV. So protons above this energy will be
+    recorded by the telescope; more energy per nucleon is required for
+    higher-charged particles. If one takes into account the thin
+    aluminum case that surrounds MARIE, the minimum proton energy is 30
+    MeV.  The angular response functions are calculated for those
+    particles that give an A1A2 coincidence and also pass through PSD1
+    and PSD2 detectors, since they are the only particles that can
+    provide the incidence angle of the charged particle. Note that not
+    all particles that give rise to A1A2 coincidence pass through PSD1
+    and PSD2 because the position sensitive detector are slightly
+    smaller in size. A new particle identification algorithm is being
+    developed to determine incident angles for particles that miss the
+    PSDs or have their positions mis-reported by the PSDs. (The latter
+    are common, owing to spurious detector noise.)
+ 
+    If a particle hits only one of the A-detectors, the event is
+    discarded because the angle of impact and energy loss in the other
+    detector boards is not known. Also, any particle entering the bottom
+    of the telescope will not register an event on the C-detector due to
+    the directional properties of the C-detector.
+ 
+    The chassis box of MARIE is made from machined aluminum with an
+    alodine coating. The exterior surfaces are painted white. Input
+    voltage to MARIE is 28 VDC and power requirements are 3 watts for
+    survival mode and 7 watts for nominal operation.There are no
+    external controls. All control is from the orbiter through an RS-422
+    interface.
+ 
+ 
+  Calibration
+  ===========
+    Data obtained during the cruise phase of the 2001 Mars Odyssey
+    mission have been used to calibrate the data. Pulse height spectra
+    in the range 0 to 4096 have been scaled to yield distributions of
+    apparent charge, Z. Calibration factors for each detector were
+    determined by forcing the obvious high-energy proton peak in each
+    distribution to have its center at Z = 1.
+ 
+ 
+  Operational Considerations
+  ==========================
+    During Odyssey&apos;s daily DSN session, MARIE is off for 1-2 hours,
+    causing small gaps in coverage. When the recorded data volume
+    approaches the capacity of MARIE&apos;s local storage, data acquisition
+    is halted until the next download opportunity. When all data have
+    been downloaded, the storage area is erased and the instrument
+    reset. This sequence of events causes relatively long outages, on
+    the order of 1 to 2 days.
+ 
+ 
+  Detectors
+  =========
+    Each of the two A detector assemblies contains a 25.4 x 25.4 x 1 mm
+    ion-implanted silicon solid state detector, detector signal
+    amplifiers, detector high voltage supply and the interface circuitry
+    between the detector and the MARIE CPU. The MARIE CPU controls the
+    interface circuitry including high voltage control, collecting
+    digitized signal amplitude data and controlling signal coincidence
+    timing sources. The two A-detectors are used to define a coincidence
+    event. These detectors are operated near 160 V.
+ 
+    Each of the four B-detector assemblies contains a 5 mm thick
+    lithium-drifted silicon solid state detector, detector signal
+    amplifiers, detector high voltage supply and the interface circuitry
+    between the detector and the MARIE CPU. The MARIE CPU controls the
+    interface circuitry including high voltage control and collecting
+    digitized signal amplitude data. These detectors are operated near
+    350 V.
+ 
+    The C detector consists of a Schott-glass Cherenkov detector and a
+    Hamamatsu photo multiplier tube (PMT). When a charged particle with
+    a velocity greater than [velocity of light / glass refractive index]
+    hits the Cherenkov detector, the detector releases a photon light
+    burst proportional to the energy of the particle which struck it.
+    The photo multiplier tube receives the light pulse and translates it
+    into an electronic pulse which is amplified by the tube and read by
+    the electronics on the C-detector board. The C-detector assembly
+    contains the PMT, detector signal amplifiers, detector high voltage
+    supply and the interface circuitry between the detector and the
+    MARIE CPU. The MARIE CPU controls the interface circuitry including
+    high voltage control and collecting digitized signal amplitude data.
+ 
+    Each of the two position sensitive detector (PSD) assemblies
+    contains 25.4 X 25.4 mm position sensitive detector. These are
+    double-sided silicon strip detectors with 24 strips on each side,
+    with a 1 mm pitch. The strips on one side are oriented so as to be
+    orthogonal to the strips on the other side. The active area of these
+    detectors is 24 mm x 24 mm. Hits from all four strip planes define
+    the particle&apos;s incident angle.
+ 
+    From the front of the device, particles entering the detector pass
+    through detector A1, PSD1, PSD2, A2, B1, B2, B3, B4, and C.
+    Depending on the angle of incidence and scattering within the
+    detector, some of the downstream detectors (B&apos;s and C) may be missed
+    on any given event.
+ 
+ 
+  Electronics
+  ===========
+    The Central Processing Unit (CPU) board has an Intel 80C188
+    microprocessor, detector interface circuitry and data communication
+    hardware for transferring data to the spacecraft from the 80 MB
+    flash memory. The flash memory holds the program code and any data
+    which has not been transferred to the spacecraft. The power from the
+    spacecraft is nominally 28 volts. The Marie instrument has
+    Interpoint DC-DC converters to convert the power to a usable level.
+ 
+    Each detector has its own card, with all of the electronics
+    associated with the detector on it, including a 12 bit
+    analog-to-digital (ADC) converter, and Field Programmable Gate
+    Array (FPGA)
+ 
+    The power, mode control and data download of the MARIE instrument
+    are controlled by the Odyssey spacecraft. Commands are sent from the
+    ground to the spacecraft central processing unit (CPU) to power on
+    MARIE and to change modes.
+ 
+ 
+  Location
+  ========
+    The MARIE instrument frame is illustrated by this diagram:
+ 
+                       _______________ HGA
+                       \             /
+                   ..   `._________.&apos;
+    Science        || ._______________.Science deck
+     Orbit         || |       ^+Xsc   |
+    Velocity       || |       |       |
+      ^.           || |       |      ^+Xmarie .&apos;   MARIE FOV
+        `.         || |       |+Zsc /||     .&apos;   (68 deg cone)
+          `.       ||@| &lt;-----o ..&apos;._|_.  .&apos;
+                   || +Ysc     /   | | |.&apos;
+                   || |     _.&apos; &lt;----o o--------&gt;  MARIE FOV
+                   || |  _.&apos;  +Ymarie _.`.         boresight
+            Solar  || ..&apos;_____________.   `.
+            Array  ..       Bottom Deck     `.
+                                              `.
+                         /
+                        /                            --------&gt;
+                       /                            Aerobraking
+                      V Nadir                        Velocity
+ 
+ 
+    Actual keywords defining MARIE instrument frame and incorporating
+    MARIE mounting alignment information are provided in reference [1].
+ 
+    The MARIE FOV (field of view), as defined in [2], is a 68-degree
+    cone centered around the -Y axis of the MARIE instrument frame.
+ 
+    The set of keywords in the data section above defines MARIE FOV
+    as a circle with a half-angle of 34 degrees and boresight direction
+    along the -Y axis of the MARIE instrument frame.
+ 
+    The following data for the FOV geometry were extracted from the
+    SPICE instrument kernel for MARIE, provided by the NAIF Node of
+    the Planetary Data System [3].  (The text of this section also was
+    adapted from that SPICE kernel.)  These data are included here for
+    the benefit of those familiar with the use of SPICE kernels.
+ 
+      INS-53040_FOV_FRAME             = &apos;M01_MARIE&apos;
+      INS-53040_FOV_SHAPE             = &apos;CIRCLE&apos;
+      INS-53040_BORESIGHT             = (
+                                          0.0000000000000000
+                                         -1.0000000000000000
+                                          0.0000000000000000
+                                        )
+ 
+      INS-53040_FOV_BOUNDARY_CORNERS  = (
+                                          0.0000000000000000
+                                         -0.8290375725550400
+                                         +0.5591929034707500
+                                         )
+ 
+ 
+  Operational Modes
+  =================
+    The instrument has only two modes, Science Mode and Survival Mode.
+ 
+    Science Mode: When placed in Science mode, the MARIE acts as an
+       autonomous data acquisition device. Data is collected until the
+       spacecraft issues a mode change command to move to survival mode.
+ 
+    Survival Mode: From survival mode, the spacecraft can issue commands
+       to download data, change parameters, power down or return to
+       Science Mode. During the data download, the spacecraft controls
+       the download process and downlinks the data to the ground.
+ 
+ 
+  Measured Parameters
+  ===================
+    The detector is composed primarily of three types of silicon
+    detectors: the A detectors, which are square in cross-section (25.4
+    mm on a side) and 1 mm in depth; the B detectors, circular, 63.5 mm
+    diameter and 5 mm thick; and the PSDs, or position-sensitive
+    detectors. The PSDs are square double-sided strip detectors with 24
+    1 mm strips on each side (the strips on one side are orthogonal to
+    those on the other side), and have a thickness of 0.3 mm. There are
+    two A detectors, A1 and A2; sandwiched in between them are PSD1 and
+    PSD2; behind A2, there are the B detectors, B1 through B4.
+    Downstream of B4 is a circular piece of quartz, 10 mm thick, that
+    radiates photons (Cerenkov radiation) generated by the passage of
+    high-velocity particles through it. The photons are reflected by a
+    45 deg mirror into a photo multiplier tube that sits out of the path
+    of particles that hit the detectors.
+ 
+    MARIE is triggered by a coincidence of hits in detectors A1 and
+    A2. Once triggered, the data acquisition system records 12-bit
+    digitized outputs which are proportional to the energies deposited
+    in the A and B detectors. A two-byte data word is stored for each of
+    these channels. The pulse height from the phototube is similarly
+    digitized in 12 bits and stored.
+ 
+    Readout of the PSDs is more complex. Each PSD has two orthogonal
+    sides, referred to as columns and rows. The following description
+    applies to each side of each detector. Onboard hardware analyzes the
+    signals from each of the 24 strips and finds the two largest pulse
+    heights. For each, the pulse height is digitized in 8 bits (256
+    channels) and stored, along with the strip number. The largest pulse
+    height and position are referred to as &apos;event1&apos;, the second-largest
+    as &apos;event2.&apos; The event2 data are usually noise. Four quantities are
+    stored for each side of each detector, so that a total of sixteen
+    words (thirty-two bytes) of PSD data are stored on each event. The
+    eight-bit pulse heights are referred to as &apos;magnitudes&apos;, the
+    positions are valid only when in the range 1 to 24.
+ 
+ 
+  References
+  ==========
+    1. M&apos;01 Frames Definition Kernel (FK), latest version as of March 6,
+       2001
+    2. &apos;MARIE ICD&apos;, MSP01-98-0016, June 23, 1999
+    3. MARIE Instrument Kernel (TI), March 6, 2001
+
+        </description>
+    </Instrument>
+</Product_Context>

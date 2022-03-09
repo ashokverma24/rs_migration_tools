@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1500.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://pds.nasa.gov/pds4/pds/v1
+            https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1500.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:instrument:telescope.spex.irtf3m0</logical_identifier>
+        <version_id>0.0</version_id>
+        <title>SpeX</title>
+        <information_model_version>1.5.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2019-07-19</modification_date>
+                <version_id>1.1</version_id>
+                <description>Corrected URLs for schema and schematron
+                </description>
+            </Modification_Detail>
+            <Modification_Detail>
+                <modification_date>2016-03-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version exported from OLAF</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Instrument>
+        <name>SpeX</name>
+        <type>Spectrometer</type>
+        <description>
+            Low- to medium-resolution near-IR spectrograph and imager at the NASA IRTF on Mauna Kea.  The spectrograph employs a 1024x1024 Aladdin 3 InSb array along with various slits, gratings and prism cross-dispersers to produce spectra with resolving powers up to R ~ 2000 across the wavelength intervals 0.8 to 2.5 microns and 2 to 5.5 microns.   The slit-viewing imager uses a 512x512 Aladdin 2 InSb array that covers a 60x60 arcsec field of view at a image scale of 0.12 arcsec per pixel.  In addition to object acquisition and scientific imaging, the imaging array is used as an infrared auto-guider for the spectrograph.
+        </description>
+    </Instrument>
+</Product_Context>

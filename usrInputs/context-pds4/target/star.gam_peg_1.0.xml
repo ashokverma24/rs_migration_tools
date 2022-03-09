@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.gam_peg</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Algenib</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>Gamma Pegasi</alternate_title></Alias>
+      <Alias><alternate_title>Gamma Peg</alternate_title></Alias>
+      <Alias><alternate_title>88 Peg</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>gam Peg</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AG+14 11</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ALS 15090</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD+14 14</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CCDM J00132+1511A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSI+14 14 1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>CSV 100009</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>FK5 7</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 238</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 105</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00000886</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 01179-01775</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 886</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HGAM 5</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 1067</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 1067</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 39</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IDS 00080+1438 A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 00106+1454</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>JP11 353</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J00131414+1511008</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>N30 32</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PHL 734</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 33</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 33.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PMC 90-93 6</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 116243</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>ROT 69</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 91781</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 390</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SRS 30007</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TD1 78</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 1179-1775-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 128</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>uvby98 100000886</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WDS J00132+1511A</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 185</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 0008+14</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2769202948897808640</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Algenib</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 00 hours 13 minutes 14.1512308 seconds
+Declination, ICRS coord, ep=J2000: +15 degrees 11 minutes 00.936759 seconds
+    </description>
+  </Target>
+</Product_Context>

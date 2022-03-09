@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Context
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:context:facility:observatory.las_campanas</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Las Campanas Observatory</title>
+        <information_model_version>1.16.0.0</information_model_version>
+        <product_class>Product_Context</product_class>
+        <Alias_List>
+            <Alias><alternate_id>LCO</alternate_id></Alias>
+        </Alias_List>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2021-08-25</modification_date>
+                <version_id>1.0</version_id>
+                <description>Initial version produced by RMS Node</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_campanas.ireneedupont_2m5</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_campanas.magellan_baade_6m5</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_campanas.magellan_clay_6m5</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:context:telescope:las_campanas.swope_1m0</lid_reference>
+            <reference_type>facility_to_telescope</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    
+    <Facility>
+        <name>Las Campanas Observatory</name>
+        <type>Observatory</type>
+        <country>Chile</country>
+        <description>
+            The Las Campanas Observatory is located in the Atacama region of Chile,
+            at an altitude of 2,400 meters, about 170 km north of La Serena, Chile.
+            It is operated as one of the Carnegie Observatories, one of the departments
+            of the Carnegie Institution for Science. The observatory offices are located
+            in La Serena, Chile.
+        </description>
+    </Facility>
+</Product_Context>

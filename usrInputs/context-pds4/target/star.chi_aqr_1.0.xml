@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Context
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1C00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:context:target:star.chi_aqr</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Chi Aquarii</title>
+    <information_model_version>1.12.0.0</information_model_version>
+    <product_class>Product_Context</product_class>
+    <Alias_List>
+      <Alias><alternate_title>92 Aquarii</alternate_title></Alias>
+      <Alias><alternate_title>Chi Aqr</alternate_title></Alias>
+      <Alias><alternate_title>92 Aqr</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>BD-08 6076</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>EIC 886</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GC 32401</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GCRV 14595</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GEN# +1.00219576</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>GSC 05821-01478</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HD 219576</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIC 114939</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HIP 114939</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>HR 8850</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRAS 23142-0759</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>IRC -10597</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>2MASS J23165094-0743357</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5630</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PLX 5630.00</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>PPM 207366</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>RAFGL 3058</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SAO 146612</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>SKY# 44123</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>TYC 5821-1478-1</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV 19918</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>UBV M 26926</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>WEB 20364</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>YZ 97 8267</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>AAVSO 2311-08</alternate_title></Alias>  <!-- from simbad-->
+      <Alias><alternate_title>Gaia DR2 2630576144910406016</alternate_title></Alias>  <!-- from simbad-->
+    </Alias_List>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2019-08-16</modification_date>
+        <version_id>1.0</version_id>
+        <description>From PDS Rings node.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Target>
+    <name>Chi Aquarii</name>
+    <type>Star</type>
+    <description>
+Based on the SIMBAD Astronomical Database
+Right Ascension, ICRS coord, ep=J2000: 23 hours 16 minutes 50.9391613 seconds
+Declination, ICRS coord, ep=J2000: -07 degrees 43 minutes 35.402266 seconds
+    </description>
+  </Target>
+</Product_Context>
