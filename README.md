@@ -9,8 +9,8 @@ Currently, 5 ancillary data types and 4 raw data types are supported:
 The following ancillary data types are supported:
 
 ########################################################################
-1. SPK: Spacecraft ephemeris (transfer file formate)
-2. CKF: Spacecraft attitude (transfer file formate)
+1. SPK: Spacecraft ephemeris (Transfer file format)
+2. CKF: Spacecraft attitude (Transfer file format)
 3. TRK-2-21: Earth Orientation Parameter (EOP)
 4. TRK-2-23: Media Calibration Interface (Ionosphere)
 5. TRK-2-23: Media Calibration Interface (Troposphere)
@@ -27,7 +27,7 @@ The following raw data types are supported:
 
 ########################################################################
 
-Requirements
+Requirements:
 
 ########################################################################
 
@@ -40,13 +40,13 @@ Requirements
 
 ########################################################################
 
-Usuage
+Usage:
 
 ########################################################################
 
-Python createPDS4Label.py -i inputDataFile -v velocityTemepate
+Python createPDS4Label.py -i inputDataFile -v velocityTemplate
 
-where, the inputDataFile can be any supported input file, and the velocityTemepate 
+where the inputDataFile can be any supported input file, and the velocityTemplate 
 can be any predefined velocity template (example templates are provided in the 
 velocityTemplates folder).
 
@@ -54,13 +54,13 @@ Running example:
 
 python createPDS4Label.py -i ../sampleData/odf/s15digs2005_283_0900x25mv1.odf -v ../velocityTemplates/odf/velocityTemplate.vm
 
-Output should looks like this:
+Output should look like this:
 
           Reading And Unpacking Odf File: [████████████████████] 100% Time taken: 0 Hr: 0 Min: 10 Sec 
 
               Updating Velocity Template: [████████████████████] 100% Time taken: 0 Hr: 0 Min: 0 Sec 
 
-                      Writing Pds4 Label: [████████████████████] 100% Time taken: 0 Hr: 0 Min: 1 Sec 
+                      Writing PDS4 Label: [████████████████████] 100% Time taken: 0 Hr: 0 Min: 1 Sec 
 
 
 ########################################################################
