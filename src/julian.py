@@ -136,7 +136,7 @@ def from_jd(jd: float, fmt: str = 'jd') -> datetime:
 
 def cal_dt(date):
     """
-    Converts a SPICE time format to PDS4 acceptable formate.
+    Converts a SPICE time format to PDS4 acceptable format.
 
     Parameters
     ----------
