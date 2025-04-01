@@ -2,7 +2,7 @@
 """ 
  DESCRIPTION                                                                                                           
  
- The script reads the  radio science Archival Tracking Data File (ATDF) and fills out the velocity template. 
+ The script reads the radio science Archival Tracking Data File (ATDF) and fills out the velocity template. 
 
  INPUTS:                                                                                                         
      1. template      : Path to the reference velocity template.
